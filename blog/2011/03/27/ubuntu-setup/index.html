@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始 - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="很早就听周围的朋友推荐ubuntu（英文单词不好念，我就戏称它为啊笨图，其实它一点也不笨），但是一直没有动手。原因其实很简单，就像要居家搬迁一样，如果不是必要，谁也不愿意到异地他乡重建家园。但是最近xp让我很无奈，是不是死机，而且我喜欢尝试一些新的软件，这样c盘的windows就越来越大， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lukezhg.github.com/blog/2011/03/27/ubuntu-setup/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+    <h2>A blog for future.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:lukezhg.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/tag">Tags</a></li>
+  <li><a href="/search">Search</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-27T00:00:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2011</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>很早就听周围的朋友推荐ubuntu（英文单词不好念，我就戏称它为啊笨图，其实它一点也不笨），但是一直没有动手。原因其实很简单，就像要居家搬迁一样，如果不是必要，谁也不愿意到异地他乡重建家园。但是最近xp让我很无奈，是不是死机，而且我喜欢尝试一些新的软件，这样c盘的windows就越来越大，感觉像一个越来越臃肿的政府，庞大到了一定程度，就不再是它为用户服务，而是用户围着它转，这的确是挺烦的，编程者可能感受更深。<br /><br />但是想一下子彻底的搬，对于我还真是困难，因为已经熟悉和搭建好的工作环境，要是一下至到了一个陌生的环境，还真不适应，影响工作。于是我想了一个折中的办法，把啊笨安装在移动硬盘上，这样什么时候想体验一下ubuntu，什么时候插上就行，而眼前的工作还是可以在xp下完成。<br /><br />下载了unbuntu 10.04[<a target="_blank" href="http://www.ubuntu.org.cn/netbook/get-ubuntu/download/">http://www.ubuntu.org.cn/netbook/get-ubuntu/download/</a>], 然后制作了live usb，虽然可以在live usb上体验，但是用户的设置不会被保留.所以还是必须安装啊笨才行。我安装的过程参照了教程[真正把Ubuntu装到移动硬盘里 <a target="_blank" href="http://ubuntuabc.com/123/?p=58">http://ubuntuabc.com/123/?p=58</a>] ,但是在第5步的时候，我选择手动指定分区之后，什么也没有显示，于是我只好删除了移动硬盘上的第一分区，然后选择使用最大的连续空间，这样可以继续安装下去了。<br /><br />但是安装了之后，可以启动移动硬盘上的ubun，似乎一切正常，但是当我拔掉移动硬盘之后，开机显error no such device #@###@，grub rescue示，xp启动不了了，必须连上移动硬盘才能引导xp启动。这让我很恼火，难道以后我每次都要背着移动硬盘到处跑吗。显然我希望，没有移动硬盘，也要让xp工作才行。于是我开始google了解，原来是安装ubuntu的时候，把xp的mbr（主引导记录）文件给覆盖了，这是ubuntu安装时默认覆盖的。没办法，之后再Google选找解决方案，我找到了下面3篇比较有用的方案：<br /><ol><li>在移动硬盘中安装ubuntu的一点小问题解决_游走江湖_百度空间: <a target="_blank" href="http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html">http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html</a></li><li>移动硬盘上安装Ubuntu，拔掉移动硬盘后，本地硬盘上xp系统却引导不了_G号→攻击_百度空间: <a target="_blank" href="http://hi.baidu.com/xute1126/blog/item/a5db8d09c307e82c6a60fb55.html">http://hi.baidu.com/xute1126/blog/item/a5db8d09c307e82c6a60fb55.html</a></li><li>当硬盘不能引导的时候：<a href="http://www.guanwei.org/post/tech/09/MBR.html">http://www.guanwei.org/post/tech/09/MBR.html</a></li></ol><br />但是这些方案让我很纠结，因为他们遇到的情况虽然和我相似，但是并不完全一样。<br />第1个方案把问题描述的最清楚，但是我没有xp的安装盘，我这个是上网本，没有光驱。<br />第2个方案，虽然我也下载了相关的程序，但是发现在我的xp系统引入后，根本无法使用grubinst_gui把grub4dos安装到MBR，而且它要求把grub4dos的两个文件拷贝到fat16格式的盘符中，我系统全都是ntfs，硬盘是fat32，哪来的fat16吗，所以也不行。<br />第3个方案，我尝试下载了winPE精简版，然后做了U盘启动盘，结果还是启动不了。<br /><br />其实关键问题在于修复被覆盖过的xp的MBR文件，于是我开始google修复MBR文件的文章，最后我发现一个解决方案：<br />如何恢复XP的MBR « 俞弘的网络日志: <a target="_blank" href="http://www.eusoftware.com/hongyu/?p=54">http://www.eusoftware.com/hongyu/?p=54</a><br /><br />按照这个方案，我进行了修复，结果可以正常启动xp了。问题终于算是解决了。庆祝一下[&#8211;ddd&#8211;]<br /><br />现在我可以享用xp就用xp，享用啊笨就用ubuntu。但是，但是，还有以下问题待解决：<br />如何在ubuntu下给我的Ausu EEE PC 1101Ha驱动显卡？<br />如何在ubuntu下安装tar.gz的软件包？<br />我的xp虽然可以正常启动，但是网卡驱动却出现了问题，而且再重启的时候也出现过几次屏幕颤抖和变色，这又如何解决？<br /><br />如果你看到这篇文章，恰巧有知道，请不吝赐教！<br /><br />总结，有的时候纯属穷折腾，结果遇到不少问题，于是迫不得已硬着头皮进行问题解决，结果学习发生了。试想，如果我们只是停留在自己原有的熟悉的环境中，又怎能发现自己还有这么多东西不知道呢，所以说，穷折腾是良好的学习开始！<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=078f640e-cba5-8d80-8710-11df07f3f7cb" /></div></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-27T00:00:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>
+  
+</span>
+
+
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+<a class="bshareDiv" href="http://www.bshare.cn/share">Sharing</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=25fcdf85-62f9-400e-b053-627f102edf5a&style=999&img=http%3A%2F%2Fstatic.bshare.cn%2Fimages%2Fbuttons%2Fbox-shareTo-zh.gif&w=147&h=21"></script>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/03/24/pbl-is-a-good-teaching-strategy-2/" title="Previous Post: 问题解决是一种非常好的教学策略">&laquo; 问题解决是一种非常好的教学策略</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/03/29/The-chromosomal-group-and-basketball-team/" title="Next Post: 染色体组与篮球队">染色体组与篮球队 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/rss'>RSS (1)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (6)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/总结'>总结 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (2)</a></li><li><a href='/blog/categories/杂谈'>杂谈 (1)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活观察'>生活观察 (1)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 112%" href="/tag/english/">English</a>
+<a style="font-size: 112%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 143%" href="/tag/linux/">linux</a>
+<a style="font-size: 112%" href="/tag/pck/">pck</a>
+<a style="font-size: 112%" href="/tag/try/">try</a>
+<a style="font-size: 112%" href="/tag/标签云/">标签云</a>
+<a style="font-size: 112%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 165%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/22/what-robot-can-do-for-me/">what robot can do for me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/21/front-of-class/">front of class</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>知识共享协议</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+  本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://lukezhg.github.com/blog/2011/03/27/ubuntu-setup/';
+        var disqus_url = 'http://lukezhg.github.com/blog/2011/03/27/ubuntu-setup/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

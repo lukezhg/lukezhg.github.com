@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
+  <link href="http://lukezhg.github.com/blog/categories/技术技巧/atom.xml" rel="self"/>
+  <link href="http://lukezhg.github.com/"/>
+  <updated>2013-02-04T12:22:28+08:00</updated>
+  <id>http://lukezhg.github.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在iphone4 5.1.1上也能安装siri]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
+    <updated>2012-06-15T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
+    <content type="html"><![CDATA[<p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
+2. 备份iPhone 4<br />
+3. 下载absinthe 2.0.4 , 以管理员方式运行，破解完成，出现Cydia<br />
+4. 恢复备份<br />
+5. 在Cydia里添加源 repo.siriport.ru,<br />
+然后寻找SiriPort(original)安装之。然后重启IpHONE4.<br />
+然后在SAFARI里输入siriport.ru/siriport_ru_original.pem，安装证书。然后再次重启。<br />
+6. 在Settings-General-Enable SIRI启动SIRI。ENJOY!</blockquote>人啊，总是造成了严重后果的时候，再会后悔不该当初，才知道节制和让步。<br /><br /><br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何让windows search能够搜索pdf文档内容]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content/"/>
+    <updated>2012-04-13T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content</id>
+    <content type="html"><![CDATA[<p>windows search桌面搜索提供了全文检索的功能，可以快速查找office文档、网页以及txt中的内容，但是不支持pdf文档。但是很多文献都是pdf文档，怎么样才能让它支持呢？<br /><br />网络搜索查到一个软件<a target="_blank" href="http://download.pchome.net/utility/file/manage/download-164626.html">Foxit PDF IFilter 2.0.0.0519</a>, 安装之后就支持pdf文档全文搜索了，找到含有关键字的pdf文档了。不过要想让搜索到的pdf文档全文正确的预览出来，还是需要安装体积庞大的adobe reader，只是安装福昕pdf阅读器还是不行，不知道如何解决，欢迎网友支招。<br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用flash制作试题交互动画项目]]></title>
+    <link href="http://lukezhg.github.com/blog/2011/12/17/use-flash-to-make-interactive-test-project/"/>
+    <updated>2011-12-17T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2011/12/17/use-flash-to-make-interactive-test-project</id>
+    <content type="html"><![CDATA[<p><p>在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件，让稍微动flash甚至是一点都不同flash的老师也能修改并展示自己的试题呢？当然是可以的，但是这个试题交互动画的设计应该数据与源文件分离的，也就是老师不需要修改源文件和代码，只需要修改数据文件就可以。</p>
+<p>制作的思路：<br /> 1、建立界面fla原文件（test.fla）<br /> 2、建立代码文件(xmlloader.as)<br /> 3、建立试题数据xml文件(sample.xml)</p>
+<p>使用代码加载试题数据xml文件，并在动态文本中展示试题，学习者点击选项按钮以及导航按钮参与互动。互动可以分为两种模式，一种是练习模式，一种是测验模式，用户可以自己选择。此外为了使得该动画可以在网站上调用，还增加一个输入文本框，用于导入特定位置的试题数据。</p>
+<p>发布：<br /> 最有作品提供全部文件，并以CC协议中的（署名 非商业使用 相同方式共享）<img src="http://creativecommons.org/icons/by/standard.gif" border="0" alt="by" /> <img src="http://creativecommons.org/icons/nc/standard.gif" border="0" alt="nc" /> <img src="http://creativecommons.org/icons/sa/standard.gif" border="0" alt="nd" />发布。</p></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[快速发布博文的方法与技巧]]></title>
+    <link href="http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills/"/>
+    <updated>2011-12-17T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills</id>
+    <content type="html"><![CDATA[<p><p>发布博客的方法大体上可以分为三类：</p>
+<ol>
+<li>利用本地软件发布博客。比如使用windows live writer等安装在本地电脑上的软件来发博客。这种方法在撰写长博客的时候会非常稳定，不会受到网络的干扰，即便突然断线或者离线，也可以照写不误，同时留有本地备份。但是缺点是并不是所有博客都支持离线发布，而且这个软件也势必要占用磁盘空间，再有发布的时候，如果需要参考网页信息的话，需要来回切换窗口，比较麻烦。 </li>
+<li>利用网络浏览器的插件进行博客发布。比如火狐浏览器的scribefire以及谷歌浏览器的嘉写等。它的优点是你不需要离开网络浏览器，只需要使用快捷键启动插件，就可以发布。同时你可以很方便的引用网页上的文字、网址等信息。尤其是scribefire，它可以分屏显示，上面是特定的网页，引起了你的思考，你就可以按F8快捷键调用该插件，并在下方的编辑区中编写你的博客内容，然后发布。这种方法的好处是不需要再多安装一个软件，而仅仅是对你的浏览器进行一下扩展，再有它也会自动留备份在你的本地电脑，连线的时候也可以写博客，等有了网络再发布。 </li>
+<li>在线编辑博客。这个方法不用多说，大多数用回都用这正方法，缺点对网络依赖非常强，若果一旦不稳定或者浏览器崩溃，你的工作就可能白费。优点是最少的占用你的本地资源，而且所有的可能功能都容易实现。其实使用的时候可以利用一些技巧，比如为你写博客的网址建立一个书签或者鼠标手势，并保存密码登录（限个人电脑），这样你只要点击一下书签或者画一个手势，就自动进入编辑页面了，效率大大提高。</li>
+</ol></p>
+
+]]></content>
+  </entry>
+  
+</feed>
