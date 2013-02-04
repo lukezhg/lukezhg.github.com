@@ -1,0 +1,742 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。 搭建的步骤如下：
+1.首先是准备工作，下载和安装必要的软件。
+2.然后是克隆octopress并安装 3. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lukezhg.github.com/blog/page/2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+    <h2>A blog for future.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:lukezhg.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/tag">Tags</a></li>
+  <li><a href="/search">Search</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/27/github-blog-with-octopress/">Github Blog With Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-27T21:05:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/27/github-blog-with-octopress/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
+
+<p>搭建的步骤如下：<br/>
+1.首先是准备工作，下载和安装必要的软件。<br/>
+2.然后是克隆octopress并安装 <br/>
+3.接下来是将octopress配置好并发布博文。 <br/>
+具体步骤可以重点参考<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">这篇</a>文章。</p>
+
+<h2>具体步骤纪要：</h2>
+
+<ol>
+<li>准备工作，下载<a href="http://windows.github.com/">gitinstaller</a>, <a href="http://rubyforge.org/frs/?group_id=167">ruby197</a>, <a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">devkit</a>, 然后安装。
+gitinstalller和ruby197只要一路next过去就可以安装好，ruby我选择的都是c盘根目录。devkit解压到c盘根目录。安装如下：
+
+<blockquote><pre><code>$ cd C:\DevKit  
+</code></pre>
+
+<p>   $ ruby dk.rb init<br/>
+   $ ruby dk.rb instal</p></blockquote></li>
+</ol>
+
+
+<p>布置环境：</p>
+
+<blockquote><pre><code>$ gem sources --remove http://rubygems.org/  
+  $ gem sources -a http://ruby.taobao.org/  
+  $ gem install rdoc bundler   
+  $ vi Gemfile  #将行 ：source "http://rubygems.org/" 改为:source "http://ruby.taobao.org/"
+  $ bundle install  #如果出错，改执行：bundle update; rake install   
+</code></pre></blockquote>
+
+<ol>
+<li>克隆远程octopress到本地文件夹，本地文件夹名称无所谓，比如我的就放在G:/github/myblog<br/>
+接下来进入git shell, 在命令行中执行一系列的命令来安装octopress，命令代码如下：
+
+<blockquote><pre><code>$ git clone git://github.com/imathis/octopress.git myblog  
+</code></pre>
+
+<p>   $ cd myblog<br/>
+   $ rake setup_github_pages<br/>
+按照提示输入：git@github.com:username/username.github.com.git, 比如我的github用户名为lukezhg，那么我就需要输入 git@github.com:lukezhg/lukezhg.github.com.git</p>
+
+<pre><code>$ rake generate   #生成本地文件
+</code></pre>
+
+<p>   $ rake preview  #实现本地预览 访问  http://localhost:4000 查看效果  （可选）
+   $ rake deploy  #发布本地文件到服务器</p></blockquote></li>
+</ol>
+
+
+<p>保存博客源码到github source分支:</p>
+
+<blockquote><pre><code>$ git add .  
+  $ git commit -m 'blog source'  
+  $ git push origin source
+</code></pre></blockquote>
+
+<ol>
+<li>初步配置octopress<br/>
+_config.yml文件：</li>
+</ol>
+
+
+<p>添加cname文件<br/>
+只需要在myblog\source目录下添加一个cname的文件，并在第一行写上你的域名，保存即可。</p>
+
+<p>发布新博文（post）或者新页面（page）</p>
+
+<blockquote><pre><code>$ rake new_post["article name"]   
+  $ rake new_page["page name"]
+</code></pre></blockquote>
+
+<ol>
+<li>继续完善<br/>
+添加侧边栏内容</li>
+</ol>
+
+
+<p>（1）添加导航<br/>
+修改myblog\source_includes\custom目录下的navigation.html文件即可</p>
+
+<p>（2）添加分类<br/>
+<a href="https://github.com/alswl/octopress-category-list">alswl/octopress-category-list</a></p>
+
+<p>（3）自定义网站图标<br/>
+替换myblog\source目录下的favicon.png可以实现自定义网站图标</p>
+
+<ol>
+<li>额外的说明 <br/>
+（1）执行rake install如若出错：
+
+<blockquote><pre><code>$ rake install
+</code></pre>
+
+<p>   $ rake aborted!
+   $ You have already activated rake 0.9.2.2, but your Gemfile requires rake 0.9.2. Using bundle exec may solve this.
+   $ (See full trace by running task with &#8211;trace)</p></blockquote></li>
+</ol>
+
+
+<p>==》修正办法为：</p>
+
+<blockquote><pre><code>$ bundle update; rake install  
+</code></pre></blockquote>
+
+<p>（2）添加CNAME文件后不生效==》手动在github网页上文件代码剪贴掉，保存，然后再粘贴回来，保存。</p>
+
+<p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
+
+<p>markdown语法示例
+句子的尾部输入两个空格然后回车就可以断行 <br/>
+* 无序项目1 <br/>
+* 项目2 <br/>
+* 项目3  <br/>
+<img src="\images\bird_32_gray.png" alt="Alt text" /></p>
+
+<p>主要参考：
+<a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
+<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
+<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/27/why/">Why</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-27T20:31:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/27/why/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>尝试使用中文</p>
+
+
+<p>这样码字是否是很来啊！<br>
+难道大家都这个种发博客的方法感兴趣？</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/27/hi/">Hi</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-27T18:52:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/27/hi/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I don&#8217;t konw if I can use editplus to edit this text.
+if you can see it
+then i means I can do it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/27/hello/">Hello</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-27T18:27:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/27/hello/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>this is my first blog using vim to edit.
+can you see it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment/">如何辅助学习者在复杂网络学习环境中生存下来</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-29T00:00:00+08:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？</p>
+<p>思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连带网址功能，就可以把相关的作业及要求摘录到笔记中，然后再使用标签进行管理即可。我觉得以后可以重点介绍一下evernote这款软件。</p>
+<p>思路2：把复杂环境简单化，越是简单的机制越是容易理解和使用。</p>
+<p>思路3：建立一个自己的web环境，汇总和侦听各种课程信息。比如google个人页面，wikispace个人页面等，这对学习者将提出更高的要求。</p>
+<p>&nbsp;</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/11/fightiing-with-laziness-start-from-review/">与懒做斗争——从回顾、梳理、总结开始</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-11T00:00:00+08:00" pubdate data-updated="true">Jul 11<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/11/fightiing-with-laziness-start-from-review/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>放假已经有一阵子了，但是自己一直被懒折磨着，很多问题都搁置在一边没有进展。怎么样才能摆脱这种状态呢？</p>
+<p>在《<a href="http://vip.book.sina.com.cn/book/catalog.php?book=42978">工作就是解决问题</a>》这本书中&ldquo;先找问题的薄弱点&rdquo;有这样一段内容：</p>
+<blockquote>
+<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">当一个人在学习和工作中达到所谓的&ldquo;停滞点&rdquo;时，从问题的最薄弱处下手，从最容易的地方开始，先做自己擅长的、有把握的事情，往往特别有效。</span></p>
+<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">所谓&ldquo;停滞点&rdquo;，便是到达那一点时，再用功也无法获得更多进步。这时，若是硬逼着自己冲过这个&ldquo;停滞点&rdquo;，便很可能产生紧张、困难等感觉。甚至形成恶性循环&mdash;&mdash;越想解决问题，就越解决不了。越想闯过去，就越是原地打转。这时，你可以稍微放松一下，先做最容易的事。</span></p>
+</blockquote>
+<p style="text-align: left;">而对于我而言，写作最容易的事情就是回顾、整理和总结，我曾经做了很多的笔记、书签，应该好好整理、总结一下了。</p>
+<p style="text-align: left;">日子一天天过，事情一件件做，坚持才能有收获。</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/19/thoughts-on-reading-the-story-of-tianyan/">读《天眼》悬念小说所得</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-19T00:00:00+08:00" pubdate data-updated="true">Jun 19<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/06/19/thoughts-on-reading-the-story-of-tianyan/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>《天眼》这篇小说围绕着&ldquo;盒子&rdquo;展开，故事情节跌宕起伏，用了一天时间一口气读完。虽然并应该花这么多的时间做这样的阅读消遣，但是奈何时间已经花费了，索性把自己的收获记录一番。</p>
+<p>读过这篇小说，我在思考一个问题，如何写好故事？特别是如何写好教育故事和学习故事？作为教师或者学习者是否也可以写出类似引人入胜的故事？我想这种教育或学习过程的记录，同样也是问题解决的过程，同样能反映教学者或者学习者的所经所感，也就有机会反映和记录真实的专业成长过程或个人学习过程。</p>
+<p>在经历了一次次劫难之后，潇伟和赵颖终于走到一起，有情人总成眷属，但也总会有不圆满，阿雪还是最后的任务中撒手人寰。经历了这么多的事情，主人公也再重新审视人生之意义，辗转几代人，几多英雄，几多磨难，到底为何执着。最后男女主人公又共同打开了雌匣，揭起新的不可预测的故事开端，笔锋戛然而止。</p>
+<p>人生的重大问题永远值得思考：人生意义何在？如何找到自己真正按兴趣的事情？如何把自己感兴趣的事情做到最好？</p>
+<p>但是答案却永远在变！</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/19/3-principles-of-success/">成功的三大原则</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-19T00:00:00+08:00" pubdate data-updated="true">Jun 19<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/06/19/3-principles-of-success/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>智慧 努力 运气</p>
+<p>运气原则=主体行为与环境条件恰好相符，因此人应该依照外环境条件行事</p>
+<p>等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒</p>
+<p>智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。</p>
+<p>除此之外，一个人要想成功还需要勇气，改变自我和外部环境的勇气。</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/16/iphone4-siri-tips/">Iphone4越狱后升级siri结果只好刷机</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-16T00:00:00+08:00" pubdate data-updated="true">Jun 16<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/06/16/iphone4-siri-tips/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。</p>
+<p>尝试了很多办法都不行，比如再次越狱（jailbreak程序会中途终止），最后只好刷机，但是刷机也遇到了错误，如果使用5.0.1固件的话总是会出现3194或者3104错误，于是只好使用5.1.1最新版本，但是出现了一次1604的错误，后来查了一下要保证手机进入dfu模式，也就是屏幕显示itunes图标，并且移除所有usb设别，再试成功刷成了5.1.1，没事瞎折腾啥，一天的时间都耗进去了。</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/">在iphone4 5.1.1上也能安装siri</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-15T00:00:00+08:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
+2. 备份iPhone 4<br />
+3. 下载absinthe 2.0.4 , 以管理员方式运行，破解完成，出现Cydia<br />
+4. 恢复备份<br />
+5. 在Cydia里添加源 repo.siriport.ru,<br />
+然后寻找SiriPort(original)安装之。然后重启IpHONE4.<br />
+然后在SAFARI里输入siriport.ru/siriport_ru_original.pem，安装证书。然后再次重启。<br />
+6. 在Settings-General-Enable SIRI启动SIRI。ENJOY!</blockquote>人啊，总是造成了严重后果的时候，再会后悔不该当初，才知道节制和让步。<br /><br /><br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>Chunlei is lazy, but he wants do something.</p>
+</section>
+
+<section>
+  <h1>新浪微博</h1>
+  <ul id="weibo">
+    <li>
+      <iframe width="100%" 
+	    height="550" 
+		class="share_self"  
+		frameborder="0" 
+		scrolling="no" 
+		src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1692535814&verifier=27e84cd9&dpc=1">
+      </iframe>
+    </li>
+  </ul>
+</section>
+
+
+
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/22/what-robot-can-do-for-me/">what robot can do for me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/21/front-of-class/">front of class</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/rss'>RSS (1)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (6)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/总结'>总结 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (2)</a></li><li><a href='/blog/categories/杂谈'>杂谈 (1)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活观察'>生活观察 (1)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 112%" href="/tag/english/">English</a>
+<a style="font-size: 112%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 112%" href="/tag/github/">github</a>
+<a style="font-size: 143%" href="/tag/linux/">linux</a>
+<a style="font-size: 112%" href="/tag/pck/">pck</a>
+<a style="font-size: 112%" href="/tag/try/">try</a>
+<a style="font-size: 112%" href="/tag/标签云/">标签云</a>
+<a style="font-size: 165%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+	<h1>最新评论</h1>
+	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</section><section>
+  <h1>知识共享协议</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+  本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+</section>
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

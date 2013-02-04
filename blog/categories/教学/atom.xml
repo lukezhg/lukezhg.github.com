@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
+  <link href="http://lukezhg.github.com/blog/categories/教学/atom.xml" rel="self"/>
+  <link href="http://lukezhg.github.com/"/>
+  <updated>2013-02-04T20:53:06+08:00</updated>
+  <id>http://lukezhg.github.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[fighting with plagiarism]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism/"/>
+    <updated>2013-01-11T17:59:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism</id>
+    <content type="html"><![CDATA[<h2>什么是抄袭？</h2>
+
+<p>所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息，但是行文中还是让人产生了误会，这种情况则需要学习和教育。</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>如何鉴别抄袭？</h2>
+
+<p>鉴别抄袭当然可以依赖工具，但实际上更可靠的还是人工鉴别。这需要鉴别者对相关文献以及抄袭者有好的了解，这样就可以对其创造的作品的抄袭可能性作出判断。当然，其实没人愿意做这样的工作，所有的老师都不愿这种情况发生在自己学生身上，所有学生也不愿意被人怀疑抄袭。最好的还是防范抄袭，但是一旦发生了抄袭，教师和学生都应该认真面对，并且把这种谁都不愿意遇到的情况当成一次教育的机会。</p>
+
+<h2>如何应对抄袭？</h2>
+
+<p>有很现成的工具，中文和英文的工具都有。最简单的工具就是搜索引擎，很多抄袭的来源都是互联网，因此搜索时自然就能找到来源。此外还有一些专门的在线工具和软件。</p>
+
+<h2>英语在线工具：</h2>
+
+<p><strong> <a href="http://www.duplichecker.com/">Duplichecker</a>  <br/>
+</strong> <a href="http://www.plagium.com/">Plagium</a>   <br/>
+<strong> <a href="http://www.articlechecker.com/">Articlechecher</a>     <br/>
+</strong></p>
+
+<h2>中文在线工具：</h2>
+
+<p><strong> <a href="http://www.copycheck.net/OnlineCheck.aspx">Copycheck</a>  <br/>
+</strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
+<strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
+</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[宝宝跳跳器——脚手架]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/04/26/baby-jump-helper-scaffolding/"/>
+    <updated>2012-04-26T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/04/26/baby-jump-helper-scaffolding</id>
+    <content type="html"><![CDATA[<p><div align="center"><img style="max-width: 800px;" src="http://img.pconline.com.cn/images/upload/upc/tx/babylib/1006/30/11/33/1277890659953_300x300.jpg" /><br /></div><br /><blockquote><p><font size="2"><span style="font-family: arial,helvetica,sans-serif;">“跳跳器是一种悬挂在门框金属夹具上的塑料椅或布椅。它由链条、弹簧或橡胶和布带构成。宝宝在上面跳起，就可以弹离地面。一些宝宝不喜欢跳跳器，而其他宝宝却很喜爱，直到学会走路。</span></font></p><p><font size="2"><span style="font-family: arial,helvetica,sans-serif;">跳 跳器也有一些问题：夹具可能会松开，带子可能会磨断，从而导致宝宝掉到地上或撞到门框。一些座椅对宝宝的大腿内侧压力过大，导致瘀痕或影响血液循环。安装 跳跳器也具有一定的难度。宝宝长时间使用会导致晕眩，症状与晕船相似。同时还有鞭抽式损伤的危险，因此我们不提倡使用跳跳器。” 摘自：怎样为刚刚学走路的孩子选择用具？ 博闻网: http://health.bowenwang.com.cn/how-to-choose-baby-equipment8.htm</span></font></p></blockquote>今天偶然在路上可到有一个家庭正在给宝宝使用跳跳器，这让我联想到脚手架的原理。宝宝在还没有学会走路的时候，家长有时候会用双手架在宝宝的腋下帮助其承担一部分的重量，这样宝宝就可以在双腿力量上不足够支撑身体重量的时候学习走路，这更我们的脚手架原理是一样的，学习者在教师提供特定帮助下完成学习任务，然后这种帮助会慢慢减少，直到学习者可以独立完成任务。<br /><br />这正应了那句名言“教是为了不教”。<br />还有一句是“不教也是一种教”。<br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[实验教学理论课的教学反思]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/02/20/reflection-on-frist-lesson-of-experimental-teaching/"/>
+    <updated>2012-02-20T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/02/20/reflection-on-frist-lesson-of-experimental-teaching</id>
+    <content type="html"><![CDATA[<p>今天上了实验教学的理论课，一个很深的体会是如果让学生连续听2个半小时的讲座，想让学生一直高度关注是很难的。反过来，让一个教室连续讲上2个半小时，想不累也是很难的。今天这次课就是同时做了这两件事情。<br /><br />成功之处：<br />觉得一些好的例子，是很不错的。比如小学探究热量的案例，光合作用影响因素的案例。此外三盒米饭的例子也很不错。对于思想的形象化解释和比喻也是不错的。在讲解的过程中调动学生的已学知识和概念的做法也是好的。<br /><br />不足之处：<br />总是想让学生动起来，不仅仅是行动起来，同时也是思考起来，活跃起来，更愿意表达核分享，但是同学还是不是十分想敢说。有啥说啥的勇气还是缺乏。<br />另外想讲的内容很多，而且ppt没有大标题标记，显得有些混乱，标题和标题之间的线索有些不清晰了。z老师提出建议其实可以把所有内容概括为三大块，做好大标题标记，并去掉一些多余的案例和干巴巴的理论，会更好。这些建议是中肯的。<br />在语言表的基本功上，我的语言表达能力还需要练习，表达得特别快的时候就会找不到合适的词语或者吐字不清，这点其实要在平时多积累词汇，多写，多说，厚积薄发，自然水到渠成。<br /><br />突发事件：<br />刚开始想使用投影仪，但是发现怎么弄都投不上去，于是换了一个接口，头上去了。<br />讲授的时候发现投影仪接口与前面的讲台很远，于是自己搬了个凳子在加了一个箱子做了一个临时讲台，效果不错。这样可以看电脑上的ppt也可以看到同学的眼睛了。（但是还是应该考虑买一个ppt遥控器）<br />本来想使用ofiice2007的演讲者播放模式，这样可以看自己的笔记同时大屏幕只显示演示内容，但是弄了一些没成功。<br />分组的时候，有两个组一个组全是女生，一个组全是男生，为了男女搭配，我只好让他们重新组合一下，但是有一点强制性了，对不住这两位女同学了，把她们调过去的时候她们可能不是特别乐意。现在想来还是可以让他们私下商量解决的，不必要教师干预。毕竟他们都是成人了。<br /><br />学生见解：<br />有同学提出想借用一楼的微格教室，但是为了管理方便，还是建议他们使用实验教室。但是提前就多练习和操练微格的这个意识是值得充分肯定的，这也说明有些同学确实是非常主动的。<br /><br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Molecular Workbench——在交互模拟中学习科学]]></title>
+    <link href="http://lukezhg.github.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/"/>
+    <updated>2011-12-15T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model</id>
+    <content type="html"><![CDATA[<p>今天收到一封邮件，大意是说Concord Consortium从google.com获得了250万美元的奖励。<br /><br />Concord的分子工作台项目非常让人耳目一新，它将动画模拟、交互、游戏、评价融为一体，此外你还可以根据自己的需求定做和创造适合自己的模型。下面是他们的网站：<br /><br />Molecular Workbench - An Interface to the Molecular World<br />: http://mw.concord.org/modeler/<br /><br />你只需要下载一个Java的程序，就可以在线使用这些交互动画和学习资源。其实类似的项目，曾经也介绍过一个:<br />PhET Interactive Simulations 交互式模拟——在游戏操作中学习 - Open Learning<br />: http://open-learning.appspot.com/131.html<br /><br />不知道两者有怎样的关系？<br /><br />其实作为科学教师，虽然不一定会编程、会做动画，但是要让最新的教学资源和科研成果为己所用，也不失为优秀教师。而我们的教师教育也在这些方面也应该给予相应的关注。<br /><br /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lukezhg.github.com/blog/page/4/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+    <h2>A blog for future.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:lukezhg.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/tag">Tags</a></li>
+  <li><a href="/search">Search</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/">用flash制作试题交互动画项目</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-17T00:00:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件，让稍微动flash甚至是一点都不同flash的老师也能修改并展示自己的试题呢？当然是可以的，但是这个试题交互动画的设计应该数据与源文件分离的，也就是老师不需要修改源文件和代码，只需要修改数据文件就可以。</p>
+<p>制作的思路：<br /> 1、建立界面fla原文件（test.fla）<br /> 2、建立代码文件(xmlloader.as)<br /> 3、建立试题数据xml文件(sample.xml)</p>
+<p>使用代码加载试题数据xml文件，并在动态文本中展示试题，学习者点击选项按钮以及导航按钮参与互动。互动可以分为两种模式，一种是练习模式，一种是测验模式，用户可以自己选择。此外为了使得该动画可以在网站上调用，还增加一个输入文本框，用于导入特定位置的试题数据。</p>
+<p>发布：<br /> 最有作品提供全部文件，并以CC协议中的（署名 非商业使用 相同方式共享）<img src="http://creativecommons.org/icons/by/standard.gif" border="0" alt="by" /> <img src="http://creativecommons.org/icons/nc/standard.gif" border="0" alt="nc" /> <img src="http://creativecommons.org/icons/sa/standard.gif" border="0" alt="nd" />发布。</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/17/blog-quick-post-skills/">快速发布博文的方法与技巧</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-17T00:00:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/17/blog-quick-post-skills/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>发布博客的方法大体上可以分为三类：</p>
+<ol>
+<li>利用本地软件发布博客。比如使用windows live writer等安装在本地电脑上的软件来发博客。这种方法在撰写长博客的时候会非常稳定，不会受到网络的干扰，即便突然断线或者离线，也可以照写不误，同时留有本地备份。但是缺点是并不是所有博客都支持离线发布，而且这个软件也势必要占用磁盘空间，再有发布的时候，如果需要参考网页信息的话，需要来回切换窗口，比较麻烦。 </li>
+<li>利用网络浏览器的插件进行博客发布。比如火狐浏览器的scribefire以及谷歌浏览器的嘉写等。它的优点是你不需要离开网络浏览器，只需要使用快捷键启动插件，就可以发布。同时你可以很方便的引用网页上的文字、网址等信息。尤其是scribefire，它可以分屏显示，上面是特定的网页，引起了你的思考，你就可以按F8快捷键调用该插件，并在下方的编辑区中编写你的博客内容，然后发布。这种方法的好处是不需要再多安装一个软件，而仅仅是对你的浏览器进行一下扩展，再有它也会自动留备份在你的本地电脑，连线的时候也可以写博客，等有了网络再发布。 </li>
+<li>在线编辑博客。这个方法不用多说，大多数用回都用这正方法，缺点对网络依赖非常强，若果一旦不稳定或者浏览器崩溃，你的工作就可能白费。优点是最少的占用你的本地资源，而且所有的可能功能都容易实现。其实使用的时候可以利用一些技巧，比如为你写博客的网址建立一个书签或者鼠标手势，并保存密码登录（限个人电脑），这样你只要点击一下书签或者画一个手势，就自动进入编辑页面了，效率大大提高。</li>
+</ol></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/16/low-efficiency-start-from-lost-control/">低效率从失控开始</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-16T00:00:00+08:00" pubdate data-updated="true">Dec 16<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/16/low-efficiency-start-from-lost-control/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>不久前曾经看过一本书，叫《out of control》，中文名叫失控，不过只看了开头。书中介绍人类设计的系统最终会走向失控。<br /><br />其实，不仅仅是人类设计的机器会失控。其实人本身又何尝不是。总是有那么几次，自己很难控制自己去做某些重要的事情，而偏偏做了一些并不重要的无关的事情，这就是失控。失控是低效率的罪魁祸首，同时好像又避免不了，至少对于我而言是这样的。每次忙完一周之后，原本打算干点正事，但是总是被一些电脑的、网络技术的一些并不太重要问题和事情纠缠掉所有的时间。而重要的事情，则再次落空。长此以往，很难成功。<br /><br />从这些失败的教训让我反思，失控是一种常态，我们能做的是控制失控的程度，不至于让它产生过于严重的危害。比如避免成瘾，避免危险，避免死循环等等，恰当的学会失控，顺其自然也学比一味的约束自己有用。<br /><br />为什么会失控呢，这是本能以及周遭的环境再作祟。<br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/">Molecular Workbench——在交互模拟中学习科学</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-15T00:00:00+08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天收到一封邮件，大意是说Concord Consortium从google.com获得了250万美元的奖励。<br /><br />Concord的分子工作台项目非常让人耳目一新，它将动画模拟、交互、游戏、评价融为一体，此外你还可以根据自己的需求定做和创造适合自己的模型。下面是他们的网站：<br /><br />Molecular Workbench - An Interface to the Molecular World<br />: http://mw.concord.org/modeler/<br /><br />你只需要下载一个Java的程序，就可以在线使用这些交互动画和学习资源。其实类似的项目，曾经也介绍过一个:<br />PhET Interactive Simulations 交互式模拟——在游戏操作中学习 - Open Learning<br />: http://open-learning.appspot.com/131.html<br /><br />不知道两者有怎样的关系？<br /><br />其实作为科学教师，虽然不一定会编程、会做动画，但是要让最新的教学资源和科研成果为己所用，也不失为优秀教师。而我们的教师教育也在这些方面也应该给予相应的关注。<br /><br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/14/how-to-let-micro-blog-syn-with-chinese-blogs/">如何将micro Blog自动同步到国内博客</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-14T00:00:00+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/14/how-to-let-micro-blog-syn-with-chinese-blogs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>用GAE架设的<a target="_blank" href="http://micolog.xuming.net/zh-cn">micro blog</a>非常不错，唯一的缺憾就是国内的朋友看不到，为什么看不到，我想你懂的。为了弥补这个缺憾，我就想把micro blog同步到国内的某个博客上，但似乎很难，因为国内的博客服务器也“看不到”我们appspot.com上的mblog。怎么办？于是搜索，尝试，终于找到一种暂行的方法：<br /><br />首先把micro blog的RSS变为国内能访问的RSS，我选用的是Feed43（<a target="_blank" href="http://feed43.com/">http://feed43.com/</a>）。这步解决了，其他的就好解决了。这里有一个教程：feed43使用教程 - Unique Slacker - 博客大巴: <a target="_blank" href="http://kenzone.blogbus.com/logs/2295747.html">http://kenzone.blogbus.com/logs/2295747.html</a><br /><br />然后把RSS转换为html代码直接插入到网页上，我用的是RSS2html（<a target="_blank" href="http://rss.bloople.net/">http://rss.bloople.net/</a>）。比如在博客大巴上插入自定义html就可以了。<br /><br />费了吃奶的劲，终于把外面的内容转移到了里面，何苦呢！中国人总是自己个自己下套。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/10/poem-rou-guang/">柔光</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-10T00:00:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/10/poem-rou-guang/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><div align="center"><big><big><big>绿油油的天啊<br /><br />波光荡漾<br /><br />小河里的水啊<br /><br />欢快的流淌<br /><br /><br />是谁让我倾心向往<br /><br />是……<br /><br />是希望，是梦想<br /><br />是照亮你我心底的那缕柔光<br /></big></big></big></div></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps/">常用概念图制作软件和在线工具</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-03T00:00:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>概念图制作软件下载地址：<br />Download - FreeMind: <a target="_blank" href="http://freemind.sourceforge.net/wiki/index.php/Download">http://freemind.sourceforge.net/wiki/index.php/Download</a><br />Download XMind - XMind - Mind Mapping and Storming: <a target="_blank" href="http://www.xmind.net/downloads/">http://www.xmind.net/downloads/</a><br />IHMC CmapTools - Download: <a target="_blank" href="http://cmap.ihmc.us/download/">http://cmap.ihmc.us/download/</a><br /><br />概念图制作在线工具网址：<br />Mind42.com - Collaborative mind mapping in your browser<br />: <a target="_blank" href="http://www.mind42.com/">http://www.mind42.com/</a><br /><br />Mind Mapping and Brainstorming Software - Mindomo<br />: <a target="_blank" href="http://www.mindomo.com/">http://www.mindomo.com/</a><br /><br />Online Mind Mapping and Brainstorming - MindMeister<br />: <a target="_blank" href="http://www.mindmeister.com/">http://www.mindmeister.com/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/01/PBL-based-learning-knowledge-sharing/">基于问题的学习和知识分享（PBL &　PBS）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-01T00:00:00+08:00" pubdate data-updated="true">Dec 1<span>st</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/01/PBL-based-learning-knowledge-sharing/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我们在教学和学习的过程中，经常会使用到基于问题的学习（problem-based Learning）策略。原因很简单，因为人们经常是为了现在解决遇到的问题而学习的，而不是为了解决未来的问题而做准备，因为问题是很难预知的。遇到了，才知道。<br /><br />在基于问题的学习中，学习者可以基于自己的兴趣扩展学习，去查阅资料，却做尝试和实验，此外还要肩负起监控和调整自己学习过程的重担，元认知也能够得到锻炼。如果不能达到这些，这种教学策略对于学习成效的提高就很难起到帮助。<br /><br />我们不仅可以围绕问题展开学习，同样的我们也应该围绕问题展开知识的分享。在围绕问题分享知识的时候，我们要做三件事情：<br /><ol><li>具体清晰的描述自己遇到问题和自己想达成的目标。</li><li>给出问题解决的关键思想和具体解决步骤。</li><li>提供相关的扩展阅读的资料和参考文献。</li></ol>学习者完全可以只用这三个环节来分享知识，这会使得知识的交流的焦点更为集中，分享更有针对性和成效性。通常我们经常缺乏清晰描述自己问题的意识，以至于自己的解决方案究竟在遇到什么问题时才会派上用场也不清楚。还有就是只关注了给出具体的步骤，但是并没有提炼问题解决的核心思想，这样容易让读者只有步骤细节，而缺乏整体观，很容易产生误解和迷惑。此外，提供信息的参考来源有利于让读者了解信息的前前后后，或者为了进一步扩展阅读提供了可能。<br /><br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/11/30/the-heart-beat-of-airconditioner/">会心跳的空调</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-30T00:00:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/11/30/the-heart-beat-of-airconditioner/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天天气不好，一直下着小雨，雨不是很大，但是借着较强的风势，横飞乱舞，打着伞身子也会被淋湿了一半。回到家，坐在办公桌前面打开电脑，正准备做一个flash演示文稿模板，突然听到一种很奇怪的声音，嘭~啪~嘭~啪~，周而复始，有点像流水的声音，又好像似一个人的心跳，但是家里明明只有我一个人。<br /><br />于是仗着胆子站起身来，细听声音的来处，原来就是侧对着办公桌的哪个空调发出的声音。好奇怪啊，这个空调明明没有开，怎么会有声音呢。外面的风刮的更厉害了，又传来了嘭啪嘭啪的声音，于是猜想是不是与这风有关系呢？本来想静下来做点事情的，这个空调老是给我执照噪音怎么行呢，于是就开始想解决的办法。<br /><br />我猜想可能是风速变化很大，时快时慢，使得空调的循环管受的压力不断变化，进而造成里面的液体的震荡所以产生了这种类似“心跳”的声音。加入这种猜想成立的话，如何解决呢? 首先想到的是用一个大塑料袋子把空调的风扇整个包起来来，这样这个风扇的管道就不对外开放了，但是找了一会没找到合适的袋子，而且风扇在阳台栏杆的外面，需要越过栏杆才能将其罩住，栏杆很脏，而且有一定危险性，于是放弃了这种方法。那么怎么办呢？<br /><br />仔细想了一下，由于天气有点冷，房子的门窗都关着，整个房子就好像一个秘密的容器，只有空调的循环管与外面相连，由于风速变化造成压力变化，所以会传来空调的心跳声。对了，如果我在打开一个通道不久行了嘛，于是我就把阳台的拉门打开了，果然空调的心跳停下来了，问题解决！<br /><br /><br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/11/30/flash-learning-resources-1/">Flash动画制作视频学习资源</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-30T00:00:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/11/30/flash-learning-resources-1/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>flash实例教程:幻灯片动画 - 视频 - 优酷视频 - 在线观看<br />: http://v.youku.com/v_show/id_XMzA3NjAwNTQ0.html<br /><br />倪栋老师教程网<br />: http://www.keepwalk.com/2010/<br /><br />Flash CS4动画设计与制作300例 - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_5128246.html<br /><br />Adobe.Flash.CS4专业版高级教程 - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_4213977.html<br /><br />Adobe Flash Catalyst - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_5222497.html<br /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/5/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/3/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>Chunlei is lazy, but he wants do something.</p>
+</section>
+
+<section>
+  <h1>新浪微博</h1>
+  <ul id="weibo">
+    <li>
+      <iframe width="100%" 
+	    height="550" 
+		class="share_self"  
+		frameborder="0" 
+		scrolling="no" 
+		src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1692535814&verifier=27e84cd9&dpc=1">
+      </iframe>
+    </li>
+  </ul>
+</section>
+
+
+
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/22/what-robot-can-do-for-me/">what robot can do for me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/21/front-of-class/">front of class</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/rss'>RSS (1)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (6)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/总结'>总结 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (2)</a></li><li><a href='/blog/categories/杂谈'>杂谈 (1)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活观察'>生活观察 (1)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 112%" href="/tag/english/">English</a>
+<a style="font-size: 112%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 112%" href="/tag/github/">github</a>
+<a style="font-size: 143%" href="/tag/linux/">linux</a>
+<a style="font-size: 112%" href="/tag/pck/">pck</a>
+<a style="font-size: 112%" href="/tag/try/">try</a>
+<a style="font-size: 112%" href="/tag/标签云/">标签云</a>
+<a style="font-size: 165%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+	<h1>最新评论</h1>
+	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</section><section>
+  <h1>知识共享协议</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+  本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+</section>
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
