@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: ubuntu | Chunlei's Blog]]></title>
+  <link href="http://lukezhg.github.com/tag/ubuntu/atom.xml" rel="self"/>
+  <link href="http://lukezhg.github.com/"/>
+  <updated>2013-02-04T18:12:22+08:00</updated>
+  <id>http://lukezhg.github.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[try to use ubuntu to press]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
+    <updated>2013-02-04T12:17:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
+    <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
+终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
+
+<p>其实我是把windows下的所有博客项目有关的文件都拷贝到了ubuntu中来，然后在布置好环境的基础上实现正常使用的，居然真的可以。</p>
+
+<p>下面把遇到的问题记录汇总如下：<br/>
+一、安装和使用ubuntu过程中遇到的问题：<br/>
+1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。<br/>
+2  安装ubuntu显卡驱动
+3  无线链接不能建立，尽管密码正确。</p>
+
+<p>二、安装git和ruby遇到的问题：
+1  更新git版本耗时过长以至于不能完成<br/>
+2  使用rvm安装ruby时找不到1.9.3版本</p>
+
+<p>三、布置octopress遇到的问题：<br/>
+1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
+2 使用rake generate命令时报错</p>
+
+<p>问题解决方法：<br/>
+1.1  选择了一个64位的amd版本的ubuntu进行安装。<br/>
+<a href="http://releases.ubuntu.com/12.04/">Ubuntu 12.04.1 LTS</a></p>
+
+<p>1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。<br/>
+<a href="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&amp;product=2.4.1.3.42&amp;lang=English">AMD Catalyst™ Proprietary Display Driver - Linux x86 &amp; Linux x86_64</a></p>
+
+<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。</p>
+
+<p>2.1  使用https:而不是git:, 有可能是git被封造成的。<br/>
+参考：<a href="http://www.linuxidc.com/Linux/2012-09/71193.htm">Ubuntu git 安装和使用</a>
+将git clone git://git.kernel.org/pub/scm/git/git.git<br/>
+改为：git clone https://git.kernel.org/pub/scm/git/git.git</p>
+
+<p>2.2  跟换gem源，使用淘宝提供的源。<br/>
+参考：<a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
+替换 gem 的 source：<br/>
+$ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
+
+<p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
+
+<p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
+
+<p>在摸索过程中经常使用的命令： <br/>
+1 sudo apt-get install appname<br/>
+2 rvm list known<br/>
+3 rvm list<br/>
+4 vi filename<br/>
+5 gedit filename<br/>
+6 rake generate<br/>
+7 rake preview<br/>
+8 rake deploy<br/>
+9 rake new_post["post title"]</p>
+
+<p>参考文章：<br/>
+1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
+2  <a href="http://yangdd.github.com/blog/2012/09/14/issue/">使用Octopress遇到的问题 - 长老的 Octopress Blog</a></p>
+]]></content>
+  </entry>
+  
+</feed>
