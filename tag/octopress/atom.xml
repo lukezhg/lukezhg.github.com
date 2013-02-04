@@ -4,7 +4,7 @@
   <title><![CDATA[tags: octopress | Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/tag/octopress/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T18:12:22+08:00</updated>
+  <updated>2013-02-04T20:35:48+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -31,7 +31,8 @@
 
 <p>二、安装git和ruby遇到的问题：
 1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本</p>
+2  使用rvm安装ruby时找不到1.9.3版本<br/>
+3  如何设置让打开终端时自动加载rvm</p>
 
 <p>三、布置octopress遇到的问题：<br/>
 1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
@@ -56,6 +57,13 @@
 替换 gem 的 source：<br/>
 $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 
+<p>2.3  更改.bash_profile<br/>
+参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
+在$HOME/.bash_profile文件中添加如下内容：<br/>
+[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.  <br/>
+以便在开启一个终端会话时候加载RVM<br/>
+或者手动键入：$ source ~/.rvm/scripts/rvm</p>
+
 <p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
 
 <p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
@@ -69,7 +77,13 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 6 rake generate<br/>
 7 rake preview<br/>
 8 rake deploy<br/>
-9 rake new_post["post title"]</p>
+9 rake new_post["post title"]<br/>
+cp  复制文件 到另外一个目录<br/>
+mkdir 目录名创建一个目录<br/>
+rmdir 空目录名删除一个空目录<br/>
+rm 文件名文件名删除一个文件或多个文件<br/>
+rm –rf 非空目录名删除一个非空目录下的一切<br/>
+touch 文件名创建一个空文件</p>
 
 <p>参考文章：<br/>
 1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>

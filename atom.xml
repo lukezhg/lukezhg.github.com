@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T18:12:22+08:00</updated>
+  <updated>2013-02-04T20:35:48+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[try]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/02/04/try/"/>
-    <updated>2013-02-04T15:12:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/02/04/try</id>
-    <content type="html"><![CDATA[<p>try just another time</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[try to use ubuntu to press]]></title>
@@ -40,7 +31,8 @@
 
 <p>二、安装git和ruby遇到的问题：
 1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本</p>
+2  使用rvm安装ruby时找不到1.9.3版本<br/>
+3  如何设置让打开终端时自动加载rvm</p>
 
 <p>三、布置octopress遇到的问题：<br/>
 1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
@@ -65,6 +57,13 @@
 替换 gem 的 source：<br/>
 $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 
+<p>2.3  更改.bash_profile<br/>
+参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
+在$HOME/.bash_profile文件中添加如下内容：<br/>
+[[ -s &#8220;$HOME/.rvm/scripts/rvm&#8221; ]] &amp;&amp; . &#8220;$HOME/.rvm/scripts/rvm&#8221; # This loads RVM into a shell session.  <br/>
+以便在开启一个终端会话时候加载RVM<br/>
+或者手动键入：$ source ~/.rvm/scripts/rvm</p>
+
 <p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
 
 <p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
@@ -78,7 +77,13 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 6 rake generate<br/>
 7 rake preview<br/>
 8 rake deploy<br/>
-9 rake new_post[&#8220;post title&#8221;]</p>
+9 rake new_post[&#8220;post title&#8221;]<br/>
+cp  复制文件 到另外一个目录<br/>
+mkdir 目录名创建一个目录<br/>
+rmdir 空目录名删除一个空目录<br/>
+rm 文件名文件名删除一个文件或多个文件<br/>
+rm –rf 非空目录名删除一个非空目录下的一切<br/>
+touch 文件名创建一个空文件</p>
 
 <p>参考文章：<br/>
 1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
@@ -462,6 +467,22 @@ can you see it.</p>
     <id>http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips</id>
     <content type="html"><![CDATA[<p><p>手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。</p>
 <p>尝试了很多办法都不行，比如再次越狱（jailbreak程序会中途终止），最后只好刷机，但是刷机也遇到了错误，如果使用5.0.1固件的话总是会出现3194或者3104错误，于是只好使用5.1.1最新版本，但是出现了一次1604的错误，后来查了一下要保证手机进入dfu模式，也就是屏幕显示itunes图标，并且移除所有usb设别，再试成功刷成了5.1.1，没事瞎折腾啥，一天的时间都耗进去了。</p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在iphone4 5.1.1上也能安装siri]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
+    <updated>2012-06-15T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
+    <content type="html"><![CDATA[<p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
+2. 备份iPhone 4<br />
+3. 下载absinthe 2.0.4 , 以管理员方式运行，破解完成，出现Cydia<br />
+4. 恢复备份<br />
+5. 在Cydia里添加源 repo.siriport.ru,<br />
+然后寻找SiriPort(original)安装之。然后重启IpHONE4.<br />
+然后在SAFARI里输入siriport.ru/siriport_ru_original.pem，安装证书。然后再次重启。<br />
+6. 在Settings-General-Enable SIRI启动SIRI。ENJOY!</blockquote>人啊，总是造成了严重后果的时候，再会后悔不该当初，才知道节制和让步。<br /><br /><br /></p>
 ]]></content>
   </entry>
   

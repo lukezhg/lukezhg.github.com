@@ -9,8 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="try just another time
-">
+  <meta name="description" content="以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。
+终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,44 +74,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/04/try/">Try</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-04T15:12:00+08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/04/try/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>try just another time</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">Try to Use Ubuntu to Press</a></h1>
     
     
@@ -150,7 +112,8 @@
 
 <p>二、安装git和ruby遇到的问题：
 1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本</p>
+2  使用rvm安装ruby时找不到1.9.3版本<br/>
+3  如何设置让打开终端时自动加载rvm</p>
 
 <p>三、布置octopress遇到的问题：<br/>
 1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
@@ -175,6 +138,13 @@
 替换 gem 的 source：<br/>
 $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 
+<p>2.3  更改.bash_profile<br/>
+参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
+在$HOME/.bash_profile文件中添加如下内容：<br/>
+[[ -s &#8220;$HOME/.rvm/scripts/rvm&#8221; ]] &amp;&amp; . &#8220;$HOME/.rvm/scripts/rvm&#8221; # This loads RVM into a shell session.  <br/>
+以便在开启一个终端会话时候加载RVM<br/>
+或者手动键入：$ source ~/.rvm/scripts/rvm</p>
+
 <p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
 
 <p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
@@ -188,7 +158,13 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 6 rake generate<br/>
 7 rake preview<br/>
 8 rake deploy<br/>
-9 rake new_post[&#8220;post title&#8221;]</p>
+9 rake new_post[&#8220;post title&#8221;]<br/>
+cp  复制文件 到另外一个目录<br/>
+mkdir 目录名创建一个目录<br/>
+rmdir 空目录名删除一个空目录<br/>
+rm 文件名文件名删除一个文件或多个文件<br/>
+rm –rf 非空目录名删除一个非空目录下的一切<br/>
+touch 文件名创建一个空文件</p>
 
 <p>参考文章：<br/>
 1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
@@ -549,6 +525,47 @@ what will the robot do for us in future.</p>
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/30/debug-is-hard/">Debug Is Hard</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-30T01:14:00+08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/30/debug-is-hard/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The hard thing si debug.<br/>
+how can we make it more easier!</p>
+
+<p>It would be better if you avoid it before meet it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -587,10 +604,6 @@ what will the robot do for us in future.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/02/04/try/">try</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
       </li>
     
@@ -604,6 +617,10 @@ what will the robot do for us in future.</p>
     
       <li class="post">
         <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
       </li>
     
   </ul>
