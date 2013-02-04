@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2012/12/27/hello/</loc>
+        <lastmod>2012-12-27T18:43:16+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2012/12/27/hi/</loc>
+        <lastmod>2012-12-27T20:36:24+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2012/12/27/why/</loc>
+        <lastmod>2012-12-27T20:42:23+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/</loc>
+        <lastmod>2012-12-27T22:14:01+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/archives/</loc>
+        <lastmod>2012-12-27T22:14:01+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/</loc>
+        <lastmod>2012-12-27T22:14:01+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/random/</loc>
+        <lastmod>2012-12-27T21:02:59+08:00</lastmod>
+    </url>
+</urlset>

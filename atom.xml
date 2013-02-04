@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2012-12-27T23:53:47+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Github Blog with Octopress]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
+    <updated>2012-12-27T21:05:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
+    <content type="html"><![CDATA[<p>不管了，我就用这个editplus干活了，熟悉一个新的工具实在太费时间了。</p>
+
+<p>我先把我搭建的过程罗列下来：<br/>
+1.首先是准备工作，下载和安装必要的软件。<br/>
+2.然后是克隆octopress并安装 <br/>
+3.接下来是将octopress配置好并发布博文。</p>
+
+<p>额外的说明</p>
+
+<blockquote><p>执行rake install如若出错：</p>
+
+<pre><code>$ rake install
+rake aborted!
+You have already activated rake 0.9.2.2, but your Gemfile requires rake 0.9.2. Using bundle exec may solve this.
+(See full trace by running task with --trace)
+</code></pre></blockquote>
+
+<p>==》修正办法为：</p>
+
+<blockquote><pre><code>$ bundle update; rake install  
+</code></pre></blockquote>
+
+<p>参考<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a></p>
+
+<p>添加CNAME文件后不生效==》手动在github网页上文件代码剪贴掉，保存，然后再粘贴回来，保存。</p>
+
+<p>atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
+
+<h3>下面测试markdown语句</h3>
+
+<p>句子的尾部输入两个空格然后回车就可以断行 <br/>
+* 无序项目1 <br/>
+* 项目2 <br/>
+* 项目3  <br/>
+<img src="\images\bird_32_gray.png" alt="Alt text" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[why]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/why/"/>
+    <updated>2012-12-27T20:31:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2012/12/27/why</id>
+    <content type="html"><![CDATA[<p>尝试使用中文</p>
+
+
+<p>这样码字是否是很来啊！<br>
+难道大家都这个种发博客的方法感兴趣？</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hi]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/hi/"/>
+    <updated>2012-12-27T18:52:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2012/12/27/hi</id>
+    <content type="html"><![CDATA[<p>I don&#8217;t konw if I can use editplus to edit this text.
+if you can see it
+then i means I can do it.
+<--read more--></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hello]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/hello/"/>
+    <updated>2012-12-27T18:27:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2012/12/27/hello</id>
+    <content type="html"><![CDATA[<p>this is my first blog using vim to edit.
+can you see it.</p>
+]]></content>
+  </entry>
+  
+</feed>

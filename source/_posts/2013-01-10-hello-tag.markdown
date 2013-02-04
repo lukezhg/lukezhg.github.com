@@ -1,0 +1,11 @@
+---
+layout: post
+title: "hello tag"
+date: 2013-01-10 17:35
+comments: true
+categories: 
+tags: [try,tag-cloud]
+---
+just try to see if the tags work well.  
+<img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/dogbot.jpg"/>  
+what will the robot do for us in future.    

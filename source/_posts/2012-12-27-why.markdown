@@ -1,0 +1,11 @@
+---
+layout: post
+title: "why"
+date: 2012-12-27 20:31
+comments: true
+categories: "try"
+tags: [linux]
+---
+<p>尝试使用中文</p>
+<p>这样码字是否是很来啊！<br>
+难道大家都这个种发博客的方法感兴趣？</p>
