@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T21:45:57+08:00</updated>
+  <updated>2013-02-05T09:29:23+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[xampp]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/02/05/xampp/"/>
+    <updated>2013-02-05T09:23:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/02/05/xampp</id>
+    <content type="html"><![CDATA[<p>参考了网上的教程，使用xampp布置了php开发环境，目前正在摸索中。<br/>
+<a href="http://blog.sina.com.cn/s/blog_659b2b32010154v9.html">ubuntu下关于xampp的配置说明<em>木木齊</em>新浪博客</a><br/>
+下载xampp地址：<a href="http://down.tech.sina.com.cn/page/36356.html">http://down.tech.sina.com.cn/page/36356.html</a></p>
+
+<p>使用技巧待续。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[try to win or lose]]></title>
@@ -470,16 +483,6 @@ can you see it.</p>
 <p>等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒</p>
 <p>智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。</p>
 <p>除此之外，一个人要想成功还需要勇气，改变自我和外部环境的勇气。</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iphone4越狱后升级siri结果只好刷机]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips/"/>
-    <updated>2012-06-16T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips</id>
-    <content type="html"><![CDATA[<p><p>手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。</p>
-<p>尝试了很多办法都不行，比如再次越狱（jailbreak程序会中途终止），最后只好刷机，但是刷机也遇到了错误，如果使用5.0.1固件的话总是会出现3194或者3104错误，于是只好使用5.1.1最新版本，但是出现了一次1604的错误，后来查了一下要保证手机进入dfu模式，也就是屏幕显示itunes图标，并且移除所有usb设别，再试成功刷成了5.1.1，没事瞎折腾啥，一天的时间都耗进去了。</p></p>
 ]]></content>
   </entry>
   
