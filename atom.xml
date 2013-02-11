@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-11T21:19:21+08:00</updated>
+  <updated>2013-02-11T21:50:07+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -103,15 +103,15 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 
 <p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
 
-<p>在摸索过程中经常使用的命令： <br/>
--  sudo apt-get install appname  安装程序应用
--  make install 编译并安装 .tar.gz2 <br/>
--  sh xx.sh  执行.sh文件<br/>
--  sudo su 切换到root用户<br/>
--  sudo exit 推出root用户</p>
+<p>在摸索过程中经常使用的命令：</p>
 
 <ul>
-<li>rvm list known</li>
+<li>sudo apt-get install appname  安装程序应用</li>
+<li>make install 编译并安装 .tar.gz2</li>
+<li>sh xx.sh  执行.sh文件</li>
+<li>sudo su 切换到root用户</li>
+<li><p>sudo exit 推出root用户</p></li>
+<li><p>rvm list known</p></li>
 <li><p>rvm list</p></li>
 <li><p>vi filename</p></li>
 <li><p>gedit filename</p></li>
