@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-18T14:35:44+08:00</updated>
+  <updated>2013-02-18T20:16:05+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,7 +18,8 @@
     <link href="http://lukezhg.github.com/blog/2013/02/17/to-be-a-daddy/"/>
     <updated>2013-02-17T22:02:00+08:00</updated>
     <id>http://lukezhg.github.com/blog/2013/02/17/to-be-a-daddy</id>
-    <content type="html"><![CDATA[<p>时间过的真快，一下子就已经是daddy了。小时候爸爸的种种，现在还记忆犹新。以后自己就会成为小家伙的回忆了，该怎样做一个好父亲呢？</p>
+    <content type="html"><![CDATA[<p>时间过的真快，一下子就已经是daddy了。小时候爸爸的种种，现在还记忆犹新。以后自己就会成为小家伙的回忆了，该怎样做一个好父亲呢？<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/daddy.jpg" alt="Daddy's little baby" /></p>
 
 <h2>daddy需要做的功课：</h2>
 
@@ -29,12 +30,13 @@
 
 <ul>
 <li>打嗝<br/>
-护士的办法是敲宝宝的脚底板，待其哭后打嗝自然消失。</li>
+护士的办法是敲宝宝的脚底板，待其哭后打嗝自然消失。但是这一招有的时候也不管用，而且让宝宝用哭泣的方法停止打嗝未免有点不忍心。所以最好的还是预防。一般打嗝的原因很多，比如吃奶吃的太快，受凉，吸入了冷空气，奶水过凉。预防的方法是一般不要在宝宝极度饥饿或者哭泣的时候的时候喂奶，喂奶可以采用多次少量（当然父母要辛苦了），控制好奶水的温度，注意保暖，避免着凉。</li>
 <li>溢奶<br/>
 拍奶是防止的最好办法，但有时候还是避免不了，所以也可以给宝宝准备一个小围巾。</li>
 <li>脱水<br/>
-如果宝宝长时间上吐下泻，那么就要非常注意宝宝是否脱水。一旦发现宝宝</li>
-<li>感冒</li>
+如果宝宝长时间上吐下泻，那么就要非常注意宝宝是否脱水。一旦发现宝宝长达5个小时没有小便、口唇干燥、哭泣没有眼泪，这时候就要当心宝宝有脱水的危险了。</li>
+<li>感冒<br/>
+感冒分为病毒感冒和伤风感冒。</li>
 <li>便秘</li>
 </ul>
 </li>
@@ -229,26 +231,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 </strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
 <strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
 </strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hello tag]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/10/hello-tag/"/>
-    <updated>2013-01-10T17:35:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/10/hello-tag</id>
-    <content type="html"><![CDATA[<p>just try to see if the tags work well.<br/>
-<img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/dogbot.jpg"/><br/>
-what will the robot do for us in future.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一周回顾]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/10/week-review/"/>
-    <updated>2013-01-10T17:02:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/10/week-review</id>
-    <content type="html"><![CDATA[<p>try</p>
 ]]></content>
   </entry>
   
@@ -525,6 +507,29 @@ can you see it.</p>
 <p>在经历了一次次劫难之后，潇伟和赵颖终于走到一起，有情人总成眷属，但也总会有不圆满，阿雪还是最后的任务中撒手人寰。经历了这么多的事情，主人公也再重新审视人生之意义，辗转几代人，几多英雄，几多磨难，到底为何执着。最后男女主人公又共同打开了雌匣，揭起新的不可预测的故事开端，笔锋戛然而止。</p>
 <p>人生的重大问题永远值得思考：人生意义何在？如何找到自己真正按兴趣的事情？如何把自己感兴趣的事情做到最好？</p>
 <p>但是答案却永远在变！</p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[成功的三大原则]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/06/19/3-principles-of-success/"/>
+    <updated>2012-06-19T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/06/19/3-principles-of-success</id>
+    <content type="html"><![CDATA[<p><p>智慧 努力 运气</p>
+<p>运气原则=主体行为与环境条件恰好相符，因此人应该依照外环境条件行事</p>
+<p>等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒</p>
+<p>智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。</p>
+<p>除此之外，一个人要想成功还需要勇气，改变自我和外部环境的勇气。</p></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iphone4越狱后升级siri结果只好刷机]]></title>
+    <link href="http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips/"/>
+    <updated>2012-06-16T00:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips</id>
+    <content type="html"><![CDATA[<p><p>手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。</p>
+<p>尝试了很多办法都不行，比如再次越狱（jailbreak程序会中途终止），最后只好刷机，但是刷机也遇到了错误，如果使用5.0.1固件的话总是会出现3194或者3104错误，于是只好使用5.1.1最新版本，但是出现了一次1604的错误，后来查了一下要保证手机进入dfu模式，也就是屏幕显示itunes图标，并且移除所有usb设别，再试成功刷成了5.1.1，没事瞎折腾啥，一天的时间都耗进去了。</p></p>
 ]]></content>
   </entry>
   
