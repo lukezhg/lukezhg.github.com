@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-18T21:47:12+08:00</updated>
+  <updated>2013-03-11T22:36:53+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[biology experimental teaching]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/03/11/biology-experimental-teaching/"/>
+    <updated>2013-03-11T21:55:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/03/11/biology-experimental-teaching</id>
+    <content type="html"><![CDATA[<p>今天，第一组完成了观察类实验，第一次进行实验往往是最具有挑战的。因为他们要现去摸索实验准备的过程，教学组织的过程，以及环境的布置和利用等。考虑到这些挑战的要素，对于新手教师来讲，应该说完成的还是很不错的。</p>
+
+<p>第一小组的优点包括：</p>
+
+<h1>提前分工做了预实验和必要的准备工作，特别是实验材料的准备和探索工作。</h1>
+
+<h1>认准准备了课件和学案。</h1>
+
+<h1>从头到尾顺畅的进行衔接，一直到最后完成实验室的清理工作。</h1>
+
+<p>当然也存在一些可以提高的地方：</p>
+
+<h1>时间的把控和设计可以再紧凑一些，每个人讲解的时间，实验操作的时间，分析总结的时间，以及教学反馈的时间都要考虑在内。</h1>
+
+<h1>预想实验教学可能出现的各种情况，在实验材料、活动组织、课件、语言等做好充分的准备。</h1>
+
+<h1>可以预先布置学习任务、分发学案，并把实验设计、反思等及时更新到wikispaces上，督促大家做好实验预习。</h1>
+
+<p>在本次实验过程中，王星同学以及李娜、郑烨两位同学准备都较为充分，语言和教态也较为自然，值得表扬。其实为什么能脱稿，为什么能够应对各种突发状况，本质上离不开充分的准备。这种准备包括对内容的熟悉，对实验操作过程要点的熟悉，对学生特点和行为的预期等等。当然也离不开好的设计，好的设计一定是将内容、教法以及技术环境以较为合适的方式进行了融合的方案。因此大家也可以从这三个方面下下功夫。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[to be a daddy]]></title>
@@ -524,16 +551,6 @@ can you see it.</p>
 <p>等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒</p>
 <p>智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。</p>
 <p>除此之外，一个人要想成功还需要勇气，改变自我和外部环境的勇气。</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iphone4越狱后升级siri结果只好刷机]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips/"/>
-    <updated>2012-06-16T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/16/iphone4-siri-tips</id>
-    <content type="html"><![CDATA[<p><p>手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。</p>
-<p>尝试了很多办法都不行，比如再次越狱（jailbreak程序会中途终止），最后只好刷机，但是刷机也遇到了错误，如果使用5.0.1固件的话总是会出现3194或者3104错误，于是只好使用5.1.1最新版本，但是出现了一次1604的错误，后来查了一下要保证手机进入dfu模式，也就是屏幕显示itunes图标，并且移除所有usb设别，再试成功刷成了5.1.1，没事瞎折腾啥，一天的时间都耗进去了。</p></p>
 ]]></content>
   </entry>
   
