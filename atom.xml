@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-03-11T22:36:53+08:00</updated>
+  <updated>2013-04-04T17:10:23+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[get down to work]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/04/04/get-down-to-work/"/>
+    <updated>2013-04-04T17:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/04/04/get-down-to-work</id>
+    <content type="html"><![CDATA[<p>静下心来做事情是很了不起的品质。<br/>
+快速的静下心来做事情是不得了的品格。</p>
+
+<p>P：关闭ie9标签页显示错误。<br/>
+T：升级为ie10问题仍然存在。<br/>
+T：关闭程序兼容性助手服务，问题仍为解决。<br/>
+S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[biology experimental teaching]]></title>
@@ -239,7 +254,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 <!-- more -->
 
 
-<p></p>
+<blockquote></blockquote>
 
 <h2>如何鉴别抄袭？</h2>
 
@@ -538,19 +553,6 @@ can you see it.</p>
 <p>在经历了一次次劫难之后，潇伟和赵颖终于走到一起，有情人总成眷属，但也总会有不圆满，阿雪还是最后的任务中撒手人寰。经历了这么多的事情，主人公也再重新审视人生之意义，辗转几代人，几多英雄，几多磨难，到底为何执着。最后男女主人公又共同打开了雌匣，揭起新的不可预测的故事开端，笔锋戛然而止。</p>
 <p>人生的重大问题永远值得思考：人生意义何在？如何找到自己真正按兴趣的事情？如何把自己感兴趣的事情做到最好？</p>
 <p>但是答案却永远在变！</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[成功的三大原则]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/19/3-principles-of-success/"/>
-    <updated>2012-06-19T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/19/3-principles-of-success</id>
-    <content type="html"><![CDATA[<p><p>智慧 努力 运气</p>
-<p>运气原则=主体行为与环境条件恰好相符，因此人应该依照外环境条件行事</p>
-<p>等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒</p>
-<p>智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。</p>
-<p>除此之外，一个人要想成功还需要勇气，改变自我和外部环境的勇气。</p></p>
 ]]></content>
   </entry>
   
