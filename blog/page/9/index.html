@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="今天讲了测量的2个宏观质量指标的计算，目的是为后面的试卷分析做准备。但是课堂被我上的很沉闷，原因我觉主要在于没有能让这些抽象的公式和学生已有的知识经验拉近关系。其实我曾经遇到过类似的问题，就是在讲某种操作技能的时候，把听众讲的很疲惫。为什么呢？1 &hellip;">
+  <meta name="description" content="讲座式教学在高校中很流行，教师根据讲义宣讲特定的内容，然后考试也考察这些内容。有的老师讲的很精彩，例子贴近学生生活，让学生在平常中发现不平常，深入浅出，发人深思，令人反省。有的老师讲起来则显得干涩，抽象，缺乏互动交流，令人昏昏欲睡。这当然于老师的教学功底、教学经验、学科知识涵养有关， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,82 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/04/26/from-lecture-to-dialouge-what-happens-in-our-instructions/">从宣讲到对话——教学的发生了哪些改变？</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-26T00:00:00+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/04/26/from-lecture-to-dialouge-what-happens-in-our-instructions/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>讲座式教学在高校中很流行，教师根据讲义宣讲特定的内容，然后考试也考察这些内容。有的老师讲的很精彩，例子贴近学生生活，让学生在平常中发现不平常，深入浅出，发人深思，令人反省。有的老师讲起来则显得干涩，抽象，缺乏互动交流，令人昏昏欲睡。这当然于老师的教学功底、教学经验、学科知识涵养有关，要想讲的好绝不是一朝一夕可以成就的。换句话说，一步到位的成果教学是极为困难的。<br /><br />为什么呢？因为学科知识的深入理解需要时间，教学经验的积累也需要时间，问题的优化需要时间，例子的筛选更需要时间，了解学生当然也需要时间。如何达成这些必要条件呢，答案是教学实践，在实践中尝试、摸索、积累、反思。<br /><br />我教学理论说教的系统的备课，如何进行内容分析、学生分析、目标设定、教学过程设计，说的头头是道，但是是不是学了这些理论就能一次性达到成功教学呢？答案是否定的，这些理论知识会有一定的作用，但是根本不能保证一步到位的成功教学，只是愿意教学的本质不是宣讲，而是对话。宣讲是可以完全系统预设的，但是对话无法完全预设，就好像打乒乓球一样，你发出去的球，学生可能接得住也可能接不住，接到的球的方向你也无法完全确定，只有当你和学生在这个比赛中充分熟悉之后，你才能有更好的预判。教学也是如此，与其期望由教育理论构造出一种似乎可以一步到位的教学设计步骤，倒不如帮助准教师学会对话，学会教学反思，在实践的过程中快速成长。<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=06af6d35-ece5-8053-a049-680e2a6c61dd" /></div></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/">终于能在ubuntu10.04与xp之间自由切换了</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-05T00:00:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前些天，在一番穷折腾之后（Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始 « chunlei&#8217;s blog: http://sociallearnlab.org/chunlei/2011/03/27/archives/180），终于把启动的问题解决了。<br /><br />问题表现：能够更改bios的启动顺序来选择要启动的系统，但是不能自己在grub4dos下启动ubuntu10.04。<br />解决过程：先下载最新版本的grub4dos,解压缩后，把其中的grldr和menu.lst两个文件拷贝到c盘根目录下。<br />替换menu.lst的内容如下：<br /><blockquote>timeout 10<br />default /default<br />title Ubuntu 10.04<br />find /boot/grub/core.img<br />root (hd1,1)<br />kernel /boot/grub/core.img<br />boot<br /></blockquote>修改C盘根目录的boot.ini，在最后加上一行 c:\grldr=&#8221;grub4dos&#8221;。方法，我的电脑-右键属性-高级-启动与故障修复-设置-编辑-保存即可。<br /><br />但是尝试了几次，都提示错误，找不到文件。后来我在ubuntu上没有安装grub，并且用手工的方式确定了ubuntu所在位置为 （hd1,1）修改了menu.lst后问题解决！吼！<br /><br /><br />关于grub4dos的使用参考和修改boot.ini请参考：在移动硬盘中安装ubuntu的一点小问题解决_游走江湖_百度空间: http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a0016852-a3bc-8474-8036-61a54f84cf0e" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -372,82 +448,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/09/informal-learing/">什么是非正式学习，这就是非正式学习</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-09T00:00:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/09/informal-learing/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>真的很巧，做班车时遇到2两位科教同行，一个是课程所的裴老师，一个是脑科学认知的陈老师。一聊结果陈老师是更我来自一个学校，且曾经是我师姐的同事。世界真小！<br /><br />其实我是偶然听到这两位再聊“解构、变构”什么的，聊学习科学在课堂教学中遇到的困难，聊最近裴老师出的一本新书“变构模型”。我就猜到了，这是同行兼同事。<br /><br />后来，我忍不住了，插入进去，先自我介绍，互相通报姓名，于是就认识了。<br /><br />裴老师还给了我很多其他有用的学术信息，真好。你看，就是在这不经意间学习就发生了，学习的网络就初步建立起来了，什么是非正式学习，这就是非正式学习。<br /><br />&#8212;&#8212;&#8212;&#8211;<br />学习科学研究中心：<br />http://lsc.ecnu.edu.cn/yjry/index.htm<br /><br />学习究竟是什么*<br />——焦尔当⋅安德烈教授访谈录<br />载《全球教育展望》2008-1,第13-20 页<br />裴新宁                   <a href="http://blog.sina.com.cn/peixinning">http://blog.sina.com.cn/peixinning</a><br />http://www.ldes.unige.ch/ang/actu/modeleAlloChine/interviewChinese.pdf<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=884a5cbb-fd26-83bd-b798-25d51bf662a8" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/03/lecture-of-Semantic-Web-and-interactive-use-of-data/">语义网和数据的交互使用性讲座</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-03T00:00:00+08:00" pubdate data-updated="true">Mar 3<span>rd</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/03/lecture-of-Semantic-Web-and-interactive-use-of-data/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Semantics and Interoperability - The last 40 Years<br />Reported by Erich J. Neuhold<br />http://news.ecnu.edu.cn/academic/2011/2011,academic,077727.shtml<br /><br />数据结构在变化，人们想使得不同类型的数据，不仅能让人阅读和理解，同时也能让电脑和程序使用，并且为各种程序应用服务提供方便。<br /><br />关于语义网，或者NLP，一个激动人心的新闻就是前不久IBＭ创造的watson在Jeopardy决赛中获胜（IBM - Final Jeopardy! and the Future of Watson: <a title="http://www-943.ibm.com/innovation/us/watson/what-is-watson/the-future-of-watson.html/" data-expanded-url="http://www-943.ibm.com/innovation/us/watson/what-is-watson/the-future-of-watson.html/" href="http://tinyurl.com/6gx4j65" target="_blank" rel="nofollow" class="twitter-timeline-link">http://tinyurl.com/6gx4j65</a>）。<br /><br />而我觉得，并不是改变或者统一使用某种格式的文档就能解决问题，当让做某种限制比如统一使用xml文档确实有利于简化环境。但这不是根本的，根本的解决办法还是要让电脑更聪明，人能够理解的，电脑也应该能够理解，否则就是个笨程序，你说呢？<br /><br />对于树形结构的研究也许的确是可行的方向，不知道watson是如何思考的？<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=968f9ad0-d3d8-8488-a136-effe061b634c" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/10/">&larr; Older</a>
@@ -461,6 +461,8 @@
 <aside class="sidebar">
   
     <section>
+<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://zhangchunlei.com/', 'user' : 1092323, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2013-04-29', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www2.clustrmaps.com/user/d1910aae3"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/zhangchunlei.com--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+</section><section>
   <h1>About Me</h1>
   <p>Chunlei is lazy, but he wants do something.</p>
 </section>
@@ -492,7 +494,15 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/04/04/win7-tab-close-error/">win7 tab close error</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/04/get-down-to-work/">get down to work</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/04/The-mission-film-reflection/">电影《教会》观感</a>
       </li>
     
       <li class="post">
@@ -503,19 +513,11 @@
         <a href="/blog/2013/02/17/to-be-a-daddy/">to be a daddy</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/02/05/xampp/">xampp</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/04/try-to-win-or-lose/">try to win or lose</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (5)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (3)</a></li><li><a href='/blog/categories/日志'>日志 (3)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活'>生活 (2)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (5)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (5)</a></li><li><a href='/blog/categories/教学'>教学 (3)</a></li><li><a href='/blog/categories/日志'>日志 (3)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活'>生活 (2)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>

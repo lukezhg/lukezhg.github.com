@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-04-04T17:25:03+08:00</updated>
+  <updated>2013-05-05T19:54:17+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,6 +14,18 @@
 
   
   <entry>
+    <title type="html"><![CDATA[win7 tab close error]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error/"/>
+    <updated>2013-04-04T17:46:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error</id>
+    <content type="html"><![CDATA[<p>P：关闭ie9标签页显示错误。<br/>
+T：升级为ie10问题仍然存在。<br/>
+T：关闭程序兼容性助手服务，问题仍为解决。<br/>
+S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[get down to work]]></title>
     <link href="http://lukezhg.github.com/blog/2013/04/04/get-down-to-work/"/>
     <updated>2013-04-04T17:00:00+08:00</updated>
@@ -21,10 +33,35 @@
     <content type="html"><![CDATA[<p>静下心来做事情是很了不起的品质。<br/>
 快速的静下心来做事情是不得了的品格。</p>
 
-<p>P：关闭ie9标签页显示错误。<br/>
-T：升级为ie10问题仍然存在。<br/>
-T：关闭程序兼容性助手服务，问题仍为解决。<br/>
-S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
+<p>回顾过去总结教训是了不起的品质。<br/>
+周期行的回顾并找出未来行动的参考是不得了的品格。<br/>
+-   资料文本的回顾<br/>
+-   文章的回顾<br/>
+-   时间和行为的回顾</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[电影《教会》观感]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/04/04/The-mission-film-reflection/"/>
+    <updated>2013-04-04T17:00:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/04/04/The-mission-film-reflection</id>
+    <content type="html"><![CDATA[<p>电影描述的是发生在葡萄牙与西班牙边境的一个土著印第安部落的故事。故事大约发生在17世纪。当地政府默许抓捕印第安人，并作为奴隶贩卖，进而从中谋利。但是一个传教士经过一番周折，先到达了部落并且被土著居民所接纳。但是奴隶抓捕运动并没有结束，一个抓捕印第安人的雇佣兵因为愤怒，在决斗中杀死了自己的亲弟弟。对于此事他始终不能释怀，于是他来到教会，并想绝食致死。在神父的激将下，他背着一个沉重的包袱，爬上非常陡峭的瀑布，逆流而上来到印第安土著的居住地。印第安人认出了他，但看到他被包袱拖累的悲惨样子，原本威胁他的匕首反而帮他可断捆绑包袱的绳索。印第安人原谅了他。他也加入了教会，成为一名传教士，并和神父一起建立一个教堂。政府想使得抓捕当地印第安人合法化，但是教会则要庇护它的信徒。于是红衣主教特地赶来仲裁。迫于政府压力，红衣主教选择了牺牲当地印第安人，并让所有传教士撤离。但是神父和佣兵都留了下来，他们用不同的方式进行抵抗，但仍然难逃厄运。</p>
+
+<p>悲剧总是让人印象格外深刻。</p>
+
+<p>佣兵本来最后是有机会拉响炸药的，但是他看到一个小男孩中枪，他的伙伴想救他，他选择了先去救这个小男孩。于是他错过了拉响炸药的机会，并中枪倒下。</p>
+
+<p>这是一个悲剧，佣兵选择了用武力保卫印第安部落。神父选择了用仁慈和舍生取义的精神来保护。但是都没有成功。</p>
+
+<p>从战争的角度讲，佣兵安排的战斗策略是失误的：<br/>
+1   没有利用天险瀑布悬崖<br/>
+2   没有利用土著人善于水中作战的特点
+3   没有利用森林进行运动战和埋伏战
+4   没有转移老幼妇孺，避免不必要的损失<br/>
+5   没有利用火枪对敌人头目进行狙击</p>
+
+<p>影片呈现的是壮烈的牺牲，一个佣兵在最后关头选择的是爱，而不是杀戮，就已经将教义深深的烙印在观众的心中。</p>
 ]]></content>
   </entry>
   
@@ -518,35 +555,6 @@ can you see it.</p>
 <p>思路2：把复杂环境简单化，越是简单的机制越是容易理解和使用。</p>
 <p>思路3：建立一个自己的web环境，汇总和侦听各种课程信息。比如google个人页面，wikispace个人页面等，这对学习者将提出更高的要求。</p>
 <p>&nbsp;</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[与懒做斗争——从回顾、梳理、总结开始]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/07/11/fightiing-with-laziness-start-from-review/"/>
-    <updated>2012-07-11T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/07/11/fightiing-with-laziness-start-from-review</id>
-    <content type="html"><![CDATA[<p><p>放假已经有一阵子了，但是自己一直被懒折磨着，很多问题都搁置在一边没有进展。怎么样才能摆脱这种状态呢？</p>
-<p>在《<a href="http://vip.book.sina.com.cn/book/catalog.php?book=42978">工作就是解决问题</a>》这本书中&ldquo;先找问题的薄弱点&rdquo;有这样一段内容：</p>
-<blockquote>
-<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">当一个人在学习和工作中达到所谓的&ldquo;停滞点&rdquo;时，从问题的最薄弱处下手，从最容易的地方开始，先做自己擅长的、有把握的事情，往往特别有效。</span></p>
-<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">所谓&ldquo;停滞点&rdquo;，便是到达那一点时，再用功也无法获得更多进步。这时，若是硬逼着自己冲过这个&ldquo;停滞点&rdquo;，便很可能产生紧张、困难等感觉。甚至形成恶性循环&mdash;&mdash;越想解决问题，就越解决不了。越想闯过去，就越是原地打转。这时，你可以稍微放松一下，先做最容易的事。</span></p>
-</blockquote>
-<p style="text-align: left;">而对于我而言，写作最容易的事情就是回顾、整理和总结，我曾经做了很多的笔记、书签，应该好好整理、总结一下了。</p>
-<p style="text-align: left;">日子一天天过，事情一件件做，坚持才能有收获。</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[读《天眼》悬念小说所得]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/19/thoughts-on-reading-the-story-of-tianyan/"/>
-    <updated>2012-06-19T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/19/thoughts-on-reading-the-story-of-tianyan</id>
-    <content type="html"><![CDATA[<p><p>《天眼》这篇小说围绕着&ldquo;盒子&rdquo;展开，故事情节跌宕起伏，用了一天时间一口气读完。虽然并应该花这么多的时间做这样的阅读消遣，但是奈何时间已经花费了，索性把自己的收获记录一番。</p>
-<p>读过这篇小说，我在思考一个问题，如何写好故事？特别是如何写好教育故事和学习故事？作为教师或者学习者是否也可以写出类似引人入胜的故事？我想这种教育或学习过程的记录，同样也是问题解决的过程，同样能反映教学者或者学习者的所经所感，也就有机会反映和记录真实的专业成长过程或个人学习过程。</p>
-<p>在经历了一次次劫难之后，潇伟和赵颖终于走到一起，有情人总成眷属，但也总会有不圆满，阿雪还是最后的任务中撒手人寰。经历了这么多的事情，主人公也再重新审视人生之意义，辗转几代人，几多英雄，几多磨难，到底为何执着。最后男女主人公又共同打开了雌匣，揭起新的不可预测的故事开端，笔锋戛然而止。</p>
-<p>人生的重大问题永远值得思考：人生意义何在？如何找到自己真正按兴趣的事情？如何把自己感兴趣的事情做到最好？</p>
-<p>但是答案却永远在变！</p></p>
 ]]></content>
   </entry>
   
