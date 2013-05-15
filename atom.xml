@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-05-05T19:54:17+08:00</updated>
+  <updated>2013-05-15T20:53:42+08:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Practice Creativity in design Chindogu]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/05/15/Chindogu-designed-by-me/"/>
+    <updated>2013-05-15T19:33:00+08:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/05/15/Chindogu-designed-by-me</id>
+    <content type="html"><![CDATA[<p>最近参加了一门网络课程，是关于创造力的，课程活动要求参与者设计一些chindogu，这个词源于日本，是指一些没有实际用途但是有趣的设计产品。于是我设计了以下作品： <br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/beauty-in-your-cup.png" alt="beauty-in-your-cup" />
+<img src="https://raw.github.com/lukezhg/Freyja/master/hourglass-bath.png" alt="beauty-in-your-cup" />
+<img src="https://raw.github.com/lukezhg/Freyja/master/couple-zipper-umbrella.png" alt="beauty-in-your-cup" />
+<img src="https://raw.github.com/lukezhg/Freyja/master/lovers-dancing-shoe.png" alt="beauty-in-your-cup" />
+<img src="https://raw.github.com/lukezhg/Freyja/master/hand-tap-1.png" alt="beauty-in-your-cup" />
+<img src="https://raw.github.com/lukezhg/Freyja/master/music-tap-1.png" alt="beauty-in-your-cup" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[win7 tab close error]]></title>
@@ -542,19 +557,6 @@ then i means I can do it.</p>
     <id>http://lukezhg.github.com/blog/2012/12/27/hello</id>
     <content type="html"><![CDATA[<p>this is my first blog using vim to edit.
 can you see it.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何辅助学习者在复杂网络学习环境中生存下来]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment/"/>
-    <updated>2012-11-29T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment</id>
-    <content type="html"><![CDATA[<p><p>当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？</p>
-<p>思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连带网址功能，就可以把相关的作业及要求摘录到笔记中，然后再使用标签进行管理即可。我觉得以后可以重点介绍一下evernote这款软件。</p>
-<p>思路2：把复杂环境简单化，越是简单的机制越是容易理解和使用。</p>
-<p>思路3：建立一个自己的web环境，汇总和侦听各种课程信息。比如google个人页面，wikispace个人页面等，这对学习者将提出更高的要求。</p>
-<p>&nbsp;</p></p>
 ]]></content>
   </entry>
   
