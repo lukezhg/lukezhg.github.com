@@ -507,6 +507,24 @@
   <p>Chunlei is lazy, but he wants do something.</p>
 </section>
 <section>
+  <h1>My Countdown</h1>
+</section>
+<script type="text/javascript" language="javascript">
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(new Date()-date1)/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=timespan+"　距今："+days+"天"+hours+"小时"+mins+"分钟"+secs+"秒";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2008/12/01')", 500);
+}
+</script>
+<section>
   <h1>Links</h1>
   <ol><li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li></ol>
 </section>
