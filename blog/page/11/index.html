@@ -494,16 +494,16 @@ function thenceThen(timespan){
  var hours=Math.floor((totalSecs-days*24*3600)/3600);
  var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
  var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
- document.getElementById("thenceThen").innerText=days+" days "+" left.";
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
 }
 var clock;
 window.onload=function(){
- clock=self.setInterval("thenceThen('2061/07/28')", 86400000);
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
 }
 //]]>
 </script>
 <div id="thenceThen"></div>
-<section>
+</section>
 <section>
   <h1>Links</h1>
   <ol><li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li></ol>
