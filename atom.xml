@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-07-29T00:19:03-04:00</updated>
+  <updated>2013-07-29T00:53:37-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to write your lesson plan]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/07/29/how-to-write-your-lesson-plan/"/>
+    <updated>2013-07-29T00:32:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/07/29/how-to-write-your-lesson-plan</id>
+    <content type="html"><![CDATA[<p>经常有学生或教师问我该如何说课。我听到好，第一反应是“查”。为什么不自己主动查一查，如何说课这个问题呢。肯定有很多资源的。说其实是口头表达，其实如果你能写好教案，设计好教学，那么我相信你也能表达好。所以最关键的是理清自己的思路。自己的都不清晰，怎么能指望别人听懂呢。听都听不懂，哪就别指望受到赞赏和认可了。</p>
+
+<p>如果让我谈谈自己对说课的看法，我觉得有以下几点：<br/>
+   说课的内容一定要包括：教学目标、前段分析、教学思路-问题线索-学习活动、最后是学习检测。第一部分相当你是你要告诉别人，你要去哪，第二部分是“路况”如何，第三部分是你要如何走，第四部分是你离目的地有多远。<br/>
+   说课形式可以借助ppt，也可以借助概念图，我推荐使用概念图，因为它能让你兼顾部分和整体。<br/>
+   说课的要求，最基本的是让人听懂，知道你要如何上这门课，这是第一个层次。第二层是让人不仅知道你会怎么上，还知道你为什么这么上。第三个层次，是让人觉得你是在创造性的解决实际问题，并且认同你的做法的合理性和可行性。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Study life begin in UGA]]></title>
@@ -557,17 +571,6 @@ _config.yml文件：</li>
 <p>这样码字是否是很来啊！<br>
 难道大家都这个种发博客的方法感兴趣？</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hi]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/hi/"/>
-    <updated>2012-12-27T18:52:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/hi</id>
-    <content type="html"><![CDATA[<p>I don&#8217;t konw if I can use editplus to edit this text.
-if you can see it
-then i means I can do it.</p>
 ]]></content>
   </entry>
   
