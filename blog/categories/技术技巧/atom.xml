@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/blog/categories/技术技巧/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-05-17T00:58:10+08:00</updated>
+  <updated>2013-07-28T23:36:51-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[win7 tab close error]]></title>
     <link href="http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error/"/>
-    <updated>2013-04-04T17:46:00+08:00</updated>
+    <updated>2013-04-04T17:46:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error</id>
     <content type="html"><![CDATA[<p>P：关闭ie9标签页显示错误。<br/>
 T：升级为ie10问题仍然存在。<br/>
@@ -28,7 +28,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   <entry>
     <title type="html"><![CDATA[在iphone4 5.1.1上也能安装siri]]></title>
     <link href="http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
-    <updated>2012-06-15T00:00:00+08:00</updated>
+    <updated>2012-06-15T00:00:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
     <content type="html"><![CDATA[<p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
 2. 备份iPhone 4<br />
@@ -45,7 +45,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   <entry>
     <title type="html"><![CDATA[如何让windows search能够搜索pdf文档内容]]></title>
     <link href="http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content/"/>
-    <updated>2012-04-13T00:00:00+08:00</updated>
+    <updated>2012-04-13T00:00:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content</id>
     <content type="html"><![CDATA[<p>windows search桌面搜索提供了全文检索的功能，可以快速查找office文档、网页以及txt中的内容，但是不支持pdf文档。但是很多文献都是pdf文档，怎么样才能让它支持呢？<br /><br />网络搜索查到一个软件<a target="_blank" href="http://download.pchome.net/utility/file/manage/download-164626.html">Foxit PDF IFilter 2.0.0.0519</a>, 安装之后就支持pdf文档全文搜索了，找到含有关键字的pdf文档了。不过要想让搜索到的pdf文档全文正确的预览出来，还是需要安装体积庞大的adobe reader，只是安装福昕pdf阅读器还是不行，不知道如何解决，欢迎网友支招。<br /></p>
 
@@ -55,7 +55,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   <entry>
     <title type="html"><![CDATA[用flash制作试题交互动画项目]]></title>
     <link href="http://lukezhg.github.com/blog/2011/12/17/use-flash-to-make-interactive-test-project/"/>
-    <updated>2011-12-17T00:00:00+08:00</updated>
+    <updated>2011-12-17T00:00:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2011/12/17/use-flash-to-make-interactive-test-project</id>
     <content type="html"><![CDATA[<p><p>在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件，让稍微动flash甚至是一点都不同flash的老师也能修改并展示自己的试题呢？当然是可以的，但是这个试题交互动画的设计应该数据与源文件分离的，也就是老师不需要修改源文件和代码，只需要修改数据文件就可以。</p>
 <p>制作的思路：<br /> 1、建立界面fla原文件（test.fla）<br /> 2、建立代码文件(xmlloader.as)<br /> 3、建立试题数据xml文件(sample.xml)</p>
@@ -68,7 +68,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   <entry>
     <title type="html"><![CDATA[快速发布博文的方法与技巧]]></title>
     <link href="http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills/"/>
-    <updated>2011-12-17T00:00:00+08:00</updated>
+    <updated>2011-12-17T00:00:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills</id>
     <content type="html"><![CDATA[<p><p>发布博客的方法大体上可以分为三类：</p>
 <ol>
