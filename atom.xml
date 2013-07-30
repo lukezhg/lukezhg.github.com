@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-07-30T06:17:56-04:00</updated>
+  <updated>2013-07-30T07:52:50-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[fighting with display problem in my coumputer]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer/"/>
+    <updated>2013-07-30T07:51:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer</id>
+    <content type="html"><![CDATA[<p>These days I am fighting with the Display Card Problem of my computer. Befor coming to Georgia, My coumputer can not start normaly, the screen is black, athough you can hear the sound of login. I try to ingnore this problem by using another OS Ubuntu in my comuputer.  BUT, unfortianaly, I can&#8217;t use the PAWS wireless network of UGA in Ubuntu. So I have to solve the Display problem in WIN7 or the wireless connection problem in Ubuntu. Guess what, neither of the problem is easy to trackle.</p>
+
+<p>Finally, I solved the Display Problem using following steps:<br/>
++   setup the two display driver software in my drivers folder in C disk.<br/>
++   setup the downloaded display controler, uncheck the quick stream function<br/>
++   everything comes to normal although I still can&#8217;t use swticheable display mode in BIOS</p>
+
+<p>What I learn from this:<br/>
++   never buy a computer with two display card fire together<br/>
++   if you have important thing just leave these problems there, important thing come frist<br/>
++   reflect and record your problem solving process</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to write your lesson plan]]></title>
@@ -34,25 +53,6 @@
 -   第二前段分析是否扎实、全面，是否包括学情分析、教材内容分析以及学习需要分析，是否能依据分析确定合理的教学目标。<br/>
 -   第三教学思路是否清晰，问题线索是否自然，学习活动是否能帮助学生达成教学目标。<br/>
 -   第四是否设计了新问题情境检测学生的学习成果和教学目标达成情况。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to write your lesson plan]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/07/29/fighting-with-display-problem-with-my-computer/"/>
-    <updated>2013-07-29T00:32:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/07/29/fighting-with-display-problem-with-my-computer</id>
-    <content type="html"><![CDATA[<p>These days I am fighting with the Display Card Problem of my computer. Befor coming to Georgia, My coumputer can not start normaly, the screen is black, athough you can hear the sound of login. I try to ingnore this problem by using another OS Ubuntu in my comuputer.  BUT, unfortianaly, I can&#8217;t use the PAWS wireless network of UGA in Ubuntu. So I have to solve the Display problem in WIN7 or the wireless connection problem in Ubuntu. Guess what, neither of the problem is easy to trackle.</p>
-
-<p>Finally, I solved the Display Problem using following steps:<br/>
-+   setup the two display driver software in my drivers folder in C disk.<br/>
-+   setup the downloaded display controler, uncheck the quick stream function<br/>
-+   everything comes to normal although I still can&#8217;t use swticheable display mode in BIOS</p>
-
-<p>What I learn from this:<br/>
-+   never buy a computer with two display card fire together<br/>
-+   if you have important thing just leave these problems there, important thing come frist<br/>
-+   reflect and record your problem solving process</p>
 ]]></content>
   </entry>
   
