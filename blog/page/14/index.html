@@ -9,8 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="这是在读到一篇科学教育研究的文章时接触到这个词汇的（water dowsing）。相关资料很多，众说纷纭，相信会对大众的科学素养以及信息甄别能力会有很大的锻炼。下面列出相关信息，切记不是某个人说的或者贴在某个网上的东西就是正确的，自己学会分辨和批判性思维。
-下面是有待读者自己去检验的信息： &hellip;">
+  <meta name="description" content="以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。 就我的理解，GAE就是运行在互联网上的可执行程序。要想造就这样的一个程序，你首先要你的程序找一个存放的地方，Google提供了这样的地方， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +67,76 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/02/18/knowlege-of-gae/">今天学习了一些关于GAE的知识</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-02-18T00:00:00-04:00" pubdate data-updated="true">Feb 18<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/02/18/knowlege-of-gae/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。</p>
+
+<p>就我的理解，GAE就是运行在互联网上的可执行程序。要想造就这样的一个程序，你首先要你的程序找一个存放的地方，Google提供了这样的地方，而且是免费的，也就是是<a href="http://appengine.google.com/" target="_blank">Google App Engine</a>， 目前每个用户可以免费创建十个这样的应用程序。</p>
+
+<p>点击上面的地址之后，你需要用你的gmail账号登陆，没有可以先去申请一个。进入<a href="http://appengine.google.com/" target="_blank">http://appengine.google.com/</a>之后，点击Create an Application，然后填写应用标识和应用标题两栏，其中标识很重要，一会我们还会用到它，比如说这个标识名为：helloworld</p>
+
+<p>完成之后，我们就为应用程序申请了一个托管的空间，而且也获得一个应用标识。接下来，我们就是要开发一个网络应用程序，为了开发这个网络应用程序，我们需要下载并安装两个软件（这个两个软件也就构成了开发环境）：
+<ul>
+	<li>Google App Engine SDK 下载地址<a href="http://code.google.com/intl/zh-CN/appengine/downloads.html">http://code.google.com/intl/zh-CN/appengine/downloads.html</a></li>
+</ul>
+<ul>
+	<li>Python 2.5.4 下载地址<a href="http://www.python.org/download/releases/2.5.4/">http://www.python.org/download/releases/2.5.4/</a></li>
+</ul>
+开发的具体过程，要根据你程序的功能不同而不同，当然你也可以找一找别人已经开发好的程序，然后在这个基础上修改一下，这样会很容易，不过一般只能完成相对简单的功能，而且会受到原有代码的限制，不如自己编写的符合自己的目的和需要。</p>
+
+<p>开发好之后，我们就要把这个程序上传到我们申请的那个空间上去。通常所有的程序都会放到一个目录中，比如这个目录是E:\myfiles\code\lukesvn<br />
+接下来就是用记事本打开myapp目录中app.yaml文件，修改应用名为你申请的应用标识(helloworld)。 然后打开cmd，执行appcfg.py update E:\myfiles\code\lukesvn<br />
+你会被要求输入你的gmail账号和密码，之后你的程序就上传到你先前申请到的那个空间了，你可以访问 <span style="text-decoration: underline;">标识名.appspot.com</span> 来访问你的网络应用程序了，这个例子中也就是访问 helloworld.appspot.com</p>
+
+<p>相关的学习资源
+<ul>
+	<li>上传您的应用程序 - Google App Engine - Google 代码</li>
+</ul>
+: <a href="http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html" target="_blank">http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html</a>
+<ul>
+	<li>Google App Engine使用简介-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/1880.html" target="_blank">http://www.williamlong.info/archives/1880.html</a>
+<ul>
+	<li>Twitter实时同步到Ping.fm和Hellotxt-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/2067.html" target="_blank">http://www.williamlong.info/archives/2067.html</a>
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=f8f16231-5097-86d4-8c6c-d8ac8605c0af" alt="" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -427,44 +496,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/12/26/how-to-build-your-PLE/">如何在学习社区更快更好的形成自己良好的人际网络-导生制</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-12-26T00:00:00-04:00" pubdate data-updated="true">Dec 26<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/12/26/how-to-build-your-PLE/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>社区的本质是人，不是个体的人，而是群体，而且是有组织的群体。与企业的成员之间紧密固定结构相比，社区成员之间的则是相对松散和灵活的结构。社区不同成员按照其行为划分，可以分成不同的类型，比如经常分享信心和观点，暂称为分享者，相应的还有，反馈者，发问求助者等。每个人专长不同，又可以分为技术者，社交者、组织者和学习者。每个人可以有多种身份，正式多种身份的自由选择性，使得学习社区更加的让人愉快，也就是我<b>在这里</b>，是因为我喜欢<b>在这里</b>。<br clear="all" /><br /><br />由于社区的主旨是共同学习，师徒关系也是学习社区的最主要关系。这里师徒关系已经不再是传统意义上的师傅永远是师傅，徒弟永远是徒弟，而是师徒关系因事而定，因时而定。也许今天我是师傅，明天徒弟已经赶超我成为师傅了。曾经有些成熟的社区，为了让社区成员内部形成更有意义的关系，推出了mentor制，也就是新成员先说明自己的需要和学习目标，然后社区为他推荐一个mentor，再以后的学习中mentor可以更多的给于新手指引，当然新手也可以主动积极的向其他社区邮件列表求助，mentor也可以推荐其他社区成员给自己带的新手。当新手发展到一定程度成熟之后，又可以去带领其他新手一起学习。如果站在学习的这个角度，每个学习社区的成员都是学习者，所以说mentor也好，说learning leader也罢，其最本源的身份就是学习者。在教中学，在学中教。现在有一个名词叫导生制，在地址栏输入这三个字之后，自动转到了一篇博文：导生制 <a target="_blank" href="http://hi.baidu.com/ileo/blog/item/26b210df19679b1062279849.html">http://hi.baidu.com/ileo/blog/item/26b210df19679b1062279849.html</a>，有署名的原文链接： <a target="_blank" href="http://www.sysy2000.com/Html/zhyy/133635993.html">http://www.sysy2000.com/Html/zhyy/133635993.html</a><br /><br /><br /><br />也许我们把这个导生制改造一下，就可以形成一种网络学习社区可以实用的组织方式，实际上肯定已经有这样组织的社区了，至少在我所知，<a target="_blank" href="http://cindypan.com/">cindy</a>参与的深圳的<a target="_blank" href="http://www.toastmasters.org/">ToastMaster</a>就有这样的mentor。而这样的一种有组织的导学制可以帮助社区更快的形成有意义的人际网络，同时也能让社区以强带弱，以老带新，让社区知识继承和创新焕发活力。<br /><br />以下是一张学习社区导生制（Learning Community Monitorial System, LCMS）示意图<br /><a href="http://easycaptures.com/4353717508"><br /><img src="http://easycaptures.com/fs/uploaded/460/thumbs/4353717508_b.jpg" border="0" /></a><br /><br /><a href="http://easycaptures.com/4353717508"><br /></a><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=872a41ce-24f8-890a-bfe0-ecf120c391c2" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -530,6 +561,10 @@ window.onload=function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/30/3-rules-when-studying-at-uga/">3 rules to follow when studying at UGA</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/30/fighting-with-display-problem-with-my-computer/">fighting with display problem in my coumputer</a>
       </li>
     
@@ -545,15 +580,11 @@ window.onload=function(){
         <a href="/blog/2013/05/15/Chindogu-designed-by-me/">Practice Creativity in design Chindogu</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/04/04/win7-tab-close-error/">win7 tab close error</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (5)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (6)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (4)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活'>生活 (2)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (5)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (6)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (5)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活'>生活 (2)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
