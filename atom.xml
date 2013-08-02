@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-07-30T14:12:36-04:00</updated>
+  <updated>2013-08-02T07:31:11-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,14 +14,134 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Observation of daily life of Americans]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/08/02/observation-of-daily-life-of-americans/"/>
+    <updated>2013-08-02T06:08:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/08/02/observation-of-daily-life-of-americans</id>
+    <content type="html"><![CDATA[<p>These days while I live in my apartment, I pay close attention to the daily life of people here. I have drawed a conclusion: Americans are lazy.</p>
+
+<p>In fact, Lazy here is not used in a derogatory sense. You know, only the lazy people can invent and design a comfortable life. Americans are such kind of designers who are persueing simple but comfortable life. Let me give you some examples.</p>
+
+<p>I live in a house department. In China, the parking area is often underground or a little far from the appartment. But in USA, the parking lot is jut in front of the hourse near the door. You can imagine when you get back from work, get out of your car, and then enter your door, it is so convinent.</p>
+
+<p>After you get in, you can find a kitchen, a sitting room, a laundry room and a bath room. If you take a look at the kitchen, you will find a dish washer there and microwave oven. In China, most people just wash by hands, you can hardly found a dish washer, expecially in a student&#8217;s department.</p>
+
+<p>As to food, most food can be cooked just by heatting, like milk and bread. If sauces are needed, they are already mixed up and ready for use. You can find all this kind of mixed up sauces or semi-manufactured food everywhere in a food supermaket. Cooking become easy here, athough the taste may becoming a little dull. Most Chinese will not buy the mixed sauces, they may want to make their own although they will spent a lot of time on cooking.</p>
+
+<p>One day, a ceaseless noise of machinery wake me up. I look out through the window, I found a man is using a grass cutter in front of the door. In China, people also use this kind of grass cutter, which is belted to the waist. But lawn mower like a car is hardly found in China. I often saw an american sitting on it and drive it on the lawn, it is fun. I also found people here clean the street in a differnt way, they use a air blower to blow the leaves away and make the road clean. If you walk on street in the early morning in Beijing, you will see a cleaner clean street with broom. You will never found a man with a blowing machine walk here and there.</p>
+
+<p>And almost everyone have a car here. Once I ask a black man for directions, after telling my the way, he said don&#8217;t you have a car, I sait not yet. He then added while it will be 20 to 30 minutes&#8217; walk. I follow his directions, after 10 minutes I got there. It is not that far, I said in my mind. May be they drive too much, and then have no idea how long it will take by walking.</p>
+
+<p>So there are so many differences between the two countries. It also stand for different culture. The Americans are taking every advantage of modern science and technology to make their lives simple and comfortable. Labor is much more expensive in USA than in China. The Chinese culture advocate deligent, hard-working and Obedience.  The American culture advocate Science &amp; Technolgy, comfortable life and freedom. You can not say which one is better, but they can learn from each other.  Athough the American life is easy and comfortable, but it exhausted much more energy. Athough, Chinese food is delicious, but it is time cousuming, I think Chinese really should spend more time on inovation in S&amp;T and social system.</p>
+
+<p>by chunlei 08/02/13 07:30AM</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dream back to Home]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/08/02/dream-back-to-home/"/>
+    <updated>2013-08-02T05:19:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/08/02/dream-back-to-home</id>
+    <content type="html"><![CDATA[<p>I had a dream today. I took a flight back to home just in order to make sure everthing at home is Ok. I don&#8217;t konw why. There is an old saying what you dream at night is what you think at day. Maybe I am a little homesick now. When I am awake, I am laying on a big white bed still in USA. I thought I will not easily be homesick, but I am wrong. Well my advisor is right, I will confront some hard time and even shed tears. If it was the Cost, what I can do is only maximize the benifit.</p>
+
+<p>I have learnt how to cook rice in microwave oven. I also learn how to cook dishes in a pan which the bottom is flat.  I have been accustomed to the food here, milk and egg for breakfast, noodles or rice for lunch and supper. I improve my spoken and writing English through participting some online courses. It does work.</p>
+
+<p>I will also record what I have done, observed and thought by bloging. It will cover all the stories that I experienced during my study in USA.</p>
+
+<p>by chunlei 08/02/13 05:41 AM</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[python brief]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/07/30/python-brief/"/>
+    <updated>2013-07-30T14:25:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/07/30/python-brief</id>
+    <content type="html"><![CDATA[<p>Python重要用法示例</p>
+
+<blockquote><blockquote><blockquote><p>dir(list)
+显示关键字相关的函数</p>
+
+<p>help(list.reverse)
+查询某个函数的功能</p></blockquote></blockquote></blockquote>
+
+<p>set 让一个list变成无重复元素的set
+例如：</p>
+
+<blockquote><blockquote><blockquote><p>shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;,&#8217;circle&#8217;]
+setOfShapes = set(shapes)
+setOfShapes
+set([&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;])
+setOfShapes.add(&#8216;polygon&#8217;)
+&#8216;rhombus&#8217; in setOfShapes
+False
+setOfShapes - setOfFavoriteShapes
+setOfShapes &amp; setOfFavoriteShapes
+setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+
+<p>map和lambda</p>
+
+<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]</p></blockquote></blockquote></blockquote>
+
+<p>Object 先定义一个类，然后给类生成实例
+定义如：
+class FruitShop:</p>
+
+<pre><code>def __init__(self, name, fruitPrices):
+    """
+        name: Name of the fruit shop
+
+        fruitPrices: Dictionary with keys as fruit 
+        strings and prices for values e.g. 
+        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
+    """
+    self.fruitPrices = fruitPrices
+    self.name = name
+    print 'Welcome to the %s fruit shop' % (name)
+
+def getCostPerPound(self, fruit):
+    """
+        fruit: Fruit string
+    Returns cost of 'fruit', assuming 'fruit'
+    is in our inventory or None otherwise
+    """
+    if fruit not in self.fruitPrices:
+        print "Sorry we don't have %s" % (fruit)
+        return None
+    return self.fruitPrices[fruit]
+
+def getPriceOfOrder(self, orderList):
+    """
+        orderList: List of (fruit, numPounds) tuples
+
+    Returns cost of orderList. If any of the fruit are  
+    """ 
+    totalCost = 0.0             
+    for fruit, numPounds in orderList:
+        costPerPound = self.getCostPerPound(fruit)
+        if costPerPound != None:
+            totalCost += numPounds * costPerPound
+    return totalCost
+
+def getName(self):
+    return self.name
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[3 rules to follow when studying at UGA]]></title>
     <link href="http://lukezhg.github.com/blog/2013/07/30/3-rules-when-studying-at-uga/"/>
     <updated>2013-07-30T14:01:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2013/07/30/3-rules-when-studying-at-uga</id>
     <content type="html"><![CDATA[<p>Durying my study in UGA, I will obey 3 rules:
-+   能在中国做的不在美国做
-+   能自己做的不让别人做
-+   能一天做的不用两天做</p>
++   能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.<br/>
++   能自己做的不让别人做   Things that I can do myself will not be done by others.<br/>
++   能一天做的不用两天做   If it only need one day, I will not spend two days.</p>
 
 <p>The aim of these rules is to let me to take every advantage of my study here. They will help me to save time and focus on the important work.</p>
 ]]></content>
@@ -414,64 +534,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 <p>&lt;&#8211;!more&#8211;></p>
 
 <p>但事实上这样的聪明人却不占少数。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[保持积极主动，坚持总结回顾]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/10/be-proactive/"/>
-    <updated>2013-01-10T15:48:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/10/be-proactive</id>
-    <content type="html"><![CDATA[<p>对于一个学习者而言，如若想进步，我觉得必须要做到两条：<br/>
-1. 保持积极主动<br/>
-2. 坚持总结回顾</p>
-
-<p>这两条听起来好像很简单，其实很难做到。</p>
-
-<p>比如积极主动，我曾经鼓励我的学生主动联系附近中学的一线老师，进而寻求合作。也曾经鼓励学生为了寻找一篇文献给名人写信。但是我发现最后学生们很少有真的行动的，学生还没有养成积极主动的习惯。尽管他们已经是研究生了，尽管他们接受了16年的教育，尽管他们即将面临写论文、就业，但是他们仍然没有养成积极主动的习惯。这不禁让人反思我们的教育所起的作用。</p>
-
-<p>积极主动除了行动之外，还可以表现在思考上。在工作或学习过程中，你是否愿意信任伙伴，你是否倾向于把别人往好处想，你是否处于过度防范的状态，对这些问题的回答就能反映你是否会积极的思考。积极思考的人往往也能感染别人积极的思考，相信别人的人，也更容易取得别人的相信，进而建立积极的人际关系和工作氛围。人家都说中国是关系社会，社会工作关系复杂，让人很累，每个人都处于防范之中，能不累吗。其实很重要的一点就是没有养成积极思维的习惯，遇到事情总是朝着猜忌和负面去考虑。所及积极主动不仅对自己很重要，对于环境的影响也不可忽视。</p>
-
-<p>那么回顾中应该很容易做到了吧，其实不然。</p>
-
-<p>人是需要回顾过去的，比如回顾一年的工作和生活，回顾一个月的收获和行动，回顾一个星期的时间花费。等等。但是有的时候我们实在太忙了，忙的没有时间回顾，没有时间思考，没有时间想一想我们到底在忙些什么。</p>
-
-<p>我曾经这样告诫自己，要立长志，不要常立志。但是很多时候还是做不到，还是常立志，后来想想常立志也还过得去，只要每次立的都是同样的志向，那么也就在接近立长志了。</p>
-
-<p>我有一个坏毛病，容易虎头蛇尾。可能这也证明我自己其实地的确确就是一个普通人，坚持做一件事情是困难的，坚持把一件事情做好更是难上加难，但无论怎样，我还是要我劝慰，be proactive, 积极的思考和行动。很多时候，失败就失败在不积极、不主动、充满了猜疑和戒备，那样的话成功的几率几乎为零。</p>
-
-<p>因此，我不禁要劝自己积极的思考和行动，也要去鼓励我周边的人积极的思考和行动，用正能量去感染自己和他人，让我们共同更接近成功！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[公交车上的寒与暖]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/05/bus-story/"/>
-    <updated>2013-01-05T07:17:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/05/bus-story</id>
-    <content type="html"><![CDATA[<p>今天早上起了一个大早，去送LP上班。昨天下了雪，地上湿湿的，上海就是存不住雪。</p>
-
-<p>快要到公交车站了，结果就过去一辆，没赶上。本来LP就是想赶这辆车的，她天还没亮就爬起来，黑灯瞎火的找衣服，还说不用我送了，让我多睡一会。但是我怕早上路滑，还是硬着头皮爬起来了。LP怀孕有8个月了，但是还要坚持上班，每次上班都要挤公交，而且中间还需要换乘一次，路上一共要2个小时的时间。所以明明是八点半上班，早上5点半就要起床了。我经常说她很牛，这么冷得天，这么长的路，也照样不耽误。</p>
-
-<p>其实，上海的公交车以及地铁还是相对非常文明的。我们也越到很多好心人，主动给lp让座，并且嘘寒问暖，尽管素不相识。其中大部分让座的是女性，而且是略微年长的女性，都是做过妈妈的人，才知道其中的不容易。昨天我们就地铁上遇到2位热心人，她们是成都的，来上海旅游，其实年龄也挺大的了，大概有50多岁，但是还要一定把作为让给我们。虽然素不相识，但是还是热情的攀谈起来，下了地铁lp说：“还是成都人热情”。其次是大学生，我们就与遇到好几次，大部分学生还是非常有礼貌的，值得赞扬。</p>
-
-<p>当然，我们也遇到过不愿意让座的人。lp一般也会比较体谅别人，比如正赶上上班下班，很多年轻人忙了一整天了，就会在这个时间玩玩手机或者睡一会，也就注意不到帮助那些需要帮助的人。当然，其中也有看到假装没看到的，或者就是视而不见，尽管他的座位傍边写着老幼孕妇专座，尽管公交车的喇叭反复重复“请给需要帮助的乘客让个座”。</p>
-
-<p>我就见过一例，是一个年轻男性，看着大肚子在他前面，还是只顾着玩他的手机，当时我真有动手的冲动。但是这就是社会道德规范，不同于法律，别人可以遵守也可以不遵守，你可以谴责这种行为，但是却不能伤害其人身。作为一位即将当爸爸的男士，我想给自己提个醒，一定要给你身边需要帮助的人让一个座，因为你也有需要他人帮助的时候，你也会有老婆、孩子，你也会有变老的一天。还是很怀念那些阿姨，她们身上会散发出伟大的母性的爱，让人倍感温暖。</p>
-
-<p>公车来了，人很多，希望有人能为lp让个座。用公交师傅的话说：“给大肚皮让个座，谢谢！”</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[debug is hard]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/30/debug-is-hard/"/>
-    <updated>2012-12-30T01:14:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/30/debug-is-hard</id>
-    <content type="html"><![CDATA[<p>The hard thing si debug.<br/>
-how can we make it more easier!</p>
-
-<p>It would be better if you avoid it before meet it.</p>
 ]]></content>
   </entry>
   
