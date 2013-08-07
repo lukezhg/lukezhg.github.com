@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/blog/categories/技术技巧/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-02T07:31:11-04:00</updated>
+  <updated>2013-08-07T17:51:39-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Computer tips recently discovered]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
+    <updated>2013-08-07T17:34:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered</id>
+    <content type="html"><![CDATA[<p>Recently I found some useful tips to get things done more effectively.<br/>
+How do you capture your screen when you are watching a vedio without stop it.<br/>
+The answer is that you can setup some softwares to do this. One of them is <a href="http://www.aplusfreeware.com/categories/mmedia/FastStoneCapture.html">FastStone Caputure</a>. You just set the auto save folder and the hot key in the settings. Then, things get much easier, everytime you want capture your screen, just press the hot key. The picture can be saved in the folder with disturbing your watching. It is so useful.<br/>
+After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?<br/>
+The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[python brief]]></title>
@@ -137,16 +150,6 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
 然后寻找SiriPort(original)安装之。然后重启IpHONE4.<br />
 然后在SAFARI里输入siriport.ru/siriport_ru_original.pem，安装证书。然后再次重启。<br />
 6. 在Settings-General-Enable SIRI启动SIRI。ENJOY!</blockquote>人啊，总是造成了严重后果的时候，再会后悔不该当初，才知道节制和让步。<br /><br /><br /></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何让windows search能够搜索pdf文档内容]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content/"/>
-    <updated>2012-04-13T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/04/13/let-windows-search-read-pdf-content</id>
-    <content type="html"><![CDATA[<p>windows search桌面搜索提供了全文检索的功能，可以快速查找office文档、网页以及txt中的内容，但是不支持pdf文档。但是很多文献都是pdf文档，怎么样才能让它支持呢？<br /><br />网络搜索查到一个软件<a target="_blank" href="http://download.pchome.net/utility/file/manage/download-164626.html">Foxit PDF IFilter 2.0.0.0519</a>, 安装之后就支持pdf文档全文搜索了，找到含有关键字的pdf文档了。不过要想让搜索到的pdf文档全文正确的预览出来，还是需要安装体积庞大的adobe reader，只是安装福昕pdf阅读器还是不行，不知道如何解决，欢迎网友支招。<br /></p>
 
 ]]></content>
   </entry>

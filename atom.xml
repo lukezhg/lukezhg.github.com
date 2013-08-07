@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-02T07:31:11-04:00</updated>
+  <updated>2013-08-07T17:51:39-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Computer tips recently discovered]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
+    <updated>2013-08-07T17:34:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered</id>
+    <content type="html"><![CDATA[<p>Recently I found some useful tips to get things done more effectively.<br/>
+How do you capture your screen when you are watching a vedio without stop it.<br/>
+The answer is that you can setup some softwares to do this. One of them is <a href="http://www.aplusfreeware.com/categories/mmedia/FastStoneCapture.html">FastStone Caputure</a>. You just set the auto save folder and the hot key in the settings. Then, things get much easier, everytime you want capture your screen, just press the hot key. The picture can be saved in the folder with disturbing your watching. It is so useful.<br/>
+After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?<br/>
+The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Observation of daily life of Americans]]></title>
@@ -521,19 +534,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 </strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
 <strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
 </strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[不要总是寻找捷径]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/10/slow-but-right/"/>
-    <updated>2013-01-10T16:33:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/10/slow-but-right</id>
-    <content type="html"><![CDATA[<p>做正确的事用正确的方法的时候，往往进度会很慢，但是虽然慢，但这却是正确的方向。所以只要坚持下去就能得到回报。但很多时候我们总是在寻找捷径，以至于我们都认自己找到捷径，但结果还是自作聪明。有人说过，其实捷径就是克服寻找捷径的心态，直接面对和克服它。</p>
-
-<p>&lt;&#8211;!more&#8211;></p>
-
-<p>但事实上这样的聪明人却不占少数。</p>
 ]]></content>
   </entry>
   
