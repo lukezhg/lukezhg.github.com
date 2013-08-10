@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-09T22:21:49-04:00</updated>
+  <updated>2013-08-10T11:52:23-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fighting with the imaginary enemy]]></title>
+    <link href="http://lukezhg.github.com/blog/2013/08/10/fighting-with-the-imaginary-enemy/"/>
+    <updated>2013-08-10T11:11:00-04:00</updated>
+    <id>http://lukezhg.github.com/blog/2013/08/10/fighting-with-the-imaginary-enemy</id>
+    <content type="html"><![CDATA[<p>Sometimes you want to run away confronting a challenge. Usually, you have your own reasons. It is too hard. It is too boring. I am not good at this. It is so painful. You want to advoid to meet it although it is important and urgent. We all know it but feel so hard to control yourself.</p>
+
+<p>So what to do?</p>
+
+<p>YOU have an imaginary enemy to fight. Game start! Sometimes your enemy is strong and sometimes he is endurable. Mostly, you have exaggerated your enemy and belittled yourself. Imagine you are fighting against an enemy who also have his own weakness. The wise move would be found his weakness and take all the advantage you have to beat him. If you don&#8217;t fight, you are doomed to failure. If you fight, there still a hope to win.</p>
+
+<p>In fact, you have no opotions but to fight. Your imaginary enemy would alert you and help you to beat the fearness and win the game!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Computer tips recently discovered]]></title>
@@ -498,44 +513,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 <p>快乐与感动的同时，更加坚定了一个想法：教育应该是包容性的。美好的生活是需要坚强的努力去创造的，只不过有着先天障碍的人们的生活斗争更加鲜明和激烈，也更让人感动和学习。</p>
 
 <p>推荐所有有志于当老师的朋友们观看这部电影！希望大家都能成为具有包容心的老师。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fighting with plagiarism]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism/"/>
-    <updated>2013-01-11T17:59:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism</id>
-    <content type="html"><![CDATA[<h2>什么是抄袭？</h2>
-
-<p>所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息，但是行文中还是让人产生了误会，这种情况则需要学习和教育。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h2>如何鉴别抄袭？</h2>
-
-<p>鉴别抄袭当然可以依赖工具，但实际上更可靠的还是人工鉴别。这需要鉴别者对相关文献以及抄袭者有好的了解，这样就可以对其创造的作品的抄袭可能性作出判断。当然，其实没人愿意做这样的工作，所有的老师都不愿这种情况发生在自己学生身上，所有学生也不愿意被人怀疑抄袭。最好的还是防范抄袭，但是一旦发生了抄袭，教师和学生都应该认真面对，并且把这种谁都不愿意遇到的情况当成一次教育的机会。</p>
-
-<h2>如何应对抄袭？</h2>
-
-<p>有很现成的工具，中文和英文的工具都有。最简单的工具就是搜索引擎，很多抄袭的来源都是互联网，因此搜索时自然就能找到来源。此外还有一些专门的在线工具和软件。</p>
-
-<h2>英语在线工具：</h2>
-
-<p><strong> <a href="http://www.duplichecker.com/">Duplichecker</a>  <br/>
-</strong> <a href="http://www.plagium.com/">Plagium</a>   <br/>
-<strong> <a href="http://www.articlechecker.com/">Articlechecher</a>     <br/>
-</strong></p>
-
-<h2>中文在线工具：</h2>
-
-<p><strong> <a href="http://www.copycheck.net/OnlineCheck.aspx">Copycheck</a>  <br/>
-</strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
-<strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
-</strong></p>
 ]]></content>
   </entry>
   
