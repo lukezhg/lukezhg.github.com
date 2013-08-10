@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://lukezhg.github.com/atom.xml" rel="self"/>
   <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-09T21:31:14-04:00</updated>
+  <updated>2013-08-09T22:21:49-04:00</updated>
   <id>http://lukezhg.github.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -153,10 +153,10 @@ def getName(self):
     <link href="http://lukezhg.github.com/blog/2013/07/30/3-rules-when-studying-at-uga/"/>
     <updated>2013-07-30T14:01:00-04:00</updated>
     <id>http://lukezhg.github.com/blog/2013/07/30/3-rules-when-studying-at-uga</id>
-    <content type="html"><![CDATA[<p>Durying my study in UGA, I will obey 3 rules:
-+   能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.<br/>
-+   能自己做的不让别人做   Things that I can do myself will not be done by others.<br/>
-+   能一天做的不用两天做   If it only need one day, I will not spend two days.</p>
+    <content type="html"><![CDATA[<p>Durying my study in UGA, I will obey 3 rules:<br/>
+*   能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.<br/>
+*   能自己做的不让别人做   Things that I can do myself will not be done by others.<br/>
+*   能一天做的不用两天做   If it only need one day, I will not spend two days.</p>
 
 <p>The aim of these rules is to let me to take every advantage of my study here. They will help me to save time and focus on the important work.</p>
 ]]></content>
