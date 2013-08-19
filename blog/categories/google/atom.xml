@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Google | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/google/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/google/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[今天学习了一些关于GAE的知识]]></title>
-    <link href="http://lukezhg.github.com/blog/2010/02/18/knowlege-of-gae/"/>
+    <link href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/"/>
     <updated>2010-02-18T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2010/02/18/knowlege-of-gae</id>
+    <id>http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae</id>
     <content type="html"><![CDATA[<p>以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。</p>
 
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: 标签云 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/标签云/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/标签云/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Github Blog with Octopress]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
     <updated>2012-12-27T21:05:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
     <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
 
 <p>搭建的步骤如下：<br/>
@@ -143,9 +143,9 @@ _config.yml文件：</li>
   
   <entry>
     <title type="html"><![CDATA[hi]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/hi/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/hi/"/>
     <updated>2012-12-27T18:52:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/hi</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/hi</id>
     <content type="html"><![CDATA[<p>I don't konw if I can use editplus to edit this text.
 if you can see it
 then i means I can do it.</p>

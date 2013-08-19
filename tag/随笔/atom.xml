@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: 随笔 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/随笔/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/随笔/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[不要总是寻找捷径]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/10/slow-but-right/"/>
+    <link href="http://zhangchunlei.com/blog/2013/01/10/slow-but-right/"/>
     <updated>2013-01-10T16:33:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/10/slow-but-right</id>
+    <id>http://zhangchunlei.com/blog/2013/01/10/slow-but-right</id>
     <content type="html"><![CDATA[<p>做正确的事用正确的方法的时候，往往进度会很慢，但是虽然慢，但这却是正确的方向。所以只要坚持下去就能得到回报。但很多时候我们总是在寻找捷径，以至于我们都认自己找到捷径，但结果还是自作聪明。有人说过，其实捷径就是克服寻找捷径的心态，直接面对和克服它。</p>
 
 <p>&lt;--!more--></p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[公交车上的寒与暖]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/05/bus-story/"/>
+    <link href="http://zhangchunlei.com/blog/2013/01/05/bus-story/"/>
     <updated>2013-01-05T07:17:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/05/bus-story</id>
+    <id>http://zhangchunlei.com/blog/2013/01/05/bus-story</id>
     <content type="html"><![CDATA[<p>今天早上起了一个大早，去送LP上班。昨天下了雪，地上湿湿的，上海就是存不住雪。</p>
 
 <p>快要到公交车站了，结果就过去一辆，没赶上。本来LP就是想赶这辆车的，她天还没亮就爬起来，黑灯瞎火的找衣服，还说不用我送了，让我多睡一会。但是我怕早上路滑，还是硬着头皮爬起来了。LP怀孕有8个月了，但是还要坚持上班，每次上班都要挤公交，而且中间还需要换乘一次，路上一共要2个小时的时间。所以明明是八点半上班，早上5点半就要起床了。我经常说她很牛，这么冷得天，这么长的路，也照样不耽误。</p>
@@ -47,9 +47,9 @@
   
   <entry>
     <title type="html"><![CDATA[debug is hard]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/30/debug-is-hard/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/30/debug-is-hard/"/>
     <updated>2012-12-30T01:14:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/30/debug-is-hard</id>
+    <id>http://zhangchunlei.com/blog/2012/12/30/debug-is-hard</id>
     <content type="html"><![CDATA[<p>The hard thing si debug.<br/>
 how can we make it more easier!</p>
 
@@ -59,9 +59,9 @@ how can we make it more easier!</p>
   
   <entry>
     <title type="html"><![CDATA[hi]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/hi/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/hi/"/>
     <updated>2012-12-27T18:52:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/hi</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/hi</id>
     <content type="html"><![CDATA[<p>I don't konw if I can use editplus to edit this text.
 if you can see it
 then i means I can do it.</p>

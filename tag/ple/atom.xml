@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: PLE | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/ple/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/ple/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[plent2010 Using learning spots to form our PLE]]></title>
-    <link href="http://lukezhg.github.com/blog/2010/10/13/plent2010-using-learning-spots-to-form-our-ple/"/>
+    <link href="http://zhangchunlei.com/blog/2010/10/13/plent2010-using-learning-spots-to-form-our-ple/"/>
     <updated>2010-10-13T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2010/10/13/plent2010-using-learning-spots-to-form-our-ple</id>
+    <id>http://zhangchunlei.com/blog/2010/10/13/plent2010-using-learning-spots-to-form-our-ple</id>
     <content type="html"><![CDATA[<p>In order to learn, we go to many<br />
 spots to seek info and build connections with co-learners, like elgg,<br />
 moodle,twitter hash tag, flikr group and so on. I used to join google<br />

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: film | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/film/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/film/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[front of class]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/21/front-of-class/"/>
+    <link href="http://zhangchunlei.com/blog/2013/01/21/front-of-class/"/>
     <updated>2013-01-21T22:55:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/21/front-of-class</id>
+    <id>http://zhangchunlei.com/blog/2013/01/21/front-of-class</id>
     <content type="html"><![CDATA[<p>今天看了《front of class》这部电影，觉得很好看。</p>
 
 <p>快乐与感动的同时，更加坚定了一个想法：教育应该是包容性的。美好的生活是需要坚强的努力去创造的，只不过有着先天障碍的人们的生活斗争更加鲜明和激烈，也更让人感动和学习。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iphone | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/iphone/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/iphone/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[在iphone4 5.1.1上也能安装siri]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
+    <link href="http://zhangchunlei.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
     <updated>2012-06-15T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
+    <id>http://zhangchunlei.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
     <content type="html"><![CDATA[<p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
 2. 备份iPhone 4<br />
 3. 下载absinthe 2.0.4 , 以管理员方式运行，破解完成，出现Cydia<br />

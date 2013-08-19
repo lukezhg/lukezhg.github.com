@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 博客建站 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/博客建站/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/博客建站/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[快速发布博文的方法与技巧]]></title>
-    <link href="http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills/"/>
+    <link href="http://zhangchunlei.com/blog/2011/12/17/blog-quick-post-skills/"/>
     <updated>2011-12-17T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2011/12/17/blog-quick-post-skills</id>
+    <id>http://zhangchunlei.com/blog/2011/12/17/blog-quick-post-skills</id>
     <content type="html"><![CDATA[<p><p>发布博客的方法大体上可以分为三类：</p>
 <ol>
 <li>利用本地软件发布博客。比如使用windows live writer等安装在本地电脑上的软件来发博客。这种方法在撰写长博客的时候会非常稳定，不会受到网络的干扰，即便突然断线或者离线，也可以照写不误，同时留有本地备份。但是缺点是并不是所有博客都支持离线发布，而且这个软件也势必要占用磁盘空间，再有发布的时候，如果需要参考网页信息的话，需要来回切换窗口，比较麻烦。 </li>

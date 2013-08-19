@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: ubuntu | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/ubuntu/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/ubuntu/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[try to use ubuntu to press]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
+    <link href="http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
     <updated>2013-02-04T12:17:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
+    <id>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
     <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
 终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
 

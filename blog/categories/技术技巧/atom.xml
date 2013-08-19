@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/技术技巧/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/技术技巧/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Computer tips recently discovered]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
+    <link href="http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
     <updated>2013-08-07T17:34:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/08/07/computer-tips-recently-discovered</id>
+    <id>http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered</id>
     <content type="html"><![CDATA[<p>Recently I found some useful tips to get things done more effectively.</p>
 
 <p>How do you capture your screen when you are watching a vedio without stop it.<br/>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[python brief]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/07/30/python-brief/"/>
+    <link href="http://zhangchunlei.com/blog/2013/07/30/python-brief/"/>
     <updated>2013-07-30T14:25:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/07/30/python-brief</id>
+    <id>http://zhangchunlei.com/blog/2013/07/30/python-brief</id>
     <content type="html"><![CDATA[<p>Python重要用法示例</p>
 
 <blockquote><blockquote><blockquote><p>dir(list)
@@ -110,9 +110,9 @@ def getName(self):
   
   <entry>
     <title type="html"><![CDATA[fighting with display problem in my coumputer]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer/"/>
+    <link href="http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer/"/>
     <updated>2013-07-30T07:51:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer</id>
+    <id>http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer</id>
     <content type="html"><![CDATA[<p>These days I am fighting with the Display Card Problem of my computer. Befor coming to Georgia, My coumputer can not start normaly, the screen is black, athough you can hear the sound of login. I try to ingnore this problem by using another OS Ubuntu in my comuputer.  BUT, unfortianaly, I can't use the PAWS wireless network of UGA in Ubuntu. So I have to solve the Display problem in WIN7 or the wireless connection problem in Ubuntu. Guess what, neither of the problem is easy to trackle.</p>
 
 <p>Finally, I solved the Display Problem using following steps:<br/>
@@ -129,9 +129,9 @@ def getName(self):
   
   <entry>
     <title type="html"><![CDATA[win7 tab close error]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error/"/>
+    <link href="http://zhangchunlei.com/blog/2013/04/04/win7-tab-close-error/"/>
     <updated>2013-04-04T17:46:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/04/04/win7-tab-close-error</id>
+    <id>http://zhangchunlei.com/blog/2013/04/04/win7-tab-close-error</id>
     <content type="html"><![CDATA[<p>P：关闭ie9标签页显示错误。<br/>
 T：升级为ie10问题仍然存在。<br/>
 T：关闭程序兼容性助手服务，问题仍为解决。<br/>
@@ -141,9 +141,9 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   
   <entry>
     <title type="html"><![CDATA[在iphone4 5.1.1上也能安装siri]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
+    <link href="http://zhangchunlei.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri/"/>
     <updated>2012-06-15T00:00:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
+    <id>http://zhangchunlei.com/blog/2012/06/15/on-iphone4-5.1.1-setup-siri</id>
     <content type="html"><![CDATA[<p>昨天重新安装siri时悲剧了，变成了白苹果，<a target="_blank" href="http://open-learning.appspot.com/?p=105002">后来刷了机</a>。<br /><br />刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html<br /><blockquote>1. 升级iTunes到最新<br />
 2. 备份iPhone 4<br />
 3. 下载absinthe 2.0.4 , 以管理员方式运行，破解完成，出现Cydia<br />

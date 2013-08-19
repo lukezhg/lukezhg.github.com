@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: English | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/english/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-08-18T15:42:42-04:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/english/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-19T19:52:32-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[debug is hard]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/30/debug-is-hard/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/30/debug-is-hard/"/>
     <updated>2012-12-30T01:14:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/30/debug-is-hard</id>
+    <id>http://zhangchunlei.com/blog/2012/12/30/debug-is-hard</id>
     <content type="html"><![CDATA[<p>The hard thing si debug.<br/>
 how can we make it more easier!</p>
 
@@ -27,9 +27,9 @@ how can we make it more easier!</p>
   
   <entry>
     <title type="html"><![CDATA[hello]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/hello/"/>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/hello/"/>
     <updated>2012-12-27T18:27:00-04:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/hello</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/hello</id>
     <content type="html"><![CDATA[<p>this is my first blog using vim to edit.
 can you see it.</p>
 ]]></content>
