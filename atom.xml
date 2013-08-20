@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-19T19:52:32-04:00</updated>
+  <updated>2013-08-19T23:05:20-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Metaphors of good teacher and education reform]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/metaphors-of-good-teacher-and-education-reform/"/>
+    <updated>2013-08-19T22:19:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/metaphors-of-good-teacher-and-education-reform</id>
+    <content type="html"><![CDATA[<p>A good teacher just like a good cook. Of course, you can tell a good cook by the taste of his dishes. So students&#8217; perfect performance is a good predictor of competent teacher. But it takes a lot effort to make the dishes OR evaluate the students. In fact, we can also tell a good cook by his preparation and operation of his cooking.  Good cook can aways make many dishes in a limited time. Because he don&#8217;t stop, when heating the water, he is washing the vegatables or cutting the meat. When the water is ready he is also ready to fry them together. The teacher do the same thing in class expecially in a short class. I found this metaphor visiting Dr C&#8217;s class, she give instructions as well as preparing the tools for modeling, at the same time she was also doing demonstration of what the secret tube behaviors.</p>
+
+<p>Sometimes science teacher educators complain that teachers&#8217; beliefs are stubborn and reluctant to change their practices. Well, It is true.</p>
+
+<p>The science teacher is like a swimming player in a swimming poor. The science teacher educator stand beside and tell the player how to swim, which style is good which is bad. But the most important thing for a person in the swimming poor is to keep safty and the most reliable style is his primary style. How can we blame them not trying to change, if their safty is not guaranteed and skills not developed.</p>
+
+<p>As a science teacher educator, you can not stand by but jump into the swimming poor and provide necessary skills and safety.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Timms video and reflection of teaching science with modeling]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/timms-video-and-reflection-of-teaching-science-with-modeling/"/>
+    <updated>2013-08-19T20:56:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/timms-video-and-reflection-of-teaching-science-with-modeling</id>
+    <content type="html"><![CDATA[<p>It is my first time to view a science classroom teaching in Japan. In fact, it supprise me a little. I know the science education in Japan is of high quality. They get much better score than the other counties and teacher are respectable profession. But I never thought the classroom are so interactive and effective. You can click <a href="http://timssvideo.com/72">here</a> to view the video.</p>
+
+<blockquote><p>This eighth-grade science lesson is about the formation of clouds. It is the third lesson in a sequence of 19 lessons on weather. The lesson is 53 minutes in duration. There are 25 students in the class.</p></blockquote>
+
+<p>Here is my record of the time usage of the class:</p>
+
+<blockquote><p>00-03 review what learnt<br/>
+03-07 demistration<br/>
+07-17 demistration of key skills for today&#8217;s experiment<br/>
+18-36 Student activites(4 experiments and group take turn)<br/>
+36-50 sumary of experiment result and draw conclusion<br/>
+50-52 self-evalation</p></blockquote>
+
+<p>I watched the video twice, first I just got a glance of it very quickly. The second time, I watch it very carefully and make notes of what teacher and students were doing.</p>
+
+<p>First, I found a very interesting thing that the Japenese teacher used about 17 minutes to engage students and make demonstration at the begining. He also used about 17 minutes to sumary the results and conclusions at the end of the class. Acording to psychology studies, people are most likely to remember what happened at begining and at the end. People usually can only concentrate for 15 minutes. So most TED videos will not last more than 17 minutes. I don&#8217;t know if the teacher did it popurely. But he did it really well.</p>
+
+<p>Second, the class is very interesting and vigorous. Students really had fun with the activities and record and try to explain.</p>
+
+<p>Third, it keep a good balance of knowledge-centered and student-centered. The most important ideas and inquiry skills were embodied in student activities.</p>
+
+<p>At last, I want to say although the teacher said nothing about modeling. But he raised a question for students to study.  Students want to explain but had little idea and experieces. So they did the activities that teacher prepared for them. Before experiments, they make their explannation and predictions, they recorded the result on the handouts, they have to revise their explanation and building a more powerful causal model to explain all the phenomenons. So we do can found the shape of modeling in this class.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Design for convinence for people]]></title>
@@ -410,118 +455,6 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
 
 <p>生活既是探索。探索一方面是探索外部世界，自然界，社会，有或者向内部探索，探索自己。相传在德尔斐的阿波罗神庙上刻着“认识你自己”这句名言。但是，又有多少人付诸实践。<br/>
 我们是在尝试中找到和实现自己，还是迷失自己甚至放弃尝试。这是个问。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[try to use ubuntu to press]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
-    <updated>2013-02-04T12:17:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
-    <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
-终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
-
-<p>其实我是把windows下的所有博客项目有关的文件都拷贝到了ubuntu中来，然后在布置好环境的基础上实现正常使用的，居然真的可以。</p>
-
-<p>下面把遇到的问题记录汇总如下：<br/>
-一、安装和使用ubuntu过程中遇到的问题：<br/>
-1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。<br/>
-2  安装ubuntu显卡驱动<br/>
-3  无线链接不能建立，尽管密码正确。<br/>
-4  如何安装和使用电池管理（tp-smapi）实现到达阈值自动停止充电</p>
-
-<p>二、安装git和ruby遇到的问题：<br/>
-1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本<br/>
-3  如何设置让打开终端时自动加载rvm</p>
-
-<p>三、布置octopress遇到的问题：<br/>
-1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
-2 使用rake generate命令时报错</p>
-
-<p>问题解决方法：<br/>
-1.1  选择了一个64位的amd版本的ubuntu进行安装。<br/>
-<a href="http://releases.ubuntu.com/12.04/">Ubuntu 12.04.1 LTS</a></p>
-
-<p>1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。<br/>
-<a href="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&amp;product=2.4.1.3.42&amp;lang=English">AMD Catalyst™ Proprietary Display Driver - Linux x86 &amp; Linux x86_64</a></p>
-
-<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。
-但是这样治标不治本，于是参考了<a href="http://www.linuxdiyf.com/viewarticle.php?id=101861">这个网址</a></p>
-
-<blockquote><p>ppp 的很多选项都是默认的，其中lcp-echo-failure次数被设为4，而lcp-echo-interval设为30秒。也就是说，如果120秒钟之内，ADSL服务器没有给回echo-reply信号，UBuntu便会认为网络已经出了问题，就会断开网络，搞得人非常不爽。症结找到了，问题就要解决了，打开配置文件/etc/ppp/options，将lcp-echo-failure次数设为一个较大的数值就行了，我将该值修改为10。</p></blockquote>
-
-<p>1.5  安装tp-smapi
-参考：<a href="http://www.linuxdiyf.com/linux/201108/688.html">http://www.linuxdiyf.com/linux/201108/688.html</a><br/>
-但是始终无法完成最后一步：sudo modprobe tp_smapi<br/>
-但是反复安装和尝试了之后不知道为什么电池终于冲到71%就补充电了。原因还在继续查找中。</p>
-
-<p>2.1  使用https:而不是git:, 有可能是git被封造成的。<br/>
-参考：<a href="http://www.linuxidc.com/Linux/2012-09/71193.htm">Ubuntu git 安装和使用</a>
-将git clone git://git.kernel.org/pub/scm/git/git.git<br/>
-改为：git clone https://git.kernel.org/pub/scm/git/git.git</p>
-
-<p>2.2  跟换gem源，使用淘宝提供的源。<br/>
-参考：<a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-替换 gem 的 source：<br/>
-$ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
-
-<p>2.3  更改.bash_profile<br/>
-参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
-在$HOME/.bash_profile文件中添加如下内容：<br/>
-[[ -s &#8220;$HOME/.rvm/scripts/rvm&#8221; ]] &amp;&amp; . &#8220;$HOME/.rvm/scripts/rvm&#8221; # This loads RVM into a shell session.  <br/>
-以便在开启一个终端会话时候加载RVM<br/>
-或者手动键入：$ source ~/.rvm/scripts/rvm<br/>
-在或者将该内容添加到~/.bashrc文件末尾。</p>
-
-<p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
-
-<p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
-
-<p>在摸索过程中经常使用的命令：</p>
-
-<ul>
-<li>sudo apt-get install appname  安装程序应用</li>
-<li>make install 编译并安装 .tar.gz2</li>
-<li>sh xx.sh  执行.sh文件</li>
-<li>sudo su 切换到root用户</li>
-<li><p>sudo exit 推出root用户</p></li>
-<li><p>rvm list known</p></li>
-<li><p>rvm list</p></li>
-<li><p>vi filename</p></li>
-<li><p>gedit filename</p></li>
-<li><p>rake generate</p></li>
-<li>rake preview</li>
-<li>rake deploy</li>
-<li><p>rake new_post[&#8220;post title&#8221;]</p></li>
-<li><p>cp  复制文件 到另外一个目录</p></li>
-<li>mv 文件 文件目录</li>
-<li>rm 文件名文件名删除一个文件或多个文件</li>
-<li><p>rm –rf 非空目录名删除一个非空目录下的一切</p></li>
-<li><p>touch 文件名创建一个空文件</p></li>
-<li>mkdir 目录名创建一个目录</li>
-<li>rmdir 空目录名删除一个空目录</li>
-<li>lsusb 查看usb接口</li>
-<li><p>lspci 查看pci接口</p></li>
-<li><p>perl -pi -e &#8216;s|Windows|Ubuntu|g&#8217; <code>find ./ -type f</code></p>
-
-<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
-<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote></li>
-</ul>
-
-
-<p>参考文章：<br/>
-1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-2  <a href="http://yangdd.github.com/blog/2012/09/14/issue/">使用Octopress遇到的问题 - 长老的 Octopress Blog</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[what robot can do for me]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/01/22/what-robot-can-do-for-me/"/>
-    <updated>2013-01-22T18:53:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/01/22/what-robot-can-do-for-me</id>
-    <content type="html"><![CDATA[<p>I am interested in robot because it will do something useful to me.</p>
 ]]></content>
   </entry>
   
