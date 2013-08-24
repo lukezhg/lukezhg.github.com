@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-20T20:50:37-04:00</updated>
+  <updated>2013-08-24T12:30:21-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Interactive simulation based inquiry activities]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
+    <updated>2013-08-24T12:17:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
+    <content type="html"><![CDATA[<p><video width='720' height='480' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='https://raw.github.com/lukezhg/Freyja/master/gmodel3.swf' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/gmodel3.swf" alt="Plant grow to sunlight" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Modeling activities and reflection]]></title>
@@ -464,19 +475,6 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
 
 
 <p>……</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[xampp]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/02/05/xampp/"/>
-    <updated>2013-02-05T09:23:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/02/05/xampp</id>
-    <content type="html"><![CDATA[<p>参考了网上的教程，使用xampp布置了php开发环境，目前正在摸索中。<br/>
-<a href="http://blog.sina.com.cn/s/blog_659b2b32010154v9.html">ubuntu下关于xampp的配置说明<em>木木齊</em>新浪博客</a><br/>
-下载xampp地址：<a href="http://down.tech.sina.com.cn/page/36356.html">http://down.tech.sina.com.cn/page/36356.html</a></p>
-
-<p>使用技巧待续。</p>
 ]]></content>
   </entry>
   
