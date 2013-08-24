@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-24T15:07:21-04:00</updated>
+  <updated>2013-08-24T16:09:24-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,60 +14,72 @@
 
   
   <entry>
+    <title type="html"><![CDATA[How to make Chinese Pancakes]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/24/how-to-make-chinese-pancakes/"/>
+    <updated>2013-08-24T16:07:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/24/how-to-make-chinese-pancakes</id>
+    <content type="html"><![CDATA[<p>Look at the pictures:</p>
+
+<p><a href="http://www.flickr.com/photos/luke4me/9583261179/" title="2013-08-23 13.08.51 by lukezhang, on Flickr"><img src="http://farm6.staticflickr.com/5518/9583261179_6785b89b8b.jpg" width="500" height="374" alt="2013-08-23 13.08.51"></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Interactive simulation based inquiry activities]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
     <updated>2013-08-24T12:17:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
-    <content type="html"><![CDATA[<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="468" height="60" 
- id="mymoviename"> 
-<param name="movie"  
-value="https://raw.github.com/lukezhg/Freyja/master/Gmodel3.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-<embed src="https://raw.github.com/lukezhg/Freyja/master/Gmodel3.swf" quality="high" bgcolor="#ffffff"
-width="468" height="60" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
+    <content type="html"><![CDATA[<p>Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how stars move for a long time, or do experiment about why plant grow to the sunlight. In this case, when oboservation and experiment difficult to carry out in classroom, computer software or interactive simulations can help a lot. There are two examples.</p>
 
-
-
+<p>In a middle school biology class, students can play with the following flash game to figure out why plant grow to the sun.</p>
 
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-
 codebase="http://download.macromedia.com/pub/shockwave/
 cabs/flash/swflash.cab#version=6,0,40,0" 
- 
 width="468" height="60" 
  id="mymoviename"> 
-
 <param name="movie"  
 
-value="http://www.tizag.com/pics/example.swf" /> 
- 
+value="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" /> 
 <param name="quality" value="high" /> 
-
 <param name="bgcolor" value="#ffffff" /> 
 
-<embed src="http://www.tizag.com/pics/example.swf" quality="high" bgcolor="#ffffff"
-
+<embed src="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" quality="high" bgcolor="#ffffff"
 width="468" height="60" 
-
 name="mymoviename" align="" type="application/x-shockwave-flash" 
-
 pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-
-
 </embed> 
-
 </object>
 
 
-<p></p>
+<p>In a elementary school science class, student can stuy how much water does a crow drink every day. They can also study their own diet using the same method.</p>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+<p>Interactive simulations can help:<br/>
+-   enage students, just give a cool show and some questions, then let them play with it.
+-   stimulate students to ask questions
+-   make observations and collect data or evidences<br/>
+-   test their ideas</p>
+
+<p>If teachers can guide and organize them to make explainations or argue with each other based on evidence, and make predictions and test them, at last provide opportunities for self-evaluation and community evaluations, then this approach would be more effective for learning science in classroom.</p>
 ]]></content>
   </entry>
   
@@ -486,43 +498,6 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
 -   可以预先布置学习任务、分发学案，并把实验设计、反思等及时更新到wikispaces上，督促大家做好实验预习。</p>
 
 <p>在本次实验过程中，王星同学以及李娜、郑烨两位同学准备都较为充分，语言和教态也较为自然，值得表扬。其实为什么能脱稿，为什么能够应对各种突发状况，本质上离不开充分的准备。这种准备包括对内容的熟悉，对实验操作过程要点的熟悉，对学生特点和行为的预期等等。当然也离不开好的设计，好的设计一定是将内容、教法以及技术环境以较为合适的方式进行了融合的方案。因此大家也可以从这三个方面下下功夫。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[to be a daddy]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/02/17/to-be-a-daddy/"/>
-    <updated>2013-02-17T22:02:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/02/17/to-be-a-daddy</id>
-    <content type="html"><![CDATA[<p>时间过的真快，一下子就已经是daddy了。小时候爸爸的种种，现在还记忆犹新。以后自己就会成为小家伙的回忆了，该怎样做一个好父亲呢？<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/daddy.jpg" alt="Daddy's little baby" /></p>
-
-<h2>daddy需要做的功课：</h2>
-
-<ul>
-<li>如何给宝宝喂奶<br/>
-  左手托头，让宝宝坐在自己的腿上，面朝自己，右手持奶瓶喂奶。喂奶的过程中要控制宝宝的吃奶速度，宝宝通常会吃一会，休息一会，如果宝宝不吃可以轻轻动一动奶瓶，如果宝宝吃的过快可以先拔出奶瓶，拍拍奶在喂。一般如果一次吃奶较多，由于宝宝的喷门尚未发育好，很容易吐奶，所以需要给宝宝拍奶。拍奶仍然是喂奶的姿势，只不过右手请拍其后背，宝宝打饱嗝或哈欠即可停止。</li>
-<li>如何应对突发事件
-
-<ul>
-<li>打嗝<br/>
-护士的办法是敲宝宝的脚底板，待其哭后打嗝自然消失。但是这一招有的时候也不管用，而且让宝宝用哭泣的方法停止打嗝未免有点不忍心。所以最好的还是预防。一般打嗝的原因很多，比如吃奶吃的太快，受凉，吸入了冷空气，奶水过凉。预防的方法是一般不要在宝宝极度饥饿或者哭泣的时候的时候喂奶，喂奶可以采用多次少量（当然父母要辛苦了），控制好奶水的温度，注意保暖，避免着凉。</li>
-<li>溢奶<br/>
-拍奶是防止的最好办法，但有时候还是避免不了，所以也可以给宝宝准备一个小围巾。</li>
-<li>脱水<br/>
-如果宝宝长时间上吐下泻，那么就要非常注意宝宝是否脱水。一旦发现宝宝长达5个小时没有小便、口唇干燥、哭泣没有眼泪，这时候就要当心宝宝有脱水的危险了。</li>
-<li>感冒<br/>
-感冒分为病毒感冒和伤风感冒。</li>
-<li>便秘</li>
-</ul>
-</li>
-<li>如何照顾宝宝的饮食</li>
-<li>如何进行早期亲子互动</li>
-<li>如何帮宝宝养成良好的生活习惯</li>
-</ul>
-
-
-<p>……</p>
 ]]></content>
   </entry>
   
