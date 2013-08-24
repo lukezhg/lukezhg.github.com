@@ -4,7 +4,7 @@
   <title><![CDATA[tags: MBL | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/mbl/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-24T13:38:46-04:00</updated>
+  <updated>2013-08-24T13:56:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,9 +18,7 @@
     <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
     <updated>2013-08-24T12:17:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
-    <content type="html"><![CDATA[<p><embed src="https://raw.github.com/lukezhg/Freyja/master/gmodel3.swf"></p>
-
-<p>https://raw.github.com/lukezhg/Freyja/master/gmodel3.swf</p>
+    <content type="html"><![CDATA[<p><embed src="https://raw.github.com/lukezhg/Freyja/master/gmodel3.swf;show_title=0&amp;show_fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="225"></embed></p>
 ]]></content>
   </entry>
   
