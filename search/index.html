@@ -52,28 +52,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   </script>
 
 
-
-  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-var customSearchControl = null;
-function sendQuery() {
-  var textNode = document.getElementById('field');
-  if ((textNode.value == '')) {
-    customSearchControl.clearAllResults();
-  } else {
-    customSearchControl.execute(textNode.value);
-  }
-}
-google.load('search', '1', {language : 'en'});
-google.setOnLoadCallback(function() {
-  customSearchControl = new google.search.CustomSearchControl('003240028397592718084:pjkd4hfsp_0');
-  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
-  var options = new google.search.DrawOptions();
-  options.enableSearchResultsOnly();
-  customSearchControl.draw('cse_g', options);
-}, true);
-</script>
-
+  
 </head>
 
 <body   >
@@ -214,13 +193,20 @@ google.setOnLoadCallback(function() {
 
 <h2>即时检索本站内容</h2>
 
-<div id="searchbox" style="width:80%;display:block;margin:0 auto;">
-    <input type="text" name="field" id="field" style="width:100%;height:50px;margin-top:50px;font-size:40px;" onkeyup="sendQuery();" />
-</div>
-
-
-<div id="main-content">
-    <div id="cse_g" style="margin:20px;"></div>
+<div>
+<script>
+  (function() {
+    var cx = '003240028397592718084:pjkd4hfsp_0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 </div>
 
 
