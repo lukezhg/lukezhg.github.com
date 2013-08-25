@@ -4,7 +4,7 @@
   <title><![CDATA[tags: CSE | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/cse/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-25T18:23:59-04:00</updated>
+  <updated>2013-08-25T18:36:02-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,13 +14,99 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Middle school search engine 2.0]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/middle-school-search-engine-2-dot-0/"/>
+    <updated>2013-08-25T18:30:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/middle-school-search-engine-2-dot-0</id>
+    <content type="html"><![CDATA[<h2><a href="https://www.google.com.hk/cse/home?cx=003236158428466992246:mvbdsgvf6hk">找中学v2.0</a></h2>
+
+<p>本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003236158428466992246:mvbdsgvf6hk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Key middle school search engine]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/key-middle-school-search-engine/"/>
+    <updated>2013-08-25T18:29:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/key-middle-school-search-engine</id>
+    <content type="html"><![CDATA[<h2><a href="https://www.google.com.hk/cse/home?cx=003240028397592718084:t6ua0pji53e">找中学v1.0</a></h2>
+
+<p>本搜索引擎主要用于搜索各地区重点中学教师招聘信息、招生信息等。</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003240028397592718084:t6ua0pji53e';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Teaching resources search engine]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/teaching-resources-search-engine/"/>
+    <updated>2013-08-25T18:28:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/teaching-resources-search-engine</id>
+    <content type="html"><![CDATA[<h2><a href="http://www.google.com/cse/home?cx=003240028397592718084:wtlazttaiia">中学生物学教学资源搜索引擎</a></h2>
+
+<p>本搜索引擎主要用于搜索生物学教学资源，比如试题、课件、教案等，大多能免费匿名下载。</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003240028397592718084:wtlazttaiia';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Science Education Search Engine]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine/"/>
     <updated>2013-08-25T18:19:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine</id>
     <content type="html"><![CDATA[<h2><a href="http://www.google.com/cse/home?cx=003240028397592718084%3Adgtq8fkvprs">Science education search engine</a></h2>
 
-<p>本搜索引擎主要用于搜索科学教育相关的英文全文数据库。</p>
+<p>本搜索引擎主要用于搜索科学教育相关的英文全文数据库。
+This search engine is useful to search the full papers on Science Education.<br/>
+Good Luck with your search!</p>
 
 <div>
 <script>
