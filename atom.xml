@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-25T18:10:14-04:00</updated>
+  <updated>2013-08-25T18:23:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Science Education Search Engine]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine/"/>
+    <updated>2013-08-25T18:19:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine</id>
+    <content type="html"><![CDATA[<h2><a href="http://www.google.com/cse/home?cx=003240028397592718084%3Adgtq8fkvprs">Science education search engine</a></h2>
+
+<p>本搜索引擎主要用于搜索科学教育相关的英文全文数据库。</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003240028397592718084:dgtq8fkvprs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My favourite song]]></title>
@@ -27,7 +55,7 @@
 -   怒放-郑钧<br/>
 -   回来-梁博<br/>
 -   怒放的生命-汪峰
--   春天里-旭日阳刚
+-   春天里-旭日阳刚<br/>
 -   Right here waiting(此情可待)-Richard Marx</p>
 ]]></content>
   </entry>
@@ -490,18 +518,6 @@ def getName(self):
 <img src="https://raw.github.com/lukezhg/Freyja/master/lovers-dancing-shoe.png" alt="beauty-in-your-cup" />
 <img src="https://raw.github.com/lukezhg/Freyja/master/hand-tap-1.png" alt="beauty-in-your-cup" />
 <img src="https://raw.github.com/lukezhg/Freyja/master/music-tap-1.png" alt="beauty-in-your-cup" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[win7 tab close error]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/04/04/win7-tab-close-error/"/>
-    <updated>2013-04-04T17:46:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/04/04/win7-tab-close-error</id>
-    <content type="html"><![CDATA[<p>P：关闭ie9标签页显示错误。<br/>
-T：升级为ie10问题仍然存在。<br/>
-T：关闭程序兼容性助手服务，问题仍为解决。<br/>
-S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
 ]]></content>
   </entry>
   

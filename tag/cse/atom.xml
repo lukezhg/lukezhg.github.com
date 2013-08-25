@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: CSE | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/cse/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-25T18:23:59-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Science Education Search Engine]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine/"/>
+    <updated>2013-08-25T18:19:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/science-education-search-engine</id>
+    <content type="html"><![CDATA[<h2><a href="http://www.google.com/cse/home?cx=003240028397592718084%3Adgtq8fkvprs">Science education search engine</a></h2>
+
+<p>本搜索引擎主要用于搜索科学教育相关的英文全文数据库。</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003240028397592718084:dgtq8fkvprs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
