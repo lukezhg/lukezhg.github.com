@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-25T00:10:37-04:00</updated>
+  <updated>2013-08-25T12:18:23-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My favourite song]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/my-favourite-song/"/>
+    <updated>2013-08-25T11:02:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/my-favourite-song</id>
+    <content type="html"><![CDATA[<p>This is my favourite list:<br/>
+-   花火-梁博<br/>
+-   狼-齐秦<br/>
+-   勇敢的心-汪峰<br/>
+-   蓝莲花-许巍<br/>
+-   心如刀割-张学友<br/>
+-   怒放-郑钧<br/>
+-   回来-梁博<br/>
+-   怒放的生命-汪峰
+-   春天里-旭日阳刚
+-   Right here waiting(此情可待)-Richard Marx</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Letter to my EfSE students]]></title>
@@ -483,22 +502,6 @@ def getName(self):
 T：升级为ie10问题仍然存在。<br/>
 T：关闭程序兼容性助手服务，问题仍为解决。<br/>
 S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[get down to work]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/04/04/get-down-to-work/"/>
-    <updated>2013-04-04T17:00:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/04/04/get-down-to-work</id>
-    <content type="html"><![CDATA[<p>静下心来做事情是很了不起的品质。<br/>
-快速的静下心来做事情是不得了的品格。</p>
-
-<p>回顾过去总结教训是了不起的品质。<br/>
-周期行的回顾并找出未来行动的参考是不得了的品格。<br/>
--   资料文本的回顾<br/>
--   文章的回顾<br/>
--   时间和行为的回顾</p>
 ]]></content>
   </entry>
   
