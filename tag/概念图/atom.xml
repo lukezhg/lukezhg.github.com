@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: 概念图 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/概念图/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-24T22:34:21-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[常用概念图制作软件和在线工具]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps/"/>
+    <updated>2011-12-03T00:00:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps</id>
+    <content type="html"><![CDATA[<p>概念图制作软件下载地址：<br />Download - FreeMind: <a target="_blank" href="http://freemind.sourceforge.net/wiki/index.php/Download">http://freemind.sourceforge.net/wiki/index.php/Download</a><br />Download XMind - XMind - Mind Mapping and Storming: <a target="_blank" href="http://www.xmind.net/downloads/">http://www.xmind.net/downloads/</a><br />IHMC CmapTools - Download: <a target="_blank" href="http://cmap.ihmc.us/download/">http://cmap.ihmc.us/download/</a><br /><br />概念图制作在线工具网址：<br />Mind42.com - Collaborative mind mapping in your browser<br />: <a target="_blank" href="http://www.mind42.com/">http://www.mind42.com/</a><br /><br />Mind Mapping and Brainstorming Software - Mindomo<br />: <a target="_blank" href="http://www.mindomo.com/">http://www.mindomo.com/</a><br /><br />Online Mind Mapping and Brainstorming - MindMeister<br />: <a target="_blank" href="http://www.mindmeister.com/">http://www.mindmeister.com/</a></p>
+
+]]></content>
+  </entry>
+  
+</feed>
