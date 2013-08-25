@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？ 思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连带网址功能，就可以把相关的作业及要求摘录到笔记中， &hellip;">
+  <meta name="description" content="当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？
+思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连带网址功能，就可以把相关的作业及要求摘录到笔记中， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 
@@ -107,7 +130,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2012-11-29T00:00:00-05:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
+<time datetime="2012-11-29T00:00:00-04:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -143,7 +166,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2012-11-29T00:00:00-05:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
+<time datetime="2012-11-29T00:00:00-04:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
       
 
 

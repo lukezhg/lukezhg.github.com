@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="《天眼》这篇小说围绕着&ldquo;盒子&rdquo;展开，故事情节跌宕起伏，用了一天时间一口气读完。虽然并应该花这么多的时间做这样的阅读消遣，但是奈何时间已经花费了，索性把自己的收获记录一番。 读过这篇小说，我在思考一个问题，如何写好故事？特别是如何写好教育故事和学习故事？ &hellip;">
+  <meta name="description" content="《天眼》这篇小说围绕着&ldquo;盒子&rdquo;展开，故事情节跌宕起伏，用了一天时间一口气读完。虽然并应该花这么多的时间做这样的阅读消遣，但是奈何时间已经花费了，索性把自己的收获记录一番。
+读过这篇小说，我在思考一个问题，如何写好故事？特别是如何写好教育故事和学习故事？ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 

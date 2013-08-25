@@ -52,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
   </script>
 
 
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
+
 </head>
 
 <body   >
@@ -103,7 +125,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2013-01-12T09:37:00-05:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time></p>
+<time datetime="2013-01-12T09:37:00-04:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time></p>
   </header>
   
   <h2><a href="http://www.google.com/cse/home?cx=003240028397592718084%3Adgtq8fkvprs">Science education search engine</a></h2>
@@ -122,6 +144,35 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。</p>
 
+<div id="searchbox" style="width:80%;display:block;margin:0 auto;">
+    <input type="text" name="field" id="field" style="width:100%;height:50px;margin-top:50px;font-size:40px;" onkeyup="sendQuery();" />
+</div>
+
+
+<div id="main-content">
+    <div id="cse_g" style="margin:20px;"></div>
+</div>
+
+
+<p>谷歌自己提供的代码</p>
+
+<div>
+<script>
+  (function() {
+    var cx = '003236158428466992246:mvbdsgvf6hk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+
   
     <footer>
       <p class="meta">
@@ -138,7 +189,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2013-01-12T09:37:00-05:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+<time datetime="2013-01-12T09:37:00-04:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
         
         
       </p>

@@ -9,7 +9,9 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="昨天重新安装siri时悲剧了，变成了白苹果，后来刷了机。刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html1. 升级iTunes到最新 2. 备份iPhone 4 3 &hellip;">
+  <meta name="description" content="昨天重新安装siri时悲剧了，变成了白苹果，后来刷了机。刷到5.1.1系统之后还是忍不住在iphone上装了siri，具体的方法见：http://blog.sina.com.cn/s/blog_517625cc01012whj.html1. 升级iTunes到最新
+2. 备份iPhone 4
+3 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +53,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 

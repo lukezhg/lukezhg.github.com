@@ -52,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
   </script>
 
 
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
+
 </head>
 
 <body   >
@@ -105,7 +127,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 <h1><a href="/blog/2011/11/27/brain-bugs/">大脑错觉（Brain bugs）</a></h1>
-<time datetime="2011-11-27T00:00:00-05:00" pubdate><span class='month'>Nov</span> <span class='day'>27</span> <span class='year'>2011</span></time>
+<time datetime="2011-11-27T00:00:00-04:00" pubdate><span class='month'>Nov</span> <span class='day'>27</span> <span class='year'>2011</span></time>
 
 <footer>
 

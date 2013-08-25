@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="生活中有很多假、恶、丑，但是又有多少人为了自身环境的改善，为了未来子女生活环境的改善，愿意从我做起，付诸于行动。积极的生活，积极的改善，积极的努力，哪怕是一点一滴，而不是消极的抱怨、被动的适应、甚至复制陋习。态度决定命运！决定你的，我的，大家的，未来子女的。 ">
+  <meta name="description" content="生活中有很多假、恶、丑，但是又有多少人为了自身环境的改善，为了未来子女生活环境的改善，愿意从我做起，付诸于行动。积极的生活，积极的改善，积极的努力，哪怕是一点一滴，而不是消极的抱怨、被动的适应、甚至复制陋习。态度决定命运！决定你的，我的，大家的，未来子女的。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 
@@ -110,7 +133,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2011-01-03T00:00:00-05:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2011</time>
+<time datetime="2011-01-03T00:00:00-04:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2011</time>
         
          | <a href="/blog/2011/01/03/thoughts-on-life/#disqus_thread">Comments</a>
         
@@ -148,7 +171,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-12-11T00:00:00-05:00" pubdate data-updated="true">Dec 11<span>th</span>, 2010</time>
+<time datetime="2010-12-11T00:00:00-04:00" pubdate data-updated="true">Dec 11<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/12/11/notesbook-of-sui-zhu-san-guo/#disqus_thread">Comments</a>
         
@@ -186,7 +209,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-12-01T00:00:00-05:00" pubdate data-updated="true">Dec 1<span>st</span>, 2010</time>
+<time datetime="2010-12-01T00:00:00-04:00" pubdate data-updated="true">Dec 1<span>st</span>, 2010</time>
         
          | <a href="/blog/2010/12/01/lesson-plan-hatchiing/#disqus_thread">Comments</a>
         

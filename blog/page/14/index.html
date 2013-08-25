@@ -9,7 +9,12 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="衡量一个信息的质量的标准： 1 信息是否完整 2 信息是否准确 3 信息是否及时 4 信息投递渠道是否合理 5 信息对于接受者是否有价值 如果你是一个信息投递者，那么你一定要注意审视这些指标，否则你投递的很可能是垃圾信息。 而投机垃圾信息的人，是让人厌烦的！ ">
+  <meta name="description" content="衡量一个信息的质量的标准：
+1 信息是否完整
+2 信息是否准确
+3 信息是否及时
+4 信息投递渠道是否合理
+5 信息对于接受者是否有价值 如果你是一个信息投递者，那么你一定要注意审视这些指标，否则你投递的很可能是垃圾信息。 而投机垃圾信息的人，是让人厌烦的！ ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +56,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 
@@ -196,7 +223,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-03-11T00:00:00-05:00" pubdate data-updated="true">Mar 11<span>th</span>, 2010</time>
+<time datetime="2010-03-11T00:00:00-04:00" pubdate data-updated="true">Mar 11<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/03/11/stoy-of-sao-hong-lang/#disqus_thread">Comments</a>
         
@@ -234,7 +261,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-03-04T00:00:00-05:00" pubdate data-updated="true">Mar 4<span>th</span>, 2010</time>
+<time datetime="2010-03-04T00:00:00-04:00" pubdate data-updated="true">Mar 4<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/03/04/sharing-with-new-classmates/#disqus_thread">Comments</a>
         
@@ -272,7 +299,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-03-02T00:00:00-05:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2010</time>
+<time datetime="2010-03-02T00:00:00-04:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2010</time>
         
          | <a href="/blog/2010/03/02/can-you-transform-work-into-play/#disqus_thread">Comments</a>
         
@@ -310,7 +337,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-03-01T00:00:00-05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2010</time>
+<time datetime="2010-03-01T00:00:00-04:00" pubdate data-updated="true">Mar 1<span>st</span>, 2010</time>
         
          | <a href="/blog/2010/03/01/Social-learning-edge-learning/#disqus_thread">Comments</a>
         
@@ -348,7 +375,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-02-28T00:00:00-05:00" pubdate data-updated="true">Feb 28<span>th</span>, 2010</time>
+<time datetime="2010-02-28T00:00:00-04:00" pubdate data-updated="true">Feb 28<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/02/28/engage-activity-for-evolution-strong-eggs2/#disqus_thread">Comments</a>
         
@@ -386,7 +413,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-02-25T00:00:00-05:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
+<time datetime="2010-02-25T00:00:00-04:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/02/25/travel-cost-form-travel-to-brain-and-sciety/#disqus_thread">Comments</a>
         
@@ -424,7 +451,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-02-25T00:00:00-05:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
+<time datetime="2010-02-25T00:00:00-04:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/02/25/notes-of-ground-theory/#disqus_thread">Comments</a>
         
@@ -462,7 +489,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2010-02-20T00:00:00-05:00" pubdate data-updated="true">Feb 20<span>th</span>, 2010</time>
+<time datetime="2010-02-20T00:00:00-04:00" pubdate data-updated="true">Feb 20<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/02/20/what-to-do-if-your-mouse-not-work/#disqus_thread">Comments</a>
         

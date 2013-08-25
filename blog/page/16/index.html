@@ -52,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
   </script>
 
 
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
+
 </head>
 
 <body   >
@@ -110,7 +132,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-26T00:00:00-05:00" pubdate data-updated="true">Dec 26<span>th</span>, 2009</time>
+<time datetime="2009-12-26T00:00:00-04:00" pubdate data-updated="true">Dec 26<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/26/how-to-build-your-PLE/#disqus_thread">Comments</a>
         
@@ -148,7 +170,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-20T00:00:00-05:00" pubdate data-updated="true">Dec 20<span>th</span>, 2009</time>
+<time datetime="2009-12-20T00:00:00-04:00" pubdate data-updated="true">Dec 20<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/20/web2-0-practicer-where-to-go/#disqus_thread">Comments</a>
         
@@ -186,7 +208,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-17T00:00:00-05:00" pubdate data-updated="true">Dec 17<span>th</span>, 2009</time>
+<time datetime="2009-12-17T00:00:00-04:00" pubdate data-updated="true">Dec 17<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/17/bioteahouse-rss/#disqus_thread">Comments</a>
         
@@ -224,7 +246,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-06T00:00:00-05:00" pubdate data-updated="true">Dec 6<span>th</span>, 2009</time>
+<time datetime="2009-12-06T00:00:00-04:00" pubdate data-updated="true">Dec 6<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/06/several-important-time-point-in-teaching/#disqus_thread">Comments</a>
         
@@ -262,7 +284,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-06T00:00:00-05:00" pubdate data-updated="true">Dec 6<span>th</span>, 2009</time>
+<time datetime="2009-12-06T00:00:00-04:00" pubdate data-updated="true">Dec 6<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/06/how-to-make-courseware-for-biology-instruction/#disqus_thread">Comments</a>
         
@@ -300,7 +322,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-05T00:00:00-05:00" pubdate data-updated="true">Dec 5<span>th</span>, 2009</time>
+<time datetime="2009-12-05T00:00:00-04:00" pubdate data-updated="true">Dec 5<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/05/from-xueji-to-concept-learning/#disqus_thread">Comments</a>
         
@@ -338,7 +360,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-12-04T00:00:00-05:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
+<time datetime="2009-12-04T00:00:00-04:00" pubdate data-updated="true">Dec 4<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/12/04/teaching-is-building-a-slide-ladder/#disqus_thread">Comments</a>
         
@@ -376,7 +398,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-11-28T00:00:00-05:00" pubdate data-updated="true">Nov 28<span>th</span>, 2009</time>
+<time datetime="2009-11-28T00:00:00-04:00" pubdate data-updated="true">Nov 28<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/11/28/experice-of-playing-second-life/#disqus_thread">Comments</a>
         
@@ -414,7 +436,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-11-14T00:00:00-05:00" pubdate data-updated="true">Nov 14<span>th</span>, 2009</time>
+<time datetime="2009-11-14T00:00:00-04:00" pubdate data-updated="true">Nov 14<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/11/14/quantum-learning/#disqus_thread">Comments</a>
         
@@ -452,7 +474,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2009-11-05T00:00:00-05:00" pubdate data-updated="true">Nov 5<span>th</span>, 2009</time>
+<time datetime="2009-11-05T00:00:00-04:00" pubdate data-updated="true">Nov 5<span>th</span>, 2009</time>
         
          | <a href="/blog/2009/11/05/the-advantage-and-disadvantage-of-NLC/#disqus_thread">Comments</a>
         

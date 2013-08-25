@@ -52,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
   </script>
 
 
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
+
 </head>
 
 <body   >
@@ -105,7 +127,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 <h1><a href="/blog/2010/02/18/knowlege-of-gae/">今天学习了一些关于GAE的知识</a></h1>
-<time datetime="2010-02-18T00:00:00-05:00" pubdate><span class='month'>Feb</span> <span class='day'>18</span> <span class='year'>2010</span></time>
+<time datetime="2010-02-18T00:00:00-04:00" pubdate><span class='month'>Feb</span> <span class='day'>18</span> <span class='year'>2010</span></time>
 
 <footer>
 

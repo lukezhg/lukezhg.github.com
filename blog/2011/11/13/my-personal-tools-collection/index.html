@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="用了很多工具，比如diigo,evernote,listit,tiddlywiki,google reader等，但是发现工具多了之后，经常记得自己保存了某个信息，但是不知道存在在哪了。于是需要把这些工具的信息流进行一下规划，最好选择gmail和evernote作为两个集中地。如下图（信息如鱼）： ">
+  <meta name="description" content="用了很多工具，比如diigo,evernote,listit,tiddlywiki,google reader等，但是发现工具多了之后，经常记得自己保存了某个信息，但是不知道存在在哪了。于是需要把这些工具的信息流进行一下规划，最好选择gmail和evernote作为两个集中地。如下图（信息如鱼）：
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 
@@ -107,7 +130,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2011-11-13T00:00:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2011</time>
+<time datetime="2011-11-13T00:00:00-04:00" pubdate data-updated="true">Nov 13<span>th</span>, 2011</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -139,7 +162,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2011-11-13T00:00:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2011</time>
+<time datetime="2011-11-13T00:00:00-04:00" pubdate data-updated="true">Nov 13<span>th</span>, 2011</time>
       
 
 

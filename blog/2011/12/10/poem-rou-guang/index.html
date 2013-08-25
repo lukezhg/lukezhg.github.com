@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="绿油油的天啊波光荡漾小河里的水啊欢快的流淌是谁让我倾心向往是……是希望，是梦想是照亮你我心底的那缕柔光 ">
+  <meta name="description" content="绿油油的天啊波光荡漾小河里的水啊欢快的流淌是谁让我倾心向往是……是希望，是梦想是照亮你我心底的那缕柔光
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -51,6 +52,28 @@ $(document).bind('DOMNodeInserted', function(event) {
     })();
   </script>
 
+
+
+  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+var customSearchControl = null;
+function sendQuery() {
+  var textNode = document.getElementById('field');
+  if ((textNode.value == '')) {
+    customSearchControl.clearAllResults();
+  } else {
+    customSearchControl.execute(textNode.value);
+  }
+}
+google.load('search', '1', {language : 'en'});
+google.setOnLoadCallback(function() {
+  customSearchControl = new google.search.CustomSearchControl('003236158428466992246:mvbdsgvf6hk');
+  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.enableSearchResultsOnly();
+  customSearchControl.draw('cse_g', options);
+}, true);
+</script>
 
 </head>
 
@@ -107,7 +130,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2011-12-10T00:00:00-05:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
+<time datetime="2011-12-10T00:00:00-04:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -139,7 +162,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2011-12-10T00:00:00-05:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
+<time datetime="2011-12-10T00:00:00-04:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
       
 
 <span class="categories">
