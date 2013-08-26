@@ -147,33 +147,52 @@ google.setOnLoadCallback(function() {
 
 <p>The following are my scripts:<br/>
 1.  Sina Weibo(DUDU)<br/>
-<code>
-var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
-gBrowser.loadOneTab(sel, {</p>
+<code></p>
 
-<pre><code>inBackground: true,
-relatedToCurrent: true
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
 </code></pre>
 
-<p>});
-</code>
+<p></code>
 2. iciba(RLR)<br/>
-<code>
-var word = getBrowserSelection();
-if (!word)</p>
+<code></p>
 
-<pre><code>return;
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
 </code></pre>
 
-<p>var sel = &#8216;http://www.iciba.com/&#8217;+encodeURIComponent(word);
-gBrowser.loadOneTab(sel, {</p>
+<p></code>
+3.  Copy the title and url</p>
 
-<pre><code>inBackground: true,
-relatedToCurrent: true
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
 </code></pre>
 
-<p>});
-</code></p>
 </div>
   
   
