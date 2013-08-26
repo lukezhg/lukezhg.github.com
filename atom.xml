@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-25T22:39:26-04:00</updated>
+  <updated>2013-08-26T19:06:30-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox extension FireGesture Scripts]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts/"/>
+    <updated>2013-08-26T18:23:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts</id>
+    <content type="html"><![CDATA[<p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
+
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code>
+var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {</p>
+
+<pre><code>inBackground: true,
+relatedToCurrent: true
+</code></pre>
+
+<p>});
+</code>
+2. iciba(RLR)<br/>
+<code>
+var word = getBrowserSelection();
+if (!word)</p>
+
+<pre><code>return;
+</code></pre>
+
+<p>var sel = &#8216;http://www.iciba.com/&#8217;+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {</p>
+
+<pre><code>inBackground: true,
+relatedToCurrent: true
+</code></pre>
+
+<p>});
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Strong sense of crisis make a nation grow sturdy]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/"/>
+    <updated>2013-08-26T15:43:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy</id>
+    <content type="html"><![CDATA[<p>People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy.</p>
+
+<p>American people and Unite States are good examples.</p>
+
+<p>Here are some pictures evidence.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/dangerchair.jpg" alt="Emergency Chair in Aderhold" />
+<img src="" alt="Emergency Shower in Classroom" /><br/>
+!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Complacency and inferiority are both enemies of study]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/"/>
+    <updated>2013-08-26T15:18:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study</id>
+    <content type="html"><![CDATA[<p>在学习和借鉴别国教育经验的时候，我们往往容易摆错心态。一种是自满，觉得学不学无所谓，别国的教育理念和实践也好不到哪去。另外一种是奉为神明，觉得一切都是好的，都要搬过来。然后一谈到本土的教育，觉得很自卑。其实这两种太多都过于偏激，都不可取。</p>
+
+<p>其实出现这种情况，也在一定程度上反映了我们缺乏全方位深度思考的能力，这是灌输式教育很难教出来的。</p>
+
+<p>其实对于一线教师而言，看看别人的课堂，别校的课堂，别国的课堂，是非常好的第一步，这意味着你在尝试改变和探寻。观看别人的课堂目的并不是照搬别人的课堂，但它们至少会告诉你，什么样的课堂是可能的。接下来思考，在你的控制范围内，你能让它在多大程度上发生，如何设计你的课堂，在实践中有用的留下，不好用的改进，没用的舍弃。这是一个一线教师能够做的，至少能让自己班上的孩子们保留一丝对自然科学的向往。这就是一线教师值得骄傲的。至于教育系统的问题，多半责任在教育决策者和研究者身上，而且问题不可能一下子解决。学习和研究别人的东西没什么丢人的，不学习才可耻。孔子说“三人行，必有我师”，人家美国都喊出“超越上海”的口号了，我们观摩观摩别国的课堂，研究研究他们的套路，有什么可自卑的。当然学习不是迷信，研究不是照搬。</p>
+
+<p>自满和自卑其实都是学习的敌人。而在今天，不学习是必然要落后的，即便曾经强盛过。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why we teach science in school and how]]></title>
@@ -66,7 +136,7 @@ Should science teaching keep the same as before? Never.</p>
 
 <p>另外再看看我们学生高考完的表现，焚书啊！你说教育取得了多少成绩，我说很惨，没有发自内心的热爱，一票否决。</p>
 
-<p>最近看了Timss的几个课堂视频，强列推荐大家看看，特别是日本的中学科学课堂。大家可以自己比一比，想一想。Timssvideo-Japan: http://timssvideo.com/72</p>
+<p>最近看了Timss的几个课堂视频，强列推荐大家看看，特别是日本的中学科学课堂。大家可以自己比一比，想一想。<a href="http://timssvideo.com/72">Timssvideo-Japan-Physics</a></p>
 
 <p>千万不要被上海的pisa成绩或者这本书的标题蒙骗了，要想想样本的代表性以及作者的立场。说到科学教育，中国科学教育者还有很长的一段路要走。</p>
 ]]></content>
@@ -450,126 +520,6 @@ Oh, I nearly forget. The water ﻿purifier﻿. It is so cool and useful, I love 
 
 <p>After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?<br/>
 -   The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Observation of daily life of Americans]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/02/observation-of-daily-life-of-americans/"/>
-    <updated>2013-08-02T06:08:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/02/observation-of-daily-life-of-americans</id>
-    <content type="html"><![CDATA[<p>These days while I live in my apartment, I pay close attention to the daily life of people here. I have drawed a conclusion: Americans are lazy.</p>
-
-<p>In fact, Lazy here is not used in a derogatory sense. You know, only the lazy people can invent and design a comfortable life. Americans are such kind of designers who are persueing simple but comfortable life. Let me give you some examples.</p>
-
-<p>I live in a house department. In China, the parking area is often underground or a little far from the appartment. But in USA, the parking lot is jut in front of the hourse near the door. You can imagine when you get back from work, get out of your car, and then enter your door, it is so convinent.</p>
-
-<p>After you get in, you can find a kitchen, a sitting room, a laundry room and a bath room. If you take a look at the kitchen, you will find a dish washer there and microwave oven. In China, most people just wash by hands, you can hardly found a dish washer, expecially in a student&#8217;s department.</p>
-
-<p>As to food, most food can be cooked just by heatting, like milk and bread. If sauces are needed, they are already mixed up and ready for use. You can find all this kind of mixed up sauces or semi-manufactured food everywhere in a food supermaket. Cooking become easy here, athough the taste may becoming a little dull. Most Chinese will not buy the mixed sauces, they may want to make their own although they will spent a lot of time on cooking.</p>
-
-<p>One day, a ceaseless noise of machinery wake me up. I look out through the window, I found a man is using a grass cutter in front of the door. In China, people also use this kind of grass cutter, which is belted to the waist. But lawn mower like a car is hardly found in China. I often saw an american sitting on it and drive it on the lawn, it is fun. I also found people here clean the street in a differnt way, they use a air blower to blow the leaves away and make the road clean. If you walk on street in the early morning in Beijing, you will see a cleaner clean street with broom. You will never found a man with a blowing machine walk here and there.</p>
-
-<p>And almost everyone have a car here. Once I ask a black man for directions, after telling my the way, he said don&#8217;t you have a car, I sait not yet. He then added while it will be 20 to 30 minutes&#8217; walk. I follow his directions, after 10 minutes I got there. It is not that far, I said in my mind. May be they drive too much, and then have no idea how long it will take by walking.</p>
-
-<p>So there are so many differences between the two countries. It also stand for different culture. The Americans are taking every advantage of modern science and technology to make their lives simple and comfortable. Labor is much more expensive in USA than in China. The Chinese culture advocate deligent, hard-working and Obedience.  The American culture advocate Science &amp; Technolgy, comfortable life and freedom. You can not say which one is better, but they can learn from each other.  Athough the American life is easy and comfortable, but it exhausted much more energy. Athough, Chinese food is delicious, but it is time cousuming, I think Chinese really should spend more time on inovation in S&amp;T and social system.</p>
-
-<p>by chunlei 08/02/13 07:30AM</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dream back to Home]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/02/dream-back-to-home/"/>
-    <updated>2013-08-02T05:19:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/02/dream-back-to-home</id>
-    <content type="html"><![CDATA[<p>I had a dream today. I took a flight back to home just in order to make sure everthing at home is Ok. I don&#8217;t konw why. There is an old saying what you dream at night is what you think at day. Maybe I am a little homesick now. When I am awake, I am laying on a big white bed still in USA. I thought I will not easily be homesick, but I am wrong. Well my advisor is right, I will confront some hard time and even shed tears. If it was the Cost, what I can do is only maximize the benifit.</p>
-
-<p>I have learnt how to cook rice in microwave oven. I also learn how to cook dishes in a pan which the bottom is flat.  I have been accustomed to the food here, milk and egg for breakfast, noodles or rice for lunch and supper. I improve my spoken and writing English through participting some online courses. It does work.</p>
-
-<p>I will also record what I have done, observed and thought by bloging. It will cover all the stories that I experienced during my study in USA.</p>
-
-<p>by chunlei 08/02/13 05:41 AM</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[python brief]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/07/30/python-brief/"/>
-    <updated>2013-07-30T14:25:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/07/30/python-brief</id>
-    <content type="html"><![CDATA[<p>Python重要用法示例</p>
-
-<blockquote><blockquote><blockquote><p>dir(list)
-显示关键字相关的函数</p>
-
-<p>help(list.reverse)
-查询某个函数的功能</p></blockquote></blockquote></blockquote>
-
-<p>set 让一个list变成无重复元素的set
-例如：</p>
-
-<blockquote><blockquote><blockquote><p>shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;,&#8217;circle&#8217;]
-setOfShapes = set(shapes)
-setOfShapes
-set([&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;])
-setOfShapes.add(&#8216;polygon&#8217;)
-&#8216;rhombus&#8217; in setOfShapes
-False
-setOfShapes - setOfFavoriteShapes
-setOfShapes &amp; setOfFavoriteShapes
-setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
-
-<p>map和lambda</p>
-
-<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
-[1, 4, 9]
-filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
-[4, 5, 4]</p></blockquote></blockquote></blockquote>
-
-<p>Object 先定义一个类，然后给类生成实例
-定义如：
-class FruitShop:</p>
-
-<pre><code>def __init__(self, name, fruitPrices):
-    """
-        name: Name of the fruit shop
-
-        fruitPrices: Dictionary with keys as fruit 
-        strings and prices for values e.g. 
-        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
-    """
-    self.fruitPrices = fruitPrices
-    self.name = name
-    print 'Welcome to the %s fruit shop' % (name)
-
-def getCostPerPound(self, fruit):
-    """
-        fruit: Fruit string
-    Returns cost of 'fruit', assuming 'fruit'
-    is in our inventory or None otherwise
-    """
-    if fruit not in self.fruitPrices:
-        print "Sorry we don't have %s" % (fruit)
-        return None
-    return self.fruitPrices[fruit]
-
-def getPriceOfOrder(self, orderList):
-    """
-        orderList: List of (fruit, numPounds) tuples
-
-    Returns cost of orderList. If any of the fruit are  
-    """ 
-    totalCost = 0.0             
-    for fruit, numPounds in orderList:
-        costPerPound = self.getCostPerPound(fruit)
-        if costPerPound != None:
-            totalCost += numPounds * costPerPound
-    return totalCost
-
-def getName(self):
-    return self.name
-</code></pre>
 ]]></content>
   </entry>
   
