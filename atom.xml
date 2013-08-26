@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-25T18:36:02-04:00</updated>
+  <updated>2013-08-25T22:39:26-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why we teach science in school and how]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/why-we-teach-science-in-school-and-how/"/>
+    <updated>2013-08-25T21:27:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/why-we-teach-science-in-school-and-how</id>
+    <content type="html"><![CDATA[<h3>Why</h3>
+
+<p>It is important for students to survive in such an era full of science and technology products and information.<br/>
+It is also important for a country to have enough science literate talents and labors in order to survive in the global economy.<br/>
+Why science important? You can go on reading another blog post<a href="http://www.letstalkscience.ca/about-us/why-science">Why science?</a></p>
+
+<h3>We</h3>
+
+<p>Science teacher is a career but also a job. They are playing the most important role in developing the science literacy of the next generation. We choose it and we do it.</p>
+
+<h3>Teach</h3>
+
+<p>Good teaching is not an accident. It is a pursely planed activity fiting students&#8217; needs and level.</p>
+
+<h3>Science</h3>
+
+<p>Authentic science not just includ scientific knowledge(facts, concepts, theories), but also the process of science and the nature of science.</p>
+
+<h3>In school</h3>
+
+<p>While school education system is still the dominant formal learning place today. So it is an crutial battle feild of science education. But science learning can happen anywhere not just in school.</p>
+
+<h3>Why has science teaching changed over time?</h3>
+
+<p>Science is changing everyday. New discovery, New papers, New theories and models, in fact science update itself everyday.<br/>
+Student is changing every year. Students today are not like before. They have iphone, ipad, facebook. Even kids at the same age in different class response significant differently to the same question.<br/>
+Society is changing too. It need more talents who are good at 4Cs: Communication, Collaboration, Critical thinking and Creativity.<br/>
+Should science teaching keep the same as before? Never.</p>
+
+<h3>How should science be taught in science classrooms?</h3>
+
+<p>Well, It is really a hard question.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Surpassing Shanghai]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/surpassing-shanghai/"/>
+    <updated>2013-08-25T21:08:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/surpassing-shanghai</id>
+    <content type="html"><![CDATA[<p>最近在QQ论坛里，有同学提到这本书《超越上海：美国应该如何建设世界顶尖的教育系统》。这个标题容易给人一种误解，以为中国的教育已经在美国前头了，这绝对是错误的理解。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Surpassing-Shanghai.jpg" alt="Surpassing Shanghai" /><br/>
+其实美国人的危机意识很强烈，从《A nation at risk》到《No child left behind》都显示了国家对教育的重视，特别是科学教育，其实大家去查一查各国的教育财政预算比例就清楚了。之所以很多美国学者喊狼来了，道理很简单，第一是危机意识，第二，为了获得更多关注、科研项目和财政支持。这种危机意识是这个国家保持全球第一的重要条件。</p>
+
+<p>其实简单的说美国教育好或者中国教育好是没有意义的，另外上海的pisa成绩根本代表不了中国，大家闭着眼睛想一想自己家乡的教育状况就心中有数了。</p>
+
+<p>另外再看看我们学生高考完的表现，焚书啊！你说教育取得了多少成绩，我说很惨，没有发自内心的热爱，一票否决。</p>
+
+<p>最近看了Timss的几个课堂视频，强列推荐大家看看，特别是日本的中学科学课堂。大家可以自己比一比，想一想。Timssvideo-Japan: http://timssvideo.com/72</p>
+
+<p>千万不要被上海的pisa成绩或者这本书的标题蒙骗了，要想想样本的代表性以及作者的立场。说到科学教育，中国科学教育者还有很长的一段路要走。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Middle school search engine 2.0]]></title>
@@ -511,39 +570,6 @@ def getPriceOfOrder(self, orderList):
 def getName(self):
     return self.name
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[3 rules to follow when studying at UGA]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/07/30/3-rules-when-studying-at-uga/"/>
-    <updated>2013-07-30T14:01:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/07/30/3-rules-when-studying-at-uga</id>
-    <content type="html"><![CDATA[<p>Durying my study in UGA, I will obey 3 rules:<br/>
-*   能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.<br/>
-*   能自己做的不让别人做   Things that I can do myself will not be done by others.<br/>
-*   能一天做的不用两天做   If it only need one day, I will not spend two days.</p>
-
-<p>The aim of these rules is to let me to take every advantage of my study here. They will help me to save time and focus on the important work.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fighting with display problem in my coumputer]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer/"/>
-    <updated>2013-07-30T07:51:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer</id>
-    <content type="html"><![CDATA[<p>These days I am fighting with the Display Card Problem of my computer. Befor coming to Georgia, My coumputer can not start normaly, the screen is black, athough you can hear the sound of login. I try to ingnore this problem by using another OS Ubuntu in my comuputer.  BUT, unfortianaly, I can&#8217;t use the PAWS wireless network of UGA in Ubuntu. So I have to solve the Display problem in WIN7 or the wireless connection problem in Ubuntu. Guess what, neither of the problem is easy to trackle.</p>
-
-<p>Finally, I solved the Display Problem using following steps:<br/>
-+   setup the two display driver software in my drivers folder in C disk.<br/>
-+   setup the downloaded display controler, uncheck the quick stream function<br/>
-+   everything comes to normal although I still can&#8217;t use swticheable display mode in BIOS</p>
-
-<p>What I learn from this:<br/>
-+   never buy a computer with two display card fire together<br/>
-+   if you have important thing just leave these problems there, important thing come frist<br/>
-+   reflect and record your problem solving process</p>
 ]]></content>
   </entry>
   
