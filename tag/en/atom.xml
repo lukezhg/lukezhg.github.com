@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: En | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-28T13:58:06-04:00</updated>
+  <updated>2013-08-28T14:04:05-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -32,6 +32,156 @@ The safety shower is just at the right of the door.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/safetyalert.jpg" alt="Safety Alert in Apartment" /></p>
 
 <p>It doesn't look nice on the door. But it is there.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why we teach science in school and how]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/25/why-we-teach-science-in-school-and-how/"/>
+    <updated>2013-08-25T21:27:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/25/why-we-teach-science-in-school-and-how</id>
+    <content type="html"><![CDATA[<h3>Why</h3>
+
+<p>It is important for students to survive in such an era full of science and technology products and information.<br/>
+It is also important for a country to have enough science literate talents and labors in order to survive in the global economy.<br/>
+Why science important? You can go on reading another blog post<a href="http://www.letstalkscience.ca/about-us/why-science">Why science?</a></p>
+
+<h3>We</h3>
+
+<p>Science teacher is a career but also a job. They are playing the most important role in developing the science literacy of the next generation. We choose it and we do it.</p>
+
+<h3>Teach</h3>
+
+<p>Good teaching is not an accident. It is a pursely planed activity fiting students' needs and level.</p>
+
+<h3>Science</h3>
+
+<p>Authentic science not just includ scientific knowledge(facts, concepts, theories), but also the process of science and the nature of science.</p>
+
+<h3>In school</h3>
+
+<p>While school education system is still the dominant formal learning place today. So it is an crutial battle feild of science education. But science learning can happen anywhere not just in school.</p>
+
+<h3>Why has science teaching changed over time?</h3>
+
+<p>Science is changing everyday. New discovery, New papers, New theories and models, in fact science update itself everyday.<br/>
+Student is changing every year. Students today are not like before. They have iphone, ipad, facebook. Even kids at the same age in different class response significant differently to the same question.<br/>
+Society is changing too. It need more talents who are good at 4Cs: Communication, Collaboration, Critical thinking and Creativity.<br/>
+Should science teaching keep the same as before? Never.</p>
+
+<h3>How should science be taught in science classrooms?</h3>
+
+<p>Well, It is really a hard question.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interactive simulation based inquiry activities]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
+    <updated>2013-08-24T12:17:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
+    <content type="html"><![CDATA[<p>Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how stars move for a long time, or do experiment about why plant grow to the sunlight. In this case, when oboservation and experiment difficult to carry out in classroom, computer software or interactive simulations can help a lot. There are two examples.</p>
+
+<p>In a middle school biology class, students can play with the following flash game to figure out why plant grow to the sun.</p>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+<!--more-->
+
+
+<p>
+In a elementary school science class, student can stuy how much water does a crow drink every day. They can also study their own diet using the same method.</p>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+<p>Interactive simulations can help:<br/>
+-   enage students, just give a cool show and some questions, then let them play with it.
+-   stimulate students to ask questions
+-   make observations and collect data or evidences<br/>
+-   test their ideas</p>
+
+<p>If teachers can guide and organize them to make explainations or argue with each other based on evidence, and make predictions and test them, at last provide opportunities for self-evaluation and community evaluations, then this approach would be more effective for learning science in classroom.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modeling activities and reflection]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection/"/>
+    <updated>2013-08-19T23:24:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection</id>
+    <content type="html"><![CDATA[<p>Recently I attended Dr Luft's class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.</p>
+
+<p>This is the list:<br/>
+-   Candle in the water tube make it go out(Dr Luft's class)<br/>
+-   Black box(<a href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)<br/>
+-   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
+-   Secret Tube (Dr C's class)<br/>
+-   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
+If you have more good modeling activities, welcome recommandations.</p>
+
+<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.</p>
+
+<p>Reflections on Modeling in science teaching<br/>
+The charm of modeling:<br/>
+-   Naturally need students to make careful observation,recording data,drawing conclusions<br/>
+-   Naturally engage students' prior ideas for explaination or application<br/>
+-   Naturally put students into the test, debate and revisement of their models or prior ideas<br/>
+-   Naturally let students experience the full process of science inquiry and nature of science</p>
+
+<p>What to focus in the modeling activites as a science teacher?</p>
+
+<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?</p>
+
+<p>Welcome to join the discussion of these open questions!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Metaphors of good teacher and education reform]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/metaphors-of-good-teacher-and-education-reform/"/>
+    <updated>2013-08-19T22:19:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/metaphors-of-good-teacher-and-education-reform</id>
+    <content type="html"><![CDATA[<p>A good teacher just like a good cook. Of course, you can tell a good cook by the taste of his dishes. So students' perfect performance is a good predictor of competent teacher. But it takes a lot effort to make the dishes OR evaluate the students. In fact, we can also tell a good cook by his preparation and operation of his cooking.  Good cook can aways make many dishes in a limited time. Because he don't stop, when heating the water, he is washing the vegatables or cutting the meat. When the water is ready he is also ready to fry them together. The teacher do the same thing in class expecially in a short class. I found this metaphor visiting Dr C's class, she give instructions as well as preparing the tools for modeling, at the same time she was also doing demonstration of what the secret tube behaviors.</p>
+
+<p>Sometimes science teacher educators complain that teachers' beliefs are stubborn and reluctant to change their practices. Well, It is true.</p>
+
+<p>The science teacher is like a swimming player in a swimming poor. The science teacher educator stand beside and tell the player how to swim, which style is good which is bad. But the most important thing for a person in the swimming poor is to keep safty and the most reliable style is his primary style. How can we blame them not trying to change, if their safty is not guaranteed and skills not developed.</p>
+
+<p>As a science teacher educator, you can not stand by but jump into the swimming poor and provide necessary skills and safety.</p>
 ]]></content>
   </entry>
   
