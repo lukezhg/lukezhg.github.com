@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/教学/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-26T19:15:37-04:00</updated>
+  <updated>2013-08-27T20:41:43-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reflection of the learning environment of DTAL course]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/"/>
+    <updated>2013-08-27T19:07:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course</id>
+    <content type="html"><![CDATA[<p>开始的时候，视频中介绍的学习环境设计，以及流动的环境给我的印象极其深刻。</p>
+
+<p>再有，在论坛中谈到，站着进行头脑风暴的效率要比坐着的小组高。很小的设计改变就可以产生很大的影响。站立和坐着也是一种环境设计。</p>
+
+<p>在提供了简短的视频介绍之后，主要通过明确的任务来推进学习。不仅有明确的要求、评价标准，还有可以利用的工具推荐、技术技巧介绍、过程和案例等。这给学习者很大的自主学习空间，在完成作业的过程中边做边学。</p>
+
+<p>在组建learning squire的时候，这次我加入了别人的小组，并且进行了积极的交流。比上两次的小组要成功。小组的同伴学习虽然并没有对我的学习起到觉得性的作用，不过还是交了几个朋友。也进行了视频对话，对于语言和沟通能力是有帮助的。此外，因为没有小组作品，所以大家也没有分工合作，主要是相互分享信息和求助，这种人际环境也会让学习者具有黏性或依赖感。</p>
+
+<p>总体来讲，单就本次课程而言，其学习环境主要包括媒体环境和人际环境，其实作业任务中也有要我们去采访和测试prototype，如果这个加上的话就有实践环境在里面了。其媒体环境的设计是非常值得学习的。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Letter to my EfSE students]]></title>
@@ -141,44 +158,6 @@ pluginspage="http://www.macromedia.com/go/getflashplayer">
 -   第二前段分析是否扎实、全面，是否包括学情分析、教材内容分析以及学习需要分析，是否能依据分析确定合理的教学目标。<br/>
 -   第三教学思路是否清晰，问题线索是否自然，学习活动是否能帮助学生达成教学目标。<br/>
 -   第四是否设计了新问题情境检测学生的学习成果和教学目标达成情况。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fighting with plagiarism]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/01/11/fighting-with-plagiarism/"/>
-    <updated>2013-01-11T17:59:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/01/11/fighting-with-plagiarism</id>
-    <content type="html"><![CDATA[<h2>什么是抄袭？</h2>
-
-<p>所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息，但是行文中还是让人产生了误会，这种情况则需要学习和教育。</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h2>如何鉴别抄袭？</h2>
-
-<p>鉴别抄袭当然可以依赖工具，但实际上更可靠的还是人工鉴别。这需要鉴别者对相关文献以及抄袭者有好的了解，这样就可以对其创造的作品的抄袭可能性作出判断。当然，其实没人愿意做这样的工作，所有的老师都不愿这种情况发生在自己学生身上，所有学生也不愿意被人怀疑抄袭。最好的还是防范抄袭，但是一旦发生了抄袭，教师和学生都应该认真面对，并且把这种谁都不愿意遇到的情况当成一次教育的机会。</p>
-
-<h2>如何应对抄袭？</h2>
-
-<p>有很现成的工具，中文和英文的工具都有。最简单的工具就是搜索引擎，很多抄袭的来源都是互联网，因此搜索时自然就能找到来源。此外还有一些专门的在线工具和软件。</p>
-
-<h2>英语在线工具：</h2>
-
-<p><strong> <a href="http://www.duplichecker.com/">Duplichecker</a>  <br/>
-</strong> <a href="http://www.plagium.com/">Plagium</a>   <br/>
-<strong> <a href="http://www.articlechecker.com/">Articlechecher</a>     <br/>
-</strong></p>
-
-<h2>中文在线工具：</h2>
-
-<p><strong> <a href="http://www.copycheck.net/OnlineCheck.aspx">Copycheck</a>  <br/>
-</strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
-<strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
-</strong></p>
 ]]></content>
   </entry>
   
