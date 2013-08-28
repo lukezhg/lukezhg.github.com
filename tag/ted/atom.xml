@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: ted | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/ted/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-08-28T16:35:06-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Toward a science of simplicity-George Whitesides on Ted]]></title>
+    <link href="http://zhangchunlei.com/blog/2010/05/06/toward-a-science-of-simplicity-george-whitesides-on-ted/"/>
+    <updated>2010-05-06T00:00:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2010/05/06/toward-a-science-of-simplicity-george-whitesides-on-ted</id>
+    <content type="html"><![CDATA[<p><b>What is simplicity</b><br /><ul><li>reliable predictable</li><li>cheap cost low</li><li>high performance/cost</li><li>building blocks</li></ul> Everything should be made as simple as possible,but not simpler (Einstein)<br />You know you've achieved perfection in design, not when you have nothing more to add, but when you have nothing more to take a way(de Saint-Exupery)<br />http://blog.ted.com/2010/04/toward_a_scienc.php<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a3648cd1-0183-8b07-93bf-7e3246836300" /></div></p>
+
+]]></content>
+  </entry>
+  
+</feed>
