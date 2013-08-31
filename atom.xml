@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-30T23:34:26-04:00</updated>
+  <updated>2013-08-31T12:47:23-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu命令手册]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
+    <updated>2013-08-31T12:33:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
+    <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  python xx.py 执行py文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post[&#8220;post title&#8221;]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名<br/>
+-  rename &#8216;s/lecture/slide/&#8217; *.jpg<br/>
+将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容<br/>
+-  perl -pi -e &#8216;s|Windows|Ubuntu|g&#8217; <code>find ./ -type f</code></p>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ridiculous jump and serious problem]]></title>
@@ -483,37 +538,6 @@ The charm of modeling:<br/>
 <p>The science teacher is like a swimming player in a swimming poor. The science teacher educator stand beside and tell the player how to swim, which style is good which is bad. But the most important thing for a person in the swimming poor is to keep safty and the most reliable style is his primary style. How can we blame them not trying to change, if their safty is not guaranteed and skills not developed.</p>
 
 <p>As a science teacher educator, you can not stand by but jump into the swimming poor and provide necessary skills and safety.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Timms video and reflection of teaching science with modeling]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/19/timms-video-and-reflection-of-teaching-science-with-modeling/"/>
-    <updated>2013-08-19T20:56:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/19/timms-video-and-reflection-of-teaching-science-with-modeling</id>
-    <content type="html"><![CDATA[<p>It is my first time to view a science classroom teaching in Japan. In fact, it supprise me a little. I know the science education in Japan is of high quality. They get much better score than the other counties and teacher are respectable profession. But I never thought the classroom are so interactive and effective. You can click <a href="http://timssvideo.com/72">here</a> to view the video.</p>
-
-<blockquote><p>This eighth-grade science lesson is about the formation of clouds. It is the third lesson in a sequence of 19 lessons on weather. The lesson is 53 minutes in duration. There are 25 students in the class.<br/>
-<video width='720' height='480' preload='none' controls poster=' https://raw.github.com/lukezhg/Freyja/master/timssvideo.png'><source src='http://timssvid1.s3.amazonaws.com/JP5%20Air%20compression%20and%20expansion.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p></blockquote>
-
-<p>Here is my record of the time usage of the class:</p>
-
-<blockquote><p>00-03 review what learnt<br/>
-03-07 demistration<br/>
-07-17 demistration of key skills for today&#8217;s experiment<br/>
-18-36 Student activites(4 experiments and group take turn)<br/>
-36-50 sumary of experiment result and draw conclusion<br/>
-50-52 self-evalation</p></blockquote>
-
-<p>I watched the video twice, first I just got a glance of it very quickly. The second time, I watch it very carefully and make notes of what teacher and students were doing.</p>
-
-<p>First, I found a very interesting thing that the Japenese teacher used about 17 minutes to engage students and make demonstration at the begining. He also used about 17 minutes to sumary the results and conclusions at the end of the class. Acording to psychology studies, people are most likely to remember what happened at begining and at the end. People usually can only concentrate for 15 minutes. So most TED videos will not last more than 17 minutes. I don&#8217;t know if the teacher did it popurely. But he did it really well.</p>
-
-<p>Second, the class is very interesting and vigorous. Students really had fun with the activities and record and try to explain.</p>
-
-<p>Third, it keep a good balance of knowledge-centered and student-centered. The most important ideas and inquiry skills were embodied in student activities.</p>
-
-<p>At last, I want to say although the teacher said nothing about modeling. But he raised a question for students to study.  Students want to explain but had little idea and experieces. So they did the activities that teacher prepared for them. Before experiments, they make their explannation and predictions, they recorded the result on the handouts, they have to revise their explanation and building a more powerful causal model to explain all the phenomenons. So we do can found the shape of modeling in this class.</p>
 ]]></content>
   </entry>
   
