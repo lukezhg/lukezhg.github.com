@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="这是《有效的学生评价》中的一个观点。想象我们现在的学生评价，学校里充满了考试，单元考、期中考、期末考，这些考试都是单调的纸笔测验，不可否认纸笔测验的重要作用，但是这种考试确实存在着严重的弊端，比如它很难测量学生的行为表现、语言表达能力以及动手技能等，更难于测量学生的态度情感价值观，即便是知识目标， &hellip;">
+  <meta name="description" content="问题描述：在分享资料的时候，有些编辑器或者邮件不支持暗文超级连接，于是这些超级链接就面临着丢失的危险，如何把原文含有暗文连接的文章，转换成明文连接呢？问题解决：问题已经部分得到了解决，也就是可以利用正则表达式+regex正则表达式wiki: http://zh.wikipedia.org/wiki &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -112,6 +112,60 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/03/31/howto-use-RE-get-links/">如何把暗文超级链接转换成明文链接呢</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-31T00:00:00-04:00" pubdate data-updated="true">Mar 31<span>st</span>, 2011</time>
+        
+         | <a href="/blog/2011/03/31/howto-use-RE-get-links/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><b>问题描述：</b>在分享资料的时候，有些编辑器或者邮件不支持暗文超级连接，于是这些超级链接就面临着丢失的危险，如何把原文含有暗文连接的文章，转换成明文连接呢？<br /><br /><b>问题解决：</b><br />问题已经部分得到了解决，也就是可以利用<b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>+regex</b><br /><br /><b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>wiki</b>: <a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank">http://zh.wikipedia.org/wiki/%<wbr />E6%AD%A3%E5%88%99%E8%A1%A8%E8%<wbr />BE%BE%E5%BC%8F</a><br /><b>regex</b>: <a href="http://regexlib.com/RETester.aspx" target="_blank">http://regexlib.com/RETester.<wbr />aspx</a><br /><br /><b>我使用的<span class="il">表达</span><span class="il">式</span></b>：[a-zA-z]+://[^\s]*<br /><span class="il">表达</span><span class="il">式</span>来自：<a href="http://www.williamlong.info/archives/433.html" target="_blank">http://www.williamlong.<wbr />info/archives/433.html</a><br /><br /><a href="http://xn--6kqp98bmja49j0uyh0b23mqsjmp5b.cn/" target="_blank">由于我找的网站都是.cn</a>结尾的，<a href="http://xn--fhqrlwjv5kjtb9li3pmnzbma9746b.cn/" target="_blank">所以我又在后面加上了.cn</a>&nbsp; <span class="il">表达</span><span class="il">式</span>变为：[a-zA-z]+://[^\s]*.cn<br /><br />一下子网站地址就都出来了 <br /><br /><b>谢谢ZQ的指点！</b><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=202bca68-a0a8-862a-b8f0-719ad6ac435e" /></div></p>
+
+如何在新窗口打开链接地址呢？  
+只需要在source\includes\custom\head.html文件后面添加下面的代码,代码外面别忘了加
+<pre><code>
+<script>
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+</pre></code>
+参考(李顺利的博文)[http://www.blogjava.net/lishunli/archive/2013/01/20/394478.html]  </div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -455,44 +509,6 @@ google.setOnLoadCallback(function() {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/09/let-help-pass-on/">让“帮助”传递下去</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-09T00:00:00-04:00" pubdate data-updated="true">Jan 9<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/01/09/let-help-pass-on/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>一个多月前，本人不慎丢失了自己钱包，连同自己身份证、银行卡、电影卷（50元）、80元左右的现金，一起丢失。估计是丢在小区的路上，本来我是想到取款机去取钱的，结果到了钱包没了，于是马上原路返回去找，没找到。会议当时的情形，有三个保安正面走过我途径的路上，事后我也向他们问起是否有人捡到，他们答，即使捡到现金也可能没有了，我说不要紧，能把那么多卡找回来就好。一个星期过去，未果。<br /><br />于是只好补办身份证，先是挂失，然后一个月后去正是申请补办。这时一个陌生人让我感觉还是好人多。事情是这样的，我拿着凭证来到派出所，但是发现补办身份证要40元，我愿意为最多也就30元，身上钱带的不多，结果搜遍全身，也只有39元，于是我就被难倒了。因为出去取钱的话，可能要走很远，而且也赶不上班车了，于是我跟民警说了情况，民警阿姨有些犹豫，这时我后边的一个女人（她是领女儿办身份证的）从口袋里拿出一元钱，我很尴尬，但是还是接受了她的好心帮助。我知道这钱很难还给她了，而且她也并不指望我还，但是我却要非常感谢她。虽然不能还钱了，但是其她感谢的方式还是有的，就是在自己力所能及的请跨把类似的帮助传递给别人，让社会更加友善！<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=75d42d08-ea03-8915-bed0-9e912a11faa7" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/13/">&larr; Older</a>
@@ -565,6 +581,10 @@ window.onload=function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">ridiculous jump and serious problem</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/08/30/seed-activity-in-method-of-biology-and-earth-science-teaching/">科学教法课上的种子萌发实验</a>
       </li>
     
@@ -578,10 +598,6 @@ window.onload=function(){
     
       <li class="post">
         <a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/">Strong sense of crisis make a nation grow sturdy</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/">自满和自卑都不是学习的态度</a>
       </li>
     
   </ul>
