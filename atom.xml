@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-08-31T18:43:14-04:00</updated>
+  <updated>2013-09-12T11:23:19-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[学习环境设计从课桌开始]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/12/learning-environment-observation-school-desk-design/"/>
+    <updated>2013-09-12T10:30:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/12/learning-environment-observation-school-desk-design</id>
+    <content type="html"><![CDATA[<p><img src="https://raw.github.com/lukezhg/Freyja/master/Boy-at-School-Desk.png" alt="" /><br/>
+今天突然注意到一个以前没有思考过的一个学习环境细节，似乎我们使用的课桌和Dr Luft教法课上的并不相同。不同的设计会产生哪些影响呢？<br/>
+&lt;&#8211;!more&#8211;>
+下面是我们在大学和中学常用的课桌设计。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/school-desk.png" alt="" /><br/>
+这个是Dr Luft教法课上使用的课桌设计。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/movable-desk.png" alt="" /><br/>
+两者的差异就在于，一个容易移动和重新设计座位，一个更适合某种固定的座位排列方式。很显然我们的课桌设计不够灵活，这也为进行小组合作学习设置了潜在的障碍。</p>
+
+<p>根据 Scott, Shaw, and McGuire (2001)提到的Universal Design的9条原则</p>
+
+<pre><code>1) 均等使用（equitable use）,   
+2) 使用灵活（flexibility in use）,   
+3) 简单易懂（simple and intuitive）,   
+4) 信息可感知（perceptible information）,   
+5) 容忍错误（tolerance for error）,   
+6) 低强度付出（low physical effort）,   
+7) 大小和空间易用（size and space for approach）,   
+8) 面向学习者群体（a community of learners）,   
+9) 教学氛围（instructional climate）。  
+</code></pre>
+
+<p>显然我们的课桌设计不符合第2）和7）条原则。</p>
+
+<p>从课桌的设计可以看出，传统的课桌需求还占据着绝大部分市场分额，那么这又意味着什么？</p>
+
+<p>可见，教学观念会印刻和反映在我们经常熟视无睹的设计当中，新课程改革需要我们重新设计我们的学习环境，新课程改革也需要培养一批具有新理念的学习环境设计者。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A list of science labs that rocks]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks/"/>
+    <updated>2013-09-10T00:34:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks</id>
+    <content type="html"><![CDATA[<p>I will make a list of science labs activities which are so fun and interesting that you can&#8217;t miss.</p>
+
+<p>Real Labs<br/>
++   Secret tube(modeling)<br/>
++   Candle in the tube above water(causal model)<br/>
++   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3600?ref=search">Transpiration lab</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/careerstart-grade8/5540">Cell theory and plant respiration G8</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/criticalthinking/6650">Water quality - Critical thinking in science</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3226?ref=search">Amazing amaryllis activitiesm G2-3 4Ws</a></p>
+
+<p>Hands on activities<br/>
++   <a href="http://www.education.com/activity/article/Sourdough_bread/">Sourdough Science!</a><br/>
++   Making a safty harmer<br/>
++   Design a sprinkler head for watering lawn</p>
+
+<p>Virual Labs/ Simulations<br/>
++   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
++   PhET: <a href="http://phet.colorado.edu/">Free online simulations</a><br/>
++   <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities - Chunlei&#8217;s Blog</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
@@ -466,101 +529,6 @@ I also found some interesting things at Aderhold where College of Education loca
 
 <p>Prezi is free, and this is my invitation code: <a href="http://prezi.com/recommend/uoexcohw4ztz/">http://prezi.com/recommend/uoexcohw4ztz/</a><br/>
 上面的连接是我的邀请码，可以免费注册prezi。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Interactive simulation based inquiry activities]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
-    <updated>2013-08-24T12:17:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
-    <content type="html"><![CDATA[<p>Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how stars move for a long time, or do experiment about why plant grow to the sunlight. In this case, when oboservation and experiment difficult to carry out in classroom, computer software or interactive simulations can help a lot. There are two examples.</p>
-
-<p>In a middle school biology class, students can play with the following flash game to figure out why plant grow to the sun.</p>
-
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="468" height="60" 
- id="mymoviename"> 
-<param name="movie"  
-
-value="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-
-<embed src="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" quality="high" bgcolor="#ffffff"
-width="468" height="60" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
-
-
-<!--more-->
-
-
-<p>
-In a elementary school science class, student can stuy how much water does a crow drink every day. They can also study their own diet using the same method.</p>
-
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="468" height="60" 
- id="mymoviename"> 
-<param name="movie"  
-
-value="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-
-<embed src="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" quality="high" bgcolor="#ffffff"
-width="468" height="60" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
-
-
-<p>Interactive simulations can help:<br/>
--   enage students, just give a cool show and some questions, then let them play with it.
--   stimulate students to ask questions
--   make observations and collect data or evidences<br/>
--   test their ideas</p>
-
-<p>If teachers can guide and organize them to make explainations or argue with each other based on evidence, and make predictions and test them, at last provide opportunities for self-evaluation and community evaluations, then this approach would be more effective for learning science in classroom.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Modeling activities and reflection]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection/"/>
-    <updated>2013-08-19T23:24:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection</id>
-    <content type="html"><![CDATA[<p>Recently I attended Dr Luft&#8217;s class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.</p>
-
-<p>This is the list:<br/>
--   Candle in the water tube make it go out(Dr Luft&#8217;s class)<br/>
--   Black box(<a href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)<br/>
--   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
--   Secret Tube (Dr C&#8217;s class)<br/>
--   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
-If you have more good modeling activities, welcome recommandations.</p>
-
-<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.</p>
-
-<p>Reflections on Modeling in science teaching<br/>
-The charm of modeling:<br/>
--   Naturally need students to make careful observation,recording data,drawing conclusions<br/>
--   Naturally engage students&#8217; prior ideas for explaination or application<br/>
--   Naturally put students into the test, debate and revisement of their models or prior ideas<br/>
--   Naturally let students experience the full process of science inquiry and nature of science</p>
-
-<p>What to focus in the modeling activites as a science teacher?</p>
-
-<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?</p>
-
-<p>Welcome to join the discussion of these open questions!</p>
 ]]></content>
   </entry>
   
