@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="最近我们开展了一些学习活动，我想把活动的照片做成自动播放的相册进行展示。这个问题如何解决呢？方法一：利用网络相册flickr上传图片到自己的flickr的某个图片集里，让后点击分享按钮，复制嵌入代码，粘贴到自己的网站页面上或者插件中。方法二：利用网络自定义相册有很多工具，可以做视频，效果也很不错。 &hellip;">
+  <meta name="description" content="在笑来的博客上看到，这本书《Brain bugs》，笑说有趣的很。于是打开看了一下目录还有网站的Demos如下：Brain Bugs | Demos: http://www.brainbugs.org/demos.html上面的页面上列举了很多brain bugs。比如McGurk Effect， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -112,6 +112,44 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/11/27/brain-bugs/">大脑错觉（Brain Bugs）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-11-27T00:00:00-04:00" pubdate data-updated="true">Nov 27<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/11/27/brain-bugs/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在笑来的博客上看到，这本书《Brain bugs》，笑说有趣的很。于是打开看了一下目录还有网站的Demos如下：<br />Brain Bugs | Demos<br />: http://www.brainbugs.org/demos.html<br /><br />上面的页面上列举了很多brain bugs。<br />比如McGurk Effect，上面有一个女人在发言，但是当你闭上眼睛的时候，你听到的是一个声音，当你睁开眼睛的时候你听到的是另外一个声音。（我猜测是收到了发音者口型的影响）<br /><br />再比如Baker-baker Paradox<br />我们经常会忘记某个人的名字，但是多半会记得他的职业。即使是一个叫Baker的baker，我们还是容易自己的他是一个面包师。原因在于，我们记忆一个人的职业的时候，会有很多相关的概念协同起来，而名字则很少协同记忆。（也许老师们也可以尝试为学生的名字富于内涵，从而便于记忆）<br />这也提示我们，在教学过程中，应该把新概念与学生的已有概念产生更多的来联系，使其协同起来，而不是像名字一样孤零零的，最后被遗忘。<br /><br />再如Flash Lag Effect<br />我在预测红球的时候，总是预测超前50左右，这就是为什么足球边裁判罚越位中有24%为误判的原因。其原因是我们的视觉系统在关注其他信号的同时，总是倾向于超前估计运动物体的位置。<br /><br />再如Leaning Tower Illusion<br />看起来右侧的塔会更加的倾斜，但是其实两个塔的照片是完全相同。<br /><br />这是采访本书作者的录音：http://pd.npr.org/anon.npr-mp3/npr/fa/2011/07/20110714_fa_01.mp3<br /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -455,44 +493,6 @@ google.setOnLoadCallback(function() {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/11/how-to-import-tiddlywiki-notes-into-evernote/">如何把tiddlywiki笔记导入到evernote</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-11T00:00:00-04:00" pubdate data-updated="true">Nov 11<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/11/11/how-to-import-tiddlywiki-notes-into-evernote/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>tiddlywiki是一个很不错的非线性网页笔记本，它是一个存在你硬盘上的一个单个html文件，但是打开之后你会发现它实际上是一个用语言写的笔记本程序，而且你可以更具自己的需要进行界面以及插件的定制，比如我为学生定制的tiddlywiki(<a target="_blank" href="http://ecnubio.wikispaces.com/tiddlywiki">http://ecnubio.wikispaces.com/tiddlywiki</a>)。<br /><br />在tiddlywiki已经有了很多笔记之后，它的打开和保存速度会有所下降，而且我使用了很多笔记服务，我想搜索笔记的时候经常忘记，这个笔记是在博客上，还是在diigo上，还是在googlereader上，还是在tiddlywiki上，还是在evernote上。所以你看，我的问题很明显，我要要把所有的笔记最好能在同一个地方存储一份。（这个问题让我很头疼，若果有其他更好的解决方法，不妨赐教）<br /><br />所以我要把tiddlywiki上的笔记导入到evernote以便备份和搜索。尝试的解决方案：<br /><ol><li>使用ExportTiddlersPlugin: (http://www.tiddlytools.com/#ExportTiddlersPlugin)导出，纯文本文件，然后再编写文本分割程序，将每个笔记存为单独的txt文件。然后使用evernote-工具-导入文件夹。但是遇到了问题，第一导出的纯文本非常混乱，而且中文出现了乱码。折腾了半天，这个方案弃用。</li><li>又重新搜索，于是找到了一个老外的解决方案（The Strange Zen Of JavaScript: TiddlyWiki hack: exporting tiddler HTML: http://jszen.blogspot.com/2005/06/tiddlywiki-hack-exporting-tiddler-html.html）。在这个方案里提到使用火狐浏览器，可以通过选择tiddlywiki中的所有文字，然后右键，参看所选源代码，果然我看到了tiddlywiki中的所有笔记，而且这个笔记的格式非常统一，于是就动手把相应的笔记拷贝到一个txt文件中。接下来使用py编写了一个简单的文本切割程序，把文件中每个笔记单独的保存到一个txt文件中，然后导入，大功告成。yeah！！</li></ol>总结：<br /><ol><li>动手之前好好做一下搜索工作非常必要，还是那句话，你遇到的问题99%已经有人遇到了过了，参考使用别人的解决方案，可以避免无谓的时间浪费和重复性工作。</li><li>遇到不熟悉的领域，找到相关的论坛进行搜索和求助是更容易的事情。<br /></li><li>学好英文是非常关键的，这决定了你的阅读范围。能看英文的文档能让你的阅读范围扩大很多倍。多少倍呢？个人保守估计10倍左右，这取决于互联[[网上不用语言资料所占的比例]]。<br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=345c8cf1-94d0-82dc-b3dd-613af2142346" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/10/">&larr; Older</a>
@@ -565,6 +565,10 @@ window.onload=function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/09/12/swimming-pool-finally-found-remsey-center/">Swimming pool finally found Remsey Center</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/12/learning-environment-observation-school-desk-design/">学习环境设计从课桌开始</a>
       </li>
     
@@ -580,24 +584,20 @@ window.onload=function(){
         <a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">ridiculous jump and serious problem</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (2)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/teaching'>teaching (2)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (13)</a></li><li><a href='/blog/categories/日志'>日志 (9)</a></li><li><a href='/blog/categories/生活'>生活 (5)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (2)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/teaching'>teaching (2)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (13)</a></li><li><a href='/blog/categories/日志'>日志 (10)</a></li><li><a href='/blog/categories/生活'>生活 (5)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
   <ul class="tag-cloud">
-<a style="font-size: 102%" href="/tag/cse/">CSE</a>
+<a style="font-size: 101%" href="/tag/cse/">CSE</a>
 <a style="font-size: 81%" href="/tag/modeling/">Modeling</a>
-<a style="font-size: 126%" href="/tag/uga/">UGA</a>
+<a style="font-size: 125%" href="/tag/uga/">UGA</a>
 <a style="font-size: 81%" href="/tag/design/">design</a>
-<a style="font-size: 102%" href="/tag/diary/">diary</a>
+<a style="font-size: 101%" href="/tag/diary/">diary</a>
 <a style="font-size: 165%" href="/tag/en/">en</a>
 <a style="font-size: 81%" href="/tag/pck/">pck</a>
 <a style="font-size: 81%" href="/tag/正能量/">正能量</a>

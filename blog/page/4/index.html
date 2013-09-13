@@ -9,9 +9,10 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Durying my study in UGA, I will obey 3 rules:
-* 能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.
-* 能自己做的不让别人做 Things &hellip;">
+  <meta name="description" content="Python重要用法示例 dir(list)
+显示关键字相关的函数 help(list.reverse)
+查询某个函数的功能 set 让一个list变成无重复元素的set
+例如： shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +115,115 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/30/python-brief/">Python简明手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-30T14:25:00-04:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/07/30/python-brief/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Python重要用法示例</p>
+
+<blockquote><blockquote><blockquote><p>dir(list)
+显示关键字相关的函数</p>
+
+<p>help(list.reverse)
+查询某个函数的功能</p></blockquote></blockquote></blockquote>
+
+<p>set 让一个list变成无重复元素的set
+例如：</p>
+
+<blockquote><blockquote><blockquote><p>shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;,&#8217;circle&#8217;]
+setOfShapes = set(shapes)
+setOfShapes
+set([&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;])
+setOfShapes.add(&#8216;polygon&#8217;)
+&#8216;rhombus&#8217; in setOfShapes
+False
+setOfShapes - setOfFavoriteShapes
+setOfShapes &amp; setOfFavoriteShapes
+setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+
+<p>map和lambda</p>
+
+<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]</p></blockquote></blockquote></blockquote>
+
+<p>Object 先定义一个类，然后给类生成实例
+定义如：
+class FruitShop:</p>
+
+<pre><code>def __init__(self, name, fruitPrices):
+    """
+        name: Name of the fruit shop
+
+        fruitPrices: Dictionary with keys as fruit 
+        strings and prices for values e.g. 
+        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
+    """
+    self.fruitPrices = fruitPrices
+    self.name = name
+    print 'Welcome to the %s fruit shop' % (name)
+
+def getCostPerPound(self, fruit):
+    """
+        fruit: Fruit string
+    Returns cost of 'fruit', assuming 'fruit'
+    is in our inventory or None otherwise
+    """
+    if fruit not in self.fruitPrices:
+        print "Sorry we don't have %s" % (fruit)
+        return None
+    return self.fruitPrices[fruit]
+
+def getPriceOfOrder(self, orderList):
+    """
+        orderList: List of (fruit, numPounds) tuples
+
+    Returns cost of orderList. If any of the fruit are  
+    """ 
+    totalCost = 0.0             
+    for fruit, numPounds in orderList:
+        costPerPound = self.getCostPerPound(fruit)
+        if costPerPound != None:
+            totalCost += numPounds * costPerPound
+    return totalCost
+
+def getName(self):
+    return self.name
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -542,72 +652,6 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/17/to-be-a-daddy/">Daddy需要做的功课</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-17T22:02:00-04:00" pubdate data-updated="true">Feb 17<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/17/to-be-a-daddy/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>时间过的真快，一下子就已经是daddy了。小时候爸爸的种种，现在还记忆犹新。以后自己就会成为小家伙的回忆了，该怎样做一个好父亲呢？<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/daddy.jpg" alt="Daddy's little baby" /></p>
-
-<h2>daddy需要做的功课：</h2>
-
-<ul>
-<li>如何给宝宝喂奶<br/>
-  左手托头，让宝宝坐在自己的腿上，面朝自己，右手持奶瓶喂奶。喂奶的过程中要控制宝宝的吃奶速度，宝宝通常会吃一会，休息一会，如果宝宝不吃可以轻轻动一动奶瓶，如果宝宝吃的过快可以先拔出奶瓶，拍拍奶在喂。一般如果一次吃奶较多，由于宝宝的喷门尚未发育好，很容易吐奶，所以需要给宝宝拍奶。拍奶仍然是喂奶的姿势，只不过右手请拍其后背，宝宝打饱嗝或哈欠即可停止。</li>
-<li>如何应对突发事件
-
-<ul>
-<li>打嗝<br/>
-护士的办法是敲宝宝的脚底板，待其哭后打嗝自然消失。但是这一招有的时候也不管用，而且让宝宝用哭泣的方法停止打嗝未免有点不忍心。所以最好的还是预防。一般打嗝的原因很多，比如吃奶吃的太快，受凉，吸入了冷空气，奶水过凉。预防的方法是一般不要在宝宝极度饥饿或者哭泣的时候的时候喂奶，喂奶可以采用多次少量（当然父母要辛苦了），控制好奶水的温度，注意保暖，避免着凉。</li>
-<li>溢奶<br/>
-拍奶是防止的最好办法，但有时候还是避免不了，所以也可以给宝宝准备一个小围巾。</li>
-<li>脱水<br/>
-如果宝宝长时间上吐下泻，那么就要非常注意宝宝是否脱水。一旦发现宝宝长达5个小时没有小便、口唇干燥、哭泣没有眼泪，这时候就要当心宝宝有脱水的危险了。</li>
-<li>感冒<br/>
-感冒分为病毒感冒和伤风感冒。</li>
-<li>便秘</li>
-</ul>
-</li>
-<li>如何照顾宝宝的饮食</li>
-<li>如何进行早期亲子互动</li>
-<li>如何帮宝宝养成良好的生活习惯</li>
-</ul>
-
-
-<p>……</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -680,6 +724,10 @@ window.onload=function(){
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/09/12/swimming-pool-finally-found-remsey-center/">Swimming pool finally found Remsey Center</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/12/learning-environment-observation-school-desk-design/">学习环境设计从课桌开始</a>
       </li>
     
@@ -695,24 +743,20 @@ window.onload=function(){
         <a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">ridiculous jump and serious problem</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (2)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/teaching'>teaching (2)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (13)</a></li><li><a href='/blog/categories/日志'>日志 (9)</a></li><li><a href='/blog/categories/生活'>生活 (5)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (2)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/teaching'>teaching (2)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (13)</a></li><li><a href='/blog/categories/日志'>日志 (10)</a></li><li><a href='/blog/categories/生活'>生活 (5)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
   <ul class="tag-cloud">
-<a style="font-size: 102%" href="/tag/cse/">CSE</a>
+<a style="font-size: 101%" href="/tag/cse/">CSE</a>
 <a style="font-size: 81%" href="/tag/modeling/">Modeling</a>
-<a style="font-size: 126%" href="/tag/uga/">UGA</a>
+<a style="font-size: 125%" href="/tag/uga/">UGA</a>
 <a style="font-size: 81%" href="/tag/design/">design</a>
-<a style="font-size: 102%" href="/tag/diary/">diary</a>
+<a style="font-size: 101%" href="/tag/diary/">diary</a>
 <a style="font-size: 165%" href="/tag/en/">en</a>
 <a style="font-size: 81%" href="/tag/pck/">pck</a>
 <a style="font-size: 81%" href="/tag/正能量/">正能量</a>
