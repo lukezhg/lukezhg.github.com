@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-16T23:15:15-04:00</updated>
+  <updated>2013-09-17T12:14:35-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Effective teaching notes]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes/"/>
+    <updated>2013-09-17T11:25:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes</id>
+    <content type="html"><![CDATA[<p>Recently I was reading a book <a href="http://books.google.com/books/about/Clinical_Supervision_and_Teacher_Develop.html?id=O3ycAAAAMAAJ">Clinical Supervision and Teacher Development</a></p>
+
+<p>The following are summary notes of Chapter 3 Using clinical supervision to promote effective teaching.<br/>
+1.  Characteristics of Good Teaching in Students' Mind?<br/>
+Niss(Nice)
+*   Nice(respect, patient and easy to get along with)<br/>
+*   Interesting(makes subject interesting and fun with students engaged)<br/>
+*   Sense of humor(tell jokes and smiles a lot)<br/>
+*   Sensitive to students' need( Listent to students' question and make changes to help students learn )</p>
+
+<ol>
+<li>Teacher characteristics associated with gain in students' academic achievement?<br/>
+Creati</li>
+<li>Clarity</li>
+<li>Raise Variety(of materials, methods, question types and levels)</li>
+<li>Enthusiasm</li>
+<li>avoid harsh criticism</li>
+<li>Task-oriented</li>
+<li><p>Indirect teaching style</p></li>
+<li><p>Substantive interaction that increase students' at-task time:<br/>
+Equal</p></li>
+<li>Explain(content to students)</li>
+<li>questioning</li>
+<li>using feedback</li>
+<li>assistance</li>
+<li>list the steps or task(chunlei added)</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I ignored number five subconsciously]]></title>
@@ -133,29 +169,6 @@ var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
 clipboard.copyString(txt);
 </code></pre>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Strong sense of crisis make a nation grow sturdy]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/"/>
-    <updated>2013-08-26T15:43:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy</id>
-    <content type="html"><![CDATA[<p>People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy.</p>
-
-<p>American people and Unite States are good examples.</p>
-
-<p>Here are some pictures evidence.<br/>
-The first thing was the emergency chair at the corner of stairwell. You can break the window and use the chair to take somebody hurt going downstairs. What a considerate safety concern! You can find an emergency shower at every classroom, which hardly seen in Chinese classroom.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/dangerchair.jpg" alt="Emergency Chair in Aderhold" /><br/>
-&lt;--!more-->
-The safety shower is just at the right of the door.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/Safety_Shower.jpg" alt="Emergency Shower in Classroom" /></p>
-
-<p>Im my apartment, there is a white notice like following.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/safetyalert.jpg" alt="Safety Alert in Apartment" /></p>
-
-<p>It doesn't look nice on the door. But it is there.</p>
 ]]></content>
   </entry>
   
