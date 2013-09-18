@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-17T15:08:59-04:00</updated>
+  <updated>2013-09-17T22:24:48-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The ways that content knowledge matters]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/17/the-ways-that-content-knowledge-matters/"/>
+    <updated>2013-09-17T21:16:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/17/the-ways-that-content-knowledge-matters</id>
+    <content type="html"><![CDATA[<p>Question:<br/>
+What an expert teacher who has deep content knowledge can do?</p>
+
+<p>Notes in class Supervision:<br/>
+-give more proper instances, analogys to make student understand clearly<br/>
+-relate the knowledge with students lives<br/>
+-pick out the important big ideas that organizing the knowledge feild<br/>
+-be able to emphasize crosscutting concepts
+-be competent in science practices<br/>
+-design more logical sequence of the content knowledge<br/>
+-be able to understand students&#8217; difficulties and questions and has a clue</p>
+
+<p>Additional ways(after class):<br/>
+-ask good questions<br/>
+-design sound learning activities and assignments<br/>
+-have insights of students question or problems<br/>
+-organize facts and concepts in a sense making way or framework<br/>
+-have more backup examples,analogys, explainations, questions for use<br/>
+-be confident to give students more opotions and more challeging jobs</p>
+
+<p>In a word, content knowledge affect teachers&#8217; abilities of transfroming the curriculum and materials to students in a special context to acheive a designed learning goal. It is the foundation of science teacher knowledge. If there is no good content knowledge, there is no good content to transform.</p>
+
+<p>It is like the nutrition in the food, if the food contain no nutriton, the best cook can do nothing to help.</p>
+
+<p>It is also like taxi driver. The driver who knows the traffic system well, is possiblely able to figure out the most quick way to go for you at a special time and location. Content knowledge just provide more pathes to consider and follow. Otherwise, it is easy to get lost and embarrassed.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Effective teaching notes]]></title>
@@ -48,7 +81,7 @@ Equal<br/>
 
 <p>Notes taken from another book chapter-Glickman -chapter 4.pdf<br/>
 Research on effective instruction() indicates that effective instruction is based on adaption of curriculum and materials to local settings and particular learning goals. in other words, effective teachers think about what they are currently doing, assess the results of their practice, explore with each other new possibilities  for teaching students, and are able to consider students&#8217; perspectives.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.jpg" alt="teacher transfrom" /></p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom" /></p>
 ]]></content>
   </entry>
   
@@ -548,17 +581,6 @@ Should science teaching keep the same as before? Never.</p>
     <content type="html"><![CDATA[<h2><a href="https://www.google.com.hk/cse/home?cx=003240028397592718084:t6ua0pji53e">找中学v1.0</a></h2>
 
 <p>本搜索引擎主要用于搜索各地区重点中学教师招聘信息、招生信息等。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[教学资源搜索引擎]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/25/teaching-resources-search-engine/"/>
-    <updated>2013-08-25T18:28:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/25/teaching-resources-search-engine</id>
-    <content type="html"><![CDATA[<h2><a href="http://www.google.com/cse/home?cx=003240028397592718084:wtlazttaiia">中学生物学教学资源搜索引擎</a></h2>
-
-<p>本搜索引擎主要用于搜索生物学教学资源，比如试题、课件、教案等，大多能免费匿名下载。</p>
 ]]></content>
   </entry>
   
