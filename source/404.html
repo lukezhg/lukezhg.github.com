@@ -1,0 +1,13 @@
+---
+layout: page
+title: 没找到这个页面
+footer: false
+---
+<h3> The article not found. Look the following:</h3>
+<div id="blog-archives">
+{% for post in site.posts limit: 10 %}
+<article>
+  {% include archive_post.html %}
+</article>
+{% endfor %}
+</div>

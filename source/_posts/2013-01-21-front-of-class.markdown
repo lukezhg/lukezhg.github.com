@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "front of class"
+title: "电影《front of class》有感"
 date: 2013-01-21 22:55
 comments: true
 categories: 

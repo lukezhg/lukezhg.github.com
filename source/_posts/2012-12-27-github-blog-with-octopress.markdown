@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Github Blog with Octopress"
+title: "使用Octopress发布Github page博客"
 date: 2012-12-27 21:05
 comments: true
-categories: "octopress"
-tags: [github,标签云,日志]
+categories: "技术技巧"
+tags: [github,标签云,octopress]
 ---
 本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。
 

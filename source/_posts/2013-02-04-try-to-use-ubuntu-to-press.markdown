@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "try to use ubuntu to press"
+title: "在ubuntu中部署octopress发布博文"
 date: 2013-02-04 12:17
 comments: true
-categories: 
+categories: "技术技巧"
 tags: [ubuntu,github,octopress] 
 ---
 以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。  
@@ -14,8 +14,9 @@ tags: [ubuntu,github,octopress]
 下面把遇到的问题记录汇总如下：  
 一、安装和使用ubuntu过程中遇到的问题：  
 1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。  
-2  安装ubuntu显卡驱动
+2  安装ubuntu显卡驱动  
 3  无线链接不能建立，尽管密码正确。  
+4  如何安装和使用电池管理（tp-smapi）实现到达阈值自动停止充电  
 
 二、安装git和ruby遇到的问题：  
 1  更新git版本耗时过长以至于不能完成  
@@ -33,7 +34,14 @@ tags: [ubuntu,github,octopress]
 1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。  
 [AMD Catalyst™ Proprietary Display Driver - Linux x86 & Linux x86_64](http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&product=2.4.1.3.42&lang=English)  
 
-1.3  取消“启用无线”的勾选，然后在从新勾选上。  
+1.3  取消“启用无线”的勾选，然后在从新勾选上。 
+但是这样治标不治本，于是参考了[这个网址](http://www.linuxdiyf.com/viewarticle.php?id=101861)  
+> ppp 的很多选项都是默认的，其中lcp-echo-failure次数被设为4，而lcp-echo-interval设为30秒。也就是说，如果120秒钟之内，ADSL服务器没有给回echo-reply信号，UBuntu便会认为网络已经出了问题，就会断开网络，搞得人非常不爽。症结找到了，问题就要解决了，打开配置文件/etc/ppp/options，将lcp-echo-failure次数设为一个较大的数值就行了，我将该值修改为10。 
+
+1.5  安装tp-smapi
+参考：[http://www.linuxdiyf.com/linux/201108/688.html](http://www.linuxdiyf.com/linux/201108/688.html)  
+但是始终无法完成最后一步：sudo modprobe tp_smapi  
+但是反复安装和尝试了之后不知道为什么电池终于冲到71%就补充电了。原因还在继续查找中。  
 
 2.1  使用https:而不是git:, 有可能是git被封造成的。  
 参考：[Ubuntu git 安装和使用](http://www.linuxidc.com/Linux/2012-09/71193.htm)
@@ -56,23 +64,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org
 3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。    
 
 3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。  
-
-在摸索过程中经常使用的命令：   
-1 sudo apt-get install appname  
-2 rvm list known  
-3 rvm list  
-4 vi filename  
-5 gedit filename  
-6 rake generate  
-7 rake preview  
-8 rake deploy  
-9 rake new_post["post title"]  
-  cp  复制文件 到另外一个目录  
-  mkdir 目录名创建一个目录  
-  rmdir 空目录名删除一个空目录  
-  rm 文件名文件名删除一个文件或多个文件  
-  rm –rf 非空目录名删除一个非空目录下的一切  
-  touch 文件名创建一个空文件  
 
 
 参考文章：  

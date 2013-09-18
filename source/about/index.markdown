@@ -6,14 +6,10 @@ comments: true
 sharing: true
 footer: true
 ---
-喜欢的一句话：做最好的自己！  
+![chunlei](https://raw.github.com/lukezhg/Freyja/master/chunlei.png)  
+Chunlei Zhang  
+Motto：To be the best of myself！  
 
-如何找到我  
-好看簿地址：http://www.haokanbu.com/user/108512/  
-Diig主页：http://www.diigo.com/user/chunleizhang  
-Twitter地址:http://www.twitter.com/chunleizhang  
-做啥：http://zuosa.com/lukezhang  
-豆瓣：http://www.douban.com/people/teahouse/  
-slideshare:http://www.slideshare.net/lukezhang  
-facebook:http://www.facebook.com/profile.php?id=1428622975&ref=name  
-skype:lukezhg  
+Scholar Interests: science education; teacher knowledge ;PCK;  ICT; PLE; Model-based Inquiry  
+
+Follow me on: [Twitter](http://www.twitter.com/chunleizhang), [Diigo](http://www.diigo.com/user/chunleizhang), [Slideshare](http://www.slideshare.net/lukezhang), [Haokanbu](http://www.haokanbu.com/user/108512/), [Douban](http://www.douban.com/people/teahouse/)  

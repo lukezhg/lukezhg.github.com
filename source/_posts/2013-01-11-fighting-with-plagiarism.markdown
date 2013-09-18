@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "fighting with plagiarism"
+title: "反抄袭技术"
 date: 2013-01-11 17:59
 comments: true
 categories: "教学"
