@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-19T15:06:13-04:00</updated>
+  <updated>2013-09-20T21:58:40-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Online course I finished]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished/"/>
+    <updated>2013-09-20T20:52:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished</id>
+    <content type="html"><![CDATA[<p>I just received the Stanford <a href="https://novoed.com/designthinking/statement/76155">Online Course Statement of Accomplishment Of DTAL from Novoed</a>.</p>
+
+<p>I also accomplished another similar course <a href="https://novoed.com/education/statement/76155">Designing a New Learning Environment</a></p>
+
+<p>I had spent 5~10 hours per week on each course. In fact, I didn't expect to accomplished them and got certificates. They just appeared interesting and related with my work. So I tried my best to take the boat and take every advantages of  the learning oportunities and resources. But the statments of accomplishment do encourage me to take more similar courses, so they are powerful in this sense.</p>
+
+<p>Free Online course resources:<br/>
+<a href="/blog/2011/11/29/opencourseware-collection/">Open Course Collection</a><br/>
+<a href="/blog/categories/opencourse/">Category-opencourse</a></p>
+
+<p>Strongly recommaned Online courses Platforms:<br/>
+1. <a href="https://novoed.com/">Novoed</a><br/>
+2. <a href="https://www.udacity.com/">Udacity</a><br/>
+3. <a href="https://www.edx.org/">edX</a></p>
+
+<p>The pdf version of my Online Course Statement of Accomplishments:   <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Design_Thinking_Action_Lab.pdf">DTAL</a> and <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Designing_a_New_Learning_Environment.pdf">DNLE</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Three ideas of supervision]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/19/three-ideas-of-supervision/"/>
+    <updated>2013-09-19T13:58:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/19/three-ideas-of-supervision</id>
+    <content type="html"><![CDATA[<p>How to make supervison less expensive?<br/>
+==>Take the advantage of technology and collective intelligence.<br/>
+==>Avoid repeating others' work by designing based on research evidence.<br/>
+==>Help teacher set a feasible and clear goals.</p>
+
+<p>How to make supervison more effective?<br/>
+==>Make a good use of available techniques.<br/>
+==>Select the right style--indirect.</p>
+
+<p>How to make supervision sustainable?<br/>
+==>Develop a mutual benefit and win-win relationship between participants.<br/>
+==>Make it flexible enough to change under different context.</p>
+
+<p>Why supervison?<br/>
+==>Value<br/>
+==>Cost<br/>
+==>DNA<br/>
+==>Pedagogy<br/>
+==>Content<br/>
+==>Technology<br/>
+==>Context</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Put supervision into practice]]></title>
@@ -49,7 +102,11 @@ b. using the diagnostic tools which are pertinent to the teacher's goals<br/>
 c. using a variety of diagnostic instruments and techniques<br/>
 d. requesting assistance from others, when needed, for more comprehensive diagnosis</p>
 
-<p>Standard 2 The competent teacher interprets diagnostic data to identify the needs and concerns of both the individual and the group by<br/>
+<!--more-->
+
+
+<p>
+Standard 2 The competent teacher interprets diagnostic data to identify the needs and concerns of both the individual and the group by<br/>
 a. identifying the achievement level of each student<br/>
 b. explaining the significance of the achievement level diagnosed</p>
 
@@ -194,58 +251,6 @@ What an expert teacher who has deep content knowledge can do?</p>
 <p>It is like the nutrition in the food, if the food contain no nutriton, the best cook can do nothing to help.</p>
 
 <p>It is also like taxi driver. The driver who knows the traffic system well, is possiblely able to figure out the most quick way to go for you at a special time and location. Content knowledge just provide more pathes to consider and follow. Otherwise, it is easy to get lost and embarrassed.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Effective teaching notes]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes/"/>
-    <updated>2013-09-17T11:25:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes</id>
-    <content type="html"><![CDATA[<p>Recently I was reading a book <a href="http://books.google.com/books/about/Clinical_Supervision_and_Teacher_Develop.html?id=O3ycAAAAMAAJ">Clinical Supervision and Teacher Development</a></p>
-
-<p>The following are summary notes of Chapter 3 Using clinical supervision to promote effective teaching.</p>
-
-<p>Characteristics of Good Teaching in Students' Mind?<br/>
-Niss(Nice)<br/>
- *   Nice(respect, patient and easy to get along with)<br/>
- *   Interesting(makes subject interesting and fun with students engaged)<br/>
- *   Sense of humor(tell jokes and smiles a lot)<br/>
- *   Sensitive to students' need( Listent to students' question and make changes to help students learn )</p>
-
-<p>Teacher characteristics associated with gain in students' academic achievement?<br/>
-Creati<br/>
- +   Clarity<br/>
- +   Raise Variety(of materials, methods, question types and levels)<br/>
- +   Enthusiasm<br/>
- +   avoid harsh criticism<br/>
- +   Task-oriented<br/>
- +   Indirect teaching style</p>
-
-<p>Substantive interaction that increase students' at-task time:<br/>
-Equal<br/>
-  -   Explain(content to students)<br/>
-  -   questioning<br/>
-  -   using feedback<br/>
-  -   assistance<br/>
-  -   list the steps or task(chunlei added)</p>
-
-<p>Notes taken from another book chapter-Glickman -chapter 4.pdf<br/>
-Research on effective instruction() indicates that effective instruction is based on adaption of curriculum and materials to local settings and particular learning goals. in other words, effective teachers think about what they are currently doing, assess the results of their practice, explore with each other new possibilities  for teaching students, and are able to consider students' perspectives.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I ignored number five subconsciously]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/16/i-ignored-number-five-subconsciously/"/>
-    <updated>2013-09-16T22:06:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/16/i-ignored-number-five-subconsciously</id>
-    <content type="html"><![CDATA[<p>A strange thing happend when I was reading a book and counting how many columns in a table. To my suprise, the number I counted in English didn't equal to the number counted in Chinese. In English the number is nine, but in Chinese it is eight columns. Finallly I found I missed the number five when I was couting in English. What a big discovery!</p>
-
-<p>I don't know why I tend to ignore the number five subconsciously. But there was a real story about the number five. At that time, I was still a college student. Jelle and Ineke, friends of my advisor visited Beijing. It was their first time to be in the city, so I showed them around to visit temples, parks and other spots. We mainly took bus to travel cause it was cheap and we would have chances to experience the Chinese daily lives. One day, we were waiting for No 5 bus. My spoken English was not proficient and often make mistakes expecially in pronunciation. I said to Jelle we were going to take No 5 bus(but I pronunced like "No file bus"). But he didn't understand. I repeated but still didn't make sense. Then after a while, he understood and said No five. He even taught me how to pronunce it correctly. But I was very ashame of that, and still found it difficult for me to pronunce FIVE.</p>
-
-<p>According to Freud's Unconscious theory, people tend to ignore or hide the unpleseant experience, this would help to explain my error in English counting.</p>
 ]]></content>
   </entry>
   
