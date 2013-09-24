@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: jigsaw | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/jigsaw/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-09-23T22:35:00-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Jigsaw of Surpervision]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/23/the-jigsaw-of-surpervision/"/>
+    <updated>2013-09-23T21:25:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/23/the-jigsaw-of-surpervision</id>
+    <content type="html"><![CDATA[<h3>How to make supervision sustainable?</h3>
+
+<p>==>Design and Develop a mutual benefit and win-win relationship between participants.<br/>
+It is kind of like to do a jigsaw. First you have to see every piece very clearly and then you can make the best guess and try to connect the two pieces.</p>
+
+<h3>Look into the pieces(participants):</h3>
+
+<p>Supervisor<br/>
+- typically are university professors(University)<br/>
+- experienced in-service teachers(Middle School)<br/>
+- principles(Middle School)</p>
+
+<p>Supervisee<br/>
+- new teacher(Middle School)<br/>
+- student teacher(University)<br/>
+- in-service teacher who want to make a change(Middle School)</p>
+
+<p>Facilitators<br/>
+- companies<br/>
+- administrators(MS)
+- Professors<br/>
+- stuff(MS, U)
+- reformers<br/>
+- NGO<br/>
+- Government</p>
+
+<h3>Possible Groups(supervisor,supervisee,facilitators):</h3>
+
+<p>Single Community:<br/>
+(student teacher, student teacher, professor)<br/>
+(in-service teacher, in-service teacher, adminstrator)
+(Experienced teacher, new teacher, stuff)</p>
+
+<p>Cross two communities:<br/>
+(Professor,(in-service teacher, student teacher),stuff)<br/>
+(Professor,in-service teacher, administrators)<br/>
+(Professor,(in-service teacher &amp; student teacher),stuff)<br/>
+(In-service teacher, student teacher, professor)<br/>
+((Professor &amp; in-service teacher),(in-service teacher &amp; student teacher),Professor)</p>
+
+<p>Cross three communities:<br/>
+(Professor,(in-service teacher &amp; student teacher), company)<br/>
+(Professor,(in-service teacher &amp; student teacher),NGO)<br/>
+(Professor,in-service teacher, Government)<br/>
+(Professor,in-service teacher, reformers)</p>
+
+<p>Why supervison?<br/>
+==>Value<br/>
+==>Cost<br/>
+==>DNA<br/>
+==>Pedagogy<br/>
+==>Content<br/>
+==>Technology<br/>
+==>Context</p>
+]]></content>
+  </entry>
+  
+</feed>
