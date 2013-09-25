@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-24T16:35:10-04:00</updated>
+  <updated>2013-09-24T23:28:42-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Japan Lesson Study]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/24/japan-lesson-study/"/>
+    <updated>2013-09-24T22:30:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/24/japan-lesson-study</id>
+    <content type="html"><![CDATA[<p>I watched two vedios of Japan science teaching see my <a href="http://zhangchunlei.com/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/">previous post</a></p>
+
+<p>Since then I tend to pay close attention to Japan science education including both teaching practice and teacher professional development. Tonight we talked about the lesson study in Japan and China, So googled Japan lesson study and found 2 interesting resources(attached at the end of this post).</p>
+
+<p>I think the Japan lesson study sounds really good.</p>
+
+<p>First, the lesson is designed and prepared by a team not a single teacher. This is different from China, where one teacher is reponsible for everything and under a great pressure. When a team prepare and co-design the lesson, teacher can really have more opportunities to learn from each other.</p>
+
+<p>Second, the study is aiming to solve a problem or acheiving a special goal. It is not providing a common good lesson for other teachers to follow or comment. This goal-orantied study will make it more meaningful for teachers. It becomes easier for other teachers take a stand to think if they have acheived their goal or what would help.</p>
+
+<p>Third, the team will spend 3-4 years on the same goal, they will design a long range plan to achieve it. They also refine their goal ever year. So it tend to be a continue systematic problem solving process with significant value in a special school context.</p>
+
+<p>Fourth, the topics of discussion and reflection can cover a wide range of concerns, including content related issues(goal of unit and lesson, concepts, problem to focus on, students&#8217; solution and response), and pedagogical issues and behaviors issues, also education rationals and goals.</p>
+
+<p>Resources:<br/>
+<a href="http://www.rbs.org/SiteData/docs/yoshidaoverview/aeafddf638d3bd67526570d5b4889ae0/yoshidaoverview.pdf">Lesson Study: An Introduction By Makoto Yoshida &amp; Clea Fernandez</a></p>
+
+<p>Japanese Lesson Study: Dr. Clea Fernandez</p>
+
+<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/yv-7xmZDozo" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Co-teaching]]></title>
@@ -733,32 +762,6 @@ $ python appcfg.py update myapps/helloworld
 
 <blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
 <a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ridiculous jump and serious problem]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/30/ridiculous-jump-and-serious-problem/"/>
-    <updated>2013-08-30T22:35:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/30/ridiculous-jump-and-serious-problem</id>
-    <content type="html"><![CDATA[<p>I just watched a TV program named Ridiculous. The following is special one.</p>
-
-<div>
-<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/9Cmw2m2z6_0" frameborder="0" allowfullscreen></iframe>
-</div>
-
-
-<p>Really Ridiculous, I can&#8217;t help laughing when thinking of the great jump.<br/>
-But sometimes it can be a very serious problem.</p>
-
-<!--more-->
-
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/bus-in-water.jpg" alt="bus in water" /><br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/emergency-exit.jpg" alt="emergency exit" /><br/>
-If you are the designer of the break glass hammer. How can you make sure people can succeed to break the glass with the hammer. What data do you need to collect or search? What physics principles you want to apply? What experiment do you want to do? What observation you want to make? Who do you want to interview?<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/hammer.jpg" alt="hammer" /><br/>
-This is a serious problem, but also a good challenge for you to figure it out.</p>
 ]]></content>
   </entry>
   
