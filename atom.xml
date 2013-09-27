@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-24T23:33:01-04:00</updated>
+  <updated>2013-09-27T13:25:36-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[reflection on groupwork modeling]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/"/>
+    <updated>2013-09-27T11:00:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling</id>
+    <content type="html"><![CDATA[<p>I have wrote several posts about modeling:<br/>
+Such as <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities</a><br/>
+Look for more click <a href="http://zhangchunlei.com/tag/modeling/">here</a></p>
+
+<p>But this time I would rather to think modeling from the groupwork perspective.</p>
+
+<p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don&#8217;t guaranteed the fruits are big.</p>
+
+<p>Groupwork tasks take times, so they must be well designed and organized. What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
+1.  It is highly realated with the science idea that student are going to learn.<br/>
+2.  It is challenging enough that it can&#8217;t be done individually.<br/>
+3.  It is reachable for students with their present knowledges and skills.<br/>
+4.  It generates meaningful discussions and productive outcommings.</p>
+
+<p>What do I mean by well organized? The teacher should do the following:<br/>
+1.  Students&#8217; prior idea should be explored and addressed.<br/>
+2.  Possiblely related science theories or ideas should be put on the table(eg by brainstorming).<br/>
+3.  All group members should engaged actively and equally in the task.<br/>
+4.  Communication and collaboration skills should be taught to make sure that a positive classroom norms and culture is formed just like the community of scientists.<br/>
+5.  Competition can be used to save time and for fun.</p>
+
+<p>To be expanded.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Japan Lesson Study]]></title>
@@ -707,61 +737,6 @@ $ python appcfg.py update myapps/helloworld
 
 
 <p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu命令手册]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
-    <updated>2013-08-31T12:33:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
-    <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
-安装和执行程序<br/>
--  sudo apt-get install appname  安装程序应用
--  make install 编译并安装 .tar.gz2 <br/>
--  sh xx.sh  执行.sh文件<br/>
--  python xx.py 执行py文件<br/>
--  sudo su 切换到root用户<br/>
--  sudo exit 推出root用户</p>
-
-<p>察看RVM可供安装的ruby版本和现用版本<br/>
--  rvm list known<br/>
--  rvm list</p>
-
-<p>编辑文本文档<br/>
--  vi filename<br/>
--  gedit filename</p>
-
-<p>发布octopress博文<br/>
--  rake generate<br/>
--  rake preview<br/>
--  rake deploy<br/>
--  rake new_post[&#8220;post title&#8221;]</p>
-
-<p>文件操作<br/>
--  cp  复制文件 到另外一个目录<br/>
--  mv 文件 文件目录<br/>
--  rm 文件名文件名删除一个文件或多个文件<br/>
--  rm –rf 非空目录名删除一个非空目录下的一切</p>
-
-<ul>
-<li>touch 文件名创建一个空文件</li>
-<li>mkdir 目录名创建一个目录</li>
-<li>rmdir 空目录名删除一个空目录</li>
-<li>lsusb 查看usb接口</li>
-<li>lspci 查看pci接口</li>
-</ul>
-
-
-<p>批量改名<br/>
--  rename &#8216;s/lecture/slide/&#8217; *.jpg<br/>
-将当前目录中所有jpg文件名中lecture替换为slide。</p>
-
-<p>批量替换文件内容<br/>
--  perl -pi -e &#8216;s|Windows|Ubuntu|g&#8217; <code>find ./ -type f</code></p>
-
-<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
-<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
 ]]></content>
   </entry>
   
