@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-30T22:44:51-04:00</updated>
+  <updated>2013-10-04T14:53:27-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Model-based Learning Rview]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/03/model-based-learning-rview/"/>
+    <updated>2013-10-03T10:15:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/03/model-based-learning-rview</id>
+    <content type="html"><![CDATA[<h3>What is Model-based Learning(MBL)?</h3>
+
+<p>How students learn: science in classroom</p>
+
+<h3>Why to promote MBL now?</h3>
+
+<h3>How MBL affects science learning?</h3>
+
+<h3>How to use MBL in science classroom?</h3>
+
+<h4>How to process MBL?</h4>
+
+<h4>How to assess students' work?</h4>
+
+<h4>How to adapt the activities for various needs?</h4>
+
+<h4>Simulation approach</h4>
+
+<h4>Collaboration approach</h4>
+
+<h4>Resources</h4>
+
+<h3>What are the Opportunities and Challenges for science teachers?</h3>
+
+<h4>Misunderstandings</h4>
+
+<h4>Lack of knowledges and skills</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[reflection on groupwork modeling]]></title>
@@ -26,7 +61,9 @@ Look for more click <a href="/tag/modeling/">here</a></p>
 
 <p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don't guaranteed the fruits are big.</p>
 
-<p>Groupwork tasks take times, so they must be well designed and organized. What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
+<p>Groupwork tasks take times, so they must be well designed and organized.</p>
+
+<p>What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
 1.  It is highly realated with the science idea that student are going to learn.<br/>
 2.  It is challenging enough that it can't be done individually.<br/>
 3.  It is reachable for students with their present knowledges and skills.<br/>
@@ -36,10 +73,15 @@ Look for more click <a href="/tag/modeling/">here</a></p>
 1.  Students' prior idea should be explored and addressed.<br/>
 2.  Possiblely related science theories or ideas should be put on the table(eg by brainstorming).<br/>
 3.  All group members should engaged actively and equally in the task.<br/>
-4.  Communication and collaboration skills should be taught to make sure that a positive classroom norms and culture is formed just like the community of scientists.<br/>
+4.  Students can learn to communicate and collaborate like scientists.<br/>
 5.  Competition can be used to save time and for fun.</p>
 
-<p>To be expanded.</p>
+<p>How to help students to generate more productive group conversation?<br/>
+1.  State proper questions or the tasks clearly. Everyone knows what to do.<br/>
+2.  Use deep silent thinking and wide brainstorm, Enage what students prior ideas and concepts to expain the data/phenomenon? Everyone needs to participate in group conversation in some way.<br/>
+3.  Visualize group ideas or models with tools and posters.<br/>
+4.  Test and Review the models critically and make suggestions.<br/>
+5.  Revise the models based on new data and feedbacks from class community.</p>
 ]]></content>
   </entry>
   
@@ -149,8 +191,8 @@ It is kind of like to do a jigsaw. First you have to see every piece very clearl
 
 <h4>Ways that cooperating teachers participate in teacher education</h4>
 
-<p>The analysis draws on Brodie, Cowling, and Nissen’s notion of categories of participation to generate 11 different ways that cooperating teachers participate in teacher education: as Providers of Feedback, Gatekeepers of the Profession, Modelers of Practice, Supporters of Reflection, Gleaners of Knowledge, Purveyors of Context, Conveners of Relation, Agents of Socialization, Advocates of the Practical, Abiders of Change, and Teachers of Children.
-[]Anthony Clarke,Valerie Triggs,Wendy Nielsen(2013) Cooperating Teacher Participation in Teacher Education:A Review of the Literature. REVIEW OF EDUCATIONAL RESEARCH September 23, 2013 0034654313499618</p>
+<blockquote><p>The analysis draws on Brodie, Cowling, and Nissen’s notion of categories of participation to generate 11 different ways that cooperating teachers participate in teacher education: as Providers of Feedback, Gatekeepers of the Profession, Modelers of Practice, Supporters of Reflection, Gleaners of Knowledge, Purveyors of Context, Conveners of Relation, Agents of Socialization, Advocates of the Practical, Abiders of Change, and Teachers of Children.
+[]Anthony Clarke,Valerie Triggs,Wendy Nielsen(2013) Cooperating Teacher Participation in Teacher Education:A Review of the Literature. REVIEW OF EDUCATIONAL RESEARCH September 23, 2013 0034654313499618</p></blockquote>
 
 <h4>Possible cooperation relationships</h4>
 
@@ -214,42 +256,6 @@ Riordan, G. P. (1995) suggested that administrators should be aware of the extra
 ==>Content<br/>
 ==>Technology<br/>
 ==>Context</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Metaphors for teaching and education reform]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/20/metaphors-for-teaching/"/>
-    <updated>2013-09-20T23:18:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/20/metaphors-for-teaching</id>
-    <content type="html"><![CDATA[<h3>Metaphors for teaching:</h3>
-
-<p>A teacher is just like a cook. You can tell a good cook by the taste of his dishes, so you can also tell a good teacher by his students' acheivements. Sometimes you can also tell a good cook by observing his cooking process. Good cook can aways get everything ready quickly and easily. Good teacher do the same thing.</p>
-
-<p>Teachers' job is adapting the curriculum and materials to local settings and particular learning goals. Effective teachers are aware of what they are currently doing, aways pursueing new effecive ways to teach the same content. It is just like cooks making foods for different customers.  <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom" /></p>
-
-<!--more-->
-
-
-<p>
-Teachers' content knowledge affect their abilities of transfroming the curriculum and materials to students in a special context to acheive a designed learning goal. It is the foundation of science teacher knowledge. If there is no good content knowledge, there is no good content to transform.</p>
-
-<p>It is like the nutrition in the food, if the food contain no nutriton, the best cook can do nothing to help.</p>
-
-<p>It is also like taxi driving. The taxi driver who knows the traffic system well, is possiblely able to figure out the most quick way to go for you at a special time and location. Content knowledge just provide more pathes to consider and follow. Otherwise, it is easy to get lost and embarrassed.
-<img src="https://raw.github.com/lukezhg/Freyja/master/traffic-jam.png" alt="traffic jam" /></p>
-
-<h3>Metaphor for education reform:</h3>
-
-<p>Sometimes science teacher educators complain that teachers' beliefs are stubborn and reluctant to change their practices. Well, It is true.</p>
-
-<p>The teacher is like a swimmer in a river. <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-is-swimmer.png" alt="teacher is swimmer" /></p>
-
-<p>The science teacher educator stand on the river bank and tell the swimmer where to go, how to swim, which style is more effective than others. But the most important thing for a person in the river is to keep safty and the most reliable style is the style which he already got. How can we blame them not trying to change, if their safty is not guaranteed and new skills not developed.</p>
-
-<p>As a science teacher educator, you can not always stand by but jump into the water and provide necessary skills and safety.</p>
 ]]></content>
   </entry>
   

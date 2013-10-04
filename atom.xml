@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-09-30T22:44:51-04:00</updated>
+  <updated>2013-10-04T14:53:27-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Model-based Learning Rview]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/03/model-based-learning-rview/"/>
+    <updated>2013-10-03T10:15:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/03/model-based-learning-rview</id>
+    <content type="html"><![CDATA[<h3>What is Model-based Learning(MBL)?</h3>
+
+<p>How students learn: science in classroom</p>
+
+<h3>Why to promote MBL now?</h3>
+
+<h3>How MBL affects science learning?</h3>
+
+<h3>How to use MBL in science classroom?</h3>
+
+<h4>How to process MBL?</h4>
+
+<h4>How to assess students&#8217; work?</h4>
+
+<h4>How to adapt the activities for various needs?</h4>
+
+<h4>Simulation approach</h4>
+
+<h4>Collaboration approach</h4>
+
+<h4>Resources</h4>
+
+<h3>What are the Opportunities and Challenges for science teachers?</h3>
+
+<h4>Misunderstandings</h4>
+
+<h4>Lack of knowledges and skills</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[reflection on groupwork modeling]]></title>
@@ -26,7 +61,9 @@ Look for more click <a href="http://zhangchunlei.com/tag/modeling/">here</a></p>
 
 <p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don&#8217;t guaranteed the fruits are big.</p>
 
-<p>Groupwork tasks take times, so they must be well designed and organized. What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
+<p>Groupwork tasks take times, so they must be well designed and organized.</p>
+
+<p>What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
 1.  It is highly realated with the science idea that student are going to learn.<br/>
 2.  It is challenging enough that it can&#8217;t be done individually.<br/>
 3.  It is reachable for students with their present knowledges and skills.<br/>
@@ -36,10 +73,15 @@ Look for more click <a href="http://zhangchunlei.com/tag/modeling/">here</a></p>
 1.  Students&#8217; prior idea should be explored and addressed.<br/>
 2.  Possiblely related science theories or ideas should be put on the table(eg by brainstorming).<br/>
 3.  All group members should engaged actively and equally in the task.<br/>
-4.  Communication and collaboration skills should be taught to make sure that a positive classroom norms and culture is formed just like the community of scientists.<br/>
+4.  Students can learn to communicate and collaborate like scientists.<br/>
 5.  Competition can be used to save time and for fun.</p>
 
-<p>To be expanded.</p>
+<p>How to help students to generate more productive group conversation?<br/>
+1.  State proper questions or the tasks clearly. Everyone knows what to do.<br/>
+2.  Use deep silent thinking and wide brainstorm, Enage what students prior ideas and concepts to expain the data/phenomenon? Everyone needs to participate in group conversation in some way.<br/>
+3.  Visualize group ideas or models with tools and posters.<br/>
+4.  Test and Review the models critically and make suggestions.<br/>
+5.  Revise the models based on new data and feedbacks from class community.</p>
 ]]></content>
   </entry>
   
@@ -176,8 +218,8 @@ It is kind of like to do a jigsaw. First you have to see every piece very clearl
 
 <h4>Ways that cooperating teachers participate in teacher education</h4>
 
-<p>The analysis draws on Brodie, Cowling, and Nissen’s notion of categories of participation to generate 11 different ways that cooperating teachers participate in teacher education: as Providers of Feedback, Gatekeepers of the Profession, Modelers of Practice, Supporters of Reflection, Gleaners of Knowledge, Purveyors of Context, Conveners of Relation, Agents of Socialization, Advocates of the Practical, Abiders of Change, and Teachers of Children.
-[]Anthony Clarke,Valerie Triggs,Wendy Nielsen(2013) Cooperating Teacher Participation in Teacher Education:A Review of the Literature. REVIEW OF EDUCATIONAL RESEARCH September 23, 2013 0034654313499618</p>
+<blockquote><p>The analysis draws on Brodie, Cowling, and Nissen’s notion of categories of participation to generate 11 different ways that cooperating teachers participate in teacher education: as Providers of Feedback, Gatekeepers of the Profession, Modelers of Practice, Supporters of Reflection, Gleaners of Knowledge, Purveyors of Context, Conveners of Relation, Agents of Socialization, Advocates of the Practical, Abiders of Change, and Teachers of Children.
+[]Anthony Clarke,Valerie Triggs,Wendy Nielsen(2013) Cooperating Teacher Participation in Teacher Education:A Review of the Literature. REVIEW OF EDUCATIONAL RESEARCH September 23, 2013 0034654313499618</p></blockquote>
 
 <h4>Possible cooperation relationships</h4>
 
@@ -769,44 +811,6 @@ I am too tired after swimming to try it. May be next time.</p>
 +   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
 +   PhET: <a href="http://phet.colorado.edu/">Free online simulations</a><br/>
 +   <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities - Chunlei&#8217;s Blog</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/"/>
-    <updated>2013-08-31T18:07:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu</id>
-    <content type="html"><![CDATA[<p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
-首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
-然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
-
-<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
-
-<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
-
-<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
-
-<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
-测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
-
-<pre><code>
-$ python dev_appserver.py myapps/helloworld
-</code></pre>
-
-
-<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
-
-<p>ctrl+C 终止测试。</p>
-
-<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
-
-<pre><code>
-$ python appcfg.py update myapps/helloworld
-</code></pre>
-
-
-<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
 ]]></content>
   </entry>
   
