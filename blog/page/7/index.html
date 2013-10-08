@@ -9,8 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。
-终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。 &hellip;">
+  <meta name="description" content="找中学v2.0 本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。 (function() { var cx = '003236158428466992246:mvbdsgvf6hk'; var gcse = document.createElement(' &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,7 +121,7 @@ google.setOnLoadCallback(function() {
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">在ubuntu中部署octopress发布博文</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/">找中学 V2.0发布</a></h1>
     
     
       <p class="meta">
@@ -138,78 +137,35 @@ google.setOnLoadCallback(function() {
   
 
 
-<time datetime="2013-02-04T12:17:00-04:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+<time datetime="2013-08-25T18:30:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
-终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
+  <div class="entry-content"><h2><a href="https://www.google.com.hk/cse/home?cx=003236158428466992246:mvbdsgvf6hk">找中学v2.0</a></h2>
 
-<p>其实我是把windows下的所有博客项目有关的文件都拷贝到了ubuntu中来，然后在布置好环境的基础上实现正常使用的，居然真的可以。</p>
+<p>本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。</p>
 
-<p>下面把遇到的问题记录汇总如下：<br/>
-一、安装和使用ubuntu过程中遇到的问题：<br/>
-1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。<br/>
-2  安装ubuntu显卡驱动<br/>
-3  无线链接不能建立，尽管密码正确。<br/>
-4  如何安装和使用电池管理（tp-smapi）实现到达阈值自动停止充电</p>
+<div>
+<script>
+  (function() {
+    var cx = '003236158428466992246:mvbdsgvf6hk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
 
-<p>二、安装git和ruby遇到的问题：<br/>
-1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本<br/>
-3  如何设置让打开终端时自动加载rvm</p>
-
-<p>三、布置octopress遇到的问题：<br/>
-1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
-2 使用rake generate命令时报错</p>
-
-<p>问题解决方法：<br/>
-1.1  选择了一个64位的amd版本的ubuntu进行安装。<br/>
-<a href="http://releases.ubuntu.com/12.04/">Ubuntu 12.04.1 LTS</a></p>
-
-<p>1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。<br/>
-<a href="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&amp;product=2.4.1.3.42&amp;lang=English">AMD Catalyst™ Proprietary Display Driver - Linux x86 &amp; Linux x86_64</a></p>
-
-<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。
-但是这样治标不治本，于是参考了<a href="http://www.linuxdiyf.com/viewarticle.php?id=101861">这个网址</a></p>
-
-<blockquote><p>ppp 的很多选项都是默认的，其中lcp-echo-failure次数被设为4，而lcp-echo-interval设为30秒。也就是说，如果120秒钟之内，ADSL服务器没有给回echo-reply信号，UBuntu便会认为网络已经出了问题，就会断开网络，搞得人非常不爽。症结找到了，问题就要解决了，打开配置文件/etc/ppp/options，将lcp-echo-failure次数设为一个较大的数值就行了，我将该值修改为10。</p></blockquote>
-
-<p>1.5  安装tp-smapi
-参考：<a href="http://www.linuxdiyf.com/linux/201108/688.html">http://www.linuxdiyf.com/linux/201108/688.html</a><br/>
-但是始终无法完成最后一步：sudo modprobe tp_smapi<br/>
-但是反复安装和尝试了之后不知道为什么电池终于冲到71%就补充电了。原因还在继续查找中。</p>
-
-<p>2.1  使用https:而不是git:, 有可能是git被封造成的。<br/>
-参考：<a href="http://www.linuxidc.com/Linux/2012-09/71193.htm">Ubuntu git 安装和使用</a>
-将git clone git://git.kernel.org/pub/scm/git/git.git<br/>
-改为：git clone https://git.kernel.org/pub/scm/git/git.git</p>
-
-<p>2.2  跟换gem源，使用淘宝提供的源。<br/>
-参考：<a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-替换 gem 的 source：<br/>
-$ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
-
-<p>2.3  更改.bash_profile<br/>
-参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
-在$HOME/.bash_profile文件中添加如下内容：<br/>
-[[ -s &#8220;$HOME/.rvm/scripts/rvm&#8221; ]] &amp;&amp; . &#8220;$HOME/.rvm/scripts/rvm&#8221; # This loads RVM into a shell session.  <br/>
-以便在开启一个终端会话时候加载RVM<br/>
-或者手动键入：$ source ~/.rvm/scripts/rvm<br/>
-在或者将该内容添加到~/.bashrc文件末尾。</p>
-
-<p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
-
-<p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
-
-<p>参考文章：<br/>
-1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-2  <a href="http://yangdd.github.com/blog/2012/09/14/issue/">使用Octopress遇到的问题 - 长老的 Octopress Blog</a></p>
 </div>
   
   
@@ -222,7 +178,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/22/what-robot-can-do-for-me/">What Robot Can Do for Me</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/key-middle-school-search-engine/">找中学V1.0搜索引擎</a></h1>
     
     
       <p class="meta">
@@ -238,16 +194,18 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   
 
 
-<time datetime="2013-01-22T18:53:00-04:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2013</time>
+<time datetime="2013-08-25T18:29:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/01/22/what-robot-can-do-for-me/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/key-middle-school-search-engine/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>I am interested in robot because it will do something useful to me.</p>
+  <div class="entry-content"><h2><a href="https://www.google.com.hk/cse/home?cx=003240028397592718084:t6ua0pji53e">找中学v1.0</a></h2>
+
+<p>本搜索引擎主要用于搜索各地区重点中学教师招聘信息、招生信息等。</p>
 </div>
   
   
@@ -260,7 +218,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/21/front-of-class/">电影《front of Class》有感</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/teaching-resources-search-engine/">教学资源搜索引擎</a></h1>
     
     
       <p class="meta">
@@ -276,20 +234,18 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   
 
 
-<time datetime="2013-01-21T22:55:00-04:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+<time datetime="2013-08-25T18:28:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/01/21/front-of-class/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/teaching-resources-search-engine/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>今天看了《front of class》这部电影，觉得很好看。</p>
+  <div class="entry-content"><h2><a href="http://www.google.com/cse/home?cx=003240028397592718084:wtlazttaiia">中学生物学教学资源搜索引擎</a></h2>
 
-<p>快乐与感动的同时，更加坚定了一个想法：教育应该是包容性的。美好的生活是需要坚强的努力去创造的，只不过有着先天障碍的人们的生活斗争更加鲜明和激烈，也更让人感动和学习。</p>
-
-<p>推荐所有有志于当老师的朋友们观看这部电影！希望大家都能成为具有包容心的老师。</p>
+<p>本搜索引擎主要用于搜索生物学教学资源，比如试题、课件、教案等，大多能免费匿名下载。</p>
 </div>
   
   
@@ -302,7 +258,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/11/fighting-with-plagiarism/">反抄袭技术</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/science-education-search-engine/">Science Education Search Engine</a></h1>
     
     
       <p class="meta">
@@ -318,65 +274,20 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   
 
 
-<time datetime="2013-01-11T17:59:00-04:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+<time datetime="2013-08-25T18:19:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/01/11/fighting-with-plagiarism/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>什么是抄袭？</h2>
-
-<p>所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息，但是行文中还是让人产生了误会，这种情况则需要学习和教育。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/01/11/fighting-with-plagiarism/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/10/slow-but-right/">不要总是寻找捷径</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-10T16:33:00-04:00" pubdate data-updated="true">Jan 10<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/01/10/slow-but-right/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/science-education-search-engine/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>做正确的事用正确的方法的时候，往往进度会很慢，但是虽然慢，但这却是正确的方向。所以只要坚持下去就能得到回报。但很多时候我们总是在寻找捷径，以至于我们都认自己找到捷径，但结果还是自作聪明。有人说过，其实捷径就是克服寻找捷径的心态，直接面对和克服它。</p>
+  <div class="entry-content"><h2><a href="http://www.google.com/cse/home?cx=003240028397592718084%3Adgtq8fkvprs">Science education search engine</a></h2>
 
-<p>&lt;&#8211;!more&#8211;></p>
-
-<p>但事实上这样的聪明人却不占少数。</p>
+<p>本搜索引擎主要用于搜索科学教育相关的英文全文数据库。
+This search engine is useful to search the full papers on Science Education.<br/>
+Good Luck with your search!</p>
 </div>
   
   
@@ -389,7 +300,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/10/be-proactive/">保持积极主动，坚持总结回顾</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/my-favourite-song/">我最爱的10首歌</a></h1>
     
     
       <p class="meta">
@@ -405,326 +316,26 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   
 
 
-<time datetime="2013-01-10T15:48:00-04:00" pubdate data-updated="true">Jan 10<span>th</span>, 2013</time>
+<time datetime="2013-08-25T11:02:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/01/10/be-proactive/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>对于一个学习者而言，如若想进步，我觉得必须要做到两条：<br/>
-1. 保持积极主动<br/>
-2. 坚持总结回顾</p>
-
-<p>这两条听起来好像很简单，其实很难做到。</p>
-
-<p>比如积极主动，我曾经鼓励我的学生主动联系附近中学的一线老师，进而寻求合作。也曾经鼓励学生为了寻找一篇文献给名人写信。但是我发现最后学生们很少有真的行动的，学生还没有养成积极主动的习惯。尽管他们已经是研究生了，尽管他们接受了16年的教育，尽管他们即将面临写论文、就业，但是他们仍然没有养成积极主动的习惯。这不禁让人反思我们的教育所起的作用。</p>
-
-<p>积极主动除了行动之外，还可以表现在思考上。在工作或学习过程中，你是否愿意信任伙伴，你是否倾向于把别人往好处想，你是否处于过度防范的状态，对这些问题的回答就能反映你是否会积极的思考。积极思考的人往往也能感染别人积极的思考，相信别人的人，也更容易取得别人的相信，进而建立积极的人际关系和工作氛围。人家都说中国是关系社会，社会工作关系复杂，让人很累，每个人都处于防范之中，能不累吗。其实很重要的一点就是没有养成积极思维的习惯，遇到事情总是朝着猜忌和负面去考虑。所及积极主动不仅对自己很重要，对于环境的影响也不可忽视。</p>
-
-<p>那么回顾中应该很容易做到了吧，其实不然。</p>
-
-<p>人是需要回顾过去的，比如回顾一年的工作和生活，回顾一个月的收获和行动，回顾一个星期的时间花费。等等。但是有的时候我们实在太忙了，忙的没有时间回顾，没有时间思考，没有时间想一想我们到底在忙些什么。</p>
-
-<p>我曾经这样告诫自己，要立长志，不要常立志。但是很多时候还是做不到，还是常立志，后来想想常立志也还过得去，只要每次立的都是同样的志向，那么也就在接近立长志了。</p>
-
-<p>我有一个坏毛病，容易虎头蛇尾。可能这也证明我自己其实地的确确就是一个普通人，坚持做一件事情是困难的，坚持把一件事情做好更是难上加难，但无论怎样，我还是要我劝慰，be proactive, 积极的思考和行动。很多时候，失败就失败在不积极、不主动、充满了猜疑和戒备，那样的话成功的几率几乎为零。</p>
-
-<p>因此，我不禁要劝自己积极的思考和行动，也要去鼓励我周边的人积极的思考和行动，用正能量去感染自己和他人，让我们共同更接近成功！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/05/bus-story/">公交车上的寒与暖</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-05T07:17:00-04:00" pubdate data-updated="true">Jan 5<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/01/05/bus-story/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/my-favourite-song/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>今天早上起了一个大早，去送LP上班。昨天下了雪，地上湿湿的，上海就是存不住雪。</p>
-
-<p>快要到公交车站了，结果就过去一辆，没赶上。本来LP就是想赶这辆车的，她天还没亮就爬起来，黑灯瞎火的找衣服，还说不用我送了，让我多睡一会。但是我怕早上路滑，还是硬着头皮爬起来了。LP怀孕有8个月了，但是还要坚持上班，每次上班都要挤公交，而且中间还需要换乘一次，路上一共要2个小时的时间。所以明明是八点半上班，早上5点半就要起床了。我经常说她很牛，这么冷得天，这么长的路，也照样不耽误。</p>
-
-<p>其实，上海的公交车以及地铁还是相对非常文明的。我们也越到很多好心人，主动给lp让座，并且嘘寒问暖，尽管素不相识。其中大部分让座的是女性，而且是略微年长的女性，都是做过妈妈的人，才知道其中的不容易。昨天我们就地铁上遇到2位热心人，她们是成都的，来上海旅游，其实年龄也挺大的了，大概有50多岁，但是还要一定把作为让给我们。虽然素不相识，但是还是热情的攀谈起来，下了地铁lp说：“还是成都人热情”。其次是大学生，我们就与遇到好几次，大部分学生还是非常有礼貌的，值得赞扬。</p>
-
-<p>当然，我们也遇到过不愿意让座的人。lp一般也会比较体谅别人，比如正赶上上班下班，很多年轻人忙了一整天了，就会在这个时间玩玩手机或者睡一会，也就注意不到帮助那些需要帮助的人。当然，其中也有看到假装没看到的，或者就是视而不见，尽管他的座位傍边写着老幼孕妇专座，尽管公交车的喇叭反复重复“请给需要帮助的乘客让个座”。</p>
-
-<p>我就见过一例，是一个年轻男性，看着大肚子在他前面，还是只顾着玩他的手机，当时我真有动手的冲动。但是这就是社会道德规范，不同于法律，别人可以遵守也可以不遵守，你可以谴责这种行为，但是却不能伤害其人身。作为一位即将当爸爸的男士，我想给自己提个醒，一定要给你身边需要帮助的人让一个座，因为你也有需要他人帮助的时候，你也会有老婆、孩子，你也会有变老的一天。还是很怀念那些阿姨，她们身上会散发出伟大的母性的爱，让人倍感温暖。</p>
-
-<p>公车来了，人很多，希望有人能为lp让个座。用公交师傅的话说：“给大肚皮让个座，谢谢！”</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/27/github-blog-with-octopress/">使用Octopress发布Github Page博客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-27T21:05:00-04:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/12/27/github-blog-with-octopress/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
-
-<p>搭建的步骤如下：<br/>
-1.首先是准备工作，下载和安装必要的软件。<br/>
-2.然后是克隆octopress并安装 <br/>
-3.接下来是将octopress配置好并发布博文。 <br/>
-具体步骤可以重点参考<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">这篇</a>文章。</p>
-
-<h2>具体步骤纪要：</h2>
-
-<ol>
-<li>准备工作，下载<a href="http://windows.github.com/">gitinstaller</a>, <a href="http://rubyforge.org/frs/?group_id=167">ruby197</a>, <a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">devkit</a>, 然后安装。
-gitinstalller和ruby197只要一路next过去就可以安装好，ruby我选择的都是c盘根目录。devkit解压到c盘根目录。安装如下：
-
-<blockquote><pre><code>$ cd C:\DevKit  
-</code></pre>
-
-<p>   $ ruby dk.rb init<br/>
-   $ ruby dk.rb instal</p></blockquote></li>
-</ol>
-
-
-<p>布置环境：</p>
-
-<blockquote><pre><code>$ gem sources --remove http://rubygems.org/  
-  $ gem sources -a http://ruby.taobao.org/  
-  $ gem install rdoc bundler   
-  $ vi Gemfile  #将行 ：source "http://rubygems.org/" 改为:source "http://ruby.taobao.org/"
-  $ bundle install  #如果出错，改执行：bundle update; rake install   
-</code></pre></blockquote>
-
-<ol>
-<li>克隆远程octopress到本地文件夹，本地文件夹名称无所谓，比如我的就放在G:/github/myblog<br/>
-接下来进入git shell, 在命令行中执行一系列的命令来安装octopress，命令代码如下：
-
-<blockquote><pre><code>$ git clone git://github.com/imathis/octopress.git myblog  
-</code></pre>
-
-<p>   $ cd myblog<br/>
-   $ rake setup_github_pages<br/>
-按照提示输入：git@github.com:username/username.github.com.git, 比如我的github用户名为lukezhg，那么我就需要输入 git@github.com:lukezhg/lukezhg.github.com.git</p>
-
-<pre><code>$ rake generate   #生成本地文件
-</code></pre>
-
-<p>   $ rake preview  #实现本地预览 访问  http://localhost:4000 查看效果  （可选）
-   $ rake deploy  #发布本地文件到服务器</p></blockquote></li>
-</ol>
-
-
-<p>保存博客源码到github source分支:</p>
-
-<blockquote><pre><code>$ git add .  
-  $ git commit -m 'blog source'  
-  $ git push origin source
-</code></pre></blockquote>
-
-<ol>
-<li>初步配置octopress<br/>
-_config.yml文件：</li>
-</ol>
-
-
-<p>添加cname文件<br/>
-只需要在myblog\source目录下添加一个cname的文件，并在第一行写上你的域名，保存即可。</p>
-
-<p>发布新博文（post）或者新页面（page）</p>
-
-<blockquote><pre><code>$ rake new_post["article name"]   
-  $ rake new_page["page name"]
-</code></pre></blockquote>
-
-<ol>
-<li>继续完善<br/>
-添加侧边栏内容</li>
-</ol>
-
-
-<p>（1）添加导航<br/>
-修改myblog\source_includes\custom目录下的navigation.html文件即可</p>
-
-<p>（2）添加分类<br/>
-<a href="https://github.com/alswl/octopress-category-list">alswl/octopress-category-list</a></p>
-
-<p>（3）自定义网站图标<br/>
-替换myblog\source目录下的favicon.png可以实现自定义网站图标</p>
-
-<ol>
-<li>额外的说明 <br/>
-（1）执行rake install如若出错：
-
-<blockquote><pre><code>$ rake install
-</code></pre>
-
-<p>   $ rake aborted!
-   $ You have already activated rake 0.9.2.2, but your Gemfile requires rake 0.9.2. Using bundle exec may solve this.
-   $ (See full trace by running task with &#8211;trace)</p></blockquote></li>
-</ol>
-
-
-<p>==》修正办法为：</p>
-
-<blockquote><pre><code>$ bundle update; rake install  
-</code></pre></blockquote>
-
-<p>（2）添加CNAME文件后不生效==》手动在github网页上文件代码剪贴掉，保存，然后再粘贴回来，保存。</p>
-
-<p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
-
-<p>markdown语法示例
-句子的尾部输入两个空格然后回车就可以断行 <br/>
-* 无序项目1 <br/>
-* 项目2 <br/>
-* 项目3  <br/>
-<img src="\images\bird_32_gray.png" alt="Alt text" /></p>
-
-<p>主要参考：
-<a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
-<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
-<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment/">如何辅助学习者在复杂网络学习环境中生存下来</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-11-29T00:00:00-04:00" pubdate data-updated="true">Nov 29<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/11/29/how-to-assist-learners-survive-in-complicated-learning-environment/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><p>当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？</p>
-<p>思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连带网址功能，就可以把相关的作业及要求摘录到笔记中，然后再使用标签进行管理即可。我觉得以后可以重点介绍一下evernote这款软件。</p>
-<p>思路2：把复杂环境简单化，越是简单的机制越是容易理解和使用。</p>
-<p>思路3：建立一个自己的web环境，汇总和侦听各种课程信息。比如google个人页面，wikispace个人页面等，这对学习者将提出更高的要求。</p>
-<p>&nbsp;</p></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/11/fightiing-with-laziness-start-from-review/">与懒做斗争——从回顾、梳理、总结开始</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-11T00:00:00-04:00" pubdate data-updated="true">Jul 11<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/07/11/fightiing-with-laziness-start-from-review/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><p>放假已经有一阵子了，但是自己一直被懒折磨着，很多问题都搁置在一边没有进展。怎么样才能摆脱这种状态呢？</p>
-<p>在《<a href="http://vip.book.sina.com.cn/book/catalog.php?book=42978">工作就是解决问题</a>》这本书中&ldquo;先找问题的薄弱点&rdquo;有这样一段内容：</p>
-<blockquote>
-<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">当一个人在学习和工作中达到所谓的&ldquo;停滞点&rdquo;时，从问题的最薄弱处下手，从最容易的地方开始，先做自己擅长的、有把握的事情，往往特别有效。</span></p>
-<p><span style="color: #444444; font-family: Helvetica, Arial, sans-serif; line-height: 16px; text-align: left; background-color: #f9f9f9;">所谓&ldquo;停滞点&rdquo;，便是到达那一点时，再用功也无法获得更多进步。这时，若是硬逼着自己冲过这个&ldquo;停滞点&rdquo;，便很可能产生紧张、困难等感觉。甚至形成恶性循环&mdash;&mdash;越想解决问题，就越解决不了。越想闯过去，就越是原地打转。这时，你可以稍微放松一下，先做最容易的事。</span></p>
-</blockquote>
-<p style="text-align: left;">而对于我而言，写作最容易的事情就是回顾、整理和总结，我曾经做了很多的笔记、书签，应该好好整理、总结一下了。</p>
-<p style="text-align: left;">日子一天天过，事情一件件做，坚持才能有收获。</p></p>
+  <div class="entry-content"><p>This is my favourite list:<br/>
+-   花火-梁博<br/>
+-   狼-齐秦<br/>
+-   勇敢的心-汪峰<br/>
+-   蓝莲花-许巍<br/>
+-   心如刀割-张学友<br/>
+-   怒放-郑钧<br/>
+-   回来-梁博<br/>
+-   怒放的生命-汪峰
+-   春天里-旭日阳刚<br/>
+-   Right here waiting(此情可待)-Richard Marx</p>
 </div>
   
   
@@ -749,31 +360,7 @@ _config.yml文件：</li>
   <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
   <p>Chunlei is lazy, but he wants do something.</p>
 </section>
-<section>
-<h1>Halley&#8217;s Comet</h1>
-<script type="text/javascript" language="javascript">
-//<![CDATA[
-function thenceThen(timespan){
- var date1=new Date(timespan);
- var totalSecs=(date1-new Date())/1000;
- var days=Math.floor(totalSecs/3600/24);
- var hours=Math.floor((totalSecs-days*24*3600)/3600);
- var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
- var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
- document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
-}
-var clock;
-window.onload=function(){
- clock=self.setInterval("thenceThen('2061/07/28')", 500);
-}
-//]]>
-</script>
-<div id="thenceThen"></div>
-</section><section>
-  <h1>Links</h1>
-  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
-  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
-</section>
+
 <section>
   <h1>Twitter</h1>
   <a class="twitter-timeline" href="https://twitter.com/" data-widget-id="366004160270852096">Tweets by @</a>
@@ -822,6 +409,26 @@ window.onload=function(){
         <a href="/blog/2013/09/23/baby-recipe-design/">宝宝食谱设计</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2013/09/23/the-jigsaw-of-supervision/">The Jigsaw of Supervision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/20/metaphors-for-teaching/">Metaphors for teaching and education reform</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/20/online-course-i-finished/">Online course I finished</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/19/three-ideas-of-supervision/">Three ideas of supervision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/18/put-supervision-into-practice/">Put supervision into practice</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -861,6 +468,30 @@ window.onload=function(){
 </section><section>
 	<h1>最新评论</h1>
 	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</section><section>
+<h1>Halley&#8217;s Comet</h1>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(date1-new Date())/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
+}
+//]]>
+</script>
+<div id="thenceThen"></div>
+</section><section>
+  <h1>Links</h1>
+  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
+  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
 </section><section>
   <h1>Visitors to this Blog</h1>
     <div id="clustrmaps-widget"></div>

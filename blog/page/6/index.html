@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="经常有学生或教师问我该如何说课或者写教案。我听到后，第一反应是“查”。为什么不自己主动查一查，如何说课这个问题呢。肯定有很多资源的。在我看来，说合写都是表达教学设计的方式而已，关键还是教学设计。说其实是口头表达，其实如果你能写好教案，设计好教学，那么我相信你也能表达好。 &hellip;">
+  <meta name="description" content="I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures. The following are my scripts:
+1. Sina &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -121,7 +122,7 @@ google.setOnLoadCallback(function() {
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/07/29/how-to-write-your-lesson-plan/">如何写教案</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/">Firefox Extension FireGesture Scripts</a></h1>
     
     
       <p class="meta">
@@ -137,31 +138,65 @@ google.setOnLoadCallback(function() {
   
 
 
-<time datetime="2013-07-29T00:32:00-04:00" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time>
+<time datetime="2013-08-26T18:23:00-04:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/07/29/how-to-write-your-lesson-plan/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>经常有学生或教师问我该如何说课或者写教案。我听到后，第一反应是“查”。为什么不自己主动查一查，如何说课这个问题呢。肯定有很多资源的。在我看来，说合写都是表达教学设计的方式而已，关键还是教学设计。说其实是口头表达，其实如果你能写好教案，设计好教学，那么我相信你也能表达好。所以最关键的是理清自己的教学思路。自己都不清晰，怎么能指望别人听懂呢，更别指望受到赞赏和认可了。</p>
+  <div class="entry-content"><p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
 
-<p>我觉得说课要做到以下几点：<br/>
-一、说课的内容一定要包括：教学目标、前段分析、教学思路-问题线索-学习活动、最后是学习检测。第一部分相当你是你要告诉别人，你要去哪，第二部分是“路况”如何，第三部分是你要如何走，第四部分是你如何知道你离目的地还有多远。<br/>
-二、说课形式可以是多样的，可以借助ppt，也可以借助概念图，我推荐使用概念图，因为它能让你兼顾部分和整体、学习目标与学习活动之间的联系以及学习活动的过度和衔接等。这些都是新手教师容易忽略的。</p>
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code></p>
 
-<p>三、说课的境界<br/>
--   最基本的是让人听懂，知道你要如何上这门课，这是第一个层次，也是最基本的层次。<br/>
--   第二层是让人不仅知道你怎么上，还知道你为什么这么上，教学是教师有意识的行动。<br/>
--   第三个层次，是让人觉得你是在创造性的解决实际问题，并且认同你的做法的合理性和可行性，教学是基于研究和经验摸索的创新尝试。</p>
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
 
-<p>四、说课好坏的评判标准，
--   第一是教学目标设计和表述是否合理。<br/>
--   第二前段分析是否扎实、全面，是否包括学情分析、教材内容分析以及学习需要分析，是否能依据分析确定合理的教学目标。<br/>
--   第三教学思路是否清晰，问题线索是否自然，学习活动是否能帮助学生达成教学目标。<br/>
--   第四是否设计了新问题情境检测学生的学习成果和教学目标达成情况。</p>
+<p></code>
+2. iciba(RLR)<br/>
+<code></p>
+
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+3.  Copy the title and url</p>
+
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
+</code></pre>
+
 </div>
   
   
@@ -174,7 +209,7 @@ google.setOnLoadCallback(function() {
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/07/28/study-life-begin-in-uga/">UGA的学习生活开始了</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/">Strong Sense of Crisis Make a Nation Grow Sturdy</a></h1>
     
     
       <p class="meta">
@@ -190,28 +225,30 @@ google.setOnLoadCallback(function() {
   
 
 
-<time datetime="2013-07-28T23:42:00-04:00" pubdate data-updated="true">Jul 28<span>th</span>, 2013</time>
+<time datetime="2013-08-26T15:43:00-04:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/07/28/study-life-begin-in-uga/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>我将在佐治亚访学一年，这一年的时间里我想用日志记录。记录我的所看、所感。</p>
+  <div class="entry-content"><p>People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy.</p>
 
-<p>7月25号上午9点从上海飞往东京，转机飞亚特兰大。在东京停留了2个小时左右，我趁机买了一些日本的特产，包括绿茶和点心，这些小礼物是给接我的博士生R买的。一路上都很顺利，去亚特兰大的飞机上，坐在我左边的是一个中国人，右边的似乎是一个墨西哥人，很胖很壮，不过也很友善。我填写的海关表时，还向他借了笔，此外也问了他一些关于I94 departure record的问题，他回答的很耐心。</p>
+<p>American people and Unite States are good examples.</p>
 
-<p>一路上我要莫看录像，要莫睡觉，为倒时差做准备。当然聊的比较多的还是与左边的中国留学生，他在英国留学，这次去美国看妈妈，我问他Groome shutle怎么坐，他说他也要做shutle，后来我给他看手机上的信息，结果其实他也是要做这个shutle的但是不是同一个线路而已。 于是我们商量好一起走。</p>
+<p>Here are some pictures evidence.<br/>
+The first thing was the emergency chair at the corner of stairwell. You can break the window and use the chair to take somebody hurt going downstairs. What a considerate safety concern! You can find an emergency shower at every classroom, which hardly seen in Chinese classroom.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/dangerchair.jpg" alt="Emergency Chair in Aderhold" /><br/>
+&lt;&#8211;!more&#8211;>
+The safety shower is just at the right of the door.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Safety_Shower.jpg" alt="Emergency Shower in Classroom" /></p>
 
-<p>从飞机下来要走很远，才能到海关检查的地点。然后排队等候，一个旅客无意识掏出了手机，结果给工作人员看见了，要求他拿着手机给检查官看，检查官是个黑人，盘问的半天检查了手机才让他继续排队。原因是这个地方是禁止拍照的。</p>
+<p>Im my apartment, there is a white notice like following.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/safetyalert.jpg" alt="Safety Alert in Apartment" /></p>
 
-<p>盘查我的也是那个黑人警官，他问了2个问题，你来美国看什么，你研究什么，还让我出示了邀请信，之后才改了章放我过去。过了海关就去认领行李，一开始我以为应该有工作人员扫描条形码然后给我们行李，结果到了哪啥都没有，就是一个电子牌指示哪个航班的行李在哪个转盘上，我们等了半天，最后我的行李先出来了，由于我的班车是5点多的，我看了时间只有20分钟左右，我就自己先走了。 机场的地图虽然下载过，但是没什么用，有用的还是问路，问了一个警官，他告诉我做3路机场公车就可以，我赶紧去坐车，还好顺利赶到了。</p>
-
-<p>我赶到的时候，只有2位乘客没有上车了，司机是个白人，长头发，很帅气，我告诉他我定了位置，他帮我放好行李，然后查看了记录手册，并让我付钱，结果我拿出一百美元，他说没有零钱。我问是否可以用信用卡，他说可以打电话，于是他帮我打通了电话，我说明了情况，报告了信用卡信息，结果就成功支付了。下车的时候，我看到有乘客给小费，但是很不巧我只有一百美元的，所以我说了谢谢，并解释了一下，他说没关系的。下车有机会再给吧。</p>
-
-<p>我下了shutle，但是发现根本没有人等我，不过刚刚过了3分钟R先生就开车到了。我请他吃了快餐，本来还要买sim卡的，但是兜了很久也没找到，于是他送我去HSC入住。在工作人员的提示下，我填写了几张表格，就拿到了钥匙入住了。悬着的心终于放下来了，美国我来了。</p>
+<p>It doesn&#8217;t look nice on the door. But it is there.</p>
 </div>
   
   
@@ -224,7 +261,7 @@ google.setOnLoadCallback(function() {
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/05/15/Chindogu-designed-by-me/">设计Chindogu锻炼创造力</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/">自满和自卑都不是学习的态度</a></h1>
     
     
       <p class="meta">
@@ -240,22 +277,22 @@ google.setOnLoadCallback(function() {
   
 
 
-<time datetime="2013-05-15T19:33:00-04:00" pubdate data-updated="true">May 15<span>th</span>, 2013</time>
+<time datetime="2013-08-26T15:18:00-04:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/05/15/Chindogu-designed-by-me/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>最近参加了一门网络课程，是关于创造力的，课程活动要求参与者设计一些chindogu，这个词源于日本，是指一些没有实际用途但是有趣的设计产品。于是我设计了以下作品： <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/beauty-in-your-cup.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hourglass-bath.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/couple-zipper-umbrella.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/lovers-dancing-shoe.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hand-tap-1.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/music-tap-1.png" alt="beauty-in-your-cup" /></p>
+  <div class="entry-content"><p>在学习和借鉴别国教育经验的时候，我们往往容易摆错心态。一种是自满，觉得学不学无所谓，别国的教育理念和实践也好不到哪去。另外一种是奉为神明，觉得一切都是好的，都要搬过来。然后一谈到本土的教育，觉得很自卑。其实这两种太多都过于偏激，都不可取。</p>
+
+<p>其实出现这种情况，也在一定程度上反映了我们缺乏全方位深度思考的能力，这是灌输式教育很难教出来的。</p>
+
+<p>其实对于一线教师而言，看看别人的课堂，别校的课堂，别国的课堂，是非常好的第一步，这意味着你在尝试改变和探寻。观看别人的课堂目的并不是照搬别人的课堂，但它们至少会告诉你，什么样的课堂是可能的。接下来思考，在你的控制范围内，你能让它在多大程度上发生，如何设计你的课堂，在实践中有用的留下，不好用的改进，没用的舍弃。这是一个一线教师能够做的，至少能让自己班上的孩子们保留一丝对自然科学的向往。这就是一线教师值得骄傲的。至于教育系统的问题，多半责任在教育决策者和研究者身上，而且问题不可能一下子解决。学习和研究别人的东西没什么丢人的，不学习才可耻。孔子说“三人行，必有我师”，人家美国都喊出“超越上海”的口号了，我们观摩观摩别国的课堂，研究研究他们的套路，有什么可自卑的。当然学习不是迷信，研究不是照搬。</p>
+
+<p>自满和自卑其实都是学习的敌人。而在今天，不学习是必然要落后的，即便曾经强盛过。</p>
 </div>
   
   
@@ -268,7 +305,7 @@ google.setOnLoadCallback(function() {
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/04/win7-tab-close-error/">Win7关闭ie标签页出错</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/why-we-teach-science-in-school-and-how/">Why We Teach Science in School and How</a></h1>
     
     
       <p class="meta">
@@ -284,19 +321,47 @@ google.setOnLoadCallback(function() {
   
 
 
-<time datetime="2013-04-04T17:46:00-04:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
+<time datetime="2013-08-25T21:27:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/04/04/win7-tab-close-error/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/why-we-teach-science-in-school-and-how/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>P：关闭ie9标签页显示错误。<br/>
-T：升级为ie10问题仍然存在。<br/>
-T：关闭程序兼容性助手服务，问题仍为解决。<br/>
-S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择性加载。问题解决。</p>
+  <div class="entry-content"><h3>Why</h3>
+
+<p>It is important for students to survive in such an era full of science and technology products and information.<br/>
+It is also important for a country to have enough science literate talents and labors in order to survive in the global economy.<br/>
+Why science important? You can go on reading another blog post<a href="http://www.letstalkscience.ca/about-us/why-science">Why science?</a></p>
+
+<h3>We</h3>
+
+<p>Science teacher is a career but also a job. They are playing the most important role in developing the science literacy of the next generation. We choose it and we do it.</p>
+
+<h3>Teach</h3>
+
+<p>Good teaching is not an accident. It is a pursely planed activity fiting students&#8217; needs and level.</p>
+
+<h3>Science</h3>
+
+<p>Authentic science not just includ scientific knowledge(facts, concepts, theories), but also the process of science and the nature of science.</p>
+
+<h3>In school</h3>
+
+<p>While school education system is still the dominant formal learning place today. So it is an crutial battle feild of science education. But science learning can happen anywhere not just in school.</p>
+
+<h3>Why has science teaching changed over time?</h3>
+
+<p>Science is changing everyday. New discovery, New papers, New theories and models, in fact science update itself everyday.<br/>
+Student is changing every year. Students today are not like before. They have iphone, ipad, facebook. Even kids at the same age in different class response significant differently to the same question.<br/>
+Society is changing too. It need more talents who are good at 4Cs: Communication, Collaboration, Critical thinking and Creativity.<br/>
+Should science teaching keep the same as before? Never.</p>
+
+<h3>How should science be taught in science classrooms?</h3>
+
+<p>Well, It is really a hard question.</p>
 </div>
   
   
@@ -309,7 +374,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/04/get-down-to-work/">静下心来做事</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/08/25/surpassing-shanghai/">超越上海：中国科学教育真的领先吗</a></h1>
     
     
       <p class="meta">
@@ -325,275 +390,26 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   
 
 
-<time datetime="2013-04-04T17:00:00-04:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
+<time datetime="2013-08-25T21:08:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
         
-         | <a href="/blog/2013/04/04/get-down-to-work/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>静下心来做事情是很了不起的品质。<br/>
-快速的静下心来做事情是不得了的品格。</p>
-
-<p>回顾过去总结教训是了不起的品质。<br/>
-周期行的回顾并找出未来行动的参考是不得了的品格。<br/>
--   资料文本的回顾<br/>
--   文章的回顾<br/>
--   时间和行为的回顾</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/04/The-mission-film-reflection/">电影《教会》观感</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-04T17:00:00-04:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/04/04/The-mission-film-reflection/#disqus_thread">Comments</a>
+         | <a href="/blog/2013/08/25/surpassing-shanghai/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>电影描述的是发生在葡萄牙与西班牙边境的一个土著印第安部落的故事。故事大约发生在17世纪。当地政府默许抓捕印第安人，并作为奴隶贩卖，进而从中谋利。但是一个传教士经过一番周折，先到达了部落并且被土著居民所接纳。但是奴隶抓捕运动并没有结束，一个抓捕印第安人的雇佣兵因为愤怒，在决斗中杀死了自己的亲弟弟。对于此事他始终不能释怀，于是他来到教会，并想绝食致死。在神父的激将下，他背着一个沉重的包袱，爬上非常陡峭的瀑布，逆流而上来到印第安土著的居住地。印第安人认出了他，但看到他被包袱拖累的悲惨样子，原本威胁他的匕首反而帮他可断捆绑包袱的绳索。印第安人原谅了他。他也加入了教会，成为一名传教士，并和神父一起建立一个教堂。政府想使得抓捕当地印第安人合法化，但是教会则要庇护它的信徒。于是红衣主教特地赶来仲裁。迫于政府压力，红衣主教选择了牺牲当地印第安人，并让所有传教士撤离。但是神父和佣兵都留了下来，他们用不同的方式进行抵抗，但仍然难逃厄运。</p>
+  <div class="entry-content"><p>最近在QQ论坛里，有同学提到这本书《超越上海：美国应该如何建设世界顶尖的教育系统》。这个标题容易给人一种误解，以为中国的教育已经在美国前头了，这绝对是错误的理解。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Surpassing-Shanghai.jpg" alt="Surpassing Shanghai" /><br/>
+其实美国人的危机意识很强烈，从《A nation at risk》到《No child left behind》都显示了国家对教育的重视，特别是科学教育，其实大家去查一查各国的教育财政预算比例就清楚了。之所以很多美国学者喊狼来了，道理很简单，第一是危机意识，第二，为了获得更多关注、科研项目和财政支持。这种危机意识是这个国家保持全球第一的重要条件。</p>
 
-<p>悲剧总是让人印象格外深刻。</p>
+<p>其实简单的说美国教育好或者中国教育好是没有意义的，另外上海的pisa成绩根本代表不了中国，大家闭着眼睛想一想自己家乡的教育状况就心中有数了。</p>
 
-<p>佣兵本来最后是有机会拉响炸药的，但是他看到一个小男孩中枪，他的伙伴想救他，他选择了先去救这个小男孩。于是他错过了拉响炸药的机会，并中枪倒下。</p>
+<p>另外再看看我们学生高考完的表现，焚书啊！你说教育取得了多少成绩，我说很惨，没有发自内心的热爱，一票否决。</p>
 
-<p>这是一个悲剧，佣兵选择了用武力保卫印第安部落。神父选择了用仁慈和舍生取义的精神来保护。但是都没有成功。</p>
+<p>最近看了Timss的几个课堂视频，强列推荐大家看看，特别是日本的中学科学课堂。大家可以自己比一比，想一想。<a href="http://timssvideo.com/72">Timssvideo-Japan-Physics</a></p>
 
-<p>从战争的角度讲，佣兵安排的战斗策略是失误的：<br/>
-1   没有利用天险瀑布悬崖<br/>
-2   没有利用土著人善于水中作战的特点
-3   没有利用森林进行运动战和埋伏战
-4   没有转移老幼妇孺，避免不必要的损失<br/>
-5   没有利用火枪对敌人头目进行狙击</p>
-
-<p>影片呈现的是壮烈的牺牲，一个佣兵在最后关头选择的是爱，而不是杀戮，就已经将教义深深的烙印在观众的心中。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/11/biology-experimental-teaching/">生物学实验教学反思</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-11T21:55:00-04:00" pubdate data-updated="true">Mar 11<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/11/biology-experimental-teaching/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天，第一组完成了观察类实验，第一次进行实验往往是最具有挑战的。因为他们要现去摸索实验准备的过程，教学组织的过程，以及环境的布置和利用等。考虑到这些挑战的要素，对于新手教师来讲，应该说完成的还是很不错的。</p>
-
-<p>第一小组的优点包括：<br/>
-*   提前分工做了预实验和必要的准备工作，特别是实验材料的准备和探索工作。<br/>
-*   认准准备了课件和学案。<br/>
-*   从头到尾顺畅的进行衔接，一直到最后完成实验室的清理工作。</p>
-
-<p>当然也存在一些可以提高的地方：<br/>
-*   时间的把控和设计可以再紧凑一些，每个人讲解的时间，实验操作的时间，分析总结的时间，以及教学反馈的时间都要考虑在内。(下次我会让同学严格计时，或者带一个闹钟，模拟真实课堂的下课铃声情境)<br/>
-*   预想实验教学可能出现的各种情况，在实验材料、活动组织、课件、语言等做好充分的准备。（在这个方面，其实可以鼓励他们进行预讲，预讲要求第二周的同学参与和反馈，这样第二周的学生也可以提前做实验准别，了解情况，同时也可以吸取上一周同学准备的经验）<br/>
-*   可以预先布置学习任务、分发学案，并把实验设计、反思等及时更新到wikispaces上，督促大家做好实验预习。（wikispaces上的实验手册，很不明确，可以给他们设计一个表格，如课前阅读材料、准备或实验预习报告，课上活动任务及数据记录表格，作业布置等，这样他们就会明确要做哪些，不要做哪些，实验手册需要让研究生参与完善，如果可以的话）</p>
-
-<p>在本次实验过程中，王星同学以及李娜、郑烨两位同学准备都较为充分，语言和教态也较为自然，值得表扬。其实为什么能脱稿，为什么能够应对各种突发状况，本质上离不开充分的准备。这种准备包括对内容的熟悉，对实验操作过程要点的熟悉，对学生特点和行为的预期等等。当然也离不开好的设计，好的设计一定是将内容、教法以及技术环境以较为合适的方式进行了融合的方案。因此大家也可以从这三个方面下下功夫。（要个每个同学一个metal的同时也有一个mission）</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/17/to-be-a-daddy/">Daddy需要做的功课</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-17T22:02:00-04:00" pubdate data-updated="true">Feb 17<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/17/to-be-a-daddy/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>时间过的真快，一下子就已经是daddy了。小时候爸爸的种种，现在还记忆犹新。以后自己就会成为小家伙的回忆了，该怎样做一个好父亲呢？<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/daddy.jpg" alt="Daddy's little baby" /></p>
-
-<h2>daddy需要做的功课：</h2>
-
-<ul>
-<li>如何给宝宝喂奶<br/>
-  左手托头，让宝宝坐在自己的腿上，面朝自己，右手持奶瓶喂奶。喂奶的过程中要控制宝宝的吃奶速度，宝宝通常会吃一会，休息一会，如果宝宝不吃可以轻轻动一动奶瓶，如果宝宝吃的过快可以先拔出奶瓶，拍拍奶在喂。一般如果一次吃奶较多，由于宝宝的喷门尚未发育好，很容易吐奶，所以需要给宝宝拍奶。拍奶仍然是喂奶的姿势，只不过右手请拍其后背，宝宝打饱嗝或哈欠即可停止。</li>
-<li>如何应对突发事件
-
-<ul>
-<li>打嗝<br/>
-护士的办法是敲宝宝的脚底板，待其哭后打嗝自然消失。但是这一招有的时候也不管用，而且让宝宝用哭泣的方法停止打嗝未免有点不忍心。所以最好的还是预防。一般打嗝的原因很多，比如吃奶吃的太快，受凉，吸入了冷空气，奶水过凉。预防的方法是一般不要在宝宝极度饥饿或者哭泣的时候的时候喂奶，喂奶可以采用多次少量（当然父母要辛苦了），控制好奶水的温度，注意保暖，避免着凉。</li>
-<li>溢奶<br/>
-拍奶是防止的最好办法，但有时候还是避免不了，所以也可以给宝宝准备一个小围巾。</li>
-<li>脱水<br/>
-如果宝宝长时间上吐下泻，那么就要非常注意宝宝是否脱水。一旦发现宝宝长达5个小时没有小便、口唇干燥、哭泣没有眼泪，这时候就要当心宝宝有脱水的危险了。</li>
-<li>感冒<br/>
-感冒分为病毒感冒和伤风感冒。</li>
-<li>便秘</li>
-</ul>
-</li>
-<li>如何照顾宝宝的饮食</li>
-<li>如何进行早期亲子互动</li>
-<li>如何帮宝宝养成良好的生活习惯</li>
-</ul>
-
-
-<p>……</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/05/xampp/">用xampp布置了php开发环境</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-05T09:23:00-04:00" pubdate data-updated="true">Feb 5<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/05/xampp/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>参考了网上的教程，使用xampp布置了php开发环境，目前正在摸索中。<br/>
-<a href="http://blog.sina.com.cn/s/blog_659b2b32010154v9.html">ubuntu下关于xampp的配置说明<em>木木齊</em>新浪博客</a><br/>
-下载xampp地址：<a href="http://down.tech.sina.com.cn/page/36356.html">http://down.tech.sina.com.cn/page/36356.html</a></p>
-
-<p>使用技巧待续。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/04/try-to-win-or-lose/">不努力去赢就只能失败</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-04T21:21:00-04:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/02/04/try-to-win-or-lose/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>世界上有两类人，愿意尝试新鲜事物的，不愿尝试的。其中第一种又分为两类：在尝试过程中坚持自己的兴趣或梦想，或者迷失自己。</p>
-
-<p>生活既是探索。探索一方面是探索外部世界，自然界，社会，有或者向内部探索，探索自己。相传在德尔斐的阿波罗神庙上刻着“认识你自己”这句名言。但是，又有多少人付诸实践。<br/>
-我们是在尝试中找到和实现自己，还是迷失自己甚至放弃尝试。这是个问。</p>
+<p>千万不要被上海的pisa成绩或者这本书的标题蒙骗了，要想想样本的代表性以及作者的立场。说到科学教育，中国科学教育者还有很长的一段路要走。</p>
 </div>
   
   
@@ -618,31 +434,7 @@ S: 关闭ie所有加载项，问题消失，然后逐个打开加载项，选择
   <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
   <p>Chunlei is lazy, but he wants do something.</p>
 </section>
-<section>
-<h1>Halley&#8217;s Comet</h1>
-<script type="text/javascript" language="javascript">
-//<![CDATA[
-function thenceThen(timespan){
- var date1=new Date(timespan);
- var totalSecs=(date1-new Date())/1000;
- var days=Math.floor(totalSecs/3600/24);
- var hours=Math.floor((totalSecs-days*24*3600)/3600);
- var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
- var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
- document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
-}
-var clock;
-window.onload=function(){
- clock=self.setInterval("thenceThen('2061/07/28')", 500);
-}
-//]]>
-</script>
-<div id="thenceThen"></div>
-</section><section>
-  <h1>Links</h1>
-  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
-  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
-</section>
+
 <section>
   <h1>Twitter</h1>
   <a class="twitter-timeline" href="https://twitter.com/" data-widget-id="366004160270852096">Tweets by @</a>
@@ -691,6 +483,26 @@ window.onload=function(){
         <a href="/blog/2013/09/23/baby-recipe-design/">宝宝食谱设计</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2013/09/23/the-jigsaw-of-supervision/">The Jigsaw of Supervision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/20/metaphors-for-teaching/">Metaphors for teaching and education reform</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/20/online-course-i-finished/">Online course I finished</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/19/three-ideas-of-supervision/">Three ideas of supervision</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/18/put-supervision-into-practice/">Put supervision into practice</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -730,6 +542,30 @@ window.onload=function(){
 </section><section>
 	<h1>最新评论</h1>
 	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</section><section>
+<h1>Halley&#8217;s Comet</h1>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(date1-new Date())/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
+}
+//]]>
+</script>
+<div id="thenceThen"></div>
+</section><section>
+  <h1>Links</h1>
+  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
+  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
 </section><section>
   <h1>Visitors to this Blog</h1>
     <div id="clustrmaps-widget"></div>
