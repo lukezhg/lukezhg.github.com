@@ -4,7 +4,7 @@
   <title><![CDATA[tags: octopress | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/octopress/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-09T09:06:39-04:00</updated>
+  <updated>2013-10-09T09:27:56-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -198,15 +198,28 @@ _config.yml文件：</li>
 
 <p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
 
-<p>markdown语法示例
-句子的尾部输入两个空格然后回车就可以断行 <br/>
-* 无序项目1 <br/>
-* 项目2 <br/>
-* 项目3  <br/>
+<h3>markdown语法示例</h3>
+
+<p>句子的尾部输入两个空格然后回车就可以断行 <br/>
+句首加>进行引用，使用>>进行层级引用 <br/>
+句首使用/###/设定标题</p>
+
+<p>插入图片代码：<br/>
+/<img src="\images\bird_32_gray.png" alt="Alt text" />/<br/>
+效果如下：<br/>
 <img src="\images\bird_32_gray.png" alt="Alt text" /></p>
 
+<p>如何实现页内跳转
+设定锚代码如下：<br/>
+/<a id="1">[1]</a>/</p>
+
+<p>正文中引用<a href="#1">1</a>代码：
+/见参考文献<a href="#1">1</a>/</p>
+
+<p>/<!--more-->/</p>
+
 <p>主要参考：
-<a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
+<a id="1"></a><a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
 ]]></content>
