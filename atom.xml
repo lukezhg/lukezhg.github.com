@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-09T09:38:38-04:00</updated>
+  <updated>2013-10-15T16:04:15-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -174,10 +174,156 @@ Look for more click <a href="http://zhangchunlei.com/tag/modeling/">here</a></p>
     <link href="http://zhangchunlei.com/blog/2013/09/23/the-jigsaw-of-supervision/"/>
     <updated>2013-09-23T21:25:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/09/23/the-jigsaw-of-supervision</id>
-    <content type="html"><![CDATA[<h3>How to make supervision sustainable?</h3>
+    <content type="html"><![CDATA[<h2>Introduction</h2>
 
-<p>==>Design and Develop a mutual benefit and win-win relationship between participants.<br/>
-It is kind of like to do a jigsaw. First you have to see every piece very clearly and then you can make the best guess and try to connect the two pieces.<br/>
+<blockquote><p>“No one is born knowing how to teach.” <a href="#1">1</a>
+&#8211;Mentoring Matters, Laura Lipton and Bruce Wellman, 2003, p.65</p></blockquote>
+
+<p>Teacher have to spent years to learn to teach. Even with enough experience only some grow into expert teacher. One of the most important reason is reflection. Explicit and critical self-reflection on practices can be very hard for begining teachers even experienced teacher. Sometimes it hurts and provides little directions. Teachers are unwillingly to preserve in self-reflection. Situations may change, if someone can supervise and assist teachers&#8217; reflection.</p>
+
+<p>What is supervision? Here Supervision, I mean clinical Supervison for teacher development. It basicly has three phases in a clinical suervision cycle:<br/>
+1. Planing Conference(Setting the goals and identify the concerns)<br/>
+2. Classroom observation(Collect data and discover new issue) and<br/>
+3. Feedback Conference(Look at the data and feedback).<br/>
+Clinical supervision focuses on teachers&#8217; actual classroom instruction and includes the teacher as an active participant in the supervisiory process. In this respect, it differs from typical courses and workshops in which the content may not grounded in teachers&#8217; classroom reality.</p>
+
+<p>There are many types of professional development programs.Acheson &amp; Gall mentioned six types of professional learning programs in their book about clinical supervision.<a href="#4">4</a><br/>
+1. Expert presenter(lesson study, knowledge, skills)<br/>
+2. Skill trainning(theory, skills, practices, transfer to classroom)<br/>
+3. Action research(Self-regulated study and investigation on teaching)<br/>
+4. Organization development(Specialist helps teacher and other staff diagnose strengths and weakness of their school or system, develop a plan of action, implement the plan, and evaluate its success)<br/>
+5. Change process(staff developers help teacher make a desicion to a adopt a system-wide innovation, put the inovation into action, and institutionalize it)<br/>
+6. Clinical supervision(focuses on classroom reality)<br/>
+Among these programs, only action research and clinical supervision are self-directed learning, and the later would be more suitable and supportive for new teachers. All these programes have an important role in teacher education, but they are no substitute for the professional development that good clinical supervision promotes.</p>
+
+<p>What constitutes a good supervision? Supervising is for not supervising. Good supervision helps teacher become independent learner by providing concrete and constructive feedbacks. What make supervision good or effective? Supervision is expensive. It costs time, labor, money, resources. How to make effective supervision cheaper and sustainable?</p>
+
+<p>This paper is going to follow these questions to review related literatures to look for clues and solutions.</p>
+
+<h2>Literature review</h2>
+
+<p>There are lots of studies on various kinds of supervision programs. In search of effective supervision, it is necessary to define what &#8220;effective supervision&#8221; means. It means supervisee made significant progress to their goals through all participants&#8217; resonalbe efforts. In this process, superviors acts effectively and properly, productive relationship is formed and sustainable. Taking the supervision context into concern, this paper is going to arrange these studies in the followinging themes:<br/>
+1. How supervisors affect supervision programs?<br/>
+2. How the cooperation relationships affect supervision programs?
+3. How the context affect supervision programs?</p>
+
+<h3>Effective supervisors or cooperating teachers</h3>
+
+<p>How supervisors affect supervision programs? Supervisors play an important role in supervision. And this can decide the success of the program.</p>
+
+<p>Lyman(1987) found that supervisors who stress authority and identification of weaknesses build less trust than those who emphasize collegiality, productive diversity, and strengths. <a href="#12">12</a><br/>
+It suggests that supervisors should discover supervisee&#8217;s progress and emphasize diversity of resources and strategies in a collegial atmosphere.</p>
+
+<p>But What an effective supervisor should do according to supervisees? <br/>
+Bret G. Range , Suzie Young &amp; David Hvidston (2013)studied in-service teacher supervison and found that:</p>
+
+<blockquote><p>Initial contract(non-tenured teachers) believed that the following variables influenced their reflection on practice: building trust, sharing the observation report, teacher’s focus for the lesson, constructive feedback, identified standards, sequence for conference, and areas for future growth. Yet tenured teachers only perceived two variables as influential on their reflection on practice: linking the post-conference to extended learning opportunities (professional development) and providing positive comments in the post-conference by the principal/supervisor. Analysis of open-ended items indicated that respondents valued trusting relationships, constructive feedback, reflection and areas of improvement as important elements of either conference.<a href="#10">10</a></p></blockquote>
+
+<p>But if you are a university professor and want to supervise your student teacher classroom, it would be a great challenge because you may have not enough time and convinence to supervise every student in their classroom.<br/>
+In this case, BORKO and MAYFIELD (1995) recommended that university supervisors use their limited time in schools to help cooperating teachers become teacher educators. For example, they can model ways of observing student teachers and strategies for conducting conferences that focus on teaching and learning and help student teachers to become reflective about their practice. They also found that cooperating teachers who believed that they could and should play an active role in student teachers&#8217; learning, conducted longer and more frequent conferences with their student teachers, and provided more extensive feedback.<a href="#11">11</a></p>
+
+<p>Summary of characteristics of effective supervisors:<br/>
+1. providing timely and constructive feedback<br/>
+1. extended learning opportunities<br/>
+1. use limited time to help cooperating teachers become teacher educators<br/>
+1. emphasize collegiality, productive diversity, and strengths</p>
+
+<h3>Productive cooperation relationships</h3>
+
+<p>How the cooperation relationships affect supervision programs? Inoder to make supervision effective and coninuable, a good relationship between the supervisor and the supervisee must be built. But if high-stake evaluation was involved, sometimes it becomes difficult to develop mutuality, trust and friendship.</p>
+
+<p>Riordan, G. P. (1995) found that the most effective collaborations were characterized by relationships that were mutually rewarding, equally valued, and based on similar and/or complimentary professional and social strengths and interests. All participants in their study reported that the collaborative approach to supervision was worthwhile, although in the partnerships where the development of mutuality, trust, and friendship were at an early stage, teachers were less inclined to find or to make time to work with their partner or to focus on aspects of their teaching that involved risk-taking.<a href="#6">6</a> <br/>
+In order to help supervisor and supervisee to form a good relationship, it would be better to avoid negative evaluation relationship but postive evidence for evaluation are recommaned to be collected by supervisor.</p>
+
+<p>Sometimes good relationships are hard to develop just because lack of effective communication and alliances.</p>
+
+<p>Nelson, Mary Lee, et al.(2008) believed in creating strong supervisory alliances, discussing evaluation early on, modeling openness to conflict, and providing timely feedback. Dependable strategies included contextualizing conflicts in light of developmental and environmental factors, seeking consultation with colleagues, self-coaching, processing conflicts, accentuating supervisee strengths, interpreting parallel processes, and withdrawing from supervisee dynamics.<a href="#8">8</a></p>
+
+<p>Valencia(2009) discovered another crucial problem in student teaching.<br/>
+There were numerous instances of lost opportunities for student teachers to learn to teach, including sparse feedback on teaching subject matter and few links to methods courses, plus limited opportunities to develop identities as teachers. The structures that frame student teaching and its participants have deep roots in the cultures of universities and schools that must be considered if student teaching is to maximize its potential.<a href="#9">9</a></p>
+
+<p>Summary of the characteristics of productive cooperation relationships: <br/>
+1. mutually rewarding, equally valued, trust and familiarity, shared expectations about the role of supervisors; <br/>
+2. modeling openness to conflict, feedback on teaching subject matter<br/>
+3. time for collaboration</p>
+
+<h3>How the context affect supervision programs?</h3>
+
+<p>Supervision can take place in many context, it can be online, in a school community, or in the cooperation between university and professional development schools. What is the difference of supervision that happen in idfferent context? How context affect supervision? How to design a proper supervison for a special context? These questions need to be addressed if we want to make supervision flexiable and sustainable.</p>
+
+<p>Wortmann, Karly, et al.(2008) proposed seven different types of online Mentoring programs as following:<a href="#5">5</a></p>
+
+<blockquote><p>Task-based mentoring focuses on an individual’s short-term need to improve a skill or acquire knowledge in order to fulfill a new role.
+Experience-based mentoring pairs an individual, who is new to an organization or a role, with a mentor who has experience in that role.
+Just-in-time mentoring matches mentors with individuals who have an unanticipated need for assistance.
+> One-to-one mentoring centers on a single mentor working with a single mentee
+Team mentoring joins groups of mentors with groups of mentees.
+Formal mentoring involves explicit expectations of the mentoring process and/or outcomes by specifying such characteristics as timelines, achievements, progress reporting, benchmarks, and communications formats.</p></blockquote>
+
+<p>Project Supervision can be designed to develop professional development materials for school supervisors/mentors in a community of practice involving teachers – both experienced and preservice – and teacher educators.<a href="#3">3</a><br/>
+Levine (2011) proposed five features of professional communities that can help supervisors improve their work: norms promoting collaboration; trust and familiarity; activities deprivatizing practices; access to logistical information and shared expectations about the role of supervisors; and time for collaboration.<a href="#7">7</a></p>
+
+<p>Supervision can also happen in the coteaching context. Experienced teacher coteach with a preservice teacher, they codesign the leson and then coteach, coreflect. The supervisor can observe both of the teachers and give feedbacks.</p>
+
+<p>In this case, the experienced teacher can also serve as a cooperating teacher and have different ways to act in the supervision process.</p>
+
+<p>Clarke,Triggs,&amp; Nielsen(2013) identified 11 ways for cooperating teacher to participate in teacher education:<a href="#2">2</a></p>
+
+<blockquote><p>Providers of Feedback,<br/>
+Gatekeepers of the Profession,<br/>
+Modelers of Practice,<br/>
+Supporters of Reflection,<br/>
+Gleaners of Knowledge, <br/>
+Purveyors of Context, <br/>
+Conveners of Relation,<br/>
+Agents of Socialization,<br/>
+Advocates of the Practical,<br/>
+Abiders of Change, and<br/>
+Teachers of Children.<br/>
+The following graph shows us the ideal feedback.
+<img src="https://raw.github.com/lukezhg/Freyja/master/11ways.png" alt="Clarke2013" /></p></blockquote>
+
+<p>But this kind of supervison does not easily happen. The more participant involed, the more complex it become, the more hard to organize and make it successful. So facilitators are needed to make sure every pieces move in the right direction.</p>
+
+<p>Facilitators can be administrators, principles in professional development schools , staff in universities, companies or other organizations.</p>
+
+<p>Riordan, G. P. (1995) suggested that administrators should be aware of the extra difficulties partners may experience in working collaboratively; (2) administrators wishing to encourage collaborative clinical supervision partnerships to meet professional development goals should develop a system that allows teachers to have some input in the selection of partners, provide adequate time for conferencing, and notice and encourage teachers&#8217; collaborative efforts; (3) teachers wishing to develop relationships with their colleagues should be aware of the powerful norms of teacher autonomy and isolation;<a href="#13">13</a></p>
+
+<h3>Summary</h3>
+
+<p>The ideal supervision I can picture based on these literatures.<br/>
+1. University professors should use their limited time to help cooperating teachers become teacher educators. They can aslo help by providing timely and constructive feedback and learning opportunities. In suppervision session, emphasizing collegiality, productive diversity, and strengths would help to build trust relationship.</p>
+
+<ol>
+<li><p>Cooperating teacher should play an active role using an indirect style in student teacher&#8217;s learning. They should build collaborative and trust relationships, offer timely positive feedback, be open to conflict, give constructive suggestions, and provide learning opportunities.</p></li>
+<li><p>Supervisees should take the ownership of their learning and be actively engaged, open minded, reflective in their process of learning to teach.</p></li>
+<li><p>Facilitators:<br/>
+Facilitators can provide support in communications, organizations, and skills development. They should design and organize the process for participants&#8217; convinences and make sure every pieces moving to the right directions.</p></li>
+</ol>
+
+
+<h2>Analysis</h2>
+
+<p>Why do we use the model of supervision?<br/>
+==>Value<br/>
+Promote teacher learning and student learning.<br/>
+==>Cost<br/>
+Time, labor, money, resources.<br/>
+==>DNA<br/>
+Classroom reality towards effective teaching<br/>
+==>Pedagogy<br/>
+Direct or indirect, low-stakes or high-stakes<br/>
+==>Content<br/>
+Effective teaching skills and characteristics<br/>
+==>Technology<br/>
+Supervision techniques, online platforms<br/>
+==>Context
+school, university, district, cross-culture, multi-languages, reform-based</p>
+
+<h3>How to make supervision sustainable?</h3>
+
+<p>If we want to make supervision sustainable, we must design and develop a mutual benefit and win-win relationship between all the participants of supervision.<br/>
+It is lik jigsaw. First you have to see every piece very clearly and then you can make the best guess and try to connect the two pieces.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/jigsaw.png" alt="Jigsaw of teaching supervision" /></p>
 
 <!--more-->
@@ -212,7 +358,7 @@ It is kind of like to do a jigsaw. First you have to see every piece very clearl
 - NGO<br/>
 - Government</p>
 
-<h3>Possible Groups(supervisor,supervisee,facilitators):</h3>
+<h3>Possible solutions(supervisor,supervisee,facilitators):</h3>
 
 <p>Single Community:<br/>
 (student teacher, student teacher, professor)<br/>
@@ -232,104 +378,17 @@ It is kind of like to do a jigsaw. First you have to see every piece very clearl
 (Professor,in-service teacher, Government)<br/>
 (Professor,in-service teacher, reformers)</p>
 
-<h3>What the literatures say about supervision?</h3>
+<h2>Final solution</h2>
 
-<blockquote><p>Intensive mentoring significantly contributes to positively change in beginning elementary teachers’ learning to lead classroom discussions.<a href="#1">1</a></p></blockquote>
-
-<p>Intensive mentoring usually can guarantee the time, but they are often short and unsustainable, sometimes teachers&#8217; various real need are ignored. Supervision can provide self-direct and continue professional development support to meet teachers special needs.</p>
-
-<h3>Cooperating teachers have 11 ways to participate in teacher education:<a href="#2">2</a></h3>
-
-<blockquote><p>Providers of Feedback,<br/>
-Gatekeepers of the Profession,<br/>
-Modelers of Practice,<br/>
-Supporters of Reflection,<br/>
-Gleaners of Knowledge, <br/>
-Purveyors of Context, <br/>
-Conveners of Relation,<br/>
-Agents of Socialization,<br/>
-Advocates of the Practical,<br/>
-Abiders of Change, and<br/>
-Teachers of Children.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/11ways.png" alt="Clarke2013" /></p></blockquote>
-
-<h3>Possible cooperation relationships</h3>
-
-<p>Project Supervision can be designed to develop professional development materials for school supervisors/mentors in a community of practice involving teachers – both experienced and preservice – and teacher educators.<a href="#3">3</a></p>
-
-<p>Six types of professional learning programs in the book of clinical supervision.<a href="#4">4</a></p>
-
-<blockquote><p>Epert presenter<br/>
-Skill trainning(theory, skills, practices, transfer to classroom)<br/>
-Action research<br/>
-Organization development(Specialist helps teacher and other staff diagnose strengths and weakness of their school or system, develop a plan of action, implement the plan, and evaluate its success)<br/>
-Change process(staff developers help teacher make a desicion to a adopt a system-wide innovation, put the inovation into action, and institutionalize it)<br/>
-Clinical supervision</p></blockquote>
-
-<p>Only action research and clinical supervision are self-directed learning, certainly the later would be more suitable and supportive for new teachers.</p>
-
-<p>Different types of online Mentoring programs:<a href="#5">5</a></p>
-
-<blockquote><p>Task-based mentoring focuses on an individual’s short-term need to improve a skill or acquire knowledge in order to fulfill a new role.
-Experience-based mentoring pairs an individual, who is new to an organization or a role, with a mentor who has experience in that role.
-Just-in-time mentoring matches mentors with individuals who have an unanticipated need for assistance.
-> One-to-one mentoring centers on a single mentor working with a single mentee
-Team mentoring joins groups of mentors with groups of mentees.
-Formal mentoring involves explicit expectations of the mentoring process and/or outcomes by specifying such characteristics as timelines, achievements, progress reporting, benchmarks, and communications formats.</p></blockquote>
-
-<h3>Effective Cooperation Relationships studies</h3>
-
-<p>Riordan, G. P. (1995) found that the most effective collaborations were characterized by relationships that were mutually rewarding, equally valued, and based on similar and/or complimentary professional and social strengths and interests. All participants reported that the collaborative approach to supervision was worthwhile, although in the partnerships where the development of mutuality, trust, and friendship were at an early stage, teachers were less inclined to find or to make time to work with their partner or to focus on aspects of their teaching that involved risk-taking.<a href="#6">6</a></p>
-
-<p>Levine (2011) proposed five features of professional communities that can help supervisors improve their work: norms promoting collaboration; trust and familiarity; activities deprivatizing practices; access to logistical information and shared expectations about the role of supervisors; and time for collaboration.<a href="#7">7</a></p>
-
-<p>Nelson, Mary Lee, et al.(2008) believed in creating strong supervisory alliances, discussing evaluation early on, modeling openness to conflict, and providing timely feedback. Dependable strategies included contextualizing conflicts in light of developmental and environmental factors, seeking consultation with colleagues, self-coaching, processing conflicts, accentuating supervisee strengths, interpreting parallel processes, and withdrawing from supervisee dynamics.<a href="#8">8</a></p>
-
-<p>There were numerous instances of lost opportunities for student teachers to learn to teach, including sparse feedback on teaching subject matter and few links to methods courses, plus limited opportunities to develop identities as teachers. The structures that frame student teaching and its participants have deep roots in the cultures of universities and schools that must be considered if student teaching is to maximize its potential.<a href="#9">9</a></p>
-
-<p>Summary of the characteristics of effective cooperation relationships: <br/>
-1. mutually rewarding, equally valued, trust and familiarity, shared expectations about the role of supervisors; <br/>
-2. modeling openness to conflict, feedback on teaching subject matter<br/>
-3. time for collaboration</p>
-
-<h3>From Supervisees&#8217; Perspective</h3>
-
-<blockquote><p>Initial contract(non-tenured teachers) believed that the following variables influenced their reflection on practice: building trust, sharing the observation report, teacher’s focus for the lesson, constructive feedback, identified standards, sequence for conference, and areas for future growth. Yet tenured teachers only perceived two variables as influential on their reflection on practice: linking the post-conference to extended learning opportunities (professional development) and providing positive comments in the post-conference by the principal/supervisor. Analysis of open-ended items indicated that respondents valued trusting relationships, constructive feedback, reflection and areas of improvement as important elements of either conference.<a href="#10">10</a></p></blockquote>
-
-<p>BORKO and MAYFIELD (1995) recommended that university supervisors use their limited time in schools to help cooperating teachers become teacher educators. For example, they can model ways of observing student teachers and strategies for conducting conferences that focus on teaching and learning and help student teachers to become reflective about their practice. They also found that cooperating teachers who believed that they could and should play an active role in student teachers&#8217; learning, conducted longer and more frequent conferences with their student teachers, and provided more extensive feedback.<a href="#11">11</a></p>
-
-<p>Supervisors who stress authority and identification of weaknesses build less trust than those who emphasize collegiality, productive diversity, and strengths.<a href="#12">12</a></p>
-
-<p>Summary of characteristics of effective supervisors:<br/>
-1. providing timely feedback<br/>
-2. constructive feedback<br/>
-3. extended learning opportunities<br/>
-4. use limited time to help cooperating teachers become teacher educators<br/>
-5. emphasize collegiality, productive diversity, and strengths</p>
-
-<h3>The best picture I can jigsaw based on these literatures.</h3>
-
-<p>University professors should use their limited time to help cooperating teachers become teacher educators. Such as supervision and effective teaching class.</p>
-
-<p>Cooperating teacher should play an active role using an indirect style in student teacher&#8217;s learning with collaborative and trust relationships, timely positive feedback, openness to conflict, constructive suggestions and helpful learning opportunities or approaches.</p>
-
-<p>Supervisees should be actively engaged, open minded, reflective in their process of learning to teach.</p>
-
-<p>Facilitators:
-Riordan, G. P. (1995) suggested that administrators should be aware of the extra difficulties partners may experience in working collaboratively; (2) administrators wishing to encourage collaborative clinical supervision partnerships to meet professional development goals should develop a system that allows teachers to have some input in the selection of partners, provide adequate time for conferencing, and notice and encourage teachers&#8217; collaborative efforts; (3) teachers wishing to develop relationships with their colleagues should be aware of the powerful norms of teacher autonomy and isolation;<a href="#13">13</a></p>
-
-<p>Why supervision?<br/>
-==>Value<br/>
-==>Cost<br/>
-==>DNA<br/>
-==>Pedagogy<br/>
-==>Content<br/>
-==>Technology<br/>
-==>Context</p>
+<p>Flexible and cheap but effective supervisions is the most sound solution. It has the following characteristics:<br/>
+1. technology supported and convinent and cheap.  <br/>
+1. tailored to the needs of participants.<br/>
+1. adapted to the context.<br/>
+1. make good use of related evidence from experience and research.</p>
 
 <h3>Reference:</h3>
 
-<p><a id="1">[1] Stanulis, R. N., Little, S., &amp; Wibbens, E. (2012). Intensive mentoring that contributes to change in beginning elementary teachers’ learning to lead classroom discussions. Teaching and Teacher Education, 28(1), 32-43.</a><br/>
+<p><a id="1">[1] Mentoring Matters, Laura Lipton and Bruce Wellman, 2003, p.65</a><br/>
 <a id="2">[2] Anthony Clarke,Valerie Triggs,Wendy Nielsen(2013) Cooperating Teacher Participation in Teacher Education:A Review of the Literature. REVIEW OF EDUCATIONAL RESEARCH September 23, 2013 0034654313499618</a><br/>
 <a id="3">[3]</a> Sim, C. (2010). Sustaining productive collaboration between faculties and schools. Australian Journal of Teacher Education, 35(5), 2.<br/>
 <a id="4">[4] Acheson, K. A., &amp; Gall, M. D. (2003). Clinical supervision and teacher development. Wiley.</a><br/>
