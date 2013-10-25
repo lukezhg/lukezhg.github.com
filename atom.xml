@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-25T14:21:49-04:00</updated>
+  <updated>2013-10-25T14:35:50-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -20,11 +20,13 @@
     <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
     <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects.  Dr. Luft provided us some students&#8217; responses and let us to figure out the students&#8217; thinking and how to response to students properly.</p>
 
-<p>A related question caught my curiosity was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
+<p>We know the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo&#8217;s Leaning Tower of Pisa experiment</a> well. In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo&#8217;s famous experiment on the Moon by Hammer and Feather Drop.</p>
 
 <!--more-->
 
+
+<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
 
 <p>I asked my classmates what happens in the following situations.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
