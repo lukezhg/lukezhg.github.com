@@ -6,7 +6,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2009/05/29/my-first-step-into-edublogs/</loc>
-        <lastmod>2013-08-28T16:34:37-04:00</lastmod>
+        <lastmod>2013-10-25T13:45:12-04:00</lastmod>
     </url>
     <url>
         <loc>
@@ -42,7 +42,7 @@
         <loc>
             http://zhangchunlei.com/blog/2009/06/24/what-can-i-contribute-to-the-open-education-conference/
         </loc>
-        <lastmod>2013-08-28T16:34:37-04:00</lastmod>
+        <lastmod>2013-10-25T13:46:05-04:00</lastmod>
     </url>
     <url>
         <loc>
@@ -670,7 +670,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/</loc>
-        <lastmod>2013-10-09T09:42:53-04:00</lastmod>
+        <lastmod>2013-10-19T20:31:27-04:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/01/05/bus-story/</loc>
@@ -973,12 +973,18 @@
         <lastmod>2013-10-19T19:16:11-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/
+        </loc>
+        <lastmod>2013-10-25T14:21:19-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://zhangchunlei.com/404.html</loc>
         <lastmod>2013-08-28T14:47:45-04:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/about/</loc>
-        <lastmod>2013-08-19T19:55:54-04:00</lastmod>
+        <lastmod>2013-10-19T19:53:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/app/</loc>
@@ -986,7 +992,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/archives/</loc>
-        <lastmod>2013-10-19T19:22:59-04:00</lastmod>
+        <lastmod>2013-10-25T14:21:19-04:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/cn/</loc>
@@ -998,7 +1004,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/</loc>
-        <lastmod>2013-10-19T19:22:59-04:00</lastmod>
+        <lastmod>2013-10-25T14:21:19-04:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/robots.txt</loc>

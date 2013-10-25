@@ -4,7 +4,7 @@
   <title><![CDATA[tags: github | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/github/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-19T19:23:58-04:00</updated>
+  <updated>2013-10-25T14:21:49-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -217,6 +217,15 @@ _config.yml文件：</li>
 /<em>见参考文献<a href="#1">1</a></em>/</p>
 
 <p>/<em><!--more--></em>/</p>
+
+<h3>Octopress维护纪要</h3>
+
+<ol>
+<li>目前使用editplus的自动完成功能j代替了双空格回车</li>
+<li>将tag放入到了about页面</li>
+<li>此外还打算将主页进行调整</li>
+</ol>
+
 
 <p>主要参考：
 <a id="1"></a><a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: physics | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/physics/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-10-25T14:21:49-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
+    <updated>2013-10-25T13:42:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
+    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
+
+<p>A related question caught my curiosity was two ice cube droping from the same inclination.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
+
+<!--more-->
+
+
+<p>I asked my classmates what happens in the following situations.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
+
+<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
+
+<p>The result is interesting. The second situation arrived the bottom using less time.
+<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /><br/>
+From Leaning Tower of Pisa Experiment to simulated experiment, what a big change technology has made to our science teaching and learning!</p>
+]]></content>
+  </entry>
+  
+</feed>
