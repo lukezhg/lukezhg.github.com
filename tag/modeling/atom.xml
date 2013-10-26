@@ -4,7 +4,7 @@
   <title><![CDATA[tags: modeling | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/modeling/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-25T14:35:50-04:00</updated>
+  <updated>2013-10-25T21:28:02-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -33,8 +33,10 @@
 
 <p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
 
-<p>The result is interesting. The second situation arrived the bottom using less time.
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /><br/>
+<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
+<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
+
+<p>Ball A is the second arrived. Ball C is the last one. <br/>
 From Leaning Tower of Pisa Experiment to simulated experiment, what a big change technology has made to our science teaching and learning!</p>
 ]]></content>
   </entry>

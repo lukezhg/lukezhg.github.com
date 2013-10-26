@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-10-25T14:35:50-04:00</updated>
+  <updated>2013-10-25T21:28:02-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The metaphor of rock climbing]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/25/the-metaphor-of-rock-climbing/"/>
+    <updated>2013-10-25T20:44:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/25/the-metaphor-of-rock-climbing</id>
+    <content type="html"><![CDATA[<p>It is so hard to descibe how teacher develop related knowledge to teach a special topic.</p>
+
+<p>I have come up with many analogies to assit my thinking and modeling of teacher knowledge development.</p>
+
+<p>Here is another wonderful analogy Rock Climbing. The following is a picture:<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/rock-climbing.png" alt="rock climbing" /><br/>
+More about <a href="http://en.wikipedia.org/wiki/Rock_climbing#Crack_climbing">Rock climbing</a><br/>
+The teacher developed lots of intermediate representations (just like the cracks, faces, slabs in rock climbing) to help students learning the scientific concept.</p>
+
+<p>Good teacher can &#8220;see&#8221; the postions of students and can &#8220;arise&#8221; the right representation to help. The subject matter knowledge is the moutain. The &#8220;safety rope&#8221; is the good teacher-student relationship which engage and motivate students to make progress in their learning.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
@@ -33,8 +51,10 @@
 
 <p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
 
-<p>The result is interesting. The second situation arrived the bottom using less time.
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /><br/>
+<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
+<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
+
+<p>Ball A is the second arrived. Ball C is the last one. <br/>
 From Leaning Tower of Pisa Experiment to simulated experiment, what a big change technology has made to our science teaching and learning!</p>
 ]]></content>
   </entry>
@@ -878,19 +898,6 @@ Research on effective instruction() indicates that effective instruction is base
 <p>取出：<br/>
 -  乐扣盖子上有热水，不宜立即取出<br/>
 -  待略微冷却后，取出，米饭温度适宜后即可食用</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[阅读立法还是阅读立项]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/14/reading-legislation-or-reading-program/"/>
-    <updated>2013-09-14T17:09:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/14/reading-legislation-or-reading-program</id>
-    <content type="html"><![CDATA[<p>前些日子阅读立法的事情引起了不少波澜。今天无意注意到UGA道路一角有一排类似垃圾桶的箱子，前面有个学生打开挡板取出一叠报纸边走边看。我也照样子拿了一叠报纸，一开始我还有点犹豫，是不是应该投币什么，但是仔细观察一番原来这是他们的一项免费阅读项目。真心觉得这样的项目也应该在国内多资助一些。</p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/reading-program.jpg" alt="Reading Program Box" /></p>
-
-<p>其实发现中国人阅读量不够，心里着急是国人爱国的表现。但是通过行政立法强制阅读其实是行不通的，最简单一条不具有操作性，你怎么检查呢，不读书你还拘留或者罚款吗，另外这样的立法是否有侵犯人权的嫌疑呢。但是如果真的要立法，其实倒是可以给机关、单位、组织立法，强制和支持开展一些阅读项目。比如开放全文数据库，开放大学图书馆，在乡村建设图书信息中心，在地铁提供报刊杂志，当然也需要所有人的配合，比如阅读完的杂志和报刊放回原位，或者在出站前放到指定位置。其实还真是大有可为的，做实事需要从小处着眼往往会更有效。</p>
 ]]></content>
   </entry>
   
