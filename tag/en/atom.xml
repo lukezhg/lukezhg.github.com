@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-01T19:04:41-04:00</updated>
+  <updated>2013-11-03T13:31:03-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,120 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Machine learning and Octave]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/03/machine-learning-and-octave/"/>
+    <updated>2013-11-03T12:28:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/03/machine-learning-and-octave</id>
+    <content type="html"><![CDATA[<p>Recently I joined NG' class of <a href="https://class.coursera.org/ml-004/class/index">Machine Learning</a></p>
+
+<p>I start to learn programing with <a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
+
+<p>Here is the Basic Commands from Ng's class notes<br/>
+<code>
+PS1('>> '); % make pre short<br/>
+1==2 %false<br/>
+1~=2<br/>
+1 &amp;&amp; 2 % AND<br/>
+1 || 0 % OR<br/>
+xor(1,0) % OR
+a=3; % semicolon supressing output<br/>
+b='hi';<br/>
+disp(sprintf('2 decimals: %0.2f',a))<br/>
+a=pi;<br/>
+format long<br/>
+format short<br/>
+A=[1 2; 3 4; 5 6]<br/>
+ones(3,1)<br/>
+zeros(1,3)<br/>
+rand(1,3)<br/>
+hist(-6+sqrt(10)<em>(randn(1,10000)))<br/>
+size(A,1)<br/>
+save hello.txt v -ascii % save as text<br/>
+eye(6)<br/>
+length(A)<br/>
+load featuresX.dat<br/>
+load priceY.dat<br/>
+load('featuresX.dat')<br/>
+who<br/>
+clear priceY<br/>
+clear<br/>
+v=priceY(1:10)<br/>
+A(3,1)<br/>
+A(2,:) % ":" means every element along that row/column<br/>
+A([1 3],:) % get 1,3 row<br/>
+A(:,2)=[10;11;12]<br/>
+A=[A,[100;101;102]]<br/>
+A(:) % put all elements into a single vector<br/>
+C=[A B]<br/>
+C=[A; B]<br/>
+sum(A)<br/>
+prod(A)<br/>
+floor(A)<br/>
+ceil(A)<br/>
+max(A,[],1)<br/>
+max(A,[],2)<br/>
+max(A)<br/>
+flipud(eye(9))<br/>
+t=[0:0.01:0.98]<br/>
+y1=sin(2</em>pi<em>4</em>t);
+y2=cos(2<em>pi</em>4*t);<br/>
+plot(t,y1);<br/>
+plot(t,y2,'r')<br/>
+xlabel('time')<br/>
+ylabel('value')<br/>
+legent('sin','cos')<br/>
+title('my plot')<br/>
+print -dpng 'myPlot.png'<br/>
+close<br/>
+figure(1);plot(t,y1);<br/>
+figure(2);plot(t,y2);<br/>
+subplot(1,2,1); % divides plot a 1x2 grid, acce<br/>
+axis([0.5 1 -1 1]) &amp; x [0.5 1] y[-1 1]<br/>
+clf;
+imagesc(A)<br/>
+imagesc(A), colorbar, colormap gray;</p>
+
+<p>indices=1:10;<br/>
+for i=indices,
+   disp(i);
+end;</p>
+
+<p>i=1;<br/>
+while i &lt;=5;<br/>
+  v(i)=100;<br/>
+  i=i+1;<br/>
+end;</p>
+
+<p>i=1;<br/>
+while true,<br/>
+  v(i)=999;<br/>
+  i=i+1;<br/>
+  if i==6,</p>
+
+<pre><code>break;  
+</code></pre>
+
+<p>  end;<br/>
+end;</p>
+
+<p>v(1)=2;<br/>
+if v(1)==1,<br/>
+  disp('equal one')<br/>
+elseif v(1)==2,<br/>
+  disp('equal two')<br/>
+else<br/>
+  disp('not one or two')<br/>
+end;</p>
+
+<p>pwd<br/>
+ls</p>
+
+<p>addpath('C:users\ang\Desktop') % octave search path<br/>
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Conflicts between commercialization of science and education equity]]></title>
@@ -106,39 +220,6 @@ More about <a href="http://en.wikipedia.org/wiki/Rock_climbing#Crack_climbing">R
 The teacher developed lots of intermediate representations (just like the cracks, faces, slabs in rock climbing) to help students learning the scientific concept.</p>
 
 <p>Good teacher can "see" the postions of students and can "arise" the right representation to help. The subject matter knowledge is the moutain. The "safety rope" is the good teacher-student relationship which keep the safe environment for learning. The routes can be fun and the goal can be challenging. They all motivates student to climb and learn.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
-    <updated>2013-10-25T13:42:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
-    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo's Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
-
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
-
-<!--more-->
-
-
-<p>I asked my classmates what happens in the following situations.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
-
-<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
-
-<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
-
-<p>Ball A is the second arrived. Ball C is the last one. <br/>
-From Leaning Tower of Pisa Experiment to simulated experiment, what a big change information technology has made to our science teaching and learning!</p>
-
-<p>In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo's famous experiment on the Moon by Hammer and Feather Drop.</p>
-
-<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/4mTsrRZEMwA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>You see the space technology also expanded our learning experience and provided us an amazing teaching resource-a dicrepant event.</p>
 ]]></content>
   </entry>
   

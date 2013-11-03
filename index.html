@@ -9,9 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Yesterday, I attended Dr Jackson&#8217; class ESCI 8990 Daily Page. We discussed questions:
-1. whether scientific knowledge is a private product?
-2. &hellip;">
+  <meta name="description" content="Recently I joined NG&#8217; class of Machine Learning I start to learn programing with Octave Here is the Basic Commands from Ng&#8217;s class notes &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -116,6 +114,149 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/03/machine-learning-and-octave/">Machine Learning and Octave</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-03T12:28:00-04:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/03/machine-learning-and-octave/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Recently I joined NG&#8217; class of <a href="https://class.coursera.org/ml-004/class/index">Machine Learning</a></p>
+
+<p>I start to learn programing with <a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
+
+<p>Here is the Basic Commands from Ng&#8217;s class notes<br/>
+<code>
+PS1('>> '); % make pre short<br/>
+1==2 %false<br/>
+1~=2<br/>
+1 &amp;&amp; 2 % AND<br/>
+1 || 0 % OR<br/>
+xor(1,0) % OR
+a=3; % semicolon supressing output<br/>
+b='hi';<br/>
+disp(sprintf('2 decimals: %0.2f',a))<br/>
+a=pi;<br/>
+format long<br/>
+format short<br/>
+A=[1 2; 3 4; 5 6]<br/>
+ones(3,1)<br/>
+zeros(1,3)<br/>
+rand(1,3)<br/>
+hist(-6+sqrt(10)<em>(randn(1,10000)))<br/>
+size(A,1)<br/>
+save hello.txt v -ascii % save as text<br/>
+eye(6)<br/>
+length(A)<br/>
+load featuresX.dat<br/>
+load priceY.dat<br/>
+load('featuresX.dat')<br/>
+who<br/>
+clear priceY<br/>
+clear<br/>
+v=priceY(1:10)<br/>
+A(3,1)<br/>
+A(2,:) % ":" means every element along that row/column<br/>
+A([1 3],:) % get 1,3 row<br/>
+A(:,2)=[10;11;12]<br/>
+A=[A,[100;101;102]]<br/>
+A(:) % put all elements into a single vector<br/>
+C=[A B]<br/>
+C=[A; B]<br/>
+sum(A)<br/>
+prod(A)<br/>
+floor(A)<br/>
+ceil(A)<br/>
+max(A,[],1)<br/>
+max(A,[],2)<br/>
+max(A)<br/>
+flipud(eye(9))<br/>
+t=[0:0.01:0.98]<br/>
+y1=sin(2</em>pi<em>4</em>t);
+y2=cos(2<em>pi</em>4*t);<br/>
+plot(t,y1);<br/>
+plot(t,y2,'r')<br/>
+xlabel('time')<br/>
+ylabel('value')<br/>
+legent('sin','cos')<br/>
+title('my plot')<br/>
+print -dpng 'myPlot.png'<br/>
+close<br/>
+figure(1);plot(t,y1);<br/>
+figure(2);plot(t,y2);<br/>
+subplot(1,2,1); % divides plot a 1x2 grid, acce<br/>
+axis([0.5 1 -1 1]) &amp; x [0.5 1] y[-1 1]<br/>
+clf;
+imagesc(A)<br/>
+imagesc(A), colorbar, colormap gray;</p>
+
+<p>indices=1:10;<br/>
+for i=indices,
+   disp(i);
+end;</p>
+
+<p>i=1;<br/>
+while i &lt;=5;<br/>
+  v(i)=100;<br/>
+  i=i+1;<br/>
+end;</p>
+
+<p>i=1;<br/>
+while true,<br/>
+  v(i)=999;<br/>
+  i=i+1;<br/>
+  if i==6,</p>
+
+<pre><code>break;  
+</code></pre>
+
+<p>  end;<br/>
+end;</p>
+
+<p>v(1)=2;<br/>
+if v(1)==1,<br/>
+  disp(&#8216;equal one&#8217;)<br/>
+elseif v(1)==2,<br/>
+  disp(&#8216;equal two&#8217;)<br/>
+else<br/>
+  disp(&#8216;not one or two&#8217;)<br/>
+end;</p>
+
+<p>pwd<br/>
+ls</p>
+
+<p>addpath(&#8216;C:users\ang\Desktop&#8217;) % octave search path<br/>
+</code></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -323,52 +464,6 @@ The teacher developed lots of intermediate representations (just like the cracks
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/">From Falling Objects Experiment to a Simulated Experiment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-25T13:42:00-04:00" pubdate data-updated="true">Oct 25<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo&#8217;s Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students&#8217; responses and let us to figure out the students&#8217; thinking and how to response to students properly.</p>
-
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -414,6 +509,10 @@ The teacher developed lots of intermediate representations (just like the cracks
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/03/machine-learning-and-octave/">Machine learning and Octave</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/">Conflicts between commercialization of science and education equity</a>
       </li>
     
@@ -449,15 +548,11 @@ The teacher developed lots of intermediate representations (just like the cracks
         <a href="/blog/2013/09/27/reflection-on-groupwork-modeling/">reflection on groupwork modeling</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/09/24/japan-lesson-study/">Japan Lesson Study</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/design'>design (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>PCK (1)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (18)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (6)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/design'>design (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>PCK (1)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (3)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (18)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (6)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
