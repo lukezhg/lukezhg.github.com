@@ -4,7 +4,7 @@
   <title><![CDATA[tags: VIM | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/vim/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T14:41:07-05:00</updated>
+  <updated>2013-11-08T15:52:37-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -27,24 +27,28 @@
 <p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
 REMEMBER to press Ctrl+B first!!</p>
 
-<pre><code>%  divide screen left and right  
-"  divede screen up and down  
-Ctrl + Down make the down screen smaller  
-exit cancel present screen  
-n  new dash window  
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
 </code></pre>
 
 <p>That is it.</p>
 
-<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:<br/>
-Ctrl +: this will let you enter the file operation mode<br/>
-i       this will let you enter the edit mode<br/>
-v       this will let you enter copy and paste mode</p>
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
 
-<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:<br/>
-y       copy<br/>
-d       delete
-p       paste</p>
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i------ #this will let you enter the edit mode, Press Esc to enter : mode  
+v------ #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+</code></pre>
 
 <p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
 
@@ -53,9 +57,15 @@ Ctrl + Alt + L---- lock the desktop<br/>
 Win--------------- applications desktop<br/>
 Ctrl + Alt + Left--shift to left desktop<br/>
 Alt + Tab----------shitt applications<br/>
-Alt + F4-----------shut down present application</p>
+Alt + F4-----------shut down present application<br/>
+Ctrl+Win+Up--------Maxilize present window<br/>
+Ctrl+Win+Down------Minilize presnet window<br/>
+Ctrl+Alt+T---------Open terminal
+Ctrl+Shift+Arrow---Shift Workplace<br/>
+Ctrl+Shift+Alt+Arrow---move present window to Workplace</p>
 
-<p>Now almost done, and wait to be expanded.</p>
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
 ]]></content>
   </entry>
   
