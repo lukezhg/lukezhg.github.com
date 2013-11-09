@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T19:39:18-05:00</updated>
+  <updated>2013-11-08T19:57:15-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/"/>
+    <updated>2013-11-08T13:56:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
+
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
+
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
+
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
+
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
+
+<p>That is it.</p>
+
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
+
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
+
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal 
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Do the job or have fun]]></title>
@@ -207,29 +267,6 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/laptopstand.png" alt="laptop stand" /></p>
 
 <p>You can alway make a change if you want to. And small change can make a big difference sometimes.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Don't alienate disabled people]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/27/dont-alienate-disabled-people/"/>
-    <updated>2013-10-27T09:46:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/27/dont-alienate-disabled-people</id>
-    <content type="html"><![CDATA[<p>Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb -- who was born deaf. She showed what is possible through family support and self-belief, and proves that what is assumed about you and what you can actually achieve don't always match up. In the United States, two-thirds of hearing-impaired people do not complete high school.</p>
-
-<iframe width="560" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/uKKpjvPd6Xo" frameborder="0" allowfullscreen></iframe>
-
-
-<!--more-->
-
-
-<p>When I attended a coteaching workshop, an American teacher asked me if there were any disabled students in Chinese schools. I said very few. In my experiences, from elementary school to high school, even in university, I had never meet a disabled students, who was deaf or blind. Where are they? They do exist, but may live alienated lives out of our eyes.</p>
-
-<p>In UGA, I saw many students sitting on their wheelchairs in streets, classroom, libraries, even on buses. They really provide good access for disabled.</p>
-
-<p>In China, the situation in Beijing and Shanghai may be better than other cities. But we still hardly see disabled people appear in front us, when they do appear, they usually have many accompanies who help them to overcome the unexpected obstacles posed by people unconsciously.</p>
-
-<p>Disabled people do deserve to live a normal life. Please don't alienate them!</p>
 ]]></content>
   </entry>
   
