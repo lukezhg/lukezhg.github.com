@@ -4,7 +4,7 @@
   <title><![CDATA[tags: VIM | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/vim/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T15:52:37-05:00</updated>
+  <updated>2013-11-08T19:39:18-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -39,8 +39,8 @@ n  #new dash window
 <p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
 
 <pre><code>Ctrl +: #this will let you enter the file operation mode  
-i------ #this will let you enter the edit mode, Press Esc to enter : mode  
-v------ #this will let you enter copy and paste mode, Press Esc to enter : mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
 </code></pre>
 
 <p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
@@ -48,21 +48,25 @@ v------ #this will let you enter copy and paste mode, Press Esc to enter : mode
 <pre><code>y       #copy  
 d       #delete
 p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
 </code></pre>
 
 <p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
 
-<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:<br/>
-Ctrl + Alt + L---- lock the desktop<br/>
-Win--------------- applications desktop<br/>
-Ctrl + Alt + Left--shift to left desktop<br/>
-Alt + Tab----------shitt applications<br/>
-Alt + F4-----------shut down present application<br/>
-Ctrl+Win+Up--------Maxilize present window<br/>
-Ctrl+Win+Down------Minilize presnet window<br/>
-Ctrl+Alt+T---------Open terminal
-Ctrl+Shift+Arrow---Shift Workplace<br/>
-Ctrl+Shift+Alt+Arrow---move present window to Workplace</p>
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal 
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
 
 <p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
 Now almost done, and wait to be expanded.</p>
