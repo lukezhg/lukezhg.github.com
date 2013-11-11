@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T19:57:15-05:00</updated>
+  <updated>2013-11-11T18:49:50-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
+    <updated>2013-11-08T22:14:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
+    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can&#8217;t start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
+
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
+
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
+
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
+
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
@@ -63,7 +87,8 @@ Alt + Tab          shitt applications
 Alt + F4           shut down present application  
 Ctrl+Win+Up        Maxilize present window  
 Ctrl+Win+Down      Minilize presnet window  
-Ctrl+Alt+T         Open terminal 
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
 Ctrl+Shift+Arrow   Shift Workplace  
 Ctrl+Shift+Alt+Arrow   move present window to Workplace  
 </code></pre>
@@ -852,23 +877,6 @@ It is kind of like to do a jigsaw. First you have to see every piece very clearl
 ==>Content<br/>
 ==>Technology<br/>
 ==>Context</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Put supervision into practice]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/18/put-supervision-into-practice/"/>
-    <updated>2013-09-18T14:19:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/18/put-supervision-into-practice</id>
-    <content type="html"><![CDATA[<p>The following is a slide about how to put supervision into practice.</p>
-
-<!--more-->
-
-
-<p></p>
-
-<iframe src="http://prezi.com/embed/wnmoxylvcoc3/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
-
 ]]></content>
   </entry>
   

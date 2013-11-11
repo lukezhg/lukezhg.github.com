@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T19:57:15-05:00</updated>
+  <updated>2013-11-11T18:49:50-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
+    <updated>2013-11-08T22:14:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
+    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can't start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
+
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
+
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
+
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
+
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
@@ -63,7 +87,8 @@ Alt + Tab          shitt applications
 Alt + F4           shut down present application  
 Ctrl+Win+Up        Maxilize present window  
 Ctrl+Win+Down      Minilize presnet window  
-Ctrl+Alt+T         Open terminal 
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
 Ctrl+Shift+Arrow   Shift Workplace  
 Ctrl+Shift+Alt+Arrow   move present window to Workplace  
 </code></pre>
@@ -86,6 +111,13 @@ Now almost done, and wait to be expanded.</p>
 -  python xx.py 执行py文件<br/>
 -  sudo su 切换到root用户<br/>
 -  sudo exit 推出root用户</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
 
 <p>察看RVM可供安装的ruby版本和现用版本<br/>
 -  rvm list known<br/>

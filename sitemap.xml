@@ -870,7 +870,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/</loc>
-        <lastmod>2013-08-31T12:46:23-04:00</lastmod>
+        <lastmod>2013-11-08T23:11:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/</loc>
@@ -1006,7 +1006,11 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/</loc>
-        <lastmod>2013-11-08T19:56:55-05:00</lastmod>
+        <lastmod>2013-11-08T20:05:42-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/</loc>
+        <lastmod>2013-11-08T22:30:55-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/404.html</loc>
@@ -1022,7 +1026,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/archives/</loc>
-        <lastmod>2013-11-08T19:56:55-05:00</lastmod>
+        <lastmod>2013-11-08T23:11:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/cn/</loc>
@@ -1034,7 +1038,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/</loc>
-        <lastmod>2013-11-08T19:56:55-05:00</lastmod>
+        <lastmod>2013-11-08T23:11:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/robots.txt</loc>

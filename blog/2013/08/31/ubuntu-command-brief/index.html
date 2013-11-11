@@ -155,6 +155,13 @@ google.setOnLoadCallback(function() {
 -  sudo su 切换到root用户<br/>
 -  sudo exit 推出root用户</p>
 
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
 <p>察看RVM可供安装的ruby版本和现用版本<br/>
 -  rvm list known<br/>
 -  rvm list</p>
@@ -275,7 +282,7 @@ google.setOnLoadCallback(function() {
     <div id="google_translate_element">
 </section><section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/design'>design (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/pck'>PCK (1)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (4)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (18)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (6)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/design'>design (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>PCK (1)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/对话'>对话 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (18)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (6)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (1)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -287,7 +294,7 @@ google.setOnLoadCallback(function() {
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
 <a style="font-size: 128%" href="/tag/uga/">UGA</a>
-<a style="font-size: 99%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 105%" href="/tag/ubuntu/">Ubuntu</a>
 <a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
 <a style="font-size: 99%" href="/tag/design/">design</a>
 <a style="font-size: 110%" href="/tag/diary/">diary</a>
@@ -311,6 +318,10 @@ google.setOnLoadCallback(function() {
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/08/ubuntu-crash-on-graphic-driver/">Ubuntu crash on graphic driver</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/">TMUX and VIM in ubuntu</a>
@@ -346,10 +357,6 @@ google.setOnLoadCallback(function() {
     
       <li class="post">
         <a href="/blog/2013/10/19/the-beautiful-leaves-on-the-tree/">The beautiful leaves on the tree</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/08/science-teachers-life-in-unite-states/">美国科学教师职业状况观察</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: brief | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/brief/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T19:57:15-05:00</updated>
+  <updated>2013-11-11T18:49:50-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -26,6 +26,13 @@
 -  python xx.py 执行py文件<br/>
 -  sudo su 切换到root用户<br/>
 -  sudo exit 推出root用户</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
 
 <p>察看RVM可供安装的ruby版本和现用版本<br/>
 -  rvm list known<br/>

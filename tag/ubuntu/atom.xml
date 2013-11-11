@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: ubuntu | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-08T19:57:15-05:00</updated>
+  <updated>2013-11-11T18:49:50-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,73 +14,187 @@
 
   
   <entry>
-    <title type="html"><![CDATA[在ubuntu中部署octopress发布博文]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
-    <updated>2013-02-04T12:17:00-05:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
-    <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
-终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
+    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
+    <updated>2013-11-08T22:14:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
+    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can't start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
 
-<p>其实我是把windows下的所有博客项目有关的文件都拷贝到了ubuntu中来，然后在布置好环境的基础上实现正常使用的，居然真的可以。</p>
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
 
-<p>下面把遇到的问题记录汇总如下：<br/>
-一、安装和使用ubuntu过程中遇到的问题：<br/>
-1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。<br/>
-2  安装ubuntu显卡驱动<br/>
-3  无线链接不能建立，尽管密码正确。<br/>
-4  如何安装和使用电池管理（tp-smapi）实现到达阈值自动停止充电</p>
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
 
-<p>二、安装git和ruby遇到的问题：<br/>
-1  更新git版本耗时过长以至于不能完成<br/>
-2  使用rvm安装ruby时找不到1.9.3版本<br/>
-3  如何设置让打开终端时自动加载rvm</p>
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
 
-<p>三、布置octopress遇到的问题：<br/>
-1 明明安装了gem bundler, 但是执行bundle install时仍然提示安装gem bundler<br/>
-2 使用rake generate命令时报错</p>
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/"/>
+    <updated>2013-11-08T13:56:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
 
-<p>问题解决方法：<br/>
-1.1  选择了一个64位的amd版本的ubuntu进行安装。<br/>
-<a href="http://releases.ubuntu.com/12.04/">Ubuntu 12.04.1 LTS</a></p>
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
 
-<p>1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。<br/>
-<a href="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&amp;product=2.4.1.3.42&amp;lang=English">AMD Catalyst™ Proprietary Display Driver - Linux x86 &amp; Linux x86_64</a></p>
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
 
-<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。
-但是这样治标不治本，于是参考了<a href="http://www.linuxdiyf.com/viewarticle.php?id=101861">这个网址</a></p>
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
 
-<blockquote><p>ppp 的很多选项都是默认的，其中lcp-echo-failure次数被设为4，而lcp-echo-interval设为30秒。也就是说，如果120秒钟之内，ADSL服务器没有给回echo-reply信号，UBuntu便会认为网络已经出了问题，就会断开网络，搞得人非常不爽。症结找到了，问题就要解决了，打开配置文件/etc/ppp/options，将lcp-echo-failure次数设为一个较大的数值就行了，我将该值修改为10。</p></blockquote>
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
 
-<p>1.5  安装tp-smapi
-参考：<a href="http://www.linuxdiyf.com/linux/201108/688.html">http://www.linuxdiyf.com/linux/201108/688.html</a><br/>
-但是始终无法完成最后一步：sudo modprobe tp_smapi<br/>
-但是反复安装和尝试了之后不知道为什么电池终于冲到71%就补充电了。原因还在继续查找中。</p>
+<p>That is it.</p>
 
-<p>2.1  使用https:而不是git:, 有可能是git被封造成的。<br/>
-参考：<a href="http://www.linuxidc.com/Linux/2012-09/71193.htm">Ubuntu git 安装和使用</a>
-将git clone git://git.kernel.org/pub/scm/git/git.git<br/>
-改为：git clone https://git.kernel.org/pub/scm/git/git.git</p>
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
 
-<p>2.2  跟换gem源，使用淘宝提供的源。<br/>
-参考：<a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-替换 gem 的 source：<br/>
-$ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
 
-<p>2.3  更改.bash_profile<br/>
-参考：<a href="http://blog.csdn.net/abbuggy/article/details/8170899">在ubuntu中安装及使用rvm管理ruby版本 - 边晓宇@CSDN - 博客频道 - CSDN.NET</a><br/>
-在$HOME/.bash_profile文件中添加如下内容：<br/>
-[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.  <br/>
-以便在开启一个终端会话时候加载RVM<br/>
-或者手动键入：$ source ~/.rvm/scripts/rvm<br/>
-在或者将该内容添加到~/.bashrc文件末尾。</p>
+<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
 
-<p>3.1  更换源后从新安装gem bundler，此外我顺便安装了rails。参考同上。</p>
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
 
-<p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
+<p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
 
-<p>参考文章：<br/>
-1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
-2  <a href="http://yangdd.github.com/blog/2012/09/14/issue/">使用Octopress遇到的问题 - 长老的 Octopress Blog</a></p>
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/"/>
+    <updated>2013-08-31T18:07:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
+首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
+然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
+
+<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
+
+<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
+
+<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
+
+<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
+测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
+
+<pre><code>
+$ python dev_appserver.py myapps/helloworld
+</code></pre>
+
+
+<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
+
+<p>ctrl+C 终止测试。</p>
+
+<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
+
+<pre><code>
+$ python appcfg.py update myapps/helloworld
+</code></pre>
+
+
+<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu命令手册]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
+    <updated>2013-08-31T12:33:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
+    <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  python xx.py 执行py文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post["post title"]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名<br/>
+-  rename 's/lecture/slide/' *.jpg<br/>
+将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容<br/>
+-  perl -pi -e 's|Windows|Ubuntu|g' <code>find ./ -type f</code></p>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
 ]]></content>
   </entry>
   
