@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-12T15:32:19-05:00</updated>
+  <updated>2013-11-13T12:54:59-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[learning or no learning]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/13/learning-or-no-learning/"/>
+    <updated>2013-11-13T12:22:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/13/learning-or-no-learning</id>
+    <content type="html"><![CDATA[<p>Learning is dangerous; Not learning is lethal.</p>
+
+<p>Why learning is dangerous? Because when are learning you have to change&#8211;habits, beliefs,knowledge,actions and so on, every change may let you sit in an uncomfortable place unsure of the following consequence.</p>
+
+<p>But not learning is lethal. Because the world change in every minutes, even every seconds, if you act the same way as before, you will be very likely lost your job, get a stroke and worry about your food and Pension.</p>
+
+<p>What to do then?</p>
+
+<p>Learn with a teacher, learn with your friends and learn in your own feasible and effective ways. Of course you have to study how learning happen to you at first.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[HungerU]]></title>
@@ -292,6 +309,9 @@ addpath('C:users\ang\Desktop') % octave search path
 <p>With the global industrial production, with consumerism and commercialization, will this new kind of capitalism &#8211; Intellectual Capitalism create a new colonial history. Do we want this happen? Or it already happened.</p>
 
 <p>There should be a balance between patent protection and common benefit, between efficiency and fairness, between developed and developing countries, between industrial civilization and agricultural civilization, between human and nature, otherwise we are making troubles and potential dangers for ourselves!</p>
+
+<pre><code>On the other hand, science education sits in an uncomfortable place in this landscape given particular aspects of patenting and property rights imply limited access and thus inequity in knowledge acquisition.
+</code></pre>
 
 <p>iphone</p>
 
@@ -837,30 +857,6 @@ Teachers&#8217; content knowledge affect their abilities of transfroming the cur
 <p>The science teacher educator stand on the river bank and tell the swimmer where to go, how to swim, which style is more effective than others. But the most important thing for a person in the river is to keep safty and the most reliable style is the style which he already got. How can we blame them not trying to change, if their safty is not guaranteed and new skills not developed.</p>
 
 <p>As a science teacher educator, you can not always stand by but jump into the water and provide necessary skills and safety.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Online course I finished]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished/"/>
-    <updated>2013-09-20T20:52:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished</id>
-    <content type="html"><![CDATA[<p>I just received the Stanford <a href="https://novoed.com/designthinking/statement/76155">Online Course Statement of Accomplishment Of DTAL from Novoed</a>.</p>
-
-<p>I also accomplished another similar course <a href="https://novoed.com/education/statement/76155">Designing a New Learning Environment</a></p>
-
-<p>I had spent 5~10 hours per week on each course. In fact, I didn&#8217;t expect to accomplished them and got certificates. They just appeared interesting and related with my work. So I tried my best to take the boat and take every advantages of  the learning oportunities and resources. But the statments of accomplishment do encourage me to take more similar courses, so they are powerful in this sense.</p>
-
-<p>Free Online course resources:<br/>
-<a href="http://zhangchunlei.com/blog/2011/11/29/opencourseware-collection/">Open Course Collection</a><br/>
-<a href="http://zhangchunlei.com/blog/categories/opencourse/">Category-opencourse</a></p>
-
-<p>Strongly recommaned Online courses Platforms:<br/>
-1. <a href="https://novoed.com/">Novoed</a><br/>
-2. <a href="https://www.udacity.com/">Udacity</a><br/>
-3. <a href="https://www.edx.org/">edX</a></p>
-
-<p>The pdf version of my Online Course Statement of Accomplishments:   <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Design_Thinking_Action_Lab.pdf">DTAL</a> and <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Designing_a_New_Learning_Environment.pdf">DNLE</a></p>
 ]]></content>
   </entry>
   

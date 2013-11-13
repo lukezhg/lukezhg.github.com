@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Today I went to MLC to attend a lecture by Dr Michelle Smith. In front of MLC, I saw a strange thing. You can see the picture below. The fact and &hellip;">
+  <meta name="description" content="Learning is dangerous; Not learning is lethal. Why learning is dangerous? Because when are learning you have to change&#8211;habits, beliefs, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,52 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/13/learning-or-no-learning/">Learning or No Learning</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-13T12:22:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/13/learning-or-no-learning/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Learning is dangerous; Not learning is lethal.</p>
+
+<p>Why learning is dangerous? Because when are learning you have to change&#8211;habits, beliefs,knowledge,actions and so on, every change may let you sit in an uncomfortable place unsure of the following consequence.</p>
+
+<p>But not learning is lethal. Because the world change in every minutes, even every seconds, if you act the same way as before, you will be very likely lost your job, get a stroke and worry about your food and Pension.</p>
+
+<p>What to do then?</p>
+
+<p>Learn with a teacher, learn with your friends and learn in your own feasible and effective ways. Of course you have to study how learning happen to you at first.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -363,148 +409,6 @@ They don&#8217;t need to take much effort in order to operate or understand. It 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/03/machine-learning-and-octave/">Machine Learning and Octave</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-03T12:28:00-05:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2013</time>
-        
-         | <a href="/blog/2013/11/03/machine-learning-and-octave/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Recently I joined NG&#8217; class of <a href="https://class.coursera.org/ml-004/class/index">Machine Learning</a></p>
-
-<p>I start to learn programing with <a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
-
-<p>Here is the Basic Commands from Ng&#8217;s class notes</p>
-
-<pre><code>
-PS1('>> '); % make pre short  
-1==2 %false  
-1~=2  
-1 && 2 % AND  
-1 || 0 % OR  
-xor(1,0) % OR
-a=3; % semicolon supressing output  
-b='hi';  
-disp(sprintf('2 decimals: %0.2f',a))  
-a=pi;  
-format long  
-format short  
-A=[1 2; 3 4; 5 6]  
-ones(3,1)  
-zeros(1,3)  
-rand(1,3)  
-hist(-6+sqrt(10)*(randn(1,10000)))  
-size(A,1)  
-save hello.txt v -ascii % save as text  
-eye(6)  
-length(A)  
-load featuresX.dat  
-load priceY.dat  
-load('featuresX.dat')  
-who  
-clear priceY  
-clear  
-v=priceY(1:10)  
-A(3,1)  
-A(2,:) % ":" means every element along that row/column  
-A([1 3],:) % get 1,3 row  
-A(:,2)=[10;11;12]  
-A=[A,[100;101;102]]  
-A(:) % put all elements into a single vector  
-C=[A B]  
-C=[A; B]  
-sum(A)  
-prod(A)  
-floor(A)  
-ceil(A)  
-max(A,[],1)  
-max(A,[],2)  
-max(A)  
-flipud(eye(9))  
-t=[0:0.01:0.98]  
-y1=sin(2*pi*4*t);
-y2=cos(2*pi*4*t);  
-plot(t,y1);  
-plot(t,y2,'r')  
-xlabel('time')  
-ylabel('value')  
-legent('sin','cos')  
-title('my plot')  
-print -dpng 'myPlot.png'  
-close  
-figure(1);plot(t,y1);  
-figure(2);plot(t,y2);  
-subplot(1,2,1); % divides plot a 1x2 grid, acce  
-axis([0.5 1 -1 1]) & x [0.5 1] y[-1 1]  
-clf;
-imagesc(A)  
-imagesc(A), colorbar, colormap gray;  
-
-indices=1:10;  
-for i=indices,
-   disp(i);
-end;  
-
-i=1;  
-while i <=5;  
-  v(i)=100;  
-  i=i+1;  
-end;  
-
-i=1;  
-while true,  
-  v(i)=999;  
-  i=i+1;  
-  if i==6,  
-    break;  
-  end;  
-end;  
-
-v(1)=2;  
-if v(1)==1,  
-  disp('equal one')  
-elseif v(1)==2,  
-  disp('equal two')  
-else  
-  disp('not one or two')  
-end;  
-
-pwd  
-ls  
-
-addpath('C:users\ang\Desktop') % octave search path  
-</code></pre>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -550,6 +454,10 @@ addpath('C:users\ang\Desktop') % octave search path
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/13/learning-or-no-learning/">learning or no learning</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/11/12/hungeru/">HungerU</a>
       </li>
     
@@ -585,10 +493,6 @@ addpath('C:users\ang\Desktop') % octave search path
         <a href="/blog/2013/10/25/the-metaphor-of-rock-climbing/">The metaphor of rock climbing</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/">From falling objects experiment to a simulated experiment</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -604,7 +508,7 @@ addpath('C:users\ang\Desktop') % octave search path
 <a style="font-size: 90%" href="/tag/ocw/">OCW</a>
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
-<a style="font-size: 130%" href="/tag/uga/">UGA</a>
+<a style="font-size: 129%" href="/tag/uga/">UGA</a>
 <a style="font-size: 105%" href="/tag/ubuntu/">Ubuntu</a>
 <a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
 <a style="font-size: 99%" href="/tag/design/">design</a>
