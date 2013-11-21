@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy. American &hellip;">
+  <meta name="description" content="I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures. The following are my scripts:
+1. Sina &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +115,93 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/">Firefox Extension FireGesture Scripts</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-26T18:23:00-04:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
+
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code></p>
+
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+2. iciba(RLR)<br/>
+<code></p>
+
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+3.  Copy the title and url</p>
+
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -328,63 +416,6 @@ Should science teaching keep the same as before? Never.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/">找中学 V2.0发布</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-25T18:30:00-04:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://www.google.com.hk/cse/home?cx=003236158428466992246:mvbdsgvf6hk">找中学v2.0</a></h2>
-
-<p>本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。</p>
-
-<div>
-<script>
-  (function() {
-    var cx = '003236158428466992246:mvbdsgvf6hk';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</div>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/11/">&larr; Older</a>
@@ -432,6 +463,10 @@ Should science teaching keep the same as before? Never.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/20/observe-us-science-education/">Test and Lecture</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/11/20/edu-plan-for-infant/">一岁宝宝教育方案</a>
       </li>
     
@@ -467,10 +502,6 @@ Should science teaching keep the same as before? Never.</p>
         <a href="/blog/2013/11/08/ubuntu-crash-on-graphic-driver/">Ubuntu crash on graphic driver</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/">TMUX and VIM in ubuntu</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -486,7 +517,7 @@ Should science teaching keep the same as before? Never.</p>
 <a style="font-size: 90%" href="/tag/ocw/">OCW</a>
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
-<a style="font-size: 130%" href="/tag/uga/">UGA</a>
+<a style="font-size: 132%" href="/tag/uga/">UGA</a>
 <a style="font-size: 105%" href="/tag/ubuntu/">Ubuntu</a>
 <a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
 <a style="font-size: 99%" href="/tag/design/">design</a>
@@ -497,13 +528,13 @@ Should science teaching keep the same as before? Never.</p>
 <a style="font-size: 90%" href="/tag/inquiry/">inquiry</a>
 <a style="font-size: 99%" href="/tag/list/">list</a>
 <a style="font-size: 110%" href="/tag/metaphor/">metaphor</a>
-<a style="font-size: 114%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 113%" href="/tag/modeling/">modeling</a>
 <a style="font-size: 90%" href="/tag/notes/">notes</a>
 <a style="font-size: 90%" href="/tag/octopress/">octopress</a>
 <a style="font-size: 99%" href="/tag/pck/">pck</a>
 <a style="font-size: 90%" href="/tag/prezi/">prezi</a>
 <a style="font-size: 90%" href="/tag/stanford/">stanford</a>
-<a style="font-size: 114%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 113%" href="/tag/supervision/">supervision</a>
 <a style="font-size: 90%" href="/tag/正能量/">正能量</a>
 <a style="font-size: 90%" href="/tag/随笔/">随笔</a>
 
