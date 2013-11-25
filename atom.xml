@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-23T14:48:50-05:00</updated>
+  <updated>2013-11-25T13:22:11-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Emotion control]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/25/emotion-control/"/>
+    <updated>2013-11-25T00:02:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/25/emotion-control</id>
+    <content type="html"><![CDATA[<p>Sometimes people lost control of their emotion, which usually do harm to themselves and others. It is an very important thing to learn to control and even make use of one&#8217;s emotion.</p>
+
+<p>Emotion takes long time to form and change. It is like the parameters in hidden layer of NN, taking more instances to evolve and even more instances to adapt themselves to new changes. Emotion can help people to judge people and things(e.g.. good or bad, friends or enemy) and decide what to do(e.g.. quit or persist). It can also work as the energy source of people. People are most easily motivated by emotion than reason. Students tend to remember something deeply with a special emotion aroused. You would also feel very strange if you are talking with some people emotionless and feel hard to build trust on his.</p>
+
+<p>Although, emotion play a very important role in our life, but we usually ignore emotion education in our formal or informal education. We should provide opportunity for people to know how emotion affect our cognition and social interactions. How to cope with ones&#8217; emotion and keep emotional health.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Patent a special knowledge as private property]]></title>
@@ -28,6 +41,8 @@ There is an interesting case about patent. Mr. Bowman bought gene-modified seed 
 <p>But Mr. Bowman still lost the case. This is what Justice Kagan said:
 “Under the patent exhaustion doctrine, Bowman could resell the patented soybeans he purchased from the grain elevator; so too he could consume the beans himself or feed them to his animals. But the exhaustion doctrine does not enable Bowman to make additional patented soybeans without Monsanto’s permission, that is precisely what Bowman did.” <a href="#3">3</a></p>
 
+<p>There is another case, a farmer grow his corn in his form. But his neiborhood growed gene-moddified corn, by accident the wind blowed the pollen with modified gene to his farm. So his corn also had the modified gene. But the farmer planted corn for a Japan company that only want corn without moddified gene. So he can couldn&#8217;t sell his corn to the company and lost lot of money. Who should pay for his lost?</p>
+
 <p>Although, in this case, Mr. Bowman was intently to make use of the loophole of second buying. But it still annoy my nerves when thinking of gene-modified plant take the place of the other plants that farmers can grow and plant without any limitation, gene-modified food went into market without label, modified gene go to other plan species without control. A question emerged from this case is that Should gene be patentable?</p>
 
 <p>How about human gene? Here is an interesting video &#8220;Who Owns You? 20% of the Genes in Your Body are Patented&#8221;.<a href="#4">4</a></p>
@@ -38,7 +53,7 @@ There is an interesting case about patent. Mr. Bowman bought gene-modified seed 
 <p>This let me reflect the following questions: Should human gene be patentable? Will these patents prohibit us to know more about ourselves and make use our knowledge to benefit ourselves? Will this go against individual human rights? Is patent, or commercialization a good idea in education and human society in future?</p>
 
 <p>References:<br/>
-<a id="1">[1]</a> Patent - Wikipedia, the free encyclopedia: http://en.wikipedia.org/wiki/Patent</p>
+<a id="1">[1]</a> <a href="http://en.wikipedia.org/wiki/Patent">Patent - Wikipedia, the free encyclopedia</a></p>
 
 <p><a id="2">[2]</a> <a href="http://www.nytimes.com/2013/02/16/business/supreme-court-to-hear-monsanto-seed-patent-case.html?pagewanted=1&amp;_r=0">Supreme Court to Hear Monsanto Seed Patent Case - NYTimes.com</a></p>
 
@@ -197,6 +212,10 @@ Hemorrhoids.org: Hemorrhoids Cause[http://www.hemorrhoids.org/hemorrhoids-cause.
 <p>The above paragraph is written by me blindly.</p>
 
 <p>Another idea interesting is using your left hand to control the mouse and use your right hand to click. This will help you to coordinate your left brain and right brain.</p>
+
+<p>Now I am using the sound of pinyin to help myslef to type this paragraph. The pinyin sound help to pronounce a word when you are typing. It may not sound very right but it can do give a similar sound of the the word.</p>
+
+<p>Is not it amazing.</p>
 ]]></content>
   </entry>
   
@@ -690,29 +709,6 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/laptopstand.png" alt="laptop stand" /></p>
 
 <p>You can alway make a change if you want to. And small change can make a big difference sometimes.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Don't alienate disabled people]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/27/dont-alienate-disabled-people/"/>
-    <updated>2013-10-27T09:46:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/27/dont-alienate-disabled-people</id>
-    <content type="html"><![CDATA[<p>Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb &#8211; who was born deaf. She showed what is possible through family support and self-belief, and proves that what is assumed about you and what you can actually achieve don&#8217;t always match up. In the United States, two-thirds of hearing-impaired people do not complete high school.</p>
-
-<iframe width="560" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/uKKpjvPd6Xo" frameborder="0" allowfullscreen></iframe>
-
-
-<!--more-->
-
-
-<p>When I attended a coteaching workshop, an American teacher asked me if there were any disabled students in Chinese schools. I said very few. In my experiences, from elementary school to high school, even in university, I had never meet a disabled students, who was deaf or blind. Where are they? They do exist, but may live alienated lives out of our eyes.</p>
-
-<p>In UGA, I saw many students sitting on their wheelchairs in streets, classroom, libraries, even on buses. They really provide good access for disabled.</p>
-
-<p>In China, the situation in Beijing and Shanghai may be better than other cities. But we still hardly see disabled people appear in front us, when they do appear, they usually have many accompanies who help them to overcome the unexpected obstacles posed by people unconsciously.</p>
-
-<p>Disabled people do deserve to live a normal life. Please don&#8217;t alienate them!</p>
 ]]></content>
   </entry>
   
