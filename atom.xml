@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-11-25T23:56:43-05:00</updated>
+  <updated>2013-11-26T19:13:59-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Eco-life Design and Education]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/26/eco-life-design/"/>
+    <updated>2013-11-26T18:15:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/26/eco-life-design</id>
+    <content type="html"><![CDATA[<p>In agriculture age,people don&#8217;t have to worry about pollution. Because all the products are degradable. Nature itself is is a great designer, everything can be reused and recycled. But as human entered the age of industry, the situation changed. Human want to create new stuff that never existed in natural world. Yes they made it but they are not good designer; Many waste are produced but can not be recycled.</p>
+
+<p>There is a simple logic. If human want live in earth forever, then everything should be recycled, otherwise there will be not enough resources or room for human beings.</p>
+
+<p>China have made a miracle of economic growth, but the growth cost dear &#8211; air and water pollution, increasing gap between rich and poor, village and city, east and west. This growth also can not be sustainable because the environment is getting worse and worse and the resources is getting fewer and fewer. In order to live a healthy life, China must reconsider its style of economic growth and design more environmentally friendly industry,agriculture and living system. But do China have enough designers to design the eco-life system? STEM education may play a crucial role in preparing these future designers.</p>
+
+<p>But when you look into Chinese secondary and primary curriculum, there is little content of enginering or designing. How to assess the curriculum content to tell if it is updated and suitable for preparing future citizens? How teachers address this problem in their classroom teaching? Is there a lack of designing education in our curriculum system? If not, is the content and education good enough for preparing our future designers?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Risk management]]></title>
@@ -26,7 +41,7 @@
 
 <p>I had a great relief. Then I began to think what to do to reduce the risk of losing my iphone. How to keep my personal informaton safer. I read serveral posts on tips to keep your iphone safe. They suggested first you should set a password for unlocking. Then you can also install an app called &#8220;find my iphone&#8221; to locate your phone in case you lost it. The last suggestion is do not keep important personal information in your phone.</p>
 
-<p>In fact, all these tips are trying to control the risk or reduce the risk. In dealiing with risk, we have serveral options, sometimes we have to accept it, there are always a risk that you can do nothing to control, e.g. traffic accident. In this case, people usually buy insurance to transfer the risk to insurer. We can also take some measures to ruduce the risk, such as put a piece of paper with your telephone number, email or address. I found I need to learn more about risk management and get prepared for any risk in the future.</p>
+<p>In fact, all these tips are trying to control the risk or reduce the risk. In dealiing with risk, we have serveral options, sometimes we have to accept it, there are always a risk that you can do nothing to control, e.g. traffic accident. In this case, people usually buy insurance to transfer the risk to insurer. We can also take some measures to ruduce the risk, such as put a piece of paper with your email or address at the back of your phone. If somebody find your phone, he or she may return it to you according to the information you provided. I found I need to learn more about risk management and get prepared for any risk in the future.</p>
 ]]></content>
   </entry>
   
@@ -668,51 +683,6 @@ ls
 addpath('C:users\ang\Desktop') % octave search path  
 </code></pre>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Conflicts between commercialization of science and education equity]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/"/>
-    <updated>2013-10-30T23:46:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity</id>
-    <content type="html"><![CDATA[<p>Yesterday, I attended Dr Jackson&#8217; class <a href="http://djackson.myweb.uga.edu/8990/Daily/Day12.html">ESCI 8990 Daily Page</a>.</p>
-
-<p>We discussed questions:<br/>
-1.  whether scientific knowledge is a private product?<br/>
-2.  whether is it right to use grants to apply patent or develop products for profits?<br/>
-3.  conflicts between patent protection and equal access to scientific knowledge.</p>
-
-<p>I didn&#8217;t say a word because I was the only Chinese around the table and intellectual property protection in China has a bad reputation although the situation is improving. I don&#8217;t want to defend too much, but I guess everyone may only have one story about the IPP in China. But just as Chimamanda Ngozi Adichie said: <a href="http://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story.html">There is a danger of a single story</a>. So it will always be good to know more than one story.</p>
-
-<p>The idea of patent protection became popular in industry culture. In order to encourage people and companies to develop more new type of products for society goodness, we give them such protects and advantages in using the patent that they invented first.</p>
-
-<p>But, in agricultural civilization, such as accent China, there is no such idea. Some people may keep their special way of making food or drinks as their secrets, but once the secrets were known by others, they can also make the same food and drinks, and it is legal. The government may also help to publish and transmit some technologies, such as paper making and the printing. If they apply for the patent of making paper and printing, how much money they can earn? But this may also slow down the development of human society. So every patent has limited period for protection. The patent finally becomes common property of human society.</p>
-
-<p>In agricultural civilization, labor is the main value source of a product. Yes, patent tell how to make a product, but it is the labor make it realized. This is not true in industrial civilization, the people or company who possess the patent earn the most of the profit. You will never know how cheap labor become in China nowadays. Is it equal? Is it a new kind of colonization? Many developed country put their factories into developing countries, they use their labor, resources and make wastes and pollution. Is it fair? Is it sustainable? Will it leads to wars? You can read more about <a href="http://www.slideshare.net/drloveccsu/ecojustice-pedagogy">Ecojustice</a>.</p>
-
-<p>Well, industrialization and consumerism are both come from western culture. Human rights is also declared in the western. But there is conflicts between commercialization of science and education equity. The following paragraph is from:<a href="http://www.un.org/en/documents/udhr/">The Universal Declaration of Human Rights</a></p>
-
-<blockquote><p>Article 26.
-   (1) Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.</p></blockquote>
-
-<p>Poor people receive poor education and they remain poor, becomes a circle. This will only lead to hate and war. Patent protection can help develop new products and technologies and promote the progress of society. It can also benefit some people and groups and hurt the others. Especially, when the researchers use grants(money from citizens) to do research and apply for patents only benefit for a special organization or people. Then it is unfair.</p>
-
-<p>It is also disputable whether something should be a patent. For example, the people invent the product later by his own, will lost all the value of his effort because it would be illegal to for him to use the same way to make product.</p>
-
-<p>The company own the patent seems own a new kind of capital &#8211; Intellectual Capitalism. Government tend to protect their patent rights in order to encourage more company to do research and development. But sometimes it will lead to monopolization and the price of their products becomes unreasonable(several times higher than its actual cost). Will government still protect?</p>
-
-<p>With the global industrial production, with consumerism and commercialization, will this new kind of capitalism &#8211; Intellectual Capitalism create a new colonial history. Do we want this happen? Or it already happened.</p>
-
-<p>There should be a balance between patent protection and common benefit, between efficiency and fairness, between developed and developing countries, between industrial civilization and agricultural civilization, between human and nature, otherwise we are making troubles and potential dangers for ourselves!</p>
-
-<pre><code>On the other hand, science education sits in an uncomfortable place in this landscape given particular aspects of patenting and property rights imply limited access and thus inequity in knowledge acquisition.
-</code></pre>
-
-<p>iphone</p>
-
-<p>克隆文化
-有性繁殖与无性繁殖</p>
 ]]></content>
   </entry>
   
