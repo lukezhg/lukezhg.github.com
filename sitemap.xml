@@ -693,10 +693,6 @@
         <lastmod>2013-08-28T16:17:03-04:00</lastmod>
     </url>
     <url>
-        <loc>http://zhangchunlei.com/blog/2013/01/22/what-robot-can-do-for-me/</loc>
-        <lastmod>2013-08-28T16:17:03-04:00</lastmod>
-    </url>
-    <url>
         <loc>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/</loc>
         <lastmod>2013-08-31T12:46:53-04:00</lastmod>
     </url>
@@ -1064,7 +1060,7 @@
         <loc>
             http://zhangchunlei.com/blog/2013/11/23/patent-a-special-knowledge-as-private-property/
         </loc>
-        <lastmod>2013-11-24T23:50:40-05:00</lastmod>
+        <lastmod>2013-11-26T20:11:56-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/11/25/emotion-control/</loc>
@@ -1077,6 +1073,10 @@
     <url>
         <loc>http://zhangchunlei.com/blog/2013/11/26/eco-life-design/</loc>
         <lastmod>2013-11-26T19:13:27-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2013/11/26/what-robot-can-do/</loc>
+        <lastmod>2013-11-26T20:35:58-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/404.html</loc>
@@ -1092,7 +1092,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/archives/</loc>
-        <lastmod>2013-11-26T19:13:27-05:00</lastmod>
+        <lastmod>2013-11-26T20:35:58-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/cn/</loc>
@@ -1104,7 +1104,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/</loc>
-        <lastmod>2013-11-26T19:13:27-05:00</lastmod>
+        <lastmod>2013-11-26T20:35:58-05:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/robots.txt</loc>
