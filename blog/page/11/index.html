@@ -9,11 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="在摸索过程中经常使用的命令： 安装和执行程序
-- sudo apt-get install appname 安装程序应用
-- make install 编译并安装 .tar.gz2 - sh xx.sh 执行.sh文件
-- python xx.py 执行py文件
-- sudo su &hellip;">
+  <meta name="description" content="本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。
+首先，下载Google App Engine SDK &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -118,6 +115,73 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/play-gae-in-ubuntu/">在Ubuntu中布置和使用GAE</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T18:07:00-04:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/play-gae-in-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
+首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
+然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
+
+<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
+
+<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
+
+<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
+
+<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
+测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
+
+<pre><code>
+$ python dev_appserver.py myapps/helloworld
+</code></pre>
+
+
+<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
+
+<p>ctrl+C 终止测试。</p>
+
+<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
+
+<pre><code>
+$ python appcfg.py update myapps/helloworld
+</code></pre>
+
+
+<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -351,93 +415,6 @@ But sometimes it can be a very serious problem.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/">Firefox Extension FireGesture Scripts</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-26T18:23:00-04:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
-
-<p>The following are my scripts:<br/>
-1.  Sina Weibo(DUDU)<br/>
-<code></p>
-
-<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
-gBrowser.loadOneTab(sel, {
-    inBackground: true,
-    relatedToCurrent: true
-});
-</code></pre>
-
-<p></code>
-2. iciba(RLR)<br/>
-<code></p>
-
-<pre><code>var word = getBrowserSelection();
-if (!word)
-    return;
-var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
-gBrowser.loadOneTab(sel, {
-    inBackground: true,
-    relatedToCurrent: true
-});
-</code></pre>
-
-<p></code>
-3.  Copy the title and url</p>
-
-<pre><code>
-const AS_HTML = false;
-
-function htmlEscape(s) {
-  s = s.replace(/&/g, "&amp;");
-  s = s.replace(/>/g, "&gt;");
-  s = s.replace(/</g, "&lt;");
-  s = s.replace(/"/g, "&quot;");
-  return s;
-}
-var url = window.content.location.href;
-var title = window.content.document.title;
-var txt = AS_HTML ? 
-  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
-  title + "\n" + url;
-var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
-                .getService(Ci.nsIClipboardHelper);
-clipboard.copyString(txt);
-</code></pre>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -485,6 +462,10 @@ clipboard.copyString(txt);
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/12/01/university-difference/">美国大学与中国大学有什么不同？</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/11/27/lifespan-of-chinese/">中国人的寿命与我</a>
       </li>
     
@@ -520,15 +501,11 @@ clipboard.copyString(txt);
         <a href="/blog/2013/11/21/what-causes-hemorrhoids/">痔疮高发的原因</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/11/20/observe-us-science-education/">Test and Lecture</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (1)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (19)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (4)</a></li><li><a href='/blog/categories/评论'>评论 (3)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (1)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (1)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (19)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (2)</a></li><li><a href='/blog/categories/设计'>设计 (4)</a></li><li><a href='/blog/categories/评论'>评论 (4)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
