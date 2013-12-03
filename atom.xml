@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2013-12-01T14:12:23-05:00</updated>
+  <updated>2013-12-03T13:48:10-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[对教法课的反思]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/12/03/reflection-of-methods-class/"/>
+    <updated>2013-12-03T12:48:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/12/03/reflection-of-methods-class</id>
+    <content type="html"><![CDATA[<p>今天是本学期的最后一天。在Dr. Luft课堂上，同学们每个人5分钟报告了自己的收获，然后师生提问和评论。同学们的收获是很多元的，涉及到师生关系、与指导教师关系、科学探究、教育观念、教师角色和行为、学科知识、学生差异、教学活动、课堂提问、师生互动、教学限制、考试压力等等，或者抽象或者具体。在报告的过程中，学生顾虑到使用探究会消耗更多的时间，Dr. Luft还组织了讨论，让每个小组列出5种简单的不需要消耗多少时间的探究任务，此外还反复督促大家思考，整个学期中自己发生的改变。</p>
+
+<p>课堂上我一直下思考，如果我是一个师范生，我会如何设定自己的理念，承担什么样的教师角色和行为。我听到了更多来自学生实践经验的声音，那么教育研究的声音呢？教育研究与实践是否吻合？那些地方不吻合？如何解释这些不吻合的地方？是否有必要在课程中增添关于教师如何学习的知识？</p>
+
+<p>还有一个问题就是中国和美国的教法课有哪些不同？这些问题会引领我更深入的思考和行动。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[美国大学与中国大学有什么不同？]]></title>
@@ -552,30 +565,6 @@ Paper exam
 <p>How can I participate? I asked. Just let people know this fact and then we can change this fact and statistic. Isn&#8217;t it a good idea? College students may not give money directly, but they can collect data and spread the fact all over the world.</p>
 
 <p>Although the program is funded by Farm Journal Foundation, I guess volunteer college students played a role in the Survey and HungerU Tour in different countries. This is the responsibility that our college students are able to and should shoulder.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
-    <updated>2013-11-08T22:14:00-05:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
-    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can&#8217;t start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
-
-<p>I tried many times and finially I got it back to normal. The solving process:</p>
-
-<pre><code>#login with your username and password
-cd Downloads # where my dirver is
-sudo sh amd-driver-64.run
-setup it (always select the first selection and ok)
-#restart
-</code></pre>
-
-<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
-
-<p>The problem I have to solve:<br/>
-1.  How to stop the update for the graphic driver?<br/>
-2.  How to recover my ubuntu quickly?</p>
 ]]></content>
   </entry>
   
