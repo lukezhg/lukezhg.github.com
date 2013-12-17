@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 思辨 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/思辨/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2013-12-16T23:34:32-05:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[学问]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/12/16/xue-wen/"/>
+    <updated>2013-12-16T13:04:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/12/16/xue-wen</id>
+    <content type="html"><![CDATA[<p>学问学问，有问耐学。问之而学之，学之而问之。学而生问，问而生学。故无问则无学。无学则无问。问为学之始，学为问之故。</p>
+
+<p>问天地之道，学万物之法。问宇宙之始，窥沧海之变。问处世之道，学入世之法。问世事之变，学为人之道。故有大问而后又大学，有大学而后有质问。</p>
+]]></content>
+  </entry>
+  
+</feed>
