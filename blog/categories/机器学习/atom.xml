@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 机器学习 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/机器学习/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-02-06T09:46:00-05:00</updated>
+  <updated>2014-02-07T10:51:43-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -20,7 +20,73 @@
     <id>http://zhangchunlei.com/blog/2013/11/03/machine-learning-and-octave</id>
     <content type="html"><![CDATA[<p>Recently I joined NG' class of <a href="https://class.coursera.org/ml-004/class/index">Machine Learning</a></p>
 
-<p>I start to learn programing with <a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
+<p>Summay of the main topics:</p>
+
+<h3>Suprevised Learning</h3>
+
+<p>linear regression<br/>
+通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1,x2，扩张后可以包含x1,x2,x1*x2,x1<sup>2,x2<sup>2,</sup></sup> 这样就可以克服bias的可能性。</p>
+
+<p>logistic regression<br/>
+当y是二分变量时，比如根据肿瘤的形状估测其是否为恶性肿瘤。这个时候就要使用logistic regression了。思路与linear regression一样，当目标是做出真假的判断。实现的方法是利用logistic curve做变换，转变为linear regression。</p>
+
+<p>neural networks<br/>
+模拟神经元的作用模式，设置隐藏层，通过估算中间参数来达到预测的目的。</p>
+
+<p>SVM<br/>
+向量机适用于自变量X不是特比多时，如果有上万个自变量，那么这个时候SVM会很困难。向量机的核函数可以有多种选择，可以是线性的，也可以是gaussain kernel等。</p>
+
+<h3>Unsupervised Learning</h3>
+
+<p>K-means<br/>
+聚类分析</p>
+
+<p>PCA<br/>
+主成分分析</p>
+
+<p>Anomaly detection<br/>
+异常识别</p>
+
+<h3>Special applications/topics</h3>
+
+<p>Recommender systems<br/>
+例如根据用户对影片的评价，向用户推荐合适的影片。这种情景需要循环估算影片参数和用户参数，进而给出合适的推荐。</p>
+
+<p>large scale machine learning<br/>
+通过算法上技巧将巨型运算分解，如分解到多个计算机，或者分解为多个步骤的小运算。</p>
+
+<h3>Advice on building a machine learning system</h3>
+
+<p>Bias/variance<br/>
+参考Ng的两张幻灯片。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/highbias.png" alt="high bias" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/highvariance.png" alt="high variance" /></p>
+
+<p>regularization<br/>
+通过regularizations参数（如C值，lamda等）的控制，达到既不bias，也不overfit的目的。</p>
+
+<p>deciding what to work on next<br/>
+从简单开始，不断评估，逐渐优化，寻求正解。</p>
+
+<p>evaluation of learning algorithms</p>
+
+<p>learning curves</p>
+
+<p>error analysis<br/>
+I类错误：假阴性，明明是，结果预测说不是。<br/>
+II类错误：假阳性，明明不是，结果预测说是。<br/>
+Precision=truePositive/(truePositive+falsePositive)<br/>
+Recall=truePositive/(truePositive+falseNegtive)<br/>
+F score=2<em>P</em>R/(P+R)<br/>
+通过F值可以在两者之间得到平衡，F值越大两者兼顾越好。</p>
+
+<p>ceiling analysis</p>
+
+<p>picture notes: G:\myfile\img\machinelearning</p>
+
+<h3>Octave basics</h3>
+
+<p><a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
 
 <p>Here is the Basic Commands from Ng's class notes</p>
 
@@ -120,7 +186,7 @@ end;
 pwd  
 ls  
 
-addpath('C:users\ang\Desktop') % octave search path  
+addpath('C:users\ang\Desktop') % add octave search path  
 </code></pre>
 
 ]]></content>
