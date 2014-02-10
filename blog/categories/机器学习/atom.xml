@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 机器学习 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/机器学习/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-02-07T10:51:43-05:00</updated>
+  <updated>2014-02-09T20:12:43-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -25,7 +25,7 @@
 <h3>Suprevised Learning</h3>
 
 <p>linear regression<br/>
-通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1,x2，扩张后可以包含x1,x2,x1*x2,x1<sup>2,x2<sup>2,</sup></sup> 这样就可以克服bias的可能性。</p>
+通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1, x2，扩张后可以包含x1, x2, x1*x2, x1<sup>2</sup> ,x2<sup>2,</sup> 这样就可以克服bias的可能性。</p>
 
 <p>logistic regression<br/>
 当y是二分变量时，比如根据肿瘤的形状估测其是否为恶性肿瘤。这个时候就要使用logistic regression了。思路与linear regression一样，当目标是做出真假的判断。实现的方法是利用logistic curve做变换，转变为linear regression。</p>
