@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: IRT | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/irt/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2014-02-18T14:57:11-05:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Play with Wingen and BILOG]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog/"/>
+    <updated>2014-02-18T14:39:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog</id>
+    <content type="html"><![CDATA[<p>如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：<br/>
+第一步：产生答题者<br/>
+第二步：产生题目<br/>
+第三部：产生答题者对题目的作答结果<br/>
+你只负责设置参数就可以，其他的程序帮你完成，设置第一步和第二部参数的时候，可以查看图形效果，进而作进一步的调整。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/wingen.png" alt="wingen" /></p>
+
+<p>接下来可以利用BILOG对你的数据进行模型设定和估算<br/>
+实际上BILOG可以直接使用你用wingen产生的数据，因为都是纯文本，只是你需要建立自己的BLM文件，也并不困难，下图就是在例子的基础上修盖的BLM文件。只是要注意答题者数、题目数要与数据一致，此外文件中有一句要注意 （1A1,9x,30A1），这句表示的是数据的格式，意思是第一列为标号，后面有9列空行，再后面有30列的数据（也就是每个答题者对30到题目的作答情况），这个格式一定要与数据相互吻合。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bilog.png" alt="bilog" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IRT learning resources]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/"/>
+    <updated>2014-01-22T09:56:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources</id>
+    <content type="html"><![CDATA[<p>There are a lot learing resources for IRT(Item Response Theory). But the most useful onese are those fit you well.</p>
+
+<p>Here is a list which helped me a lot.<br/>
+Books:<br/>
+The Basics of Item Response Theory: Frank B. Baker: 9781886047037: <a href="http://www.amazon.com/The-Basics-Item-Response-Theory/dp/1886047030">Amazon.com: Books-link</a><br/>
+Item Response Theory: Parameter Estimation Techniques, Second Edition (Statistics: A Series of Textbooks and Monographs): Frank B. Baker, Seock-Ho Kim: 9780824758257: <a href="http://www.amazon.com/Item-Response-Theory-Estimation-Techniques/dp/0824758250">Amazon.com: Books link</a></p>
+
+<p>Vedios:<br/>
+<a href="https://www.youtube.com/watch?v=SrdbllMYq8M">A Conceptual Introduction to Item Response - YouTube</a></p>
+
+<p>Pdf Documents:<br/>
+A visual guide to item response theory <a href="http://www.metheval.uni-jena.de/irt/VisualIRT.pdf">VisualIRT.pdf</a><br/>
+<a href="http://echo.edres.org:8080/scripts/cat/genicc.asp">IRT mini-tutorial interactive</a><br/>
+<a href="http://echo.edres.org:8080/irt/baker/final.pdf">The Basics of Item Response Theory (by Frank Baker)</a></p>
+
+<p>Slides:<br/>
+<a href="http://www.slideshare.net/akdhamija/irt-dipr-1">IRT - Item response Theory</a><br/>
+<a href="http://wenku.baidu.com/view/a4e5c8a6dd3383c4bb4cd28a.html">基于项目反映理论_宋慧鹏</a></p>
+
+<p>Websites:<br/>
+<a href="http://echo.edres.org:8080/irt/">Item Response Theory GOOD</a><br/>
+<a href="http://luna.cas.usf.edu/~mbrannic/files/pmet/irt.htm">Item Response Theory cas.usf.edu</a></p>
+
+<p>Softwares:<br/>
+<a href="http://www.ssicentral.com/irt/index.html">SSI - Scientific Software International, Inc.</a><br/>
+<a href="http://www.umass.edu/remp/software/simcata/wingen/homeF.html">WinGen: Windows software that Generates IRT parameters and item responses</a></p>
+]]></content>
+  </entry>
+  
+</feed>
