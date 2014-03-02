@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 诗词 | Chunlei's Blog]]></title>
-  <link href="http://zhangchunlei.com/blog/categories/诗词/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 诗词曲 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/诗词曲/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-02-26T11:23:07-05:00</updated>
+  <updated>2014-03-02T10:15:34-05:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[刷牙歌]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/03/02/song-of-brushing-teeth/"/>
+    <updated>2014-03-02T08:24:00-05:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/03/02/song-of-brushing-teeth</id>
+    <content type="html"><![CDATA[<p>作词——chunlei</p>
+
+<p>好好的牙呀，好好刷。</p>
+
+<p>轻轻刷，慢慢刷，</p>
+
+<p>细细的刷呀，</p>
+
+<p>刷出好好的牙。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[雾云山]]></title>
