@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Sometimes when something becomes your job, even you love it, when you have to do if before a deadline, you tend to lose the fun you had before. &hellip;">
+  <meta name="description" content="Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time. Today, I want to record what I had &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,96 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/">TMUX and VIM in Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-08T13:56:00-05:00" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
+
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
+
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
+
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
+
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
+
+<p>That is it.</p>
+
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
+
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press &#8216;v&#8217; in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>Isn&#8217;t easy. But it takes time to get used to them and operate unconsioucely.</p>
+
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -497,52 +587,6 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/27/dont-alienate-disabled-people/">Don&#8217;t Alienate Disabled People</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-27T09:46:00-04:00" pubdate data-updated="true">Oct 27<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/27/dont-alienate-disabled-people/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb &#8211; who was born deaf. She showed what is possible through family support and self-belief, and proves that what is assumed about you and what you can actually achieve don&#8217;t always match up. In the United States, two-thirds of hearing-impaired people do not complete high school.</p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/uKKpjvPd6Xo" frameborder="0" allowfullscreen></iframe>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/10/27/dont-alienate-disabled-people/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/11/">&larr; Older</a>
@@ -590,6 +634,10 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/22/the-gesture-of-reading/">由读书的姿势想到的</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/21/weibo-201307-201403/">2013年7月到2014年3月微博摘录</a>
       </li>
     
@@ -625,15 +673,11 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
         <a href="/blog/2014/02/06/train-trip-with-a-babe/">一个人如何带宝宝坐火车</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/01/29/happy-spring-festival/">春节快乐健康</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (3)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/思辨'>思辨 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (20)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (8)</a></li><li><a href='/blog/categories/设计'>设计 (4)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (3)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (3)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (3)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/思辨'>思辨 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (20)</a></li><li><a href='/blog/categories/日志'>日志 (11)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (8)</a></li><li><a href='/blog/categories/设计'>设计 (4)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (3)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
