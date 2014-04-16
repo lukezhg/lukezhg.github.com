@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="发布博客的方法大体上可以分为三类： 利用本地软件发布博客。比如使用windows live writer等安装在本地电脑上的软件来发博客。这种方法在撰写长博客的时候会非常稳定，不会受到网络的干扰，即便突然断线或者离线，也可以照写不误，同时留有本地备份。但是缺点是并不是所有博客都支持离线发布， &hellip;">
+  <meta name="description" content="在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,47 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/">用flash制作试题交互动画项目</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-17T00:00:00-05:00" pubdate data-updated="true">Dec 17<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><p>在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件，让稍微动flash甚至是一点都不同flash的老师也能修改并展示自己的试题呢？当然是可以的，但是这个试题交互动画的设计应该数据与源文件分离的，也就是老师不需要修改源文件和代码，只需要修改数据文件就可以。</p>
+<p>制作的思路：<br /> 1、建立界面fla原文件（test.fla）<br /> 2、建立代码文件(xmlloader.as)<br /> 3、建立试题数据xml文件(sample.xml)</p>
+<p>使用代码加载试题数据xml文件，并在动态文本中展示试题，学习者点击选项按钮以及导航按钮参与互动。互动可以分为两种模式，一种是练习模式，一种是测验模式，用户可以自己选择。此外为了使得该动画可以在网站上调用，还增加一个输入文本框，用于导入特定位置的试题数据。</p>
+<p>发布：<br /> 最有作品提供全部文件，并以CC协议中的（署名 非商业使用 相同方式共享）<img src="http://creativecommons.org/icons/by/standard.gif" border="0" alt="by" /> <img src="http://creativecommons.org/icons/nc/standard.gif" border="0" alt="nc" /> <img src="http://creativecommons.org/icons/sa/standard.gif" border="0" alt="nd" />发布。</p></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -272,44 +313,6 @@ google.setOnLoadCallback(function() {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/10/poem-rou-guang/">柔光</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-10T00:00:00-05:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/12/10/poem-rou-guang/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><div align="center"><big><big><big>绿油油的天啊<br /><br />波光荡漾<br /><br />小河里的水啊<br /><br />欢快的流淌<br /><br /><br />是谁让我倾心向往<br /><br />是……<br /><br />是希望，是梦想<br /><br />是照亮你我心底的那缕柔光<br /></big></big></big></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/30/">&larr; Older</a>
@@ -339,6 +342,10 @@ google.setOnLoadCallback(function() {
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/15/ecojustice-work/">Ecojustice work</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/04/14/repeated-measures-anova/">Repeated Measures ANOVA</a>
@@ -376,10 +383,6 @@ google.setOnLoadCallback(function() {
         <a href="/blog/2014/02/22/one-people-one-book/">一人一本书</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/02/18/play-with-wingen-and-bilog/">Play with Wingen and BILOG</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -397,11 +400,12 @@ google.setOnLoadCallback(function() {
 <a style="font-size: 90%" href="/tag/ocw/">OCW</a>
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
-<a style="font-size: 131%" href="/tag/uga/">UGA</a>
+<a style="font-size: 132%" href="/tag/uga/">UGA</a>
 <a style="font-size: 104%" href="/tag/ubuntu/">Ubuntu</a>
 <a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
 <a style="font-size: 104%" href="/tag/design/">design</a>
 <a style="font-size: 109%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
 <a style="font-size: 165%" href="/tag/en/">en</a>
 <a style="font-size: 90%" href="/tag/esci/">esci</a>
 <a style="font-size: 90%" href="/tag/github/">github</a>
