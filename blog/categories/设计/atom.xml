@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 设计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/设计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-04-19T15:43:06-04:00</updated>
+  <updated>2014-04-19T18:36:24-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Chinese Puzzle Pot design]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design/"/>
+    <updated>2014-04-19T14:46:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design</id>
+    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything<a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">Class</a></p>
+
+<p>They showed a pot that can put in water by a hole at the bottom, and no water come out. It works well.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-photo.png" alt="Chinese puzzle pot photo" /></p>
+
+<p>The following is one possible inner structure design in my mind.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-design.png" alt="Chinese puzzle pot design" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Design for better future]]></title>
@@ -73,21 +88,6 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/laptopstand.png" alt="laptop stand" /></p>
 
 <p>You can alway make a change if you want to. And small change can make a big difference sometimes.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[设计Chindogu锻炼创造力]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/05/15/Chindogu-designed-by-me/"/>
-    <updated>2013-05-15T19:33:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/05/15/Chindogu-designed-by-me</id>
-    <content type="html"><![CDATA[<p>最近参加了一门网络课程，是关于创造力的，课程活动要求参与者设计一些chindogu，这个词源于日本，是指一些没有实际用途但是有趣的设计产品。于是我设计了以下作品： <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/beauty-in-your-cup.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hourglass-bath.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/couple-zipper-umbrella.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/lovers-dancing-shoe.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hand-tap-1.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/music-tap-1.png" alt="beauty-in-your-cup" /></p>
 ]]></content>
   </entry>
   
