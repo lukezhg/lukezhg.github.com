@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 设计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/设计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-04-19T18:36:24-04:00</updated>
+  <updated>2014-04-22T00:06:01-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,7 +18,7 @@
     <link href="http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design/"/>
     <updated>2014-04-19T14:46:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design</id>
-    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything<a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">Class</a></p>
+    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything <a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">link here</a></p>
 
 <p>They showed a pot that can put in water by a hole at the bottom, and no water come out. It works well.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-photo.png" alt="Chinese puzzle pot photo" /></p>

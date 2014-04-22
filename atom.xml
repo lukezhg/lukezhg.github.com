@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-04-19T18:36:24-04:00</updated>
+  <updated>2014-04-22T00:06:01-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,7 +14,58 @@
 
   
   <entry>
-    <title type="html"><![CDATA[How to generate electricity]]></title>
+    <title type="html"><![CDATA[how to use R]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/"/>
+    <updated>2014-04-21T23:35:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/04/21/how-to-use-r</id>
+    <content type="html"><![CDATA[<p>a &lt;- 1:10
+b &lt;- c(1,3,4,5,8,9,11,14,15,18)
+cbind(a,b) #
+rbind(a,b) #
+length(a) #
+class(a)
+as.character()
+as.logical()
+as.numeric()
+m &lt;- matrix(a,nrow=2,ncol=5)
+dim(m) #[1] 2 5
+attributes(m) $dim [1] 2 5
+m &lt;- 1:10
+dim(m) &lt; c(2,5) #
+f &lt;- factor(&#8220;yes&#8221;,&#8221;no&#8221;,&#8221;yes&#8221;,&#8221;yes&#8221;)
+table(f) # yes 3 no 1
+x &lt;- c()
+x &lt;- c(x,1)
+mean() #求平均值
+cor(a,b) #求相关系数
+is.na()
+is.nan()
+read.table()
+read.cvs()
+names()
+x[!is.na(x)] # 去除缺失的数据
+data &lt;- data.frame(id=1:10,height=170:180)
+data[&#8220;id&#8221;] #返回局部data.frame
+data[&#8220;id&#8221;][!is.na(data[&#8220;height&#8221;])] #返回height无缺失的id
+data[[id]] #返回vector
+paste(&#8220;00&#8221;,&#8221;1&#8221;,&#8221;.csv&#8221;,sep=&#8221;&#8220;) # 001.csv
+paste(a,collapse=&#8221;&#8220;)
+for (i in 1:length(id)){</p>
+
+<pre><code>s &lt;- as.character(id[i])
+spre &lt;- paste(rep("0",3-nchar(s)),collapse="") # use collapse join vector
+fn &lt;- paste(directory,"/",spre,s,".csv",sep="") # use sep to join string
+data &lt;- read.csv(fn)
+</code></pre>
+
+<p>}</p>
+
+<p>if(length(x)>0){print(x)}else{}</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[不同发电机的原理]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/19/how-to-generate-electricity/"/>
     <updated>2014-04-19T17:25:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/19/how-to-generate-electricity</id>
@@ -34,7 +85,7 @@
 
 <p>热电机<br/>
 其原理是热电效应，即不同的金属导体（或半导体）具有不同的自由电子密度，当两种不同的金属导体相互接触时，在接触面上的电子就会扩散以消除电子密度的差异。而电子的扩散速率与接触区的温度成正比，所以只要维持两金属间的温差，就能使电子持续扩散，在两块金属的另两个端点形成稳定的电压。由此产生的电压通常每开尔文温差只有几微伏。如能适当设计和组合就可以产生工作电压。<br/>
-![Seebeck Effect](https://raw.github.com/lukezhg/Freyja/master/seebeck_effect.png）</p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/seebeck-effect.png" alt="Seebeck Effect" /></p>
 
 <p>太阳能发电<br/>
 其原理主要依赖于光电效应。<br/>
@@ -53,7 +104,7 @@ Solar cell - Wikipedia：http://en.wikipedia.org/wiki/Solar_cell</p>
     <link href="http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design/"/>
     <updated>2014-04-19T14:46:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design</id>
-    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything<a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">Class</a></p>
+    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything <a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">link here</a></p>
 
 <p>They showed a pot that can put in water by a hole at the bottom, and no water come out. It works well.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-photo.png" alt="Chinese puzzle pot photo" /></p>
@@ -104,7 +155,7 @@ memory banking</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Repeated Measures ANOVA]]></title>
+    <title type="html"><![CDATA[多次重测数据的方差分析]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/14/repeated-measures-anova/"/>
     <updated>2014-04-14T13:57:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/14/repeated-measures-anova</id>
@@ -675,40 +726,6 @@ C 摸高</p>
 2 是否可测量，与经典测量理论相联系<br/>
 3 群体的这种能力的分布是否为正态分布<br/>
 4 是否能解决不同尺子测量结果比较的问题</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[IRT learning resources]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/"/>
-    <updated>2014-01-22T09:56:00-05:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources</id>
-    <content type="html"><![CDATA[<p>There are a lot learing resources for IRT(Item Response Theory). But the most useful onese are those fit you well.</p>
-
-<p>Here is a list which helped me a lot.<br/>
-Books:<br/>
-The Basics of Item Response Theory: Frank B. Baker: 9781886047037: <a href="http://www.amazon.com/The-Basics-Item-Response-Theory/dp/1886047030">Amazon.com: Books-link</a><br/>
-Item Response Theory: Parameter Estimation Techniques, Second Edition (Statistics: A Series of Textbooks and Monographs): Frank B. Baker, Seock-Ho Kim: 9780824758257: <a href="http://www.amazon.com/Item-Response-Theory-Estimation-Techniques/dp/0824758250">Amazon.com: Books link</a></p>
-
-<p>Vedios:<br/>
-<a href="https://www.youtube.com/watch?v=SrdbllMYq8M">A Conceptual Introduction to Item Response - YouTube</a></p>
-
-<p>Pdf Documents:<br/>
-A visual guide to item response theory <a href="http://www.metheval.uni-jena.de/irt/VisualIRT.pdf">VisualIRT.pdf</a><br/>
-<a href="http://echo.edres.org:8080/scripts/cat/genicc.asp">IRT mini-tutorial interactive</a><br/>
-<a href="http://echo.edres.org:8080/irt/baker/final.pdf">The Basics of Item Response Theory (by Frank Baker)</a></p>
-
-<p>Slides:<br/>
-<a href="http://www.slideshare.net/akdhamija/irt-dipr-1">IRT - Item response Theory</a><br/>
-<a href="http://wenku.baidu.com/view/a4e5c8a6dd3383c4bb4cd28a.html">基于项目反映理论_宋慧鹏</a></p>
-
-<p>Websites:<br/>
-<a href="http://echo.edres.org:8080/irt/">Item Response Theory GOOD</a><br/>
-<a href="http://luna.cas.usf.edu/~mbrannic/files/pmet/irt.htm">Item Response Theory cas.usf.edu</a></p>
-
-<p>Softwares:<br/>
-<a href="http://www.ssicentral.com/irt/index.html">SSI - Scientific Software International, Inc.</a><br/>
-<a href="http://www.umass.edu/remp/software/simcata/wingen/homeF.html">WinGen: Windows software that Generates IRT parameters and item responses</a></p>
 ]]></content>
   </entry>
   
