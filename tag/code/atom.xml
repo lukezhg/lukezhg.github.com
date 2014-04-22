@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: code | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/code/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2014-04-22T00:11:58-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[how to use R]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/"/>
+    <updated>2014-04-21T23:35:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/04/21/how-to-use-r</id>
+    <content type="html"><![CDATA[<p><code>
+a &lt;- 1:10
+b &lt;- c(1,3,4,5,8,9,11,14,15,18)
+cbind(a,b) #
+rbind(a,b) #
+length(a) #
+class(a)
+as.character()
+as.logical()
+as.numeric()
+m &lt;- matrix(a,nrow=2,ncol=5)
+dim(m) #[1] 2 5
+attributes(m) $dim [1] 2 5
+m &lt;- 1:10
+dim(m) &lt; c(2,5) #
+f &lt;- factor("yes","no","yes","yes")
+table(f) # yes 3 no 1
+x &lt;- c()
+x &lt;- c(x,1)
+mean() #求平均值
+cor(a,b) #求相关系数
+is.na()
+is.nan()
+read.table()
+read.cvs()
+names()
+x[!is.na(x)] # 去除缺失的数据
+data &lt;- data.frame(id=1:10,height=170:180)
+data["id"] #返回局部data.frame
+data["id"][!is.na(data["height"])] #返回height无缺失的id
+data[[id]] #返回vector
+paste("00","1",".csv",sep="") # 001.csv
+paste(a,collapse="")
+for (i in 1:length(id)){</p>
+
+<pre><code>s &lt;- as.character(id[i])
+spre &lt;- paste(rep("0",3-nchar(s)),collapse="") # use collapse join vector
+fn &lt;- paste(directory,"/",spre,s,".csv",sep="") # use sep to join string
+data &lt;- read.csv(fn)
+</code></pre>
+
+<p>}</p>
+
+<p>if(length(x)>0){print(x)}else{}
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>
