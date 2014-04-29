@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 科普 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/科普/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-04-22T00:16:51-04:00</updated>
+  <updated>2014-04-29T11:43:45-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -34,7 +34,7 @@
 
 <p>热电机<br/>
 其原理是热电效应，即不同的金属导体（或半导体）具有不同的自由电子密度，当两种不同的金属导体相互接触时，在接触面上的电子就会扩散以消除电子密度的差异。而电子的扩散速率与接触区的温度成正比，所以只要维持两金属间的温差，就能使电子持续扩散，在两块金属的另两个端点形成稳定的电压。由此产生的电压通常每开尔文温差只有几微伏。如能适当设计和组合就可以产生工作电压。<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/seebeck-effect.png" alt="Seebeck Effect" /></p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/seebeck_effect.png" alt="Seebeck Effect" /></p>
 
 <p>太阳能发电<br/>
 其原理主要依赖于光电效应。<br/>

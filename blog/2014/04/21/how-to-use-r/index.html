@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="a <- 1:10
+  <meta name="description" content="##week2
+a <- 1:10
 b <- c(1,3,4,5,8,9,11,14,15,18)
 cbind(a,b) #
 rbind(a,b) #
@@ -18,7 +19,7 @@ class(a)
 as.character()
 as.logical()
 as.numeric()
-m <- matrix(a,nrow &hellip;">
+m <- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -152,6 +153,7 @@ google.setOnLoadCallback(function() {
 
 
 <div class="entry-content"><pre><code>
+##week2
 a <- 1:10
 b <- c(1,3,4,5,8,9,11,14,15,18)
 cbind(a,b) #
@@ -192,7 +194,111 @@ for (i in 1:length(id)){
 }
 
 if(length(x)>0){print(x)}else{}
+
+##Week3
+x <- list(a=1:5,b=rnorm(10))
+lapply(x,mean)#$a[1] 3  $b[1] 0.03937816
+如果x不是一个list,那么它将被自动转换成list,相当于使用as.list()函数
+x <- list(a=matrix(1:4,2,2),b=matrix(1:6,3,2))
+lapply(x,function(elt)elt[,1]) #$a[1] 1 2  $b[1] 1 2 3
+sapply(x,mean) #会自动简化结果，返回一个vector或者matrix，不能简化返回list
+x <- matrix(rnorm(200),20,10)
+apply(x,2,mean) #返回10列的均值
+apply(x,1,sum) #返回每行的总和共20个
+a <- array(rnorm(2*2*10),c(2,2,10)) #三维数组
+apply(a,c(1,2),mean)
+          [,1]      [,2]
+[1,] 0.1888774 0.5517366
+[2,] 0.2667046 0.2412767
+
+str() #Compactly Display the Structure of an Arbitrary R Object
+str(tapply)
+> x <- c(rnorm(10),runif(10),rnorm(10,1))
+> f <-gl(3,10) #生成标签 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3
+> tapply(x,f,mean) #具有相同标签的数值的平均值
+with(mtcars, tapply(mpg, cyl, mean))# mtcars is a data.frame with cyl and mpg
+
+> split(x,f) #利用标签将list进行拆分
+> s <- split(airdata, airdata$Month)
+> lapply(s,function(x) colMeans(x[,c("Ozone","Solar.R","Wind")]))
+split(x,list(f1,f2),drop=TRUE) # empty levels can be dropped
+
+> mapply(rep,1:4,4:1)
+[[1]]
+[1] 1 1 1 1
+
+[[2]]
+[1] 2 2 2
+
+[[3]]
+[1] 3 3
+
+[[4]]
+[1] 4
+
+traceback() # print out where error occurs,else do nothing
+debug() # step through one line at a time
+browser() #suspend the execution wherever called and put it in debug mode
+trace() # insert debug code in specific place
+
+#Play with the iris data
+library(datasets)
+data(iris)
+
+#Play with $
+> x <- makeCacheMatrix()
+> x
+$set
+function (y) 
+{
+    x <<- y
+    inv <<- NULL
+}
+
+$get
+function () 
+x
+
+$setinverse
+function (inverse) 
+inv <<- inverse
+
+$getinverse
+function () 
+inv
+
+> x$set(matrix(rnorm(9),3,3))
+> x$get()
+
+> x$set(a)
+> x$get()
+            [,1]      [,2]       [,3]
+[1,] -0.50184759 -0.751659 -2.1276852
+[2,]  0.37466264 -1.448643  1.1807655
+[3,] -0.06093845  0.740338 -0.8508723
+> cacheSolve(x)
+           [,1]       [,2]       [,3]
+[1,] -0.4668678  2.8847043  5.1705844
+[2,] -0.3214999 -0.3872940  0.2664879
+[3,] -0.2462983 -0.5435808 -1.3137063
+
+#week4
+str(str)# see the structure of a object
+m <- matrix(rnorm(100),10,10)
+str(m)
+str(lm)
+str(ls)
+x <- rnorm(100,2,4)
+summary(x)
+str(x)
+
+#作图
+hist(rnorm(1000,2,4))
+plot(x,y)
+
 </code></pre>
+
+
 
 </div>
 
@@ -248,6 +354,8 @@ if(length(x)>0){print(x)}else{}
       
         <a class="basic-alignment left" href="/blog/2014/04/19/how-to-generate-electricity/" title="Previous Post: 不同发电机的原理">&laquo; 不同发电机的原理</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2014/04/29/lost-in-local-extrema/" title="Next Post: Lost in local extrema">Lost in local extrema &raquo;</a>
       
     </p>
   </footer>
@@ -316,6 +424,10 @@ if(length(x)>0){print(x)}else{}
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/29/lost-in-local-extrema/">Lost in local extrema</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/21/how-to-use-r/">how to use R</a>
       </li>
     
@@ -349,10 +461,6 @@ if(length(x)>0){print(x)}else{}
     
       <li class="post">
         <a href="/blog/2014/03/21/weibo-201307-201403/">2013年7月到2014年3月微博摘录</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/02/song-of-brushing-teeth/">刷牙歌</a>
       </li>
     
   </ul>
