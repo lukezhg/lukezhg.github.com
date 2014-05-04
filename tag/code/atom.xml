@@ -4,7 +4,7 @@
   <title><![CDATA[tags: code | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/code/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-04-29T11:43:45-04:00</updated>
+  <updated>2014-05-04T11:26:31-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -161,6 +161,79 @@ str(x)
 #作图
 hist(rnorm(1000,2,4))
 plot(x,y)
+
+#拟合
+> set.seed(20)  #进而可以再次产生同样的随机数 方便别人重复模拟
+> x <- rnorm(100)
+> e <-rnorm(100,0,2)
+> y <- 0.5+2*x+e
+> sumary(y)
+
+#评估运算时间 user time（cpu 时间消耗）elipsed time(流逝壁钟时间)
+> system.time(readLines("http://www.jhsph.edu"))
+
+#就
+make.Negloglik <- function(data, fixed=c(FALSE,FALSE)){
+    params<- fixed
+    function(p){
+        params[!fixed] <- p
+        mu <- params[1]
+        sigma <- params[2]
+        a <- -0.5*length(data)*log(2*pi*sigma^2)
+        b <- -0.5*sum((data-mu)^2)/(sigma^2)
+        -(a+b)
+    }
+}
+set.seed(1)
+normals <- rnorm(100,1,2)
+nLL <- make.Negloglik(normals)
+optim(c(mu=0,sigma=1),nLL)$par
+
+> # Fixing sigma=2
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> optimize(nLL,c(-1,3))$minimum
+[1] 1.217775
+> optimize(nLL,c(-1,2))$minimum
+[1] 1.217775
+> #Fixing u=1
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> optimize(nLL,c(1e-6,10))$minimum
+[1] 1.800596
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> x <- seq(1.7,1.9,len=100)
+> y <- sapply(x,nLL)
+> plot (x,exp(-(y-min(y))),type="l")
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> x <- seq(0.5,1.5,len=100)
+> y <-sapply(x,nLL)
+> plot(x,exp(-(y-min(y))),type="l")
+
+
+Assignment 3
+#在R中有的时候表达方式是不一样的，比如
+引用某个变量的子变量用
+time$year #而不是time.year
+
+表示数组相乘用 
+%*%
+
+判断是否包含 
+"a" %in% c("a","b","c")
+
+使用R的时候我自己经常犯的错误
+该使用[]的时候错误的使用了（），特别是在操作data.frame的时候
+该使用[[]]错误的使用了[]，前者可以变为向量，后者还是data.frame
+忘记了使用%%进行
+
+如何使用Order
+> (ii <- order(x <- c(1,1,3:1,1:4,3), y <- c(9,9:1), z <- c(2,1:9)))
+ [1]  6  5  2  1  7  4 10  8  3  9
+ > rbind(x, y, z)[,ii] # shows the reordering (ties via 2nd & 3rd arg)
+  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+x    1    1    1    1    2    2    3    3    3     4
+y    5    6    9    9    4    7    1    3    8     2
+z    5    4    1    2    6    3    9    7    2     8
+
 
 </code></pre>
 

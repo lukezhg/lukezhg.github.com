@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="I love this place, the library at the second floor in Aderhold Building. I love this table, which is not too big but just enough. This love can guide &hellip;">
+  <meta name="description" content="I watched a TED recently that Sarah Jones(a actress) played the role of 11 people from different cultures to response to random questions asked by &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,51 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/04/why-chinese-say-maybe-and-but/">Why Chinese Say Maybe and But</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-04T10:52:00-04:00" pubdate data-updated="true">May 4<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/05/04/why-chinese-say-maybe-and-but/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I watched a TED recently that Sarah Jones(a actress) played the role of 11 people from different cultures to response to random questions asked by TED audiences.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/YlmZkY1uqXM" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I was impressed by the Chinese American woman she played who always repeat &#8220;BUT&#8221; and &#8220;Maybe&#8221;. It heard like a typical Chinese speaker. I began to think why Chinese people tend to say these two words again and again. One reason is that they are not good at express themselves. The second reason might be they are not confident; they feel insecurity. She said that at least the food should not be poison. As you know, food, sex and sacurity are the basic needs of human according to Maslow&#8217;s hierarchy of needs.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Maslow-needs.png" alt="Maslow's hierarchy of needs" /> <br/>
+Why Chinese people are lack of sacurity. Well, it is a long story. To make it brief&#8212;it is becuase poisonous food, polluted air and water, dominated culture and so on. A survey report that many rich people in China want to imgrant to other country such as US, Canada. Some Corrupt officials want to have orther country&#8217;s identity because they want to escape from the punishment. There also a lot of people want to go US, becuase they worry about the nature and social environment, they worry about the education and healthy of their children.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -335,6 +380,79 @@ str(x)
 hist(rnorm(1000,2,4))
 plot(x,y)
 
+#拟合
+> set.seed(20)  #进而可以再次产生同样的随机数 方便别人重复模拟
+> x <- rnorm(100)
+> e <-rnorm(100,0,2)
+> y <- 0.5+2*x+e
+> sumary(y)
+
+#评估运算时间 user time（cpu 时间消耗）elipsed time(流逝壁钟时间)
+> system.time(readLines("http://www.jhsph.edu"))
+
+#就
+make.Negloglik <- function(data, fixed=c(FALSE,FALSE)){
+    params<- fixed
+    function(p){
+        params[!fixed] <- p
+        mu <- params[1]
+        sigma <- params[2]
+        a <- -0.5*length(data)*log(2*pi*sigma^2)
+        b <- -0.5*sum((data-mu)^2)/(sigma^2)
+        -(a+b)
+    }
+}
+set.seed(1)
+normals <- rnorm(100,1,2)
+nLL <- make.Negloglik(normals)
+optim(c(mu=0,sigma=1),nLL)$par
+
+> # Fixing sigma=2
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> optimize(nLL,c(-1,3))$minimum
+[1] 1.217775
+> optimize(nLL,c(-1,2))$minimum
+[1] 1.217775
+> #Fixing u=1
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> optimize(nLL,c(1e-6,10))$minimum
+[1] 1.800596
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> x <- seq(1.7,1.9,len=100)
+> y <- sapply(x,nLL)
+> plot (x,exp(-(y-min(y))),type="l")
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> x <- seq(0.5,1.5,len=100)
+> y <-sapply(x,nLL)
+> plot(x,exp(-(y-min(y))),type="l")
+
+
+Assignment 3
+#在R中有的时候表达方式是不一样的，比如
+引用某个变量的子变量用
+time$year #而不是time.year
+
+表示数组相乘用 
+%*%
+
+判断是否包含 
+"a" %in% c("a","b","c")
+
+使用R的时候我自己经常犯的错误
+该使用[]的时候错误的使用了（），特别是在操作data.frame的时候
+该使用[[]]错误的使用了[]，前者可以变为向量，后者还是data.frame
+忘记了使用%%进行
+
+如何使用Order
+> (ii <- order(x <- c(1,1,3:1,1:4,3), y <- c(9,9:1), z <- c(2,1:9)))
+ [1]  6  5  2  1  7  4 10  8  3  9
+ > rbind(x, y, z)[,ii] # shows the reordering (ties via 2nd & 3rd arg)
+  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+x    1    1    1    1    2    2    3    3    3     4
+y    5    6    9    9    4    7    1    3    8     2
+z    5    4    1    2    6    3    9    7    2     8
+
+
 </code></pre>
 
 
@@ -454,61 +572,6 @@ Solar cell - Wikipedia：http://en.wikipedia.org/wiki/Solar_cell</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/17/repeated-measures-correlation-mixed-model/">Repeated Measures Correlation Mixed Model</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-17T09:02:00-04:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
-        
-         | <a href="/blog/2014/04/17/repeated-measures-correlation-mixed-model/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>How to do it?<br/>
-Analysis==>Mixed Model, then you got diaogue 1 as follows. ID shuold be put be included as subjects. Year should be included as repeated, cause I measured multiple times by different year.
-<img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d1.png" alt="Mixed Model Dialouge 1" /><br/>
-The most hard decision to make is which Repeated Covaricance Type to select, there are a lot of choices, the most used ones are:<br/>
-1. Unstructured: you have no idea of the correlation of repeated measures, SPSS we estimate all the correlation independantly (r12,r13,r23,r14,r24,r34).<br/>
-2. Scaled Identity: no correlations at all, r=0.<br/>
-3. Compound Symmetry: all correlations equals r.<br/>
-4. AR1: (r, r<sup>2,</sup> R<sup>3)<br/></sup>
-<img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-AR1.png" alt="Auto Regression 1" /><br/>
-5. Toeplitz:(a,a,a,b,b,c)<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-toepliztz.png" alt="Toeplitz" /><br/>
-6. Another choice is &#8220;diagonal&#8221; which assumes no correlation between the random effects.</p>
-
-<p>Then you determing the fixed effect variable:<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d2.png" alt="Mixed Model Dialouge 2" /></p>
-
-<p>And the random effect variable:<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d3.png" alt="Mixed Model Dialouge 3" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -536,6 +599,10 @@ The most hard decision to make is which Repeated Covaricance Type to select, the
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/04/why-chinese-say-maybe-and-but/">Why Chinese say maybe and but</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/04/29/lost-in-local-extrema/">Lost in local extrema</a>
@@ -571,10 +638,6 @@ The most hard decision to make is which Repeated Covaricance Type to select, the
     
       <li class="post">
         <a href="/blog/2014/03/22/the-gesture-of-reading/">由读书的姿势想到的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/21/weibo-201307-201403/">2013年7月到2014年3月微博摘录</a>
       </li>
     
   </ul>
