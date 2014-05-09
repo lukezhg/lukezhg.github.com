@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: maps | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/maps/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2014-05-09T17:25:26-04:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[China Environmental Risk maps]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/05/06/china-environmental-risk-maps/"/>
+    <updated>2014-05-06T15:09:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/05/06/china-environmental-risk-maps</id>
+    <content type="html"><![CDATA[<p>中国癌症村地图 <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=104340755978441088496.000469611a28a0d8a22dd&amp;dg=feature">China Cancer Villages Map - Google Maps</a></p>
+
+<p>中国血铅污染地图 <a href="https://maps.google.com.hk/maps/ms?ie=UTF8&amp;brcurrent=3,0x3403e2eda332980f:0xf08ab3badbeac97c,0&amp;oe=UTF8&amp;msa=0&amp;msid=104340755978441088496.000489e60c3649d260e18&amp;dg=feature">China Blood Lead Poisoning Map</a></p>
+
+<p>中国污染地图 <a href="https://ditu.google.com/maps/ms?msa=0&amp;msid=118244671891871382452.0004763f27eca98ca1be8&amp;dg=feature">China Pollution Map - Google Maps</a></p>
+
+<p><a href="http://www.ipe.org.cn/pollution/index.aspx">公众环境研究中心-中国水污染地图</a></p>
+]]></content>
+  </entry>
+  
+</feed>
