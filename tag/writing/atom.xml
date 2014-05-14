@@ -4,7 +4,7 @@
   <title><![CDATA[tags: writing | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/writing/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-14T19:23:03-04:00</updated>
+  <updated>2014-05-14T19:40:51-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -26,36 +26,36 @@
 
 <h3>Writing tools and tips:</h3>
 
-<p>[Google Drive] can help you co-write online.<br/>
-[Mendeley] can help you manage your references.<br/>
-[HisCite] can make graph to let you know how paper cited each other.<br/>
-[SPSS] can help you analyze the data.<br/>
+<p><a href="https://drive.google.com/">Google Drive</a> can help you co-write online.<br/>
+<a href="http://www.mendeley.com/">Mendeley</a> can help you manage your references.<br/>
+<a href="http://interest.science.thomsonreuters.com/forms/HistCite/">HisCite</a> can make graph to let you know how paper cited each other.<br/>
+<a href="http://www-01.ibm.com/software/analytics/spss/">SPSS</a> can help you analyze the data.<br/>
 <a href="http://latex-project.org/intro.html">LaTeX</a> is a good document preparation system especially useful when you have lots of equations and graphs(generated with R).<br/>
 There are lots of other text editors such as Miscro-soft Word, EditPlus for consider.</p>
 
-<h3>Useful books for formating:</h3>
+<h3>Useful books:</h3>
 
-<p>[Publication Menual by APA]<br/>
+<p><a href="http://www.amazon.com/Publication-Manual-American-Psychological-Association-ebook/dp/B00CPUBEBM">Publication Menual by APA</a><br/>
 <a href="http://www.apastyle.org/">APA Style website</a><br/>
 <a href="http://www.amazon.com/Writing-Well-30th-Anniversary-Edition/dp/0060891548">On Writing Well</a> by Zinsser</p>
 
-<h3>Journal impactor Search Engines:</h3>
+<h3>Journal Rankings:</h3>
 
 <p><a href="http://www.scimagojr.com/journalrank.php?area=0&amp;category=3304&amp;country=all&amp;year=2012&amp;order=sjr&amp;min=0&amp;min_type=cd">Journal Rankings on Education</a><br/>
 <a href="http://admin-apps.webofknowledge.com/JCR/JCR?RQ=LIST_SUMMARY_JOURNAL">Web of Science JCR-WebSearch Engine</a></p>
 
 <h3>Journals List and impactor(2012 JCR Social Science Edition):</h3>
 
-<p>REVIEW OF EDUCATIONAL RESEARCH 4.2
-Journal of the Learning Sciences 3.0
-JOURNAL OF RESEARCH IN SCIENCE TEACHING 2.5
-SCIENCE EDUCATION 2.4
-Journal of Teacher Education 1.6
-JOURNAL OF COMPUTER ASSISTED LEARNING 1.6
-INTERNATIONAL JOURNAL OF SCIENCE EDUCATION 1.3
-British Journal of Educational Technology 1.3
-TEACHING AND TEACHER EDUCATION 1.2
-RESEARCH IN SCIENCE EDUCATION 1.1
+<p>REVIEW OF EDUCATIONAL RESEARCH 4.2<br/>
+Journal of the Learning Sciences 3.0<br/>
+JOURNAL OF RESEARCH IN SCIENCE TEACHING 2.5<br/>
+SCIENCE EDUCATION 2.4<br/>
+Journal of Teacher Education 1.6<br/>
+JOURNAL OF COMPUTER ASSISTED LEARNING 1.6<br/>
+INTERNATIONAL JOURNAL OF SCIENCE EDUCATION 1.3<br/>
+British Journal of Educational Technology 1.3<br/>
+TEACHING AND TEACHER EDUCATION 1.2<br/>
+RESEARCH IN SCIENCE EDUCATION 1.1<br/>
 TEACHERS AND TEACHING 0.5</p>
 ]]></content>
   </entry>
