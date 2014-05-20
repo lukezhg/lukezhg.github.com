@@ -4,7 +4,7 @@
   <title><![CDATA[tags: troubleshooting | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/troubleshooting/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-14T19:40:51-04:00</updated>
+  <updated>2014-05-20T12:24:19-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -62,6 +62,8 @@
 两三个月前，又出现了同样的问题，但是这次无论使用什么办法都不管用了。于是我就学着适应这种改变，虽然开机是黑屏的，但是我仍然能正常启动，反而增加了系统的安全性，于是我就听之任之。</p>
 
 <p>前两天，突然屏幕的图标变大了，我曾经使用过会议室的投影仪，开机的时候连着投影仪，关机的时候已经拔出了，结果回到宿舍，发现屏幕休眠后可以正常唤醒，于是重新启动定闹，结果久违的登陆页面一下子又自己出来了。</add></p>
+
+<p><add>17May2014  在没有插电源的情况下，电脑进入了待机状态，唤醒时黑屏，不能正常回复。强制关机后，采用最后一次正确配置，变为正常。</add></p>
 ]]></content>
   </entry>
   

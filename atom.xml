@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-14T19:40:51-04:00</updated>
+  <updated>2014-05-20T12:24:19-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,13 +14,74 @@
 
   
   <entry>
+    <title type="html"><![CDATA[我只想找一口水喝]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/05/20/poem-i-want-water/"/>
+    <updated>2014-05-20T11:58:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/05/20/poem-i-want-water</id>
+    <content type="html"><![CDATA[<pre><code>
+我只想找一口水喝
+我一路疾驰
+只想找一口水喝
+扑灭腹中的烟火
+
+我来到从前的小河
+她已经干涸
+连榕树爷爷也失去了踪影
+只留下七零八落的脚踝
+散落在角落里
+哭干了所有的眼泪
+
+河床里是一具尸首
+早已经腐烂
+散发着恶的臭
+还有苍蝇的轰鸣
+
+我又焦急的奔向湖岸
+一心想喝那甘甜的湖水
+湖面寂静
+泛着死一样的绿
+还有一片一片的鱼肚白在飘荡
+没了往日的喧嚣
+也没了往日伙伴们排队时的争吵
+
+我喝了个痛快
+这油亮的湖水
+带着异样的满足
+不为别的
+我只想找一口水喝
+找一口水喝
+扑灭我腹中的烟火
+
+可，可…
+可这烟火却越烧越旺
+连我的视线也开始燃烧起来
+越痛苦、越挣扎
+越挣扎、越痛苦
+也不知到过了多少时间
+我终于挣脱了
+天空是那么的蓝
+眼前是一团洁白
+在风的轻抚下安睡
+
+榕树爷爷拉着我的手
+还有那村边的小河
+咕咕的欢迎着我的归来
+这是我的家
+我再也不愿意离开
+再也不愿意离开
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Writing paper for publication]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/14/writing-paper-for-publication/"/>
     <updated>2014-05-14T10:23:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/14/writing-paper-for-publication</id>
-    <content type="html"><![CDATA[<p>Writing is an very important skill as speaking. It aims to send message, from generation to generation, from people to people, from country to country. One of the most effienct way to do this is publishing in good journals. Nowadays, publication has become a crucial part of resume or CV, and people write paper not just for sending message by also seeking for fame and honor. So good universitis ask faculties for good papers; good researchers look for good journals. Good journals want good impators or indexs. Reseachers like to cite papers from good journals. It would be good if this system can really help sending necessary message to people with various needs. But we should keep in mind that it may not necessarily be the case. It is just a number game.</p>
+    <content type="html"><![CDATA[<p>Writing is an very important skill as speaking. It aims to send message, from people to people, from generation to generation, from country to country. One of the most effienct way to do this is publishing in good journals. Nowadays, publication has become a crucial part of resume or CV, and people write papers not just for sending messages but also seeking for promotions. So good universitis ask faculties for good papers; good researchers look for good journals to publish. Good journals want good impators or indexs. Good reseachers tend to cite more good papers from good journals. But can this system help sending necessary message to those in-need audiences? It may not necessarily be the case. It is just a number game dominated by the for-profit companies and ambitious universities who care little what the content really mean.</p>
 
-<p>Complain is enough. We still have to write. But I believe we are writing for our audiences not for universitis and journal companies. We write because we have the impluse to share. As a begining researcher and writer, I&#8217;d like to co-write with others at first. It helps me learn writing faster and have meaningful conversations with other people. So I would also recommand others doing it this way.</p>
+<p>Complain is enough. We still have to write. But I believe we are writing for our audiences not for universitis and journal companies. We write because we have the impluse to share. As a begining researcher and writer, I&#8217;d like to co-write with others at first. I can learn easier by talk and write together. So I would also recommand you co-write at first.</p>
 
 <p>Athough you may not like the game, it is still good to know the rules and some tools. Here are some useful resources for writhing educational journals:</p>
 
@@ -39,24 +100,27 @@ There are lots of other text editors such as Miscro-soft Word, EditPlus for cons
 <a href="http://www.apastyle.org/">APA Style website</a><br/>
 <a href="http://www.amazon.com/Writing-Well-30th-Anniversary-Edition/dp/0060891548">On Writing Well</a> by Zinsser</p>
 
-<h3>Journal Rankings:</h3>
+<h3>Journal Rankings Search:</h3>
 
 <p><a href="http://www.scimagojr.com/journalrank.php?area=0&amp;category=3304&amp;country=all&amp;year=2012&amp;order=sjr&amp;min=0&amp;min_type=cd">Journal Rankings on Education</a><br/>
-<a href="http://admin-apps.webofknowledge.com/JCR/JCR?RQ=LIST_SUMMARY_JOURNAL">Web of Science JCR-WebSearch Engine</a></p>
+<a href="http://admin-apps.webofknowledge.com/JCR/JCR?RQ=HOME">Web of Science JCR-WebSearch Engine</a></p>
 
-<h3>Journals List and impactor(2012 JCR Social Science Edition):</h3>
+<h3>Journals and their impactors(2012 JCR Social Science Edition):</h3>
 
 <p>REVIEW OF EDUCATIONAL RESEARCH 4.2<br/>
+LEARNING AND INSTRUCTION 3.3<br/>
 Journal of the Learning Sciences 3.0<br/>
-JOURNAL OF RESEARCH IN SCIENCE TEACHING 2.5<br/>
-SCIENCE EDUCATION 2.4<br/>
-Journal of Teacher Education 1.6<br/>
+COMPUTERS &amp; EDUCATION 2.7</p>
+
+<p>JOURNAL OF RESEARCH IN SCIENCE TEACHING 2.5<br/>
+<a href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291098-237X">SCIENCE EDUCATION 2.4</a> <a href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291098-237X/homepage/ForAuthors.html">for-authors</a><br/>
+<a href="http://jte.sagepub.com/">Journal of Teacher Education 1.6</a> <a href="http://www.sagepub.com/journals/Journal200961/manuscriptSubmission">for-authors</a><br/>
 JOURNAL OF COMPUTER ASSISTED LEARNING 1.6<br/>
-INTERNATIONAL JOURNAL OF SCIENCE EDUCATION 1.3<br/>
-British Journal of Educational Technology 1.3<br/>
+<a href="http://www.tandfonline.com/action/journalInformation?show=aimsScope&amp;journalCode=tsed20#.U3QKWCggtes">INTERNATIONAL JOURNAL OF SCIENCE EDUCATION 1.3</a> <a href="http://www.tandfonline.com/action/authorSubmission?journalCode=tsed20&amp;page=instructions#.U3QLWiggtes">for-authors</a></p>
+
+<p>British Journal of Educational Technology 1.3<br/>
 TEACHING AND TEACHER EDUCATION 1.2<br/>
-RESEARCH IN SCIENCE EDUCATION 1.1<br/>
-TEACHERS AND TEACHING 0.5</p>
+RESEARCH IN SCIENCE EDUCATION 1.1</p>
 ]]></content>
   </entry>
   
@@ -901,24 +965,6 @@ Micro-Moment Trangle: 建设性回应、成长型思维，品质型行为评语<
 <p>但是不管怎样，醒来了就是醒来了，只能自己找吃的。不知道该吃什么，那就每样吃一点，先解决温饱再说。</p>
 
 <p>一人一本书，就是一个很重要的人，你选择他的一本书来读。这个法子不一定妥当，但是也并不太大的不妥。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Play with Wingen and BILOG]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog/"/>
-    <updated>2014-02-18T14:39:00-05:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog</id>
-    <content type="html"><![CDATA[<p>如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：<br/>
-第一步：产生答题者<br/>
-第二步：产生题目<br/>
-第三部：产生答题者对题目的作答结果<br/>
-你只负责设置参数就可以，其他的程序帮你完成，设置第一步和第二部参数的时候，可以查看图形效果，进而作进一步的调整。<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/wingen.png" alt="wingen" /></p>
-
-<p>接下来可以利用BILOG对你的数据进行模型设定和估算<br/>
-实际上BILOG可以直接使用你用wingen产生的数据，因为都是纯文本，只是你需要建立自己的BLM文件，也并不困难，下图就是在例子的基础上修盖的BLM文件。只是要注意答题者数、题目数要与数据一致，此外文件中有一句要注意 （1A1,9x,30A1），这句表示的是数据的格式，意思是第一列为标号，后面有9列空行，再后面有30列的数据（也就是每个答题者对30到题目的作答情况），这个格式一定要与数据相互吻合。<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bilog.png" alt="bilog" /></p>
 ]]></content>
   </entry>
   
