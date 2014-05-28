@@ -4,7 +4,7 @@
   <title><![CDATA[tags: journal | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/journal/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-28T09:37:18-04:00</updated>
+  <updated>2014-05-28T10:30:03-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -88,7 +88,8 @@ RESEARCH IN SCIENCE EDUCATION 1.1</p>
 <p>(from <a href="http://www.narst.org/">NARST website</a>)</p>
 
 <pre><code>
-For each category, three criteria are required. Given the constraints of the 5-page limit for proposals, please assign a numerical rating using the following descriptors as a guide:
+For each category, three criteria are required. Given the constraints of the 5-page limit  
+for proposals, please assign a numerical rating using the following descriptors as a guide:
 5 Highly evident: Proposal provides clear, substantive, and coherent evidence of all criteria
 4 Evident: Proposal adequately describes all criteria in the category.
 3 Mostly evident: Proposal adequately describes 2 out of 3 criteria in the category
@@ -111,8 +112,7 @@ Analyses and Findings
 Empirical Studies
 1. Do the data analyses appear to be appropriate, coherent, and complete?
 2. Are the arguments or interpretations supported by the data?
-3. Does the proposal discuss alternative interpretations, bias, reliability, or validity as appropriat
-e?
+3. Does the proposal discuss alternative interpretations, bias, reliability, or validity as appropriate?
 Non-Empirical Studies (e.g., conceptual or position papers, reviews of literature)
 1. Do the syntheses of ideas appear to be appropriate, coherent, and complete?
 2. Are the arguments or interpretations supported by evidence?
@@ -133,6 +133,38 @@ Overall Rating
 (1-not recommended; 5 highly recommended)  
 </code></pre>
 
+
+<h3>Basic Paper Structure(ITDFD)</h3>
+
+<pre><code>
+Title
+Author
+Abstract
+Keywords
+
+Introduction
+  Background
+  Literature
+Theoretical Framework 
+  Theoretical foundation
+  Research questions
+Design/Procedure
+  Participants
+  Instrument & Procedure
+  Reliability & Validity
+Findings
+  Tables & Figures
+Discussion
+  Findings review
+  Conclusions
+  Implications
+
+Acknowledgements
+References
+</pre>
+
+
+<p></code></p>
 ]]></content>
   </entry>
   
