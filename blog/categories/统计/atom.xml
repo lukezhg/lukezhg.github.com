@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 统计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/统计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-29T23:52:47-04:00</updated>
+  <updated>2014-05-30T15:24:08-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pick the right test]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test/"/>
+    <updated>2014-05-30T14:14:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test</id>
+    <content type="html"><![CDATA[<p>You have to pick a test to analysis your data. The question is which test is the right one. Well, it depends on your data and your hypothesis. Usually there are lot of choices, but only one solves your problem best.</p>
+
+<p>Here are some suggestions for selecting test by the types of your variables.<br/>
+Dependent and Independent Variables<br/>
+Dependent Variable(DV) is what you are care of. Independent Variable(IV) is what you think may affect your dependent variable. Usually you can control your independent variable, but not depedent variable.</p>
+
+<p>There are two basic types of variables:<br/>
+Continuous Variables(e.g. height,temprature)<br/>
+Discrete Variables(e.g. age, size, preferences)</p>
+
+<p>if IV=[0,1],DV=[~] then T test<br/>
+if IV=[0,1,2,],DV=[~] then one-way Anova or ANOCVA<br/>
+if IV1=[0,1,2,], IV2=[0,1,2,], DV=[~] then General linear model<br/>
+if IV1=[~], IV2[~],..., DV=[~], then Linear Regression &amp; Pearson<br/>
+if IV=[0,1,...], DV=[0,1,...] then χ2<br/>
+if IV=[~], DV=[0,1,...] then Logistic regression</p>
+
+<p>For more details look at the following pictures:<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/choiceoftest.png" alt="Choices of Test" /><br/>
+This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
+
+<p>References:
+<a href="http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm">Types of Variables</a><br/>
+This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
@@ -37,11 +69,246 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
 
 
 <p>This the x y data I got:<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /></p>
+
+<p>You got this picture after plotting it out.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
 
 <p>Reference:<br/>
 <a href="http://gastonsanchez.com/blog/how-to/2013/01/23/MDS-in-R.html">7 Functions to do Metric Multidimensional Scaling in R | Gaston Sanchez</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[how to use R]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/"/>
+    <updated>2014-04-21T23:35:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/04/21/how-to-use-r</id>
+    <content type="html"><![CDATA[<pre><code>
+##week2
+a <- 1:10
+b <- c(1,3,4,5,8,9,11,14,15,18)
+cbind(a,b) #
+rbind(a,b) #
+length(a) #
+class(a)
+as.character()
+as.logical()
+as.numeric()
+m <- matrix(a,nrow=2,ncol=5)
+dim(m) #[1] 2 5
+attributes(m) $dim [1] 2 5
+m <- 1:10
+dim(m) < c(2,5) #
+f <- factor("yes","no","yes","yes")
+table(f) # yes 3 no 1
+x <- c()
+x <- c(x,1)
+mean() #求平均值
+cor(a,b) #求相关系数
+is.na()
+is.nan()
+read.table() #读取txt表格
+read.csv() #读取csv文件
+
+names()
+x[!is.na(x)] # 去除缺失的数据
+data <- data.frame(id=1:10,height=170:180)
+data["id"] #返回局部data.frame
+data["id"][!is.na(data["height"])] #返回height无缺失的id
+data[[id]] #返回vector
+paste("00","1",".csv",sep="") # 001.csv
+paste(a,collapse="")
+for (i in 1:length(id)){
+    s <- as.character(id[i])
+    spre <- paste(rep("0",3-nchar(s)),collapse="") # use collapse join vector
+    fn <- paste(directory,"/",spre,s,".csv",sep="") # use sep to join string
+    data <- read.csv(fn)
+}
+
+if(length(x)>0){print(x)}else{}
+
+##Week3
+x <- list(a=1:5,b=rnorm(10))
+lapply(x,mean)#$a[1] 3  $b[1] 0.03937816
+如果x不是一个list,那么它将被自动转换成list,相当于使用as.list()函数
+x <- list(a=matrix(1:4,2,2),b=matrix(1:6,3,2))
+lapply(x,function(elt)elt[,1]) #$a[1] 1 2  $b[1] 1 2 3
+sapply(x,mean) #会自动简化结果，返回一个vector或者matrix，不能简化返回list
+x <- matrix(rnorm(200),20,10)
+apply(x,2,mean) #返回10列的均值
+apply(x,1,sum) #返回每行的总和共20个
+a <- array(rnorm(2*2*10),c(2,2,10)) #三维数组
+apply(a,c(1,2),mean)
+          [,1]      [,2]
+[1,] 0.1888774 0.5517366
+[2,] 0.2667046 0.2412767
+
+str() #Compactly Display the Structure of an Arbitrary R Object
+str(tapply)
+> x <- c(rnorm(10),runif(10),rnorm(10,1))
+> f <-gl(3,10) #生成标签 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3
+> tapply(x,f,mean) #具有相同标签的数值的平均值
+with(mtcars, tapply(mpg, cyl, mean))# mtcars is a data.frame with cyl and mpg
+
+> split(x,f) #利用标签将list进行拆分
+> s <- split(airdata, airdata$Month)
+> lapply(s,function(x) colMeans(x[,c("Ozone","Solar.R","Wind")]))
+split(x,list(f1,f2),drop=TRUE) # empty levels can be dropped
+
+> mapply(rep,1:4,4:1)
+[[1]]
+[1] 1 1 1 1
+
+[[2]]
+[1] 2 2 2
+
+[[3]]
+[1] 3 3
+
+[[4]]
+[1] 4
+
+traceback() # print out where error occurs,else do nothing
+debug() # step through one line at a time
+browser() #suspend the execution wherever called and put it in debug mode
+trace() # insert debug code in specific place
+
+#Play with the iris data
+library(datasets)
+data(iris)
+
+#Play with $
+> x <- makeCacheMatrix()
+> x
+$set
+function (y) 
+{
+    x <<- y
+    inv <<- NULL
+}
+
+$get
+function () 
+x
+
+$setinverse
+function (inverse) 
+inv <<- inverse
+
+$getinverse
+function () 
+inv
+
+> x$set(matrix(rnorm(9),3,3))
+> x$get()
+
+> x$set(a)
+> x$get()
+            [,1]      [,2]       [,3]
+[1,] -0.50184759 -0.751659 -2.1276852
+[2,]  0.37466264 -1.448643  1.1807655
+[3,] -0.06093845  0.740338 -0.8508723
+> cacheSolve(x)
+           [,1]       [,2]       [,3]
+[1,] -0.4668678  2.8847043  5.1705844
+[2,] -0.3214999 -0.3872940  0.2664879
+[3,] -0.2462983 -0.5435808 -1.3137063
+
+#week4
+str(str)# see the structure of a object
+m <- matrix(rnorm(100),10,10)
+str(m)
+str(lm)
+str(ls)
+x <- rnorm(100,2,4)
+summary(x)
+str(x)
+
+#作图
+hist(rnorm(1000,2,4))
+hist(BMI, breaks=20, main="Breaks=20")
+hist(BMI, breaks=seq(17,32,by=3), main="Breaks is vector of breakpoints")
+seq(0, 1, length.out = 10) #在一定范围产生制定数目的序列
+plot(x,y)
+
+#拟合
+> set.seed(20)  #进而可以再次产生同样的随机数 方便别人重复模拟
+> x <- rnorm(100)
+> e <-rnorm(100,0,2)
+> y <- 0.5+2*x+e
+> sumary(y)
+
+#评估运算时间 user time（cpu 时间消耗）elipsed time(流逝壁钟时间)
+> system.time(readLines("http://www.jhsph.edu"))
+
+#就
+make.Negloglik <- function(data, fixed=c(FALSE,FALSE)){
+    params<- fixed
+    function(p){
+        params[!fixed] <- p
+        mu <- params[1]
+        sigma <- params[2]
+        a <- -0.5*length(data)*log(2*pi*sigma^2)
+        b <- -0.5*sum((data-mu)^2)/(sigma^2)
+        -(a+b)
+    }
+}
+set.seed(1)
+normals <- rnorm(100,1,2)
+nLL <- make.Negloglik(normals)
+optim(c(mu=0,sigma=1),nLL)$par
+
+> # Fixing sigma=2
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> optimize(nLL,c(-1,3))$minimum
+[1] 1.217775
+> optimize(nLL,c(-1,2))$minimum
+[1] 1.217775
+> #Fixing u=1
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> optimize(nLL,c(1e-6,10))$minimum
+[1] 1.800596
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> x <- seq(1.7,1.9,len=100)
+> y <- sapply(x,nLL)
+> plot (x,exp(-(y-min(y))),type="l")
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> x <- seq(0.5,1.5,len=100)
+> y <-sapply(x,nLL)
+> plot(x,exp(-(y-min(y))),type="l")
+
+
+Assignment 3
+#在R中有的时候表达方式是不一样的，比如
+引用某个变量的子变量用
+time$year #而不是time.year
+
+表示数组相乘用 
+%*%
+
+判断是否包含 
+"a" %in% c("a","b","c")
+
+使用R的时候我自己经常犯的错误
+该使用[]的时候错误的使用了（），特别是在操作data.frame的时候
+该使用[[]]错误的使用了[]，前者可以变为向量，后者还是data.frame
+忘记了使用%%进行
+
+如何使用Order
+> (ii <- order(x <- c(1,1,3:1,1:4,3), y <- c(9,9:1), z <- c(2,1:9)))
+ [1]  6  5  2  1  7  4 10  8  3  9
+ > rbind(x, y, z)[,ii] # shows the reordering (ties via 2nd & 3rd arg)
+  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+x    1    1    1    1    2    2    3    3    3     4
+y    5    6    9    9    4    7    1    3    8     2
+z    5    4    1    2    6    3    9    7    2     8
+
+
+</code></pre>
+
+
+
 ]]></content>
   </entry>
   

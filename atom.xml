@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-29T23:52:47-04:00</updated>
+  <updated>2014-05-30T15:24:08-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pick the right test]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test/"/>
+    <updated>2014-05-30T14:14:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test</id>
+    <content type="html"><![CDATA[<p>You have to pick a test to analysis your data. The question is which test is the right one. Well, it depends on your data and your hypothesis. Usually there are lot of choices, but only one solves your problem best.</p>
+
+<p>Here are some suggestions for selecting test by the types of your variables.<br/>
+Dependent and Independent Variables<br/>
+Dependent Variable(DV) is what you are care of. Independent Variable(IV) is what you think may affect your dependent variable. Usually you can control your independent variable, but not depedent variable.</p>
+
+<p>There are two basic types of variables:<br/>
+Continuous Variables(e.g. height,temprature)<br/>
+Discrete Variables(e.g. age, size, preferences)</p>
+
+<p>if IV=[0,1],DV=[~] then T test<br/>
+if IV=[0,1,2,],DV=[~] then one-way Anova or ANOCVA<br/>
+if IV1=[0,1,2,], IV2=[0,1,2,], DV=[~] then General linear model<br/>
+if IV1=[~], IV2[~],&#8230;, DV=[~], then Linear Regression &amp; Pearson<br/>
+if IV=[0,1,&#8230;], DV=[0,1,&#8230;] then χ2<br/>
+if IV=[~], DV=[0,1,&#8230;] then Logistic regression</p>
+
+<p>For more details look at the following pictures:<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/choiceoftest.png" alt="Choices of Test" /><br/>
+This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
+
+<p>References:
+<a href="http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm">Types of Variables</a><br/>
+This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
@@ -37,7 +69,9 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
 
 
 <p>This the x y data I got:<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /></p>
+
+<p>You got this picture after plotting it out.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
 
 <p>Reference:<br/>
@@ -265,6 +299,23 @@ how your work add on</p>
 3  enrich each paragraph and link together  
 4  revise and formatting  
 </code></pre>
+
+<h3>What make a paragraph good</h3>
+
+<p>Focus on one idea<br/>
+Format paragraph<br/>
+  -Topic sentence<br/>
+  -explanation evidence logic<br/>
+-not too long: 3 sentences<br/>
+-Concluding/Beginning sentence<br/>
+-Paragraph work together<br/>
+-unity(pronoun, sense, tongue)</p>
+
+<h3>What make good sentence</h3>
+
+<p>-no cluster, brief, clear, concise every word tell<br/>
+-use strong verb<br/>
+-make it colorful</p>
 
 <h3>Writing tools:</h3>
 
@@ -1111,23 +1162,6 @@ from: wikipedia</p>
 <p>说来也怪，中国的教育，本来崇尚的是集体主义。但是教育出来的人却一点也没有公共的责任心。损坏大家的利益我不管。只要别损害我的个人利益就行。这真是中国特有的奇葩现象。</p>
 
 <p>爱的力量原来如此强大，让你如痴如醉，不离不弃，在危急的时刻勇敢的挺身而出，即便遇到困难也能坚持到底，我们应该更多的关注爱的力量，挖掘它，研究它，欣赏他，拥抱她，再用理性加以辅佐，我们就能让这个世界变得更美好。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[刷牙歌]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/03/02/song-of-brushing-teeth/"/>
-    <updated>2014-03-02T08:24:00-05:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/03/02/song-of-brushing-teeth</id>
-    <content type="html"><![CDATA[<p>作词——chunlei</p>
-
-<p>好好的牙呀，好好刷。</p>
-
-<p>轻轻刷，慢慢刷，</p>
-
-<p>细细的刷呀，</p>
-
-<p>刷出好好的牙。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: R | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/r/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-29T23:52:47-04:00</updated>
+  <updated>2014-05-30T15:24:08-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -37,7 +37,9 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
 
 
 <p>This the x y data I got:<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /></p>
+
+<p>You got this picture after plotting it out.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
 
 <p>Reference:<br/>
