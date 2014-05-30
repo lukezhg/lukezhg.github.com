@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="The National Association for Research in Science Teaching (NARST) is a worldwide organization of professionals committed to the improvement of &hellip;">
+  <meta name="description" content="统计学比较抽象，需要通过例子加以学习。 比如第一型错误（Type I error）和第二型错误（Type II error）。比如验证一个人的智商是否超常（极高或者极低），我们知道95%人群的智商在70-130之间，一般成正态分布。我们会做出一个零假设H0，假定某人的智商是正常的。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,62 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/14/repeated-measures-anova/">多次重测数据的方差分析</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-14T13:57:00-04:00" pubdate data-updated="true">Apr 14<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/04/14/repeated-measures-anova/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>统计学比较抽象，需要通过例子加以学习。</p>
+
+<p>比如第一型错误（Type I error）和第二型错误（Type II error）。比如验证一个人的智商是否超常（极高或者极低），我们知道95%人群的智商在70-130之间，一般成正态分布。我们会做出一个零假设H0，假定某人的智商是正常的。然后用某种评估方法测量一个人的智商结果是145，超出正常范围，这样我们就否定零假设，认为该人智商是超常的。</p>
+
+<p>但是我们的评估方法不一定准确，所以不可避免的会犯错误。第一型错误是，该人智商属于正常范围（接受H0），但是的统计评测显示的却是超常（拒绝H0）。第二型错误是，该人智商明明超常（拒绝H0），结果我们统计评测显示该人智商正常（接受H0）。简单说也就是假阳性和假阴性，或者假检出和假包含。</p>
+
+<p>分析数据就像是在森林里寻宝，每次进入森林都很不容易，需要花很多时间，非常容易迷失方向，面对无数的表格和无数的可能分析方法不知所措。而且好不容要到的路径，下次再想用却忘记了，需要花费很多实践才能再次找到。于是很多人做了很多无用的功，就是在原地打转。为了避免这样的情形发生，分析数据时一定要写分析记录和报告，否则即便是文件夹里有无数的报表，也忘记当初这个报表是干什么的了。</p>
+
+<p>如何使用SPSS绘制重复测量的误差条图？答案是可以使用SPSS的graph builder，不过我在用的过程中发现一个很低级的错误。我搜索到了一个视频教程<a href="http://vimeo.com/49231146">Create a clustered bar or line chart of means for repeated measures data (with optional error bars) on Vimeo</a>。其实原理很简单，就是把多个变量同时拉到纵轴。但是我拉的时候，系统却不容许，也不报错。晕。后来发现，原来这些变量必须是scale类型，而不能是normal。全部粘贴覆盖为scale之后，问题解决。不提示为什么不能拖拽，这是SPSS设计上的缺陷。其实类似的问题还有，当你使用Multiple Imputation(MI)处理缺失数据的时候，如果变量类型不是scale，SPSS也会拒绝执行MI，这也是在网上查了才解决的。因此，在使用SPSS的时候一定要小心的变量类型，尽量最开始就设好。</p>
+
+<p>下面进入正题，如何进行重复测量的方差检验。其实如何做并不难，难的是如何解释Spss产生的一大推报表，并选择有用的信息进行报告。首先这样的检测一般可以分为两类：One Way Anova以及Two-way Anova。前者是单因素实验设计，后者是双因素实验设计（如V1（2）× V2（3）交叉设计，共有6组）。两者的区别以后再解释。</p>
+
+<p>此外还有组间变量（比如不同的处理、教学方法、培训类型）和协变量（性别、教育程度）等。</p>
+
+<p>这种统计方法往往可以让你检测是否存在交叉效应。</p>
+
+<p>在报告的时候，SPSS同时给你multivariate test和Univariate test的结果。到底报告那个呢？取决于Mauchly&#8217;s Test of Sphericity，如果sig&lt;0.05那么，说明球度（sphericity）假设不成立，那么就要看修正后的Univerite test的结果。Spss提供多个修正结果，根据Epsilon-Greenhouse-Geisser的值是否大于0.75进行不同的选择，如果大于则选择Huynh-Feldt修正的结果，否则则选Greenhouse结果。<br/>
+另外就是如何报告F检验的结果。通常报告的格式如下F(自由度，误差自由度)=F值，p=sig，n=total。这些值在哪里呢？看下图。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/f-test-report.png" alt="F test report" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -542,52 +598,6 @@ google.setOnLoadCallback(function() {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/26/life-and-education/">教育回归生活</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-26T09:54:00-05:00" pubdate data-updated="true">Feb 26<span>th</span>, 2014</time>
-        
-         | <a href="/blog/2014/02/26/life-and-education/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>杜威说：教育即生活，学校即社会。陶行知说：生活即教育，社会即学校。可是我们今天的教育却是与生活完全脱轨的。教的东西用不上，用得上的东西没有教。</p>
-
-<p>也许我这样说读者不会信服，举几个例子。我跑步的时候鞋带经常散开，于是我重新系好，跑了一会又散了，真实个让人头疼的问题。我曾经听过一个老外讲系鞋带的事，但是当时没怎么当回事。昨天又读到胡适的文章，说他系鞋带是一个外国女朋友交给他的，不会散开。于是我就在youtube上搜索了一下<a href="https://www.youtube.com/watch?v=SrIjcvM6QA4&amp;list=FLrujcwoOwtITvOm7XKTnOng&amp;index=1">系鞋带的正确方法(how to tie your shoes right)</a>，果然有。做示范的女生自称是看了一个TED的节目，发现自己20多年鞋带一直是系错的。于是自己现身说法、示范给他人看。我仔细观察模仿，果然是不一样，错误系法鞋带系好之后是竖着的，前后走向，容易散开，正确的系法鞋带是横向的，像一个蝴蝶结，不容易散。跟这个女生相比，我系错了三十多年，真是汗颜。为什么会这样，因为这个东西根本没人教你。</p>
-
-<p>你也许会说，系错了也没什么大不了的。但是你不能否认它的实用性，然而这个最实用的技巧却没人教，这是值得反思的。在举一个例子，中国的口腔问题非常严重，口臭、牙黄、牙龈出血等等一些列问题，不仅影响个人健康，还影响国际形象。实际上在很大程度上，这都跟小的时候没有学会正确刷牙有关。有很多人不是没有刷牙习惯，但是方法错误。比如用力过猛，时间过短，清洁不到位，不会选用合适的牙刷，不会使用牙线。为什么不会，因为没人教。系鞋带系错了，也许你只是摔一跤。牙不会刷则直接会影响健康和生活质量。但是这门课，家长不一定会，学校也没有认真教，甚至压根没有。</p>
-
-<p>其实教育是生活的一部分，同时教育也是为更好的生活而服务的。再举一个例子，不过首先考考大家，你知道人民代表大会制度吗？知道的请举手。你知道如何选举吗？请举手。如果前两个问题你都举手了，那么你能讲讲民主生活吗？对于这个问题，我敢说很多人都会犯嘀咕。他知道一些概念，甚至也知道一些程序，但是让他说说自己的民主生活，他就哑口无言或者不愿意讲。中国大地上演了无数的民主闹剧，包括大学生自己的选举，这样的利益瓜葛不是很大，人群素质比较高的选举，都缺乏基本公平合理的程序和应有的态度，常常是以各种借口应付了事，甚至掌权人内定。更不要说高厉害的基层选举。有人经常批评群众的民主素养，但是更应该批评的是学校的民主教育，民主绝不是几个概念和程序，它是一种生活方式。与其让孩子们背小学生守则，不如让其参与学校的民主生活。这么重要的素养，学校培养了吗？没有。刘瑜写了本《民主的细节》，到可以拿来充饥充饥，缓解一下我们的民主教育缺乏症。</p>
-
-<p>所以我说，我们的教育还是脱离生活的教育。这不是简单的应试教育的问题，因为你批评了应试教育，还可以出来“精英教育”、“学院教育”、“灌输式教育”，这不单单是教育目的的问题，还涉及教育内容和教育方法，这是教育文化的问题。教育只有回归生活、反映生活、为了生活，才能有生气和活力。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -617,6 +627,10 @@ google.setOnLoadCallback(function() {
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/29/mds-in-r/">Multidimensional Scaling in R</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/05/28/questions-need-to-address-in-a-research-paper/">Questions need to address in a research paper</a>
@@ -654,15 +668,11 @@ google.setOnLoadCallback(function() {
         <a href="/blog/2014/04/29/lost-in-local-extrema/">Lost in local extrema</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/04/21/how-to-use-r/">how to use R</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (2)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (1)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (3)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/思辨'>思辨 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (20)</a></li><li><a href='/blog/categories/日志'>日志 (12)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (8)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/统计'>统计 (2)</a></li><li><a href='/blog/categories/设计'>设计 (6)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (5)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/资源'>资源 (3)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (4)</a></li><li><a href='/blog/categories/courses'>courses (3)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/research'>research (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/seminar'>seminar (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (2)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (1)</a></li><li><a href='/blog/categories/反思'>反思 (5)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (3)</a></li><li><a href='/blog/categories/对话'>对话 (2)</a></li><li><a href='/blog/categories/思辨'>思辨 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (20)</a></li><li><a href='/blog/categories/日志'>日志 (12)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (1)</a></li><li><a href='/blog/categories/生活'>生活 (7)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (8)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/统计'>统计 (3)</a></li><li><a href='/blog/categories/设计'>设计 (6)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (5)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/资源'>资源 (3)</a></li><li><a href='/blog/categories/随笔'>随笔 (4)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -673,6 +683,7 @@ google.setOnLoadCallback(function() {
 <a style="font-size: 90%" href="/tag/le/">LE</a>
 <a style="font-size: 90%" href="/tag/narst/">NARST</a>
 <a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 90%" href="/tag/r/">R</a>
 <a style="font-size: 90%" href="/tag/spss/">SPSS</a>
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>

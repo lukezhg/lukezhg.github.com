@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 统计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/统计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-28T19:01:30-04:00</updated>
+  <updated>2014-05-29T23:52:47-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/"/>
+    <updated>2014-05-29T22:10:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/05/29/mds-in-r</id>
+    <content type="html"><![CDATA[<p>I met this problem when I was analysing teachers' PCK concept maps. I wanted to divide them into several clusters that shared the similar structures(nodes and links).</p>
+
+<p>One approch is plotting them in a 2d picture to see if there is any patterns. But before that, you have to do the Muultidimensional Scaling to get your (x,y) from your Distance Matrix.</p>
+
+<p>Distance Matrix<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/distance-matrix.png" alt="Distance Matrix" /></p>
+
+<pre><code>
+# 1) MDS 'cmdscale'
+dm <- read.table("distance-matrix.txt")
+mds1 = cmdscale(dm, k = 2)
+
+# plot
+plot(mds1[,1], mds1[,2], type = "n", xlab = "", ylab = "", axes = FALSE, main = "cmdscale (stats)")
+text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
+</code></pre>
+
+
+<p>This the x y data I got:<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
+
+<p>Reference:<br/>
+<a href="http://gastonsanchez.com/blog/how-to/2013/01/23/MDS-in-R.html">7 Functions to do Metric Multidimensional Scaling in R | Gaston Sanchez</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Repeated Measures Correlation Mixed Model]]></title>
