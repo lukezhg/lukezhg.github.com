@@ -4,7 +4,7 @@
   <title><![CDATA[tags: SPSS | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/spss/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-05-30T15:24:08-04:00</updated>
+  <updated>2014-06-01T11:03:52-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -39,9 +39,9 @@ if IV=[~], DV=[0,1,...] then Logistic regression</p>
 <img src="https://raw.github.com/lukezhg/Freyja/master/choiceoftest.png" alt="Choices of Test" /><br/>
 This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
 
-<p>References:
+<p>References:<br/>
 <a href="http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm">Types of Variables</a><br/>
-This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Statistics Online Computational Resource</a></p>
+<a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOfTest.html">SOCR: Choice of Test</a></p>
 ]]></content>
   </entry>
   
