@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-03T19:28:17-04:00</updated>
+  <updated>2014-06-05T10:15:49-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[爱的柔光]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/06/05/ai-de-rou-guang/"/>
+    <updated>2014-06-05T10:12:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/06/05/ai-de-rou-guang</id>
+    <content type="html"><![CDATA[<p>明明想让你快乐<br/>
+却只留下悲伤<br/>
+不知道爱情模样<br/>
+还痴心一场</p>
+
+<p>人海茫茫<br/>
+不如一个人流浪<br/>
+在一个陌生的城市<br/>
+向着一个陌生的方向</p>
+
+<p>每当夜幕降临的时候<br/>
+你总是出现在我面前<br/>
+命运扼住了喉咙<br/>
+泪水已打湿了双眼</p>
+
+<p>风雨过后<br/>
+一个寂寞的小荷塘<br/>
+微风轻抚<br/>
+阵阵送清凉<br/>
+水面上<br/>
+荡起爱的柔光</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Play with kids]]></title>
@@ -978,21 +1007,6 @@ from: wikipedia</p>
 <p>在报告的时候，SPSS同时给你multivariate test和Univariate test的结果。到底报告那个呢？取决于Mauchly&#8217;s Test of Sphericity，如果sig&lt;0.05那么，说明球度（sphericity）假设不成立，那么就要看修正后的Univerite test的结果。Spss提供多个修正结果，根据Epsilon-Greenhouse-Geisser的值是否大于0.75进行不同的选择，如果大于则选择Huynh-Feldt修正的结果，否则则选Greenhouse结果。<br/>
 另外就是如何报告F检验的结果。通常报告的格式如下F(自由度，误差自由度)=F值，p=sig，n=total。这些值在哪里呢？看下图。<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/f-test-report.png" alt="F test report" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[NARST 2014 Pittsburgh]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/04/07/narst-2014-pit/"/>
-    <updated>2014-04-07T17:50:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/04/07/narst-2014-pit</id>
-    <content type="html"><![CDATA[<p>The National Association for Research in Science Teaching (NARST) is a worldwide organization of professionals committed to the improvement of science teaching and learning through research. More about NARST click <a href="https://www.narst.org/about/mission.cfm">here</a>.</p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/narst.png" alt="NARST" /></p>
-
-<p>The 2014 Annual meeting is hold in Pittsburgh from March 30 to April 2. The theme of this meeting is &#8220;AWAKENING DIALOGUES — Advancing Science Education Research Practices and Policies&#8221;. I attended this conference and presented a paper with my advisor. There were more than one thousand of participants from more than 25 countries. And many many presentations and posters were going on at the same time. Fortunately I bought the conference program book which contain maps and all related information. Although I did take my laptop with me, but actually I found that the book helped me a lot especially on finding a place and planing for where to go in order to listen to special presentations.</p>
-
-<p>There were 13 sessions in total. I attended 10 sessions and plus 1 session in which I presented our study on teacher perception. I arrived at Sunday afternoon and missed 2 sessions. But after that, I managed to took all the left sessions. So you can imagine how busy I was at that time when going from one room to another room. I thought we could not attend the committee meeting but in fact Dr Jackson told me we were allowed to do that as long as we were interested. Next time I would like to have a try. It was really a pity that I forgot to take a picture with my advisor. In fact I just took a lot of pictures of other researchers&#8217; slides but did not take any picture of myself. Instead, my advisor took some pictures for me when I was introducing our study. During the last session, a presenter asked the audiences(only 3 people including me because most had left) to took a picture with her. This was the only picture that I took with others in my first NARST conferences. Next time I don&#8217;t want such a harry anymore. I will try to take my time to enjoy the next conference rather than keep running all the time.</p>
 ]]></content>
   </entry>
   
