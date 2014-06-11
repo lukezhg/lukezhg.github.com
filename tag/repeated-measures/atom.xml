@@ -4,7 +4,7 @@
   <title><![CDATA[tags: repeated measures | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/repeated-measures/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-07T19:31:20-04:00</updated>
+  <updated>2014-06-11T00:49:38-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -63,6 +63,11 @@ The most hard decision to make is which Repeated Covaricance Type to select, the
 <p>在报告的时候，SPSS同时给你multivariate test和Univariate test的结果。到底报告那个呢？取决于Mauchly's Test of Sphericity，如果sig&lt;0.05那么，说明球度（sphericity）假设不成立，那么就要看修正后的Univerite test的结果。Spss提供多个修正结果，根据Epsilon-Greenhouse-Geisser的值是否大于0.75进行不同的选择，如果大于则选择Huynh-Feldt修正的结果，否则则选Greenhouse结果。<br/>
 另外就是如何报告F检验的结果。通常报告的格式如下F(自由度，误差自由度)=F值，p=sig，n=total。这些值在哪里呢？看下图。<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/f-test-report.png" alt="F test report" /></p>
+
+<p>那么如何报告One way Anova的结果呢？<br/>
+<a href="https://raw.github.com/lukezhg/Freyja/master/one-way-anova.png">One way Anova</a><br/>
+APA报告格式为：F(3,165)=2.836 p=0.04&lt;.05<br/>
+其中3为组间自由度（组数4-1），165为组内自由度（样本总数169-组数4）。所以看到这个结果，就知道共分4组，样本总量为169（3+165+1）。F值为2.836，p值为0.04，达到了显著水平。</p>
 ]]></content>
   </entry>
   
