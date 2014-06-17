@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/教学/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-16T22:59:38-04:00</updated>
+  <updated>2014-06-17T14:55:50-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Inquiry and demonstration]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration/"/>
+    <updated>2014-06-17T14:15:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration</id>
+    <content type="html"><![CDATA[<p>Today Dr. Oliver gave us an amazing class about demonstration and inquiry. He first asked what question to think about or ask ourselves when using demonstration. Then we played two demonstration games with everybody totally engaged.</p>
+
+<p>The first is radiometer (<a href="http://en.wikipedia.org/wiki/Crookes_radiometer">Crookes radiometer - Wikipedia</a>).<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/radiometer.jpg" alt="Crookes Radiometer" /></p>
+
+<p>He just put it on a table and lighted up another bulb, it began to rotate. It was my first time to see this, I was very curious of its work principle. After close observation, I found that it rotated always the same direction with white vane in front and black vane behind.</p>
+
+<p>Then we began to wonder what factors caused the vanes to rotate. Lights? But how? Temperature? how? What else? How can we found out? Try it. I tried using different angles of the light.</p>
+
+<p>We also tried to use hot water and cold water to pure on it. It rotate exactly the same direction as using light when using hot water but the opposite direction when using cold water.<br/>
+Nobody came up with a good explantion at the end. First I thought it was because the momentum of the absorbed Photon just like Crookes did which was wrong in this situation.</p>
+
+<p>Then we began to do another game --Buoyancy.<br/>
+First Dr. Oliver sent out a pre-test with 3 yes no questions about buoyancy followed why you believe so. Then we talked about each question a little while. Students answers and opinions are totally different.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/pre-test.png" alt="Pre-test" /><br/>
+Let us found out. So he did another demonstration droppiing a brass cube into water cup which had been balanced. He asked us what would happen if he immersed it into the water.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/drop-into-water.png" alt="Brass cube into water" /><br/>
+We made our predictions and then we did the experiment. We also tried some other settings which were carefully designed but playfully demonstrated.</p>
+
+<p>At the end of the class, he use his front pocket quesitons to reflect this lesson:<br/>
+Does it elict students' ideas for teaching?<br/>
+Does it it help student make sense of the material activity?<br/>
+Dose it press students for evidenced based reasoning and communicating?</p>
+
+<p>Yes it does! Yeah, we succeed!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Modify my previous lesson ESCI7040-A1]]></title>
@@ -159,39 +192,6 @@ Notes: This is just an imaginary teaching learning scenario sequences.</p>
 <p>What can you see in these pictures? What can you infer? Can you guess or infer the functions of different structures? How do they function together in this process?</p>
 
 <p>Home work: Make a cell structure model that can represent all your group knowledge about cell. We will share and discuss our models on next lesson.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
-    <updated>2013-10-25T13:42:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
-    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo's Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
-
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
-
-<!--more-->
-
-
-<p>I asked my classmates what happens in the following situations.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
-
-<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
-
-<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
-
-<p>Ball A is the second arrived. Ball C is the last one. <br/>
-From Leaning Tower of Pisa Experiment to simulated experiment, what a big change information technology has made to our science teaching and learning!</p>
-
-<p>In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo's famous experiment on the Moon by Hammer and Feather Drop.</p>
-
-<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/4mTsrRZEMwA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>You see the space technology also expanded our learning experience and provided us an amazing teaching resource-a dicrepant event.</p>
 ]]></content>
   </entry>
   

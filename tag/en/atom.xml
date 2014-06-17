@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-16T22:59:38-04:00</updated>
+  <updated>2014-06-17T14:55:50-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Inquiry and demonstration]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration/"/>
+    <updated>2014-06-17T14:15:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration</id>
+    <content type="html"><![CDATA[<p>Today Dr. Oliver gave us an amazing class about demonstration and inquiry. He first asked what question to think about or ask ourselves when using demonstration. Then we played two demonstration games with everybody totally engaged.</p>
+
+<p>The first is radiometer (<a href="http://en.wikipedia.org/wiki/Crookes_radiometer">Crookes radiometer - Wikipedia</a>).<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/radiometer.jpg" alt="Crookes Radiometer" /></p>
+
+<p>He just put it on a table and lighted up another bulb, it began to rotate. It was my first time to see this, I was very curious of its work principle. After close observation, I found that it rotated always the same direction with white vane in front and black vane behind.</p>
+
+<p>Then we began to wonder what factors caused the vanes to rotate. Lights? But how? Temperature? how? What else? How can we found out? Try it. I tried using different angles of the light.</p>
+
+<p>We also tried to use hot water and cold water to pure on it. It rotate exactly the same direction as using light when using hot water but the opposite direction when using cold water.<br/>
+Nobody came up with a good explantion at the end. First I thought it was because the momentum of the absorbed Photon just like Crookes did which was wrong in this situation.</p>
+
+<p>Then we began to do another game --Buoyancy.<br/>
+First Dr. Oliver sent out a pre-test with 3 yes no questions about buoyancy followed why you believe so. Then we talked about each question a little while. Students answers and opinions are totally different.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/pre-test.png" alt="Pre-test" /><br/>
+Let us found out. So he did another demonstration droppiing a brass cube into water cup which had been balanced. He asked us what would happen if he immersed it into the water.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/drop-into-water.png" alt="Brass cube into water" /><br/>
+We made our predictions and then we did the experiment. We also tried some other settings which were carefully designed but playfully demonstrated.</p>
+
+<p>At the end of the class, he use his front pocket quesitons to reflect this lesson:<br/>
+Does it elict students' ideas for teaching?<br/>
+Does it it help student make sense of the material activity?<br/>
+Dose it press students for evidenced based reasoning and communicating?</p>
+
+<p>Yes it does! Yeah, we succeed!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Modify my previous lesson ESCI7040-A1]]></title>
@@ -319,21 +352,6 @@ References
 <img src="https://raw.github.com/lukezhg/Freyja/master/local-extrema.png" alt="local extrema" /></p>
 
 <p>When the computer only have one seed, it is very likely trapped in a local extrema and return a wrong answer. It is just like a person who lost himself when he try to reach the extrema unrealized that it is only the local extrema.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Chinese Puzzle Pot design]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design/"/>
-    <updated>2014-04-19T14:46:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/04/19/chinese-puzzle-pot-design</id>
-    <content type="html"><![CDATA[<p>There is an interesting class called Intro to the design of everything <a href="https://www.udacity.com/course/viewer#!/c-design101/l-300162902/e-441839145/m-438038764">link here</a></p>
-
-<p>They showed a pot that can put in water by a hole at the bottom, and no water come out. It works well.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-photo.png" alt="Chinese puzzle pot photo" /></p>
-
-<p>The following is one possible inner structure design in my mind.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/chinese-puzzle-pot-design.png" alt="Chinese puzzle pot design" /></p>
 ]]></content>
   </entry>
   
