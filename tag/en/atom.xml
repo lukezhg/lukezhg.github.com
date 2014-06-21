@@ -4,7 +4,7 @@
   <title><![CDATA[tags: en | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/en/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-20T13:53:55-04:00</updated>
+  <updated>2014-06-21T12:52:54-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Coco Experiment]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/06/20/coco-experiment/"/>
+    <updated>2014-06-20T11:34:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/06/20/coco-experiment</id>
+    <content type="html"><![CDATA[<p>Today we did the coco experiment in Dr. Oliver's Class. Here are some pictures.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/five-coco.png" alt="five-coco" /></p>
+
+<p>The materials our group used:<br/>
+  1. 5 bottles of coco (4 diet coco, 1 coco)<br/>
+  1. 25 memos(5 fruit memos and 20 memos)<br/>
+  1. 5 ml salt<br/>
+  1. 1 measurer ruler<br/>
+  1. 1 funnel</p>
+
+<p>The 5 cocos were used as 5 experiment as control, coco, fruit memos, flat, salt. We measured the height of the coco before and after experiment, so we could count how much coco get out of the bottle. Here is what we got.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/coco-data.png" alt="data and figure" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Inquiry and demonstration]]></title>
@@ -111,9 +131,12 @@ There are two assessments: A1 explain Osmosis to high school students; A2 design
 
 <h4>The interactive lecture and student activities:</h4>
 
-<p>Tell the story of two kids arguing about sun:<br/>
-孔子到东方游历，遇见两个小孩在路上争辩，便问原因。一个小孩说：“太阳刚升起时距离人近。”另一个小孩说：“太阳中午的时候才距离人近呢。” 一个小孩又说：“不对，太阳刚升起的时候大得像个车盖，到了正午就小得像一个盘子，这不是远处的看着小而近处的看着大的道理吗？” 另一个小孩说：“太阳刚升起的时候清凉，到了中午的时候像手伸进热水里一样热，这不是近的时候感觉热而远的时候感觉凉的道理吗？”<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/two-kids-argue-sun.png" alt="tow kids argue sun" /><br/>
+<p>Tell the story of two kids arguing about sun:</p>
+
+<pre><code>孔子到东方游历，遇见两个小孩在路上争辩，便问原因。一个小孩说：“太阳刚升起时距离人近。”另一个小孩说：“太阳中午的时候才距离人近呢。” 一个小孩又说：“不对，太阳刚升起的时候大得像个车盖，到了正午就小得像一个盘子，这不是远处的看着小而近处的看着大的道理吗？” 另一个小孩说：“太阳刚升起的时候清凉，到了中午的时候像手伸进热水里一样热，这不是近的时候感觉热而远的时候感觉凉的道理吗？”  
+</code></pre>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/two-kids-argue-sun.png" alt="tow kids argue sun" /><br/>
 Which kid do you agree with?<br/>
 How about the situation of winter and summer?<br/>
 If you are going to teaching these two kids the model of sun and earth, what are you going to do with these ideas? <br/>
@@ -124,7 +147,7 @@ Learning is a process that seldom change. Yes No<br/>
 Learning ability can be enhanced though learning effort. Yes No<br/>
 How this lesson Connect, extend or challenge what you know and how you teach?</p>
 
-<p>Can you share a impressive learning experience that happened to you before?</p>
+<p>Can you share a impressive learning experience that happened to you before? Or your most powerful learning strategy?</p>
 
 <ol>
 <li><p>Think-pair-share<br/>
@@ -135,13 +158,24 @@ Read a research paper of misconception, write down all possible ways to elicit s
 <li><p>One minute writing<br/>
 Why students approach the same problem differently? How can you encourage deep learning?</p></li>
 <li><p>Sorting learning tasks and matching with learning strategies.<br/>
+List as many different types of learning tasks as you can in your group?<br/>
+Group them as many ways as you can?</p></li>
+</ol>
+
+
+<p>Sorting learning tasks:<br/>
 Write down the definition of enzyme.<br/>
 Judge whether x is Enzyme or not.<br/>
 Compare Plant and animal cell structures.<br/>
 Draw the process of Mitosis.<br/>
 Design the law of using human embryonic cells as research materials.<br/>
 Count the Probability of a special Phenotype in the next generation.<br/>
-Explain why egg shells are not too thin or too thick.</p></li>
+Explain why egg shells are not too thin or too thick.</p>
+
+<p>Learning strategies:<br/>
+compare and group, summarize, visualize, hands-on, simplize, break down</p>
+
+<ol>
 <li><p>Student teaching one concept to other students or one screen to the class.<br/>
 They need to be the volunteer and download the material and learn it before class, they have 3 minutes to help group members to understand this concept. Students will share their learning experience and give feedback to the volunteer teacher.</p></li>
 <li><p>Diagnosing students' learning difficulties in a teaching clip.<br/>
@@ -183,203 +217,85 @@ Teacher will show a clip of real teaching, the students are asked to make sense 
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Writing paper for publication]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/05/14/writing-paper-for-publication/"/>
-    <updated>2014-05-14T10:23:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/05/14/writing-paper-for-publication</id>
-    <content type="html"><![CDATA[<p>Writing is an very important skill as speaking. It aims to send message, from people to people, from generation to generation, from country to country. One of the most efficient way to do this is publishing in good journals. Nowadays, publication has become a crucial part of resume or CV, and people write papers not just for sending messages but also seeking for promotions. So good universities ask faculties for good papers; good researchers look for good journals to publish. Good journals want good impactors or indexes. Good researchers tend to cite more good papers from good journals. But can this system help sending necessary message to those in-need audiences? It may not necessarily be the case. It is just a game of numbers dominated by the for-profit companies and ambitious universities who care little what the content really mean.</p>
+    <title type="html"><![CDATA[Why it is so hard to bridge the theory-practice gap]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/06/11/why-it-is-so-hard-to-bridge-the-theory-practice-gap/"/>
+    <updated>2014-06-11T10:31:00-04:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/06/11/why-it-is-so-hard-to-bridge-the-theory-practice-gap</id>
+    <content type="html"><![CDATA[<p>Dr. Oliver let us read this following paper and write one or two paragraph of summary.<br/>
+Nuthall, G. (2004). Relating Classroom Teaching to Student Learning: A Critical Analysis of Why Research Has Failed to Bridge the Theory-Practice Gap. Harvard Educational Review, 74(3), 273–307.</p>
 
-<p>Complain is enough. We still have to write anyway. But I believe we are writing for our audiences not for universities or journal companies. We write because we have the impulse to share. As a beginning researcher, I'd like to co-write with partners at first. I can learn easier and faster by observing the writing process and talking to them about it. So I would also recommend you co-write with somebody at first.</p>
+<p>It is good paper to read, although it is a little long for non-native English speaker.</p>
 
-<p>Although you may not like the game, it is still good to know the rules and the tools. Here are some useful resources for writhing educational journals:</p>
+<p>Here is what I got:</p>
 
-<p>I found writhing is both hard and complicated. It is like a hedgehog rolls itself as a ball; you can hardly approach anyhow. First it is hard because it is hard. Especially if you don't write often, it takes time to develop your own writing skills. Second, it is complex and complicated. Writhing a paper may include many small jobs: reading, citing, linking, analyzing, reasoning, revising, formatting, managing. It will remain hard unless you cut the job into small pieces that you can play with; Cutting tasks is a crucial managing skill.</p>
+<p>It matters how teacher look at and use educational research.<br/>
+Is this why western culture emphase qualitative studies than quantitative studies?<br/>
+The precondition of this approach is that teacher education help teachers do so. So it should be one topic in teacher education program.<br/>
+why research necessary for teacher development<br/>
+what research questions are more hard to know by only practicing<br/>
+What relationship existes between teaching and learning</p>
 
-<h3>Writing tips:</h3>
+<p>Why educational research is necessary:<br/>
+1 teacher hard to see learning evidence (only some students)<br/>
+2 reseach can help identify teachers' tacit beliefs and limitations<br/>
+3 learning in students' mind are not easy to see by teachers where research should help.</p>
 
-<pre><code>* Write down your thoughts while you read.  
-* Write it down when it come up to you.  
-* Write timely before the deadline.  
-* Write summary periodically.  
-* Write, and then shut down disturbs.  
-* Write with your ear, your mouth, and anything that helps.  
-* Write briefly and clear; Every word tell.  
-* Write as yourself and to be yourself.  
-* Write as you are talking to a friend about your new discovery(emotion)  
-</code></pre>
+<p>learning is an inner process that can not easily seen<br/>
+Research should help teacher see this process</p>
 
-<h3>Writing steps:</h3>
+<p>Teachers need an explanatory theory of the teaching-learning relationship that meets these
+requirements in order to plan, carry out, and evaluate their daily activi- ties effectively and efficiently(Floden, 2001; Levin &amp; ODonnell, 1999).</p>
 
-<pre><code>1  abstract, title, journal  
-2  results, logic, 5pages  
-3  enrich each paragraph and link together  
-4  revise and formatting  
-</code></pre>
+<p>Teachers usually take teaching-learning consequence for granted and when it don't it is student to blame.</p>
 
-<h3>What make a paragraph good</h3>
+<p>Classroom 3 layers:<br/>
+visible activities and behaviors<br/>
+semi-visible stu-stu<br/>
+semivisible individual stu</p>
 
-<p>Focus on one idea<br/>
-Format paragraph<br/>
-  -Topic sentence<br/>
-  -explanation evidence logic<br/>
--not too long: 3 sentences<br/>
--Concluding/Beginning sentence<br/>
--Paragraph work together<br/>
--unity(pronoun, sense, tongue)</p>
+<p>what role student-private-talk play in student learning(online learning sometimes is the case when learners do not interact with peers.)</p>
 
-<h3>What make good sentence</h3>
+<p>understanding how teaching is related to learning requires an understanding of:<br/>
+1. teacher influence<br/>
+2. sociocultural influence<br/>
+3. student make sense of their classroom experience</p>
 
-<p>-no cluster, brief, clear, concise every word tell<br/>
--use strong verb<br/>
--make it colorful</p>
+<p>a theory of effective teaching is still needed in order to know when to look and what to look for when you observe the teachers classroom activities.</p>
 
-<h3>The hard thing:</h3>
+<p>Best of these studies had two enormous advantages over previous research:<br/>
+First, they were based on systematic observation or audio- and video-recording of teacher and student behavior. Second, independent measures of student learning that were directly related to the student experi- ences being observed were used in almost all of the best studies.</p>
 
-<p>When you are wrting,it is hard to make the right decisions:<br/>
-when to quit (something you don't want to do now);<br/>
-when to search for help (something necessary but you can't do yourself);<br/>
-when to just do the job no matter you like it or not.</p>
+<p>Teachers themselves are not always good at rating student achievement, as their ratings tend to be strongly affected by student behavior and motivation, crediting the most attentive and interested with higher achievement (Gold- enberg, Gallimore, Reese, &amp; Garnier, 2001)</p>
 
-<h3>Writing tools:</h3>
+<p>The problem of process-product studies or careless quantitative studies is neglecting the context and other students out of</p>
 
-<p><a href="https://drive.google.com/">Google Drive</a> can help you co-write online.<br/>
-<a href="http://www.mendeley.com/">Mendeley</a> can help you manage your references.<br/>
-<a href="http://interest.science.thomsonreuters.com/forms/HistCite/">HisCite</a> can make graph to let you know how paper cited each other.<br/>
-<a href="http://www-01.ibm.com/software/analytics/spss/">SPSS</a> can help you analyze the data.<br/>
-<a href="http://latex-project.org/intro.html">LaTeX</a> is a good document preparation system especially useful when you have lots of equations and graphs(generated with R).<br/>
-There are lots of other text editors such as Miscro-soft Word, EditPlus for consider.</p>
+<p>The study, however, is of little use in advancing our knowledge about the teaching-learning relationship</p>
 
-<h3>Useful books:</h3>
+<p>I have already made the point that teachers cannot be aware of critical elements in the
+teaching-learning process in their own classrooms unless they already have a clear understanding of what to look for and have additional ways of observing or recording the experiences of individual students.</p>
 
-<p><a href="http://www.amazon.com/Publication-Manual-American-Psychological-Association-ebook/dp/B00CPUBEBM">Publication Manual by APA</a><br/>
-<a href="http://www.apastyle.org/">APA Style website</a><br/>
-<a href="http://www.amazon.com/Writing-Well-30th-Anniversary-Edition/dp/0060891548">On Writing Well</a> by Zinsser</p>
+<p>If you simply looked at the post-test totals, you would incorrectly assume that the more able learned more than the less able.</p>
 
-<h3>Journal Rankings Search:</h3>
+<p>But it cannot produce generalizable knowledge (or an evi- dence based explanatory theory) of the relationships between the alternative versions of the visible structure and the basis model (to use Oser and Baeriswyls model) that can be transferred from classroom to classroom.</p>
 
-<p><a href="http://www.scimagojr.com/journalrank.php?area=0&amp;category=3304&amp;country=all&amp;year=2012&amp;order=sjr&amp;min=0&amp;min_type=cd">Journal Rankings on Education</a><br/>
-<a href="http://admin-apps.webofknowledge.com/JCR/JCR?RQ=HOME">Web of Science JCR-WebSearch Engine</a></p>
+<p>It has been claimed that how students learn and how their learning is shaped by the actions of the teacher is always unique and context dependent (Barab &amp; Kirschner, 2001; Bolster, 1983). This claim is both true and not true.</p>
 
-<h3>Journals and their impactors(2012 JCR Social Science Edition):</h3>
+<p>Part of the professional knowledge of teachers must be the distinction between what is unique to a specific context and what is generalizable across all students and/or contexts. While the latter is the proper focus of research on the teaching-learning relationship, an adequate explanatory theory should help us to distinguish between the two.</p>
 
-<p>REVIEW OF EDUCATIONAL RESEARCH 4.2<br/>
-LEARNING AND INSTRUCTION 3.3<br/>
-Journal of the Learning Sciences 3.0<br/>
-COMPUTERS &amp; EDUCATION 2.7</p>
+<p>individual case studies of teaching, provided they include data about student experience and learning that can be directly connected to observations of specific classroom activities, can provide invaluable insights into the processes that lie behind the teaching-learning relationship.(baby project)</p>
 
-<p>JOURNAL OF RESEARCH IN SCIENCE TEACHING 2.5<br/>
-<a href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291098-237X">SCIENCE EDUCATION 2.4</a><br/>
-<a href="http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291098-237X/homepage/ForAuthors.html">for-authors</a><br/>
-<a href="http://jte.sagepub.com/">Journal of Teacher Education 1.6</a><br/>
-<a href="http://www.sagepub.com/journals/Journal200961/manuscriptSubmission">for-authors</a><br/>
-JOURNAL OF COMPUTER ASSISTED LEARNING 1.6<br/>
-<a href="http://www.tandfonline.com/action/journalInformation?show=aimsScope&amp;journalCode=tsed20#.U3QKWCggtes">INTERNATIONAL JOURNAL OF SCIENCE EDUCATION 1.3</a><br/>
-<a href="http://www.tandfonline.com/action/authorSubmission?journalCode=tsed20&amp;page=instructions#.U3QLWiggtes">for-authors</a></p>
+<p>I believe that the professional knowledge base that is most needed to improve the quality of teaching and teacher education is knowledge about the ways in which classroom activities, including teaching, affect the changes taking place in the minds of students: what students know and believe and what they can do with their knowledge (what I have called above practical explanatory theory). At the heart of the problem that teachers face in the classroom is knowing what is going on in the minds of the students (Steffe, Thompson, &amp; von Glasersfeld, 2000).</p>
 
-<p>British Journal of Educational Technology 1.3<br/>
-<a href="http://www.journals.elsevier.com/teaching-and-teacher-education/">TEACHING AND TEACHER EDUCATION 1.2</a><br/>
-<a href="http://www.journals.elsevier.com/teaching-and-teacher-education/">For Authors</a><br/>
-RESEARCH IN SCIENCE EDUCATION 1.1</p>
+<p>Suggestions for future studies:<br/>
+1. Independent in-depth assessment of what students learn.<br/>
+2. Complete, continuous data on individual student experience.<br/>
+3. Complete, continuous data on classroom activities.<br/>
+4. Analysis based on the continuous connections among classroom activities, student experiences, and learning processes.<br/>
+5. Avoid the aggregation of data.<br/>
+6. Explanatory theory must be directly and transparently connected to relevant evidence.</p>
 
-<h3>NARST Proposal Review Rubric</h3>
-
-<p>(from <a href="http://www.narst.org/">NARST website</a>)</p>
-
-<pre><code>
-For each category, three criteria are required. Given the constraints of the 5-page limit  
-for proposals, please assign a numerical rating using the following descriptors as a guide:
-5 Highly evident: Proposal provides clear, substantive, and coherent evidence of all criteria
-4 Evident: Proposal adequately describes all criteria in the category.
-3 Mostly evident: Proposal adequately describes 2 out of 3 criteria in the category
-2 Somewhat evident: Proposal adequately describes 1 out of 3 criteria in the category
-1 Not evident Proposal does not adequately describe any of the criteria in the category
-Subject/Problem
-1. Is there a clear focus for the study?
-2. Does the proposal include a clear rationale for the study?
-3. Does the proposal describe the model, theoretical framework, or philosophy of the study?
-Design or Procedure
-Empirical Studies
-1. Does the proposal clearly describe the methodology (theory of method)?
-2. Does the proposal clearly describe the research methods, design, and study context?
-3. Are the methodology, procedure, and design appropriate for the study?
-Non-Empirical Studies (e.g., conceptual or position papers, reviews of literature)
-1. Does the proposal clearly describe the approach used to develop the argument or conduct the review?
-2. Are the ideological/philosophical positions of the author and sources made clear?
-3. Does the proposal include an appropriate range of literature?
-Analyses and Findings
-Empirical Studies
-1. Do the data analyses appear to be appropriate, coherent, and complete?
-2. Are the arguments or interpretations supported by the data?
-3. Does the proposal discuss alternative interpretations, bias, reliability, or validity as appropriate?
-Non-Empirical Studies (e.g., conceptual or position papers, reviews of literature)
-1. Do the syntheses of ideas appear to be appropriate, coherent, and complete?
-2. Are the arguments or interpretations supported by evidence?
-3. Does the proposal discuss alternative interpretations, counter-arguments, or bias, as appropriate?
-Contribution
-1. Do the conclusions add to, refine, or refute the oretical constructs?
-2. Do conclusions contribute valuable insights into teaching/learning/researching science education?
-3. Does the proposal clearly describe implications for teaching/learning/researching science education?
-Cohesiveness*(Related Paper-Sets ONLY)
-1. Are all of the papers in the set focused on a similar concept/theme?
-2. Do all papers contribute new information to the set, making a meaningful strongly-related whole?
-3. Are all papers of high enough quality to be accepted individually?
-General Interest
-1. Does the content of the presentation promise to be of general interest to NARST members?
-2. Is the content presented in a way that will be meaningful to NARST members?
-3. Does the paper promise to be of interest to the education community at large?
-Overall Rating
-(1-not recommended; 5 highly recommended)  
-</code></pre>
-
-
-<h3>Basic Paper Structure(ITDFD)</h3>
-
-<pre><code>
-Title
-Author
-Abstract
-Keywords
-
-Introduction
-  Background
-  Literature
-Theoretical Framework 
-  Theoretical foundation
-  Research questions
-Design/Procedure
-  Participants
-  Instrument & Procedure
-  Reliability & Validity
-Findings
-  Tables & Figures
-Discussion
-  Findings review
-  Conclusions
-  Implications
-
-Acknowledgements
-References
-</pre>
-
-
-<p></code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Lost in local extrema]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/04/29/lost-in-local-extrema/"/>
-    <updated>2014-04-29T11:28:00-04:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/04/29/lost-in-local-extrema</id>
-    <content type="html"><![CDATA[<p>I love this place, the library at the second floor in Aderhold Building. I love this table, which is not too big but just enough. This love can guide me back home.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/simple-desk.png" alt="simple desk" /></p>
-
-<p>I lost myself sometimes in some very narrow area. People may ignore the whole when they are attracted and trapped by them. It can be power, It can be sex, It can also be anger and violence.</p>
-
-<p>A picture comes to my mind when I am thinking of these dangerous Local Extrema---the local extrema. I frist notice this phenomenion in NG's machine learning class. This is the picture that he used to show local extrema. <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/local-extrema.png" alt="local extrema" /></p>
-
-<p>When the computer only have one seed, it is very likely trapped in a local extrema and return a wrong answer. It is just like a person who lost himself when he try to reach the extrema unrealized that it is only the local extrema.</p>
+<p>Reference:<br/>
+Nuthall, G. (2004). Relating Classroom Teaching to Student Learning: A Critical Analysis of Why Research Has Failed to Bridge the Theory-Practice Gap. Harvard Educational Review, 74(3), 273–307.</p>
 ]]></content>
   </entry>
   

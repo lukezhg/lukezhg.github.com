@@ -4,7 +4,7 @@
   <title><![CDATA[tags: courses | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/courses/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-20T13:53:55-04:00</updated>
+  <updated>2014-06-21T12:52:54-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -78,9 +78,12 @@ There are two assessments: A1 explain Osmosis to high school students; A2 design
 
 <h4>The interactive lecture and student activities:</h4>
 
-<p>Tell the story of two kids arguing about sun:<br/>
-孔子到东方游历，遇见两个小孩在路上争辩，便问原因。一个小孩说：“太阳刚升起时距离人近。”另一个小孩说：“太阳中午的时候才距离人近呢。” 一个小孩又说：“不对，太阳刚升起的时候大得像个车盖，到了正午就小得像一个盘子，这不是远处的看着小而近处的看着大的道理吗？” 另一个小孩说：“太阳刚升起的时候清凉，到了中午的时候像手伸进热水里一样热，这不是近的时候感觉热而远的时候感觉凉的道理吗？”<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/two-kids-argue-sun.png" alt="tow kids argue sun" /><br/>
+<p>Tell the story of two kids arguing about sun:</p>
+
+<pre><code>孔子到东方游历，遇见两个小孩在路上争辩，便问原因。一个小孩说：“太阳刚升起时距离人近。”另一个小孩说：“太阳中午的时候才距离人近呢。” 一个小孩又说：“不对，太阳刚升起的时候大得像个车盖，到了正午就小得像一个盘子，这不是远处的看着小而近处的看着大的道理吗？” 另一个小孩说：“太阳刚升起的时候清凉，到了中午的时候像手伸进热水里一样热，这不是近的时候感觉热而远的时候感觉凉的道理吗？”  
+</code></pre>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/two-kids-argue-sun.png" alt="tow kids argue sun" /><br/>
 Which kid do you agree with?<br/>
 How about the situation of winter and summer?<br/>
 If you are going to teaching these two kids the model of sun and earth, what are you going to do with these ideas? <br/>
@@ -91,7 +94,7 @@ Learning is a process that seldom change. Yes No<br/>
 Learning ability can be enhanced though learning effort. Yes No<br/>
 How this lesson Connect, extend or challenge what you know and how you teach?</p>
 
-<p>Can you share a impressive learning experience that happened to you before?</p>
+<p>Can you share a impressive learning experience that happened to you before? Or your most powerful learning strategy?</p>
 
 <ol>
 <li><p>Think-pair-share<br/>
@@ -102,13 +105,24 @@ Read a research paper of misconception, write down all possible ways to elicit s
 <li><p>One minute writing<br/>
 Why students approach the same problem differently? How can you encourage deep learning?</p></li>
 <li><p>Sorting learning tasks and matching with learning strategies.<br/>
+List as many different types of learning tasks as you can in your group?<br/>
+Group them as many ways as you can?</p></li>
+</ol>
+
+
+<p>Sorting learning tasks:<br/>
 Write down the definition of enzyme.<br/>
 Judge whether x is Enzyme or not.<br/>
 Compare Plant and animal cell structures.<br/>
 Draw the process of Mitosis.<br/>
 Design the law of using human embryonic cells as research materials.<br/>
 Count the Probability of a special Phenotype in the next generation.<br/>
-Explain why egg shells are not too thin or too thick.</p></li>
+Explain why egg shells are not too thin or too thick.</p>
+
+<p>Learning strategies:<br/>
+compare and group, summarize, visualize, hands-on, simplize, break down</p>
+
+<ol>
 <li><p>Student teaching one concept to other students or one screen to the class.<br/>
 They need to be the volunteer and download the material and learn it before class, they have 3 minutes to help group members to understand this concept. Students will share their learning experience and give feedback to the volunteer teacher.</p></li>
 <li><p>Diagnosing students' learning difficulties in a teaching clip.<br/>
