@@ -192,9 +192,26 @@ google.setOnLoadCallback(function() {
 
 
   <div class="entry-content"><pre><code>
+##week1
+getwd() #获取当前工作目录
+setwd(dir) #设定当前工作目录 也可以直接通过菜单界面设定
+source("myfunction.R") #加入源之后才可以使用这个函数
+
 ##week2
+#list
 a <- 1:10
 b <- c(1,3,4,5,8,9,11,14,15,18)
+b <- b[-2] #去除第二个元素
+x <- FALSE
+y <- TRUE
+! x
+x & y
+x && y
+x | y
+x || y
+xor(x, y)
+
+isTRUE(x)
 cbind(a,b) #
 rbind(a,b) #
 length(a) #
@@ -215,8 +232,16 @@ mean() #求平均值
 cor(a,b) #求相关系数
 is.na()
 is.nan()
+
 read.table() #读取txt表格
 read.csv() #读取csv文件
+# 写文件略过row name
+write.csv(data, "data.csv", row.names=FALSE)
+# 同样写文件，当用空白替换"NA"
+write.csv(data, "data.csv", row.names=FALSE, na="")
+# 使用tabs略过row col name
+write.table(data, "data.csv", sep="\t", row.names=FALSE, col.names=FALSE) 
+参考[Cookbook for R » Writing data to a file](http://www.cookbook-r.com/Data_input_and_output/Writing_data_to_a_file/)
 
 names()
 x[!is.na(x)] # 去除缺失的数据
@@ -225,7 +250,8 @@ data["id"] #返回局部data.frame
 data["id"][!is.na(data["height"])] #返回height无缺失的id
 data[[id]] #返回vector
 paste("00","1",".csv",sep="") # 001.csv
-paste(a,collapse="")
+paste(a,collapse="") # 将一个list连成一个长字符
+
 for (i in 1:length(id)){
     s <- as.character(id[i])
     spre <- paste(rep("0",3-nchar(s)),collapse="") # use collapse join vector
@@ -262,6 +288,18 @@ with(mtcars, tapply(mpg, cyl, mean))# mtcars is a data.frame with cyl and mpg
 > s <- split(airdata, airdata$Month)
 > lapply(s,function(x) colMeans(x[,c("Ozone","Solar.R","Wind")]))
 split(x,list(f1,f2),drop=TRUE) # empty levels can be dropped
+
+> strsplit("1-2,3-4,5-6",",") #对字符串进行拆分
+> strsplit("1-2,3-4,5-6",",")[[1]][1] #返回 "1-2"
+> paste(rev(strsplit("abc", split = "")[[1]]), collapse = "") #反转字符串
+> grep("bcd", "abcd") # return 1 # 
+> regexpr("bcd","aabcd")
+[1] 3
+attr(,"match.length")
+[1] 3
+attr(,"useBytes")
+[1] TRUE
+
 
 > mapply(rep,1:4,4:1)
 [[1]]

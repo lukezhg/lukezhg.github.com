@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-27T21:51:13-04:00</updated>
+  <updated>2014-07-02T09:01:13-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,9 +18,9 @@
     <link href="http://zhangchunlei.com/blog/2014/06/27/demonstration-of-barometric-pressure-using-a-bottle-of-water/"/>
     <updated>2014-06-27T19:49:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/06/27/demonstration-of-barometric-pressure-using-a-bottle-of-water</id>
-    <content type="html"><![CDATA[<p>Dr. Oliver gave us an assignment to design a demonstration of science teaching. I alread had several ideas. One was show them <a href="http://zhangchunlei.com/blog/2014/06/23/the-surprising-trees/">The surprising trees</a>. Another one was use the bottle water activity.<br/>
+    <content type="html"><![CDATA[<p>Dr. Oliver gave us an assignment to design a demonstration of science teaching. I already had several ideas. One was show them <a href="http://zhangchunlei.com/blog/2014/06/23/the-surprising-trees/">The surprising trees</a>. Another one was rolling a paper roll. The last one was the bottle water activity.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/bottle-water-demonstration.png" alt="bottle water demonstration" /><br/>
-Today, when I was on the road home after swimming. I could not stop thinking a more neat idea and keep revising the activity in my mind. I was very tired because of swimming but I just could not stop thinking about it, even on bed with windows blocked. I imagined what the scence would be like, what to say, what to do, in what order, what questions to ask. I even came up with a little poem and dialogue:</p>
+Today, when I was on the road home after swimming. I couldn&#8217;t stop thinking a more neat idea and keep revising the activity. I was very tired because of swimming but my thinking keep running in my head, even on bed with windows closed and curtain down. I imagined what the scene would be like, what to say, what to do, in what order, what questions to ask. I even came up with a little poem and dialogue:</p>
 
 <pre><code>Needle needle hot
 Let the water jet out
@@ -29,14 +29,14 @@ Oh my God
 Nothing happen
 
 Wait a minute, let me check out...
-Hmm
+Hymn
 Why
 Maybe we need the hole more lower
 Let me make another hole
 
-Hmm
+Hymn
 Maybe the we can lay down the bottle
-Hmm
+Hymn
 Let me think, drawing the hole of water on blackboard,talk to myself
 
 Maybe we can make both the holes open
@@ -53,7 +53,7 @@ Why two holes on the same height also doesn't work?
 Why the two holes need to be on different height?
 </code></pre>
 
-<p>Finally, the design finished and the thinking stopped. This is the reason I don&#8217;t write at night near sleep.</p>
+<p>Finally, the design finished and the thinking stopped. This is the reason why I don&#8217;t write at night. Thinking will not let me sleep.</p>
 ]]></content>
   </entry>
   
@@ -741,7 +741,8 @@ This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOf
 <p>One approch is plotting them in a 2d picture to see if there is any patterns. But before that, you have to do the Muultidimensional Scaling to get your (x,y) from your Distance Matrix.</p>
 
 <p>Distance Matrix<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/distance-matrix.png" alt="Distance Matrix" /></p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/distance-matrix.png" alt="Distance Matrix" /><br/>
+How I got this matrix. Well, I just count them using my data. Of course, if can deside how you count them, which counts how much score, or you simply give them a number.</p>
 
 <pre><code>
 # 1) MDS 'cmdscale'
@@ -757,7 +758,7 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
 <p>This the x y data I got:<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /></p>
 
-<p>You got this picture after plotting it out.<br/>
+<p>I got this picture after plotting it out.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
 
 <p>Reference:<br/>

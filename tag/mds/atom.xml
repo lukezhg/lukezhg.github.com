@@ -4,7 +4,7 @@
   <title><![CDATA[tags: MDS | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/mds/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-06-27T21:51:13-04:00</updated>
+  <updated>2014-07-02T09:01:13-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -23,7 +23,8 @@
 <p>One approch is plotting them in a 2d picture to see if there is any patterns. But before that, you have to do the Muultidimensional Scaling to get your (x,y) from your Distance Matrix.</p>
 
 <p>Distance Matrix<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/distance-matrix.png" alt="Distance Matrix" /></p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/distance-matrix.png" alt="Distance Matrix" /><br/>
+How I got this matrix. Well, I just count them using my data. Of course, if can deside how you count them, which counts how much score, or you simply give them a number.</p>
 
 <pre><code>
 # 1) MDS 'cmdscale'
@@ -39,7 +40,7 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
 <p>This the x y data I got:<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/xy-data-mds.png" alt="Distance Matrix" /></p>
 
-<p>You got this picture after plotting it out.<br/>
+<p>I got this picture after plotting it out.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/plot-mds.png" alt="Distance Matrix" /></p>
 
 <p>Reference:<br/>
