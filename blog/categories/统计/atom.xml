@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 统计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/统计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-07-02T09:01:13-04:00</updated>
+  <updated>2014-07-03T13:31:31-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -93,9 +93,27 @@ source("myfunction.R") #加入源之后才可以使用这个函数
 
 ##week2
 #list
-a <- 1:10
-b <- c(1,3,4,5,8,9,11,14,15,18)
-b <- b[-2] #去除第二个元素
+> a <- 1:10
+> b <- c(1,3,4,5,8,9,11,14,15,18)
+> b <- b[-2] #去除第二个元素
+> c(1,2)*c(2,3)
+[1] 2 6
+
+> m <- c(1,2,3)
+> mynames <- c("1-2","2-3","4-5")
+> mytable <- setNames(m,mynames)#之后可以通过name来调用元素值
+1-2 2-3 4-5 
+  1   2   3 
+
+> union(x, y) #并集
+> intersect(x, y) #交集
+> setdiff(x, y) #前者有后者没有的
+> setequal(x, y) #元素是否全部相同
+> is.element(el, set)
+> unlist() #将层级list变为单层
+> unique(x) # 获取非重复元素
+
+# logical operation
 x <- FALSE
 y <- TRUE
 ! x
@@ -127,6 +145,7 @@ cor(a,b) #求相关系数
 is.na()
 is.nan()
 
+## file 文件
 read.table() #读取txt表格
 read.csv() #读取csv文件
 # 写文件略过row name
@@ -161,6 +180,7 @@ lapply(x,mean)#$a[1] 3  $b[1] 0.03937816
 如果x不是一个list,那么它将被自动转换成list,相当于使用as.list()函数
 x <- list(a=matrix(1:4,2,2),b=matrix(1:6,3,2))
 lapply(x,function(elt)elt[,1]) #$a[1] 1 2  $b[1] 1 2 3
+lapply(x,function(elt) strsplit(elt,"-")) #对每个元素使用“-”进行拆分
 sapply(x,mean) #会自动简化结果，返回一个vector或者matrix，不能简化返回list
 x <- matrix(rnorm(200),20,10)
 apply(x,2,mean) #返回10列的均值
@@ -183,6 +203,8 @@ with(mtcars, tapply(mpg, cyl, mean))# mtcars is a data.frame with cyl and mpg
 > lapply(s,function(x) colMeans(x[,c("Ozone","Solar.R","Wind")]))
 split(x,list(f1,f2),drop=TRUE) # empty levels can be dropped
 
+## 字符串 string
+> as.character()
 > strsplit("1-2,3-4,5-6",",") #对字符串进行拆分
 > strsplit("1-2,3-4,5-6",",")[[1]][1] #返回 "1-2"
 > paste(rev(strsplit("abc", split = "")[[1]]), collapse = "") #反转字符串
@@ -193,6 +215,9 @@ attr(,"match.length")
 [1] 3
 attr(,"useBytes")
 [1] TRUE
+
+> gregexpr("1","1-2,2-3,1-5") #返回所有匹配位置 也能利用length获取匹配数目
+> length(gregexpr("1","1-2,2-3,1-5,1-9,1-8")[[1]]) #返回4
 
 
 > mapply(rep,1:4,4:1)
@@ -208,6 +233,7 @@ attr(,"useBytes")
 [[4]]
 [1] 4
 
+## debug
 traceback() # print out where error occurs,else do nothing
 debug() # step through one line at a time
 browser() #suspend the execution wherever called and put it in debug mode
@@ -255,13 +281,15 @@ inv
 [3,] -0.2462983 -0.5435808 -1.3137063
 
 #week4
+#统计
 str(str)# see the structure of a object
 m <- matrix(rnorm(100),10,10)
 str(m)
 str(lm)
 str(ls)
 x <- rnorm(100,2,4)
-summary(x)
+summary(x) #摘要
+table(x) #返回频数表
 str(x)
 
 #作图
@@ -323,16 +351,14 @@ Assignment 3
 引用某个变量的子变量用
 time$year #而不是time.year
 
-表示数组相乘用 
-%*%
-
-判断是否包含 
-"a" %in% c("a","b","c")
-
-使用R的时候我自己经常犯的错误
+##常犯错误
 该使用[]的时候错误的使用了（），特别是在操作data.frame的时候
 该使用[[]]错误的使用了[]，前者可以变为向量，后者还是data.frame
 忘记了使用%%进行
+判断是否包含 
+"a" %in% c("a","b","c")
+表示数组相乘用 
+%*%
 
 如何使用Order
 > (ii <- order(x <- c(1,1,3:1,1:4,3), y <- c(9,9:1), z <- c(2,1:9)))
@@ -345,8 +371,6 @@ z    5    4    1    2    6    3    9    7    2     8
 
 
 </code></pre>
-
-
 
 ]]></content>
   </entry>
