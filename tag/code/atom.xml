@@ -4,7 +4,7 @@
   <title><![CDATA[tags: code | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/code/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-07-07T12:28:31-04:00</updated>
+  <updated>2014-07-09T09:34:43-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -88,6 +88,7 @@ write.csv(data, "data.csv", row.names=FALSE, na="")
 # 使用tabs略过row col name
 write.table(data, "data.csv", sep="\t", row.names=FALSE, col.names=FALSE) 
 参考[Cookbook for R » Writing data to a file](http://www.cookbook-r.com/Data_input_and_output/Writing_data_to_a_file/)
+write.table(sim, "pcksim.csv", row.names=na,col.names=c("",na),sep = ",") # 可以写列名称
 
 names()
 x[!is.na(x)] # 去除缺失的数据

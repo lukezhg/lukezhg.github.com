@@ -218,6 +218,7 @@ write.csv(data, "data.csv", row.names=FALSE, na="")
 # 使用tabs略过row col name
 write.table(data, "data.csv", sep="\t", row.names=FALSE, col.names=FALSE) 
 参考[Cookbook for R » Writing data to a file](http://www.cookbook-r.com/Data_input_and_output/Writing_data_to_a_file/)
+write.table(sim, "pcksim.csv", row.names=na,col.names=c("",na),sep = ",") # 可以写列名称
 
 names()
 x[!is.na(x)] # 去除缺失的数据
@@ -569,6 +570,10 @@ z    5    4    1    2    6    3    9    7    2     8
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/09/world-cup-brazil-vs-germany/">我们能从巴西对德国的比赛学到什么</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/27/demonstration-of-barometric-pressure-using-a-bottle-of-water/">Demonstration of barometric pressure using a bottle of water</a>
       </li>
     
@@ -602,10 +607,6 @@ z    5    4    1    2    6    3    9    7    2     8
     
       <li class="post">
         <a href="/blog/2014/06/11/cssci-journals-of-education/">CSSCI收录的教育期刊</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/11/curriculum-for-preservice-teachers/">师范生课程如何设置</a>
       </li>
     
   </ul>
