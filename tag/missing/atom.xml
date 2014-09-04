@@ -4,7 +4,7 @@
   <title><![CDATA[tags: missing | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/missing/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-07-22T11:40:43-04:00</updated>
+  <updated>2014-09-04T17:55:29+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Repeated Measures Correlation Mixed Model]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model/"/>
-    <updated>2014-04-17T09:02:00-04:00</updated>
+    <updated>2014-04-17T09:02:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model</id>
     <content type="html"><![CDATA[<p>How to do it?<br/>
 Analysis==>Mixed Model, then you got diaogue 1 as follows. ID shuold be put be included as subjects. Year should be included as repeated, cause I measured multiple times by different year.

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: network analysis | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/network-analysis/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-07-22T11:40:43-04:00</updated>
+  <updated>2014-09-04T17:55:29+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/"/>
-    <updated>2014-05-29T22:10:00-04:00</updated>
+    <updated>2014-05-29T22:10:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/29/mds-in-r</id>
     <content type="html"><![CDATA[<p>I met this problem when I was analysing teachers' PCK concept maps. I wanted to divide them into several clusters that shared the similar structures(nodes and links).</p>
 
