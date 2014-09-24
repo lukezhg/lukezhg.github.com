@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/教学/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-09-22T09:55:25+08:00</updated>
+  <updated>2014-09-24T10:39:09+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Cognitive Apprenticeship]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/09/22/cognitive-apprenticeship/"/>
+    <updated>2014-09-22T13:11:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/09/22/cognitive-apprenticeship</id>
+    <content type="html"><![CDATA[<p>Sawyer, R. (2006). The Cambridge handbook of the learning sciences. (R. K. Sawyer, Ed.). Cambridge: Cambridge University Press. doi:10.1017/CBO9780511816833</p>
+
+<p><a href="https://raw.github.com/lukezhg/Freyja/master/Mscare.png">Cognitive Apprenticeship</a></p>
+
+<p>Method(Mscare):<br/>
+Ways to promote the development of expertise<br/>
+1.  Modeling: teacher performs a task so students can observe<br/>
+1.  Scaffolding: teacher provides supports to help the student perform a task<br/>
+1.  Coaching: teacher observes and facilitates while students perform a task<br/>
+1.  Articulation: teacher encourages students to verbalize their knowledge and thinking<br/>
+1.  Reflection: teacher enables students to compare their performance with others<br/>
+1.  Exploration: teacher invites students to pose and solve their own problems</p>
+
+<p>认知性学徒机制在网络社区甚至大学的学习实践中非常值得关注。在学习活动设计时，也应该遵循和利用上图所提到的步骤和原则。</p>
+
+<p>比如这个表格所提到的内容、方法、次序和社区，在学习活动设计的时候就可以好好加以参照。</p>
+
+<p>例如对于教学设计的学习：<br/>
+一、内容<br/>
+专业知识：前端分析（学习内容、学习者、学习需要）、教学目标设定和表述、设计教学思路和过程落实重难点、学习成果的评价设计、在具体教学情境下实施并优化。<br/>
+一般性学习策略： 阅读材料、观察教学录像、见习、与专家教师交流、与同学相互交流、尝试设计和实施教学活动、自我反思。<br/>
+控制策略：制定学习目标和学习计划、记录学习进度、提前准备、主动参与、主动寻求帮助、反思和总结、树立更有挑战的学习目标、掌控时间。<br/>
+学习方法：通过反复强化练习口语以心理素质、通过优秀设计和教学视频找到自己的短板并模仿和创新、通过与专家教师的交流了解教学设计背后的思考和专家教师的思考和工作模式、通过微格训练锻炼基本的教学技能、通过阅读文献了解学生前科学概念研究成果、通过网络搜索查找教学素材和科学史内容。</p>
+
+<p>二、方法<br/>
+教师演示或者观看专家教师课堂录像<br/>
+作为助教与一线教师共同授课或者分析课后作业<br/>
+教师对师范生的学习活动组织的具体环节和过程进行校正和点评<br/>
+指导老师帮助师范生理清自己的教学思路、活动和活动意图<br/>
+鼓励师范生与其他师范生或者指导老师的教学做比较（目标、课堂气氛、教学技巧、学习效果等）<br/>
+指导教师鼓励师范生思考和解决自己教学中遇到的问题</p>
+
+<p>三、次序<br/>
+教学设计任务应该：<br/>
+由简单到复杂（观看视频、分析教学线索和设计意图、了解学生、分析内容、设计和表述教学目标、设计思路、收集素材、设计过程、学习效果评价的设计、评课、设计完整的一堂课、说课）<br/>
+由一般情境到多种情境（初中、高中；农村、城市；普通、重点；传统、创新）<br/>
+由总体概括到具体任务</p>
+
+<p>四、社区<br/>
+实际到中学去，看一看、相一想、试一试<br/>
+建立网络分享、互助、活动学习社区<br/>
+建立与一线教师和专家教师的专业对话<br/>
+建立见习、实习的基地和教学训练的小组活动常规<br/>
+激励内部动机，向着专家教师努力<br/>
+学会集体合作、树立并完成更有挑战性的目标</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Demonstration of barometric pressure using a bottle of water]]></title>
@@ -115,39 +168,6 @@ Notes: This is just an imaginary teaching learning scenario sequences.</p>
 <p>What can you see in these pictures? What can you infer? Can you guess or infer the functions of different structures? How do they function together in this process?</p>
 
 <p>Home work: Make a cell structure model that can represent all your group knowledge about cell. We will share and discuss our models on next lesson.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
-    <updated>2013-10-25T13:42:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
-    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo's Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
-
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
-
-<!--more-->
-
-
-<p>I asked my classmates what happens in the following situations.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
-
-<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
-
-<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
-
-<p>Ball A is the second arrived. Ball C is the last one. <br/>
-From Leaning Tower of Pisa Experiment to simulated experiment, what a big change information technology has made to our science teaching and learning!</p>
-
-<p>In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo's famous experiment on the Moon by Hammer and Feather Drop.</p>
-
-<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/4mTsrRZEMwA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>You see the space technology also expanded our learning experience and provided us an amazing teaching resource-a dicrepant event.</p>
 ]]></content>
   </entry>
   
