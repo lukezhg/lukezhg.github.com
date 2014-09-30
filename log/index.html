@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="Log Sep 30th, 2014 维护日志
-2014-09-30 去除google twitter等不容打开的服务插件 Sep 30th, 2014 Tweet Sharing Categories book (5)courses (7)Firefox (4)flash (3)IRT (2) &hellip;">
+2014-09-30 去除google twitter等不容打开的服务插件(config.yml)，unable了google translate（includes/head.html 注释掉了gt），并且在config.yml并未加载相应的页面了 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -27,8 +27,10 @@
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<!-- unable google webfonts
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+-->
 <script>
 function addBlankTargetForLinks () {
   $('a[href^="http"]').each(function(){
@@ -108,7 +110,7 @@ google.setOnLoadCallback(function() {
   <li><a href="/en"> EN </a></li>
   <li><a href="/cn"> 中文 </a></li>
   <li><a href="/app"> App </a></li>
-  <li><a href="/app"> log </a></li>
+  <li><a href="/log"> log </a></li>
   <li><a href="/about"> About </a></li>
 </ul>
 </nav>
@@ -135,7 +137,9 @@ google.setOnLoadCallback(function() {
   </header>
   
   <p>维护日志<br/>
-2014-09-30 去除google twitter等不容打开的服务插件</p>
+2014-09-30 去除google twitter等不容打开的服务插件(<em>config.yml)，unable了google translate（includes/head.html 注释掉了gt），并且在</em>config.yml并未加载相应的页面了。</p>
+
+<p>注销掉google webfonts 通过编辑/source/_includes/custom/head.html</p>
 
   
     <footer>
