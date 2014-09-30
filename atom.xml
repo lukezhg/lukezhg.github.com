@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-09-24T14:39:31+08:00</updated>
+  <updated>2014-09-30T12:04:51+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Myths about learning]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/09/30/myths-about-learning/"/>
+    <updated>2014-09-30T11:45:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/09/30/myths-about-learning</id>
+    <content type="html"><![CDATA[<p>Myths About Learning<br/>
+关于学习的认识误区</p>
+
+<p>Will Rogers once said, “It isn’t what people don’t know that hurts them. It’s what they do know that just ain’t so.” All of us – teachers, parents, and students – retain outdated ideas about learning that are based largely on our previous experiences in school. Modern brain science has helped steer us in the right direction.<br/>
+Will Rogers曾经说过：造成伤害的不是哪些人们不了解的东西，而恰恰是他们自认为知道但却错误的东西。我们所有人，教师、家长还有学生，还留着基于学校经验的过时了的学习观。现代脑科学已经帮助我们转向正确的方向。</p>
+
+<p>Here are a few of the biggest myths:<br/>
+下面是一些最大的认识误区：</p>
+
+<p>Basic Facts Come Before Deep Learning<br/>
+This one translates roughly as, “Students must do the boring stuff before they can do the interesting stuff.” Or, “Students must memorize before they can be allowed to think.” In truth, students are most likely to achieve long-term mastery of basic facts in the context of engaging, student-directed learning.<br/>
+基本的概念一定要先于深度学习<br/>
+这句话，翻译过来就是“学生必须做无聊的事情，然后才能做有趣的事情。” 或者“学生必须记忆，然后才能思考。”实际上，在吸引人的、自我主导的学习情境中，学生才最容易达成对基本事实的真正掌握。</p>
+
+<p>Rigorous Education Means a Teacher Talking<br/>
+Teachers have knowledge to impart, but durable learning is more likely when students talk, create, and integrate knowledge into meaningful projects. The art of a teacher is to construct ways for students to discover.<br/>
+严格的教育意味着教师讲授<br/>
+教师有知识需要传授，当是实际上，只有当学生交谈、创造和在项目中应用知识的时候，持久的学习才更可能发生。</p>
+
+<p>Covering It Means Teaching It<br/>
+Teachers are often seduced by the idea that if they talk about a concept in class, they have taught it. At best, students get tentative ideas that will be quickly forgotten if not reinforced by a student-centered activity.<br/>
+讲了就等于教了<br/>
+教师经常会被这样的想法误导，如果他们在课上讲了一个概念，他们就已经教过了。而实际上，学生最多只是获得一些初步的想法，而且它们很快会被忘掉如果不通过学生为中心的活动加以巩固。</p>
+
+<p>Teaching to Student Interests Means Dumbing It Down<br/>
+If we could somehow see inside a student’s brain, its circuitry would correspond to its knowledge. Since new learning always builds on what is already in the brain, teachers must relate classroom teaching to what students already know. Teachers who fail to do so, whether due to ignorance or in pursuit of a false idea of rigor, are running afoul of a biological reality.<br/>
+依据学生的兴趣教学以为着降低要求<br/>
+假如一个人能看到一个学生的大脑内部的话，它的环路会对知识做出反应。因为新的学习永远需要建立在电脑已有的基础之上，教师必须将课堂教学与学生已知相关联。如果教师不能做到这点，无论是源于无知又或者对所谓严谨的错误认识，都只是在刁难一个生命存在。</p>
+
+<p>Acceleration Means Rigor<br/>
+Some schools accelerate strong students so that they can cover more material. ICG schools are more likely to ask such students to delve deeper into important topics. Deep knowledge lays a stronger foundation for later learning.<br/>
+加速就意味着严格<br/>
+有些学校加快好生的学习进度，这样他们可以学习更多的内容。独立课程团队学校会更多的让学生在重要主题上深入钻研。深层知识回味他们已有的学习奠定坚实的基础。</p>
+
+<p>A Quiet Classroom Means Good Learning<br/>
+Students sitting quietly may simply be zoned out, if not immediately, then within 15 minutes. A loud classroom, if properly controlled, included the voices of many students who are actively engaged.<br/>
+安静的课堂意味着良好的学习<br/>
+学生静静的坐着可能只是在走神，及时不是马上，15分钟后也会。一个嘈杂的课堂，如果在适当的控制下，实际上是包含了更多积极参与的学生声音。</p>
+
+<p>Traditional Schooling Prepares Students for Life<br/>
+Listening to teachers and studying for tests has little to do with life in the world of work. People in the work world create, manage, evaluate, communicate, and collaborate, like students in ICG schools.<br/>
+传统的学校教育让学生为生活做准备<br/>
+听教师讲课和为考试而学习与现实工作和生活实际上毫无关联。在现实世界，人们创造、管理、评判、交流、合作，就像独立课程学校的学生一样。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cognitive Apprenticeship]]></title>
@@ -24,12 +75,12 @@
 
 <p>Method(Mscare):<br/>
 Ways to promote the development of expertise<br/>
-1.  Modeling: teacher performs a task so students can observe<br/>
-1.  Scaffolding: teacher provides supports to help the student perform a task<br/>
-1.  Coaching: teacher observes and facilitates while students perform a task<br/>
-1.  Articulation: teacher encourages students to verbalize their knowledge and thinking<br/>
-1.  Reflection: teacher enables students to compare their performance with others<br/>
-1.  Exploration: teacher invites students to pose and solve their own problems</p>
+*  Modeling: teacher performs a task so students can observe<br/>
+*  Scaffolding: teacher provides supports to help the student perform a task<br/>
+*  Coaching: teacher observes and facilitates while students perform a task<br/>
+*  Articulation: teacher encourages students to verbalize their knowledge and thinking<br/>
+*  Reflection: teacher enables students to compare their performance with others<br/>
+*  Exploration: teacher invites students to pose and solve their own problems</p>
 
 <p>认知性学徒机制在网络社区甚至大学的学习实践中非常值得关注。在学习活动设计时，也应该遵循和利用上图所提到的步骤和原则。</p>
 
@@ -68,7 +119,7 @@ Ways to promote the development of expertise<br/>
 Contents</p>
 
 <ol>
-<li>Introduction: The New Science of Learning 1
+<li>Introduction: The New Science of Learning 1<br/>
 R. Keith Sawyer</li>
 </ol>
 
@@ -173,9 +224,9 @@ Subject Index</p>
     <id>http://zhangchunlei.com/blog/2014/09/22/walking-in-circles</id>
     <content type="html"><![CDATA[<p>walking in circles</p>
 
-<p>目标太多就会失去目标，然而没有任何目标和计划却有已经失去了目标，又或者更糟，追逐一个虚假的目标停不下来。</p>
+<p>目标太多就会失去目标，然而没有任何目标和计划却又已经失去了目标，又或者更糟，追逐一个虚假的目标停不下来。</p>
 
-<p>今天下午四点半左右，穿着拖鞋，我出去透透气。走下柏油路上，微风拂过脚面十分爽快。偶尔在青草地上踩两脚，鞋底是泡沫的，应该不至于造成太大的伤害，我心底下这么想。在篮球就场上上，我突然发现什么在窜动，定睛一看，原来是一群在水泥板缝隙之间穿梭的蚂蚁。</p>
+<p>今天下午四点半左右，穿着拖鞋，我出去透透气。走在柏油路上，微风拂过脚面十分爽快。偶尔在青草地上踩两脚，鞋底是泡沫的，应该不至于造成太大的伤害，我心底下这么想。在篮球场水泥板上，我突然发现什么在窜动，定睛一看，原来是一群在水泥板缝隙之间穿梭的蚂蚁。</p>
 
 <p>它们非常忙碌，有的忙着把东西搬回巢，有的忙着去搬运新的东西，还有的蚂蚁会把东西从水泥缝里扔出来，我猜想是这些东西比较碍事，或者它们决定临时先把这些东西放在外面晒一晒。偶然之间，我发现距离我较远的一测，有一只蚂蚁不足的打转。它不断进行这个顺时针的旋转，可能是迷路了，也可能是脑子有问题，或者是身体残疾了，只有一侧的运动器官听使唤。实际上我不知道蚂蚁是如何辨别方向的，也许他们压根就不用辨别方向(蚂蚁是否能感知方向？这是一个很值得探究的问题。)，只要跟着气味走就行了。它一圈圈的不停的绕着，而且越来越小，就好像是在追自己的尾巴一样。有的时候靠近缝隙了，甚至都要掉下去了，但是它居然能够又重新爬上来，重复着这样单调的活动。</p>
 
@@ -898,22 +949,6 @@ Nuthall, G. (2004). Relating Classroom Teaching to Student Learning: A Critical 
 
 <p>References:<br/>
 Brain-based Early Learning Activites</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Yellow dragon]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/06/01/yellow-dragon/"/>
-    <updated>2014-06-01T11:02:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/06/01/yellow-dragon</id>
-    <content type="html"><![CDATA[<p>Yellow dragon<br/>
-Yellow zoo<br/>
-Happy dancing<br/>
-Happy pool</p>
-
-<p>Jingle for my son<br/>
-At Athens<br/>
-June 1st 2014</p>
 ]]></content>
   </entry>
   

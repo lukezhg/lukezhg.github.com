@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/教学/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-09-24T14:39:31+08:00</updated>
+  <updated>2014-09-30T12:04:51+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Myths about learning]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/09/30/myths-about-learning/"/>
+    <updated>2014-09-30T11:45:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/09/30/myths-about-learning</id>
+    <content type="html"><![CDATA[<p>Myths About Learning<br/>
+关于学习的认识误区</p>
+
+<p>Will Rogers once said, “It isn’t what people don’t know that hurts them. It’s what they do know that just ain’t so.” All of us – teachers, parents, and students – retain outdated ideas about learning that are based largely on our previous experiences in school. Modern brain science has helped steer us in the right direction.<br/>
+Will Rogers曾经说过：造成伤害的不是哪些人们不了解的东西，而恰恰是他们自认为知道但却错误的东西。我们所有人，教师、家长还有学生，还留着基于学校经验的过时了的学习观。现代脑科学已经帮助我们转向正确的方向。</p>
+
+<p>Here are a few of the biggest myths:<br/>
+下面是一些最大的认识误区：</p>
+
+<p>Basic Facts Come Before Deep Learning<br/>
+This one translates roughly as, “Students must do the boring stuff before they can do the interesting stuff.” Or, “Students must memorize before they can be allowed to think.” In truth, students are most likely to achieve long-term mastery of basic facts in the context of engaging, student-directed learning.<br/>
+基本的概念一定要先于深度学习<br/>
+这句话，翻译过来就是“学生必须做无聊的事情，然后才能做有趣的事情。” 或者“学生必须记忆，然后才能思考。”实际上，在吸引人的、自我主导的学习情境中，学生才最容易达成对基本事实的真正掌握。</p>
+
+<p>Rigorous Education Means a Teacher Talking<br/>
+Teachers have knowledge to impart, but durable learning is more likely when students talk, create, and integrate knowledge into meaningful projects. The art of a teacher is to construct ways for students to discover.<br/>
+严格的教育意味着教师讲授<br/>
+教师有知识需要传授，当是实际上，只有当学生交谈、创造和在项目中应用知识的时候，持久的学习才更可能发生。</p>
+
+<p>Covering It Means Teaching It<br/>
+Teachers are often seduced by the idea that if they talk about a concept in class, they have taught it. At best, students get tentative ideas that will be quickly forgotten if not reinforced by a student-centered activity.<br/>
+讲了就等于教了<br/>
+教师经常会被这样的想法误导，如果他们在课上讲了一个概念，他们就已经教过了。而实际上，学生最多只是获得一些初步的想法，而且它们很快会被忘掉如果不通过学生为中心的活动加以巩固。</p>
+
+<p>Teaching to Student Interests Means Dumbing It Down<br/>
+If we could somehow see inside a student’s brain, its circuitry would correspond to its knowledge. Since new learning always builds on what is already in the brain, teachers must relate classroom teaching to what students already know. Teachers who fail to do so, whether due to ignorance or in pursuit of a false idea of rigor, are running afoul of a biological reality.<br/>
+依据学生的兴趣教学以为着降低要求<br/>
+假如一个人能看到一个学生的大脑内部的话，它的环路会对知识做出反应。因为新的学习永远需要建立在电脑已有的基础之上，教师必须将课堂教学与学生已知相关联。如果教师不能做到这点，无论是源于无知又或者对所谓严谨的错误认识，都只是在刁难一个生命存在。</p>
+
+<p>Acceleration Means Rigor<br/>
+Some schools accelerate strong students so that they can cover more material. ICG schools are more likely to ask such students to delve deeper into important topics. Deep knowledge lays a stronger foundation for later learning.<br/>
+加速就意味着严格<br/>
+有些学校加快好生的学习进度，这样他们可以学习更多的内容。独立课程团队学校会更多的让学生在重要主题上深入钻研。深层知识回味他们已有的学习奠定坚实的基础。</p>
+
+<p>A Quiet Classroom Means Good Learning<br/>
+Students sitting quietly may simply be zoned out, if not immediately, then within 15 minutes. A loud classroom, if properly controlled, included the voices of many students who are actively engaged.<br/>
+安静的课堂意味着良好的学习<br/>
+学生静静的坐着可能只是在走神，及时不是马上，15分钟后也会。一个嘈杂的课堂，如果在适当的控制下，实际上是包含了更多积极参与的学生声音。</p>
+
+<p>Traditional Schooling Prepares Students for Life<br/>
+Listening to teachers and studying for tests has little to do with life in the world of work. People in the work world create, manage, evaluate, communicate, and collaborate, like students in ICG schools.<br/>
+传统的学校教育让学生为生活做准备<br/>
+听教师讲课和为考试而学习与现实工作和生活实际上毫无关联。在现实世界，人们创造、管理、评判、交流、合作，就像独立课程学校的学生一样。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cognitive Apprenticeship]]></title>
@@ -24,12 +75,12 @@
 
 <p>Method(Mscare):<br/>
 Ways to promote the development of expertise<br/>
-1.  Modeling: teacher performs a task so students can observe<br/>
-1.  Scaffolding: teacher provides supports to help the student perform a task<br/>
-1.  Coaching: teacher observes and facilitates while students perform a task<br/>
-1.  Articulation: teacher encourages students to verbalize their knowledge and thinking<br/>
-1.  Reflection: teacher enables students to compare their performance with others<br/>
-1.  Exploration: teacher invites students to pose and solve their own problems</p>
+*  Modeling: teacher performs a task so students can observe<br/>
+*  Scaffolding: teacher provides supports to help the student perform a task<br/>
+*  Coaching: teacher observes and facilitates while students perform a task<br/>
+*  Articulation: teacher encourages students to verbalize their knowledge and thinking<br/>
+*  Reflection: teacher enables students to compare their performance with others<br/>
+*  Exploration: teacher invites students to pose and solve their own problems</p>
 
 <p>认知性学徒机制在网络社区甚至大学的学习实践中非常值得关注。在学习活动设计时，也应该遵循和利用上图所提到的步骤和原则。</p>
 
@@ -68,7 +119,7 @@ Ways to promote the development of expertise<br/>
 Contents</p>
 
 <ol>
-<li>Introduction: The New Science of Learning 1
+<li>Introduction: The New Science of Learning 1<br/>
 R. Keith Sawyer</li>
 </ol>
 
@@ -230,44 +281,6 @@ Why the two holes need to be on different height?
 <p>课堂上我一直下思考，如果我是一个师范生，我会如何设定自己的理念，承担什么样的教师角色和行为。我听到了更多来自学生实践经验的声音，那么教育研究的声音呢？教育研究与实践是否吻合？那些地方不吻合？如何解释这些不吻合的地方？是否有必要在课程中增添关于教师如何学习的知识？</p>
 
 <p>还有一个问题就是中国和美国的教法课有哪些不同？这些问题会引领我更深入的思考和行动。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[lesson plan of cell structure]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/11/16/lesson-plan-of-cell-structure/"/>
-    <updated>2013-11-16T11:05:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/11/16/lesson-plan-of-cell-structure</id>
-    <content type="html"><![CDATA[<p>Topic: Cell structure/Biology<br/>
-Designer: <a href="http://zhangchunlei.com/about/">Chunlei Zhang</a><br/>
-Student: High school students<br/>
-Notes: This is just an imaginary teaching learning scenario sequences.</p>
-
-<p>Imagine a house in your mind(or you can draw it), maybe your family house, maybe not. What does it look like from outside? What about the look of inside? What is the house composed of? What is the function of each part? Can you ask more questions about house?( who made them? which style? what is it made of? how to make a house?) cool!</p>
-
-<p>Today we are going to study cell,similar with house, you can imagine cell as a house for a new strange life. You can ask any questions you want? (list students questions)</p>
-
-<p>Some of your questions, scientists have answered? some question still need further inquiry.</p>
-
-<p>Do you know why scientists study cell?(R or NR) They want to know more about life, an essential question is "What is life is made of?" They finally found the answer through a special equipment -- microscope. Their finding suggest that most organism are made of cell. There is a story of discovery of cell.(telling the story)</p>
-
-<p>Cell are usually very very small, and invisible to the naked eye. Do you have any experience of bleeding? What is the color of blood? If you take out of the blood cells, then it looks like this.[picture] What can you infer from this picture? If you look at blood through microscope, then you can see this. These are blood cells. If you look at the blood vessel, you will see this.(video) Not only blood, every parts of your body is made of cells.(student can also draw this conclusion by observing the picture of different tissue are made of different types cells)</p>
-
-<p>Can you guess what is inside of a cell?(Predicted answers: empty, just water or solution, there must be some structures inside)</p>
-
-<p>If we use electron microscope, then we can see the inside structure of the cell. Here is some pictures, try to build a cell structure model as a group. You can number different structures.</p>
-
-<p>When the structures were first discovered by scientist, they also found it hard to communicate, so they name them. Sometime they name them by their characteristics, sometimes using the scientist's name. (give the names of different structure) Can you distinguish the different structures inside a cell? Have a try in your group.</p>
-
-<p>Group assessment, show Simulation and let students guess what is the structure and its possible function.</p>
-
-<p>How the different structures relate with each other? We don't know. What do you suggest, if you are going to study this research question.</p>
-
-<p>Scientists got these pictures, when they study how proteins are made and transported outside of cells.[three pictures]</p>
-
-<p>What can you see in these pictures? What can you infer? Can you guess or infer the functions of different structures? How do they function together in this process?</p>
-
-<p>Home work: Make a cell structure model that can represent all your group knowledge about cell. We will share and discuss our models on next lesson.</p>
 ]]></content>
   </entry>
   
