@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2014-10-05T19:50:46+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress tips]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/10/05/octopress-tips/"/>
+    <updated>2014-10-05T19:37:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/10/05/octopress-tips</id>
+    <content type="html"><![CDATA[<h3>markdown语法示例</h3>
+
+<p>句子的尾部输入两个空格然后回车就可以断行 <br/>
+句首加>进行引用，使用>>进行层级引用 <br/>
+句首使用设定标题<br/>
+<code>###Title 1</code></p>
+
+<p>插入图片代码：<br/>
+<code><img src="images\bird_32_gray.png" alt="Alt text" /></code></p>
+
+<p>如何实现页内跳转
+设定锚代码如下：<br/>
+<code><a id="1">[1]</a></code></p>
+
+<p>正文中引用<a href="#1">1</a>代码：
+<code>见参考文献<a href="#1">1</a></code></p>
+
+<p>More<br/>
+<code><!--more--></code></p>
+
+<h3>Video Example</h3>
+
+<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<h3>Flash example</h3>
+
+<object 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://www.biologymad.com/resources/kidney.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://www.biologymad.com/resources/kidney.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

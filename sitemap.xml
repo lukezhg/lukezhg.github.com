@@ -670,7 +670,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/</loc>
-        <lastmod>2013-11-04T01:45:31+08:00</lastmod>
+        <lastmod>2014-10-05T19:46:18+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2013/01/05/bus-story/</loc>
@@ -1348,7 +1348,11 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/2014/10/05/where-does-urine-come-from/</loc>
-        <lastmod>2014-10-05T19:30:40+08:00</lastmod>
+        <lastmod>2014-10-05T19:35:49+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://zhangchunlei.com/blog/2014/10/05/octopress-tips/</loc>
+        <lastmod>2014-10-05T19:48:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/404.html</loc>
@@ -1364,7 +1368,7 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/blog/archives/</loc>
-        <lastmod>2014-10-05T19:30:40+08:00</lastmod>
+        <lastmod>2014-10-05T19:48:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/cn/</loc>
@@ -1376,11 +1380,11 @@
     </url>
     <url>
         <loc>http://zhangchunlei.com/</loc>
-        <lastmod>2014-10-05T19:30:40+08:00</lastmod>
+        <lastmod>2014-10-05T19:48:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/log/</loc>
-        <lastmod>2014-09-30T16:11:05+08:00</lastmod>
+        <lastmod>2014-10-05T19:50:24+08:00</lastmod>
     </url>
     <url>
         <loc>http://zhangchunlei.com/robots.txt</loc>

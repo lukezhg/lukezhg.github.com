@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-10-05T19:30:50+08:00</updated>
+  <updated>2014-10-05T19:50:46+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress tips]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/10/05/octopress-tips/"/>
+    <updated>2014-10-05T19:37:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/10/05/octopress-tips</id>
+    <content type="html"><![CDATA[<h3>markdown语法示例</h3>
+
+<p>句子的尾部输入两个空格然后回车就可以断行 <br/>
+句首加>进行引用，使用>>进行层级引用 <br/>
+句首使用设定标题<br/>
+<code>###Title 1</code></p>
+
+<p>插入图片代码：<br/>
+<code><img src="images\bird_32_gray.png" alt="Alt text" /></code></p>
+
+<p>如何实现页内跳转
+设定锚代码如下：<br/>
+<code><a id="1">[1]</a></code></p>
+
+<p>正文中引用<a href="#1">1</a>代码：
+<code>见参考文献<a href="#1">1</a></code></p>
+
+<p>More<br/>
+<code><!--more--></code></p>
+
+<h3>Video Example</h3>
+
+<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<h3>Flash example</h3>
+
+<object 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://www.biologymad.com/resources/kidney.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://www.biologymad.com/resources/kidney.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Where does urine come from]]></title>
@@ -50,9 +104,6 @@ pluginspage="http://www.macromedia.com/go/getflashplayer">
 </embed> 
 </object>
 
-
-<p><img src="http://www.biologymad.com/resources/kidney.swf" alt="kidney" /><br/>
-<video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://www.biologymad.com/resources/kidney.swf' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
 
 <p>对物质的过滤是如何实现的？<br/>
 深入的概念学习：不同大小的分子通过半透膜的规律。<br/>
@@ -848,40 +899,6 @@ Nuthall, G. (2004). Relating Classroom Teaching to Student Learning: A Critical 
 3. 不要太主观化、运动化、意愿化、敌对化，要基于实证研究结果和国情做出决策，求准不求快。</p>
 
 <p>其实这场论战早就开始了，细看其中的参考文献就知道了。能听的进去别人不同的意见，才了不起。毕竟是为公不为私。其实课程改革的团队恰恰需要不同的声音，决策者应该将不同声音都纳入到重大决策的制定和执行团队中，不辨不明。协商下的妥协要胜过一边倒的绝对胜利式的决策。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[柔柔的光]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/06/05/ai-de-rou-guang/"/>
-    <updated>2014-06-05T10:12:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/06/05/ai-de-rou-guang</id>
-    <content type="html"><![CDATA[<p>明明想让你快乐<br/>
-却只留下悲伤<br/>
-不知道爱情模样<br/>
-还痴心一场</p>
-
-<p>人海茫茫<br/>
-不如一个人流浪<br/>
-在一个陌生的城市<br/>
-向着一个陌生的方向</p>
-
-<p>每当夜幕降临的时候<br/>
-你总是出现在我面前<br/>
-命运扼住了喉咙<br/>
-泪水已打湿了双眼</p>
-
-<p>不知何时丢失了双桨<br/>
-只剩下孤独的帆<br/>
-不知多少岁月又或是多少年<br/>
-你可曾记得我们初相见</p>
-
-<p>风雨后<br/>
-一个寂寞的小荷塘<br/>
-微风轻抚<br/>
-阵阵送清凉<br/>
-水面上<br/>
-荡起你柔柔的光</p>
 ]]></content>
   </entry>
   
