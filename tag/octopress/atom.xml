@@ -4,7 +4,7 @@
   <title><![CDATA[tags: octopress | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/octopress/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-10-05T19:50:46+08:00</updated>
+  <updated>2014-10-05T20:03:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -25,8 +25,12 @@
 句首使用设定标题<br/>
 <code>###Title 1</code></p>
 
-<p>插入图片代码：<br/>
-<code><img src="images\bird_32_gray.png" alt="Alt text" /></code></p>
+<p>插入图片代码：</p>
+
+<pre><code>![Alt text](images\bird_32_gray.png)</code></pre>
+
+
+<p></p>
 
 <p>如何实现页内跳转
 设定锚代码如下：<br/>
