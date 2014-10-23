@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/技术技巧/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-10-06T16:01:28+08:00</updated>
+  <updated>2014-10-23T23:19:04+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -242,7 +242,7 @@ def main():
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[fighting with display problem in my coumputer]]></title>
+    <title type="html"><![CDATA[fighting with the problem in my coumputer]]></title>
     <link href="http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer/"/>
     <updated>2013-07-30T07:51:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2013/07/30/fighting-with-display-problem-with-my-computer</id>
@@ -281,10 +281,14 @@ def main():
 
 <p>你看是不是跟做研究一样一样的。</p>
 
-<p>What I learn from this:<br/>
-+   never buy a computer with two display card fire together<br/>
-+   if you have important thing just leave these problems there, important thing come frist<br/>
-+   reflect and record your problem solving process</p>
+<h3>What I learn from this:</h3>
+
+<ul>
+<li>never buy a computer with two display card fire together</li>
+<li>if you have important thing just leave these problems there, important thing come frist</li>
+<li>reflect and record your problem solving process</li>
+</ul>
+
 
 <p><add>于2014-05-10<br/>
 两三个月前，又出现了同样的问题，但是这次无论使用什么办法都不管用了。于是我就学着适应这种改变，虽然开机是黑屏的，但是我仍然能正常启动，反而增加了系统的安全性，于是我就听之任之。</p>
@@ -292,6 +296,10 @@ def main():
 <p>前两天，突然屏幕的图标变大了，我曾经使用过会议室的投影仪，开机的时候连着投影仪，关机的时候已经拔出了，结果回到宿舍，发现屏幕休眠后可以正常唤醒，于是重新启动定闹，结果久违的登陆页面一下子又自己出来了。</add></p>
 
 <p><add>17May2014  在没有插电源的情况下，电脑进入了待机状态，唤醒时黑屏，不能正常回复。强制关机后，采用最后一次正确配置，变为正常。</add></p>
+
+<h3>windows开始菜单单击无反应</h3>
+
+<p>可能是宝宝连续按电脑开关，导致的windows开始菜单无法打开：搜索了一下解决方案，第一种是建议右键系统盘选择工具，检查错误。一开始有效，后来不知怎么这招也不管用了。于是再次搜索，发现第二种解决方案：开始/运行输入regedit回车，打开注册表编辑器定位（按Windows键+R打开运行窗口） [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer] 在右侧选新建DWORD值，命名为 NoWinKeys，并双击将这个键值设为“0”按确定，在按F5刷新或重启电脑。这个管用。</p>
 ]]></content>
   </entry>
   
