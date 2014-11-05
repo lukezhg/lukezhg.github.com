@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: 教育科研方法 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/教育科研方法/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2014-11-05T17:12:28+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[本科生做教育科研的常见问题与对策]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/11/05/common-problems-in-college-students-thesises/"/>
+    <updated>2014-11-05T17:06:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/11/05/common-problems-in-college-students-thesises</id>
+    <content type="html"><![CDATA[<p>1 研究问题不清晰（没头没脑的研究）<br/>
+用一个或两个问句来表述你的研究问题<br/>
+这些问题能引出可检测的假设</p>
+
+<p>2 研究题目过大（大帽子研究）<br/>
+缩小研究的范畴<br/>
+限定研究对象<br/>
+限定研究的方式和方法</p>
+
+<p>3 缺乏实证（跛脚的研究）<br/>
+梳理其他研究者的证据<br/>
+使用现有的数据库<br/>
+案例研究的证据（观察、访谈、作品）<br/>
+准实验研究的证据（量表）<br/>
+直接的文本（比如教材、学生作业）</p>
+
+<p>3.1 样本选取不合适<br/>
+考虑样本的代表性（想一想选取的样本是否典型，能都代表多大的范围）<br/>
+考虑研究方法的特点（比如个案研究更适于目的抽样，而大规模的调查研究更适于随机抽样）</p>
+
+<p>3.2 对数据的分析和挖掘不够<br/>
+调查前就明确要分析的方法<br/>
+增加统计分析的知识<br/>
+找人帮助分析</p>
+
+<p>4 证据或数据与结论不相符（头重脚轻的研究）<br/>
+要理清研究的思路和逻辑链<br/>
+一定要针对研究问题去收集数据<br/>
+基于证据或数据下合适的结论，避免按照主观意愿下过大过空的结论</p>
+
+<p>5 缺乏理论基础或者比较框架（没有根底的研究）<br/>
+做好前期的文献工作，找到相关研究的理论基础或框架或者研究方法论<br/>
+根据自己的研究主题和目的，选择并明确自己的理论依据或分析框架<br/>
+阐明自己研究背后暗含的理论假设或基础</p>
+]]></content>
+  </entry>
+  
+</feed>
