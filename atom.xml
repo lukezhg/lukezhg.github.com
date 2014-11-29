@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-11-08T19:16:21+08:00</updated>
+  <updated>2014-11-29T18:07:07+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,357 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Flash AS3 zip Manual]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/"/>
+    <updated>2014-11-27T14:48:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual</id>
+    <content type="html"><![CDATA[<p>Action Script 3.0 简明手册<br/>
+在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br/>
+变量与常量<br/>
+变量有不同的类型，一个变量由变量名和值构成。</p>
+
+<p>var value2:Number = 17;<br/>
+const SALES_TAX_RATE:Number = 0.07;</p>
+
+<p>属性<br/>
+简单地视为包含在对象中的“子”变量。</p>
+
+<p>square.x = 100;<br/>
+square.y = 150;<br/>
+square.rotation = triangle.rotation;<br/>
+square.scaleX = 1.5;<br/>
+square.scaleY = 1.5;<br/>
+square.currentFrame<br/>
+square.alpha = 30;<br/>
+square.height =20;<br/>
+square.width =40;<br/>
+square.visible =false;</p>
+
+<p>调用方法：变量名-点-属性名<br/>
+方法<br/>
+方法是指可以由对象执行的操作。</p>
+
+<p>shortFilm.play();<br/>
+shortFilm.stop();<br/>
+shortFilm.gotoAndStop(1);</p>
+
+<p>某些方法可以执行计算并返回可以像变量一样使用的结果。</p>
+
+<p>var numericData:Number = 9;<br/>
+var textData:String = numericData.toString();<br/>
+calculatorDisplay.text = numericData.toString();</p>
+
+<p>事件<br/>
+本质上，事件就是所发生的、ActionScript 能够识别并可响应的事情。<br/>
+在编写执行事件处理时三个重要元素：</p>
+
+<pre><code>事件源：事件实际发生的位置。  
+事件：发生的事情。  
+响应：事件发生时的执行动作。  
+</code></pre>
+
+<p>this.stop();<br/>
+function playMovie(event:MouseEvent):void{<br/>
+this.play();}</p>
+
+<p>playButton.addEventListener(MouseEvent.CLICK, playMovie);</p>
+
+<p>运算符</p>
+
+<h1>+-*/  </h1>
+
+<p>if (dayOfWeek == &#8220;Wednesday&#8221;){<br/>
+takeOutTrash();}</p>
+
+<p>//单行注释<br/>
+/<em>多行<br/>
+注释<br/>
+</em>/</p>
+
+<p>流控制<br/>
+函数<br/>
+调用函数调用函数</p>
+
+<p>trace(&#8220;Use trace to help debug your script&#8221;);<br/>
+var randomNum:Number = Math.random();</p>
+
+<p>var someDate:Date = new Date();<br/>
+var dayNum:uint = someDate.getDay();</p>
+
+<p>定义函数</p>
+
+<p>function traceParameter(aParam:String){</p>
+
+<pre><code>trace(aParam);}  
+</code></pre>
+
+<p>traceParameter(&#8220;hello&#8221;); // hello</p>
+
+<p>从函数返回值</p>
+
+<p>function doubleNum(baseNum:int):int{</p>
+
+<pre><code>return (baseNum * 2);}  
+</code></pre>
+
+<p>function passPrimitives(xParam:int, yParam:int):void{</p>
+
+<pre><code>xParam++;  
+yParam++;  
+trace(xParam, yParam);  
+</code></pre>
+
+<p>}</p>
+
+<p>函数参数</p>
+
+<p>var xValue:int = 10;<br/>
+var yValue:int = 15;<br/>
+trace(xValue, yValue);// 10 15<br/>
+passPrimitives(xValue, yValue); // 11 16<br/>
+trace(xValue, yValue);// 10 15</p>
+
+<p>循环</p>
+
+<p>for</p>
+
+<p>var i:int;<br/>
+for (i = 0; i &lt; 5; i++){<br/>
+trace(i);}</p>
+
+<p>for..in</p>
+
+<p>var myObj:Object = {x:20, y:30};<br/>
+for (var i:String in myObj){<br/>
+trace(i + &#8220;: &#8221; + myObj[i]);<br/>
+}<br/>
+//output:<br/>
+//x: 20<br/>
+// y: 30</p>
+
+<p>条件语句</p>
+
+<p>if (x > 0){<br/>
+trace(&#8220;x is positive&#8221;);}<br/>
+else if (x &lt; 0){<br/>
+trace(&#8220;x is negative&#8221;);}<br/>
+else{<br/>
+trace(&#8220;x is 0&#8221;);}</p>
+
+<p>switch</p>
+
+<p>switch(dayNum){<br/>
+case 0:trace(&#8220;Sunday&#8221;);<br/>
+break;<br/>
+case 1:trace(&#8220;Monday&#8221;);<br/>
+break;<br/>
+case 2:trace(&#8220;Tuesday&#8221;);<br/>
+break;<br/>
+case 3:trace(&#8220;Wednesday&#8221;);<br/>
+break;<br/>
+case 4:trace(&#8220;Thursday&#8221;);<br/>
+break;<br/>
+case 5:trace(&#8220;Friday&#8221;);<br/>
+break;<br/>
+case 6:trace(&#8220;Saturday&#8221;);<br/>
+break;<br/>
+default:trace(&#8220;Out of range&#8221;);<br/>
+break;<br/>
+}</p>
+
+<p>类<br/>
+点语法</p>
+
+<p>点运算符 (.) 提供对对象的属性和方法的访问。使用点语法，可以使用后跟点运算符和属性名或方法名的实例名来引用类的属性或方法。以下面的类定义为例：</p>
+
+<p>class DotExample<br/>
+{<br/>
+public var prop1:String;<br/>
+public function method1():void {}<br/>
+}</p>
+
+<p>借助于点语法，可以使用在如下代码中创建的实例名来访问 prop1 属性和 method1() 方法：</p>
+
+<p>var myDotEx:DotExample = new DotExample();<br/>
+myDotEx.prop1 = &#8220;hello&#8221;;<br/>
+myDotEx.method1();</p>
+
+<p>定义包时，可以使用点语法。可以使用点运算符来引用嵌套包。例如，EventDispatcher 类位于一个名为 events 的包中，该包嵌套在名为 flash 的包中。可以使用下面的表达式来引用 events 包：</p>
+
+<p>flash.events</p>
+
+<p>还可以使用此表达式来引用 EventDispatcher 类：</p>
+
+<p>flash.events.EventDispatcher</p>
+
+<p>数组</p>
+
+<p>var names:Array = new Array(&#8220;John&#8221;, &#8220;Jane&#8221;, &#8220;David&#8221;);<br/>
+trace(names.length); //output: 3<br/>
+trace(names[0]);// output: John<br/>
+trace(names[1]); //output: Jane<br/>
+trace(names[2]);// output: David</p>
+
+<p>实例教程<br/>
+对象的初始化<br/>
+1 在主场景中新建一个矩形，全选然后F8转换为元件，命名为box。在第一帧里面尝试加入：<br/>
+代码1</p>
+
+<p>box.x = 10;<br/>
+box.y = 150;</p>
+
+<p>代码2</p>
+
+<p>box.rotation = triangle.rotation;<br/>
+box.scaleX = 1.5;<br/>
+box.scaleY = 1.5;</p>
+
+<p>2 把box变成一个骰子，尝试<br/>
+代码3</p>
+
+<p>box.currentFrame<br/>
+box.alpha = 30;<br/>
+box.height =20;<br/>
+box.width =40;<br/>
+box.visible =false;</p>
+
+<p>3 尝试使用随机函数<br/>
+代码4</p>
+
+<p>box.x = this.stage.width<em>Math.random();<br/>
+box.y = this.stage.height</em>Math.random();</p>
+
+<p>影片剪辑的控制</p>
+
+<p>box.stop();<br/>
+box.play();<br/>
+box.gotoAndStop(1);<br/>
+box.gotoAndPlay(3);<br/>
+box.gotoAndStop(Math.round(6*Math.random()));</p>
+
+<p>播放和定制按钮<br/>
+1、制作按钮<br/>
+2、给按钮命名为btn<br/>
+3、在第一帧添加代码（该实例来自：AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<p>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器<br/>
+btn.addEventListener(MouseEvent.ROLL_OVER,btnRollOver);//注册鼠标放上事件帧听器<br/>
+btn.addEventListener(MouseEvent.ROLL_OUT,btnRollOut);//注册鼠标离开事件帧听器</p>
+
+<p>//点击事件处理函数<br/>
+function btnClick(e:MouseEvent):void{<br/>
+trace(e.currentTarget.name);//trace就是在输出面板里输出内容，这里输出&#8221;btn&#8221;，只有在flash测试的时候才有效<br/>
+}</p>
+
+<p>//鼠标放在btn上的事件处理函数<br/>
+function btnRollOver(e:MouseEvent):void{<br/>
+txt.text=&#8221;鼠标放在了按钮上&#8221;;//给文本框txt的text属性赋值为&#8221;鼠标放在了按钮上&#8221;<br/>
+}</p>
+
+<p>//鼠标从btn上离开的事件处理函数<br/>
+function btnRollOut(e:MouseEvent):void{<br/>
+txt.text=&#8221;鼠标从按钮上离开了&#8221;;<br/>
+}</p>
+
+<p>4、添加一个动态文本框，命名为txt<br/>
+ctrl+enter测试影片<br/>
+修改代码如下：</p>
+
+<p>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器</p>
+
+<p>//点击事件处理函数<br/>
+function btnClick(e:MouseEvent):void{<br/>
+box.gotoAndStop(Math.round(6*Math.random()));<br/>
+}</p>
+
+<p>测试影片，如果成功则再建一个按钮元件，命名为btnPlay,修改代码为：</p>
+
+<p>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器</p>
+
+<p>//点击事件处理函数<br/>
+function btnClick(e:MouseEvent):void{<br/>
+box.stop();<br/>
+}<br/>
+btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件帧听器</p>
+
+<p>//点击事件处理函数<br/>
+function btnPlayClick(e:MouseEvent):void{<br/>
+box.play();<br/>
+}</p>
+
+<p>5、尝试仿照实例让代码与fla源文件分离：<br/>
+实例：（AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<p>本文参考了:<br/>
+adobe AS3帮助手册：http://tinyurl.com/7ujc2yp</p>
+
+<p>Flash实例<br/>
+简单实例</p>
+
+<pre><code>Flash教程：送给初学者的一点使用技巧_Flash实例教程_IT部落: http://edu.itbulo.com/200711/120855.htm  
+立体板-Flash源文件-闪吧Flash8: http://www.flash8.net/fla/10364.shtml  
+放大镜-Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10144.shtml  
+卷轴和毛笔写字- Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10342.shtml  
+地球旋转-上传：明月老师 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10237.shtml  
+瀑布-上传：CC851246330 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/9515.shtml  
+</code></pre>
+
+<p>复杂实例<br/>
+ActionScript 3.0的流程控制语法<em>知行网: http://www.zhixing123.cn/Flash/2111.html<br/>
+flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Flash/20080.html</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[教学资源只有会用才显优势]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/"/>
+    <updated>2014-11-13T16:54:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/11/13/the-resources-only-help-when-they-are-well-used</id>
+    <content type="html"><![CDATA[<p>花了很长时间找资源，不见得找的得到，找到了不见得资源好，资源好不见得适用，适用不见得会用，会用不见得学习效果好。经过这样的不断地阻挠，寻找有效的资源已经变得不那么重要了，因为即使找到了，也不见得能很好的整合。</p>
+
+<p>教师自己制作的资源往往最有效。教师自己列的资源清单往往最对口。资源不是一天两天积累的，就像蜜蜂采蜜一样，需要有耐心，有恒心，有目标，有意识。</p>
+
+<p>有了资源，教师需要基于资源结合学情，设计出好的学习活动和任务，与特定的内容、目标、学生相切合，任务的设计和活动的组织是其中的关键。</p>
+
+<h2>优质教学视频、动画库：</h2>
+
+<p><a href="http://www.hhmi.org/biointeractive/explore-animations">Explore Animations | HHMI.org</a></p>
+
+<p><a href="http://concord.org/stem-resources">STEM Resource Finder | The Concord Consortium</a></p>
+
+<p><a href="http://phet.colorado.edu/en/simulations/category/new">PhET Simulations</a></p>
+
+<h2>表单</h2>
+
+<p>Biology tools and simulations for teachers &amp; parents.
+http://www.cloudetal.com/tools/biology-tools</p>
+
+<p>Biology Labs - OnlineLabs.in - Virtual laboratory simulations for science education
+http://onlinelabs.in/biology</p>
+
+<h2>单个资源：</h2>
+
+<p>虚拟显微镜考核
+<a href="http://www.udel.edu/biology/ketcham/microscope/scope.html">Visual Microscope</a></p>
+
+<p>制作染色体图谱
+<a href="http://learn.genetics.utah.edu/content/chromosomes/karyotype/">Make A Karyotype</a></p>
+
+<p>为什么热带鸟产更少的蛋？
+<a href="http://www.mhhe.com/biosci/genbio/tlw3/virtual_labs/lab2/labs/lab2/home.html">Virtual Labs</a></p>
+
+<p>光合作用
+<a href="http://www.science.smith.edu/departments/Biology/Bio231/default.html">Bio 231 Cell Biology Laboratory Home Page</a></p>
+
+<p>果蝇杂交模拟实验
+<a href="http://i-biology.net/ibdpbio/04-genetics-and-genetic-engineering/drosophilab/">DrosophiLab | i-Biology</a></p>
+
+<p>传统育种与现代育种
+<a href="http://www.pbs.org/wgbh/harvest/engineer/">PBS - harvest of fear: engineer a crop (hot science)</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[怎样才是一堂好课]]></title>
@@ -25,7 +376,7 @@
 
 <p>2 任务必须要有趣味、有挑战、有意义</p>
 
-<p>3 学生必须受到尊重和关注</p>
+<p>3 学生必须不应受到威胁，而应受到尊重和关注</p>
 
 <p>4 教学过程必须要明晰、多样、自然、有激情、非灌输式的</p>
 ]]></content>
@@ -70,6 +421,13 @@
 做好前期的文献工作，找到相关研究的理论基础或框架或者研究方法论<br/>
 根据自己的研究主题和目的，选择并明确自己的理论依据或分析框架<br/>
 阐明自己研究背后暗含的理论假设或基础</p>
+
+<p>科学教育研究不同境界：<br/>
+0 没证据，乱说话；<br/>
+1 有数据，没结论；<br/>
+2 有数据，有结论，没新意；<br/>
+3 有数据，有结论，有新意；<br/>
+4 有数据，有结论，有创新，意义重大。</p>
 ]]></content>
   </entry>
   
@@ -673,168 +1031,6 @@ Does it it help student make sense of the material activity?<br/>
 Dose it press students for evidenced based reasoning and communicating?</p>
 
 <p>Yes it does! Yeah, we succeed!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Modify my previous lesson ESCI7040-A1]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/06/16/modify-my-previous-lesson-esci7040-a1/"/>
-    <updated>2014-06-16T18:45:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/06/16/modify-my-previous-lesson-esci7040-a1</id>
-    <content type="html"><![CDATA[<p>This is an assignment of Dr. Oliver&#8217;s class ESCI7040(teaching strategies). The goal of this activity is to reflect on my own teaching and modify the plans for future teaching.</p>
-
-<p>I taught learning theories to undergraduates in order to let them make sense of how students learn and apply these principles in their future teaching.</p>
-
-<p>The guiding question is what is knowledge and how people learn? The big ideas include:<br/>
-1. Different type of knowledge play different roles and people learn them differently.<br/>
-2. Learning Science is not just learning scientific knowledge but also science practice and the nature of science.<br/>
-3. Teacher need various types of knowledge to help students learn science.<br/>
-4. Different learning theories understand people&#8217;s learning differently and give different suggestions for teaching and learning.<br/>
-5. Preconceptions, learning styles, learning strategies play an important role in students&#8217; learning.</p>
-
-<p>This lesson takes 90 minutes and during 60 minutes I was lecturing.</p>
-
-<h3>Task1: Reflections of this lesson:</h3>
-
-<ol>
-<li>Wether the content of this lesson can effectively help them understand how students learn science and apply these principles in their teaching?<br/>
-Some ideas are too general and loosely related. They should be deleted or modified.<br/>
-You should focus more on students&#8217; learning not teachers&#8217; learning<br/>
-Don&#8217;t try to cover every learning theories, teach the most important one and the crucial strategies or tools.<br/>
-You may also included some brain-based learning studies such as how learning occur and what factors may affect learning.<br/>
-Conceptual change should be included in this lesson.</li>
-<li><p>Are these goals/objectives appropriate for your students?<br/>
-These goals are not challenging enough for undergraduates. More critical thinking and challenging tasks should be used in this lesson.<br/>
-You can try to related your teaching methods with learning principles and invite students to think both in the role of learners and teacher(your role).</p></li>
-<li><p>How were the goals/objectives appropriate for the course in which the unit was taught?<br/>
-I found that I simply followed the sequence of the textbook. I may first teach this lesson &#8216;learning theory&#8217; (Chapter 4) and then teach &#8216;teaching strategies&#8217;(Chapter 3). Students should first know how leaning happen and then learn how to teach.</p></li>
-<li><p>How the instructional strategies adequate for the learning you hoped would happen?<br/>
-Lecture should be more interactive(share learning experience of yours or students, thinking aloud, student teaching), include more student-centered activities (sorting learning tasks, diagnosing students&#8217; learning difficulties, think-pair-share, one minute writing, interpret teaching clips).</p></li>
-<li><p>How were the assessments&#8211;either formal or informal&#8211;adequate(and valid and reliable) for the task of assessing student learning?<br/>
-There are two assessments: A1 explain Osmosis to high school students; A2 design a 5E lesson plan. A1 is an informal assessment on class. A2 seems not closely related with this lesson. A better assignment would be study students&#8217; preconceptions about one topic and design an activity to elicit students prior ideas.</p></li>
-</ol>
-
-
-<h3>Task 2 redesign:</h3>
-
-<h4>The big ideas that student should understand:</h4>
-
-<ol>
-<li>Learners build their knowledge on their prior knowledge collaboratively in special social context or situations.</li>
-<li>Learning occur when connections are made in Neural Networks or social networks.</li>
-<li>Well designed physical and social learning environment help students learn by improving their brains&#8217; function.</li>
-<li>Prior ideas, emotion, metacogniton play crucial roles in students&#8217; science learning.</li>
-<li>Different learning strategies suit for different learning tasks; Some tasks are more difficult than others; Student percept learning tasks differently.</li>
-</ol>
-
-
-<h4>The skills that student should develop:</h4>
-
-<ol>
-<li>Elicit and engage students&#8217; prior ideas of a core concept.</li>
-<li>Diagnosis students&#8217; difficulties in learning a concept.</li>
-<li>Design or redesign classroom learning environment to optimize students&#8217; learning.</li>
-<li>Select proper learning strategies for special learning tasks.</li>
-<li>Summary learning research results and its implications for teaching.</li>
-</ol>
-
-
-<h4>The interactive lecture and student activities:</h4>
-
-<p>Tell the story of two kids arguing about sun:</p>
-
-<pre><code>孔子到东方游历，遇见两个小孩在路上争辩，便问原因。一个小孩说：“太阳刚升起时距离人近。”另一个小孩说：“太阳中午的时候才距离人近呢。” 一个小孩又说：“不对，太阳刚升起的时候大得像个车盖，到了正午就小得像一个盘子，这不是远处的看着小而近处的看着大的道理吗？” 另一个小孩说：“太阳刚升起的时候清凉，到了中午的时候像手伸进热水里一样热，这不是近的时候感觉热而远的时候感觉凉的道理吗？”  
-</code></pre>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/two-kids-argue-sun.png" alt="tow kids argue sun" /><br/>
-Which kid do you agree with?<br/>
-How about the situation of winter and summer?<br/>
-If you are going to teaching these two kids the model of sun and earth, what are you going to do with these ideas? <br/>
-Pretest: What do you know about learning? Yes or No question and why?<br/>
-Learning occur easily and fast. Yes No<br/>
-Learning is mainly remembering and recalling. Yes NO<br/>
-Learning is a process that seldom change. Yes No<br/>
-Learning ability can be enhanced though learning effort. Yes No<br/>
-How this lesson Connect, extend or challenge what you know and how you teach?</p>
-
-<p>Can you share a impressive learning experience that happened to you before? Or your most powerful learning strategy?</p>
-
-<h4>Different types of learning:</h4>
-
-<p>Learning subject: Machine learning, human learning, animal learning<br/>
-Learning method: Discovery learning, guided discovery, inquiry-based learning, Problem-based learning; learning from instruction, rote learning, learning from examples, learning by analogy, explanation-based learning<br/>
-Learning object: Conceptural learning(facts, concepts, model, theory), skill learning(process, strategies), emotion, attitude and value learning, metacognitive learning<br/>
-Learning result: Deep learning, surface learning, meaningful learning,rote learning,effective or ineffective learning<br/>
-Learning effort or emotion: hard learning, lazy learning, happy learning,painful learning<br/>
-Learning sensory and style: eye, ear, feel, action, think, taste, smell</p>
-
-<p>What can you learn from the following objective verb table?<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/objective-verb-table.png" alt="objective verbs table" /></p>
-
-<ol>
-<li><p>Think-pair-share<br/>
-Read a research paper of misconception, write down all possible ways to elicit students&#8217; prior ideas, share with peers how these prior ideas are going to affect students&#8217; learning.</p></li>
-<li><p>Ask a student to thinking aloud about a Buoyancy problem; Ask another student to think aloud about a phototropism problem; Ask the third student to think aloud about a NO2 chemical equilibrium problem. Interview them a little bit.</p></li>
-<li><p>Share personal learning strategy (Chemical equilibrium).<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/no2.png" alt="NO2 Chemical equilibrium" /></p></li>
-<li><p>One minute writing<br/>
-Why students approach the same problem differently? How can you encourage deep learning?</p></li>
-<li><p>Sorting learning tasks and matching with learning strategies.<br/>
-List as many different types of learning tasks as you can in your group?<br/>
-Group them as many ways as you can?</p></li>
-</ol>
-
-
-<p>Sorting learning tasks:<br/>
-Write down the definition of enzyme.<br/>
-Judge whether x is Enzyme or not.<br/>
-Compare Plant and animal cell structures.<br/>
-Draw the process of Mitosis.<br/>
-Design the law of using human embryonic cells as research materials.<br/>
-Count the Probability of a special Phenotype in the next generation.<br/>
-Explain why egg shells are not too thin or too thick.</p>
-
-<p>Learning strategies:<br/>
-compare and group, summarize, visualize, hands-on, simplize, break down</p>
-
-<ol>
-<li><p>Student teaching one concept to other students or one screen to the class.<br/>
-They need to be the volunteer and download the material and learn it before class, they have 3 minutes to help group members to understand this concept. Students will share their learning experience and give feedback to the volunteer teacher.</p></li>
-<li><p>Diagnosing students&#8217; learning difficulties in a teaching clip.<br/>
-Teacher will show a clip of real teaching, the students are asked to make sense what is happening and what to do with the situation.</p></li>
-<li><p>Write one minute about what you learn or change today about learning, what is your most favorite analogy of learning now, share with your partner.</p></li>
-</ol>
-
-
-<h3>Task 3 reflect on why you change:</h3>
-
-<p>My previous purpose is follow and cover the most important content both on the textbook and in my vision. I spent a lot of time on how to represent these content to students but did not pay too much attention to how these content serve the goal of this course. At that time, I did not have many activities to choose from and had to create my own one by one. I also had limited knowledge of how students learn science before, now I know more. So I want to include the more important ideas that I know and get rid of un important or unrelated ideas.</p>
-
-<p>Although I believed that I should use more student-centered activities, but I just didn&#8217;t have them. It took time for me to gather, test, accumulate related activities or ideas. My enriched learning experiences and pedagogical thinking also help me to generate new activities that probably work for my students.</p>
-
-<p>Recently, I read some papers and books about evidence-based teaching and brain-based learning, they also encourage me to select the core ideas and activities for my teaching plan.</p>
-
-<p>Conclusion: If you want to improve your teaching practice, you need to know more about the content, more about your students, more about what you can possibly do and use in your class. Of course, you also have to know what student really learn and why they do so.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The tree that owns itself]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/06/14/the-trees-that-owns-itself/"/>
-    <updated>2014-06-14T14:17:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/06/14/the-trees-that-owns-itself</id>
-    <content type="html"><![CDATA[<p>After a happy time of lunch, Julie drive us to see a tree that owns itself. It took us only several minutes to get there from the Grit.</p>
-
-<p>Here is the picture of the tree.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/tree-owns-itself.png" alt="Tree owns itself" /></p>
-
-<p>The owner of the nearby house loved this tree too much, he wanted to protect the tree as long as possible. So he claimed that he conveyed the right of this tree and nearby land to this tree itself.</p>
-
-<p>The view of values of Americans are well presented in the story of this tree. They love and respect nature and the natural organism. They also respect and trust laws. There are more willing to share and respect other peoples&#8217; love and willings.</p>
-
-<p>This cultural values may answer at least partly the questions: why the sky is still blue and the water is still clean; why birds sing in the morning and squallers run around; why people like to go nature for holiday and spend more money to buy green electricity.</p>
-
-<p>This may be the big thing that China lacks and we want to rebuild, in both Chinese culture and education system.</p>
 ]]></content>
   </entry>
   

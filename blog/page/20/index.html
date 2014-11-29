@@ -9,8 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="It is uncomfortable to work on my laptop on a table. Becuase the screen is too low and you have to bend your head which cause pain in the neck.
-So I &hellip;">
+  <meta name="description" content="Recently I joined NG&#8217; class of Machine Learning Summay of the main topics: Suprevised Learning linear regression
+通过已有数据，估算线性函数的参数， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -106,6 +106,288 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/03/machine-learning-and-octave/">Machine Learning and Octave</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-03T12:28:00+08:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/03/machine-learning-and-octave/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Recently I joined NG&#8217; class of <a href="https://class.coursera.org/ml-004/class/index">Machine Learning</a></p>
+
+<p>Summay of the main topics:</p>
+
+<h3>Suprevised Learning</h3>
+
+<p>linear regression<br/>
+通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1, x2，扩张后可以包含x1, x2, x1*x2, x1<sup>2</sup> ,x2<sup>2,</sup> 这样就可以克服bias的可能性。</p>
+
+<p>logistic regression<br/>
+当y是二分变量时，比如根据肿瘤的形状估测其是否为恶性肿瘤。这个时候就要使用logistic regression了。思路与linear regression一样，当目标是做出真假的判断。实现的方法是利用logistic curve做变换，转变为linear regression。</p>
+
+<p>neural networks<br/>
+模拟神经元的作用模式，设置隐藏层，通过估算中间参数来达到预测的目的。</p>
+
+<p>SVM<br/>
+向量机适用于自变量X不是特比多时，如果有上万个自变量，那么这个时候SVM会很困难。向量机的核函数可以有多种选择，可以是线性的，也可以是gaussain kernel等。</p>
+
+<h3>Unsupervised Learning</h3>
+
+<p>K-means<br/>
+聚类分析</p>
+
+<p>PCA<br/>
+主成分分析</p>
+
+<p>Anomaly detection<br/>
+异常识别</p>
+
+<h3>Special applications/topics</h3>
+
+<p>Recommender systems<br/>
+例如根据用户对影片的评价，向用户推荐合适的影片。这种情景需要循环估算影片参数和用户参数，进而给出合适的推荐。</p>
+
+<p>large scale machine learning<br/>
+通过算法上技巧将巨型运算分解，如分解到多个计算机，或者分解为多个步骤的小运算。</p>
+
+<h3>Advice on building a machine learning system</h3>
+
+<p>Bias/variance<br/>
+参考Ng的两张幻灯片。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/highbias.png" alt="high bias" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/highvariance.png" alt="high variance" /></p>
+
+<p>regularization<br/>
+通过regularizations参数（如C值，lamda等）的控制，达到既不bias，也不overfit的目的。</p>
+
+<p>deciding what to work on next<br/>
+从简单开始，不断评估，逐渐优化，寻求正解。</p>
+
+<p>evaluation of learning algorithms</p>
+
+<p>learning curves</p>
+
+<p>error analysis<br/>
+I类错误：假阴性，明明是，结果预测说不是。<br/>
+II类错误：假阳性，明明不是，结果预测说是。<br/>
+Precision=truePositive/(truePositive+falsePositive)<br/>
+Recall=truePositive/(truePositive+falseNegtive)<br/>
+F score=2<em>P</em>R/(P+R)<br/>
+通过F值可以在两者之间得到平衡，F值越大两者兼顾越好。</p>
+
+<p>ceiling analysis</p>
+
+<p>picture notes: G:\myfile\img\machinelearning</p>
+
+<h3>Octave basics</h3>
+
+<p><a href="http://www.gnu.org/software/octave/about.html">Octave</a></p>
+
+<p>Here is the Basic Commands from Ng&#8217;s class notes</p>
+
+<pre><code>
+PS1('>> '); % make pre short  
+1==2 %false  
+1~=2  
+1 && 2 % AND  
+1 || 0 % OR  
+xor(1,0) % OR
+a=3; % semicolon supressing output  
+b='hi';  
+disp(sprintf('2 decimals: %0.2f',a))  
+a=pi;  
+format long  
+format short  
+A=[1 2; 3 4; 5 6]  
+ones(3,1)  
+zeros(1,3)  
+rand(1,3)  
+hist(-6+sqrt(10)*(randn(1,10000)))  
+size(A,1)  
+save hello.txt v -ascii % save as text  
+eye(6)  
+length(A)  
+load featuresX.dat  
+load priceY.dat  
+load('featuresX.dat')  
+who  
+clear priceY  
+clear  
+v=priceY(1:10)  
+A(3,1)  
+A(2,:) % ":" means every element along that row/column  
+A([1 3],:) % get 1,3 row  
+A(:,2)=[10;11;12]  
+A=[A,[100;101;102]]  
+A(:) % put all elements into a single vector  
+C=[A B]  
+C=[A; B]  
+sum(A)  
+prod(A)  
+floor(A)  
+ceil(A)  
+max(A,[],1)  
+max(A,[],2)  
+max(A)  
+flipud(eye(9))  
+t=[0:0.01:0.98]  
+y1=sin(2*pi*4*t);
+y2=cos(2*pi*4*t);  
+plot(t,y1);  
+plot(t,y2,'r')  
+xlabel('time')  
+ylabel('value')  
+legent('sin','cos')  
+title('my plot')  
+print -dpng 'myPlot.png'  
+close  
+figure(1);plot(t,y1);  
+figure(2);plot(t,y2);  
+subplot(1,2,1); % divides plot a 1x2 grid, acce  
+axis([0.5 1 -1 1]) & x [0.5 1] y[-1 1]  
+clf;
+imagesc(A)  
+imagesc(A), colorbar, colormap gray;  
+
+indices=1:10;  
+for i=indices,
+   disp(i);
+end;  
+
+i=1;  
+while i <=5;  
+  v(i)=100;  
+  i=i+1;  
+end;  
+
+i=1;  
+while true,  
+  v(i)=999;  
+  i=i+1;  
+  if i==6,  
+    break;  
+  end;  
+end;  
+
+v(1)=2;  
+if v(1)==1,  
+  disp('equal one')  
+elseif v(1)==2,  
+  disp('equal two')  
+else  
+  disp('not one or two')  
+end;  
+
+pwd  
+ls  
+
+addpath('C:users\ang\Desktop') % add octave search path  
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/">Conflicts Between Commercialization of Science and Education Equity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-30T23:46:00+08:00" pubdate data-updated="true">Oct 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Yesterday, I attended Dr Jackson&#8217; class <a href="http://djackson.myweb.uga.edu/8990/Daily/Day12.html">ESCI 8990 Daily Page</a>.</p>
+
+<p>We discussed questions:<br/>
+1.  whether scientific knowledge is a private product?<br/>
+2.  whether is it right to use grants to apply patent or develop products for profits?<br/>
+3.  conflicts between patent protection and equal access to scientific knowledge.</p>
+
+<p>I didn&#8217;t say a word because I was the only Chinese around the table and intellectual property protection in China has a bad reputation although the situation is improving. I don&#8217;t want to defend too much, but I guess everyone may only have one story about the IPP in China. But just as Chimamanda Ngozi Adichie said: <a href="http://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story.html">There is a danger of a single story</a>. So it will always be good to know more than one story.</p>
+
+<p>The idea of patent protection became popular in industry culture. In order to encourage people and companies to develop more new type of products for society goodness, we give them such protects and advantages in using the patent that they invented first.</p>
+
+<p>But, in agricultural civilization, such as accent China, there is no such idea. Some people may keep their special way of making food or drinks as their secrets, but once the secrets were known by others, they can also make the same food and drinks, and it is legal. The government may also help to publish and transmit some technologies, such as paper making and the printing. If they apply for the patent of making paper and printing, how much money they can earn? But this may also slow down the development of human society. So every patent has limited period for protection. The patent finally becomes common property of human society.</p>
+
+<p>In agricultural civilization, labor is the main value source of a product. Yes, patent tell how to make a product, but it is the labor make it realized. This is not true in industrial civilization, the people or company who possess the patent earn the most of the profit. You will never know how cheap labor become in China nowadays. Is it equal? Is it a new kind of colonization? Many developed country put their factories into developing countries, they use their labor, resources and make wastes and pollution. Is it fair? Is it sustainable? Will it leads to wars? You can read more about <a href="http://www.slideshare.net/drloveccsu/ecojustice-pedagogy">Ecojustice</a>.</p>
+
+<p>Well, industrialization and consumerism are both come from western culture. Human rights is also declared in the western. But there is conflicts between commercialization of science and education equity. The following paragraph is from:<a href="http://www.un.org/en/documents/udhr/">The Universal Declaration of Human Rights</a></p>
+
+<blockquote><p>Article 26.
+   (1) Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.</p></blockquote>
+
+<p>Poor people receive poor education and they remain poor, becomes a circle. This will only lead to hate and war. Patent protection can help develop new products and technologies and promote the progress of society. It can also benefit some people and groups and hurt the others. Especially, when the researchers use grants(money from citizens) to do research and apply for patents only benefit for a special organization or people. Then it is unfair.</p>
+
+<p>It is also disputable whether something should be a patent. For example, the people invent the product later by his own, will lost all the value of his effort because it would be illegal to for him to use the same way to make product.</p>
+
+<p>The company own the patent seems own a new kind of capital &#8211; Intellectual Capitalism. Government tend to protect their patent rights in order to encourage more company to do research and development. But sometimes it will lead to monopolization and the price of their products becomes unreasonable(several times higher than its actual cost). Will government still protect?</p>
+
+<p>With the global industrial production, with consumerism and commercialization, will this new kind of capitalism &#8211; Intellectual Capitalism create a new colonial history. Do we want this happen? Or it already happened.</p>
+
+<p>There should be a balance between patent protection and common benefit, between efficiency and fairness, between developed and developing countries, between industrial civilization and agricultural civilization, between human and nature, otherwise we are making troubles and potential dangers for ourselves!</p>
+
+<pre><code>On the other hand, science education sits in an uncomfortable place in this landscape given particular aspects of patenting and property rights imply limited access and thus inequity in knowledge acquisition.
+</code></pre>
+
+<p>iphone</p>
+
+<p>克隆文化
+有性繁殖与无性繁殖</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -242,105 +524,6 @@ The teacher developed lots of intermediate representations (just like the cracks
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/">From Falling Objects Experiment to a Simulated Experiment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-25T13:42:00+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo&#8217;s Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students&#8217; responses and let us to figure out the students&#8217; thinking and how to response to students properly.</p>
-
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/19/the-beautiful-leaves-on-the-tree/">The Beautiful Leaves on the Tree</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-19T16:39:00+08:00" pubdate data-updated="true">Oct 19<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/19/the-beautiful-leaves-on-the-tree/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="https://raw.github.com/lukezhg/Freyja/master/autumn-tree.jpg" alt="autumn-tree.jpg" /></p>
-
-<p>On a grassy lawn near the road, standed a little girl about five years old. She was looking up at the colorful tree leaves and jumping to reach them. She jumped up using all her energy but found herself still get nothing.</p>
-
-<p>I walked close to the girl-she was really a beautiful angel.</p>
-
-<p>&#8220;Do you need help?&#8221; I asked.<br/>
-She stared at me with her shinning black eyes without saying a word.<br/>
-&#8220;Do you want some leaves? I can help!&#8221; I repeated. <br/>
-&#8220;No&#8221; she answered. <br/>
-&#8220;I can use the ball.&#8221; She fetched a ball from the ground just several steps away.<br/>
-&#8220;then the leaves will fall.&#8221;<br/>
-&#8220;You are very clever!&#8221; I said.<br/>
-After I left, she began throw the ball up to the leaves again and again - very exitedly.</p>
-
-<p>Well, she may never heared of the term &#8220;gravity&#8221;, but she do have been aware of it and even make use of it to get the beautiful leaves.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/21/">&larr; Older</a>
@@ -361,6 +544,14 @@ After I left, she began throw the ball up to the leaves again and again - very e
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/27/flash-as3-zip-manual/">Flash AS3 zip Manual</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/">教学资源只有会用才显优势</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/11/08/what-does-a-good-lesson-look-like/">怎样才是一堂好课</a>
@@ -394,19 +585,11 @@ After I left, she began throw the ball up to the leaves again and again - very e
         <a href="/blog/2014/09/30/myths-about-learning/">关于学习的7大认识误区</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/09/22/cognitive-apprenticeship/">Cognitive Apprenticeship</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/09/22/walking-in-circles/">只是在原地打转</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (2)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (30)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (6)</a></li><li><a href='/blog/categories/统计'>统计 (5)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/资源'>资源 (4)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (2)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (31)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (6)</a></li><li><a href='/blog/categories/统计'>统计 (5)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/资源'>资源 (4)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -430,7 +613,7 @@ After I left, she began throw the ball up to the leaves again and again - very e
 <a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
 <a style="font-size: 165%" href="/tag/en/">en</a>
 <a style="font-size: 90%" href="/tag/esci/">esci</a>
-<a style="font-size: 90%" href="/tag/flash/">flash</a>
+<a style="font-size: 98%" href="/tag/flash/">flash</a>
 <a style="font-size: 90%" href="/tag/github/">github</a>
 <a style="font-size: 98%" href="/tag/inquiry/">inquiry</a>
 <a style="font-size: 90%" href="/tag/letter/">letter</a>
@@ -527,16 +710,6 @@ window.onload=function(){
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
