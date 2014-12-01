@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-12-01T21:15:58+08:00</updated>
+  <updated>2014-12-01T22:36:08+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
+    <updated>2014-12-01T21:28:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
+    <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
+
+<h3>Page build failure</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>The custom domain for your GitHub Pages site is pointed at an outdated IP address. You must take immediate corrective action to ensure that your site remains available after December 1st, 2014. Additional details can be found at https://github.com/blog/1917-github-pages-legacy-ip-deprecation. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages.</p>
+
+<h3>How do I know if I&#8217;m affected?</h3>
+
+<p><a href="https://github.com/blog/1917-github-pages-legacy-ip-deprecation">GitHub Pages Legacy IP Deprecation · GitHub</a><br/>
+The following helps!</p>
+
+<pre><code>On a Windows machine, you'll want to run nslookup your-domain.com and ensure that the output does not include any of the deprecated IP addresses (207.97.227.XXX, 204.232.175.XX, or 199.27.73.XXX).
+If you're on a Mac or Linux machine, simply paste this command into a terminal window, replacing your-domain.com with, your site's domain. dig your-domain.com | grep -E '(207.97.227.245|204.232.175.78|199.27.73.133)' || echo "OK". If you see the word "OK", you're all set.
+</code></pre>
+
+<h3>Configuring an A record with your DNS provider</h3>
+
+<p><a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Tips for configuring an A record with your DNS provider - User Documentation</a></p>
+
+<p>关键信息<br/>
+With your DNS provider, create A records that resolve to the following IP addresses:</p>
+
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre>
+
+<h3>修改DNS的A记录</h3>
+
+<p>我的域名 - DNSPod<br/>
+https://www.dnspod.cn/Domain#zhangchunlei.com</p>
+
+<p>按照新的IP地址添加两条新的A记录，删除原来的A记录即可。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Flash AS3 zip Manual]]></title>
@@ -69,9 +111,13 @@ this.play();}</p>
 
 <p>playButton.addEventListener(MouseEvent.CLICK, playMovie);</p>
 
-<p>运算符</p>
+<p>算数运算符<br/>
++-*/^</p>
 
-<h1>+-*/  </h1>
+<h1>逻辑运算符  </h1>
+
+<p>&amp;&amp;<br/>
+||</p>
 
 <p>if (dayOfWeek == &#8220;Wednesday&#8221;){<br/>
 takeOutTrash();}</p>
@@ -126,7 +172,7 @@ trace(xValue, yValue);// 10 15</p>
 
 <p>循环</p>
 
-<p>for</p>
+<p>for循环</p>
 
 <p>var i:int;<br/>
 for (i = 0; i &lt; 5; i++){<br/>
@@ -151,7 +197,7 @@ trace(&#8220;x is negative&#8221;);}<br/>
 else{<br/>
 trace(&#8220;x is 0&#8221;);}</p>
 
-<p>switch</p>
+<p>switch语句</p>
 
 <p>switch(dayNum){<br/>
 case 0:trace(&#8220;Sunday&#8221;);<br/>
@@ -334,6 +380,8 @@ flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Fla
 
 <p><a href="http://phet.colorado.edu/en/simulations/category/new">PhET Simulations</a></p>
 
+<p><a href="http://biologycorner.com/">The Biology Corner</a></p>
+
 <h2>表单</h2>
 
 <p>Biology tools and simulations for teachers &amp; parents.
@@ -361,6 +409,10 @@ http://onlinelabs.in/biology</p>
 
 <p>传统育种与现代育种
 <a href="http://www.pbs.org/wgbh/harvest/engineer/">PBS - harvest of fear: engineer a crop (hot science)</a></p>
+
+<p>工业黑化<br/>
+<a href="http://biologycorner.com/worksheets/pepperedmoth.html">Peppered Moth Simulation</a><br/>
+这个网站有很多不错的整合信息技术的教案</p>
 ]]></content>
   </entry>
   
@@ -998,39 +1050,6 @@ And you will never forget it anymore.</p>
 
 <p>The 5 cocos were used as 5 experiment as control, coco, fruit memos, flat, salt. We measured the height of the coco before and after experiment, so we could count how much coco get out of the bottle. Here is what we got.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/coco-data.png" alt="data and figure" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Inquiry and demonstration]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration/"/>
-    <updated>2014-06-17T14:15:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/06/17/inquiry-and-demonstration</id>
-    <content type="html"><![CDATA[<p>Today Dr. Oliver gave us an amazing class about demonstration and inquiry. He first asked what question to think about or ask ourselves when using demonstration. Then we played two demonstration games with everybody totally engaged.</p>
-
-<p>The first is radiometer (<a href="http://en.wikipedia.org/wiki/Crookes_radiometer">Crookes radiometer - Wikipedia</a>).<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/radiometer.jpg" alt="Crookes Radiometer" /></p>
-
-<p>He just put it on a table and lighted up another bulb, it began to rotate. It was my first time to see this, I was very curious of its work principle. After close observation, I found that it rotated always the same direction with white vane in front and black vane behind.</p>
-
-<p>Then we began to wonder what factors caused the vanes to rotate. Lights? But how? Temperature? how? What else? How can we found out? Try it. I tried using different angles of the light.</p>
-
-<p>We also tried to use hot water and cold water to pure on it. It rotate exactly the same direction as using light when using hot water but the opposite direction when using cold water.<br/>
-Nobody came up with a good explantion at the end. First I thought it was because the momentum of the absorbed Photon just like Crookes did which was wrong in this situation.</p>
-
-<p>Then we began to do another game &#8211;Buoyancy.<br/>
-First Dr. Oliver sent out a pre-test with 3 yes no questions about buoyancy followed why you believe so. Then we talked about each question a little while. Students answers and opinions are totally different.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/pre-test.png" alt="Pre-test" /><br/>
-Let us found out. So he did another demonstration droppiing a brass cube into water cup which had been balanced. He asked us what would happen if he immersed it into the water.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/drop-into-water.png" alt="Brass cube into water" /><br/>
-We made our predictions and then we did the experiment. We also tried some other settings which were carefully designed but playfully demonstrated.How do you use these demonstration in large class size like 30 students?</p>
-
-<p>At the end of the class, he use his front pocket quesitons to reflect this lesson:<br/>
-Does it elict students&#8217; ideas for teaching?<br/>
-Does it it help student make sense of the material activity?<br/>
-Dose it press students for evidenced based reasoning and communicating?</p>
-
-<p>Yes it does! Yeah, we succeed!</p>
 ]]></content>
   </entry>
   

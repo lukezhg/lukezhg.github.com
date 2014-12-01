@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flash | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/flash/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2014-12-01T21:15:58+08:00</updated>
+  <updated>2014-12-01T22:36:08+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -69,9 +69,13 @@ this.play();}</p>
 
 <p>playButton.addEventListener(MouseEvent.CLICK, playMovie);</p>
 
-<p>运算符</p>
+<p>算数运算符<br/>
++-*/^</p>
 
-<h1>+-*/  </h1>
+<h1>逻辑运算符  </h1>
+
+<p>&amp;&amp;<br/>
+||</p>
 
 <p>if (dayOfWeek == "Wednesday"){<br/>
 takeOutTrash();}</p>
@@ -126,7 +130,7 @@ trace(xValue, yValue);// 10 15</p>
 
 <p>循环</p>
 
-<p>for</p>
+<p>for循环</p>
 
 <p>var i:int;<br/>
 for (i = 0; i &lt; 5; i++){<br/>
@@ -151,7 +155,7 @@ trace("x is negative");}<br/>
 else{<br/>
 trace("x is 0");}</p>
 
-<p>switch</p>
+<p>switch语句</p>
 
 <p>switch(dayNum){<br/>
 case 0:trace("Sunday");<br/>
