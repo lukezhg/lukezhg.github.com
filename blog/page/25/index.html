@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="I finally find a swimming poor that I can have access in UGA. It is in the Remsey Center just take the next stop of Aderhold by East-West School Bus &hellip;">
+  <meta name="description" content="前些日子阅读立法的事情引起了不少波澜。今天无意注意到UGA道路一角有一排类似垃圾桶的箱子，前面有个学生打开挡板取出一叠报纸边走边看。我也照样子拿了一叠报纸，一开始我还有点犹豫，是不是应该投币什么，但是仔细观察一番原来这是他们的一项免费阅读项目。真心觉得这样的项目也应该在国内多资助一些。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,8 +75,6 @@ google.setOnLoadCallback(function() {
   <header role="banner"><hgroup>
   <h1><a href="/">Chunlei's Blog</a></h1>
   
-    <h2>A blog for future.</h2>
-  
 </hgroup>
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
@@ -105,6 +103,48 @@ google.setOnLoadCallback(function() {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/14/reading-legislation-or-reading-program/">阅读立法还是阅读立项</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-14T17:09:00+08:00" pubdate data-updated="true">Sep 14<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/09/14/reading-legislation-or-reading-program/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前些日子阅读立法的事情引起了不少波澜。今天无意注意到UGA道路一角有一排类似垃圾桶的箱子，前面有个学生打开挡板取出一叠报纸边走边看。我也照样子拿了一叠报纸，一开始我还有点犹豫，是不是应该投币什么，但是仔细观察一番原来这是他们的一项免费阅读项目。真心觉得这样的项目也应该在国内多资助一些。</p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/reading-program.jpg" alt="Reading Program Box" /></p>
+
+<p>其实发现中国人阅读量不够，心里着急是国人爱国的表现。但是通过行政立法强制阅读其实是行不通的，最简单一条不具有操作性，你怎么检查呢，不读书你还拘留或者罚款吗，另外这样的立法是否有侵犯人权的嫌疑呢。但是如果真的要立法，其实倒是可以给机关、单位、组织立法，强制和支持开展一些阅读项目。比如开放全文数据库，开放大学图书馆，在乡村建设图书信息中心，在地铁提供报刊杂志，当然也需要所有人的配合，比如阅读完的杂志和报刊放回原位，或者在出站前放到指定位置。其实还真是大有可为的，做实事需要从小处着眼往往会更有效。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -321,97 +361,6 @@ $ python appcfg.py update myapps/helloworld
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-31T12:33:00+08:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/31/ubuntu-command-brief/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在摸索过程中经常使用的命令： <br/>
-安装和执行程序<br/>
--  sudo apt-get install appname  安装程序应用
--  make install 编译并安装 .tar.gz2 <br/>
--  sh xx.sh  执行.sh文件<br/>
--  python xx.py 执行py文件<br/>
--  sudo su 切换到root用户<br/>
--  sudo exit 推出root用户</p>
-
-<p>设置命令：<br/>
-设置工作台数量：（纵向数目1，横向数目4）</p>
-
-<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
-gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
-</code></pre>
-
-<p>察看RVM可供安装的ruby版本和现用版本<br/>
--  rvm list known<br/>
--  rvm list</p>
-
-<p>编辑文本文档<br/>
--  vi filename<br/>
--  gedit filename</p>
-
-<p>发布octopress博文<br/>
--  rake generate<br/>
--  rake preview<br/>
--  rake deploy<br/>
--  rake new_post[&#8220;post title&#8221;]</p>
-
-<p>文件操作<br/>
--  cp  复制文件 到另外一个目录<br/>
--  mv 文件 文件目录<br/>
--  rm 文件名文件名删除一个文件或多个文件<br/>
--  rm –rf 非空目录名删除一个非空目录下的一切</p>
-
-<ul>
-<li>touch 文件名创建一个空文件</li>
-<li>mkdir 目录名创建一个目录</li>
-<li>rmdir 空目录名删除一个空目录</li>
-<li>lsusb 查看usb接口</li>
-<li>lspci 查看pci接口</li>
-</ul>
-
-
-<p>批量改名<br/>
--  rename &#8216;s/lecture/slide/&#8217; *.jpg<br/>
-将当前目录中所有jpg文件名中lecture替换为slide。</p>
-
-<p>批量替换文件内容<br/>
--  perl -pi -e &#8216;s|Windows|Ubuntu|g&#8217; <code>find ./ -type f</code></p>
-
-<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
-<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/26/">&larr; Older</a>
@@ -432,6 +381,10 @@ gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/12/02/instruction-design/">教学设计——自查向导</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/12/01/modify-a-record-of-my-website-dns/">Modify A record of my website DNS</a>
@@ -469,15 +422,11 @@ gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
         <a href="/blog/2014/10/05/octopress-tips/">Octopress的markdown语法</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/10/05/where-does-urine-come-from/">尿从哪里来</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (2)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (31)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (6)</a></li><li><a href='/blog/categories/统计'>统计 (5)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/资源'>资源 (4)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (2)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (31)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (6)</a></li><li><a href='/blog/categories/统计'>统计 (5)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/资源'>资源 (4)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -521,6 +470,7 @@ gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
 <a style="font-size: 90%" href="/tag/stanford/">stanford</a>
 <a style="font-size: 111%" href="/tag/supervision/">supervision</a>
 <a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
 <a style="font-size: 90%" href="/tag/正能量/">正能量</a>
 <a style="font-size: 98%" href="/tag/诗词/">诗词</a>
 <a style="font-size: 90%" href="/tag/随笔/">随笔</a>
