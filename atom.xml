@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-03-23T12:36:24+08:00</updated>
+  <updated>2015-03-30T08:35:49+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[实验课不能放羊]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/03/29/laboratory-activity-should-not-be/"/>
+    <updated>2015-03-29T20:04:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/03/29/laboratory-activity-should-not-be</id>
+    <content type="html"><![CDATA[<ol>
+<li>实验是有目的性的科学探索活动</li>
+</ol>
+
+
+<p>我在想，我们到底为什么做实验？科学家做试验的目的是，探索未知，做出新发现，学生做实验的目的又是什么呢？也许你会说，学生做实验可以学到科学知识，也可以学到过程和方法学到新技能，你还可以体验，做研究，的过程。概括起来就是我们所谓的三维目标，那么，我们做的实验是否，打成了这些目标呢！不管达成没达成，至少我们知道，做实验，一定是要有目标才行，否则，为了做实验而做实验，就非常没意思了。</p>
+
+<p>2.实验课要与理论课想结合，并且互补</p>
+
+<p>生命科学是一门自然科学，也是一门的，实验科学。实验教学与理论课不同之处在于实验教学过程当中更容易培养学生的科学探究技能，帮助学生认识科学的真实的过程，以及，科学的本质特征。所以老师在设计实验教学的时候一定是要和自己的理论课相结合的，在理论课上能达成的目标就不在实验课上做。在实验课上，想达成的目标一定是那些理论课上不好达成的目标，这样的话才有分工才能够使自己的教学目标，更合理地分配在理论和实践教学当中。</p>
+
+<ol>
+<li>做实验一定要知道自己要解决的是一个什么问题</li>
+</ol>
+
+
+<p>但是反观我们现在的实验教学很多的时候就像于璇老师说的一样就是放羊一样，老师没有明确自己的事业目标学生不知道自己在干什么？那么这个是非常失败的实验教学。我曾经反复地跟着学生强调过实验教学，啊，你一定要明白这个实验到的解决是什么问题？那如果这个问题都不清楚的话，那么这个时间就白做了。</p>
+
+<ol>
+<li>作为准教师你要有意识的思考以这个实验为载体能达成什么样的教学目标</li>
+</ol>
+
+
+<p>对于师范生而言还要加一条，那就是你要清楚，要用这样的一个实验载体达成什么样的教学目标。也就是说，你不仅要能像学生一样思考,还要能站在老师的角色上思考才行。要想，做到这一点,并且实现预期的目标，师生必须要有思考，有设计，有准备。否则很容易就变成了放羊，学生觉得索然无味，学习活动散漫，浪费时间，这根本就不是我们要的实验教学。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[教学要如何提问]]></title>
@@ -75,7 +107,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Biology Experiment Study]]></title>
+    <title type="html"><![CDATA[中学生物学实验研究]]></title>
     <link href="http://zhangchunlei.com/blog/2015/03/15/biology-experiment-study/"/>
     <updated>2015-03-15T09:49:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/03/15/biology-experiment-study</id>
@@ -151,7 +183,8 @@
 
 <p>1问：一日三餐怎么吃最健康？水果应该什么时候吃？为什么？<br/>
 2问：如何从细胞和分子的角度解释成熟的红苹果为什么能催熟猕猴桃？具体作用机制是怎样的？<br/>
-3问：如何利用生物学防霾、治霾？</p>
+3问：如何利用生物学防霾、治霾？<br/>
+4问：生命是如何起源的？</p>
 
 <h3>闲读书目</h3>
 
@@ -279,7 +312,7 @@ http://www.sojump.com/jq/1452416.aspx</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Big ideas of science]]></title>
+    <title type="html"><![CDATA[核心的科学概念]]></title>
     <link href="http://zhangchunlei.com/blog/2015/02/27/big-ideas-of-science/"/>
     <updated>2015-02-27T09:39:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/02/27/big-ideas-of-science</id>
@@ -1054,6 +1087,18 @@ function btnPlayClick(e:MouseEvent):void{<br/>
 box.play();<br/>
 }</p>
 
+<p>如何使用文本框（Text）</p>
+
+<p>使用前可以导入以下声明</p>
+
+<pre><code>import flash.text.TextField;
+import flash.text.TextFormat;
+import flash.text.TextFormatAlign;
+</code></pre>
+
+<p>Number()将字符型转化为数值型变量<br/>
+toString()将数值转化为字符</p>
+
 <p>5、尝试仿照实例让代码与fla源文件分离：<br/>
 实例：（AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
 
@@ -1190,9 +1235,22 @@ http://onlinelabs.in/biology</p>
 根据自己的研究主题和目的，选择并明确自己的理论依据或分析框架<br/>
 阐明自己研究背后暗含的理论假设或基础</p>
 
-<p>科学教育研究不同境界：<br/>
-0 没证据，乱说话；<br/>
-1 有数据，没结论；<br/>
+<h3>研究的5要素：</h3>
+
+<p>研究目的<br/>
+理论基础<br/>
+研究方法<br/>
+信度效度<br/>
+研究结论</p>
+
+<h3>开题报告合格标准</h3>
+
+<p>必须要提出明确的研究问题、论述研究价值、找到可行的研究方法和工具。而实际上，提问研究问题与理论基础是呼应的，研究价值与研究背景是呼应的，研究方法与信度效度分析师呼应的。</p>
+
+<h3>科学教育研究不同境界：</h3>
+
+<p>0 没证据，没头绪，乱说话；<br/>
+1 有数据，没头绪，没结论；<br/>
 2 有数据，有结论，没新意；<br/>
 3 有数据，有结论，有新意；<br/>
 4 有数据，有结论，有创新，意义重大。</p>
@@ -1256,32 +1314,6 @@ http://onlinelabs.in/biology</p>
 <p>那么究竟改写详案还是写简案呢？或者哪些该详写，哪些该略写呢？其实，这要依人而定。假如，一个对内容不熟悉，或者语言表达能力差的老师，是可以通过写详案来帮助自己克服这些困难的，这样在课堂上可以表达更好些、更有自信些。详案的另外一个好处在于可以精炼自己的语言，一节课一共就40分钟，精炼的设问、讲解、总结才能讲完，也才能让学生更容易消化理解，有一位有20多年教龄的专家教师还坚持写详案，锤炼自己的语言，特别是问题的表述和比喻的陈述，让我尤为钦佩。对于新或者准教师，如果能把一节课的关键性问题、例子、总结详细写出来，就非常有帮助，因为这些东西是你肯定要用的，有准备和现场发挥还是有差距的，这至少可以保证这节发挥的不至于太差。教案中常规性的项目，第一次就好好的写好，因为这些东西变化不会太大，后面只需要做微调就可以重复使用（电子教案的优势所在）。教学活动则可以把关键性的描述和要点写好即可，不必要提前就把师生所有的问答设计好，这是不现实的，学生的答案是很难预想到的，但是可以对学生答案的可能归类有一个预期就够了，便于教师总结和引出新的议题。完成的教案除了蓝图之外，还应该有实施情况的记录和教学反思，可以反思目标的设定，可以反思目标的达成，也可以反思学习任务的设计和教学活动的过程，甚至具体到某个问题、某个例子、某个资源，效果好的要记录，以后继续用，效果不好的也要记录，分析原因，改造或者丢掉。没有这样的一个尝试、反思、调整、再尝试的过程，优秀教师是成长不起来的。</p>
 
 <p>路漫漫其修远兮，我将上下而求索。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[提高网页加载速度]]></title>
-    <link href="http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog/"/>
-    <updated>2014-10-06T15:42:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog</id>
-    <content type="html"><![CDATA[<h3>维护计划</h3>
-
-<pre><code>此外还打算将主页进行调整  
-</code></pre>
-
-<h3>Octopress维护记录</h3>
-
-<p>2012-12-27</p>
-
-<pre><code>目前使用editplus的自动完成功能,"space+j+space"代替了双空格回车
-将tag放入到了about页面  
-</code></pre>
-
-<p>2014-09-30</p>
-
-<pre><code>去除google twitter等不容打开的服务插件(config.yml)，unable了google translate（includes/head.html 注释掉了gt），并且在config.yml并未加载相应的页面了。  
-通过编辑/source/_includes/custom/head.html,注销掉google webfonts  
-</code></pre>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: flash | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/flash/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-03-23T12:36:24+08:00</updated>
+  <updated>2015-03-30T08:35:49+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -295,6 +295,18 @@ btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件
 function btnPlayClick(e:MouseEvent):void{<br/>
 box.play();<br/>
 }</p>
+
+<p>如何使用文本框（Text）</p>
+
+<p>使用前可以导入以下声明</p>
+
+<pre><code>import flash.text.TextField;
+import flash.text.TextFormat;
+import flash.text.TextFormatAlign;
+</code></pre>
+
+<p>Number()将字符型转化为数值型变量<br/>
+toString()将数值转化为字符</p>
 
 <p>5、尝试仿照实例让代码与fla源文件分离：<br/>
 实例：（AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
