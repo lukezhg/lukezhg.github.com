@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-07-28T08:04:12+08:00</updated>
+  <updated>2015-07-28T18:12:57+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,11 +14,48 @@
 
   
   <entry>
-    <title type="html"><![CDATA[ICT application in biology teaching]]></title>
+    <title type="html"><![CDATA[信息技术在生物教学中的应用]]></title>
     <link href="http://zhangchunlei.com/blog/2015/07/28/ict-application-in-biology-teaching/"/>
     <updated>2015-07-28T07:49:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/07/28/ict-application-in-biology-teaching</id>
-    <content type="html"><![CDATA[<p>Adobe Flash CS3 官方简体绿色版下载:<br/>
+    <content type="html"><![CDATA[<h3>课件下载</h3>
+
+<p><a href="http://pan.baidu.com/s/1hq91Mfi">信息技术课件</a><br/>
+下载密码：rm5n</p>
+
+<h3>课程考核</h3>
+
+<p>【目标】
+flash制作目的在于评价flash的基本动画制作技能以及应用技能解决实际教学问题的能力。</p>
+
+<p>主要评价学员：</p>
+
+<pre><code>基本技能的灵活运用  
+解决实际问题的能力  
+创意   
+</code></pre>
+
+<p>提交内容：</p>
+
+<pre><code>文本文件：描述制作该动画的目的以及该动画的价值或用途，以及遇到的问题和解决办法。以及动画制作的思路和使用的关键技术。
+fla源文件和swf演示文件。
+</code></pre>
+
+<h3>网络资源连接</h3>
+
+<p>概念图软件：Inspiration; xmind; freemind; <a href="http://wisemapping.com/">wisemapping</a> <br/>
+演示文稿制作：<a href="http://prezi.com/">prezi</a><br/>
+印象笔记：evernote<br/>
+在线问卷：问卷星；调查派<br/>
+课程平台软件：moodle<br/>
+网络课程：网易公开课；爱课程；Coursera; Edx; Udacity;<a href="https://novoed.com/">novoed</a><br/>
+录屏软件：CamtasiaStudio<br/>
+社会性书签：diigo<br/>
+虚拟世界：<a href="http://comp.mq.edu.au/vworlds/omosa_cn.html">Omosa</a>; secondlife</p>
+
+<h3>第一部分 Flash 制作</h3>
+
+<p>Adobe Flash CS3 官方简体绿色版下载:<br/>
 <a href="http://www.flashline.cn/down/1/flash-cs3.html">http://www.flashline.cn/down/1/flash-cs3.html</a><br/>
 Flash基本概念与操作<br/>
 Flash基本概念：<br/>
@@ -53,6 +90,14 @@ F9 打开动作脚本</p>
 5.遮罩</p>
 
 <p><a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">动作脚本教程</a></p>
+
+<h3>第二部分 教学资源利用</h3>
+
+<p><a href="http://phet.colorado.edu/">PhET: Free online physics, chemistry, biology, earth science and math simulations</a></p>
+
+<p><a href="http://concord.org/stem-resources">STEM Resource Finder | The Concord Consortium</a><br/>
+<a href="http://mw.concord.org/modeler/">Molecular Workbench - An Interface to the Molecular World</a><br/>
+<a href="http://www.udel.edu/biology/ketcham/microscope/scope.html">虚拟显微镜考核</a></p>
 ]]></content>
   </entry>
   
