@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-07-31T15:02:57+08:00</updated>
+  <updated>2015-08-03T07:36:52+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -32,11 +32,6 @@
 
 <p><a href="http://pan.baidu.com/s/1hq91Mfi">信息技术课件</a><br/>
 下载密码：rm5n</p>
-
-<p>flash实例下载：<br/>
-box 链接: <a href="http://pan.baidu.com/s/1sj2xZMd">http://pan.baidu.com/s/1sj2xZMd</a> 密码: x3qd</p>
-
-<p>mcFace 链接: <a href="http://pan.baidu.com/s/1dDi3IDz">http://pan.baidu.com/s/1dDi3IDz</a> 密码: 7yku</p>
 
 <h3>课程考核</h3>
 
@@ -99,15 +94,57 @@ F9 打开动作脚本</p>
 
 <p>Flash动画类型与实例制作<br/>
 1.逐帧动画<a href="http://www.tudou.com/programs/view/SW2JopHSvU0/">http://www.tudou.com/programs/view/SW2JopHSvU0/</a><br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/dog.png" alt="dog image" /><br/>
-2.动作补间<a href="http://www.tudou.com/programs/view/A_h3o4SxnVA/">http://www.tudou.com/programs/view/A_h3o4SxnVA/</a><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/dog.png" alt="dog image" /></p>
+
+<p>蝴蝶和小船图片：链接：http://pan.baidu.com/s/1bni7WK3 密码：lon9</p>
+
+<p>2.动作补间<a href="http://www.tudou.com/programs/view/A_h3o4SxnVA/">http://www.tudou.com/programs/view/A_h3o4SxnVA/</a><br/>
 3.形状补间<a href="http://www.tudou.com/programs/view/o559fimXAqQ/">http://www.tudou.com/programs/view/o559fimXAqQ/</a><br/>
 4.引导层动画<a href="http://www.tudou.com/programs/view/L9MvoGCSZfQ/">http://www.tudou.com/programs/view/L9MvoGCSZfQ/</a><br/>
 5.遮罩动画<a href="http://www.tudou.com/programs/view/SrEik5SbYQo/">http://www.tudou.com/programs/view/SrEik5SbYQo/</a></p>
 
-<p><a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">动作脚本教程</a></p>
+<p><a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">第二部分 flash动作脚本简明教程</a><br/>
+flash实例下载：<br/>
+box 链接: <a href="http://pan.baidu.com/s/1sj2xZMd">http://pan.baidu.com/s/1sj2xZMd</a> 密码: x3qd</p>
 
-<h3>第二部分 教学资源利用</h3>
+<pre/><code/>
+box.x = 100;
+box.y = 150;
+box.rotation = 30;
+box.scaleX = 1.5;
+box.scaleY = 1.5;
+
+btnStop.addEventListener(MouseEvent.CLICK,btnStopClick);//给btn注册事件帧听器
+//点击Stop按钮事件处理函数
+function btnStopClick(e:MouseEvent):void{
+box.stop();
+}
+
+btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btn注册事件帧听器
+//点击btnPlay按钮的事件处理函数
+function btnPlayClick(e:MouseEvent):void{
+box.play();
+}
+</code></pre>
+
+
+<p>mcFace 链接: <a href="http://pan.baidu.com/s/1dDi3IDz">http://pan.baidu.com/s/1dDi3IDz</a> 密码: 7yku</p>
+
+<pre/><code/>
+mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听
+//startDragFace函数
+function startDragFace(e:MouseEvent):void {
+    mcFace.startDrag();
+}
+
+mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);
+function stopDragFace(e:MouseEvent):void {
+    mcFace.stopDrag();
+}
+</code></pre>
+
+
+<h3>第三部分 教学资源利用</h3>
 
 <p><a href="http://phet.colorado.edu/">PhET: Free online physics, chemistry, biology, earth science and math simulations</a></p>
 
