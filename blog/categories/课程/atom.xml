@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 课程 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/课程/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-08-03T07:36:52+08:00</updated>
+  <updated>2015-08-03T16:44:07+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -93,8 +93,9 @@ F9 打开动作脚本</p>
 4.引导层动画<a href="http://www.tudou.com/programs/view/L9MvoGCSZfQ/">http://www.tudou.com/programs/view/L9MvoGCSZfQ/</a><br/>
 5.遮罩动画<a href="http://www.tudou.com/programs/view/SrEik5SbYQo/">http://www.tudou.com/programs/view/SrEik5SbYQo/</a></p>
 
-<p><a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">第二部分 flash动作脚本简明教程</a><br/>
-flash实例下载：<br/>
+<h3><a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">第二部分 flash动作脚本简明教程</a></h3>
+
+<p>flash实例下载：<br/>
 box 链接: <a href="http://pan.baidu.com/s/1sj2xZMd">http://pan.baidu.com/s/1sj2xZMd</a> 密码: x3qd</p>
 
 <pre/><code/>
@@ -133,6 +134,11 @@ function stopDragFace(e:MouseEvent):void {
 }
 </code></pre>
 
+
+<p>练习和自测：<br/>
+1 会行走的小鸭子；<br/>
+2 小船沿着河流行驶；<br/>
+3 放大镜效果（提示：使用遮罩）；</p>
 
 <h3>第三部分 教学资源利用</h3>
 
