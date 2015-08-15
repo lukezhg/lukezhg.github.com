@@ -73,7 +73,9 @@ google.setOnLoadCallback(function() {
   options.enableSearchResultsOnly();
   customSearchControl.draw('cse_g', options);
 }, true);
-</script> -->
+</script>
+
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=16896278337202878293' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script> -->
   <meta name="baidu-site-verification" content="H1sczb0fpe" />
 </head>
 
@@ -93,6 +95,11 @@ google.setOnLoadCallback(function() {
     <input type="hidden" name="q" value="site:zhangchunlei.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
+
+  <fieldset role="search">
+    <input class="search" type="text" id="bdcsMain" placeholder="Search"/>
+  </fieldset>
+
 </form>
   
 <ul class="main-navigation">
