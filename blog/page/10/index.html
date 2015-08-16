@@ -53,7 +53,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: false}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-  <!--
+  
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
 var customSearchControl = null;
@@ -74,7 +74,6 @@ google.setOnLoadCallback(function() {
   customSearchControl.draw('cse_g', options);
 }, true);
 </script>
--->
 
 
 <!--baidu search-->
@@ -94,18 +93,18 @@ google.setOnLoadCallback(function() {
 </ul>
   
 <form action="http://google.com.hk/search" method="get">
-<!--
+
   <fieldset role="search">
     <input type="hidden" name="q" value="site:zhangchunlei.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
--->
+<!--
   <fieldset role="search">
-    <input class="search" type="text" id="bdcsMain"/>
+    <input class="search" type="text" id="bdcsMain" placeholder="Search"/>
   </fieldset>
 
 </form>
-
+-->
 
   
 <ul class="main-navigation">
