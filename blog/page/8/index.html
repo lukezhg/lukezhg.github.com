@@ -254,6 +254,62 @@ google.setOnLoadCallback(function() {
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/06/30/clustering-maps-by-similarity/">Clustering Maps by Similarity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-30T19:17:00+08:00" pubdate data-updated="true">Jun 30<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/06/30/clustering-maps-by-similarity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me by leaving a comment.</p>
+
+<p>Although there was no direct solutions for me, but I did find something. I can use UCINET to do cluster analysis &#8211; the problem is I must provide a similarity/dissimilarity matrix for this software.</p>
+
+<p>There are at least two ways to create the matrix. First, use Pearson correlations. I can easily get the table by SPSS. Second, I have to figure out a way to count the similarity or dissimilarity myself. Well, it is not too hard, if I just consider the different links and the same links, and give values to different situations, such as 11, 00, 10, 01, then I can count the dissimilarity. I can use R to count the matrix and then use <a href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/">Multidimensional Scaling in R</a> to plot out the people. In this way, I can have a look whether clusters exist obviously. Then I can use UCINET to do the rest job.</p>
+
+<p>I have to consider both the links and the notes at the same time, otherwise I can not make full use of the information in the data. In other words, I need to compare the stuctures rather than the dots. If two people have linked similar structures, they should score higher than two people have the same number of similar links but not connected. I use the following abbreviation:</p>
+
+<pre><code>bh(both have)
+bl(both lack)
+hl(one have one lack)
+lh(one lack one have)
+ss(similarity score)
+
+ss=bh*2+bl-hl-lh-breaks(可以参考序列比对)
+</code></pre>
+
+<p>References:<br/>
+<a href="http://faculty.ucr.edu/~hanneman/nettext/C13_%20Structural_Equivalence.html">Equivalence: Measures of similarity and structural equivalence</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/06/27/demonstration-of-barometric-pressure-using-a-bottle-of-water/">Demonstration of Barometric Pressure Using a Bottle of Water</a></h1>
     
     
@@ -315,68 +371,6 @@ Why the two holes need to be on different height?
 </code></pre>
 
 <p>Finally, the design finished and the thinking stopped. This is the reason why I don&#8217;t write at night. Thinking will not let me sleep.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/23/the-surprising-trees/">The Surprising Trees</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-23T16:26:00+08:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2014</time>
-        
-         | <a href="/blog/2014/06/23/the-surprising-trees/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>A tree can have its own home.<br/>
-It can also step over the wall.<br/>
-A tree can free your minds.<br/>
-It can also make the spirit call.<br/>
-A tree can become your home.<br/>
-And you will never forget it anymore.</p>
-
-<p>The tree that owns itself.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/tree-owns-itself.png" alt="" /></p>
-
-<p>The tree that steps over the wall.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/the-tree-step-over-wall.png" alt="" /></p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/the-tree-step-over.png" alt="" /></p>
-
-<p>The tree that frees your mind.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/tree-free-your-mind.png" alt="" /></p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/tree-free-your-mind2.png" alt="" /></p>
-
-<p>The tree that touchs your soul.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/tree-touch-you.png" alt="" /></p>
-
-<p>The tree can be your home and you will not forget it anymore.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/home-tree.png" alt="" /></p>
 </div>
   
   
@@ -449,7 +443,7 @@ And you will never forget it anymore.</p>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/meeting'>meeting (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (42)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (2)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (7)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (5)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (2)</a></li><li><a href='/blog/categories/meeting'>meeting (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (5)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (43)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (2)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (10)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (7)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -460,8 +454,8 @@ And you will never forget it anymore.</p>
 <a style="font-size: 90%" href="/tag/le/">LE</a>
 <a style="font-size: 98%" href="/tag/narst/">NARST</a>
 <a style="font-size: 90%" href="/tag/ocw/">OCW</a>
-<a style="font-size: 90%" href="/tag/pck/">PCK</a>
-<a style="font-size: 90%" href="/tag/r/">R</a>
+<a style="font-size: 98%" href="/tag/pck/">PCK</a>
+<a style="font-size: 98%" href="/tag/r/">R</a>
 <a style="font-size: 98%" href="/tag/spss/">SPSS</a>
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
@@ -485,6 +479,7 @@ And you will never forget it anymore.</p>
 <a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
 <a style="font-size: 111%" href="/tag/modeling/">modeling</a>
 <a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
 <a style="font-size: 103%" href="/tag/notes/">notes</a>
 <a style="font-size: 90%" href="/tag/observation/">observation</a>
 <a style="font-size: 103%" href="/tag/octopress/">octopress</a>
@@ -496,7 +491,7 @@ And you will never forget it anymore.</p>
 <a style="font-size: 90%" href="/tag/stanford/">stanford</a>
 <a style="font-size: 90%" href="/tag/strategy/">strategy</a>
 <a style="font-size: 111%" href="/tag/supervision/">supervision</a>
-<a style="font-size: 90%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 98%" href="/tag/teacher-knowledge/">teacher knowledge</a>
 <a style="font-size: 90%" href="/tag/writing/">writing</a>
 <a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
 <a style="font-size: 90%" href="/tag/教学反思/">教学反思</a>
