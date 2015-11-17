@@ -4,7 +4,7 @@
   <title><![CDATA[tags: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-10-16T07:08:58+08:00</updated>
+  <updated>2015-11-17T11:03:42+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -146,9 +146,12 @@ $ python appcfg.py update myapps/helloworld
 -  sudo apt-get install appname  安装程序应用
 -  make install 编译并安装 .tar.gz2 <br/>
 -  sh xx.sh  执行.sh文件<br/>
--  python xx.py 执行py文件<br/>
 -  sudo su 切换到root用户<br/>
 -  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
 
 <p>设置命令：<br/>
 设置工作台数量：（纵向数目1，横向数目4）</p>
