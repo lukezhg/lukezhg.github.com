@@ -115,7 +115,8 @@ google.setOnLoadCallback(function() {
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <!-- old script
+<div class="blog-index">
   
   
   
@@ -312,6 +313,215 @@ google.setOnLoadCallback(function() {
 
 
     </article>
+  
+&#8211;>
+<div class="blog-index">
+  
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/02/ubuntu-2/">如何在学习ubuntu上节约时间</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-02T00:00:00+08:00" pubdate data-updated="true">May 2<span>nd</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/02/ubuntu-2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这个五一花了很多时间在ubuntu上，解决3d桌面的安装问题，花费了1天多的时间，显然这样的时间花费还是太奢侈了。如何能节约一点时间呢？<br /><ol><li>相信你遇到的问题，别人一般也遇到过，所以可以把问题表述好，然后google。</li><li>充分利用集体智慧，找到相应的论坛或者邮件列表，发贴求助。</li><li>适时放弃或者搁置，因为这样可以提供更多的隐性问题解决时间，而且有些问题搁置一段时间后，就自然解决了。</li><li>注意系统性的学习。亲身参与问题解决，固然好，但是还是应该系统的阅读教程，这样可以解决大量的时间</li><li>要事第一的原则，不要沉迷于问题解决，为了问题解决而问题解决，要能够自我控制，那些问题是要紧的急切的问题，那些是次要的。</li><li>零用零布头的时间。<br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=73e88104-6d13-890e-b31e-45af256f68a1" /></div></p>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/02/ubuntu/">安装ubuntu3d桌面的问题</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-02T00:00:00+08:00" pubdate data-updated="true">May 2<span>nd</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/02/ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来想安装3d桌面但是出了很多问题，后来直接进不去系统了，发现自己这个本本显卡实在是不给力，(ausu 1101 ha Intel gma500)，后来放弃了。但是我觉得还是需要一个像苹果一样的任务栏，这样会提高的工作效率（也许）。所以就安装了cairo-dock，结果把先前的软件都卸载之后，安装了这个发现，桌面标题栏不见了，白茫茫一篇，后来上网查，发现是：<br /><br />metacity不知道是什么原因，更某个程序发生了冲突，我怀疑是安装3d桌面的时候，一个程序的设置保留下来了。现在我只有每次都在开机后，执行sudo metacity &#8211;replace这样一般就能好了。 虽然还是有的窗口刷新不对，比如firefox的scribefire。<br /><br />我想每次都输入这个命令很累，其实有些其他的程序我也想启动，一般可以用系统-启动程序来达成，但是如何让系统开机后就自动执行某个命令呢？<br />1 修改/etc/rc.local 未果<br />2 修改/etc/profile 或者把执行脚本.sh的文件放入到profile.d文件夹中<br /><br />但是据说要授权，如何授权呢？<b>未果。</b><br /><br />其实解决问题的根本还是找到为什么会冲突，搜索“窗口管理器metacity没有打开”结果看到下面这个文章：<br />UBUNTU中的Metacity窗口管理器_问草_百度空间 http://hi.baidu.com/069liuqing/blog/item/4fe900d7fb8c43dba044dfe3.html <br /><br />原来是安装compiz fusion又卸载之后的后遗症，需要把一个参数改一下：<br /><blockquote> Alt + F2，打开“运行应用程序”对话框。输入 gconf-editor，并按回车。<p> 导航到 Apps-&gt;<strong style="color: black; background-color: rgb(255, 255, 102);">metacity</strong>-&gt;general，并选中 compositing_manager，将其值改为false</p></blockquote> 这样就没有冲突了，问题解决。可以正常使用cairo-dock了。<br /><br /><br /><br /><br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=8c289d3a-4a16-81ee-a22f-884af59fd414" /></div></p>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/02/firefox-aboutconfig-tips1/">Firefox的about:config设置技巧（1）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-02T00:00:00+08:00" pubdate data-updated="true">May 2<span>nd</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/02/firefox-aboutconfig-tips1/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一、如何使得地址栏既能输入网址又能作为搜索引擎<br /><br />1. 在Firefox地址栏输入 about:config<br />2. 在过滤器输入框中输入 keyword.URL<br />3. 双击出现的首选项，将其值修改为<br /><br />百度：http://www.baidu.com/s?ie=UTF-8&amp;wd=<br />谷歌：http://www.google.com/search?ie=UTF-8&amp;oe=UTF-8&amp;sourceid=navclient&amp;gfns=1&amp;q=<br /><br />三、 显示/禁用标签上的关闭按钮<br /><br />有些人喜欢每个标签上有关闭按钮(红色的X),但有些人不喜欢，通过browser.tabs.closeButtons来设定。<br />参数名: browser.tabs.closeButtons<br /><br />缺省值: 1<br />修改方法:<br />&nbsp;&nbsp;&nbsp; * 0 - 仅在活动的标签页上显示关闭按钮<br />&nbsp;&nbsp;&nbsp; * 1- 在所有的标签页上显示关闭按钮<br />&nbsp;&nbsp;&nbsp; * 2- 不显示任何的关闭按钮<br />&nbsp;&nbsp;&nbsp; * 3- 在当前所有标签页的最后显示一个关闭按钮<br /><br />参考：28个最酷的Firefox about:config配置参数 ： http://alt.ctrl.del.blog.163.com/blog/static/259148062008112054845524/<br /><br />
+3. 在后台打开新标签  
+找到首选项:browser.tabs.loadBookmarksInBackground 双击改为ture.  
+找到首选项：browser.tabs.loadDivertedinbackground 双击改为ture.  
+参考[无需插件让你的Firefox支持后台打开新标签](http://www.bitscn.com/school/firefox/201004/185476.html)
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=06f6e952-73d1-8a52-a601-e218693dbfae" /></div></p>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/04/26/from-lecture-to-dialouge-what-happens-in-our-instructions/">从宣讲到对话——教学的发生了哪些改变？</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-26T00:00:00+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/04/26/from-lecture-to-dialouge-what-happens-in-our-instructions/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>讲座式教学在高校中很流行，教师根据讲义宣讲特定的内容，然后考试也考察这些内容。有的老师讲的很精彩，例子贴近学生生活，让学生在平常中发现不平常，深入浅出，发人深思，令人反省。有的老师讲起来则显得干涩，抽象，缺乏互动交流，令人昏昏欲睡。这当然于老师的教学功底、教学经验、学科知识涵养有关，要想讲的好绝不是一朝一夕可以成就的。换句话说，一步到位的成果教学是极为困难的。<br /><br />为什么呢？因为学科知识的深入理解需要时间，教学经验的积累也需要时间，问题的优化需要时间，例子的筛选更需要时间，了解学生当然也需要时间。如何达成这些必要条件呢，答案是教学实践，在实践中尝试、摸索、积累、反思。<br /><br />我教学理论说教的系统的备课，如何进行内容分析、学生分析、目标设定、教学过程设计，说的头头是道，但是是不是学了这些理论就能一次性达到成功教学呢？答案是否定的，这些理论知识会有一定的作用，但是根本不能保证一步到位的成功教学，因为教学的本质不是宣讲，而是对话。宣讲是可以完全系统预设的，但是对话无法完全预设，就好像打乒乓球一样，你发出去的球，学生可能接得住也可能接不住，即使接到了，打回来的球的方向你也无法完全确定，只有当你和学生在这个比赛中充分熟悉之后，你才能有更好的预判。教学也是如此，与其期望由教育理论构造出一种似乎可以一步到位的教学设计步骤，倒不如帮助准教师学会对话，学会教学反思，在实践的过程中快速成长。<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=06af6d35-ece5-8053-a049-680e2a6c61dd" /></div></p>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/">终于能在ubuntu10.04与xp之间自由切换了</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-05T00:00:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前些天，在一番穷折腾之后（Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始 « chunlei&#8217;s blog: http://sociallearnlab.org/chunlei/2011/03/27/archives/180），终于把启动的问题解决了。<br /><br />问题表现：能够更改bios的启动顺序来选择要启动的系统，但是不能自己在grub4dos下启动ubuntu10.04。<br />解决过程：先下载最新版本的grub4dos,解压缩后，把其中的grldr和menu.lst两个文件拷贝到c盘根目录下。<br />替换menu.lst的内容如下：<br /><blockquote>timeout 10<br />default /default<br />title Ubuntu 10.04<br />find /boot/grub/core.img<br />root (hd1,1)<br />kernel /boot/grub/core.img<br />boot<br /></blockquote>修改C盘根目录的boot.ini，在最后加上一行 c:\grldr=&#8221;grub4dos&#8221;。方法，我的电脑-右键属性-高级-启动与故障修复-设置-编辑-保存即可。<br /><br />但是尝试了几次，都提示错误，找不到文件。后来我在ubuntu上没有安装grub，并且用手工的方式确定了ubuntu所在位置为 （hd1,1）修改了menu.lst后问题解决！吼！<br /><br /><br />关于grub4dos的使用参考和修改boot.ini请参考：在移动硬盘中安装ubuntu的一点小问题解决_游走江湖_百度空间: http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a0016852-a3bc-8474-8036-61a54f84cf0e" /></div></p>
+</div>
+  
+  
+
+
+        </article>
+	
   
   <div class="pagination">
     

@@ -116,7 +116,8 @@ google.setOnLoadCallback(function() {
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <!-- old script
+<div class="blog-index">
   
   
   
@@ -420,6 +421,322 @@ But sometimes it can be a very serious problem.</p>
 
 
     </article>
+  
+&#8211;>
+<div class="blog-index">
+  
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/play-gae-in-ubuntu/">在Ubuntu中布置和使用GAE</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T18:07:00+08:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/play-gae-in-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
+首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
+然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
+
+<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
+
+<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
+
+<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
+
+<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
+测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
+
+<pre><code>
+$ python dev_appserver.py myapps/helloworld
+</code></pre>
+
+
+<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
+
+<p>ctrl+C 终止测试。</p>
+
+<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
+
+<pre><code>
+$ python appcfg.py update myapps/helloworld
+</code></pre>
+
+
+<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T12:33:00+08:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/ubuntu-command-brief/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post[&#8220;post title&#8221;]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名<br/>
+-  rename &#8216;s/lecture/slide/&#8217; *.jpg<br/>
+将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容<br/>
+-  perl -pi -e &#8216;s|Windows|Ubuntu|g&#8217; <code>find ./ -type f</code></p>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
+</div>
+  
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">Ridiculous Jump and Serious Problem</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-30T22:35:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just watched a TV program named Ridiculous. The following is special one.</p>
+
+<div>
+<iframe width="420" height="315" src="//www.youtube.com/embed/9Cmw2m2z6_0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>Really Ridiculous, I can&#8217;t help laughing when thinking of the great jump.<br/>
+But sometimes it can be a very serious problem.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">Read on &rarr;</a>
+    </footer>
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/30/seed-activity-in-method-of-biology-and-earth-science-teaching/">科学教法课上的种子萌发实验</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-30T19:44:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/30/seed-activity-in-method-of-biology-and-earth-science-teaching/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我有幸参与了Dr C的三次教法课，每次课一个小时。之所以第一次参与这个课堂，一个很直接的原因是我被一盆开的很漂亮的花吸引了，我想知道老师想用这盆花干什么。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/2013-08-19-12.11.21.jpg" alt="漂亮的花朵" /></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/08/30/seed-activity-in-method-of-biology-and-earth-science-teaching/">Read on &rarr;</a>
+    </footer>
+  
+
+
+        </article>
+	
+  
+    
+	    
+        <article>
+            
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/">对斯坦福DTAL课程学习环境的反思</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-27T19:07:00+08:00" pubdate data-updated="true">Aug 27<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>开始的时候，视频中介绍的学习环境设计，以及流动的环境给我的印象极其深刻。</p>
+
+<p>再有，在论坛中谈到，站着进行头脑风暴的效率要比坐着的小组高。很小的设计改变就可以产生很大的影响。站立和坐着也是一种环境设计。</p>
+
+<p>在提供了简短的视频介绍之后，主要通过明确的任务来推进学习。不仅有明确的要求、评价标准，还有可以利用的工具推荐、技术技巧介绍、过程和案例等。这给学习者很大的自主学习空间，在完成作业的过程中边做边学。</p>
+
+<p>在组建learning squire的时候，这次我加入了别人的小组，并且进行了积极的交流。比上两次的小组要成功。小组的同伴学习虽然并没有对我的学习起到觉得性的作用，不过还是交了几个朋友。也进行了视频对话，对于语言和沟通能力是有帮助的。此外，因为没有小组作品，所以大家也没有分工合作，主要是相互分享信息和求助，这种人际环境也会让学习者具有黏性或依赖感。</p>
+
+<p>总体来讲，单就本次课程而言，其学习环境主要包括媒体环境和人际环境，其实作业任务中也有要我们去采访和测试prototype，如果这个加上的话就有实践环境在里面了。其媒体环境的设计是非常值得学习的。</p>
+</div>
+  
+  
+
+
+        </article>
+	
   
   <div class="pagination">
     
