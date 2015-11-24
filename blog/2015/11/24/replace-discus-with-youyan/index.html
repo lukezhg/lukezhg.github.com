@@ -153,63 +153,14 @@ google.setOnLoadCallback(function() {
 <!-- JiaThis Button -->
 
 
-<pre><code>&lt;!-- JiaThis share Button BEGIN --&gt;
+<p>  /{/% if site.comment_share %}</p>
+
+<pre><code>/{/% include post/share_comment.html %}
 </code></pre>
 
-<div class="jiathis_style_32x32">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-</div>
-
-
-<script type="text/javascript">
-var jiathis_config = {data_track_clickback:'true'};
-</script>
-
-
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
-
-
-<!-- JiaThis Button END -->
-
-
-
-
-<!-- JiaThis like Button BEGIN -->
-
-
-<div class="jiathis_style">
-    <a class="jiathis_like_tsina" data="width=120"></a>
-    <a class="jiathis_like_qzone"></a>
-</div>
-
-
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
-
-
-<!-- JiaThis Button END -->
-
-
-
-
-<!-- UY BEGIN -->
-
-
-<div id="uyan_frame"></div>
-
-
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
-
-
-<!-- UY END -->
-
-
-<p></pre></code></p>
+<p>  /{/% endif %}
+</pre></code>
+别忘了自觉去掉/</p>
 
 <p>当然需要在_config.yml中添加开关：<br/>
 <code><pre></p>
@@ -220,116 +171,6 @@ var jiathis_config = {data_track_clickback:'true'};
 </pre></code></p>
 
 <p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
-
-<p>原来的代码</p>
-
-<pre><code>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-<!-- JiaThis Button UY -->
-  
-    <!-- JiaThis share Button BEGIN -->
-<div class="jiathis_style_32x32">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript">
-var jiathis_config = {data_track_clickback:'true'};
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-
-<!-- JiaThis like Button BEGIN -->
-<div class="jiathis_style">
-    <a class="jiathis_like_tsina" data="width=120"></a>
-    <a class="jiathis_like_qzone"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
-<!-- UY END -->
-
-  
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2015/11/19/insight-and-problem-solving/" title="Previous Post: 洞察力和问题解决">&laquo; 洞察力和问题解决</a>
-      
-      
-    </p>
-</code></pre>
-
-
-<p>修改后的代码</p>
-
-<pre><code>
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2015/11/19/insight-and-problem-solving/" title="Previous Post: 洞察力和问题解决">&laquo; 洞察力和问题解决</a>
-      
-      
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-<!-- JiaThis Button UY -->
-  
-    <!-- JiaThis share Button BEGIN -->
-<div class="jiathis_style_32x32">
-    <a class="jiathis_button_qzone"></a>
-    <a class="jiathis_button_tsina"></a>
-    <a class="jiathis_button_tqq"></a>
-    <a class="jiathis_button_weixin"></a>
-    <a class="jiathis_button_renren"></a>
-    <a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript">
-var jiathis_config = {data_track_clickback:'true'};
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-
-<!-- JiaThis like Button BEGIN -->
-<div class="jiathis_style">
-    <a class="jiathis_like_tsina" data="width=120"></a>
-    <a class="jiathis_like_qzone"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
-<!-- UY END -->
-
-  
-
-    
-</code></pre>
-
 
 <p>友言网的验证</p>
 
