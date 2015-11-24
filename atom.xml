@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-24T15:50:44+08:00</updated>
+  <updated>2015-11-24T16:08:14+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -40,8 +40,6 @@ comment_share: true
 
 
 <p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
-
-<p>修改了source/index.html文件，用if语句使其不显示log博文。</p>
 
 <p>友言网的验证<br/>
 这个不需要操心，现在只要你把代码粘贴好，剩下的事情就不用管了，友言已经能自动验证了，不需要再将一个什么验证文件放到自己的source目录中了，应该是凭借ID号。</p>

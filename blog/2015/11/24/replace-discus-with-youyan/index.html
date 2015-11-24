@@ -169,8 +169,6 @@ comment_share: true
 
 <p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
 
-<p>修改了source/index.html文件，用if语句使其不显示log博文。</p>
-
 <p>友言网的验证<br/>
 这个不需要操心，现在只要你把代码粘贴好，剩下的事情就不用管了，友言已经能自动验证了，不需要再将一个什么验证文件放到自己的source目录中了，应该是凭借ID号。</p>
 </div>
@@ -246,7 +244,10 @@ var jiathis_config = {data_track_clickback:'true'};
 	<a class="jiathis_like_tsina" data="width=120"></a>
 	<a class="jiathis_like_qzone"></a>
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
 <!-- JiaThis Button END -->
 
 
