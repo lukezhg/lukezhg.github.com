@@ -4,7 +4,7 @@
   <title><![CDATA[tags: discus | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/discus/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-24T11:46:24+08:00</updated>
+  <updated>2015-11-24T11:53:55+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -19,36 +19,60 @@
     <updated>2015-11-24T09:43:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
     <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
-将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。<br/>
-<code><pre></p>
+将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。</p>
 
+<pre><code>
 <!-- JiaThis Button -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 
-<p>  /{/% if site.comment_share %}</p>
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-<pre><code>/{/% include post/share_comment.html %}
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
 </code></pre>
 
-<p>  /{/% endif %}
-</pre></code>
-别忘了自觉去掉/</p>
 
-<p>当然需要在_config.yml中添加开关：<br/>
-<code><pre></p>
+<p>别忘了自觉去掉/</p>
 
-<h1>jiathis</h1>
+<p>当然需要在_config.yml中添加开关：</p>
 
-<p>comment_share: true
-</pre></code></p>
+<pre><code>
+#jiathis
+comment_share: true
+</code></pre>
+
 
 <p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
 
-<p>友言网的验证</p>
-
-<p>友言网验证后才能进行设置。登录友言网后，会看到列出了使用友言代码的网站。在“状态”处可以看到验证状态。在操作中点“验证”，在“请选择验证方法”处选择“上传html文件”，之后点“下载验证文件”，获得验证文件。验证文件是个空文件。将它放到source目录下，做rake deploy操作，就可以自动验证了。</p>
-
-<p>验证后可以对评论的显示进行设置调整</p>
+<p>友言网的验证<br/>
+这个不需要操心，现在已经能自动验证了，应该是凭借ID号。</p>
 ]]></content>
   </entry>
   
