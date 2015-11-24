@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-24T10:23:24+08:00</updated>
+  <updated>2015-11-24T11:09:43+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,12 +14,38 @@
 
   
   <entry>
-    <title type="html"><![CDATA[replace discus with youyan]]></title>
+    <title type="html"><![CDATA[replace disqus with youyan]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan/"/>
     <updated>2015-11-24T09:43:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
     <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
-将友言的代码放在share_comment.html文件中并通过disqus加载。</p>
+将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。<br/>
+<code><pre></p>
+
+<!-- JiaThis Button -->
+
+
+<p>  {\% if site.comment_share %}</p>
+
+<pre><code>\{\% include post/share_comment.html %}
+</code></pre>
+
+<p>  {\% endif %}
+</pre></code></p>
+
+<p>当然需要在_config.yml中添加开关：<br/>
+<code><pre></p>
+
+<h1>jiathis</h1>
+
+<p>comment_share: true
+</pre></code></p>
+
+<p>友言网的验证</p>
+
+<p>友言网验证后才能进行设置。登录友言网后，会看到列出了使用友言代码的网站。在“状态”处可以看到验证状态。在操作中点“验证”，在“请选择验证方法”处选择“上传html文件”，之后点“下载验证文件”，获得验证文件。验证文件是个空文件。将它放到source目录下，做rake deploy操作，就可以自动验证了。</p>
+
+<p>验证后可以对评论的显示进行设置调整</p>
 ]]></content>
   </entry>
   

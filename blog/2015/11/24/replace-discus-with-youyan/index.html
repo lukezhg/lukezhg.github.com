@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>replace discus with youyan - Chunlei's Blog</title>
+  <title>replace disqus with youyan - Chunlei's Blog</title>
   <meta name="author" content="chunlei">
 
   
   <meta name="description" content="将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。
-将友言的代码放在share_comment.html文件中并通过disqus加载。
-">
+将友言的代码放在share_comment.html文件中（source/includes/post/share_comment.html），并通过disqus（source/includes/disqus.html） &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,7 +121,7 @@ google.setOnLoadCallback(function() {
   
   <header>
     
-      <h1 class="entry-title">Replace Discus With Youyan</h1>
+      <h1 class="entry-title">Replace Disqus With Youyan</h1>
     
     
       <p class="meta">
@@ -148,7 +147,33 @@ google.setOnLoadCallback(function() {
 
 
 <div class="entry-content"><p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
-将友言的代码放在share_comment.html文件中并通过disqus加载。</p>
+将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。<br/>
+<code><pre></p>
+
+<!-- JiaThis Button -->
+
+
+<p>  {\% if site.comment_share %}</p>
+
+<pre><code>\{\% include post/share_comment.html %}
+</code></pre>
+
+<p>  {\% endif %}
+</pre></code></p>
+
+<p>当然需要在_config.yml中添加开关：<br/>
+<code><pre></p>
+
+<h1>jiathis</h1>
+
+<p>comment_share: true
+</pre></code></p>
+
+<p>友言网的验证</p>
+
+<p>友言网验证后才能进行设置。登录友言网后，会看到列出了使用友言代码的网站。在“状态”处可以看到验证状态。在操作中点“验证”，在“请选择验证方法”处选择“上传html文件”，之后点“下载验证文件”，获得验证文件。验证文件是个空文件。将它放到source目录下，做rake deploy操作，就可以自动验证了。</p>
+
+<p>验证后可以对评论的显示进行设置调整</p>
 </div>
 
 
@@ -192,15 +217,9 @@ google.setOnLoadCallback(function() {
   
 </div>
 
-<!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-	<a class="jiathis_like_tsina" data="width=120"></a>
-	<a class="jiathis_like_qzone"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-<!-- JiaThis Button BEGIN -->
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
 <div class="jiathis_style_32x32">
 	<a class="jiathis_button_qzone"></a>
 	<a class="jiathis_button_tsina"></a>
@@ -215,6 +234,24 @@ var jiathis_config = {data_track_clickback:'true'};
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+
     
     <p class="meta">
       
@@ -302,7 +339,7 @@ var jiathis_config = {data_track_clickback:'true'};
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/11/24/replace-discus-with-youyan/">replace discus with youyan</a>
+        <a href="/blog/2015/11/24/replace-discus-with-youyan/">replace disqus with youyan</a>
       </li>
     
       <li class="post">
@@ -363,17 +400,7 @@ var jiathis_config = {data_track_clickback:'true'};
 </p>
 
 </footer>
-  <!-- JiaThis Button -->
   
-    <!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
-<!-- UY END -->
-
-  
-
-<!--disqus-->
-
 
 <script type="text/javascript">
       var disqus_shortname = 'chunlei';
