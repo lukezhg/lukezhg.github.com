@@ -4,7 +4,7 @@
   <title><![CDATA[tags: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-24T17:00:31+08:00</updated>
+  <updated>2015-11-26T11:22:32+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[重装Ubuntu备忘]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall/"/>
+    <updated>2015-11-26T10:54:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall</id>
+    <content type="html"><![CDATA[<p>输入法<br/>
+搜狗输入法</p>
+
+<p>安装flash插件<br/>
+<code>
+sudo apt-get update
+sudo apt-get install flashplugin-installer
+</code></p>
+
+<p>开机亮度设置<br/>
+一个脚本让你的Ubuntu 14.04记忆屏幕亮度<em>Linux教程</em>Linux公社-Linux系统门户网站
+<a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+
+<p>安装scikit-learn<br/>
+<code>
+python 运行文件名
+python -V
+sudo apt-get install python3-pip
+sudo apt-get install python-scipy
+sudo apt-get install python-numpy
+sudo apt-get install python-matplotlib
+sudo apt-get install nautilus-open-terminal
+</code></p>
+
+<p>pip install -U scikit-learn<br/>
+参考：Installing scikit-learn — scikit-learn 0.17 documentation<br/>
+http://scikit-learn.org/stable/install.html<br/>
+还有<br/>
+Install Python, NumPy, SciPy, and matplotlib on Mac OS X | Pen and Pants<br/>
+http://penandpants.com/2012/02/24/install-python/</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
