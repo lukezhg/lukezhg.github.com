@@ -4,7 +4,7 @@
   <title><![CDATA[tags: octopress | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/octopress/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-28T17:05:31+08:00</updated>
+  <updated>2015-11-28T17:49:39+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[try octopress in ubuntu again]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
+    <updated>2015-11-28T17:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[提高网页加载速度]]></title>
