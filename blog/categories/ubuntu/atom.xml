@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-26T11:37:42+08:00</updated>
+  <updated>2015-11-28T17:05:31+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,18 +18,23 @@
     <link href="http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall/"/>
     <updated>2015-11-26T10:54:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall</id>
-    <content type="html"><![CDATA[<p>输入法<br/>
-搜狗输入法</p>
+    <content type="html"><![CDATA[<p>安装软件：<br/>
+输入法 ：搜狗输入法<br/>
+视频播放：VLC media player<br/>
+文本编辑：Vim<br/>
+图片查看：gwenview<br/>
+浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)</p>
 
-<p>安装flash插件<br/>
+<p>firefox安装flash插件<br/>
 <code>
 sudo apt-get update<br/>
 sudo apt-get install flashplugin-installer<br/>
 </code></p>
 
 <p>开机亮度设置<br/>
-一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程<br/>
-<a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
+
+<p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
 
 <p>安装scikit-learn<br/>
 <code>
@@ -49,6 +54,15 @@ http://scikit-learn.org/stable/install.html</p>
 
 <p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br/>
 http://penandpants.com/2012/02/24/install-python/</p>
+
+<p>安装 ipython notebook<br/>
+   pip install ipython
+   apt-get install ipython-notebook<br/>
+   ipython notebook --pylab inline --ip 0.0.0.0<br/>
+   然后用了浏览器访问对应的ip即可看到</p>
+
+<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br/>
+http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</p>
 ]]></content>
   </entry>
   
@@ -113,6 +127,34 @@ d       #delete
 p       #paste  
 Ctrl+:  #show clipped board  
 :%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>How to save file</p>
+
+<pre><code>:w filename
+:w! filename
+:wq #quit and save
+:q! #quit not save
+</code></pre>
+
+<p>How to open file</p>
+
+<pre><code>:open filename
+:open ~/luke/code/try.py  
+</code></pre>
+
+<p>How to search in a file</p>
+
+<pre><code>:/ pattern  
+:? pattern  
+n:search next  
+N:search previous  
+</code></pre>
+
+<p>How to cancel and redo</p>
+
+<pre><code>:u  for cancel  
+Ctrl + R：redo  
 </code></pre>
 
 <p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>

@@ -9,11 +9,12 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="输入法
-搜狗输入法 安装flash插件 sudo apt-get update
-sudo apt-get install flashplugin-installer 开机亮度设置
-一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程
-http://www.linuxidc.com/ &hellip;">
+  <meta name="description" content="安装软件：
+输入法 ：搜狗输入法
+视频播放：VLC media player
+文本编辑：Vim
+图片查看：gwenview
+浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -30,55 +31,11 @@ http://www.linuxidc.com/ &hellip;">
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<!-- unable google webfonts
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
--->
-<script>
-function addBlankTargetForLinks () {
-  $('a[href^="http"]').each(function(){
-		$(this).attr('target', '_blank');
-	});
-}
- 
-$(document).bind('DOMNodeInserted', function(event) {
-	addBlankTargetForLinks();
-});</script>
+
   
 
-  <!--<meta name="google-translate-customization" content="1ba042ff6c715050-da3a363d8c403f0d-gb5d37b727d524c12-11"></meta>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, multilanguagePage: false}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-  <!--google search-->
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-var customSearchControl = null;
-function sendQuery() {
-  var textNode = document.getElementById('field');
-  if ((textNode.value == '')) {
-    customSearchControl.clearAllResults();
-  } else {
-    customSearchControl.execute(textNode.value);
-  }
-}
-google.load('search', '1', {language : 'en'});
-google.setOnLoadCallback(function() {
-  customSearchControl = new google.search.CustomSearchControl('003240028397592718084:pjkd4hfsp_0');
-  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
-  var options = new google.search.DrawOptions();
-  options.enableSearchResultsOnly();
-  customSearchControl.draw('cse_g', options);
-}, true);
-</script>
-
-
-<!--baidu search-->
-<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=16896278337202878293' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-  <meta name="baidu-site-verification" content="H1sczb0fpe" />
 </head>
 
 <body   >
@@ -86,6 +43,7 @@ google.setOnLoadCallback(function() {
   <h1><a href="/">Chunlei's Blog</a></h1>
   
 </hgroup>
+
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
@@ -93,29 +51,17 @@ google.setOnLoadCallback(function() {
 </ul>
   
 <form action="http://google.com.hk/search" method="get">
-
   <fieldset role="search">
     <input type="hidden" name="q" value="site:zhangchunlei.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
-<!--
-  <fieldset role="search">
-    <input class="search" type="text" id="bdcsMain" placeholder="Search"/>
-  </fieldset>
--->
 </form>
-
   
 <ul class="main-navigation">
-  <li><a href="/"> Home </a></li>
-  <li><a href="/about"> About </a></li>
-  <li><a href="/blog/archives">Blog</a></li>
-  <li><a href="/course"> Course </a></li>
-  <li><a href="/app"> App </a></li>
-  <li><a href="/cn"> 中文 </a></li>
-  <li><a href="/en"> English </a></li>
-  <li><a href="/log"> log </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
 </ul>
+
 </nav>
   <div id="main">
     <div id="content">
@@ -152,18 +98,23 @@ google.setOnLoadCallback(function() {
   </header>
 
 
-  <div class="entry-content"><p>输入法<br/>
-搜狗输入法</p>
+  <div class="entry-content"><p>安装软件：<br/>
+输入法 ：搜狗输入法<br/>
+视频播放：VLC media player<br/>
+文本编辑：Vim<br/>
+图片查看：gwenview<br/>
+浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)</p>
 
-<p>安装flash插件<br/>
+<p>firefox安装flash插件<br/>
 <code>
 sudo apt-get update<br/>
 sudo apt-get install flashplugin-installer<br/>
 </code></p>
 
 <p>开机亮度设置<br/>
-一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程<br/>
-<a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
+
+<p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
 
 <p>安装scikit-learn<br/>
 <code>
@@ -183,6 +134,15 @@ http://scikit-learn.org/stable/install.html</p>
 
 <p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br/>
 http://penandpants.com/2012/02/24/install-python/</p>
+
+<p>安装 ipython notebook<br/>
+   pip install ipython
+   apt-get install ipython-notebook<br/>
+   ipython notebook &#8211;pylab inline &#8211;ip 0.0.0.0<br/>
+   然后用了浏览器访问对应的ip即可看到</p>
+
+<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br/>
+http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</p>
 </div>
   
   
@@ -233,7 +193,7 @@ http://penandpants.com/2012/02/24/install-python/</p>
 
 <p>使用时出现问题：</p>
 
-<p>问题1<br/>
+<p><strong>问题1</strong><br/>
 由于我在ubuntu上安装的是最新版本的openCV3.0.0，有些语句更改了，造成原始代码错误：<br/>
 <code>
 "face_detect.py", line 21, in flags = cv2.cv.CV_HAAR_SCALE_IMAGE AttributeError: 'module' object has no attribute 'cv'
@@ -249,7 +209,7 @@ http://penandpants.com/2012/02/24/install-python/</p>
 
 <p><strong>实际上只需要将原来的cv2.cv.CV_HAAR_SCALE_IMAGE替换为cv2.CASCADE_SCALE_IMAGE</strong></p>
 
-<p>问题2<br/>
+<p><strong>问题2</strong><br/>
 之后又发现程序不报错，但是不能产生人脸识别好的图片</p>
 
 <p>处理：<br/>
@@ -466,8 +426,7 @@ comment_share: true
   
     <section>
   <h1>About Me</h1>
-  <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
-  <p>慧行坚勇畅无极 <a href="http://zhangchunlei.com/about/">More</a> <a href="http://zhangchunlei.com/blog/categories/%E6%95%99%E5%AD%A6/">教学</a> <a href="http://zhangchunlei.com/blog/categories/%E7%A7%91%E7%A0%94/">科研</a> <a href="http://www.skc.ecnu.edu.cn/">skc</a> </p>
+  <p>A little something about me.</p>
 </section>
 <section>
   <h1>Recent Posts</h1>
@@ -534,7 +493,7 @@ comment_share: true
 <a style="font-size: 90%" href="/tag/ted/">TED</a>
 <a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
 <a style="font-size: 140%" href="/tag/uga/">UGA</a>
-<a style="font-size: 107%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 111%" href="/tag/ubuntu/">Ubuntu</a>
 <a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
 <a style="font-size: 90%" href="/tag/code/">code</a>
 <a style="font-size: 90%" href="/tag/course/">course</a>

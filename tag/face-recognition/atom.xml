@@ -4,7 +4,7 @@
   <title><![CDATA[tags: face recognition | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/face-recognition/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-26T11:37:42+08:00</updated>
+  <updated>2015-11-28T17:05:31+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -31,7 +31,7 @@
 
 <p>使用时出现问题：</p>
 
-<p>问题1<br/>
+<p><strong>问题1</strong><br/>
 由于我在ubuntu上安装的是最新版本的openCV3.0.0，有些语句更改了，造成原始代码错误：<br/>
 <code>
 "face_detect.py", line 21, in flags = cv2.cv.CV_HAAR_SCALE_IMAGE AttributeError: 'module' object has no attribute 'cv'
@@ -47,7 +47,7 @@
 
 <p><strong>实际上只需要将原来的cv2.cv.CV_HAAR_SCALE_IMAGE替换为cv2.CASCADE_SCALE_IMAGE</strong></p>
 
-<p>问题2<br/>
+<p><strong>问题2</strong><br/>
 之后又发现程序不报错，但是不能产生人脸识别好的图片</p>
 
 <p>处理：<br/>

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: VIM | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/vim/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-26T11:37:42+08:00</updated>
+  <updated>2015-11-28T17:05:31+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -50,6 +50,34 @@ d       #delete
 p       #paste  
 Ctrl+:  #show clipped board  
 :%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>How to save file</p>
+
+<pre><code>:w filename
+:w! filename
+:wq #quit and save
+:q! #quit not save
+</code></pre>
+
+<p>How to open file</p>
+
+<pre><code>:open filename
+:open ~/luke/code/try.py  
+</code></pre>
+
+<p>How to search in a file</p>
+
+<pre><code>:/ pattern  
+:? pattern  
+n:search next  
+N:search previous  
+</code></pre>
+
+<p>How to cancel and redo</p>
+
+<pre><code>:u  for cancel  
+Ctrl + R：redo  
 </code></pre>
 
 <p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
