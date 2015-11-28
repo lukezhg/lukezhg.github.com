@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-28T17:49:39+08:00</updated>
+  <updated>2015-11-28T22:14:08+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[try octopress in ubuntu again]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
+    <updated>2015-11-28T17:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
+    <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
+
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler  
+$ bundle install  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。<br/>
+参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>最后重新建立ssh密钥，参见：[这里]（https://help.github.com/articles/generating-ssh-keys/）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[重装Ubuntu备忘]]></title>
@@ -241,16 +268,6 @@ gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
 
 <blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
 <a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装ubuntu3d桌面的问题]]></title>
-    <link href="http://zhangchunlei.com/blog/2011/05/02/ubuntu/"/>
-    <updated>2011-05-02T00:00:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2011/05/02/ubuntu</id>
-    <content type="html"><![CDATA[<p>本来想安装3d桌面但是出了很多问题，后来直接进不去系统了，发现自己这个本本显卡实在是不给力，(ausu 1101 ha Intel gma500)，后来放弃了。但是我觉得还是需要一个像苹果一样的任务栏，这样会提高的工作效率（也许）。所以就安装了cairo-dock，结果把先前的软件都卸载之后，安装了这个发现，桌面标题栏不见了，白茫茫一篇，后来上网查，发现是：<br /><br />metacity不知道是什么原因，更某个程序发生了冲突，我怀疑是安装3d桌面的时候，一个程序的设置保留下来了。现在我只有每次都在开机后，执行sudo metacity --replace这样一般就能好了。 虽然还是有的窗口刷新不对，比如firefox的scribefire。<br /><br />我想每次都输入这个命令很累，其实有些其他的程序我也想启动，一般可以用系统-启动程序来达成，但是如何让系统开机后就自动执行某个命令呢？<br />1 修改/etc/rc.local 未果<br />2 修改/etc/profile 或者把执行脚本.sh的文件放入到profile.d文件夹中<br /><br />但是据说要授权，如何授权呢？<b>未果。</b><br /><br />其实解决问题的根本还是找到为什么会冲突，搜索“窗口管理器metacity没有打开”结果看到下面这个文章：<br />UBUNTU中的Metacity窗口管理器_问草_百度空间 http://hi.baidu.com/069liuqing/blog/item/4fe900d7fb8c43dba044dfe3.html <br /><br />原来是安装compiz fusion又卸载之后的后遗症，需要把一个参数改一下：<br /><blockquote> Alt + F2，打开“运行应用程序”对话框。输入 gconf-editor，并按回车。<p> 导航到 Apps-&gt;<strong style="color: black; background-color: rgb(255, 255, 102);">metacity</strong>-&gt;general，并选中 compositing_manager，将其值改为false</p></blockquote> 这样就没有冲突了，问题解决。可以正常使用cairo-dock了。<br /><br /><br /><br /><br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=8c289d3a-4a16-81ee-a22f-884af59fd414" /></div></p>
-
 ]]></content>
   </entry>
   

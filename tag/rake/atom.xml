@@ -4,7 +4,7 @@
   <title><![CDATA[tags: rake | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/rake/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-28T17:49:39+08:00</updated>
+  <updated>2015-11-28T22:14:08+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,7 +18,25 @@
     <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
     <updated>2015-11-28T17:43:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+    <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
+
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler  
+$ bundle install  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。<br/>
+参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>最后重新建立ssh密钥，参见：[这里]（https://help.github.com/articles/generating-ssh-keys/）</p>
 ]]></content>
   </entry>
   
