@@ -4,7 +4,7 @@
   <title><![CDATA[tags: VI | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/vi/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-11-29T10:17:04+08:00</updated>
+  <updated>2015-11-29T14:28:58+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -78,6 +78,12 @@ N:search previous
 
 <pre><code>:u  for cancel  
 Ctrl + R：redo  
+</code></pre>
+
+<p>How to paste from system clipboard</p>
+
+<pre><code>shift+insert  
++p  
 </code></pre>
 
 <p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
