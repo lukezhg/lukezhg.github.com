@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: modeling | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: Modeling | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/modeling/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-12-02T14:30:31+08:00</updated>
+  <updated>2015-12-20T11:22:46+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,231 +14,63 @@
 
   
   <entry>
-    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
-    <updated>2013-10-25T13:42:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
-    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo's Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
+    <title type="html"><![CDATA[如何设计一个教育评价方案]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan/"/>
+    <updated>2015-12-02T16:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan</id>
+    <content type="html"><![CDATA[<p>为了检测课程改革实施的效果或者某个项目的成效，你往往需要首先设计出一个评价方案。</p>
 
-<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
+<p>你可以按照以下步骤来设计：<br/>
+1、首先描述项目的目的<br/>
+2、其次描述出项目的具体目标<br/>
+3、对项目内容及过程进行描述<br/>
+4、列出项目评估问题<br/>
+5、列出评估数据来源<br/>
+6、给出收集数据的方法和工具</p>
 
-<!--more-->
+<p>实际上前3项都是项目描述，如果项目本身都描述不清楚，就不可能设计出合适的评估方案。</p>
 
+<h3>基于模型的科学探究案例</h3>
 
-<p>I asked my classmates what happens in the following situations.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
+<p>1、首先描述项目的目的<br/>
+该教学模式目的在于让学生有更多的机会体验和参与科学模型建构的过程，发展学生的科学探究能力以及对科学本质的认知，加深对科学概念的理解，提高学生学习科学的兴趣。</p>
 
-<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
+<p>2、其次描述出项目的具体目标<br/>
+发展学生的科学探究能力<br/>
+加深学生对科学本质的认知<br/>
+提高学生科学概念的理解<br/>
+提高学生学习科学的兴趣</p>
 
-<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
-<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
+<p>3、对项目内容及过程进行描述<br/>
+利用计算机模拟软件进行辅助，让学生能够针对研究的问题，提出假设和实验设计，并在计算机上模拟，收集收据，根据结果检验、验证或完善自己的解释模型。</p>
 
-<p>Ball A is the second arrived. Ball C is the last one. <br/>
-From Leaning Tower of Pisa Experiment to simulated experiment, what a big change information technology has made to our science teaching and learning!</p>
+<p>教学的流程为：
+a.基于某一自然现象提出问题<br/>
+b.解释学生对于这一问题的已有知识和经验，并让学生构建自己的解释模型<br/>
+c.用真实的实验或计算机模型实验来检验自己的模型<br/>
+d.基础获取的数据和模拟结果，对自己的模型进行修正和完善，最终基于证据解释该自然现象</p>
 
-<p>In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo's famous experiment on the Moon by Hammer and Feather Drop.</p>
+<p>4、列出项目评估问题<br/>
+经过这样的教学：<br/>
+学生的科学探究能力有显著提高吗？<br/>
+学生对科学本质的认识有显著变化吗？<br/>
+学生对科学概念的理解有显著增长吗？<br/>
+学生对科学的学习兴趣有显著提高吗？</p>
 
-<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/4mTsrRZEMwA" frameborder="0" allowfullscreen></iframe>
+<p>5、列出评估数据来源<br/>
+直接对学生的纸笔测验（前测、后测、对照班）<br/>
+对学生的问卷调查<br/>
+对学生的单独访谈<br/>
+对学生课堂表现的观察</p>
 
+<p>6、给出收集数据的方法和工具<br/>
+科学探究能力<br/>
+科学本质观量表<br/>
+学生访谈提纲<br/>
+学生课堂表现观察表</p>
 
-<p>You see the space technology also expanded our learning experience and provided us an amazing teaching resource-a dicrepant event.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Model-based Learning Review]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/10/03/model-based-learning-review/"/>
-    <updated>2013-10-03T10:15:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/10/03/model-based-learning-review</id>
-    <content type="html"><![CDATA[<h3>What is Model-based Learning(MBL)?</h3>
-
-<p>How students learn: science in classroom</p>
-
-<p>five epistemic features of scientific knowledge:(Windschitl,Thompson, &amp; Braaten,2008)
-testable 可验证性
-revisable 可修改性
-explanatory 解释性
-conjectural,and 推理性
-generative 启发性</p>
-
-<h3>Why to promote MBL now?</h3>
-
-<p>科学不仅仅是科学知识，还包括科学过程和科学的本质。学生不仅应该了解科学知识是什么，还应该了解科学知识是如何产生和发现的。MBL能够体现科学的全过程，是更真实的科学。<br/>
-科学探究在一线教学中面临很多困难，由于教学资源和时间的限制，学生很难有机会检验自己的假说是否正确，也较少有体会出自己的研究问题的机会。计算机模拟则可以解决这些困难，为学生提供模拟的科学探究体验。<br/>
-对于有效教学行为的研究所揭示的高效教学列表中，基于模型的科学探究覆盖了绝大部分的有效行为。因此，它是一种非常值得提倡的一种教学实践方式。</p>
-
-<h3>How MBL affects science learning?</h3>
-
-<h3>How to use MBL in science classroom?</h3>
-
-<h4>How to process MBL?</h4>
-
-<h4>How to assess students' work?</h4>
-
-<h4>How to adapt the activities for various needs?</h4>
-
-<h4>Simulation approach</h4>
-
-<h4>Collaboration approach</h4>
-
-<h4>Resources</h4>
-
-<h3>What are the Opportunities and Challenges for science teachers?</h3>
-
-<h4>Misunderstandings</h4>
-
-<h4>Lack of knowledges and skills</h4>
-
-<p>Reference<br/>
-<a href="http://www.vanderbilt.edu/m3lab/Rapp-Sengupta.pdf">Rapp &amp; Sengupta models and modeling in science learning(2).doc - Rapp-Sengupta.pdf</a></p>
-
-<p>Discourse Tools  model-based inquiry: <a href="http://tools4teachingscience.org/">http://tools4teachingscience.org/</a></p>
-
-<p>Windschitl, M., Thompson, J., &amp; Braaten, M. (2008). Beyond the scientific method: Model‐based inquiry as a new paradigm of preference for school science investigations. Science education, 92(5), 941-967.</p>
-
-<p>Index of /mwind/MWHome/downloads<br/>
-http://faculty.washington.edu/mwind/MWHome/downloads/</p>
-
-<p>reflection on groupwork modeling - Chunlei's Blog
-http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/</p>
-
-<p>Timss video and reflection of teaching science with modeling - Chunlei's Blog
-http://zhangchunlei.com/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[reflection on groupwork modeling]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/"/>
-    <updated>2013-09-27T11:00:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling</id>
-    <content type="html"><![CDATA[<p>I have wrote several posts about modeling:<br/>
-Such as <a href="/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities</a><br/>
-Look for more click <a href="/tag/modeling/">here</a></p>
-
-<p>But this time I would rather to think modeling from the groupwork perspective.</p>
-
-<p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don't guaranteed the fruits are big.</p>
-
-<p>Groupwork tasks take times, so they must be well designed and organized.</p>
-
-<p>What do I mean by well designed? The groupwork should meet the following preconditions:<br/>
-1.  It is highly realated with the science idea that student are going to learn.<br/>
-2.  It is challenging enough that it can't be done individually.<br/>
-3.  It is reachable for students with their present knowledges and skills.<br/>
-4.  It generates meaningful discussions and productive outcommings.</p>
-
-<p>What do I mean by well organized? The teacher should do the following:<br/>
-1.  Students' prior idea should be explored and addressed.<br/>
-2.  Possiblely related science theories or ideas should be put on the table(eg by brainstorming).<br/>
-3.  All group members should engaged actively and equally in the task.<br/>
-4.  Students can learn to communicate and collaborate like scientists.<br/>
-5.  Competition can be used to save time and for fun.</p>
-
-<p>How to help students to generate more productive group conversation?<br/>
-1.  State proper questions or the tasks clearly. Everyone knows what to do.<br/>
-2.  Use deep silent thinking and wide brainstorm, Enage what students prior ideas and concepts to expain the data/phenomenon? Everyone needs to participate in group conversation in some way.<br/>
-3.  Visualize group ideas or models with tools and posters.<br/>
-4.  Test and Review the models critically and make suggestions.<br/>
-5.  Revise the models in light of new data and feedbacks from class community.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Interactive simulation based inquiry activities]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/"/>
-    <updated>2013-08-24T12:17:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities</id>
-    <content type="html"><![CDATA[<p>Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how stars move for a long time, or do experiment about why plant grow to the sunlight. In this case, when oboservation and experiment difficult to carry out in classroom, computer software or interactive simulations can help a lot. There are two examples.</p>
-
-<p>In a middle school biology class, students can play with the following flash game to figure out why plant grow to the sun.</p>
-
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="468" height="60" 
- id="mymoviename"> 
-<param name="movie"  
-
-value="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-
-<embed src="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" quality="high" bgcolor="#ffffff"
-width="468" height="60" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
-
-
-
-
-<!--more-->
-
-
-<p>
-In a elementary school science class, student can stuy how much water does a crow drink every day. They can also study their own diet using the same method.</p>
-
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="468" height="60" 
- id="mymoviename"> 
-<param name="movie"  
-
-value="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-
-<embed src="http://bioteahouse.wikispaces.com/file/view/crows+drink+water.swf/391202546/crows%20drink%20water.swf" quality="high" bgcolor="#ffffff"
-width="468" height="60" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
-
-
-<p>Interactive simulations can help:<br/>
--   enage students, just give a cool show and some questions, then let them play with it.
--   stimulate students to ask questions
--   make observations and collect data or evidences<br/>
--   test their ideas</p>
-
-<p>If teachers can guide and organize them to make explainations or argue with each other based on evidence, and make predictions and test them, at last provide opportunities for self-evaluation and community evaluations, then this approach would be more effective for learning science in classroom.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Modeling activities and reflection]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection/"/>
-    <updated>2013-08-19T23:24:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection</id>
-    <content type="html"><![CDATA[<p>Recently I attended Dr Luft's class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.</p>
-
-<p>This is the list:<br/>
--   Candle in the water tube make it go out(Dr Luft's class)<br/>
--   Black box(<a href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)<br/>
--   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
--   Mystery Tube (Dr C's class)<br/>
--   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
-If you have more good modeling activities, welcome recommandations.</p>
-
-<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.</p>
-
-<p>Reflections on Modeling in science teaching<br/>
-The charm of modeling:<br/>
--   Naturally need students to make careful observation,recording data,drawing conclusions<br/>
--   Naturally engage students' prior ideas for explaination or application<br/>
--   Naturally put students into the test, debate and revisement of their models or prior ideas<br/>
--   Naturally let students experience the full process of science inquiry and nature of science</p>
-
-<p>What to focus in the modeling activites as a science teacher?</p>
-
-<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?</p>
-
-<p>Welcome to join the discussion of these open questions!</p>
+<p>参考资源：<br/>
+<a href="http://omerad.msu.edu/meded/progeval/index.html">Program Evaluation Tutorial | Michigan State University</a></p>
 ]]></content>
   </entry>
   

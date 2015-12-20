@@ -4,7 +4,7 @@
   <title><![CDATA[tags: os | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/os/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-12-02T14:30:31+08:00</updated>
+  <updated>2015-12-20T11:22:46+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -35,6 +35,40 @@ sudo apt-get install flashplugin-installer<br/>
 一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
 
 <p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+
+<p>网络不稳定<br/>
+修改/etc/ppp/options</p>
+
+<pre><code>sudo gedit options  
+</code></pre>
+
+<p>应会发以下选项：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 4  
+</code></pre>
+
+<p>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 15  
+</code></pre>
+
+<p>关闭ipv6</p>
+
+<pre><code>cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+显示0说明ipv6开启，1说明关闭
+</code></pre>
+
+<p>如果开启，关闭ipv6的方法：<br/>
+在 /etc/sysctl.conf 增加下面几行，并重启。</p>
+
+<h1>disable IPv6</h1>
+
+<pre><code>net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre>
 
 <p>安装scikit-learn<br/>
 <code>

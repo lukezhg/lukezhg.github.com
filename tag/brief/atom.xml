@@ -4,7 +4,7 @@
   <title><![CDATA[tags: brief | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/brief/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-12-02T14:30:31+08:00</updated>
+  <updated>2015-12-20T11:22:46+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -66,12 +66,17 @@ gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
 </ul>
 
 
-<p>批量改名<br/>
--  rename 's/lecture/slide/' *.jpg<br/>
-将当前目录中所有jpg文件名中lecture替换为slide。</p>
+<p>批量改名</p>
 
-<p>批量替换文件内容<br/>
--  perl -pi -e 's|Windows|Ubuntu|g' <code>find ./ -type f</code></p>
+<pre><code>rename 's/lecture/slide/' *.jpg  
+</code></pre>
+
+<p>将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容</p>
+
+<pre><code>perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+</code></pre>
 
 <blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
 <a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>

@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2015-12-02T14:30:31+08:00</updated>
+  <updated>2015-12-20T11:22:46+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Use ALT to replace mouse event left down]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
+    <updated>2015-12-20T10:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
+    <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
+
+<p>首先通过控制面板开启键盘鼠标，这样就可以通过数字键键盘上的5代替鼠标左键单击了。但是这个数字离左手很远，按起来不方便。</p>
+
+<p>解决的办法就是，用一个“键值更换器”小软件来更换键值，用right ALT替代数字键盘上的5.这样就万事大吉了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Numbers and figures that teacher should keep in mind]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/08/numbers-and-figures-that-teacher-should-keep-in-mind/"/>
+    <updated>2015-12-08T17:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/08/numbers-and-figures-that-teacher-should-keep-in-mind</id>
+    <content type="html"><![CDATA[<p>注意力<br/>
+成人的注意力一般能维持17分钟，所以讲授一般不要超过15分钟，甚至更短。如果是40分钟的课堂，建议在15分钟至30分钟时段开展互动性或参与性强的教学活动，最后10分钟则可以用于归纳、讨论和总结。一般最开始和最末尾的学习内容最容易记得，因此教师可以把最重要的事情放在这两个时段。</p>
+
+<p>等待时间（wait time）<br/>
+提问后要给学生思考的时间，一般至少要30秒，有深度和挑战的问题要更长，甚至1分30秒。</p>
+
+<p>目光接触<br/>
+老师要目中有人，一般要60%的时间与学生有目光接触。</p>
+
+<p>记忆力<br/>
+艾宾浩斯遗忘规律<br/>
+curve</p>
+
+<p>让我听我忘记，让我看我记得，让我参与我理解。</p>
+
+<p>信息保留率<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/learningpyramid.png" alt="learning pyramid" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何设计一个教育评价方案]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan/"/>
+    <updated>2015-12-02T16:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan</id>
+    <content type="html"><![CDATA[<p>为了检测课程改革实施的效果或者某个项目的成效，你往往需要首先设计出一个评价方案。</p>
+
+<p>你可以按照以下步骤来设计：<br/>
+1、首先描述项目的目的<br/>
+2、其次描述出项目的具体目标<br/>
+3、对项目内容及过程进行描述<br/>
+4、列出项目评估问题<br/>
+5、列出评估数据来源<br/>
+6、给出收集数据的方法和工具</p>
+
+<p>实际上前3项都是项目描述，如果项目本身都描述不清楚，就不可能设计出合适的评估方案。</p>
+
+<h3>基于模型的科学探究案例</h3>
+
+<p>1、首先描述项目的目的<br/>
+该教学模式目的在于让学生有更多的机会体验和参与科学模型建构的过程，发展学生的科学探究能力以及对科学本质的认知，加深对科学概念的理解，提高学生学习科学的兴趣。</p>
+
+<p>2、其次描述出项目的具体目标<br/>
+发展学生的科学探究能力<br/>
+加深学生对科学本质的认知<br/>
+提高学生科学概念的理解<br/>
+提高学生学习科学的兴趣</p>
+
+<p>3、对项目内容及过程进行描述<br/>
+利用计算机模拟软件进行辅助，让学生能够针对研究的问题，提出假设和实验设计，并在计算机上模拟，收集收据，根据结果检验、验证或完善自己的解释模型。</p>
+
+<p>教学的流程为：
+a.基于某一自然现象提出问题<br/>
+b.解释学生对于这一问题的已有知识和经验，并让学生构建自己的解释模型<br/>
+c.用真实的实验或计算机模型实验来检验自己的模型<br/>
+d.基础获取的数据和模拟结果，对自己的模型进行修正和完善，最终基于证据解释该自然现象</p>
+
+<p>4、列出项目评估问题<br/>
+经过这样的教学：<br/>
+学生的科学探究能力有显著提高吗？<br/>
+学生对科学本质的认识有显著变化吗？<br/>
+学生对科学概念的理解有显著增长吗？<br/>
+学生对科学的学习兴趣有显著提高吗？</p>
+
+<p>5、列出评估数据来源<br/>
+直接对学生的纸笔测验（前测、后测、对照班）<br/>
+对学生的问卷调查<br/>
+对学生的单独访谈<br/>
+对学生课堂表现的观察</p>
+
+<p>6、给出收集数据的方法和工具<br/>
+科学探究能力<br/>
+科学本质观量表<br/>
+学生访谈提纲<br/>
+学生课堂表现观察表</p>
+
+<p>参考资源：<br/>
+<a href="http://omerad.msu.edu/meded/progeval/index.html">Program Evaluation Tutorial | Michigan State University</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[assessment for learning and teaching]]></title>
@@ -120,7 +219,7 @@ SOFTEN=Smile+Open Posture+Forward lean+Touch+Eye contact+Nod<br/>
 （5）【提问、讨论】促进课堂讨论的开展<br/>
 （6）【提问、讨论、小结】揭示、检测、并利用学生关于科学的思考</p>
 
-<p>评价方式：<br/>
+<p>操作要点：<br/>
 （1）【导入】准、快、奇<br/>
 准：要与授课主要内容紧密相关；<br/>
 快：很快进入主要内容的学习；<br/>
@@ -208,6 +307,40 @@ sudo apt-get install flashplugin-installer<br/>
 一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
 
 <p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+
+<p>网络不稳定<br/>
+修改/etc/ppp/options</p>
+
+<pre><code>sudo gedit options  
+</code></pre>
+
+<p>应会发以下选项：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 4  
+</code></pre>
+
+<p>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 15  
+</code></pre>
+
+<p>关闭ipv6</p>
+
+<pre><code>cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+显示0说明ipv6开启，1说明关闭
+</code></pre>
+
+<p>如果开启，关闭ipv6的方法：<br/>
+在 /etc/sysctl.conf 增加下面几行，并重启。</p>
+
+<h1>disable IPv6</h1>
+
+<pre><code>net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre>
 
 <p>安装scikit-learn<br/>
 <code>
@@ -1100,124 +1233,6 @@ function stopDragFace(e:MouseEvent):void {
 <p><a href="http://concord.org/stem-resources">STEM Resource Finder | The Concord Consortium</a><br/>
 <a href="http://mw.concord.org/modeler/">Molecular Workbench - An Interface to the Molecular World</a><br/>
 <a href="http://www.udel.edu/biology/ketcham/microscope/scope.html">虚拟显微镜考核</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[生命科学与生活]]></title>
-    <link href="http://zhangchunlei.com/blog/2015/05/29/life-sciences-and-our-life/"/>
-    <updated>2015-05-29T12:14:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2015/05/29/life-sciences-and-our-life</id>
-    <content type="html"><![CDATA[<p>用了13周的时间最为核心的生命科学内容学习完了，下面的3周时间我们会结合同学们的小组项目学一学这些知识在生活中的应用。</p>
-
-<p>主要会涉及下面3大主题：<br/>
-1、饮食与健康<br/>
-健康与亚健康、平衡膳食与健康、现代“文明病”、癌症、人体器官移植、转基因食品、睡眠。<br/>
-6组：早饭到底给了我们什么？
-9组：减肥知多少
-12组：苹果
-14组：酸奶
-15组：素食
-7组：探究科学去除污的机理？
-2组:转基因食品
-11组：试管婴儿</p>
-
-<p>饮食很重要，摄入足够的能量是维持高级生命活动的基础。大脑消耗非常大的能量。TED演讲向厨房鞠躬。幼儿时期食物的丰富度可能影响成年后肥胖的几率。</p>
-
-<p>吃很重要。
-吃什么？营养与味道、素食主义、补锌、维生素。
-吃多少？早上吃饱、中午吃好、晚上吃少。空腹不能吃香蕉。厌食症和暴饮暴食。<br/>
-怎么吃？时间（早饭）、健康食谱（适当的烹调和混合）、和谁（聚餐）。<br/>
-数学模型</p>
-
-<p>人体如何维持机体的健康？<br/>
-新陈代谢<br/>
-稳态<br/>
-免疫系统<br/>
-基因调控</p>
-
-<p>癌症：
-麻省理工学院公开课：生物学导论<em>癌症</em>网易公开课
-http://open.163.com/movie/2010/1/T/B/M6S8NS5PR_M6S8QOBTB.html</p>
-
-<p>2、神奇的大脑<br/>
-1组:你会睡觉吗？
-3组：咖啡
-5组：茶之妙
-大脑的结构<br/>
-大脑的工作原理<br/>
-如何科学用脑？</p>
-
-<p>3、生物进化、生物多样性与环境<br/>
-人为什么要长头发?<br/>
-方舟子似乎有一段很有意思论述。</p>
-
-<p>8组：你的头发还好吗？
-10组：仙人掌是否抗辐射？
-4组：濒危动植物现状
-13组：地外生命</p>
-
-<pre/><code/>
-1组:你会睡觉吗？
-2组:转基因食品
-3组：咖啡
-4组：从生态环境破坏到濒危动植物现状
-5组：茶之妙
-6组：早饭到底给了我们什么？
-7组：探究科学去除污的机理？
-8组：你的头发还好吗？
-9组：减肥知多少
-10组：仙人掌是否抗辐射？
-11组：试管婴儿
-12组：苹果
-13组：地外生命
-14组：酸奶
-15组：素食
-</code></pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[你不能一口吃成个胖子]]></title>
-    <link href="http://zhangchunlei.com/blog/2015/05/03/yi-kou-chi-ge-pangzhi/"/>
-    <updated>2015-05-03T17:15:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2015/05/03/yi-kou-chi-ge-pangzhi</id>
-    <content type="html"><![CDATA[<p>很多的时候，我们老师太着急，总是想让学生一口吃成个胖子。</p>
-
-<p>殊不知，这样只会营养不良。</p>
-
-<p>我上微格教学的时候，也是这样。我特别想让学生学会把自己的教学活动和具体的教学目标联系起来，与学生知识和经验联系起来。为此，我还特地设计了一个教学简案模板，辅助同学有意识的做出这些的联系。这些联系包括，学生活动与具体目标的联系、学生活动与学生经验的联系、学习活动与要解决的问题之间的联系、学生活动与教师辅助之间的联系，以及一个学生活动与下一个学生活动之间的联系。我想让同学们直接利用这个模板设计酶这节课。</p>
-
-<p>出发点是很好的，但是操之过急了，犯了“想让学生一口吃成个胖子”的错误。我很欣慰，这是课上一位同学提醒我的。很显然，应该让同学们一个连接一个连接的明确，比如先按照自己的原有的思路设计这节课的活动，接下来找出那些活动是要学生动脑或动手的，在接下来明确这些活动能够帮助达成哪些具体的学习目标。然后再思考这个活动学生是否喜欢、是否有能力完成，是否有其他更好的活动可以达成同样的目标，活动过程中教师可能需要提供怎样的辅助。最后在思考，如何让这样的思维活动更有条理，如何让活动环节之间紧密的衔接起来，如何设计这节课的问题线索。这样才是把任务简化分解了，然后再结合具体的视频案例，相信会更容易让同学们接受。</p>
-
-<p>总之，这次是学生给我上了一堂生动的课，谁都不能一口吃成个胖子，要一口一口的吃！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[NARST 2015]]></title>
-    <link href="http://zhangchunlei.com/blog/2015/04/17/narst-2015/"/>
-    <updated>2015-04-17T13:24:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2015/04/17/narst-2015</id>
-    <content type="html"><![CDATA[<p>This is the second time I attend NARST. Like last time, lots of thing is going on at the same time, but I can catch much more than before.</p>
-
-<p>Here are some pictures of my presentations and my academic families.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_chunlei1.jpg" alt="Chunlei Presenting 1" /></p>
-
-<!--more-->
-
-
-<p>
-<img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_chunlei2.jpg" alt="Chunlei Presenting 2" /></p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/Liu_family.jpg" alt="With Professor Liu family" /></p>
-
-<p><img src="https://github.com/lukezhg/Freyja/raw/master/Luft_family.jpg" alt="With Dr Luft family" /></p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_Chicago_day.jpg" alt="Chicago on day" /></p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_Chicago_Night.jpg" alt="Chicago on night" /></p>
 ]]></content>
   </entry>
   
