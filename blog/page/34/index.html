@@ -9,7 +9,11 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="我有幸参与了Dr C的三次教法课，每次课一个小时。之所以第一次参与这个课堂，一个很直接的原因是我被一盆开的很漂亮的花吸引了，我想知道老师想用这盆花干什么。 ">
+  <meta name="description" content="在摸索过程中经常使用的命令： 安装和执行程序
+- sudo apt-get install appname 安装程序应用
+- make install 编译并安装 .tar.gz2 - sh xx.sh 执行.sh文件
+- sudo su 切换到root用户
+- sudo exit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +71,156 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T12:33:00+08:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/ubuntu-command-brief/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post[&#8220;post title&#8221;]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名</p>
+
+<pre><code>rename 's/lecture/slide/' *.jpg  
+</code></pre>
+
+<p>将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容</p>
+
+<pre><code>perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+</code></pre>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">Ridiculous Jump and Serious Problem</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-30T22:35:00+08:00" pubdate data-updated="true">Aug 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just watched a TV program named Ridiculous. The following is special one.</p>
+
+<div>
+<iframe width="420" height="315" src="//www.youtube.com/embed/9Cmw2m2z6_0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>Really Ridiculous, I can&#8217;t help laughing when thinking of the great jump.<br/>
+But sometimes it can be a very serious problem.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/08/30/ridiculous-jump-and-serious-problem/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -245,102 +399,6 @@ clipboard.copyString(txt);
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/">Strong Sense of Crisis Make a Nation Grow Sturdy</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-26T15:43:00+08:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy.</p>
-
-<p>American people and Unite States are good examples.</p>
-
-<p>Here are some pictures evidence.<br/>
-The first thing was the emergency chair at the corner of stairwell. You can break the window and use the chair to take somebody hurt going downstairs. What a considerate safety concern! You can find an emergency shower at every classroom, which hardly seen in Chinese classroom.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/dangerchair.jpg" alt="Emergency Chair in Aderhold" /><br/>
-&lt;&#8211;!more&#8211;>
-The safety shower is just at the right of the door.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/Safety_Shower.jpg" alt="Emergency Shower in Classroom" /></p>
-
-<p>Im my apartment, there is a white notice like following.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/safetyalert.jpg" alt="Safety Alert in Apartment" /></p>
-
-<p>It doesn&#8217;t look nice on the door. But it is there.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/">自满和自卑都不是学习的态度</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-26T15:18:00+08:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/26/complacency-and-inferiority-are-both-enemies-of-study/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在学习和借鉴别国教育经验的时候，我们往往容易摆错心态。一种是自满，觉得学不学无所谓，别国的教育理念和实践也好不到哪去。另外一种是奉为神明，觉得一切都是好的，都要搬过来。然后一谈到本土的教育，觉得很自卑。其实这两种太多都过于偏激，都不可取。</p>
-
-<p>其实出现这种情况，也在一定程度上反映了我们缺乏全方位深度思考的能力，这是灌输式教育很难教出来的。</p>
-
-<p>其实对于一线教师而言，看看别人的课堂，别校的课堂，别国的课堂，是非常好的第一步，这意味着你在尝试改变和探寻。观看别人的课堂目的并不是照搬别人的课堂，但它们至少会告诉你，什么样的课堂是可能的。接下来思考，在你的控制范围内，你能让它在多大程度上发生，如何设计你的课堂，在实践中有用的留下，不好用的改进，没用的舍弃。这是一个一线教师能够做的，至少能让自己班上的孩子们保留一丝对自然科学的向往。这就是一线教师值得骄傲的。至于教育系统的问题，多半责任在教育决策者和研究者身上，而且问题不可能一下子解决。学习和研究别人的东西没什么丢人的，不学习才可耻。孔子说“三人行，必有我师”，人家美国都喊出“超越上海”的口号了，我们观摩观摩别国的课堂，研究研究他们的套路，有什么可自卑的。当然学习不是迷信，研究不是照搬。</p>
-
-<p>自满和自卑其实都是学习的敌人。而在今天，不学习是必然要落后的，即便曾经强盛过。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/35/">&larr; Older</a>
@@ -363,7 +421,15 @@ The safety shower is just at the right of the door.<br/>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/">Use ALT to replace mouse event left down</a>
+        <a href="/blog/2015/12/21/children-should-have-the-right-to-feel-hungry/">能偶尔感受饥饿是孩子应有的权利</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/20/science-should-be-learnt-in-ordered-real-world-problem-solving-activities/">Science should be learnt in ordered real world problem solving activities</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/">用ALT代替左键单击</a>
       </li>
     
       <li class="post">
@@ -394,19 +460,11 @@ The safety shower is just at the right of the door.<br/>
         <a href="/blog/2015/11/24/replace-discus-with-youyan/">replace disqus with youyan</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2015/11/19/insight-and-problem-solving/">洞察力和问题解决</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/11/17/kids-are-kids-do-not-let-them-become-little-adults/">亲子关系就像国与国</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/log'>log (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (44)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (2)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (16)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (44)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -440,7 +498,7 @@ The safety shower is just at the right of the door.<br/>
 <a style="font-size: 98%" href="/tag/inquiry/">inquiry</a>
 <a style="font-size: 90%" href="/tag/letter/">letter</a>
 <a style="font-size: 98%" href="/tag/list/">list</a>
-<a style="font-size: 103%" href="/tag/log/">log</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
 <a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
 <a style="font-size: 111%" href="/tag/modeling/">modeling</a>
 <a style="font-size: 90%" href="/tag/msci/">msci</a>
@@ -461,7 +519,8 @@ The safety shower is just at the right of the door.<br/>
 <a style="font-size: 90%" href="/tag/writing/">writing</a>
 <a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
 <a style="font-size: 90%" href="/tag/教学反思/">教学反思</a>
-<a style="font-size: 90%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 98%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 90%" href="/tag/教学设计/">教学设计</a>
 <a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
 <a style="font-size: 90%" href="/tag/教案/">教案</a>
 <a style="font-size: 90%" href="/tag/正能量/">正能量</a>

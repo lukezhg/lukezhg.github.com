@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="在高中生物学中有一个概念叫染色体，所谓染色体组就是指一组形态大小各功能不相同、但是包含了本物种生长、发育和繁殖所需的所有遗传信息的非同源染色体。这个概念是理解二倍体、多倍体以及单倍体的基础。人有46条染色体，实际上是两套，从1号一直编到22号，每号都有两条，在加上2条性染色体，刚好23对。 &hellip;">
+  <meta name="description" content="问题描述：在分享资料的时候，有些编辑器或者邮件不支持暗文超级连接，于是这些超级链接就面临着丢失的危险，如何把原文含有暗文连接的文章，转换成明文连接呢？问题解决：问题已经部分得到了解决，也就是可以利用正则表达式+regex正则表达式wiki: http://zh.wikipedia.org/wiki &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,98 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/03/31/howto-use-RE-get-links/">如何把暗文超级链接转换成明文链接呢</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-31T00:00:00+08:00" pubdate data-updated="true">Mar 31<span>st</span>, 2011</time>
+        
+         | <a href="/blog/2011/03/31/howto-use-RE-get-links/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><b>问题描述：</b>在分享资料的时候，有些编辑器或者邮件不支持暗文超级连接，于是这些超级链接就面临着丢失的危险，如何把原文含有暗文连接的文章，转换成明文连接呢？<br /><br /><b>问题解决：</b><br />问题已经部分得到了解决，也就是可以利用<b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>+regex</b><br /><br /><b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>wiki</b>: <a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank">http://zh.wikipedia.org/wiki/%<wbr />E6%AD%A3%E5%88%99%E8%A1%A8%E8%<wbr />BE%BE%E5%BC%8F</a><br /><b>regex</b>: <a href="http://regexlib.com/RETester.aspx" target="_blank">http://regexlib.com/RETester.<wbr />aspx</a><br /><br /><b>我使用的<span class="il">表达</span><span class="il">式</span></b>：[a-zA-z]+://[^\s]*<br /><span class="il">表达</span><span class="il">式</span>来自：<a href="http://www.williamlong.info/archives/433.html" target="_blank">http://www.williamlong.<wbr />info/archives/433.html</a><br /><br /><a href="http://xn--6kqp98bmja49j0uyh0b23mqsjmp5b.cn/" target="_blank">由于我找的网站都是.cn</a>结尾的，<a href="http://xn--fhqrlwjv5kjtb9li3pmnzbma9746b.cn/" target="_blank">所以我又在后面加上了.cn</a>&nbsp; <span class="il">表达</span><span class="il">式</span>变为：[a-zA-z]+://[^\s]*.cn<br /><br />一下子网站地址就都出来了 <br /><br /><b>谢谢ZQ的指点！</b><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=202bca68-a0a8-862a-b8f0-719ad6ac435e" /></div></p>
+
+如何在新窗口打开链接地址呢？  
+只需要在source\includes\custom\head.html文件后面添加下面的代码,代码外面别忘了加
+<pre><code>
+<script>
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+</pre></code>
+参考(李顺利的博文)[http://www.blogjava.net/lishunli/archive/2013/01/20/394478.html]  </div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/03/31/assessment-should-include-and-encourge-all-kinds-of-learning-styles/">评价应当涉及并启发所有的学习方式</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-31T00:00:00+08:00" pubdate data-updated="true">Mar 31<span>st</span>, 2011</time>
+        
+         | <a href="/blog/2011/03/31/assessment-should-include-and-encourge-all-kinds-of-learning-styles/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这是《有效的学生评价》中的一个观点。<br /><br />想象我们现在的学生评价，学校里充满了考试，单元考、期中考、期末考，这些考试都是单调的纸笔测验，不可否认纸笔测验的重要作用，但是这种考试确实存在着严重的弊端，比如它很难测量学生的行为表现、语言表达能力以及动手技能等，更难于测量学生的态度情感价值观，即便是知识目标，也会受到它自身考察范围的局限。其实我们老师也知道这些缺陷，但是中学中的测验几乎还都是这种形式，这其中就让人深思了！<br /><br />其中有很多原因了，最常见的，老师们会说高考就是这种形式啊，平时考试当然要为高考做准备。另外一个重要原因是老师已经习惯了找一些题目做一次测试，想要换一种评价方式，还真不知道如何操作了。可见除了应试教育的原因，老师自身关于评价的知识和技能储备也是个问题。其实最根本的还是观念的转变，观念不变，心态不开放，这种陋习还是一直延续下去。到最后，学生讨厌考试，教师也会产生考试倦怠，而测评的真正目的却没有达成。<br /><br />本书的作者Ellen Weber有一次到因纽特进行教师培训，发现这里的文化与南方有很大不同，因纽特人学习的内容和方式也很特别，北极地区所运用的评价方式与南部地区的标准化测量有太多相同之处，而与北极人的智慧知识没有任何联系。作者得到启发，评价应到涉及并启发所有的学习方式，应当强调另一种文化倾向的特色和所有文化的独特之处。于是ta与当地教师合作，制定了跨文化的多元智力维度评价方案和策略：<br /><ul><li>激活学生的先前知识和经验</li><li>运用视觉形象来弥补和支持书面材料的学习</li><li>运用多好中途径帮互助学生表达思想，即让他们们运用不同的学习方式和语言</li><li>用图来演示各种观点之间的关系</li><li>用视觉形象对物质材料进行概括</li><li>评价团队评价活动帮助那些英语水平较差的学生。</li></ul><br />每当我们要进行一次测评时，我们都应该好好想一想评价的目的是什么，评价哪些方面，应该采用怎样的评价方式最为合适？而不是被动评价，为了评价而评价。<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=6f64910b-9849-8a12-ad4d-db2a83438c9a" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -182,82 +274,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/21/common-principles-in-assessment/">Common Principles in Assessment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-21T00:00:00+08:00" pubdate data-updated="true">Mar 21<span>st</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/21/common-principles-in-assessment/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>以下摘自：http://books.google.com/books?id=Omh-Gi8_K9kC&amp;printsec=frontcover&amp;dq=knowing+what+students+know&amp;source=bl&amp;ots=Basr_sFtWc&amp;sig=lTJRqtJei-ZCrdh1oASyfI4dcTU&amp;hl=en&amp;ei=HB6HTbbXNdTAtgfC083EBA&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=5&amp;ved=0CDwQ6AEwBA#v=onepage&amp;q&amp;f=true<br /><b><br />Assessment is always aprocess of reasoning from evidence.</b><br /><br />Every assessment, regardless of its purpose, rests on <b>3 pillars:</b> <br /><ol><li><b>a model of how students represent knowledge and develop competence</b> in the subject domain,</li><li><b>tasks or situations</b> that allow one to observe students&#8217; performance, <br /></li><li>and <b>an interpretation method</b> for drawing inferences from the performance, and an interpretation method for drawing infereces from the performance evidence thus obtained. </li></ol>评价三角行<br />Three foundational elements, comprising what is refered to in this report as the &#8221;<b>assessment triangle</b>&#8221;, underlie all assessments. These three elements&#8211;<b>cognition</b>, <b>observation</b>, and <b>interpretation</b>&#8211;must be explicitly connected and designed as a coordinated whole.<br /><br />A model of cognition and learning should serve as the cornnerstone of the assessment design process. This model should be based on the best available understanding of how students represent knowledge and develop competence in the domain.<br />在生物学领域，学生是如何表征他们的知识和发展他们的知识的呢？与其他学科有何不同?<br /><br /><b>The model of learning</b> can serve as a unifying element-a nucleus that brings cohesion to <b>curriculum, instruction, and assessment</b>. The cohesive function is a crucial one because educational assessment does not exist in isolation, but must be aligned with curriculum and instruction if it is to support learning.<br /><br />此外课堂教学的内容和评价应该与大规模考试相一致，如果不一致就会产生矛盾，结果会使得教师和学生都难堪。Thus there is a need for better alignment among assessments used for different purposes and in different contexts.<br /><br />现代学习理论认为，知识是在头脑中表征、组织和加工的。此外<b>社会化学习</b>以及<b>参与性实践</b>也给予了很大的关注。因此评价的实施应该不仅不仅关注考核基本技能和知识点，而应该包容学生更为复杂的学习成就。<br /><br />短时记忆，长时记忆。关键的问题是人如何唤醒长时记忆中的知识并用它分析目前和信息和解决问题。因此，在正常认知范围内，对人是如何在长期记忆中组织信息的评估要比对短时记忆能力的评估更为重要。<br /><br />Understanding the contents of long-term memory is especially critical for determing what people know; how they know it; and how the are able to use that knowledge to answer questions, solve problems, and engage in additional learning.<br /><br />What one know is domain- and task-specific and organized into structures known as schemas. 评价应该评估一个人在有哪些图式，在什么情况下他会把某些信息认为是相关的。<br /><br />评价应评估个体已有的图式和对图式的选择应用<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=51d2333f-6bf8-890e-a490-cd7784c2ba0d" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/09/informal-learing/">什么是非正式学习，这就是非正式学习</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-09T00:00:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/09/informal-learing/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>真的很巧，做班车时遇到2两位科教同行，一个是课程所的裴老师，一个是脑科学认知的陈老师。一聊结果陈老师是更我来自一个学校，且曾经是我师姐的同事。世界真小！<br /><br />其实我是偶然听到这两位再聊“解构、变构”什么的，聊学习科学在课堂教学中遇到的困难，聊最近裴老师出的一本新书“变构模型”。我就猜到了，这是同行兼同事。<br /><br />后来，我忍不住了，插入进去，先自我介绍，互相通报姓名，于是就认识了。<br /><br />裴老师还给了我很多其他有用的学术信息，真好。你看，就是在这不经意间学习就发生了，学习的网络就初步建立起来了，什么是非正式学习，这就是非正式学习。<br /><br />&#8212;&#8212;&#8212;&#8211;<br />学习科学研究中心：<br />http://lsc.ecnu.edu.cn/yjry/index.htm<br /><br />学习究竟是什么*<br />——焦尔当⋅安德烈教授访谈录<br />载《全球教育展望》2008-1,第13-20 页<br />裴新宁                   <a href="http://blog.sina.com.cn/peixinning">http://blog.sina.com.cn/peixinning</a><br />http://www.ldes.unige.ch/ang/actu/modeleAlloChine/interviewChinese.pdf<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=884a5cbb-fd26-83bd-b798-25d51bf662a8" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/57/">&larr; Older</a>
@@ -280,7 +296,15 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/">Use ALT to replace mouse event left down</a>
+        <a href="/blog/2015/12/21/children-should-have-the-right-to-feel-hungry/">能偶尔感受饥饿是孩子应有的权利</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/20/science-should-be-learnt-in-ordered-real-world-problem-solving-activities/">Science should be learnt in ordered real world problem solving activities</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/">用ALT代替左键单击</a>
       </li>
     
       <li class="post">
@@ -311,19 +335,11 @@
         <a href="/blog/2015/11/24/replace-discus-with-youyan/">replace disqus with youyan</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2015/11/19/insight-and-problem-solving/">洞察力和问题解决</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/11/17/kids-are-kids-do-not-let-them-become-little-adults/">亲子关系就像国与国</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/log'>log (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (2)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (4)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (15)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (44)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (2)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (16)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (44)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (1)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (5)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -357,7 +373,7 @@
 <a style="font-size: 98%" href="/tag/inquiry/">inquiry</a>
 <a style="font-size: 90%" href="/tag/letter/">letter</a>
 <a style="font-size: 98%" href="/tag/list/">list</a>
-<a style="font-size: 103%" href="/tag/log/">log</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
 <a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
 <a style="font-size: 111%" href="/tag/modeling/">modeling</a>
 <a style="font-size: 90%" href="/tag/msci/">msci</a>
@@ -378,7 +394,8 @@
 <a style="font-size: 90%" href="/tag/writing/">writing</a>
 <a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
 <a style="font-size: 90%" href="/tag/教学反思/">教学反思</a>
-<a style="font-size: 90%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 98%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 90%" href="/tag/教学设计/">教学设计</a>
 <a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
 <a style="font-size: 90%" href="/tag/教案/">教案</a>
 <a style="font-size: 90%" href="/tag/正能量/">正能量</a>
