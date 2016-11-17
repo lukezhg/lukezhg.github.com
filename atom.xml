@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2016-07-30T17:01:51+08:00</updated>
+  <updated>2016-11-17T19:25:50+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Word必须要打开两次才能打开]]></title>
+    <link href="http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice/"/>
+    <updated>2016-11-17T19:21:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice</id>
+    <content type="html"><![CDATA[<p>我的系统是win7，有一个问题一直困扰着我，就是每次打开word文档的时候总是第一次失败，第二次正常。</p>
+
+<p>今天网上找到一个方法，就是把默认输入法从搜狗输入法改成中文简体美式键盘。</p>
+
+<p>在用不用打开两次那么麻烦了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mirror Mirror on the wall]]></title>
@@ -806,39 +819,6 @@ Machine learning for facial recognition | EFavDB<br/>
 <p>关于机器学习的另一个比较经典的学习资源：<br/>
 2.11. scikit-learn: machine learning in Python — Scipy lecture notes<br/>
 <a href="http://www.scipy-lectures.org/advanced/scikit-learn/index.html">http://www.scipy-lectures.org/advanced/scikit-learn/index.html</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[replace disqus with youyan]]></title>
-    <link href="http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan/"/>
-    <updated>2015-11-24T09:43:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
-    <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
-将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。</p>
-
-<pre><code>
-<!-- JiaThis Button -->
-  /{/% if site.comment_share %}
-    /{/% include post/share_comment.html %}
-  /{/% endif %}
-</code></pre>
-
-
-<p>别忘了自觉去掉/</p>
-
-<p>当然需要在_config.yml中添加开关：</p>
-
-<pre><code>
-#jiathis
-comment_share: true
-</code></pre>
-
-
-<p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
-
-<p>友言网的验证<br/>
-这个不需要操心，现在只要你把代码粘贴好，剩下的事情就不用管了，友言已经能自动验证了，不需要再将一个什么验证文件放到自己的source目录中了，应该是凭借ID号。</p>
 ]]></content>
   </entry>
   
