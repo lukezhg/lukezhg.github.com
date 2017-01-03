@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Sometimes when something becomes your job, even you love it, when you have to do if before a deadline, you tend to lose the fun you had before. &hellip;">
+  <meta name="description" content="Today I updated ubuntu, and then I can&#8217;t start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,183 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/08/ubuntu-crash-on-graphic-driver/">Ubuntu Crash on Graphic Driver</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-08T22:14:00+08:00" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/08/ubuntu-crash-on-graphic-driver/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I updated ubuntu, and then I can&#8217;t start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
+
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
+
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
+
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
+
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/">TMUX and VIM in Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-08T13:56:00+08:00" pubdate data-updated="true">Nov 8<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/11/08/tmux-and-vim-in-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
+
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
+
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
+
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
+
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
+
+<p>That is it.</p>
+
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
+
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press &#8216;v&#8217; in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>How to save file</p>
+
+<pre><code>:w filename
+:w! filename
+:wq #quit and save
+:q! #quit not save
+</code></pre>
+
+<p>How to open file</p>
+
+<pre><code>:open filename
+:open ~/luke/code/try.py  
+</code></pre>
+
+<p>How to search in a file</p>
+
+<pre><code>:/ pattern  
+:? pattern  
+n:search next  
+N:search previous  
+</code></pre>
+
+<p>How to cancel and redo</p>
+
+<pre><code>:u  for cancel  
+Ctrl + R：redo  
+</code></pre>
+
+<p>How to paste from system clipboard</p>
+
+<pre><code>shift+insert  
++p  
+</code></pre>
+
+<p>Isn&#8217;t easy. But it takes time to get used to them and operate unconsioucely.</p>
+
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -410,94 +587,6 @@ addpath('C:users\ang\Desktop') % add octave search path
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/29/laptop-stand-designed-by-myself/">Laptop Stand Designed by Myself</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-29T22:24:00+08:00" pubdate data-updated="true">Oct 29<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/29/laptop-stand-designed-by-myself/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It is uncomfortable to work on my laptop on a table. Becuase the screen is too low and you have to bend your head which cause pain in the neck.<br/>
-So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/laptopstand.png" alt="laptop stand" /></p>
-
-<p>You can alway make a change if you want to. And small change can make a big difference sometimes.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/27/dont-alienate-disabled-people/">Don&#8217;t Alienate Disabled People</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-27T09:46:00+08:00" pubdate data-updated="true">Oct 27<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/10/27/dont-alienate-disabled-people/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb &#8211; who was born deaf. She showed what is possible through family support and self-belief, and proves that what is assumed about you and what you can actually achieve don&#8217;t always match up. In the United States, two-thirds of hearing-impaired people do not complete high school.</p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/uKKpjvPd6Xo" frameborder="0" allowfullscreen></iframe>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/10/27/dont-alienate-disabled-people/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/32/">&larr; Older</a>
@@ -518,6 +607,14 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/01/03/lost-in-the-city/">迷失在城市生活里</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/12/28/unpublished-post/">Unpublished post</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/12/26/superman-in-the-life/">超级个体</a>
@@ -551,19 +648,11 @@ So I made a laptop stand using a useless shoes box. Here is the picture.<br/>
         <a href="/blog/2016/03/31/how-mendel-discover-genetic-rules/">How Mendel discover genetic rules</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/03/18/how-teacher-assess-science-literacy/">教师如何评价学生的核心科学素养</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/02/27/assignment-as-market-goods/">教学与供需</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/教学'>教学 (48)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/反思'>反思 (6)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (48)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (9)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -676,7 +765,7 @@ window.onload=function(){
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2016 - chunlei -
+  Copyright &copy; 2017 - chunlei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
