@@ -4,7 +4,7 @@
   <title><![CDATA[tags: repeated measures | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/repeated-measures/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-01-03T23:14:41+08:00</updated>
+  <updated>2017-01-19T00:05:45-08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Repeated Measures Correlation Mixed Model]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model/"/>
-    <updated>2014-04-17T09:02:00+08:00</updated>
+    <updated>2014-04-17T09:02:00-07:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model</id>
     <content type="html"><![CDATA[<p>How to do it?<br/>
 Analysis==>Mixed Model, then you got diaogue 1 as follows. ID shuold be put be included as subjects. Year should be included as repeated, cause I measured multiple times by different year.
@@ -42,7 +42,7 @@ The most hard decision to make is which Repeated Covaricance Type to select, the
   <entry>
     <title type="html"><![CDATA[多次重测数据的方差分析]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/14/repeated-measures-anova/"/>
-    <updated>2014-04-14T13:57:00+08:00</updated>
+    <updated>2014-04-14T13:57:00-07:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/14/repeated-measures-anova</id>
     <content type="html"><![CDATA[<p>统计学比较抽象，需要通过例子加以学习。</p>
 

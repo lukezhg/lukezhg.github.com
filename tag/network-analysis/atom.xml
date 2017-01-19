@@ -4,7 +4,7 @@
   <title><![CDATA[tags: network analysis | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/network-analysis/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-01-03T23:14:41+08:00</updated>
+  <updated>2017-01-19T00:05:45-08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Clustering Maps by Similarity]]></title>
     <link href="http://zhangchunlei.com/blog/2014/06/30/clustering-maps-by-similarity/"/>
-    <updated>2014-06-30T19:17:00+08:00</updated>
+    <updated>2014-06-30T19:17:00-07:00</updated>
     <id>http://zhangchunlei.com/blog/2014/06/30/clustering-maps-by-similarity</id>
     <content type="html"><![CDATA[<p>I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me by leaving a comment.</p>
 
@@ -43,7 +43,7 @@ ss=bh*2+bl-hl-lh-breaks(可以参考序列比对)
   <entry>
     <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/"/>
-    <updated>2014-05-29T22:10:00+08:00</updated>
+    <updated>2014-05-29T22:10:00-07:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/29/mds-in-r</id>
     <content type="html"><![CDATA[<p>I met this problem when I was analysing teachers' PCK concept maps. I wanted to divide them into several clusters that shared the similar structures(nodes and links).</p>
 
