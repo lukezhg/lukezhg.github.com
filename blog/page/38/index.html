@@ -9,11 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="在摸索过程中经常使用的命令： 安装和执行程序
-- sudo apt-get install appname 安装程序应用
-- make install 编译并安装 .tar.gz2 - sh xx.sh 执行.sh文件
-- sudo su 切换到root用户
-- sudo exit &hellip;">
+  <meta name="description" content="I will make a list of science labs activities which are so fun and interesting that you can&#8217;t miss. Real Labs
++ Mystery tube(modeling), see &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +68,131 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/10/a-list-of-science-labs-that-rocks/">A List of Science Labs That Rocks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-10T00:34:00-07:00" pubdate data-updated="true">Sep 10<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/09/10/a-list-of-science-labs-that-rocks/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I will make a list of science labs activities which are so fun and interesting that you can&#8217;t miss.</p>
+
+<p>Real Labs<br/>
++   Mystery tube(modeling), see <a href="http://lasp.colorado.edu/home/wp-content/uploads/2011/06/Mystery-Tube.pdf">lesson plan</a><br/>
+观察和记录现象；根据现象猜想和建构模型；做出预期并验证模型；交流、修正和完善模型。<br/>
++   Candle in the tube above water(causal model)<br/>
++   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3600?ref=search">Transpiration lab</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/careerstart-grade8/5540">Cell theory and plant respiration G8</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/criticalthinking/6650">Water quality - Critical thinking in science</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3226?ref=search">Amazing amaryllis activitiesm G2-3 4Ws</a></p>
+
+<p>Hands on activities<br/>
++   <a href="http://www.education.com/activity/article/Sourdough_bread/">Sourdough Science!</a><br/>
++   Making a safty harmer<br/>
++   Design a sprinkler head for watering lawn</p>
+
+<p>Virual Labs/ Simulations<br/>
++   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
++   PhET: <a href="http://phet.colorado.edu/">Free online simulations</a><br/>
++   <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities - Chunlei&#8217;s Blog</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/play-gae-in-ubuntu/">在Ubuntu中布置和使用GAE</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T18:07:00-07:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/play-gae-in-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
+首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
+然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
+
+<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
+
+<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
+
+<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
+
+<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
+测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
+
+<pre><code>
+$ python dev_appserver.py myapps/helloworld
+</code></pre>
+
+
+<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
+
+<p>ctrl+C 终止测试。</p>
+
+<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
+
+<pre><code>
+$ python appcfg.py update myapps/helloworld
+</code></pre>
+
+
+<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -266,139 +388,6 @@ But sometimes it can be a very serious problem.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/">对斯坦福DTAL课程学习环境的反思</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-27T19:07:00-07:00" pubdate data-updated="true">Aug 27<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>开始的时候，视频中介绍的学习环境设计，以及流动的环境给我的印象极其深刻。</p>
-
-<p>再有，在论坛中谈到，站着进行头脑风暴的效率要比坐着的小组高。很小的设计改变就可以产生很大的影响。站立和坐着也是一种环境设计。</p>
-
-<p>在提供了简短的视频介绍之后，主要通过明确的任务来推进学习。不仅有明确的要求、评价标准，还有可以利用的工具推荐、技术技巧介绍、过程和案例等。这给学习者很大的自主学习空间，在完成作业的过程中边做边学。</p>
-
-<p>在组建learning squire的时候，这次我加入了别人的小组，并且进行了积极的交流。比上两次的小组要成功。小组的同伴学习虽然并没有对我的学习起到觉得性的作用，不过还是交了几个朋友。也进行了视频对话，对于语言和沟通能力是有帮助的。此外，因为没有小组作品，所以大家也没有分工合作，主要是相互分享信息和求助，这种人际环境也会让学习者具有黏性或依赖感。</p>
-
-<p>总体来讲，单就本次课程而言，其学习环境主要包括媒体环境和人际环境，其实作业任务中也有要我们去采访和测试prototype，如果这个加上的话就有实践环境在里面了。其媒体环境的设计是非常值得学习的。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/">Firefox Extension FireGesture Scripts</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-26T18:23:00-07:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
-
-<p>The following are my scripts:<br/>
-1.  Sina Weibo(DUDU)<br/>
-<code></p>
-
-<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
-gBrowser.loadOneTab(sel, {
-    inBackground: true,
-    relatedToCurrent: true
-});
-</code></pre>
-
-<p></code>
-2. iciba(RLR)<br/>
-<code></p>
-
-<pre><code>var word = getBrowserSelection();
-if (!word)
-    return;
-var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
-gBrowser.loadOneTab(sel, {
-    inBackground: true,
-    relatedToCurrent: true
-});
-</code></pre>
-
-<p></code>
-3.  Copy the title and url</p>
-
-<pre><code>
-const AS_HTML = false;
-
-function htmlEscape(s) {
-  s = s.replace(/&/g, "&amp;");
-  s = s.replace(/>/g, "&gt;");
-  s = s.replace(/</g, "&lt;");
-  s = s.replace(/"/g, "&quot;");
-  return s;
-}
-var url = window.content.location.href;
-var title = window.content.document.title;
-var txt = AS_HTML ? 
-  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
-  title + "\n" + url;
-var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
-                .getService(Ci.nsIClipboardHelper);
-clipboard.copyString(txt);
-</code></pre>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/39/">&larr; Older</a>
@@ -419,6 +408,14 @@ clipboard.copyString(txt);
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/02/01/ubc-week-3/">UBC week 3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/01/ubc-week-2/">UBC Week 2</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/01/24/what-make-a-good-teacher/">What make a good teacher?</a>
@@ -450,14 +447,6 @@ clipboard.copyString(txt);
     
       <li class="post">
         <a href="/blog/2016/12/22/smog/">雾霾</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/11/18/tinbergens-four-questions/">Tinbergens_four_questions</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/11/17/word-have-to-open-twice/">Word必须要打开两次才能打开</a>
       </li>
     
   </ul>
