@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-02-17T20:59:47-08:00</updated>
+  <updated>2017-02-23T18:05:46-08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[教育游戏推荐]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/02/23/educational-games/"/>
+    <updated>2017-02-23T17:00:00-08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/02/23/educational-games</id>
+    <content type="html"><![CDATA[<p>教育游戏活动</p>
+
+<h3>STEM教育类：</h3>
+
+<p>设计挑战<br/>
+1、用A4纸设计并制作一架飞行器，要求能在同等高度在空中飞行最久。<br/>
+2、设计机场电梯防护栏，要求能够避免行人携带行李车乘坐传送带式电梯。</p>
+
+<h3>教育技术类：</h3>
+
+<p>即时反馈技术<a href="Kahoot!%0Ahttps://kahoot.it/">Kahoot</a><br/>
+仿真模拟游戏<a href="https://phet.colorado.edu/">Phet</a><br/>
+严肃科学游戏Omosa等</p>
+
+<h3>博弈游戏：</h3>
+
+<p>作业时间博弈<br/>
+4名学生一起玩游戏。分别扮演数学老师、语文老师、英语老师、科学老师。学生做多能完成的作业量为4个小时，每位老师都可以布置一个作业时间（0-4小时），如果4位老师布置的总时间超出了4小时，那么布置最多的老师作业取消资格。如果还超出4个小时，第二多的老师作业无效，直到作业总时间少于4小时。累计4轮，布置有效作业时间最多的老师获胜。</p>
+
+<p><a href="http://wenku.baidu.com/link?url=4uBsGnuqAfvV7OUYpkTN6Gr4FR-LTd5w5VdpJ_xXRNZ656LCgBjOA5xPaHls5WexPOhDm88aGcaIQkEjxACkWlv8mQnYUuaidY9I_p5zwR3">红黑博弈游戏</a></p>
+
+<p><a href="http://wenku.baidu.com/link?url=ag8JzKqecYLW0PwDhF5VQ1ZUdx96xZu61mDpdP3tAbv5f_OrVIKl4xFw30mK80bzhucrlDMdYorkiImUp5DCsfOD8Aohv_akVf-azLRKSbW">趣味博弈游戏-讨教还价、百元大钞</a></p>
+
+<h3>团队合作游戏：</h3>
+
+<p><a href="http://open.163.com/movie/2014/4/B/M/M9NB0CLKV_M9NBBIPBM.html">拇指摔跤-游戏的力量</a></p>
+
+<object width="640" height="360"><param name="movie" value="http://swf.ws.126.net/openplayer/v02/-0-2_M9NB0CLKV_M9NBBIPBM-vimg1_ws_126_net//image/snapshot_movie/2014/3/I/9/M9NBBIJI9-1423031805465.swf?isTEDPlay=1"></param><param name="allowScriptAccess" value="always"></param><param name="wmode" value="transparent"></param><embed src="http://swf.ws.126.net/openplayer/v02/-0-2_M9NB0CLKV_M9NBBIPBM-vimg1_ws_126_net//image/snapshot_movie/2014/3/I/9/M9NBBIJI9-1423031805465.swf?isTEDPlay=1" type="application/x-shockwave-flash" width="640" height="360" allowFullScreen="true" wmode="transparent" allowScriptAccess="always"></embed></object>
+
+
+<p>背靠背站起</p>
+
+<object width=1190 height=515><param name="movie" value="//share.vrs.sohu.com/my/v.swf&topBar=1&id=14201808&autoplay=false&from=page"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="Transparent"></param><embed width=1190 height=515 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://zhangchunlei.com//share.vrs.sohu.com/my/v.swf&topBar=1&id=14201808&autoplay=false&from=page" type="application/x-shockwave-flash"/></embed></object>
+
+
+<p>教师双簧<br/>
+ 2人一组，一名同学表达教师的口头语言，一名同学表演教师的肢体语言，开展教学。观众或评委根据两人的配合默契度打分或点赞!。<br/>
+可以分解教师口头语言和肢体语言，也可以分解教师的板书和讲解，还可以分解教师的语言和表情。</p>
+
+<h3>板书游戏：</h3>
+
+<p>我画你猜（将抽象概念可视化）<br/>
+组织者准备20张抽象概念的卡片，比赛选手两人一组，一个能看到卡片的概念，但是不能说话也能写字，只能画图。另一人猜测卡片背后的概念。看不同小组谁能够猜的对更多的卡片。</p>
+
+<h3>现场教学比赛（语言和板书）</h3>
+
+<p>组织者准备若干（如20个）教学主题，这些主题可以事先让参赛者知道。比赛时，让参赛者随机抽签，抽到之后马上开始3分钟教学讲解。两两PK最终，有观众投票决定胜负。赢得最多场数的队伍获胜。</p>
+
+<h3>情境短剧：</h3>
+
+<p>未来学校：设想你时空穿越来到一所未来学校，新奇的故事接二连三的发生……<br/>
+信息土著的教育：工作后你会面临信息土著的学生，作为老师你该何去何从……<br/>
+新型教师：你将成为怎样的新型教师以适应这个时代的变化发展<br/>
+学校教育印象：描述你印象深刻的、对你有很重要影响的事件。<br/>
+交互式短剧：短剧中的角色的命运会受到观众的影响，剧情也会根据观众的投票或反应而发生变化。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[爱是我们最宝贵的财富]]></title>
@@ -760,66 +823,6 @@ http://nextgenscience.org/search-standards</p>
 <p>如何将内容串起来，如何把问题线索理清楚，如何从头到尾一线而贯之。</p>
 
 <p>同学们问哪里能找到高中前科学概念的梳理，我希望以后我们自己总结和梳理一个。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[孟德尔遗传定律是如何发现的]]></title>
-    <link href="http://zhangchunlei.com/blog/2016/03/31/how-mendel-discover-genetic-rules/"/>
-    <updated>2016-03-31T15:32:00-07:00</updated>
-    <id>http://zhangchunlei.com/blog/2016/03/31/how-mendel-discover-genetic-rules</id>
-    <content type="html"><![CDATA[<p>平时教学中，我们的科学学习与实践往往相脱离，表现为知而不行、行而不知、知行不一。</p>
-
-<p>比如老师过于强调所传授科学知识的对与错，而忽略知识发现和发展的过程。同时对于科学思维与实践的关注也不够。那么，如何在教学中给学生提供学习机会，发展学生科学思维与实践能力呢？</p>
-
-<p>我们以孟德尔分离定律为例，平常教学我们注重讲清楚豌豆作为实验材料的优点、以及孟德尔一对相对性状豌豆杂交实验过程、结果以及孟德尔提出的解释和测交验证。我们在意的是学生能否能记住分离定律内容并应用其来解题、是否会写遗传图解。但是，我们对于孟德尔为什么要做这个实验、如何提出自己的假说并恰当运用科学实践方法验证自己的假说这些重要的问题，关注的还不过。</p>
-
-<p>那么，我们是否可以让学生踏着孟德尔的脚步一起来经历分离定律的发现之旅呢？</p>
-
-<ol>
-<li><p>为什么要做植物杂交实验？<br/>
-孟德尔做杂交实验是为了找出遗传的规律。找到遗传的规律就可以培育出优良的品种。比如多产的作物或者具有优质羊毛的山羊。在当时有一些流行的遗传观念，比如融合遗传，单亲遗传等。当时很少有做实验对这些观念进行严肃的检验。孟德尔不同，他亲手做了很多植物杂交的实验，其中豌豆杂交实验最为成功。</p></li>
-<li><p>为什么选择豌豆？<br/>
-在生物学研究中，选择恰当的实验材料是成功的第一步。孟德尔选择豌豆，主要有如下原因：<br/>
-1 豌豆闭花传粉，自花授粉，很容易获得纯种。<br/>
-2 豌豆有易于区分的相对性状，比如植株的高矮，籽粒的圆皱。<br/>
-3 豌豆杂交实验容易实施，并且实验周期也较短。</p></li>
-<li><p>如何做杂交实验？<br/>
-首先孟德尔建立了自己实验纯种品系，纯种高茎，纯种矮茎。选用纯种并只观察一对相对性状可以让影响因素尽可能简化。</p></li>
-</ol>
-
-
-<p>因为纯种只会延续原有性状，并不能观察到更多新的遗传现象。于是孟德尔对两个品种的豌豆进行杂交。结果F1全部为高茎。这个结果支持融合遗传的假说吗？不支持。那么这个结果支持单亲遗传假说吗？还不确定。假如单亲遗传假说成立，那么将父本和母本的品系对调，结果肯定不一样。于是他又做了反交实验，结果F1还全部是高茎。因此，这个结果也不支持单亲遗传假说。</p>
-
-<p>孟德尔在思考这个结果该怎么解释呢？为什么只出现了高茎没有矮茎呢？这个高茎和亲本中的高茎一样吗？如何检验呢？</p>
-
-<p>于是它让F1自交，因为豌豆是闭花传粉，所以他只需要将F1收获的种子种下去就可以了。他想，如果F2都是高茎，那就说明这个F1高茎和亲本高茎一样都是纯合的。结果F2有高茎，也有矮茎。这说明这个F1高茎并不是纯合的，它能产生矮茎后代，说明它还保留着控制矮茎性状的遗传物质，因为它表现为高茎，所以它必然有控制高茎的遗传物质，这样一来，它只能是一个杂合子。他把F1自交产生F2，其中大部分为显性性状，少部分为隐性性状的现象叫做性状分离。他对F2高茎和矮茎进行了数量统计，发现高茎787，矮茎277。</p>
-
-<p>这是一个偶然现象吗？<br/>
-于是他有做了另外6对相对性状的杂交试验，结果如下表。<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/seven_traits.png" alt="六对相对性状" /></p>
-
-<p>孟德尔的神情开始凝重起来，这绝对不是一个偶然现象，那么，到底该如何解释呢？<br/>
-他开始回想这个实验过程。</p>
-
-<p>F1必然同时含有控制高茎的遗传因子和控制矮茎的遗传因子。<br/>
-因此（1）遗传因子很可能是成对存在的。</p>
-
-<p>但因为F2代又重新出现了矮茎，而且是更亲代一模一样的矮茎，这说明矮茎遗传因子并没因为和高茎遗传因子在一起而受到改变。<br/>
-这说明（2）遗传因子相互独立，并不相互侵染。</p>
-
-<p>孟德尔知道，花粉粒和卵细胞结合产生F1，那么，为了使得遗传物质总量保持不变，亲本只能将一份遗传因子通过传递给子代。也就是（3）形成配子时，成对的遗传因子相互分离分别进入不同的配子。</p>
-
-<p>最后，（4）雌雄配子随机结合形成合子。</p>
-
-<p>这个假说完美的解释了一对相对性状的杂交试验结果，包括3:1的分离比。</p>
-
-<p>那么这个假说真的是正确的吗？</p>
-
-<p>这个假说的关键是F1可以产生两种类型的配子，并且其比例是1:1。那么，如何检验F1产生的配子类型和比例呢？</p>
-
-<p>于是，孟德尔有进行了测交实验。测交的结果，F2高茎和矮茎比例非常接近1:1。<br/>
-于是，分离定律得到了进一步验证。</p>
 ]]></content>
   </entry>
   
