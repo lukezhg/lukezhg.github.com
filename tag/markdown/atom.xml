@@ -4,7 +4,7 @@
   <title><![CDATA[tags: markdown | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/markdown/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-02-25T15:41:52-08:00</updated>
+  <updated>2017-03-03T13:32:11-08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -44,7 +44,7 @@
 
 <h3>Video Example</h3>
 
-<p>{% video http://s3.imathis.com/video/zero-to-fancy-buttons.mp4 640 320 http://s3.imathis.com/video/zero-to-fancy-buttons.png %}</p>
+<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
 
 <h3>Flash example</h3>
 
