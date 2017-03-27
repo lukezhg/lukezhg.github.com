@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "about"
+title: "关于我"
 date: 2012-12-30 20:48
 comments: true
 sharing: true
@@ -9,7 +9,29 @@ footer: true
 ![chunlei](https://raw.github.com/lukezhg/Freyja/master/chunlei.png)  
 Chunlei Zhang  
 Motto：To be the best of myself！  
+Email: lukezhg(at)gmail.com  
+
+My Tag Cloud   
+<div id="tag-archives">
+  <ul class="tag-cloud">
+{% tag_cloud font-size: 100-220%, threshold: 1, style: para %}
+  </ul>
+</div>
 
 Scholar Interests: science education; teacher knowledge ;PCK;  ICT; PLE; Model-based Inquiry  
 
-Follow me on: [Twitter](http://www.twitter.com/chunleizhang), [Diigo](http://www.diigo.com/user/chunleizhang), [Slideshare](http://www.slideshare.net/lukezhang), [Haokanbu](http://www.haokanbu.com/user/108512/), [Douban](http://www.douban.com/people/teahouse/)  
+关注领域：科学教学；信息技术（社区、模拟、虚拟、ML）；教师教育；学习科学；  
+
+**关注的问题：**  
+人是如何学习的？  
+概念是如何在大脑中构建和使用？   
+科学是什么？  
+好的科学教育应该怎样?目标、内容、教法、测评？  
+我们当下的教育怎么了？  
+教育改革该如何推进？  
+如何培养未来的科学教师？  
+信息通讯技术如何为科学教育服务？  
+教育平等该如何实现？  
+
+Follow me on: [Twitter](http://www.twitter.com/chunleizhang), [Facebook](https://www.facebook.com/lukezhg),  [Diigo](http://www.diigo.com/user/chunleizhang), [Slideshare](http://www.slideshare.net/lukezhang), [Douban](http://www.douban.com/people/teahouse/)  
+

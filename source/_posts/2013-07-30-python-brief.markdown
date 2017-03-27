@@ -77,3 +77,36 @@ class FruitShop:
     def getName(self):
         return self.name
 
+调用winsound 函数  
+<pre><code>
+import winsound
+# press a make a beep
+if event.KeyID==65: winsound.Beep(200,9)
+# press ESC play exit sound
+if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+</code></pre>
+
+
+使用pyHook监听鼠标和键盘事件  
+<pre><code>
+import pythoncom
+import pyHook
+
+def onKeyboardEvent(event):
+	global switch
+	# 监听键盘事件
+	if switch:
+		print "Key:", event.Key
+		print "KeyID:", event.KeyID
+	return True #监听函数的返回值
+
+def main():
+	# 定义一个实例
+	hm = pyHook.HookManager()
+	# 监听所有键盘事件
+	hm.KeyDown = onKeyboardEvent
+	# 设置键盘监听器
+	hm.HookKeyboard()
+	# 循环并保持一直处于监听状态
+	pythoncom.PumpMessages()
+</code></pre>

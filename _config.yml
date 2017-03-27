@@ -4,10 +4,10 @@
 
 url: http://zhangchunlei.com
 title: Chunlei's Blog
-subtitle: A blog for future.
+subtitle: #A blog for future.
 author: chunlei
-simple_search: http://google.com/search
-description: 
+simple_search: http://google.com.hk/search
+description: Science education, teacher education, ICT, learning environment
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -37,9 +37,9 @@ category_title_prefix: "Category: "
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 5          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
+recent_posts: 10       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
@@ -50,9 +50,12 @@ titlecase: true       # Converts page and post titles to titlecase
 # and add an array with the asides you want to use.
 
 default_asides: [custom/asides/category_list.html, asides/recent_posts.html]
-blog_index_asides: [custom/asides/about.html, asides/countdown.html, custom/asides/flinks.html, asides/twitter.html,  asides/weibo.html, asides/googleplus.html, asides/recent_posts.html, custom/asides/category_list.html, custom/asides/tags.html, custom/asides/recent_comment.html, custom/asides/visitors.html, custom/asides/license.html]
+blog_index_asides: [custom/asides/about.html, asides/recent_posts.html, custom/asides/category_list.html, custom/asides/tags.html, custom/asides/recent_comment.html, asides/countdown.html, custom/asides/flinks.html, custom/asides/visitors.html, custom/asides/license.html]
+# asides/weibo.html, asides/twitter.html, asides/googleplus.html,
+
 page_asides: [custom/asides/category_list.html, custom/asides/tags.html, asides/recent_posts.html, custom/asides/license.html]
-post_asides: [custom/asides/google_translate.html,custom/asides/category_list.html, custom/asides/tags.html, asides/recent_posts.html, custom/asides/license.html]
+# custom/asides/google_translate.html,
+post_asides: [custom/asides/category_list.html, custom/asides/tags.html, asides/recent_posts.html, custom/asides/license.html]
 # blog_index_sidebar: 
 # page_sidebar: 
 # post_sidebar: 
@@ -78,36 +81,22 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: chunleizhang
-twitter_tweet_count: 1
-twitter_show_replies: false
-twitter_follow_button: true
-twitter_show_follower_count: true
-twitter_tweet_button: false
-
-# Google +1
-google_plus_one: false
-google_plus_one_size: small #medium
-
-# Google Plus Profile
-# Hidden: No visible button, just add author information to search results
-googleplus_user: 
-googleplus_hidden: false
-
-# Pinboard
-pinboard_user: 
-pinboard_count: 3
-
-# Delicious
-delicious_user: 
-delicious_count: 3
+twitter_user: #chunleizhang
+twitter_tweet_count: #1
+twitter_show_replies: #false
+twitter_follow_button: #true
+twitter_show_follower_count: #true
+twitter_tweet_button: #true
 
 # Disqus Comments
 disqus_short_name: chunlei
 disqus_show_comment_count: True
 
 # Google Analytics
-google_analytics_tracking_id: UA-43313809-1
+google_analytics_tracking_id: #UA-43313809-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: 
+
+# jiathis
+comment_share: true

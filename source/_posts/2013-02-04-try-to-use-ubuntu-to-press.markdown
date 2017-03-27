@@ -3,7 +3,7 @@ layout: post
 title: "在ubuntu中部署octopress发布博文"
 date: 2013-02-04 12:17
 comments: true
-categories: "技术技巧"
+categories: [github,技术技巧]
 tags: [ubuntu,github,octopress] 
 ---
 以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。  

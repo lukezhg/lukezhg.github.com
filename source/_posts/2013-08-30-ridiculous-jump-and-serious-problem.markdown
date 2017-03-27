@@ -4,7 +4,7 @@ title: "ridiculous jump and serious problem"
 date: 2013-08-30 22:35
 comments: true
 categories: "教学"
-tags: [UGA,SLA]
+tags: [UGA,SLA,en]
 ---
 I just watched a TV program named Ridiculous. The following is special one.  
 <div>

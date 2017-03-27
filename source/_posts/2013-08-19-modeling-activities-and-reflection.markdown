@@ -3,8 +3,8 @@ layout: post
 title: "Modeling activities and reflection"
 date: 2013-08-19 23:24
 comments: true
-categories: "teaching"
-tags: [en,UGA, Modeling]
+categories: "教学"
+tags: [list,resources,en,UGA, modeling]
 ---
 Recently I attended Dr Luft's class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.  
 
@@ -12,7 +12,7 @@ This is the list:
 -	Candle in the water tube make it go out(Dr Luft's class)  
 -	Black box([How students learn: science in classroom](http://www.nap.edu/catalog.php?record_id=11102) see Chp 12)  
 -	Timms video [JP5 AIR COMPRESSION AND EXPANSION](http://timssvideo.com/72)  
--	Secret Tube (Dr C's class)  
+-	Mystery Tube (Dr C's class)  
 -	Next Generation Science Standards [simulation activities in Concord](http://concord.org/ngss/)  
 If you have more good modeling activities, welcome recommandations.  
 

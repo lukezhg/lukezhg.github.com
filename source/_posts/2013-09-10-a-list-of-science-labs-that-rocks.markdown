@@ -9,7 +9,8 @@ tags: [list,labs,en]
 I will make a list of science labs activities which are so fun and interesting that you can't miss.  
 
 Real Labs  
-+	Secret tube(modeling)  
++	Mystery tube(modeling), see [lesson plan](http://lasp.colorado.edu/home/wp-content/uploads/2011/06/Mystery-Tube.pdf)  
+观察和记录现象；根据现象猜想和建构模型；做出预期并验证模型；交流、修正和完善模型。  
 +	Candle in the tube above water(causal model)  
 +	Timms video [JP5 AIR COMPRESSION AND EXPANSION](http://timssvideo.com/72)  
 +	[Transpiration lab](http://www.learnnc.org/lp/pages/3600?ref=search)  

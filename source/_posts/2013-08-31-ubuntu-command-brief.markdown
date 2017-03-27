@@ -11,9 +11,18 @@ tags: [Ubuntu,brief]
 -  sudo apt-get install appname  安装程序应用
 -  make install 编译并安装 .tar.gz2   
 -  sh xx.sh  执行.sh文件  
--  python xx.py 执行py文件  
 -  sudo su 切换到root用户  
 -  sudo exit 推出root用户  
+
+python相关命令  
+-  python xx.py 执行py文件  
+-  python -V  
+
+设置命令：  
+设置工作台数量：（纵向数目1，横向数目4）  
+	gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+	gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+
 
 察看RVM可供安装的ruby版本和现用版本  
 -  rvm list known  
@@ -42,11 +51,11 @@ tags: [Ubuntu,brief]
 -  lspci 查看pci接口  
 
 批量改名  
--  rename 's/lecture/slide/' *.jpg  
+	rename 's/lecture/slide/' *.jpg  
 将当前目录中所有jpg文件名中lecture替换为slide。  
 
 批量替换文件内容  
--  perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+	perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
 > 查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&’`| 还得用 \ 转义
 <http://www.linuxdiyf.com/viewarticle.php?id=90071>
 

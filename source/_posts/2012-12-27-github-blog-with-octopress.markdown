@@ -3,7 +3,7 @@ layout: post
 title: "使用Octopress发布Github page博客"
 date: 2012-12-27 21:05
 comments: true
-categories: "技术技巧"
+categories: [github,技术技巧]
 tags: [github,标签云,octopress]
 ---
 本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。
@@ -80,16 +80,9 @@ _config.yml文件：
 
 （3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。
 
-
-markdown语法示例
-句子的尾部输入两个空格然后回车就可以断行   
-* 无序项目1   
-* 项目2   
-* 项目3    
-![Alt text](\images\bird_32_gray.png)
-
+（去除了Markdown语法，已经添加到octopress tips页面去了）
 
 主要参考：
-[给 Octopress 加上标签功能](http://blog.log4d.com/2012/05/tag-cloud/)    
+<a id="1"></a>[给 Octopress 加上标签功能](http://blog.log4d.com/2012/05/tag-cloud/)    
 [利用GitHub Pages安装部署Octopress博客](http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html)  
 [在github上用octopress搭建博客过程纪要](http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html)  

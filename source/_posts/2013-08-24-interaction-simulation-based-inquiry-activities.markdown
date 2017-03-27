@@ -26,6 +26,7 @@ name="mymoviename" align="" type="application/x-shockwave-flash"
 pluginspage="http://www.macromedia.com/go/getflashplayer"> 
 </embed> 
 </object>
+
 <!--more-->  
 In a elementary school science class, student can stuy how much water does a crow drink every day. They can also study their own diet using the same method.  
 

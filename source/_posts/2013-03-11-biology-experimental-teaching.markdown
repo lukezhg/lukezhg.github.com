@@ -4,7 +4,7 @@ title: "生物学实验教学反思"
 date: 2013-03-11 21:55
 comments: true
 categories: "教学"
-tags: [reflection,teaching]
+tags: [reflection,teaching,实验教学]
 ---
 今天，第一组完成了观察类实验，第一次进行实验往往是最具有挑战的。因为他们要现去摸索实验准备的过程，教学组织的过程，以及环境的布置和利用等。考虑到这些挑战的要素，对于新手教师来讲，应该说完成的还是很不错的。  
 

@@ -16,5 +16,8 @@ This is my favourite list:
 -	回来-梁博  
 -	怒放的生命-汪峰
 -	春天里-旭日阳刚  
--	Right here waiting(此情可待)-Richard Marx  
 
+English songs:  
+-	Right here waiting(此情可待)-Richard Marx  
+-	Want U Back-Cher Lloyd  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OBsfcTxNQ3w" frameborder="0" allowfullscreen></iframe>
