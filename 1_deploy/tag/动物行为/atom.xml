@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: 动物行为 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/动物行为/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tinbergens_four_questions]]></title>
+    <link href="http://zhangchunlei.com/blog/2016/11/18/tinbergens-four-questions/"/>
+    <updated>2016-11-18T23:01:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2016/11/18/tinbergens-four-questions</id>
+    <content type="html"><![CDATA[<p>鸟为什么下蛋？<br/>
+Why bird lay egg?<br/>
+机制问题：蛋壳如何起到保护作用？<br/>
+Mechanistic explanations for how an organism's structures work.<br/>
+发育问题：蛋壳是如何形成的？<br/>
+Developmental explanations for changes in individuals, from DNA to their current form.<br/>
+功能问题：蛋壳薄厚合适对鸟类有怎样的意义？<br/>
+A species trait that solves a reproductive or survival problem in the current environment.<br/>
+进化问题：蛋壳的厚度恰好合适是如何进化来的？<br/>
+The history of the evolution of sequential changes in a species over many generations.</p>
+
+<p>HOW?<br/>
+以静态的观点问HOW，是机制问题<br/>
+以动态的观点问HOW，是发育问题</p>
+
+<p>WHY?<br/>
+以静态的观点问WHY，是功能问题<br/>
+以动态的观点为WHY，是进化问题</p>
+
+<p>https://en.wikipedia.org/wiki/Tinbergen%27s_four_questions</p>
+]]></content>
+  </entry>
+  
+</feed>

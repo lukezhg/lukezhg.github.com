@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: LE | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/le/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[学习环境设计从课桌开始]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/12/learning-environment-observation-school-desk-design/"/>
+    <updated>2013-09-12T10:30:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/12/learning-environment-observation-school-desk-design</id>
+    <content type="html"><![CDATA[<p><img src="https://raw.github.com/lukezhg/Freyja/master/Boy-at-School-Desk.png" alt="Boy at school desk" /><br/>
+今天突然注意到一个以前没有思考过的一个学习环境细节，似乎我们使用的课桌和Dr Luft教法课上的并不相同。不同的设计会产生哪些影响呢？</p>
+
+<!--more-->
+
+
+<p>下面是我们在大学和中学常用的课桌设计。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/school-desk.png" alt="Two traditional desk" /><br/>
+这个是Dr Luft教法课上使用的课桌设计。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/movable-desk.png" alt="Movable desk" /><br/>
+两者的差异就在于，一个容易移动和重新设计座位，一个更适合某种固定的座位排列方式。很显然我们的课桌设计不够灵活，这也为进行小组合作学习设置了潜在的障碍。</p>
+
+<p>根据 Scott, Shaw, and McGuire (2001)提到的Universal Design的9条原则
+  1) 均等使用（equitable use）, <br/>
+  2) 使用灵活（flexibility in use）, <br/>
+  3) 简单易懂（simple and intuitive）, <br/>
+  4) 信息可感知（perceptible information）, <br/>
+  5) 容忍错误（tolerance for error）, <br/>
+  6) 低强度付出（low physical effort）, <br/>
+  7) 大小和空间易用（size and space for approach）, <br/>
+  8) 面向学习者群体（a community of learners）, <br/>
+  9) 教学氛围（instructional climate）。</p>
+
+<p>显然我们的课桌设计不符合第2）和7）条原则。</p>
+
+<p>从课桌的设计可以看出，传统的课桌需求还占据着绝大部分市场分额，那么这又意味着什么？</p>
+
+<p>我们要意识到一点，教学观念会印刻和反映在我们经常熟视无睹的设计当中，新课程改革需要我们重新设计我们的学习环境，同时我们也需要一批优秀的学习环境设计者。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[对斯坦福DTAL课程学习环境的反思]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/"/>
+    <updated>2013-08-27T19:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course</id>
+    <content type="html"><![CDATA[<p>开始的时候，视频中介绍的学习环境设计，以及流动的环境给我的印象极其深刻。</p>
+
+<p>再有，在论坛中谈到，站着进行头脑风暴的效率要比坐着的小组高。很小的设计改变就可以产生很大的影响。站立和坐着也是一种环境设计。</p>
+
+<p>在提供了简短的视频介绍之后，主要通过明确的任务来推进学习。不仅有明确的要求、评价标准，还有可以利用的工具推荐、技术技巧介绍、过程和案例等。这给学习者很大的自主学习空间，在完成作业的过程中边做边学。</p>
+
+<p>在组建learning squire的时候，这次我加入了别人的小组，并且进行了积极的交流。比上两次的小组要成功。小组的同伴学习虽然并没有对我的学习起到觉得性的作用，不过还是交了几个朋友。也进行了视频对话，对于语言和沟通能力是有帮助的。此外，因为没有小组作品，所以大家也没有分工合作，主要是相互分享信息和求助，这种人际环境也会让学习者具有黏性或依赖感。</p>
+
+<p>总体来讲，单就本次课程而言，其学习环境主要包括媒体环境和人际环境，其实作业任务中也有要我们去采访和测试prototype，如果这个加上的话就有实践环境在里面了。其媒体环境的设计是非常值得学习的。</p>
+]]></content>
+  </entry>
+  
+</feed>

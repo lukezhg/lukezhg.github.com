@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/技术技巧/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Word必须要打开两次才能打开]]></title>
+    <link href="http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice/"/>
+    <updated>2016-11-17T19:21:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice</id>
+    <content type="html"><![CDATA[<p>我的系统是win7，有一个问题一直困扰着我，就是每次打开word文档的时候总是第一次失败，第二次正常。</p>
+
+<p>今天网上找到一个方法，就是把默认输入法从搜狗输入法改成中文简体美式键盘。</p>
+
+<p>在用不用打开两次那么麻烦了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用ALT代替左键单击]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
+    <updated>2015-12-20T10:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
+    <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
+
+<p>首先通过控制面板开启键盘鼠标，这样就可以通过数字键键盘上的5代替鼠标左键单击了。但是这个数字离左手很远，按起来不方便。</p>
+
+<p>解决的办法就是，用一个“键值更换器”小软件来更换键值，用right ALT替代数字键盘上的5.这样就万事大吉了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/"/>
+    <updated>2013-08-31T18:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
+首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
+然后解压到你设定的目录（如 /home/）。布置就完成了。</p>
+
+<p>当然有些人喜欢再修改环境变量或者<a href="http://www.php100.com/html/webkaifa/Linux/2010/0807/6386.html">使用In建立字符链接</a>，不过其实不做这些复杂的设置一样很好用。</p>
+
+<p>所以我就什么都没有做。当然前提你已经安装好python2.7了。</p>
+
+<p>下面简单说说，如何发布和测试你的第一个app。过程与windows下差不多，具体可以参考<a href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/">这里</a>。</p>
+
+<p>首先建立在解压好的google_appengine文件夹中建立一个myapps文件夹用于存放我自己的项目，然后在myapps文件夹下建立一个helloworld文件夹，并在这个文件夹下新建两个文件：helloworld.py以及app.yaml。两个文件的代码可以从<a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/helloworld">这里</a>拷贝。<br/>
+测试你的项目，在google_appengine文件下打开终端，使用如下命令：</p>
+
+<pre><code>
+$ python dev_appserver.py myapps/helloworld
+</code></pre>
+
+
+<p>打开<a href="http://localhost:8080/">http://localhost:8080/</a>查看效果。</p>
+
+<p>ctrl+C 终止测试。</p>
+
+<p>使用如下命令上传项目（前提是你已经申请并在GAE上建立好了hellowrld应用）：</p>
+
+<pre><code>
+$ python appcfg.py update myapps/helloworld
+</code></pre>
+
+
+<p>这样你的app就上传好了，打开地址欣赏一下吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox extension FireGesture Scripts]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts/"/>
+    <updated>2013-08-26T18:23:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts</id>
+    <content type="html"><![CDATA[<p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
+
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code></p>
+
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+2. iciba(RLR)<br/>
+<code></p>
+
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+3.  Copy the title and url</p>
+
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Computer tips recently discovered]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
+    <updated>2013-08-07T17:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered</id>
+    <content type="html"><![CDATA[<p>Recently I found some useful tips to get things done more effectively.</p>
+
+<p>How do you capture your screen when you are watching a vedio without stop it.<br/>
+-   The answer is that you can setup some softwares to do this. One of them is <a href="http://www.aplusfreeware.com/categories/mmedia/FastStoneCapture.html">FastStone Caputure</a>. You just set the auto save folder and the hot key in the settings. Then, things get much easier, everytime you want capture your screen, just press the hot key. The picture can be saved in the folder with disturbing your watching. It is so useful.</p>
+
+<p>After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?<br/>
+-   The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.</p>
+]]></content>
+  </entry>
+  
+</feed>

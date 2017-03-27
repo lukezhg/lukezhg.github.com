@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: visualization | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/visualization/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What do you ecpect in your life]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/23/chunlei-and-mathematics/"/>
+    <updated>2013-11-23T10:55:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/23/chunlei-and-mathematics</id>
+    <content type="html"><![CDATA[<p>The following is a visulization designed by myself. It let me think what do I expect in my life.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/birth&amp;death.png" alt="meaning of life" /></p>
+]]></content>
+  </entry>
+  
+</feed>

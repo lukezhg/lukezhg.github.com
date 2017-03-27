@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[尝试在ubuntu系统中使用octopress]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
+    <updated>2015-11-28T17:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
+    <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
+
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler #要在gemfile中更新用taobao的https源  
+$ bundle install #出错提示版本号不对  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。</p>
+
+<pre><code>$ gem uninstall rake #之后选择要删除的版本即可  
+</code></pre>
+
+<p>参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>多人协作时，编辑前先获得最近版本</p>
+
+<pre><code>$ cd octopress  
+$ git pull origin source  
+$ cd ./_deploy  
+$ git pull origin master  
+</code></pre>
+
+<p>保存博客源码到github source分支:</p>
+
+<blockquote><pre><code>$ git add .  
+  $ git commit -m 'blog source'  
+  $ git push origin source  
+</code></pre></blockquote>
+
+<p>最后重新建立ssh密钥，参见：<a href="https://help.github.com/articles/generating-ssh-keys/">这里</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[重装Ubuntu备忘]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall/"/>
+    <updated>2015-11-26T10:54:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall</id>
+    <content type="html"><![CDATA[<p>安装软件：<br/>
+输入法 ：搜狗输入法<br/>
+视频播放：VLC media player<br/>
+文本编辑：Vim<br/>
+图片查看：gwenview<br/>
+浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)</p>
+
+<p>firefox安装flash插件<br/>
+<code>
+sudo apt-get update<br/>
+sudo apt-get install flashplugin-installer<br/>
+</code></p>
+
+<p>开机亮度设置<br/>
+一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
+
+<p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+
+<p>网络不稳定<br/>
+修改/etc/ppp/options</p>
+
+<pre><code>sudo gedit options  
+</code></pre>
+
+<p>应会发以下选项：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 4  
+</code></pre>
+
+<p>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 15  
+</code></pre>
+
+<p>关闭ipv6</p>
+
+<pre><code>cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+显示0说明ipv6开启，1说明关闭
+</code></pre>
+
+<p>如果开启，关闭ipv6的方法：<br/>
+在 /etc/sysctl.conf 增加下面几行，并重启。</p>
+
+<h1>disable IPv6</h1>
+
+<pre><code>net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre>
+
+<p>安装scikit-learn<br/>
+<code>
+python 运行文件名<br/>
+python -V<br/>
+sudo apt-get install python3-pip<br/>
+sudo apt-get install python-scipy<br/>
+sudo apt-get install python-numpy<br/>
+sudo apt-get install python-matplotlib<br/>
+sudo apt-get install nautilus-open-terminal<br/>
+</code></p>
+
+<p>pip install -U scikit-learn<br/>
+参考：
+Installing scikit-learn — scikit-learn 0.17 documentation<br/>
+http://scikit-learn.org/stable/install.html</p>
+
+<p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br/>
+http://penandpants.com/2012/02/24/install-python/</p>
+
+<p>安装 ipython notebook<br/>
+   pip install ipython
+   apt-get install ipython-notebook<br/>
+   ipython notebook --pylab inline --ip 0.0.0.0<br/>
+   然后用了浏览器访问对应的ip即可看到</p>
+
+<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br/>
+http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
+    <updated>2013-11-08T22:14:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
+    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can't start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
+
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
+
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
+
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
+
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/"/>
+    <updated>2013-11-08T13:56:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
+
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
+
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
+
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
+
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
+
+<p>That is it.</p>
+
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
+
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>How to save file</p>
+
+<pre><code>:w filename
+:w! filename
+:wq #quit and save
+:q! #quit not save
+</code></pre>
+
+<p>How to open file</p>
+
+<pre><code>:open filename
+:open ~/luke/code/try.py  
+</code></pre>
+
+<p>How to search in a file</p>
+
+<pre><code>:/ pattern  
+:? pattern  
+n:search next  
+N:search previous  
+</code></pre>
+
+<p>How to cancel and redo</p>
+
+<pre><code>:u  for cancel  
+Ctrl + R：redo  
+</code></pre>
+
+<p>How to paste from system clipboard</p>
+
+<pre><code>shift+insert  
++p  
+</code></pre>
+
+<p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
+
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu命令手册]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
+    <updated>2013-08-31T12:33:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
+    <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post["post title"]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名</p>
+
+<pre><code>rename 's/lecture/slide/' *.jpg  
+</code></pre>
+
+<p>将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容</p>
+
+<pre><code>perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+</code></pre>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>

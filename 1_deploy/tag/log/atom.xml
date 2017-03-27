@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: log | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/log/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[用ALT代替左键单击]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
+    <updated>2015-12-20T10:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
+    <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
+
+<p>首先通过控制面板开启键盘鼠标，这样就可以通过数字键键盘上的5代替鼠标左键单击了。但是这个数字离左手很远，按起来不方便。</p>
+
+<p>解决的办法就是，用一个“键值更换器”小软件来更换键值，用right ALT替代数字键盘上的5.这样就万事大吉了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[replace disqus with youyan]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan/"/>
+    <updated>2015-11-24T09:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
+    <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
+将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。</p>
+
+<pre><code>
+<!-- JiaThis Button -->
+  /{/% if site.comment_share %}
+    /{/% include post/share_comment.html %}
+  /{/% endif %}
+</code></pre>
+
+
+<p>别忘了自觉去掉/</p>
+
+<p>当然需要在_config.yml中添加开关：</p>
+
+<pre><code>
+#jiathis
+comment_share: true
+</code></pre>
+
+
+<p>修改_layouts中post.html文件中sharing的位置，将其放在上一篇和下一篇博文导航条的后面。</p>
+
+<p>友言网的验证<br/>
+这个不需要操心，现在只要你把代码粘贴好，剩下的事情就不用管了，友言已经能自动验证了，不需要再将一个什么验证文件放到自己的source目录中了，应该是凭借ID号。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
+    <updated>2014-12-01T21:28:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
+    <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
+
+<h3>Page build failure</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>The custom domain for your GitHub Pages site is pointed at an outdated IP address. You must take immediate corrective action to ensure that your site remains available after December 1st, 2014. Additional details can be found at https://github.com/blog/1917-github-pages-legacy-ip-deprecation. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages.</p>
+
+<h3>How do I know if I'm affected?</h3>
+
+<p><a href="https://github.com/blog/1917-github-pages-legacy-ip-deprecation">GitHub Pages Legacy IP Deprecation · GitHub</a><br/>
+The following helps!</p>
+
+<pre><code>On a Windows machine, you'll want to run nslookup your-domain.com and ensure that the output does not include any of the deprecated IP addresses (207.97.227.XXX, 204.232.175.XX, or 199.27.73.XXX).
+If you're on a Mac or Linux machine, simply paste this command into a terminal window, replacing your-domain.com with, your site's domain. dig your-domain.com | grep -E '(207.97.227.245|204.232.175.78|199.27.73.133)' || echo "OK". If you see the word "OK", you're all set.
+</code></pre>
+
+<h3>Configuring an A record with your DNS provider</h3>
+
+<p><a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Tips for configuring an A record with your DNS provider - User Documentation</a></p>
+
+<p>关键信息<br/>
+With your DNS provider, create A records that resolve to the following IP addresses:</p>
+
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre>
+
+<h3>修改DNS的A记录</h3>
+
+<p>我的域名 - DNSPod<br/>
+https://www.dnspod.cn/Domain#zhangchunlei.com</p>
+
+<p>按照新的IP地址添加两条新的A记录，删除原来的A记录即可。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[提高网页加载速度]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog/"/>
+    <updated>2014-10-06T15:42:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog</id>
+    <content type="html"><![CDATA[<h3>维护计划</h3>
+
+<pre><code>此外还打算将主页进行调整  
+</code></pre>
+
+<h3>Octopress维护记录</h3>
+
+<p>2012-12-27</p>
+
+<pre><code>目前使用editplus的自动完成功能,"space+j+space"代替了双空格回车
+将tag放入到了about页面  
+</code></pre>
+
+<p>2014-09-30</p>
+
+<pre><code>去除google twitter等不容打开的服务插件(config.yml)，unable了google translate（includes/head.html 注释掉了gt），并且在config.yml并未加载相应的页面了。  
+通过编辑/source/_includes/custom/head.html,注销掉google webfonts  
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress的markdown语法]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/10/05/octopress-tips/"/>
+    <updated>2014-10-05T19:37:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/10/05/octopress-tips</id>
+    <content type="html"><![CDATA[<h3>markdown语法示例</h3>
+
+<p>句子的尾部输入两个空格然后回车就可以断行 <br/>
+句首加>进行引用，使用>>进行层级引用 <br/>
+句首使用设定标题<br/>
+<code>###Title 1</code></p>
+
+<p>插入图片代码：</p>
+
+<pre><code>![Alt text](images\bird_32_gray.png)</code></pre>
+
+
+<p></p>
+
+<p>如何实现页内跳转
+设定锚代码如下：<br/>
+<code><a id="1">[1]</a></code></p>
+
+<p>正文中引用<a href="#1">1</a>代码：
+<code>见参考文献<a href="#1">1</a></code></p>
+
+<p>More<br/>
+<code><!--more--></code></p>
+
+<h3>Video Example</h3>
+
+<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<h3>Flash example</h3>
+
+<object 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  
+
+value="http://www.biologymad.com/resources/kidney.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="http://www.biologymad.com/resources/kidney.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

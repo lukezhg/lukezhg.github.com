@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 科普 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/科普/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[为什么吃面条会流鼻涕]]></title>
+    <link href="http://zhangchunlei.com/blog/2016/01/11/why-our-noses-keep-running-when-eating-noodles/"/>
+    <updated>2016-01-11T12:37:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2016/01/11/why-our-noses-keep-running-when-eating-noodles</id>
+    <content type="html"><![CDATA[<p>北方人喜欢吃面条，有一个有趣的现象，就是冬天吃热面条的时候很容易流鼻涕。为什么会这样呢？</p>
+
+<p>网络上的说法五花八门：<br/>
+1.鼻炎造成的对热反应敏感<br/>
+那是你的鼻粘膜太敏感啦，预热或自己反应很强烈。建议你用冷热水交替拍打鼻子或喝热水的时候用蒸汽熏蒸鼻子然后用冷水拍打。多经过热胀冷缩的刺激，毛孔的应激性不那么强烈，鼻粘膜自然就不那么敏感了。</p>
+
+<p>2.水蒸气汇聚<br/>
+面条很热，面汤也一样。由于热会使得水分不段蒸发，也就是看到面上面有水蒸汽向上飘。当我们把面吃进去的时候，面条会在我们的口腔里停一段时间（因为你必须要嚼嘛）而在这段时间里面我们的嘴巴通常都是闭起来的（我可没见过人家嚼东西的时候把嘴巴张开）所以面条上的水汽化成小水蒸汽，通过鼻腔再液化成小水珠。当我们不停重复的时候，鼻腔里面的小水珠就会越积越多。而我们鼻腔里有脏物（也就是所谓的鼻屎）所以当脏物和水混合在一起，就会形成吃面条的时候流的鼻涕。所以通常都是在吃面吃到一半或快要吃完时才会有大量的鼻涕流出！</p>
+
+<p>3.泪腺受到刺激
+是由于热的东西刺激了你的泪腺，流出来的泪顺着鼻泪管流到鼻孔里,所以就有流鼻涕现象。</p>
+
+<p>4.空气流动<br/>
+我个人也提一个假说，空气流动假说。我猜测是不是吃面条的时候，用力吸，结果造成肺部空气迅速外流，从而使得鼻涕被吹出来了。</p>
+
+<p>5.负压假说<br/>
+网上查到一篇资料，解释人打哈欠时为什么会流泪。提到了肌肉收缩和快速呼气会暂时性阻断眼泪通过鼻泪管进入鼻腔。那么，如果人快速吸气时，就会造成口腔和鼻腔负压，使得泪囊中泪液进入鼻腔，经常吸面条，自然就会流鼻涕。</p>
+
+<p>到底哪一个解释是正确的呢？</p>
+
+<p>如果要分别检验这些解释，如何检验呢？</p>
+
+<p>参考：<br/>
+人打哈欠时为什么会流泪？ _凯风网<br/>
+http://difang.kaiwind.com/beijing/kpydsy/201308/14/t20130814_1034784.shtml<br/>
+   人在打哈欠时，嘴巴张得很大，尽可能多地吸入氧气而呼出二氧化碳。随着打哈欠的动作，一股气体有力地从嘴巴呼出。面颊部、舌和咽喉部肌肉紧张收缩，这时口腔及鼻腔的压力增大。鼻腔压力增大的结果就会一时性地阻挡鼻泪管排泄泪液的工作，排出受阻，泪液无法正常流入到鼻腔，只好从眼睑溢出。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[不同发电机的原理]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/04/19/how-to-generate-electricity/"/>
+    <updated>2014-04-19T17:25:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/04/19/how-to-generate-electricity</id>
+    <content type="html"><![CDATA[<p>原电池发电（化学能转化为电能）<br/>
+以铜锌原电池为例，其中锌电极发生的电极反应式是：<br/>
+锌片 Zn－2e-=Zn2+ （氧化反应）
+锌离子进入溶液，使得溶液里的正电荷过多；同时锌失去的电子沿导线经电流计流入铜片，使溶液里原有的氢离子在铜电极上被还原成氢原子，这样溶液中多余的正电荷就被中和；氢原子又结合成氢分子并放出。铜电极发生的电极反应式是：<br/>
+铜片 2H++2e-=H2↑ （还原反应）
+由于在锌、铜两个电极上不断发生的氧化还原反应，使化学能转变为电能。锌片是给出电子的一极，是电池的负极，铜片是电子流入的一极，是电池的正极。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/primary-cell.png" alt="Primary Cell" /></p>
+
+<p>动力发电（水力、火力、风力、核能、太阳能蒸汽发电）<br/>
+其原理是利用动力推动线圈切割磁感应线发电。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/firepower.gif" alt="Fire Power" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/waterpower.gif" alt="Water Power" /><br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/nuclearpower.gif" alt="Nuclear Power" /></p>
+
+<p>热电机<br/>
+其原理是热电效应，即不同的金属导体（或半导体）具有不同的自由电子密度，当两种不同的金属导体相互接触时，在接触面上的电子就会扩散以消除电子密度的差异。而电子的扩散速率与接触区的温度成正比，所以只要维持两金属间的温差，就能使电子持续扩散，在两块金属的另两个端点形成稳定的电压。由此产生的电压通常每开尔文温差只有几微伏。如能适当设计和组合就可以产生工作电压。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/seebeck_effect.png" alt="Seebeck Effect" /></p>
+
+<p>太阳能发电<br/>
+其原理主要依赖于光电效应。<br/>
+太阳光照在半导体p-n结上，形成新的空穴-电子对，在p-n结电场的作用下，光生空穴流向p区，光生电子流向n区，接通电路后就形成电流。这就是光电效应太阳能电池的工作原理。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/solar_cell.png" alt="Solar Cell " /></p>
+
+<p>原电池反应_百度百科: http://baike.baidu.com/view/159629.htm<br/>
+各种发电方式：http://vm.nthu.edu.tw/science/shows/nue/various.html<br/>
+热电效应 - 维基百科：http://zh.wikipedia.org/wiki/%E7%86%B1%E9%9B%BB%E6%95%88%E6%87%89<br/>
+Solar cell - Wikipedia：http://en.wikipedia.org/wiki/Solar_cell</p>
+]]></content>
+  </entry>
+  
+</feed>

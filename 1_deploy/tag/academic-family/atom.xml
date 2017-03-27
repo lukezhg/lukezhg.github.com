@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: Academic family | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/academic-family/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[NARST 2015]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/04/17/narst-2015/"/>
+    <updated>2015-04-17T13:24:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/04/17/narst-2015</id>
+    <content type="html"><![CDATA[<p>This is the second time I attend NARST. Like last time, lots of thing is going on at the same time, but I can catch much more than before.</p>
+
+<p>Here are some pictures of my presentations and my academic families.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_chunlei1.jpg" alt="Chunlei Presenting 1" /></p>
+
+<!--more-->
+
+
+<p>
+<img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_chunlei2.jpg" alt="Chunlei Presenting 2" /></p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/Liu_family.jpg" alt="With Professor Liu family" /></p>
+
+<p><img src="https://github.com/lukezhg/Freyja/raw/master/Luft_family.jpg" alt="With Dr Luft family" /></p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_Chicago_day.jpg" alt="Chicago on day" /></p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_Chicago_Night.jpg" alt="Chicago on night" /></p>
+]]></content>
+  </entry>
+  
+</feed>

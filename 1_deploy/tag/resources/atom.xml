@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: resources | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/resources/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[From falling objects experiment to a simulated experiment]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment/"/>
+    <updated>2013-10-25T13:42:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/25/from-falling-objects-experiment-to-a-simulated-experiment</id>
+    <content type="html"><![CDATA[<p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo's Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students' responses and let us to figure out the students' thinking and how to response to students properly.</p>
+
+<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height" /></p>
+
+<!--more-->
+
+
+<p>I asked my classmates what happens in the following situations.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/3inclinations.png" alt="picture" /></p>
+
+<p>I acturally did the experiment using <a href="http://phet.colorado.edu/en/simulation/energy-skate-park">simulation environment</a>.</p>
+
+<p>The result is interesting. Ball B frist arrived at the bottom with lest time.(The first two curves are situation A; Next two curves are situation B)
+<img src="https://raw.github.com/lukezhg/Freyja/master/skater.png" alt="Result" /></p>
+
+<p>Ball A is the second arrived. Ball C is the last one. <br/>
+From Leaning Tower of Pisa Experiment to simulated experiment, what a big change information technology has made to our science teaching and learning!</p>
+
+<p>In fact, David Scott-Astronaut of  Apollo 15-recreated Galileo's famous experiment on the Moon by Hammer and Feather Drop.</p>
+
+<iframe width="420" height="315" src="http://zhangchunlei.com//www.youtube.com/embed/4mTsrRZEMwA" frameborder="0" allowfullscreen></iframe>
+
+
+<p>You see the space technology also expanded our learning experience and provided us an amazing teaching resource-a dicrepant event.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modeling activities and reflection]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection/"/>
+    <updated>2013-08-19T23:24:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection</id>
+    <content type="html"><![CDATA[<p>Recently I attended Dr Luft's class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.</p>
+
+<p>This is the list:<br/>
+-   Candle in the water tube make it go out(Dr Luft's class)<br/>
+-   Black box(<a href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)<br/>
+-   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
+-   Mystery Tube (Dr C's class)<br/>
+-   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
+If you have more good modeling activities, welcome recommandations.</p>
+
+<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.</p>
+
+<p>Reflections on Modeling in science teaching<br/>
+The charm of modeling:<br/>
+-   Naturally need students to make careful observation,recording data,drawing conclusions<br/>
+-   Naturally engage students' prior ideas for explaination or application<br/>
+-   Naturally put students into the test, debate and revisement of their models or prior ideas<br/>
+-   Naturally let students experience the full process of science inquiry and nature of science</p>
+
+<p>What to focus in the modeling activites as a science teacher?</p>
+
+<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?</p>
+
+<p>Welcome to join the discussion of these open questions!</p>
+]]></content>
+  </entry>
+  
+</feed>

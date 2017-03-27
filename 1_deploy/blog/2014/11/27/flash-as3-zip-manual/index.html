@@ -1,0 +1,717 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Flash AS3 zip Manual - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="Action Script 3.0 简明手册
+在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。
+变量与常量
+变量有不同的类型，一个变量由变量名和值构成。 var value2:Number = 17;
+const SALES_TAX_RATE: &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/"> Home </a></li>
+  <li><a href="/about"> About </a></li>
+  <li><a href="/blog/archives">Blog</a></li>
+  <li><a href="/course"> Course </a></li>
+  <li><a href="/app"> App </a></li>
+  <li><a href="/cn"> 中文 </a></li>
+  <li><a href="/en"> English </a></li>
+  <li><a href="/log"> log </a></li>
+</ul>
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Flash AS3 Zip Manual</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-27T14:48:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Action Script 3.0 简明手册<br/>
+在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br/>
+变量与常量<br/>
+变量有不同的类型，一个变量由变量名和值构成。<br/>
+<code/>
+var value2:Number = 17;<br/>
+const SALES_TAX_RATE:Number = 0.07;<br/>
+</code><br/>
+属性<br/>
+简单地视为包含在对象中的“子”变量。</p>
+
+<p><code/>
+square.x = 100;<br/>
+square.y = 150;<br/>
+square.rotation = triangle.rotation;<br/>
+square.scaleX = 1.5;<br/>
+square.scaleY = 1.5;<br/>
+square.currentFrame<br/>
+square.alpha = 30;<br/>
+square.height =20;<br/>
+square.width =40;<br/>
+square.visible =false;<br/>
+</code></p>
+
+<p>调用方法：变量名-点-属性名<br/>
+方法<br/>
+方法是指可以由对象执行的操作。</p>
+
+<pre><code>shortFilm.play();  
+shortFilm.stop();  
+shortFilm.gotoAndStop(1);  
+</code></pre>
+
+<p>某些方法可以执行计算并返回可以像变量一样使用的结果。</p>
+
+<pre><code>var numericData:Number = 9;  
+var textData:String = numericData.toString();  
+calculatorDisplay.text = numericData.toString();  
+</code></pre>
+
+<p>事件<br/>
+本质上，事件就是所发生的、ActionScript 能够识别并可响应的事情。<br/>
+在编写执行事件处理时三个重要元素：</p>
+
+<pre><code>事件源：事件实际发生的位置。  
+事件：发生的事情。  
+响应：事件发生时的执行动作。  
+
+this.stop();  
+function playMovie(event:MouseEvent):void{  
+this.play();}  
+
+playButton.addEventListener(MouseEvent.CLICK, playMovie);  
+</code></pre>
+
+<p>算数运算符<br/>
++-*/^</p>
+
+<h1>逻辑运算符  </h1>
+
+<p>&amp;&amp;<br/>
+||</p>
+
+<p>if (dayOfWeek == &#8220;Wednesday&#8221;){<br/>
+takeOutTrash();}</p>
+
+<p>//单行注释<br/>
+/<em>多行<br/>
+注释<br/>
+</em>/</p>
+
+<p>流控制<br/>
+函数<br/>
+调用函数调用函数</p>
+
+<pre><code>trace("Use trace to help debug your script");  
+var randomNum:Number = Math.random();  
+
+var someDate:Date = new Date();  
+var dayNum:uint = someDate.getDay();  
+</code></pre>
+
+<p>定义函数</p>
+
+<pre><code>function traceParameter(aParam:String){  
+    trace(aParam);}  
+
+traceParameter("hello"); // hello  
+</code></pre>
+
+<p>从函数返回值</p>
+
+<pre><code>function doubleNum(baseNum:int):int{  
+    return (baseNum * 2);}  
+</code></pre>
+
+<p><code/>
+function passPrimitives(xParam:int, yParam:int):void{</p>
+
+<pre><code>xParam++;  
+yParam++;  
+trace(xParam, yParam);  
+</code></pre>
+
+<p>}<br/>
+</code><br/>
+函数参数</p>
+
+<pre><code>var xValue:int = 10;  
+var yValue:int = 15;  
+trace(xValue, yValue);// 10 15  
+passPrimitives(xValue, yValue); // 11 16  
+trace(xValue, yValue);// 10 15  
+</code></pre>
+
+<p>循环</p>
+
+<p>for循环</p>
+
+<pre><code>var i:int;  
+for (i = 0; i &lt; 5; i++){  
+trace(i);}  
+
+for..in  
+
+var myObj:Object = {x:20, y:30};  
+for (var i:String in myObj){  
+trace(i + ": " + myObj[i]);  
+}  
+//output:  
+//x: 20  
+// y: 30  
+</code></pre>
+
+<p>条件语句</p>
+
+<pre><code>if (x &gt; 0){  
+trace("x is positive");}  
+else if (x &lt; 0){  
+trace("x is negative");}  
+else{  
+trace("x is 0");}  
+</code></pre>
+
+<p>switch语句</p>
+
+<p><code/>
+switch(dayNum){<br/>
+case 0:trace(&#8220;Sunday&#8221;);<br/>
+break;<br/>
+case 1:trace(&#8220;Monday&#8221;);<br/>
+break;<br/>
+case 2:trace(&#8220;Tuesday&#8221;);<br/>
+break;<br/>
+case 3:trace(&#8220;Wednesday&#8221;);<br/>
+break;<br/>
+case 4:trace(&#8220;Thursday&#8221;);<br/>
+break;<br/>
+case 5:trace(&#8220;Friday&#8221;);<br/>
+break;<br/>
+case 6:trace(&#8220;Saturday&#8221;);<br/>
+break;<br/>
+default:trace(&#8220;Out of range&#8221;);<br/>
+break;<br/>
+}<br/>
+</code></p>
+
+<p>类<br/>
+点语法</p>
+
+<p>点运算符 (.) 提供对对象的属性和方法的访问。使用点语法，可以使用后跟点运算符和属性名或方法名的实例名来引用类的属性或方法。以下面的类定义为例：</p>
+
+<p><code/>
+class DotExample<br/>
+{<br/>
+public var prop1:String;<br/>
+public function method1():void {}<br/>
+}<br/>
+</code><br/>
+借助于点语法，可以使用在如下代码中创建的实例名来访问 prop1 属性和 method1() 方法：<br/>
+<code/><br/>
+var myDotEx:DotExample = new DotExample();<br/>
+myDotEx.prop1 = &#8220;hello&#8221;;<br/>
+myDotEx.method1();<br/>
+</code><br/>
+定义包时，可以使用点语法。可以使用点运算符来引用嵌套包。例如，EventDispatcher 类位于一个名为 events 的包中，该包嵌套在名为 flash 的包中。可以使用下面的表达式来引用 events 包：</p>
+
+<p>flash.events</p>
+
+<p>还可以使用此表达式来引用 EventDispatcher 类：</p>
+
+<p>flash.events.EventDispatcher</p>
+
+<p>数组</p>
+
+<p><code/>
+var names:Array = new Array(&#8220;John&#8221;, &#8220;Jane&#8221;, &#8220;David&#8221;);<br/>
+trace(names.length); //output: 3<br/>
+trace(names[0]);// output: John<br/>
+trace(names[1]); //output: Jane<br/>
+trace(names[2]);// output: David<br/>
+</code></p>
+
+<p>实例教程<br/>
+对象的初始化<br/>
+1 在主场景中新建一个矩形，全选然后F8转换为元件，命名为box。在第一帧里面尝试加入：<br/>
+代码1</p>
+
+<p><code/>
+box.x = 10;<br/>
+box.y = 150;<br/>
+</code><br/>
+代码2<br/>
+<code/><br/>
+box.rotation = triangle.rotation;<br/>
+box.scaleX = 1.5;<br/>
+box.scaleY = 1.5;<br/>
+</code><br/>
+2 把box变成一个骰子，尝试<br/>
+代码3<br/>
+<code/><br/>
+box.currentFrame<br/>
+box.alpha = 30;<br/>
+box.height =20;<br/>
+box.width =40;<br/>
+box.visible =false;<br/>
+</code><br/>
+3 尝试使用随机函数<br/>
+代码4<br/>
+<code/><br/>
+box.x = this.stage.width<em>Math.random();<br/>
+box.y = this.stage.height</em>Math.random();<br/>
+</code></p>
+
+<p>影片剪辑的控制</p>
+
+<p><code/>
+box.stop();<br/>
+box.play();<br/>
+box.gotoAndStop(1);<br/>
+box.gotoAndPlay(3);<br/>
+box.gotoAndStop(Math.round(6*Math.random()));<br/>
+</code></p>
+
+<p>播放和定制按钮<br/>
+1、制作按钮<br/>
+2、给按钮命名为btn<br/>
+3、在第一帧添加代码（该实例来自：AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+btn.addEventListener(MouseEvent.ROLL_OVER,btnRollOver);//注册鼠标放上事件帧听器  
+btn.addEventListener(MouseEvent.ROLL_OUT,btnRollOut);//注册鼠标离开事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+trace(e.currentTarget.name);//trace就是在输出面板里输出内容，这里输出"btn"，只有在flash测试的时候才有效  
+}  
+</code></pre>
+
+<p>//鼠标放在btn上的事件处理函数</p>
+
+<pre><code>function btnRollOver(e:MouseEvent):void{  
+txt.text="鼠标放在了按钮上";//给文本框txt的text属性赋值为"鼠标放在了按钮上"  
+}  
+</code></pre>
+
+<p>//鼠标从btn上离开的事件处理函数</p>
+
+<pre><code>function btnRollOut(e:MouseEvent):void{  
+txt.text="鼠标从按钮上离开了";  
+}  
+</code></pre>
+
+<p>4、添加一个动态文本框，命名为txt<br/>
+ctrl+enter测试影片<br/>
+修改代码如下：</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+box.gotoAndStop(Math.round(6*Math.random()));  
+}  
+</code></pre>
+
+<p>测试影片，如果成功则再建一个按钮元件，命名为btnPlay,修改代码为：</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+box.stop();  
+}  
+btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnPlayClick(e:MouseEvent):void{  
+box.play();  
+}  
+</code></pre>
+
+<p>如何使用文本框（Text）</p>
+
+<p>使用前可以导入以下声明</p>
+
+<pre><code>import flash.text.TextField;
+import flash.text.TextFormat;
+import flash.text.TextFormatAlign;
+</code></pre>
+
+<p>Number()将字符型转化为数值型变量<br/>
+toString()将数值转化为字符</p>
+
+<p>5、尝试仿照实例让代码与fla源文件分离：<br/>
+实例：（AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<p>本文参考了:<br/>
+adobe AS3帮助手册：http://tinyurl.com/7ujc2yp</p>
+
+<p>Flash实例<br/>
+简单实例</p>
+
+<pre><code>Flash教程：送给初学者的一点使用技巧_Flash实例教程_IT部落: http://edu.itbulo.com/200711/120855.htm  
+立体板-Flash源文件-闪吧Flash8: http://www.flash8.net/fla/10364.shtml  
+放大镜-Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10144.shtml  
+卷轴和毛笔写字- Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10342.shtml  
+地球旋转-上传：明月老师 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10237.shtml  
+瀑布-上传：CC851246330 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/9515.shtml  
+</code></pre>
+
+<p>复杂实例<br/>
+ActionScript 3.0的流程控制语法<em>知行网: http://www.zhixing123.cn/Flash/2111.html<br/>
+flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Flash/20080.html</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-27T14:48:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/flash/'>flash</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tag/flash/'>flash</a>, <a class='tag' href='/tag/manual/'>manual</a>
+  
+</span>
+
+ 
+    </p>
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/" title="Previous Post: 教学资源梳理——只有会用才显优势">&laquo; 教学资源梳理——只有会用才显优势</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/12/01/modify-a-record-of-my-website-dns/" title="Next Post: Modify A record of my website DNS">Modify A record of my website DNS &raquo;</a>
+      
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style" align="right">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+
+    
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/反思'>反思 (7)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (9)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 98%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 98%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 98%" href="/tag/r/">R</a>
+<a style="font-size: 98%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 98%" href="/tag/flash/">flash</a>
+<a style="font-size: 98%" href="/tag/github/">github</a>
+<a style="font-size: 98%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 103%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 107%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 98%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 98%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 98%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 98%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 98%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 98%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/03/27/teaching-reflection/">Teaching Reflection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/03/03/learning-needs-as-learning-resources/">学科知识缺陷也是一种教学资源</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/25/be-good-do-good/">Be good Do good</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/23/educational-games/">教育游戏推荐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/14/love-is-our-best-legacy/">爱是我们最宝贵的财富</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/13/ubc-program-summary/">加拿大卓越教师项目总结</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/12/fact-is-still-important-in-the-post-truth-era/">后真相时代：真相依然重要</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/09/lesoleil-fine-art-gallery/">LeSoleil Fine Art Gallery</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/01/ubc-week-3/">UBC week 3: Diversity & Complexity</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/01/ubc-week-2/">UBC Week 2: Gamification & SEL</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/';
+        var disqus_url = 'http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

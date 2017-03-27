@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: robot | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/robot/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[what robot can do]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/26/what-robot-can-do/"/>
+    <updated>2013-11-26T20:17:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/26/what-robot-can-do</id>
+    <content type="html"><![CDATA[<p>I am very interested in robot. I believed that someday it can play a very important role in our society and personal life.</p>
+
+<p>There are many amazing things that robot can do. They become more clever and skilled in lots of feild: Some robots talk; Some walk; Some can carry; Some fly; Some can drive; Some teach; Some have expressions; Some have skins.</p>
+
+<p>Today I watched a TED video in which robots help Henry -- a stroke patient -- regain his life.</p>
+
+<iframe src="http://embed.ted.com/talks/henry_evans_and_chad_jenkins_meet_the_robots_for_humanity.html" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p>What robot can do? It depends on what they are used for. In the global market, if you want a awesome job, learn and do something that robots can't do.</p>
+]]></content>
+  </entry>
+  
+</feed>

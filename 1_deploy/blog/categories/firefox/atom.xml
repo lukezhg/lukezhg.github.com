@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Firefox | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-03-27T20:32:39+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[从软件更新到新陈代谢]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/11/27/software-updates-and-Metabolism/"/>
+    <updated>2011-11-27T00:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/11/27/software-updates-and-Metabolism</id>
+    <content type="html"><![CDATA[<p>最近有点反感软件更新了。为啥呢？主要是兼容问题。<br />举例：<br /><ol><li>我以前用火狐浏览器挺好的，安装了很多好用的插件，也花了好多时间和心思定制自己的火狐。有一天，看到了火狐的更新提醒，于是点击了更新，结果原有的很多插件都不能用了。包括ubiquity。后来只好找替代性的插件，又浪费了很多时间，于是自我总结，赶时髦并不是什么好事，至少像我这样的爱定制的用户是这样的。</li><li>window的更新也很烦人。不断的有补丁，不断的需要打补丁，不断的有漏洞。操作系统吗，可不可以一劳永逸啊。而且有些补丁不能不打，否则程序就运行不正常，晕，程序设计哪有这样设计的，一定也没有长远眼光。有点羡慕linux了。</li></ol>举例完毕。<br /><br />谈谈感受：<br />现在的软件，好像总是再升级，升级是可以的，但是不能先把兼容问题解决好，再生吗。至少软件开发者并没有设身处地为用户着想过。其实新旧更替是避免 不了的，但是不能因为更新了，反而确用不了了。这和生物体的更新境界差远了，所以我认为，搞软件开发的应该学学生物学，了解了解生物体的新陈代谢是如何进行的。就比如人的身体，每天都要更新细胞，但是也没听说过哪个器官因为要更新细胞而停止工作，或者不兼容。再有，大脑的神经细胞的化学分子也要更替，但是也没有听说过，谁因为蛋白质的更替而造成了失忆。<br /><br />由此可见，我们现在的信息技术，还远没有达到生命的境界，但是向着这个方向发展，应该是正确的方向。<br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[firefox常用扩展和技巧]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/11/18/firefox-extenstions/"/>
+    <updated>2011-11-18T00:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/11/18/firefox-extenstions</id>
+    <content type="html"><![CDATA[<p>其实火狐浏览器有很多非常优秀的插件，如果使用火狐，但是没有定制和安装自己的插件，就好像养了一只孔雀，但是没有尾巴一样，错过了它最华丽的一面。当然插件如果安装的太多，且你的计算机配置又不高的话，可能会使得火狐启动缓慢。但是如果你一个插件也不定制，那真就是养了一只没有尾巴的孔雀了。<br /><br />其实使用火狐浏览器的很多问题，都是通过安装扩展和插件解决的？下面罗列了一些我自己遇到的问题，以及解决的思路。详细的解决步骤以后再写。<br /><br /><b>如何设置gmail为firefox默认邮件客户端？</b><br /><ul><li>打开火狐设置选项卡，选择应用，搜索mailto，修改为use gmail<br /></li></ul><b>如何去除firefox插件管理器里的灰色插件？</b><br /><ul><li>找到并修改<b>extensions.rdf文件，去除响应的&lt;rdf&gt;单元</b></li><li><b>我个人的文件在：C:\Documents and Settings\luke\Application Data\Mozilla\Firefox\Profiles\wml2g9sr.default\extensions.rdf<br /></b></li></ul><b>如何让网页更具有可读性？</b><br /><ul><li>安装扩展Readability，并设置浏览模式。</li></ul><b>如何利用地址栏进行搜索？</b><br /><ul><li>在地址栏输入about:config，回车，修改</li><li>安装扩展Instant Fox，并自定义新的搜索。<br /></li></ul><b>如何自定义鼠标手势？</b><br /><ul><li>安装扩展FireGestures，并自定义自己的鼠标手势。<br /></li></ul><b>如何定制特定页面的呈现方式？</b><br /><ul><li>安装扩展Customize Your Web，并自定义特定页面的运行脚本语言。</li><li>Customize Your Web Feature Overview - YouTube<br />: http://www.youtube.com/watch?v=gHOzLyNgldU&amp;feature=player_embedded#!<br /></li></ul><b>如何截图并添加注释，然后发布？</b><br /><ul><li>使用扩展FireShot</li><li>现在diigo也可以做简单的截图和注释了，感谢diigo.</li></ul><b>如何更方便的发博客？</b><br /><ul><li>使用scribefire扩展</li></ul><b>如何下载网页上的视频？</b><br /><ul><li>使用Flash Video Downloader</li></ul><b>如何增加网页浏览的面积？</b><br /><ul><li>使用Hide Caption Titlebar Plus</li></ul><ul><li>Tree Style Tab</li></ul><b>如何随时随地记录？</b><br /><ul><li>使用diigo</li><li>list.it</li><li>QuickNote</li><li>Evernote</li></ul><b>如何快速分享网页？</b><br /><ul><li>Shareaholic</li></ul><br /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[能用Scribefire撰写的国内博客]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/11/17/use-scribefire-to-write-blogs/"/>
+    <updated>2011-11-17T00:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/11/17/use-scribefire-to-write-blogs</id>
+    <content type="html"><![CDATA[<p><div><font size="3">Scribefire是一个能够在线撰写博客的火狐浏览器插件，目前发现新浪和网易都支持windows live writer，同时也支持scribefire，但是scribefire打开的时候都存在分类不能识别的问题。<br /><br />下满是网易和新浪的api地址：<br />1、网易：</font><a href="http://os.blog.163.com/api/xmlrpc/metaweblog/"><font size="3">http://os.blog.163.com/api/xmlrpc/metaweblog/</font></a><font size="3">&nbsp;</font></div><div><font size="3">2、新浪：</font><a rel="nofollow" href="http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php"><font size="3">http://upload.move.blog.sina.com.cn/blog_rebuild/blog/xmlrpc.php</font></a><br /><br /></div></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[firefox的about:config设置技巧（1）]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/05/02/firefox-aboutconfig-tips1/"/>
+    <updated>2011-05-02T00:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/05/02/firefox-aboutconfig-tips1</id>
+    <content type="html"><![CDATA[<p>一、如何使得地址栏既能输入网址又能作为搜索引擎<br /><br />1. 在Firefox地址栏输入 about:config<br />2. 在过滤器输入框中输入 keyword.URL<br />3. 双击出现的首选项，将其值修改为<br /><br />百度：http://www.baidu.com/s?ie=UTF-8&amp;wd=<br />谷歌：http://www.google.com/search?ie=UTF-8&amp;oe=UTF-8&amp;sourceid=navclient&amp;gfns=1&amp;q=<br /><br />三、 显示/禁用标签上的关闭按钮<br /><br />有些人喜欢每个标签上有关闭按钮(红色的X),但有些人不喜欢，通过browser.tabs.closeButtons来设定。<br />参数名: browser.tabs.closeButtons<br /><br />缺省值: 1<br />修改方法:<br />&nbsp;&nbsp;&nbsp; * 0 - 仅在活动的标签页上显示关闭按钮<br />&nbsp;&nbsp;&nbsp; * 1- 在所有的标签页上显示关闭按钮<br />&nbsp;&nbsp;&nbsp; * 2- 不显示任何的关闭按钮<br />&nbsp;&nbsp;&nbsp; * 3- 在当前所有标签页的最后显示一个关闭按钮<br /><br />参考：28个最酷的Firefox about:config配置参数 ： http://alt.ctrl.del.blog.163.com/blog/static/259148062008112054845524/<br /><br />
+3. 在后台打开新标签  
+找到首选项:browser.tabs.loadBookmarksInBackground 双击改为ture.  
+找到首选项：browser.tabs.loadDivertedinbackground 双击改为ture.  
+参考[无需插件让你的Firefox支持后台打开新标签](http://www.bitscn.com/school/firefox/201004/185476.html)
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=06f6e952-73d1-8a52-a601-e218693dbfae" /></div></p>
+
+]]></content>
+  </entry>
+  
+</feed>
