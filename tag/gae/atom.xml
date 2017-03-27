@@ -4,7 +4,7 @@
   <title><![CDATA[tags: GAE | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/gae/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/"/>
-    <updated>2013-08-31T18:07:00-07:00</updated>
+    <updated>2013-08-31T18:07:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu</id>
     <content type="html"><![CDATA[<p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
 首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
@@ -54,7 +54,7 @@ $ python appcfg.py update myapps/helloworld
   <entry>
     <title type="html"><![CDATA[今天学习了一些关于GAE的知识]]></title>
     <link href="http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae/"/>
-    <updated>2010-02-18T00:00:00-08:00</updated>
+    <updated>2010-02-18T00:00:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2010/02/18/knowlege-of-gae</id>
     <content type="html"><![CDATA[<p>以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: mousekey | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/mousekey/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[用ALT代替左键单击]]></title>
     <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
-    <updated>2015-12-20T10:50:00-08:00</updated>
+    <updated>2015-12-20T10:50:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
     <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
 

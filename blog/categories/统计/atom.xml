@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 统计 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/统计/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Clustering Maps by Similarity]]></title>
     <link href="http://zhangchunlei.com/blog/2014/06/30/clustering-maps-by-similarity/"/>
-    <updated>2014-06-30T19:17:00-07:00</updated>
+    <updated>2014-06-30T19:17:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/06/30/clustering-maps-by-similarity</id>
     <content type="html"><![CDATA[<p>I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me by leaving a comment.</p>
 
@@ -43,7 +43,7 @@ ss=bh*2+bl-hl-lh-breaks(可以参考序列比对)
   <entry>
     <title type="html"><![CDATA[Pick the right test]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test/"/>
-    <updated>2014-05-30T14:14:00-07:00</updated>
+    <updated>2014-05-30T14:14:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test</id>
     <content type="html"><![CDATA[<p>You have to pick a test to analysis your data. The question is which test is the right one. Well, it depends on your data and your hypothesis. Usually there are lot of choices, but only one solves your problem best.</p>
 
@@ -75,7 +75,7 @@ This picture comes from : <a href="http://www.socr.ucla.edu/Applets.dir/ChoiceOf
   <entry>
     <title type="html"><![CDATA[Multidimensional Scaling in R]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/"/>
-    <updated>2014-05-29T22:10:00-07:00</updated>
+    <updated>2014-05-29T22:10:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/29/mds-in-r</id>
     <content type="html"><![CDATA[<p>I met this problem when I was analysing teachers' PCK concept maps. I wanted to divide them into several clusters that shared the similar structures(nodes and links).</p>
 
@@ -110,7 +110,7 @@ text(mds1[,1], mds1[,2], labels(x)[[1]], cex = 0.9, xpd = TRUE)
   <entry>
     <title type="html"><![CDATA[R语言学习笔记]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/"/>
-    <updated>2014-04-21T23:35:00-07:00</updated>
+    <updated>2014-04-21T23:35:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/21/how-to-use-r</id>
     <content type="html"><![CDATA[<pre><code>
 ##week1
@@ -406,7 +406,7 @@ z    5    4    1    2    6    3    9    7    2     8
   <entry>
     <title type="html"><![CDATA[Repeated Measures Correlation Mixed Model]]></title>
     <link href="http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model/"/>
-    <updated>2014-04-17T09:02:00-07:00</updated>
+    <updated>2014-04-17T09:02:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/04/17/repeated-measures-correlation-mixed-model</id>
     <content type="html"><![CDATA[<p>How to do it?<br/>
 Analysis==>Mixed Model, then you got diaogue 1 as follows. ID shuold be put be included as subjects. Year should be included as repeated, cause I measured multiple times by different year.

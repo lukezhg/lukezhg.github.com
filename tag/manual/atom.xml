@@ -4,7 +4,7 @@
   <title><![CDATA[tags: manual | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/manual/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Flash AS3 zip Manual]]></title>
     <link href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/"/>
-    <updated>2014-11-27T14:48:00-08:00</updated>
+    <updated>2014-11-27T14:48:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual</id>
     <content type="html"><![CDATA[<p>Action Script 3.0 简明手册<br/>
 在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br/>

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: IRT | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/irt/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[如何使用Wingen和BILOG]]></title>
     <link href="http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog/"/>
-    <updated>2014-02-18T14:39:00-08:00</updated>
+    <updated>2014-02-18T14:39:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog</id>
     <content type="html"><![CDATA[<p>如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：<br/>
 第一步：产生答题者<br/>
@@ -34,7 +34,7 @@
   <entry>
     <title type="html"><![CDATA[项目反应理论是个啥]]></title>
     <link href="http://zhangchunlei.com/blog/2014/01/23/pck-example-one/"/>
-    <updated>2014-01-23T16:20:00-08:00</updated>
+    <updated>2014-01-23T16:20:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/01/23/pck-example-one</id>
     <content type="html"><![CDATA[<p>统计学中有很多概念很抽象不容易理解，但是如果有恰当的例子作桥梁，就可以深入浅出，容易让人领悟了。</p>
 
@@ -71,7 +71,7 @@ D 跳高</p>
   <entry>
     <title type="html"><![CDATA[IRT learning resources]]></title>
     <link href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/"/>
-    <updated>2014-01-22T09:56:00-08:00</updated>
+    <updated>2014-01-22T09:56:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources</id>
     <content type="html"><![CDATA[<p>There are a lot learing resources for IRT(Item Response Theory). But the most useful onese are those fit you well.</p>
 

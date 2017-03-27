@@ -4,7 +4,7 @@
   <title><![CDATA[tags: 标签云 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/标签云/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-03-03T13:59:40-08:00</updated>
+  <updated>2017-03-27T12:41:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[使用Octopress发布Github page博客]]></title>
     <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
-    <updated>2012-12-27T21:05:00-08:00</updated>
+    <updated>2012-12-27T21:05:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
     <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
 
