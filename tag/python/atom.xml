@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: Python | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: python | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-08-14T09:45:07+08:00</updated>
+  <updated>2017-08-25T13:02:01+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,119 +14,77 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Python简明手册]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/07/30/python-brief/"/>
-    <updated>2013-07-30T14:25:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/07/30/python-brief</id>
-    <content type="html"><![CDATA[<p>Python重要用法示例</p>
+    <title type="html"><![CDATA[deep learning]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/08/25/deep-learning/"/>
+    <updated>2017-08-25T11:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/08/25/deep-learning</id>
+    <content type="html"><![CDATA[<p>机器学习是人工智能中非常重要的一个分支。而深度学习则是机器学习中一个重要的方向。所以人工智能、机器学习和深度学习三个概念的关系是：<br/>
+【人工智能【机器学习【深度学习】】】</p>
 
-<blockquote><blockquote><blockquote><p>dir(list)
-显示关键字相关的函数</p>
+<p>在教育领域和计算机科学领域的深度学习并不是一个概念。</p>
 
-<p>help(list.reverse)
-查询某个函数的功能</p></blockquote></blockquote></blockquote>
+<p>这里主要尝试利用keras和python来进行深度学习模拟。</p>
 
-<p>set 让一个list变成无重复元素的set
-例如：</p>
+<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：<br/>
+<quote>
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.optimizers import SGD</p>
 
-<blockquote><blockquote><blockquote><p>shapes = ['circle','square','triangle','circle']
-setOfShapes = set(shapes)
-setOfShapes
-set(['circle','square','triangle'])
-setOfShapes.add('polygon')
-'rhombus' in setOfShapes
-False
-setOfShapes - setOfFavoriteShapes
-setOfShapes &amp; setOfFavoriteShapes
-setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+<h1>Generate dummy data</h1>
 
-<p>map和lambda</p>
+<p>import numpy as np
+x_train = np.random.random((1000, 20))
+y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
+x_test = np.random.random((100, 20))
+y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)</p>
 
-<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
-[1, 4, 9]
-filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
-[4, 5, 4]</p></blockquote></blockquote></blockquote>
+<p>model = Sequential()</p>
 
-<p>Object 先定义一个类，然后给类生成实例
-定义如：
-class FruitShop:</p>
+<h1>Dense(64) is a fully-connected layer with 64 hidden units.</h1>
 
-<pre><code>def __init__(self, name, fruitPrices):
-    """
-        name: Name of the fruit shop
+<h1>in the first layer, you must specify the expected input data shape:</h1>
 
-        fruitPrices: Dictionary with keys as fruit 
-        strings and prices for values e.g. 
-        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
-    """
-    self.fruitPrices = fruitPrices
-    self.name = name
-    print 'Welcome to the %s fruit shop' % (name)
+<h1>here, 20-dimensional vectors.</h1>
 
-def getCostPerPound(self, fruit):
-    """
-        fruit: Fruit string
-    Returns cost of 'fruit', assuming 'fruit'
-    is in our inventory or None otherwise
-    """
-    if fruit not in self.fruitPrices:
-        print "Sorry we don't have %s" % (fruit)
-        return None
-    return self.fruitPrices[fruit]
+<p>model.add(Dense(64, activation='relu', input_dim=20))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(10, activation='softmax'))</p>
 
-def getPriceOfOrder(self, orderList):
-    """
-        orderList: List of (fruit, numPounds) tuples
+<p>sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',</p>
 
-    Returns cost of orderList. If any of the fruit are  
-    """ 
-    totalCost = 0.0             
-    for fruit, numPounds in orderList:
-        costPerPound = self.getCostPerPound(fruit)
-        if costPerPound != None:
-            totalCost += numPounds * costPerPound
-    return totalCost
-
-def getName(self):
-    return self.name
+<pre><code>          optimizer=sgd,
+          metrics=['accuracy'])
 </code></pre>
 
-<p>调用winsound 函数</p>
+<p>model.fit(x_train, y_train,</p>
 
-<pre><code>
-import winsound
-# press a make a beep
-if event.KeyID==65: winsound.Beep(200,9)
-# press ESC play exit sound
-if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+<pre><code>      epochs=20,
+      batch_size=128)
 </code></pre>
 
+<p>score = model.evaluate(x_test, y_test, batch_size=128)
+</quote></p>
 
-<p>使用pyHook监听鼠标和键盘事件</p>
+<p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
 
-<pre><code>
-import pythoncom
-import pyHook
+<p>（1）数据定义<br/>
+定义训练数据和检验数据，必要的时候需要对数据进行处理，从而使的数据的形状和大小符合要求。</p>
 
-def onKeyboardEvent(event):
-    global switch
-    # 监听键盘事件
-    if switch:
-        print "Key:", event.Key
-        print "KeyID:", event.KeyID
-    return True #监听函数的返回值
+<p>（2）模型定义 <br/>
+定义输入层、输出层以及中间的隐藏层，层的类别和神经元数量。</p>
 
-def main():
-    # 定义一个实例
-    hm = pyHook.HookManager()
-    # 监听所有键盘事件
-    hm.KeyDown = onKeyboardEvent
-    # 设置键盘监听器
-    hm.HookKeyboard()
-    # 循环并保持一直处于监听状态
-    pythoncom.PumpMessages()
-</code></pre>
+<p>（3）训练<br/>
+利用训练数据对模型进行fit，使得模型的参数与训练数据更好的吻合。</p>
 
+<p>（4）检验<br/>
+利用检验数据对模型及其参数进行检验，通常会依靠正确率以及gradient descent对模型进行评估和完善。</p>
+
+<p>（5）应用<br/>
+当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。</p>
 ]]></content>
   </entry>
   

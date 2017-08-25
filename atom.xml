@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-08-14T09:45:07+08:00</updated>
+  <updated>2017-08-25T13:02:01+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,7 +14,82 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Relationships]]></title>
+    <title type="html"><![CDATA[deep learning]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/08/25/deep-learning/"/>
+    <updated>2017-08-25T11:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/08/25/deep-learning</id>
+    <content type="html"><![CDATA[<p>机器学习是人工智能中非常重要的一个分支。而深度学习则是机器学习中一个重要的方向。所以人工智能、机器学习和深度学习三个概念的关系是：<br/>
+【人工智能【机器学习【深度学习】】】</p>
+
+<p>在教育领域和计算机科学领域的深度学习并不是一个概念。</p>
+
+<p>这里主要尝试利用keras和python来进行深度学习模拟。</p>
+
+<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：<br/>
+<quote>
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.optimizers import SGD</p>
+
+<h1>Generate dummy data</h1>
+
+<p>import numpy as np
+x_train = np.random.random((1000, 20))
+y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
+x_test = np.random.random((100, 20))
+y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)</p>
+
+<p>model = Sequential()</p>
+
+<h1>Dense(64) is a fully-connected layer with 64 hidden units.</h1>
+
+<h1>in the first layer, you must specify the expected input data shape:</h1>
+
+<h1>here, 20-dimensional vectors.</h1>
+
+<p>model.add(Dense(64, activation=&#8217;relu&#8217;, input_dim=20))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation=&#8217;relu&#8217;))
+model.add(Dropout(0.5))
+model.add(Dense(10, activation=&#8217;softmax&#8217;))</p>
+
+<p>sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss=&#8217;categorical_crossentropy&#8217;,</p>
+
+<pre><code>          optimizer=sgd,
+          metrics=['accuracy'])
+</code></pre>
+
+<p>model.fit(x_train, y_train,</p>
+
+<pre><code>      epochs=20,
+      batch_size=128)
+</code></pre>
+
+<p>score = model.evaluate(x_test, y_test, batch_size=128)
+</quote></p>
+
+<p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
+
+<p>（1）数据定义<br/>
+定义训练数据和检验数据，必要的时候需要对数据进行处理，从而使的数据的形状和大小符合要求。</p>
+
+<p>（2）模型定义 <br/>
+定义输入层、输出层以及中间的隐藏层，层的类别和神经元数量。</p>
+
+<p>（3）训练<br/>
+利用训练数据对模型进行fit，使得模型的参数与训练数据更好的吻合。</p>
+
+<p>（4）检验<br/>
+利用检验数据对模型及其参数进行检验，通常会依靠正确率以及gradient descent对模型进行评估和完善。</p>
+
+<p>（5）应用<br/>
+当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[社会需要与进化需要]]></title>
     <link href="http://zhangchunlei.com/blog/2017/08/11/relationships/"/>
     <updated>2017-08-11T15:37:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2017/08/11/relationships</id>
@@ -24,9 +99,9 @@
 
 <p>因此，人有两种本事，一种本事是解决进化需要。一种本事是解决社会需要。实际上，社会需要是人进化到一定阶段的产物，本质上也是一种进化需要。只不过这种需要让人从个体生存的焦虑中解脱出来，扩展到对群体或种族生存的关照。</p>
 
-<p>再面对和解决两种焦虑困惑时，佛家、道家和儒家采用了完全不同的方法。佛家是屏弃，无论是进化需要还是社会需要，无欲则刚。道家是顺应，无为而无不为，最后摆脱世俗纠缠、成仙得道。儒家是节制，适度满足同时节制，然后入世成圣。所谓的佛、仙、圣只是一种理想性的终极追求，不能当真的。但是处世的哲学和立场确是实实在在的。</p>
+<p>在面对和解决两种焦虑困惑时，佛家、道家和儒家采用了完全不同的方法。佛家是屏弃，无论是进化需要还是社会需要，无欲则刚。道家是顺应，无为而无不为，最后摆脱世俗纠缠、成仙得道。儒家是节制，适度满足同时节制，然后入世成圣。所谓的佛、仙、圣只是一种理想性的终极追求，不能当真的。但是处世的哲学和立场确是实实在在的。</p>
 
-<p>三种哲学之中，佛家的问题解决最彻底，道家的世事洞察最清晰，儒家的人生态度最积极。它们可以分别治疗人的贪婪、自以为是和堕落。</p>
+<p>三种哲学之中，佛家的问题解决最彻底，道家的世事洞察最清晰，儒家的人生态度最积极。它们可以分别治疗人的贪婪、沉迷和消极。</p>
 ]]></content>
   </entry>
   
@@ -740,76 +815,6 @@ SOCIAL REFORM 3
 neural network application OCR<br/>
 我们缺少优秀的设计师<br/>
 迷思概念再认识</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[超级个体]]></title>
-    <link href="http://zhangchunlei.com/blog/2016/12/26/superman-in-the-life/"/>
-    <updated>2016-12-26T10:20:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2016/12/26/superman-in-the-life</id>
-    <content type="html"><![CDATA[<p>偶然的机会发现了罗辑思维这个脱口秀节目，觉得很值得有空车上听一听。比如古典的“超级个体”概念就很启发性，下面是摘录的笔记：</p>
-
-<p>一、现在是个体崛起的时代</p>
-
-<p>1、知识瘫痪的人<br/>
-知识碎片不能转换成个体能力，眼高手低的人。</p>
-
-<p>2、白日梦想家<br/>
-只是画饼，但是不思考和行动的人。</p>
-
-<p>3、安全自封的人<br/>
-怕承担任何分享而固步自封的人</p>
-
-<p>4、错误心智模式的人<br/>
-从同行是冤家到同行是伙伴<br/>
-从铁饭碗到超级个体<br/>
-从巨婴到巨人<br/>
-从三思而后行到边想边做<br/>
-从知识瘫痪到独立思考和行动<br/>
-从本职工作到业余工作</p>
-
-<p>现代社会：不是智者生存，也不是强者生存，而是适者生存。</p>
-
-<p>现代社会的变化：<br/>
-1、用很少的生活资料，就能养活自己<br/>
-2、组织的寿命变短，个人的寿命变长<br/>
-3、职业在跨界，公司也在跨界，跨界成了新常态</p>
-
-<p>未来是个体崛起的时代，每个人生产力更强，都有机会成为想成为的自己。永远不会失业的工作没有了，只要超级个体不会失业，但是要不断换工作。</p>
-
-<p>二、你需要的3种超能力</p>
-
-<p>1、自我迭代：一边奔跑一般思考</p>
-
-<p>2、元能力：生产、连接、传播。</p>
-
-<p>3、超级复原力：经得起失败，并从失败中积累经验。</p>
-
-<p>三、成为超级个体的2种心法</p>
-
-<p>1、乐高式的能力组合<br/>
-郝景芳的《北京折叠》获得雨果奖。单一能力结构风险很大。X型、π型人才生态位更大。</p>
-
-<p>2、给自己超链接的机会<br/>
-给自己跨界的机会</p>
-
-<p>四、你的世界观<br/>
-你相信这个世界是善意的还是恶意的？<br/>
-它决定了你的认知模式和行为模式。</p>
-
-<p>五、现代人的关键竞争力<br/>
-学习力（阅读、倾听、联系）<br/>
-生产力（生产产品）<br/>
-传播力（传播观念）<br/>
-领导力（合作和引领他人）<br/>
-行动力（切割、计划、行动、坚持）</p>
-
-<p>而这5种力，都要在独立思考和实践中发展的。</p>
-
-<p>听这个节目的话：点击这里。<br/>
-古典：超级个体[罗辑思维]No·200【MP3<em>声音</em>录音】免费在线收听|下载-喜马拉雅fm<br/>
-<a href="http://www.ximalaya.com/1412917/sound/27048773">http://www.ximalaya.com/1412917/sound/27048773</a></p>
 ]]></content>
   </entry>
   
