@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-08-25T13:02:01+08:00</updated>
+  <updated>2017-09-04T15:28:02+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spcae Craft Game]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/09/04/spcae-craft-game/"/>
+    <updated>2017-09-04T15:08:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/09/04/spcae-craft-game</id>
+    <content type="html"><![CDATA[<h3>object</h3>
+
+<object 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> 
+<param name="movie"  value="https://github.com/lukezhg/Freyja/blob/master/space-craft.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+</object>
+
+
+<h3>embed</h3>
+
+<p><embed src="https://github.com/lukezhg/Freyja/blob/master/space-craft.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60"
+name="mymoviename" align="" type="application/x-shockwave-flash"
+pluginspage="http://www.macromedia.com/go/getflashplayer">
+</embed></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[deep learning]]></title>
@@ -68,6 +96,8 @@ model.compile(loss=&#8217;categorical_crossentropy&#8217;,</p>
 
 <p>score = model.evaluate(x_test, y_test, batch_size=128)
 </quote></p>
+
+<p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
 
 <p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
 
@@ -802,19 +832,6 @@ SOCIAL REFORM 3
 <p>这是一个物欲横流而缺乏反思的时代，而如果任凭自己卷入洪流就会面临迷失自我的风险。别人进城，我也进城，别人买房，我也买房，别人生娃，我也生娃，别人孩子上补习班，我也让孩子上补习班，总之千万别落后。</p>
 
 <p>我是谁，我为什么要跟随，我来自哪，我要去哪里，这些人生大问题早已被紧张的城市生活所淹没。我不在是自己的我，我成了城市街道里的一个影子，不知道从哪里来，也不知道要到哪里去，忐忑而焦急，疲于奔命的紧跟着城市的节奏。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Unpublished post]]></title>
-    <link href="http://zhangchunlei.com/blog/2016/12/28/unpublished-post/"/>
-    <updated>2016-12-28T11:10:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2016/12/28/unpublished-post</id>
-    <content type="html"><![CDATA[<p>遗传与环境对学习的影响<br/>
-科学教育的简化模型<br/>
-neural network application OCR<br/>
-我们缺少优秀的设计师<br/>
-迷思概念再认识</p>
 ]]></content>
   </entry>
   

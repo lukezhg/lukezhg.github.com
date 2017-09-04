@@ -4,7 +4,7 @@
   <title><![CDATA[tags: python | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-08-25T13:02:01+08:00</updated>
+  <updated>2017-09-04T15:28:02+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -68,6 +68,8 @@ model.compile(loss='categorical_crossentropy',</p>
 
 <p>score = model.evaluate(x_test, y_test, batch_size=128)
 </quote></p>
+
+<p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
 
 <p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
 
