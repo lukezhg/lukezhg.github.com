@@ -103,49 +103,41 @@
 
 <p>这里主要尝试利用keras和python来进行深度学习模拟。</p>
 
-<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：<br/>
-<quote>
+<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：</p>
+
+<pre><code>
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD</p>
+from keras.optimizers import SGD
 
-<h1>Generate dummy data</h1>
-
-<p>import numpy as np
+# Generate dummy data
+import numpy as np
 x_train = np.random.random((1000, 20))
 y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
 x_test = np.random.random((100, 20))
-y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)</p>
+y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)
 
-<p>model = Sequential()</p>
-
-<h1>Dense(64) is a fully-connected layer with 64 hidden units.</h1>
-
-<h1>in the first layer, you must specify the expected input data shape:</h1>
-
-<h1>here, 20-dimensional vectors.</h1>
-
-<p>model.add(Dense(64, activation=&#8217;relu&#8217;, input_dim=20))
+model = Sequential()
+# Dense(64) is a fully-connected layer with 64 hidden units.
+# in the first layer, you must specify the expected input data shape:
+# here, 20-dimensional vectors.
+model.add(Dense(64, activation='relu', input_dim=20))
 model.add(Dropout(0.5))
-model.add(Dense(64, activation=&#8217;relu&#8217;))
+model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
-model.add(Dense(10, activation=&#8217;softmax&#8217;))</p>
+model.add(Dense(10, activation='softmax'))
 
-<p>sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss=&#8217;categorical_crossentropy&#8217;,</p>
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',
+              optimizer=sgd,
+              metrics=['accuracy'])
 
-<pre><code>          optimizer=sgd,
-          metrics=['accuracy'])
+model.fit(x_train, y_train,
+          epochs=20,
+          batch_size=128)
+score = model.evaluate(x_test, y_test, batch_size=128)
 </code></pre>
 
-<p>model.fit(x_train, y_train,</p>
-
-<pre><code>      epochs=20,
-      batch_size=128)
-</code></pre>
-
-<p>score = model.evaluate(x_test, y_test, batch_size=128)
-</quote></p>
 
 <p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
 
