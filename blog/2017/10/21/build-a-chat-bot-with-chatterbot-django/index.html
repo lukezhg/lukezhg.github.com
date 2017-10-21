@@ -118,11 +118,8 @@
 <code></p>
 
 <pre><code># ChatterBot settings
-</code></pre>
-
-<p>CHATTERBOT = {</p>
-
-<pre><code>'name': 'Django ChatterBot Example',
+CHATTERBOT = {
+'name': 'Django ChatterBot Example',
 'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
 'training_data': [
      'chatterbot.corpus.english.greetings',#set the traing data
@@ -130,15 +127,16 @@
      'chatterbot.corpus.swedish.food',
 ],
 'django_app_name': 'django_chatterbot'
+}
 </code></pre>
 
-<p>}
-</code>></p>
+<p></code>></p>
 
 <p>修改chatterbot_corpus文件夹中训练数据。<br/>
 训练数据格式如下
-<code>
-categories:
+<code></p>
+
+<pre><code>categories:
 - greetings
 conversations:
 - - Hello
@@ -155,7 +153,9 @@ conversations:
   - Fine
 - - Hi, How is it going?
   - Okay
-</code></p>
+</code></pre>
+
+<p></code></p>
 
 <p>可以尝试利用英语8000句来训练。</p>
 </div>
