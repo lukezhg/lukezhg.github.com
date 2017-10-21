@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="什么是抄袭？ 所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息， &hellip;">
+  <meta name="description" content="今天看了《front of class》这部电影，觉得很好看。 快乐与感动的同时，更加坚定了一个想法：教育应该是包容性的。美好的生活是需要坚强的努力去创造的，只不过有着先天障碍的人们的生活斗争更加鲜明和激烈，也更让人感动和学习。 推荐所有有志于当老师的朋友们观看这部电影！ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/21/front-of-class/">电影《front of Class》有感</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T22:55:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/01/21/front-of-class/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天看了《front of class》这部电影，觉得很好看。</p>
+
+<p>快乐与感动的同时，更加坚定了一个想法：教育应该是包容性的。美好的生活是需要坚强的努力去创造的，只不过有着先天障碍的人们的生活斗争更加鲜明和激烈，也更让人感动和学习。</p>
+
+<p>推荐所有有志于当老师的朋友们观看这部电影！希望大家都能成为具有包容心的老师。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -259,158 +301,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/27/github-blog-with-octopress/">使用Octopress发布Github Page博客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-27T21:05:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/12/27/github-blog-with-octopress/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
-
-<p>搭建的步骤如下：<br/>
-1.首先是准备工作，下载和安装必要的软件。<br/>
-2.然后是克隆octopress并安装 <br/>
-3.接下来是将octopress配置好并发布博文。 <br/>
-具体步骤可以重点参考<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">这篇</a>文章。</p>
-
-<h2>具体步骤纪要：</h2>
-
-<ol>
-<li>准备工作，下载<a href="http://windows.github.com/">gitinstaller</a>, <a href="http://rubyforge.org/frs/?group_id=167">ruby197</a>, <a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">devkit</a>, 然后安装。
-gitinstalller和ruby197只要一路next过去就可以安装好，ruby我选择的都是c盘根目录。devkit解压到c盘根目录。安装如下：
-
-<blockquote><pre><code>$ cd C:\DevKit  
-</code></pre>
-
-<p>   $ ruby dk.rb init<br/>
-   $ ruby dk.rb instal</p></blockquote></li>
-</ol>
-
-
-<p>布置环境：</p>
-
-<blockquote><pre><code>$ gem sources --remove http://rubygems.org/  
-  $ gem sources -a http://ruby.taobao.org/  
-  $ gem install rdoc bundler   
-  $ vi Gemfile  #将行 ：source "http://rubygems.org/" 改为:source "http://ruby.taobao.org/"
-  $ bundle install  #如果出错，改执行：bundle update; rake install   
-</code></pre></blockquote>
-
-<ol>
-<li>克隆远程octopress到本地文件夹，本地文件夹名称无所谓，比如我的就放在G:/github/myblog<br/>
-接下来进入git shell, 在命令行中执行一系列的命令来安装octopress，命令代码如下：
-
-<blockquote><pre><code>$ git clone git://github.com/imathis/octopress.git myblog  
-</code></pre>
-
-<p>   $ cd myblog<br/>
-   $ rake setup_github_pages<br/>
-按照提示输入：git@github.com:username/username.github.com.git, 比如我的github用户名为lukezhg，那么我就需要输入 git@github.com:lukezhg/lukezhg.github.com.git</p>
-
-<pre><code>$ rake generate   #生成本地文件
-</code></pre>
-
-<p>   $ rake preview  #实现本地预览 访问  http://localhost:4000 查看效果  （可选）
-   $ rake deploy  #发布本地文件到服务器</p></blockquote></li>
-</ol>
-
-
-<p>保存博客源码到github source分支:</p>
-
-<blockquote><pre><code>$ git add .  
-  $ git commit -m 'blog source'  
-  $ git push origin source
-</code></pre></blockquote>
-
-<ol>
-<li>初步配置octopress<br/>
-_config.yml文件：</li>
-</ol>
-
-
-<p>添加cname文件<br/>
-只需要在myblog\source目录下添加一个cname的文件，并在第一行写上你的域名，保存即可。</p>
-
-<p>发布新博文（post）或者新页面（page）</p>
-
-<blockquote><pre><code>$ rake new_post["article name"]   
-  $ rake new_page["page name"]
-</code></pre></blockquote>
-
-<ol>
-<li>继续完善<br/>
-添加侧边栏内容</li>
-</ol>
-
-
-<p>（1）添加导航<br/>
-修改myblog\source_includes\custom目录下的navigation.html文件即可</p>
-
-<p>（2）添加分类<br/>
-<a href="https://github.com/alswl/octopress-category-list">alswl/octopress-category-list</a></p>
-
-<p>（3）自定义网站图标<br/>
-替换myblog\source目录下的favicon.png可以实现自定义网站图标</p>
-
-<ol>
-<li>额外的说明 <br/>
-（1）执行rake install如若出错：
-
-<blockquote><pre><code>$ rake install
-</code></pre>
-
-<p>   $ rake aborted!
-   $ You have already activated rake 0.9.2.2, but your Gemfile requires rake 0.9.2. Using bundle exec may solve this.
-   $ (See full trace by running task with &#8211;trace)</p></blockquote></li>
-</ol>
-
-
-<p>==》修正办法为：</p>
-
-<blockquote><pre><code>$ bundle update; rake install  
-</code></pre></blockquote>
-
-<p>（2）添加CNAME文件后不生效==》手动在github网页上文件代码剪贴掉，保存，然后再粘贴回来，保存。</p>
-
-<p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
-
-<p>（去除了Markdown语法，已经添加到octopress tips页面去了）</p>
-
-<p>主要参考：
-<a id="1"></a><a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
-<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
-<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/51/">&larr; Older</a>
@@ -431,6 +321,10 @@ _config.yml文件：</li>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/10/21/build-a-chat-bot-with-chatterbot-django/">build a chat bot with ChatterBot Django</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/09/28/impression/">印象管理</a>
@@ -466,10 +360,6 @@ _config.yml文件：</li>
     
       <li class="post">
         <a href="/blog/2017/03/27/stop-doing-everything/">有所不为</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/03/27/teaching-reflection/">教学反思该如何是好</a>
       </li>
     
   </ul>
