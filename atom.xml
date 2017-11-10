@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-10T22:38:12+08:00</updated>
+  <updated>2017-11-10T22:56:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -48,7 +48,9 @@ C --&gt;|Three| F[Car]
 <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
 
 
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>mermaid.initialize({startOnLoad:true});$(document).ready(function() {
+    mermaid.initialize();
+});</script>
 
 
 <p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>

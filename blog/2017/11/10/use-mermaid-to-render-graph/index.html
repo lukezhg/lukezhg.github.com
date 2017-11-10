@@ -130,7 +130,9 @@ C --&gt;|Three| F[Car]
 <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
 
 
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>mermaid.initialize({startOnLoad:true});$(document).ready(function() {
+    mermaid.initialize();
+});</script>
 
 
 <p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
