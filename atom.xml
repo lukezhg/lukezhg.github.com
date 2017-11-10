@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-10T20:58:10+08:00</updated>
+  <updated>2017-11-10T21:09:43+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -43,9 +43,6 @@ git:https://github.com/knsv/mermaid/
 
 <p>  </div></p>
 
-<script src="source/javascripts/mermaid.min.js"></script>
-
-
 <p>{% mermaid %}
 graph TD;</p>
 
@@ -56,9 +53,6 @@ C--&gt;D;
 </code></pre>
 
 <p>{% endmermaid %}</p>
-
-<script src="source/javascripts/mermaid.min.js"></script>
-
 
 <p>{% mermaid %}
 graph LR;</p>
