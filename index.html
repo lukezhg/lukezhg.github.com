@@ -27,7 +27,7 @@ git:https://github.com/knsv/mermaid/
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   
-  <link href="/stylesheets/mermaid.css" media="mermaid" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/mermaid.css" rel="stylesheet" type="text/css">
 
   <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -121,7 +121,12 @@ C --&gt;|Three| F[Car]
 <img src="https://github.com/lukezhg/Freyja/raw/master/mermaid.png" alt="mermaid graph" /></p>
 
 <div class="mermaid">
-graph LR; A&#8211;>B; B&#8211;>C(hao); B&#8211;>D;
+graph TD
+A[Christmas] &#8211;>|Get money| B(Go shopping)
+B &#8211;> C{Let me think}
+C &#8211;>|One| D[Laptop]
+C &#8211;>|Two| E[iPhone]
+C &#8211;>|Three| F[Car]
 </div>
 
 
@@ -130,9 +135,7 @@ graph LR; A&#8211;>B; B&#8211;>C(hao); B&#8211;>D;
 <script src="/javascripts/mermaid.min.js"></script>
 
 
-<script>mermaid.initialize({startOnLoad:true});$(document).ready(function() {
-    mermaid.initialize();
-});</script>
+<script>mermaid.initialize({startOnLoad:true});</script>
 
 
 <p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
