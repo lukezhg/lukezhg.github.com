@@ -1,0 +1,383 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/chunleizhang/code/haxe/wumpus/Source/Main.hx",
+			"settings":
+			{
+				"buffer_size": 13041,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"o",
+				"OmniMarkupPreviewer: Empty Cache"
+			]
+		],
+		"width": 557.0
+	},
+	"console":
+	{
+		"height": 209.0,
+		"history":
+		[
+			"a",
+			"a=1",
+			"print 1",
+			"ls",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/chunleizhang/octopress",
+		"/Users/chunleizhang/octopress/source",
+		"/Users/chunleizhang/octopress/source/_posts"
+	],
+	"file_history":
+	[
+		"/Users/chunleizhang/octopress/source/_posts/2017-09-07-tips-for-mac-users.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-09-07-haxe-sublime-packagecontrol.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-02-09-lesoleil-fine-art-gallery.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-02-25-be-good-do-good.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-03-27-stop-doing-everything.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-06-24-summer-camp-plan-for-kids.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2014-12-10-instruction-competition.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2014-12-02-instruction-design.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2012-07-11-fightiing-with-laziness-start-from-review.html",
+		"/Users/chunleizhang/.bash_profile",
+		"/Users/chunleizhang/.zshrc",
+		"/Users/chunleizhang/Desktop/space/PoneGame/Source/Main.hx",
+		"/Users/chunleizhang/Desktop/space/PoneGame/project.xml",
+		"/Users/chunleizhang/Desktop/space/HelloWorld/Source/Main.hx",
+		"/Users/chunleizhang/Desktop/space/code/space-craft.as",
+		"/Users/chunleizhang/Desktop/shufu/shufu2/css/world.css",
+		"/Users/chunleizhang/Desktop/space/space-craft.as",
+		"/Users/chunleizhang/Desktop/space-craft.html",
+		"/Users/chunleizhang/octopress/source/_posts/2017-09-04-spcae-craft-game.markdown",
+		"/Users/chunleizhang/ml/text/data/South Park/southpark.py",
+		"/Users/chunleizhang/ml/text/data/Zillow price",
+		"/Users/chunleizhang/ml/text/try.py",
+		"/Users/chunleizhang/ml/text/try1.py",
+		"/Users/chunleizhang/ml/dogcat/cnn.py",
+		"/Users/chunleizhang/ml/text/training_data.py",
+		"/Users/chunleizhang/ml/textclassify/chat.py",
+		"/Users/chunleizhang/ml/text/try.txt",
+		"/Users/chunleizhang/Desktop/hmm.py",
+		"/Users/chunleizhang/ml/textclassify/classify.py",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/settings.py",
+		"/Users/chunleizhang/webdev/chatterbot/example_app/templates/app.html",
+		"/Users/chunleizhang/webdev/chatterbot/example_app/urls.py",
+		"/Users/chunleizhang/webdev/chatterbot/example_app/views.py",
+		"/Users/chunleizhang/ml/text/爸妈最常使用的 50 句英文",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/views.py",
+		"/Users/chunleizhang/webdev/chatterbot/README.rst",
+		"/Users/chunleizhang/webdev/chatterbot/tests/test_example.py",
+		"/Users/chunleizhang/webdev/chatterbot/example_app/wsgi.py",
+		"/Users/chunleizhang/webdev/chatterbot/example_app/settings.py",
+		"/Users/chunleizhang/webdev/chatterbot/db.sqlite3",
+		"/Users/chunleizhang/lib/ChatterBot/examples/django_app/manage.py",
+		"/Users/chunleizhang/Downloads/comparative_sentences/labeledSentences.txt",
+		"/Users/chunleizhang/ml/text/pyAFM-master/README.md",
+		"/Users/chunleizhang/ml/chatbot/chatbot.py",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/urls.py",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/test/ndex1.html",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/test/ndex.html",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/includes/nav.html",
+		"/Users/chunleizhang/ml/ai-talk/talk2jane.py",
+		"/Users/chunleizhang/ml/ocr/ocr-number.py",
+		"/Users/chunleizhang/ml/dogcat/deep_dream.py",
+		"/Users/chunleizhang/Desktop/核心素养测评-上海市教委教研室/Aug15/任务脚本/过程数据收集",
+		"/Users/chunleizhang/ml/nn-concept-learning/bpnn2use9-7.py",
+		"/Users/chunleizhang/code/neuron-editor-/neutron.py",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/contact_form.html",
+		"/Users/chunleizhang/webdev/ictweb/books/admin.py",
+		"/Users/chunleizhang/webdev/ictweb/static/scripts/world.js",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/forms.py",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/flash.html",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/books/search_results.html",
+		"/Users/chunleizhang/code/neutralnetworks/dogcat/simple_neural_network.py",
+		"/Users/chunleizhang/webdev/ictweb/books/views.py",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/base.html",
+		"/Users/chunleizhang/code/neutralnetworks/bpnn2use9-7.py",
+		"/Users/chunleizhang/code/neutralnetworks/nndata2.txt",
+		"/Users/chunleizhang/code/ai/machine learning/ocr/ocr-letter.py",
+		"/Users/chunleizhang/code/ai/machine learning/ocr/ocr.py",
+		"/Users/chunleizhang/code/ai/machine learning/iris-class.py",
+		"/Users/chunleizhang/webdev/ictweb/books/models.py",
+		"/Users/chunleizhang/webdev/ictweb/books/urls.py",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/nav.html",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/contact_thanks.html",
+		"/Users/chunleizhang/webdev/ictweb/templates/index.html",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/thanks.html",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/contact_form.htm",
+		"/Users/chunleizhang/webdev/ictweb/books/templates/books/search_form.html",
+		"/Users/chunleizhang/webdev/ictweb/books/\\templates\\books\\search_results.html",
+		"/Users/chunleizhang/Desktop/urls.py",
+		"/Users/chunleizhang/webdev/ictweb/ictweb/# mysite_project\\mysite\\books\\templates\\books\\sear",
+		"/Users/chunleizhang/webdev/ictweb/testmodel/models.py",
+		"/Users/chunleizhang/demoproject/demoproject/urls.py",
+		"/Users/chunleizhang/demoproject/demoapp/views.py",
+		"/Users/chunleizhang/demoproject/demoproject/settings.py",
+		"/Users/chunleizhang/code/ai/mememoji_api-master/README.md",
+		"/Users/chunleizhang/demoproject/demoapp/models.py",
+		"/Users/chunleizhang/demoproject/demoapp/v100.py",
+		"/Users/chunleizhang/demoproject/webapp/admin.py",
+		"/Users/chunleizhang/demoproject/demoapp/admin.py",
+		"/Users/chunleizhang/demoproject/demoapp/tests.py",
+		"/Users/chunleizhang/demoproject/demoapp/__init__.pyc",
+		"/Users/chunleizhang/demoproject/demoapp/__init__.py",
+		"/Users/chunleizhang/demoproject/manage.py",
+		"/Users/chunleizhang/Desktop/code/ai/mememoji_api-master/README.md",
+		"/Users/chunleizhang/Desktop/code/fla/交互测评/fla中的代码",
+		"/Users/chunleizhang/octopress/source/_posts/2017-08-11-relationships.markdown",
+		"/Users/chunleizhang/Desktop/code/fla/交互测评/WebTest/TestCommunicateWithFlash1.aspx.cs",
+		"/Users/chunleizhang/Desktop/code/fla/交互测评/WebTest/TestCommunicateWithFlash.aspx.cs",
+		"/Users/chunleizhang/octopress/README.markdown",
+		"/Users/chunleizhang/Desktop/code/fla/交互测评/WebTest/index1.html",
+		"/Users/chunleizhang/bin/subl",
+		"/Users/chunleizhang/source/_posts/2017-08-11-relationships.markdown",
+		"/Volumes/Untitled/face_img_cut/face-boxer2.py",
+		"/Users/chunleizhang/Desktop/code/ai/machine learning/iris-class.py",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/landmark.py",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/iris-class.py",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/如何视频截图",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/filestoTxt.py",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/output.txt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/filestoTxt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/landmarkPredict.py",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/model/deploy.prototxt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/model/VGG_mean.binaryproto",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/train/train_val.prototxt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/train/solver.prototxt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/train/deploy.prototxt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/testlist.txt",
+		"/Users/chunleizhang/Desktop/code/ai/face-landmark/README.md",
+		"/Users/chunleizhang/Desktop/code/ai/caffe-master/Makefile.config",
+		"/Users/chunleizhang/Desktop/Makefile.config",
+		"/Users/chunleizhang/Desktop/code/ai/caffe-master/build/CaffeConfig.cmake",
+		"/Users/chunleizhang/Desktop/code/ai/caffe/Makefile.config.example",
+		"/Users/chunleizhang/Desktop/code/python ai/face-landmark-localization-master/README.md",
+		"/Users/chunleizhang/Desktop/code/Python_sdk-master/sample.py",
+		"/Users/chunleizhang/Desktop/code/webApp/ndex.html",
+		"/Users/chunleizhang/Desktop/OneDrive/AERA/AERA proposal",
+		"/Users/chunleizhang/Desktop/AERA proposal",
+		"/Users/chunleizhang/Desktop/h5/video.html",
+		"/Users/chunleizhang/Desktop/h5/clips control/video.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu",
+			"contrib.layers",
+			"best_model.ckpt",
+			"BGR",
+			"bgr",
+			"”",
+			"shufu_",
+			"//",
+			"shufu",
+			"shufu_",
+			"shufu_img",
+			"shufu.png",
+			"img",
+			"shufu",
+			"img",
+			"maxlength",
+			"print",
+			"GPU",
+			"gpu",
+			"cpu",
+			"cpu_only",
+			"annote",
+			"G$\\backslash$:/academy/research/mendeley/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"menu1",
+			"\"",
+			"max_length",
+			"/Users/chunleizhang/Documents/mendeley/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/chunleizhang/code/haxe/wumpus/Source/Main.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "octopress.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
