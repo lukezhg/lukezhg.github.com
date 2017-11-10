@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-04T12:06:06+08:00</updated>
+  <updated>2017-11-10T18:46:44+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Use mermaid to render Graph]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph/"/>
+    <updated>2017-11-10T17:48:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph</id>
+    <content type="html"><![CDATA[<p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。</p>
+
+<p>比如下面的代码：<br/>
+<code></p>
+
+<pre><code>graph LR
+  A --&gt;B
+  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;D; 
+</code></pre>
+
+<p></code>></p>
+
+<p>渲染的结果如下：</p>
+
+<div class="mermaid">
+  graph LR
+      A &#8211;>B
+      B&#8211;>C[fa:fa-ban forbidden]
+      B&#8211;>D;
+
+</div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[STEM &amp; Love]]></title>
@@ -824,91 +861,6 @@ Place Mat<br/>
 
 <p>So I changed it like this.<br/>
 <img src="https://raw.github.com/lukezhg/Freyja/master/that-night-the-magic-mirror11.jpg" alt="That Night the Magic Mirror changed" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[UBC week 3: Diversity & Complexity]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/02/01/ubc-week-3/"/>
-    <updated>2017-02-01T20:22:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/02/01/ubc-week-3</id>
-    <content type="html"><![CDATA[<h3>Monday</h3>
-
-<p>On Monday, we went to Victoria and visited the BC Museum. It took us about 2 hours to look around the natural history and human history exhibition. The most interesting things were Mammoth and indigenous people of Canada. Our students also had a great time on the ferry, because it was the first time for most of them to travel by ferry. I took us nearly one and a half hour to across the Channel. So most of our time was spent on road or boat.</p>
-
-<h3>Tuesday</h3>
-
-<p>On Tuesday, during the time of check in, one student asked about the religion system in Canada. Andrea hesitated whether should talk about this. Tony encouraged her to have a try and she gave use a useful introduction of the family trees and history of different religions in BC. Tony highlighted the idea of religious tolerance, which means people can respect and be tolerant to others&#8217; religions.</p>
-
-<p>Unfortunately, a terrible terrorist attack happened in Quebec, in which one man killed six people and injured another five in a Quebec mosque on Sunday. Click <a href="http://www.torontosun.com/2017/01/29/4-reported-dead-in-shooting-at-quebec-city-mosque">here</a> to know more.</p>
-
-<p><a href="http://pm.gc.ca/eng/news/2017/01/29/statement-prime-minister-canada-fatal-shooting-city-quebec">Here</a> is the statement by the Prime Minister of Canada on Sunday.</p>
-
-<pre><code>Diversity is our strength, and religious tolerance is a value that we, as Canadians, hold dear.
-</code></pre>
-
-<p>After Tuesday&#8217;s class, I found UBC faculties and students got together on the square and express their feelings and ideas about the event. Slogans such as &#8220;Hate is not the answer!&#8221; &#8220;LOVE&#8221; &#8220;Connection&#8221; were written on the posters. Several speakers were invited to give a public speech. More than one hundred audience circled around.</p>
-
-<p>Well, these things were accidentally connected in my mind, which push me to think the goal of our education, the role of college in society, the beliefs behind our teaching practices.</p>
-
-<h3>Wednesday</h3>
-
-<p>On Wednesday, we visited the Richmond High School. Their students of grade 12 showed us around and introduced their school. Our college students also visited several classes and had a nice talk with their students.</p>
-
-<h3>Thursday</h3>
-
-<p>Teachers&#8217; professional development needs to be autonomous.<br/>
-Teachers should make their classroom a more public place rather than a private place. Although new teacher may take their time to do so.</p>
-
-<p>school system vs education agenda(教育系统与教育使命)</p>
-
-<p>A history of my approach to teaching(Tony)</p>
-
-<pre><code>As a beginning teacher. I believed in technical rationality.  
-Graduate school. I encountered constructivism.  
-More recently, I learned about complexity science  
-</code></pre>
-
-<p>Classroom as Complex systems: its not an entirely new idea!</p>
-
-<p>Four theoretical principles of complex phenomena or system:<br/>
-1 an emphasis on a non-linear frameworks(Davis, 2004)<br/>
-2 cogintion is not simply representative of what we know but a continual bringing forth of what we know through the process of engagement(Capra,2002)<br/>
-3 open system maintain themselves by being is a state of disquilibrium yet they remain stable nonetheless(Prigogne,1984)<br/>
-4 spontaneous emergence of order from apparent random or unrelated events(2001)</p>
-
-<p>What does your classroom look like？<br/>
-* networks(peer, buddy, teacher, parents)<br/>
-* self-regulation(negotiated curriculum)<br/>
-* feedback loops(pairs, groups, whole class)<br/>
-* disequilibrium(edge of chaos? generative)<br/>
-* nested(student, class, program)</p>
-
-<p>If a classroom or teaching and learning represent complex systems and if we fail to acknowledge them as such&#8230;.
-&#8230;then we are probably failing to allow for, recognize, or take advantage of the emergence of complexity as it arise in our practice.</p>
-
-<p>Five features of complexity that enhance the possibility of emergence<br/>
-Internal redundancy - commonality &#8230;shared understantding<br/>
-Internal diversity -variety &#8230; a rich pool of ideas<br/>
-Neighborhood interactions  -engagement &#8230;ideas bumping up against one another<br/>
-Decentralized control  -democratization &#8230; collective authoring<br/>
-Enabling constraints  playing field &#8230;a generative space</p>
-
-<p>Four implications for classroom:<br/>
-1 surrendering certainty(open eye)<br/>
-2 An emphasis on inquiry(the effort to articulate what we don&#8217;t know)<br/>
-3 Acknowledge Complicity(迭代交互影响)<br/>
-4 Allow for improvisation</p>
-
-<p>Graduate life in UBC and how to apply for UBC</p>
-
-<h3>Friday</h3>
-
-<p>Presentation Report<br/>
-Flash mob<br/>
-Certificate ceremony<br/>
-Feedback Survey<br/>
-Pictures together and say Goodbye.</p>
 ]]></content>
   </entry>
   

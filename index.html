@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="旁白：有人向往远方，有人向往床上 （大我来到小爱的床前，小爱还在睡觉。） 我：有那么多觉要睡吗？睡那么多，死了之后不怕失眠吗？ 爱：谁在唠唠叨叨的呢？把我的美梦都惊扰了！ 我：还睡啊！该去上裴老师的STEM课了！ 爱：啊今天有课？什么课？什么课？ 我：STEM课 爱：弹（tan）幕课有什么好上的？ &hellip;">
+  <meta name="description" content="Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。 比如下面的代码： graph LR A --&gt;B B--&gt;C[fa:fa-ban forbidden] B--&gt;D; > 渲染的结果如下： graph LR A &#8211;>B B&#8211;>C[ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,6 +28,7 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
 
   
 
@@ -67,6 +68,72 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/11/10/use-mermaid-to-render-graph/">Use Mermaid to Render Graph</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-11-10T17:48:00+08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/11/10/use-mermaid-to-render-graph/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。</p>
+
+<p>比如下面的代码：<br/>
+<code></p>
+
+<pre><code>graph LR
+  A --&gt;B
+  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;D; 
+</code></pre>
+
+<p></code>></p>
+
+<p>渲染的结果如下：</p>
+
+<div class="mermaid">
+  graph LR
+      A &#8211;>B
+      B&#8211;>C[fa:fa-ban forbidden]
+      B&#8211;>D;
+
+</div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -400,61 +467,6 @@ conversations:
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/09/07/tips-for-mac-users/">Tips for Mac Users</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-09-07T18:10:00+08:00" pubdate data-updated="true">Sep 7<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/09/07/tips-for-mac-users/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>快捷键：
-Finder
-显示隐藏文件：shift + command + .<br/>
-回到主目录：shift+command+H</p>
-
-<p>需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
-复制：command+c
-粘贴：command+v
-拖拽的功能很厉害。</p>
-
-<p>bash命令：
-复制：cp
-目录：cd
-列表：ls
-移动：mv  源文件 目标文件</p>
-
-<p>重命名：<br/>
-Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -473,6 +485,10 @@ Mac自带有这种功能，你只需要多选文件，然后右键，选择重�
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/11/10/use-mermaid-to-render-graph/">Use mermaid to render Graph</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/11/04/stem-and-love/">STEM &amp; Love</a>
@@ -508,10 +524,6 @@ Mac自带有这种功能，你只需要多选文件，然后右键，选择重�
     
       <li class="post">
         <a href="/blog/2017/08/11/relationships/">社会需要与进化需要</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/06/24/summer-camp-plan-for-kids/">Summer camp plan for kids</a>
       </li>
     
   </ul>

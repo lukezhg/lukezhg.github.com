@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: mermaid | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/mermaid/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2017-11-10T18:46:44+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Use mermaid to render Graph]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph/"/>
+    <updated>2017-11-10T17:48:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph</id>
+    <content type="html"><![CDATA[<p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。</p>
+
+<p>比如下面的代码：<br/>
+<code></p>
+
+<pre><code>graph LR
+  A --&gt;B
+  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;D; 
+</code></pre>
+
+<p></code>></p>
+
+<p>渲染的结果如下：</p>
+
+<div class="mermaid">
+  graph LR
+      A -->B
+      B-->C[fa:fa-ban forbidden]
+      B-->D;
+
+</div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+]]></content>
+  </entry>
+  
+</feed>
