@@ -113,8 +113,19 @@ git:https://github.com/knsv/mermaid/
     C--&gt;D;
 </code></pre>
 
-<p>渲染的结果如下：<br/>
-{% mermaid %}
+<p>渲染的结果如下：</p>
+
+<p>  <div class="mermaid">
+  graph LR</p>
+
+<pre><code>  A --&gt;B
+  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;D;
+</code></pre>
+
+<p>  </div></p>
+
+<p>{% mermaid %}
 graph TD;</p>
 
 <pre><code>A--&gt;B;
