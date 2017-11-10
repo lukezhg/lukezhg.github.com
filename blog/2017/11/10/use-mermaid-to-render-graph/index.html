@@ -9,7 +9,9 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。 比如下面的代码： graph LR A --&gt;B B--&gt;C[fa:fa-ban forbidden] B--&gt;D; > 渲染的结果如下： graph LR A &#8211;>B B&#8211;>C[ &hellip;">
+  <meta name="description" content="Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。
+git:https://github.com/knsv/mermaid/ 比如下面的代码： graph TD; A--&gt;B; A--&gt;C; B--&gt;D; C--&gt;D; 渲染的结果如下：
+{% &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,10 +31,6 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="https://unpkg.com/mermaid@7.0.0/dist/mermaid.css">
-
-<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
   
 
 </head>
@@ -99,35 +97,29 @@
   </header>
 
 
-<div class="entry-content"><p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。</p>
+<div class="entry-content"><p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。<br/>
+git:https://github.com/knsv/mermaid/</p>
 
-<p>比如下面的代码：<br/>
-<code></p>
+<p>比如下面的代码：</p>
 
-<pre><code>graph LR
-  A --&gt;B
-  B--&gt;C[fa:fa-ban forbidden]
-  B--&gt;D; 
+<pre><code>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
 </code></pre>
 
-<p></code>></p>
+<p>渲染的结果如下：<br/>
+{% mermaid %}
+graph TD;</p>
 
-<p>渲染的结果如下：</p>
+<pre><code>A--&gt;B;
+A--&gt;C;
+B--&gt;D;
+C--&gt;D;
+</code></pre>
 
-<div class="mermaid">
-  graph LR
-      A &#8211;>B
-      B&#8211;>C[fa:fa-ban forbidden]
-      B&#8211;>D;
-
-</div>
-
-
-<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
-
-
-<script>mermaid.initialize({startOnLoad:true});</script>
-
+<p>{% endmermaid %}</p>
 </div>
 
 

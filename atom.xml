@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-10T19:31:15+08:00</updated>
+  <updated>2017-11-10T19:51:50+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,35 +18,29 @@
     <link href="http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph/"/>
     <updated>2017-11-10T17:48:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph</id>
-    <content type="html"><![CDATA[<p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。</p>
+    <content type="html"><![CDATA[<p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。<br/>
+git:https://github.com/knsv/mermaid/</p>
 
-<p>比如下面的代码：<br/>
-<code></p>
+<p>比如下面的代码：</p>
 
-<pre><code>graph LR
-  A --&gt;B
-  B--&gt;C[fa:fa-ban forbidden]
-  B--&gt;D; 
+<pre><code>graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
 </code></pre>
 
-<p></code>></p>
+<p>渲染的结果如下：<br/>
+{% mermaid %}
+graph TD;</p>
 
-<p>渲染的结果如下：</p>
+<pre><code>A--&gt;B;
+A--&gt;C;
+B--&gt;D;
+C--&gt;D;
+</code></pre>
 
-<div class="mermaid">
-  graph LR
-      A &#8211;>B
-      B&#8211;>C[fa:fa-ban forbidden]
-      B&#8211;>D;
-
-</div>
-
-
-<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
-
-
-<script>mermaid.initialize({startOnLoad:true});</script>
-
+<p>{% endmermaid %}</p>
 ]]></content>
   </entry>
   
