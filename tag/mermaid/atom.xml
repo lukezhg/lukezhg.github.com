@@ -4,7 +4,7 @@
   <title><![CDATA[tags: mermaid | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/mermaid/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-10T22:56:34+08:00</updated>
+  <updated>2017-11-10T23:04:51+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -35,15 +35,12 @@ C --&gt;|Three| F[Car]
 <p>渲染的结果如下：<br/>
 <img src="https://github.com/lukezhg/Freyja/raw/master/mermaid.png" alt="mermaid graph" /></p>
 
-<p>  <div class="mermaid">
-  graph LR</p>
+<div class="mermaid">
+graph LR;A -->B;B-->C(hao);B-->D;
+</div>
 
-<pre><code>  A --&gt;B
-  B--&gt;C(hao)
-  B--&gt;D;
-</code></pre>
 
-<p>  </div></p>
+
 
 <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
 
@@ -54,8 +51,9 @@ C --&gt;|Three| F[Car]
 
 
 <p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
-From the Command Palette: Mermaid: View In Browser
-快捷键：shift+command+p</p>
+From the Command Palette: Mermaid: View In Browser</p>
+
+<p>快捷键：shift+command+p</p>
 ]]></content>
   </entry>
   
