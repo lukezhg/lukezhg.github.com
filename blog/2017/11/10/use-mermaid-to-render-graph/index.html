@@ -27,7 +27,7 @@ git:https://github.com/knsv/mermaid/
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   
-  <link rel="stylesheet" href="https://unpkg.com/mermaid@7.0.0/dist/mermaid.css">
+  <link rel="stylesheet" href="/stylesheets/mermaid.css">
 
   <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -106,20 +106,22 @@ git:https://github.com/knsv/mermaid/
 
 <p>比如下面的代码：</p>
 
-<pre><code>graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
+<pre><code>graph TD
+A[Christmas] --&gt;|Get money| B(Go shopping)
+B --&gt; C{Let me think}
+C --&gt;|One| D[Laptop]
+C --&gt;|Two| E[iPhone]
+C --&gt;|Three| F[Car]
 </code></pre>
 
-<p>渲染的结果如下：</p>
+<p>渲染的结果如下：<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mermaid.png" alt="mermaid graph" /></p>
 
 <p>  <div class="mermaid">
   graph LR</p>
 
 <pre><code>  A --&gt;B
-  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;C(hao)
   B--&gt;D;
 </code></pre>
 
@@ -130,6 +132,10 @@ git:https://github.com/knsv/mermaid/
 
 <script>mermaid.initialize({startOnLoad:true});</script>
 
+
+<p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
+From the Command Palette: Mermaid: View In Browser
+快捷键：shift+command+p</p>
 </div>
 
 

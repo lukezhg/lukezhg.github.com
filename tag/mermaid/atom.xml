@@ -4,7 +4,7 @@
   <title><![CDATA[tags: mermaid | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/mermaid/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-10T21:42:34+08:00</updated>
+  <updated>2017-11-10T22:38:12+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -24,28 +24,22 @@ git:https://github.com/knsv/mermaid/
 
 <p>比如下面的代码：</p>
 
-<pre><code>graph TD;
-    A--&gt;B;
-    A--&gt;C;
-    B--&gt;D;
-    C--&gt;D;
-</code></pre>
-
-<p>渲染的结果如下：<br/>
-<code>mermaid
-graph TD
+<pre><code>graph TD
 A[Christmas] --&gt;|Get money| B(Go shopping)
 B --&gt; C{Let me think}
 C --&gt;|One| D[Laptop]
 C --&gt;|Two| E[iPhone]
 C --&gt;|Three| F[Car]
-</code></p>
+</code></pre>
+
+<p>渲染的结果如下：<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mermaid.png" alt="mermaid graph" /></p>
 
 <p>  <div class="mermaid">
   graph LR</p>
 
 <pre><code>  A --&gt;B
-  B--&gt;C[fa:fa-ban forbidden]
+  B--&gt;C(hao)
   B--&gt;D;
 </code></pre>
 
@@ -56,6 +50,10 @@ C --&gt;|Three| F[Car]
 
 <script>mermaid.initialize({startOnLoad:true});</script>
 
+
+<p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
+From the Command Palette: Mermaid: View In Browser
+快捷键：shift+command+p</p>
 ]]></content>
   </entry>
   
