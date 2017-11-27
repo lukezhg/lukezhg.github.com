@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-13T19:27:17+08:00</updated>
+  <updated>2017-11-27T12:08:10+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to run JS node and appche]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/11/27/how-to-run-js-node-and-appche/"/>
+    <updated>2017-11-27T11:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/11/27/how-to-run-js-node-and-appche</id>
+    <content type="html"><![CDATA[<p>最近接触了不少Java script的代码，但是如何让这些代码运行起来呢？</p>
+
+<p>有两个办法最可行，一个是node，一个是开服务器appche。</p>
+
+<p>对应的可以参考这两个网页：<br/>
+node.js&#8211;><a href="https://nodejs.org">https://nodejs.org</a><br/>
+appche&#8211;><a href="http://www.jianshu.com/p/d006a34a343f">http://www.jianshu.com/p/d006a34a343f</a></p>
+
+<p>Node可以直接在本地运行javascript，比如读写文件。<br/>
+appche直接开服务器来实现数据的储存，可以配合mysql一起使用。</p>
+
+<p>比如Node读文件的代码(demo_readfile.js)：</p>
+
+<pre><code>var http = require('http');
+var fs = require('fs');
+http.createServer(function (req, res) {
+  fs.readFile('demofile1.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end();
+  });
+}).listen(8080);
+</code></pre>
+
+<p>再比如Node写文件的代码（demo_fs_write.js）：</p>
+
+<pre><code>var fs = require('fs');
+//create a file named mynewfile3.txt:
+fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});
+</code></pre>
+
+<p>Mac系统自带了Apache，需要设置和启动即可，具体设置可以查考上面简书的文章。</p>
+
+<p>常用端口命令：</p>
+
+<pre><code>httpd -v #查看apache的版本信息
+sudo apachectl start
+sudo apachectl stop
+sudo apachectl restart
+sudo apachectl -t #检测配置文件语法是否有错
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[超级城市与潜在的机会]]></title>
@@ -806,90 +858,6 @@ score = model.evaluate(x_test, y_test, batch_size=128)
 <p>一个人一定要有爱的能力，感知爱、消受爱、给予爱。因为它是我们给予这个世界的最好礼物，也或许是人类最宝贵的财富。</p>
 
 <p>这些文字就算是情人节礼物吧！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[加拿大卓越教师项目总结]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/02/13/ubc-program-summary/"/>
-    <updated>2017-02-13T12:48:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/02/13/ubc-program-summary</id>
-    <content type="html"><![CDATA[<p>21天的紧张学习，一次特别意义的春节，3次新奇而愉快校园之旅，在我们全员参与的一场快闪热舞之后落下帷幕。有<a href="https://v.qq.com/x/page/a0371cjogl2.html">视频</a>为证。</p>
-
-<p><embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=a0371cjogl2&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
-
-<p>这次培训项目是Tony老师为我们师范生精心准备和量身打造的、高质量的课程。当中 有很多教育理念、教学技巧、策略以及教学活动都值得未来教师教育项目参考和借鉴。</p>
-
-<p>其中给我形象最为深刻的活动如下：<br/>
-1、教育印象（image of schooling: An image about teaching or learning that has some meaning to you）<br/>
-2、劈叉苦茶 Pechakucha Pairs(15seconds X20 pages) 开学第一天就明确最后作业<br/>
-Planning Sheet for Pechakucha- peer review<br/>
-3、在地性学习（place-based learning &#8211; interviewing the campus）<br/>
-4、读书进程 （Reading Schedule）<br/>
-5、TPI survey<br/>
-6、Multiple Intelligence survey<br/>
-7、学习经历短剧（Skit that illustrates your experience as a student）<br/>
-8、学校观察（New understanding and questions about teachers, students, subject matter, Milieux）<br/>
-9、个体帮助（Meet with professor Marina Milner-Bolotin）<br/>
-10、社会和情感学习能力（Self-awareness, Social awareness, Responsible decision-making, self-management, relationship skills）</p>
-
-<h3>教育策略及其背后理念:</h3>
-
-<p>可视化（教育是认知加工辅助）如画示意图<br/>
-游戏化（教育是刺激反应连接）如开展比赛，教师团队和学生团队pk，4人讲同一主题，两两一组，同课异构，相互PK，一方做教师另外一方就做学生，另外4人担任裁判，做教学记录，并最终在支持的一方处签名。<br/>
-民主化（教育是社会文化转型）如让学生决定准备时间，分权而不是控制<br/>
-意义化（教育是意义主动构建）如参观学校主动构建对学校教育的理解</p>
-
-<h3>具体的做法和技巧：</h3>
-
-<p>Philosophy of teaching statement<br/>
-short test<br/>
-Fill the form sheet to draw your conclusion</p>
-
-<h3>Group work</h3>
-
-<p>1、Think-pair-share<br/>
-2、Jigsaw<br/>
-3、Three step interview(interview alternate and then share in group)<br/>
-4、Group Investigation(找到共同兴趣点、计划研究内容、研究任务分工、分析、总结、报告)</p>
-
-<p>divide into different groups by taking off a shoe</p>
-
-<h3>Inquiry based activities</h3>
-
-<p>1、Use factoid to provoke student questions(e.g.: Tornadoes are nearly invisible whirling winds until dust and debris are picked up or a cloud forms inside the funnel.)<br/>
-2、Push student thinking by asking questions(What do you wonder about now? Does this suggest any new approaches, ideas to you worth investigating? what kinds of connections can you make? where do we go from here?)<br/>
-3、Slow down<br/>
-4、Be on the look out for student&#8217;s questions and persistent interests<br/>
-5、Use previous activities to move forward<br/>
-6、Help students make sense of non-fiction text（by different symbols）</p>
-
-<p>促进学生思考的策略：<br/>
-分享教学目标、关键问题或面临的挑战<br/>
-随机提问<br/>
-Wait Time<br/>
-澄清或转述学生的回答<br/>
-追问（为什么？你同意吗？你能举个例子吗？）<br/>
-让学生总结（你可以总结一下小丽的观点吗？）<br/>
-克制价值判断性言论<br/>
-让学生外化思维过程（你是怎么得出这个答案的？）<br/>
-信息可视化（如图片组织者）</p>
-
-<p>简单学习策略<br/>
-时间伙伴（clock buddies）<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/clock_buddies.png" alt="clock buddiest" />
-Think, Pair, Share(2分钟独立思考，2分钟同伴交流，最后班级分享)<br/>
-图形组织者<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/graphic_organizer.png" alt="graphic organizert" /><br/>
-PMI chart<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/PMI.png" alt="PMI chart" /></p>
-
-<p>更复杂的学习策略<br/>
-3 step interview（访谈者，被访谈者，报告员，3个主题的访谈，每一轮角色轮换一次）<br/>
-角色扮演\skit（情景短剧）<br/>
-拼图Jigsaw（每组派一名学生去专家组学习，然后返回学习小组进行分享）<br/>
-Place Mat<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/PlaceMat.png" alt="Place Mat" /></p>
 ]]></content>
   </entry>
   

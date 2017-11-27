@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="一、如何使得地址栏既能输入网址又能作为搜索引擎1. 在Firefox地址栏输入 about:config2. 在过滤器输入框中输入 keyword.URL3. 双击出现的首选项，将其值修改为百度：http://www.baidu.com/s?ie=UTF-8&amp;wd=谷歌：http:// &hellip;">
+  <meta name="description" content="本来想安装3d桌面但是出了很多问题，后来直接进不去系统了，发现自己这个本本显卡实在是不给力，(ausu 1101 ha Intel gma500)，后来放弃了。但是我觉得还是需要一个像苹果一样的任务栏，这样会提高的工作效率（也许）。所以就安装了cairo-dock，结果把先前的软件都卸载之后， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +70,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/02/ubuntu/">安装ubuntu3d桌面的问题</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-02T00:00:00+08:00" pubdate data-updated="true">May 2<span>nd</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/02/ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>本来想安装3d桌面但是出了很多问题，后来直接进不去系统了，发现自己这个本本显卡实在是不给力，(ausu 1101 ha Intel gma500)，后来放弃了。但是我觉得还是需要一个像苹果一样的任务栏，这样会提高的工作效率（也许）。所以就安装了cairo-dock，结果把先前的软件都卸载之后，安装了这个发现，桌面标题栏不见了，白茫茫一篇，后来上网查，发现是：<br /><br />metacity不知道是什么原因，更某个程序发生了冲突，我怀疑是安装3d桌面的时候，一个程序的设置保留下来了。现在我只有每次都在开机后，执行sudo metacity &#8211;replace这样一般就能好了。 虽然还是有的窗口刷新不对，比如firefox的scribefire。<br /><br />我想每次都输入这个命令很累，其实有些其他的程序我也想启动，一般可以用系统-启动程序来达成，但是如何让系统开机后就自动执行某个命令呢？<br />1 修改/etc/rc.local 未果<br />2 修改/etc/profile 或者把执行脚本.sh的文件放入到profile.d文件夹中<br /><br />但是据说要授权，如何授权呢？<b>未果。</b><br /><br />其实解决问题的根本还是找到为什么会冲突，搜索“窗口管理器metacity没有打开”结果看到下面这个文章：<br />UBUNTU中的Metacity窗口管理器_问草_百度空间 http://hi.baidu.com/069liuqing/blog/item/4fe900d7fb8c43dba044dfe3.html <br /><br />原来是安装compiz fusion又卸载之后的后遗症，需要把一个参数改一下：<br /><blockquote> Alt + F2，打开“运行应用程序”对话框。输入 gconf-editor，并按回车。<p> 导航到 Apps-&gt;<strong style="color: black; background-color: rgb(255, 255, 102);">metacity</strong>-&gt;general，并选中 compositing_manager，将其值改为false</p></blockquote> 这样就没有冲突了，问题解决。可以正常使用cairo-dock了。<br /><br /><br /><br /><br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=8c289d3a-4a16-81ee-a22f-884af59fd414" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -228,60 +266,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/31/howto-use-RE-get-links/">如何把暗文超级链接转换成明文链接呢</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-31T00:00:00+08:00" pubdate data-updated="true">Mar 31<span>st</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/31/howto-use-RE-get-links/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><b>问题描述：</b>在分享资料的时候，有些编辑器或者邮件不支持暗文超级连接，于是这些超级链接就面临着丢失的危险，如何把原文含有暗文连接的文章，转换成明文连接呢？<br /><br /><b>问题解决：</b><br />问题已经部分得到了解决，也就是可以利用<b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>+regex</b><br /><br /><b><span class="il">正</span><span class="il">则</span><span class="il">表达</span><span class="il">式</span>wiki</b>: <a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank">http://zh.wikipedia.org/wiki/%<wbr />E6%AD%A3%E5%88%99%E8%A1%A8%E8%<wbr />BE%BE%E5%BC%8F</a><br /><b>regex</b>: <a href="http://regexlib.com/RETester.aspx" target="_blank">http://regexlib.com/RETester.<wbr />aspx</a><br /><br /><b>我使用的<span class="il">表达</span><span class="il">式</span></b>：[a-zA-z]+://[^\s]*<br /><span class="il">表达</span><span class="il">式</span>来自：<a href="http://www.williamlong.info/archives/433.html" target="_blank">http://www.williamlong.<wbr />info/archives/433.html</a><br /><br /><a href="http://xn--6kqp98bmja49j0uyh0b23mqsjmp5b.cn/" target="_blank">由于我找的网站都是.cn</a>结尾的，<a href="http://xn--fhqrlwjv5kjtb9li3pmnzbma9746b.cn/" target="_blank">所以我又在后面加上了.cn</a>&nbsp; <span class="il">表达</span><span class="il">式</span>变为：[a-zA-z]+://[^\s]*.cn<br /><br />一下子网站地址就都出来了 <br /><br /><b>谢谢ZQ的指点！</b><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=202bca68-a0a8-862a-b8f0-719ad6ac435e" /></div></p>
-
-如何在新窗口打开链接地址呢？  
-只需要在source\includes\custom\head.html文件后面添加下面的代码,代码外面别忘了加
-<pre><code>
-<script>
-function addBlankTargetForLinks () {
-  $('a[href^="http"]').each(function(){
-      $(this).attr('target', '_blank');
-  });
-}
-
-$(document).bind('DOMNodeInserted', function(event) {
-  addBlankTargetForLinks();
-});
-</script>
-</pre></code>
-参考(李顺利的博文)[http://www.blogjava.net/lishunli/archive/2013/01/20/394478.html]  </div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/65/">&larr; Older</a>
@@ -302,6 +286,10 @@ $(document).bind('DOMNodeInserted', function(event) {
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/11/27/how-to-run-js-node-and-appche/">How to run JS node and appche</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/11/13/super-city-and-abc/">超级城市与潜在的机会</a>
@@ -339,15 +327,11 @@ $(document).bind('DOMNodeInserted', function(event) {
         <a href="/blog/2017/09/07/haxe-sublime-packagecontrol/">Haxe Sublime PackageControl</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/09/04/spcae-craft-game/">Space Craft Game</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/反思'>反思 (8)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/反思'>反思 (8)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
