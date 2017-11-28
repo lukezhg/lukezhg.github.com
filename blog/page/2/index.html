@@ -319,8 +319,9 @@ conversations:
   </header>
 
 
-  <div class="entry-content"><p>快捷键：
-Finder
+  <div class="entry-content"><h1>快捷键：</h1>
+
+<p>Finder
 显示隐藏文件：shift + command + .<br/>
 回到主目录：shift+command+H</p>
 
@@ -329,14 +330,64 @@ Finder
 粘贴：command+v
 拖拽的功能很厉害。</p>
 
-<p>bash命令：
-复制：cp
+<h1>bash命令：</h1>
+
+<p>复制：cp
 目录：cd
 列表：ls
 移动：mv  源文件 目标文件</p>
 
-<p>重命名：<br/>
-Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
+<h1>批量重命名：</h1>
+
+<p>Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
+
+<h1>设置文件：</h1>
+
+<pre><code>vi ~/.bash_profile  #编辑设置文件
+ls -l -a   列出指定目录下文件
+           -l 显示文件的详细信息
+           -a 显示目录下所有文件（包括隐藏文件）
+           -d 显示指定目录pwd  显示当前的工作目录的路径
+touch 目录名：查看指定文件，若没有此文件则创建空文件；更改文件时间戳
+chmod 更改指定文件或目录的权限
+</code></pre>
+
+<h1>进程管理</h1>
+
+<pre><code>ps aux 静态查看进程
+top 动态查看进程
+kill 杀死进程
+kill -9 pid       杀死指定进程
+</code></pre>
+
+<h1>其他命令</h1>
+
+<pre><code>man  显示帮助文件（按q退出）
+ifconfig 查看或修改ip地址
+sudo 以root权限执行一次命令
+clear / ctrl+L   清屏
+ctrl+C     无条件终止
+</code></pre>
+
+<h1>文件操作</h1>
+
+<pre><code>rm –rf * 强制删除当前目录下所有文件
+rm -rf        删除文件或目录
+cp -r         复制文件
+mv         移动文件
+stat 文件名  查看文件详细信息
+find  查找文件
+find / -name *       查找文件
+mkdir   创建新目录
+rmdir   只能删除空目录
+</code></pre>
+
+<h1>修改文件：</h1>
+
+<pre><code>echo:输出字符串或变量值
+echo “字符串” &gt; file  #用&gt;时，指定的文件若不存在，创建文件；若存在，覆盖原文件内容
+echo “字符串” &gt;&gt; file #用&gt;&gt;时，指定的文件若不存在，创建文件；若存在，在原文件内容后追加内容
+</code></pre>
 </div>
   
   
