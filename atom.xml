@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-11-28T22:10:34+08:00</updated>
+  <updated>2017-12-15T20:38:56+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AJAX and Chatbot]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/15/ajax-and-chatbot/"/>
+    <updated>2017-12-15T20:14:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/15/ajax-and-chatbot</id>
+    <content type="html"><![CDATA[<p>AJAX是一个缩写，代表：Asynchronous JavaScript And XML.</p>
+
+<pre><code>AJAX is a developer's dream, because you can:
+# Read data from a web server - after the page has loaded
+# Update a web page without reloading the page
+# Send data to a web server - in the background
+</code></pre>
+
+<p>今天改写了一个代码实现了聊天的过程中不需要重新加载页面。代码如下：</p>
+
+<p>urls.py</p>
+
+<pre><code>url(r'^api/chat/', post), 
+</code></pre>
+
+<p>view.py</p>
+
+<pre><code>def post(request, *args, **kwargs):
+    """
+    Return a response to the statement in the posted data.
+    """
+    bot = ChatBot("Training Example")
+    bot.set_trainer(ListTrainer)
+    input_data = json.loads(request.read().decode('utf-8'))
+    response = bot.get_response(input_data)
+    response_data = response.serialize()
+    return JsonResponse(response_data, status=200)
+</code></pre>
+
+<p>chat.html</p>
+
+<pre><code>&lt;script&gt;
+  var chatterbotUrl = '/api/chat/';
+  var csrftoken = Cookies.get('csrftoken');
+  function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+  }
+
+  $.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+      if (!csrfSafeMethod(settings.type) &amp;&amp; !this.crossDomain) {
+        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+      }
+    }
+  });
+
+  var $input = $('#input');
+  var $sayButton = $('#sayButton');
+  var $answer = $('#answer');
+
+  function submitInput() {
+    var inputData = {
+      'text': $input.val()
+    }
+    var $submit = $.ajax({
+      type: 'POST',
+      url: chatterbotUrl,
+      data: JSON.stringify(inputData),
+      contentType: 'application/json'
+    });
+
+    $submit.done(function(statement) {
+        $answer.val(statement.text);
+        // Clear the input field
+        $input.val('');
+        //alert(statement.text)
+    });
+
+  $sayButton.click(function() {
+    submitInput();
+  });
+</code></pre>
+
+<p>原理是这样的，首先你需要通过urls.py文件指定在请求特定url的时候，触发的函数。这个函数是在view.py中定义的，也就是post函数。post函数需要至少一个参数，也就是request，request必须包含一个text的属性才能被read()出来而不出错。之后，post函数会返回一个JsonResponse，其中机器人的回答可以通过statement.text来获取和使用，见chat.html中的$submit.done函数。</p>
+
+<p>当不知道传递的是何值时，可以通过html 中的alert或者python中的print（）来监听调试。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to run JS node and appche]]></title>
@@ -397,7 +482,7 @@ conversations:
     <link href="http://zhangchunlei.com/blog/2017/09/07/tips-for-mac-users/"/>
     <updated>2017-09-07T18:10:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2017/09/07/tips-for-mac-users</id>
-    <content type="html"><![CDATA[<h1>快捷键：</h1>
+    <content type="html"><![CDATA[<h2>快捷键：</h2>
 
 <p>Finder
 显示隐藏文件：shift + command + .<br/>
@@ -408,14 +493,14 @@ conversations:
 粘贴：command+v
 拖拽的功能很厉害。</p>
 
-<h1>bash命令：</h1>
+<h2>bash命令：</h2>
 
 <p>复制：cp
 目录：cd
 列表：ls
 移动：mv  源文件 目标文件</p>
 
-<h1>批量重命名：</h1>
+<h2>批量重命名：</h2>
 
 <p>Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
 
@@ -430,7 +515,7 @@ touch 目录名：查看指定文件，若没有此文件则创建空文件；�
 chmod 更改指定文件或目录的权限
 </code></pre>
 
-<h1>进程管理</h1>
+<h2>进程管理</h2>
 
 <pre><code>ps aux 静态查看进程
 top 动态查看进程
@@ -438,7 +523,7 @@ kill 杀死进程
 kill -9 pid       杀死指定进程
 </code></pre>
 
-<h1>其他命令</h1>
+<h2>其他命令</h2>
 
 <pre><code>man  显示帮助文件（按q退出）
 ifconfig 查看或修改ip地址
@@ -447,7 +532,7 @@ clear / ctrl+L   清屏
 ctrl+C     无条件终止
 </code></pre>
 
-<h1>文件操作</h1>
+<h2>文件操作</h2>
 
 <pre><code>rm –rf * 强制删除当前目录下所有文件
 rm -rf        删除文件或目录
@@ -460,11 +545,31 @@ mkdir   创建新目录
 rmdir   只能删除空目录
 </code></pre>
 
-<h1>修改文件：</h1>
+<h2>修改文件：</h2>
 
 <pre><code>echo:输出字符串或变量值
 echo “字符串” &gt; file  #用&gt;时，指定的文件若不存在，创建文件；若存在，覆盖原文件内容
 echo “字符串” &gt;&gt; file #用&gt;&gt;时，指定的文件若不存在，创建文件；若存在，在原文件内容后追加内容
+</code></pre>
+
+<h2>ssh文件同步</h2>
+
+<p>同步到服务器</p>
+
+<pre><code>scp -r localhome/* root@ip:/home/localhome/
+</code></pre>
+
+<p>同步到本地</p>
+
+<pre><code>scp -r root@ip:/home/localhome/* localhome／
+</code></pre>
+
+<h2>多个Python共存</h2>
+
+<pre><code>pyenv versions #参看版本信息
+pyenv global 3.6.3 #切换3
+pyenv global 2.7.13 #切换到2
+source ~/.bash_profile
 </code></pre>
 ]]></content>
   </entry>
@@ -873,42 +978,6 @@ score = model.evaluate(x_test, y_test, batch_size=128)
 3、新型教师：你将成为怎样的新型教师以适应这个时代的变化发展<br/>
 4、学校教育印象：描述你印象深刻的、对你有很重要影响的事件。<br/>
 5、交互式短剧：短剧中的角色的命运会受到观众的影响，剧情也会根据观众的投票或反应而发生变化。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[爱是我们最宝贵的财富]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/02/14/love-is-our-best-legacy/"/>
-    <updated>2017-02-14T10:55:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/02/14/love-is-our-best-legacy</id>
-    <content type="html"><![CDATA[<p>爱是什么？</p>
-
-<p>它是人与人的一种积极互赖人际关系。如果进一步拓展，它也可以是人与一切事物的积极互赖关系。比如你可以爱父母、爱配偶、爱子女，也可以爱家庭、爱家乡、爱祖国，还可以爱空气、爱原野、爱大海、爱大自然。</p>
-
-<p><img src="https://raw.github.com/lukezhg/Freyja/master/lovesea.jpg" alt="love" /></p>
-
-<p>爱不仅是言语，更是行动。<br/>
-爱有时需要勇气。<br/>
-爱是有条件的，但却并不刻求回报。<br/>
-爱像火，它发光发热。它可以照亮他人，也可以温暖他人，还可以召唤起别人爱之火。爱可以产生更多的爱。<br/>
-理智相似一个壁炉，如果完全密闭空气，爱就会熄灭，如果完全破除，爱就容易泛滥成灾。<br/>
-爱不一定导致好的结果，但是缺乏爱的世界注定不精彩。</p>
-
-<p>人本生来就有爱，爱是人的一种固有品性和能力。同情心和换位思考就是爱的基础。但是，它也会被阴影淹没，被冰冷的枷锁束缚，进而让人失去爱的能力而变得麻木。比如嫉妒、仇恨、冷漠会让人弃爱不顾。刻板的职业角色和观念会让人麻木不仁，失去感受爱的能力。沉迷和上瘾会让人无暇为爱行动。</p>
-
-<p>爱是如此珍贵和重要，所以人一定不要失去爱的能力。爱的能力包括感知、消化、行动三种能力，下面分别介绍。</p>
-
-<p>首先是感知爱的能力。这在很大程度上，取决于你设置的临界点。有的人把这个临界点设置的很低，所以他容易感动，也容易做出爱的行动，从而也更大的机会获得爱。有的人把这个临界点设置的很高，所以他难于感受到别人的爱，也不愿意给予爱，这样一来也就更难获得别人的爱。就像笑点很低的人最开心一样，爱点低的人更幸福。当一个人对别人期望越大，实际上其设置的爱点也越大，其结果往往是失望越大。</p>
-
-<p>其次是消化爱的能力。有人获得了别人的爱，受宠若惊，不知所措。有的人则骄傲自大，认为理所应当。还有的人会心生歉疚，认为自己不配拥有。从感知爱到产生爱的行动，这就是爱的消化过程。它直接决定着爱是否能传递下去。如果认为别人的爱是天经地义、理所应当，就不会升起一颗感恩之心，爱的感知也就不会转化为爱的行动。人人爱我，就不会产生我爱人人。而起决定作用的就是那颗感恩之心。</p>
-
-<p>最后是爱的行动能力，也就是给予爱的能力。爱有大小长短之分。如果某人爱你，你也爱某人，这是小爱。如果某人爱你，而你爱人人，这是大爱。&#8221;投我以桃，报之以李&#8221;是短爱，&#8221;两情若是久长时，又岂在朝朝暮暮&#8221;是长爱。做出爱的行动是需要智慧和勇气的，同时也需要毅力和才能。所谓“穷则独善其身，达者兼济天下”，这穷和达固然可以理解为财富或权利，也可以理解为做出爱的行动能力。</p>
-
-<p>爱虽有大小长短之分，但却并无高低贵贱之别。或大或小，或长或短，所有真心的爱都值得珍惜拥有，都能让这个世界更美好。</p>
-
-<p>一个人一定要有爱的能力，感知爱、消受爱、给予爱。因为它是我们给予这个世界的最好礼物，也或许是人类最宝贵的财富。</p>
-
-<p>这些文字就算是情人节礼物吧！</p>
 ]]></content>
   </entry>
   
