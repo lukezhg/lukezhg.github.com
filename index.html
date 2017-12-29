@@ -9,7 +9,9 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="皮克斯制作的动画比如《玩具总动员》，《汽车总动员》，《头脑特工队》都深受观众喜爱。这次又出了新作《寻梦环游记》不仅获得了很高的票房，而且也得到了观众和影评人的一致好评。皮克斯成功的秘诀是什么呢？公司老总给出的答案是：故事、故事还是故事。 郝广才曾经在得到直播专分享过英雄故事的写作元素。 郝广才说， &hellip;">
+  <meta name="description" content="Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：
+1、首先在html网页中通过object嵌入swf文件 &lt;body&gt;
+&lt;object type="application/x-shockwave-flash" data &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +72,99 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/12/29/swf-send-data-to-java-script/">Swf Send Data to Java Script</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-29T19:21:00+08:00" pubdate data-updated="true">Dec 29<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/12/29/swf-send-data-to-java-script/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
+1、首先在html网页中通过object嵌入swf文件</p>
+
+<pre><code>&lt;body&gt;
+&lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+&lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+&lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+&lt;/object&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>2、在网页的头部嵌入要调用的函数hello</p>
+
+<pre><code>&lt;script&gt;
+    function hello(v){ 
+        alert("hello: "+v);
+        document.location.href = '/search';
+    }
+    function callFromFlash() { 
+        var a=thisMovie("test").hello(); 
+            alert(a); 
+    } 
+    function thisMovie(movieName) { 
+        if (navigator.appName.indexOf("Microsoft") != -1) { 
+            return window[movieName] 
+        } 
+        else { 
+            return document[movieName] 
+        } 
+    }
+&lt;/script&gt;
+</code></pre>
+
+<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮</p>
+
+<pre><code>package {
+import flash.net.*;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.display.MovieClip;
+import flash.external.ExternalInterface; 
+public class test extends MovieClip {
+    public function test(): void {
+        submit.addEventListener(MouseEvent.CLICK, postForm);
+    }
+    private function postForm(evt: MouseEvent): void {
+        ExternalInterface.call("hello", txt1.text); 
+    }
+}
+</code></pre>
+
+<p>4、实现的效果如下：<br/>
+当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。</p>
+
+<p>5、原理解释<br/>
+fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -382,80 +477,6 @@ sudo apachectl -t #检测配置文件语法是否有错
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/11/12/science-theater/">Science Theater</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-11-12T10:44:00+08:00" pubdate data-updated="true">Nov 12<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/11/12/science-theater/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>虽然科学推动社会发展的力量已经被广泛认可，但是科学家以及他们的生活史常常不为人所知。</p>
-
-<pre><code>比如伽利略有过3个孩子，他为了专心研究，让他的一个朋友娶了跟了自己多年的女人，  
-把自己的女儿送到了修道院当修女。为了筹集资金进行天文观测，还许诺用捐助者的  
-姓名命名新发现的行星。  
-</code></pre>
-
-<p>普及科学，其实不仅要普及科学知识，其实还应该增强大众对科学家的理解。在学校里，我们采用的方式通常是科学史的说教。这种方式对有考试要求的学生也许有用，但是对一般大众而言，几乎必然失败。</p>
-
-<p>那么，如何让大众了解科学家以及他们的科学发现呢？科学戏剧提供了一种可选的途径。</p>
-
-<p>科学戏剧作为科学过程的隐喻，可以在一定程度上反映科学家的生活史，尽管戏剧必然会有虚构的成分。但是，即便是这种虚构的成分，仍然有助于公众对科学家有更多的认识和批判。虚构在某种程度上正好梳理了批判的靶子。</p>
-
-<p>那么科学戏剧是如何反应科学家的生活史的呢？对应的关系框架如下：<br/>
-1、科学家作为角色<br/>
-性格和特点<br/>
-主角和配角</p>
-
-<p>2、实验室作为舞台<br/>
-科学工具、物品作为角色</p>
-
-<p>3、科学概念：源起和最终阶段<br/>
-争议作为情节驱动力<br/>
-干扰事件</p>
-
-<p>每个故事的构成要素：情境、开头、意外、结尾。比如下面的一段故事情节：</p>
-
-<pre><code>一天晚上，牛顿躺在苹果树下的睡椅上休息。一颗苹果掉了下来，……
-但是月亮却还在移动，没有掉落下来，这激发了牛顿的思考。为什么，苹果会掉下来，
-而月亮不会。如果以很高的速度把苹果抛出去，苹果会不会像月亮一样永远不会掉下来呢？  
-最终牛顿发现了引力。
-</code></pre>
-
-<p>关于科学戏剧的思考：<br/>
-What is the educational value of science theater? Nature of science; the life history of scientists; the process of sciences; what else?</p>
-
-<p>Science theater may not be real, but science theater repopulates sciences.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -474,6 +495,10 @@ What is the educational value of science theater? Nature of science; the life hi
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/12/29/swf-send-data-to-java-script/">Swf send data to Java Script</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/12/18/the-writing-tips-of-the-story-coco/">《寻梦环游记》的故事元素</a>
@@ -509,10 +534,6 @@ What is the educational value of science theater? Nature of science; the life hi
     
       <li class="post">
         <a href="/blog/2017/09/28/impression/">印象管理</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/09/18/how-to-write-a-summary/">如何写文章摘要</a>
       </li>
     
   </ul>

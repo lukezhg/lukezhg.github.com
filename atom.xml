@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-18T11:24:41+08:00</updated>
+  <updated>2017-12-29T19:41:41+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,70 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Swf send data to Java Script]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/"/>
+    <updated>2017-12-29T19:21:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script</id>
+    <content type="html"><![CDATA[<p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
+1、首先在html网页中通过object嵌入swf文件</p>
+
+<pre><code>&lt;body&gt;
+&lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+&lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+&lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+&lt;/object&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>2、在网页的头部嵌入要调用的函数hello</p>
+
+<pre><code>&lt;script&gt;
+    function hello(v){ 
+        alert("hello: "+v);
+        document.location.href = '/search';
+    }
+    function callFromFlash() { 
+        var a=thisMovie("test").hello(); 
+            alert(a); 
+    } 
+    function thisMovie(movieName) { 
+        if (navigator.appName.indexOf("Microsoft") != -1) { 
+            return window[movieName] 
+        } 
+        else { 
+            return document[movieName] 
+        } 
+    }
+&lt;/script&gt;
+</code></pre>
+
+<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮</p>
+
+<pre><code>package {
+import flash.net.*;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.display.MovieClip;
+import flash.external.ExternalInterface; 
+public class test extends MovieClip {
+    public function test(): void {
+        submit.addEventListener(MouseEvent.CLICK, postForm);
+    }
+    private function postForm(evt: MouseEvent): void {
+        ExternalInterface.call("hello", txt1.text); 
+    }
+}
+</code></pre>
+
+<p>4、实现的效果如下：<br/>
+当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。</p>
+
+<p>5、原理解释<br/>
+fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[《寻梦环游记》的故事元素]]></title>
@@ -936,25 +1000,6 @@ score = model.evaluate(x_test, y_test, batch_size=128)
 <p>第三，容易形成压抑的心理环境，大家都怕讲错，索性什么都不讲。这会让整个团队都处于紧张但却低效的状态和氛围。</p>
 
 <p>如果把他作为一种资源，那么会更可能谈及这个问题。事实上，每个人可能都有某个生物主题掌握的不好，同学们就会产生相互教授和帮助的需要，社会化的合作学习就容易产生和发挥作用，学习共同体也更容易形成。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Be good Do good]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/02/25/be-good-do-good/"/>
-    <updated>2017-02-25T13:04:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/02/25/be-good-do-good</id>
-    <content type="html"><![CDATA[<p>电影《性本恶》<br/>
-在恶的世界对善的追求</p>
-
-<p>濮存晰朗读《风月大师》<br/>
-感恩和助人</p>
-
-<p>生命不是自顾自的苟延残喘或纸醉金迷，生命是照亮自己也照亮他人的一次结伴履行。</p>
-
-<p>要对人有善念，要对人有善行。这是作为一个社会人的价值所在。这不是名利所能标价的，你活着人们的心理。</p>
-
-<p>Be good, Do good. Not for others, but for yourself.</p>
 ]]></content>
   </entry>
   
