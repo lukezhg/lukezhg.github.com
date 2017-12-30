@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-29T19:41:41+08:00</updated>
+  <updated>2017-12-30T09:46:01+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -35,10 +35,6 @@
     function hello(v){ 
         alert("hello: "+v);
         document.location.href = '/search';
-    }
-    function callFromFlash() { 
-        var a=thisMovie("test").hello(); 
-            alert(a); 
     } 
     function thisMovie(movieName) { 
         if (navigator.appName.indexOf("Microsoft") != -1) { 
@@ -74,6 +70,89 @@ public class test extends MovieClip {
 
 <p>5、原理解释<br/>
 fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
+
+<p>6、JS调用AS函数的实现方法。<br/>
+上面实现了AS调用JS并传递参数，那么反过来，JS是否可以调用AS函数呢？答案是肯定的。</p>
+
+<p>AS类这样写：</p>
+
+<pre><code>package {
+    import flash.net.*;
+    import flash.events.Event;
+    import flash.events.MouseEvent;
+    import flash.display.MovieClip;
+    import flash.external.ExternalInterface;
+
+    public class test extends MovieClip {
+        public function test(): void {
+            submit.addEventListener(MouseEvent.CLICK, postForm);
+            ExternalInterface.addCallback("say", say); //regist 
+        }
+
+        private function say(txt: String) {
+            txt2.text = txt;
+        }
+
+        private function postForm(evt: MouseEvent): void {
+            //call js function
+            ExternalInterface.call("hello", txt1.text);
+        }
+    }
+}
+</code></pre>
+
+<p>Html这样写：</p>
+
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;As communicate with JS&lt;/title&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        function hello(v){ 
+            alert("hello: "+v);
+            //document.location.href = '/search';
+            getSwfInstance("test").say("Hello, army!");
+        }
+        function thisMovie(movieName) { 
+            if (navigator.appName.indexOf("Microsoft") != -1) { 
+                return window[movieName] 
+            } 
+            else { 
+                return document[movieName] 
+            } 
+        }
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("Hello world!");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");
+            });
+            $("#btn3").click(function(){
+                //$("#test3").val("Dolly Duck");
+                var txt=$("#test3").val();
+                thisMovie("test").say(txt);
+            });
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;object id="flashObject" type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+    &lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+    &lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+    &lt;embed id="flashObject" src="{% static "flash/test.swf" %}" name="test" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash" width="550" height="400"&gt;&lt;/embed&gt;
+    &lt;/object&gt;
+    &lt;br&gt;
+    &lt;p id="test1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p id="test2"&gt;This is another paragraph.&lt;/p&gt;
+    &lt;p&gt;Input field: &lt;input type="text" id="test3" value="Mickey Mouse"&gt;&lt;/p&gt;
+    &lt;button id="btn1"&gt;Set Text&lt;/button&gt;
+    &lt;button id="btn2"&gt;Set HTML&lt;/button&gt;
+    &lt;button id="btn3"&gt;Set Value&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 ]]></content>
   </entry>
   
