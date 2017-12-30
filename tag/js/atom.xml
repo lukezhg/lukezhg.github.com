@@ -4,7 +4,7 @@
   <title><![CDATA[tags: JS | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/js/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-30T09:46:01+08:00</updated>
+  <updated>2017-12-30T09:56:38+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -112,7 +112,6 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
         function hello(v){ 
             alert("hello: "+v);
             //document.location.href = '/search';
-            getSwfInstance("test").say("Hello, army!");
         }
         function thisMovie(movieName) { 
             if (navigator.appName.indexOf("Microsoft") != -1) { 
@@ -138,10 +137,10 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
     &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;object id="flashObject" type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+    &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
     &lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
     &lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
-    &lt;embed id="flashObject" src="{% static "flash/test.swf" %}" name="test" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash" width="550" height="400"&gt;&lt;/embed&gt;
+    &lt;embed src="{% static "flash/test.swf" %}" name="test" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash" width="550" height="400"&gt;&lt;/embed&gt;
     &lt;/object&gt;
     &lt;br&gt;
     &lt;p id="test1"&gt;This is a paragraph.&lt;/p&gt;
