@@ -4,7 +4,7 @@
   <title><![CDATA[Category: computer | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/computer/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-31T13:04:57+08:00</updated>
+  <updated>2017-12-31T20:46:51+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -55,8 +55,7 @@
 <li><p>编辑设置文件和项目相关文件。<br/>
 settings.py 控制项目参数。</p>
 
-<p>  # Application definition
-  INSTALLED_APPS = [</p>
+<p>  INSTALLED_APPS = [</p>
 
 <pre><code>  'django.contrib.admin',
   'django.contrib.auth',
@@ -67,9 +66,9 @@ settings.py 控制项目参数。</p>
   'clips',
 </code></pre>
 
-  ]
-  # database setting
-  DATABASES = {
+<p>  ]</p>
+
+<p>  DATABASES = {</p>
 
 <pre><code>  'default': {
       'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
@@ -105,10 +104,9 @@ def hello(request):
 
 <p>demoapp/models.py 控制数据结构（表格、变量、变量属性）</p>
 
-<pre><code># -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+<pre><code>from __future__ import unicode_literals
 from django.db import models
-# Create your models here.
+
 class User(models.Model):
     user_name = models.CharField(max_length=30)
     password = models.CharField(max_length=40)
@@ -124,14 +122,13 @@ class User(models.Model):
 
 <p>demoapp/admin.py 控制后台注册和数据呈现</p>
 
-<pre><code># -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+<pre><code>from __future__ import unicode_literals
 from django.contrib import admin
 from .models import User, Clip, Link
 import sys;  
 reload(sys);  
 sys.setdefaultencoding("utf8")
-# Register your models here.
+
 class UserAdmin(admin.ModelAdmin):
     list_display = ('user_name', 'password', 'email')
     search_fields = ('user_name', 'email')
@@ -180,8 +177,9 @@ def current_datetime(request):
 
 <p>在templates文件夹，新建html模版文件current_datetime.html。</p>
 
-<pre><code># \mysite_project\mysite\templates\current_datetime.html
-&lt;html&gt;
+<p>\mysite_project\mysite\templates\current_datetime.html</p>
+
+<pre><code>&lt;html&gt;
     &lt;body&gt;
         It is now {{ current_date }}
     &lt;/body&gt;
@@ -231,87 +229,79 @@ It is now {{ current_date }}.
 </code></pre>
 
 <ol>
-<li><p>利用form来获取用户数据。</p>
-
-<p> # mysite_project\mysite\books\templates\books\search_form.html
- <html>
- <head></p>
-
-<pre><code> &lt;title&gt;Search&lt;/title&gt;
-</code></pre>
-
- </head>
- <body>
-
-<pre><code> &lt;form action="/search/" method="get"&gt;
-     &lt;input type="text" name="q"&gt;
-     &lt;input type="submit" value="Search"&gt;
- &lt;/form&gt;
-</code></pre>
-
-<p> </body>
- </html></p>
-
-<p> # mysite\books\urls.py
- from django.conf.urls import url
- from books import views
- urlpatterns = [</p>
-
-<pre><code> url(r'^search-form/$', views.search_form),
- url(r'^search/$', views.search),
-</code></pre>
-
-<p> ]</p>
-
-<p> # mysite\urls.py
- from django.conf.urls import include, url
- urlpatterns = [
- # ...</p>
-
-<pre><code> url(r'^', include('books.urls')),
-</code></pre>
-
-<p> ]</p>
-
-<p> # \books\views.py
- from django.shortcuts import render
- def search_form(request):</p>
-
-<pre><code> return render(request, 'books/search_form.html')
-</code></pre>
-
- def search(request):
-
-<pre><code> if 'q' in request.GET:
-     message = 'You searched for: %r' % request.GET['q']
- else:
-     message = 'You submitted an empty form.'
- return HttpResponse(message)
-</code></pre></li>
+<li>利用form来获取用户数据。</li>
 </ol>
 
+
+<p>mysite_project\mysite\books\templates\books\search_form.html</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Search&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action="/search/" method="get"&gt;
+        &lt;input type="text" name="q"&gt;
+        &lt;input type="submit" value="Search"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>mysite\books\urls.py</p>
+
+<pre><code>from django.conf.urls import url
+from books import views
+urlpatterns = [
+    url(r'^search-form/$', views.search_form),
+    url(r'^search/$', views.search),
+]
+</code></pre>
+
+<p>mysite\urls.py</p>
+
+<pre><code>from django.conf.urls import include, url
+urlpatterns = [
+# ...
+    url(r'^', include('books.urls')),
+]
+</code></pre>
+
+<p>books\views.py</p>
+
+<pre><code>from django.shortcuts import render
+def search_form(request):
+    return render(request, 'books/search_form.html')
+def search(request):
+    if 'q' in request.GET:
+        message = 'You searched for: %r' % request.GET['q']
+    else:
+        message = 'You submitted an empty form.'
+    return HttpResponse(message)
+</code></pre>
 
 <p>参考：https://djangobook.com/django-forms/</p>
 
 <p>定义表单类，更简洁的获取用户数据的方法。</p>
 
-<pre><code># mysite_project\mysite\mysite\forms.py
-from django import forms
+<p>mysite_project\mysite\mysite\forms.py</p>
+
+<pre><code>from django import forms
 class ContactForm(forms.Form):
     subject = forms.CharField()
     email = forms.EmailField(required=False)
     message = forms.CharField()
+</code></pre>
 
+<p>mysite_project\mysite\mysite\views.py</p>
 
-# mysite_project\mysite\mysite\views.py
-#
-from django.http import Http404, HttpResponse, HttpResponseRedirect
+<pre><code>from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 import datetime
 from mysite.forms import ContactForm    
 from django.core.mail import send_mail, get_connection
-#
-# ...
+
+
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -329,11 +319,11 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'contact_form.html', {'form': form})
+</code></pre>
 
+<p>mysite_project\mysite\templates\contact_form.html</p>
 
-
-# mysite_project\mysite\templates\contact_form.html
-&lt;html&gt;
+<pre><code>&lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Contact us&lt;/title&gt;
     &lt;style type="text/css"&gt;
@@ -370,53 +360,45 @@ def contact(request):
 </code></pre>
 
 <ol>
-<li><p>urls进阶</p>
-
-<h1>\urls.py</h1>
-
-from django.conf.urls import include, url
-from . import views
-urlpatterns = [
-
-<pre><code>url(r'^hello/$', views.hello),
-url(r'^time/$', views.current_datetime),
-      url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
-</code></pre>
-
-<p>]</p>
-
-<h1>\urls.py</h1>
-
-from django.conf import settings
-from django.conf.urls import url
-from . import views
-urlpatterns = [
-
-<pre><code>url(r'^$', views.homepage),
-url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
-</code></pre>
-
-]
-if settings.DEBUG:
-
-<pre><code>urlpatterns += [url(r'^debuginfo/$', views.debug),]
-</code></pre>
-
-<h1>\urls.py</h1>
-
-from django.conf.urls import url
-from . import views
-urlpatterns = [
-
-<pre><code>url(r'^reviews/2003/$', views.special_case_2003),
-url(r'^reviews/([0-9]{4})/$', views.year_archive),
-url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
-url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
-</code></pre>
-
-<p>]</p></li>
+<li>urls进阶</li>
 </ol>
 
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+    url(r'^hello/$', views.hello),
+    url(r'^time/$', views.current_datetime),
+          url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
+]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^$', views.homepage),
+    url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
+]
+if settings.DEBUG:
+    urlpatterns += [url(r'^debuginfo/$', views.debug),]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^reviews/2003/$', views.special_case_2003),
+    url(r'^reviews/([0-9]{4})/$', views.year_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
+]
+</code></pre>
 
 <p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
 ]]></content>
