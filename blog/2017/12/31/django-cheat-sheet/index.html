@@ -305,13 +305,23 @@ def current_datetime(request):
 
 <p>\mysite_project\mysite\templates\current_datetime.html</p>
 
-<pre><code>&lt;html&gt;
-    &lt;body&gt;
-        It is now {{ current_date }}
-    &lt;/body&gt;
-&lt;/html&gt;
-It is now {{ current_date }}.
-</code></pre>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'>    &lt;html&gt;
+</span><span class='line'>        &lt;body&gt;
+</span><span class='line'>            It is now {{ current_date }}
+</span><span class='line'>        &lt;/body&gt;
+</span><span class='line'>    &lt;/html&gt;
+</span><span class='line'>    It is now {{ current_date }}.
+</span><span class='line'></span></code></pre></td></tr></table></div></figure>
+
 
 <p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
 参考：https://djangobook.com/templates-in-views/</p>
@@ -332,20 +342,24 @@ It is now {{ current_date }}.
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
-</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>    {% block content %}{% endblock %}
-</span><span class='line'>    {% block footer %}
-</span><span class='line'>    <span class="nt">&lt;hr&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>    {% endblock %}
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        {% block content %}{% endblock %}
+</span><span class='line'>        {% block footer %}
+</span><span class='line'>        <span class="nt">&lt;hr&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        {% endblock %}
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -356,11 +370,15 @@ It is now {{ current_date }}.
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>{% extends &quot;base.html&quot; %}
-</span><span class='line'>{% block title %}The current time{% endblock %}
-</span><span class='line'>{% block content %}
-</span><span class='line'>    <span class="nt">&lt;p&gt;</span>It is now {{ current_date }}.<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>{% endblock %}
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    {% extends &quot;base.html&quot; %}
+</span><span class='line'>    {% block title %}The current time{% endblock %}
+</span><span class='line'>    {% block content %}
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>It is now {{ current_date }}.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    {% endblock %}
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -373,13 +391,17 @@ It is now {{ current_date }}.
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>{% extends &quot;base.html&quot; %}
-</span><span class='line'>{% block title %}Future time{% endblock %}
-</span><span class='line'>{% block content %}
-</span><span class='line'><span class="nt">&lt;p&gt;</span>
-</span><span class='line'>    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
-</span><span class='line'><span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>{% endblock %}
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    {% extends &quot;base.html&quot; %}
+</span><span class='line'>    {% block title %}Future time{% endblock %}
+</span><span class='line'>    {% block content %}
+</span><span class='line'>    <span class="nt">&lt;p&gt;</span>
+</span><span class='line'>        In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+</span><span class='line'>    <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    {% endblock %}
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -398,17 +420,21 @@ It is now {{ current_date }}.
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Search<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/search/&quot;</span> <span class="na">method=</span><span class="s">&quot;get&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;q&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Search&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/form&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Search<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/search/&quot;</span> <span class="na">method=</span><span class="s">&quot;get&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;q&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Search&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -565,40 +591,44 @@ def search(request):
 <span class='line-number'>32</span>
 <span class='line-number'>33</span>
 <span class='line-number'>34</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Contact us<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">ul</span><span class="nc">.errorlist</span> <span class="p">{</span>
-</span><span class='line'>            <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="nc">.errorlist</span> <span class="nt">li</span> <span class="p">{</span>
-</span><span class='line'>            <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">5px</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>    <span class="nt">&lt;/style&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>    {% if form.errors %}
-</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;color: red;&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>            Please correct the error{{ form.errors|pluralize }} below.
-</span><span class='line'>        <span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>    {% endif %}
-</span><span class='line'>    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span> <span class="na">novalidate</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;table&gt;</span>
-</span><span class='line'>            {{ form.as_table }}
-</span><span class='line'>        <span class="nt">&lt;/table&gt;</span>
-</span><span class='line'>        {% csrf_token %}
-</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Submit&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/form&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Contact us<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">ul</span><span class="nc">.errorlist</span> <span class="p">{</span>
+</span><span class='line'>                <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="nc">.errorlist</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>                <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">5px</span><span class="p">;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="nt">&lt;/style&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        {% if form.errors %}
+</span><span class='line'>            <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;color: red;&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                Please correct the error{{ form.errors|pluralize }} below.
+</span><span class='line'>            <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        {% endif %}
+</span><span class='line'>        <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span> <span class="na">novalidate</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;table&gt;</span>
+</span><span class='line'>                {{ form.as_table }}
+</span><span class='line'>            <span class="nt">&lt;/table&gt;</span>
+</span><span class='line'>            {% csrf_token %}
+</span><span class='line'>            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Submit&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
 </span></code></pre></td></tr></table></div></figure>
 
 

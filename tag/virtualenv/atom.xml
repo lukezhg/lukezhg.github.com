@@ -4,7 +4,7 @@
   <title><![CDATA[tags: virtualenv | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/virtualenv/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-31T22:12:35+08:00</updated>
+  <updated>2017-12-31T22:32:20+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -188,6 +188,9 @@ def current_datetime(request):
 
 <p>\mysite_project\mysite\templates\current_datetime.html</p>
 
+<p>```
+</p>
+
 <pre><code>&lt;html&gt;
     &lt;body&gt;
         It is now {{ current_date }}
@@ -196,11 +199,15 @@ def current_datetime(request):
 It is now {{ current_date }}.
 </code></pre>
 
+<p>
+```</p>
+
 <p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
 参考：https://djangobook.com/templates-in-views/</p>
 
 <p>base.html<br/>
-```html</p>
+```html
+</p>
 
 <pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
 &lt;html lang="en"&gt;
@@ -218,10 +225,12 @@ It is now {{ current_date }}.
 &lt;/html&gt;
 </code></pre>
 
-<p>```</p>
+<p>
+```</p>
 
 <p>current_datetime.html<br/>
-```html</p>
+```html
+</p>
 
 <pre><code>{% extends "base.html" %}
 {% block title %}The current time{% endblock %}
@@ -230,11 +239,13 @@ It is now {{ current_date }}.
 {% endblock %}
 </code></pre>
 
-<p>```</p>
+<p>
+```</p>
 
 <p>hours_ahead.html</p>
 
-<p>```html</p>
+<p>```html
+</p>
 
 <pre><code>{% extends "base.html" %}
 {% block title %}Future time{% endblock %}
@@ -245,12 +256,14 @@ It is now {{ current_date }}.
 {% endblock %}
 </code></pre>
 
-<p>```</p>
+<p>
+```</p>
 
 <p>9、利用form来获取用户数据。</p>
 
 <p>mysite_project\mysite\books\templates\books\search_form.html
-```html</p>
+```html
+</p>
 
 <pre><code>&lt;html&gt;
 &lt;head&gt;
@@ -265,7 +278,8 @@ It is now {{ current_date }}.
 &lt;/html&gt;
 </code></pre>
 
-<p>```</p>
+<p>
+```</p>
 
 <p>mysite\books\urls.py
 ```python</p>
@@ -354,7 +368,8 @@ def contact(request):
 
 <p>mysite_project\mysite\templates\contact_form.html</p>
 
-<p>```html</p>
+<p>```html
+</p>
 
 <pre><code>&lt;html&gt;
 &lt;head&gt;
@@ -392,7 +407,8 @@ def contact(request):
 &lt;/html&gt;
 </code></pre>
 
-<p>```</p>
+<p>
+```</p>
 
 <p>10、urls进阶</p>
 
