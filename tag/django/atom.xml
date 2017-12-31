@@ -4,7 +4,7 @@
   <title><![CDATA[tags: django | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/django/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-31T21:00:10+08:00</updated>
+  <updated>2017-12-31T21:14:18+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,12 +18,10 @@
     <link href="http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/"/>
     <updated>2017-12-31T09:50:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet</id>
-    <content type="html"><![CDATA[<ol>
-<li><p>通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+    <content type="html"><![CDATA[<p>1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
 
-<p> mkvirtualenv DjangoApp</p></li>
-</ol>
-
+<pre><code>mkvirtualenv DjangoApp
+</code></pre>
 
 <p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
 
@@ -35,33 +33,34 @@
 <pre><code>pip install Django
 </code></pre>
 
-<ol>
-<li><p>使用 django-admin 命令创建项目</p>
+<p>2、使用 django-admin 命令创建项目</p>
 
-<p> django-admin startproject demoproject</p></li>
-<li><p>进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
+<pre><code>django-admin startproject demoproject
+</code></pre>
 
-<p> cd demoproject
- python manage.py startapp demoapp</p></li>
-<li><p>测试项目服务器，Ctrl+C退出服务器。</p>
+<p>3、进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
 
-<p> python manage.py runserver</p></li>
-</ol>
+<pre><code>cd demoproject
+python manage.py startapp demoapp
+</code></pre>
 
+<p>4、测试项目服务器，Ctrl+C退出服务器。</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
 
 <p>或者指定服务器ip和端口。</p>
 
 <pre><code>python manage.py runserver 0.0.0.0:8000
 </code></pre>
 
-<ol>
-<li><p>创建超级用户用于登陆django admin后台管理平台。</p>
+<p>5、创建超级用户用于登陆django admin后台管理平台。</p>
 
-<p> python manage.py createsuperuser admin</p></li>
-<li><p>编辑设置文件和项目相关文件。  <br/>
-settings.py 控制项目参数。</p></li>
-</ol>
+<pre><code>python manage.py createsuperuser admin
+</code></pre>
 
+<p>6、编辑设置文件和项目相关文件。  <br/>
+settings.py 控制项目参数。</p>
 
 <pre>
 <code>
@@ -142,14 +141,13 @@ admin.site.register(User,UserAdmin)
 ......
 </code></pre>
 
-<ol>
-<li><p>当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
+<p>7、当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
 
-<p> python manage.py makemigrations
- python manage.py migrate</p></li>
-<li><p>利用template来呈现页面。</p></li>
-</ol>
+<pre><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre>
 
+<p>8、利用template来呈现页面。</p>
 
 <p>首先要修改settings.py</p>
 
@@ -233,19 +231,20 @@ It is now {{ current_date }}.
 
 <p>hours_ahead.html</p>
 
-<pre><code>{% extends "base.html" %}
-{% block title %}Future time{% endblock %}
-{% block content %}
-&lt;p&gt;
-    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
-&lt;/p&gt;
-{% endblock %}
-</code></pre>
+<pre>
+<code>
+    {% extends "base.html" %}
+    {% block title %}Future time{% endblock %}
+    {% block content %}
+    <p>
+        In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+    </p>
+    {% endblock %}
+</code>
+</pre>
 
-<ol>
-<li>利用form来获取用户数据。</li>
-</ol>
 
+<p>9、利用form来获取用户数据。</p>
 
 <p>mysite_project\mysite\books\templates\books\search_form.html</p>
 
@@ -337,46 +336,48 @@ def contact(request):
 
 <p>mysite_project\mysite\templates\contact_form.html</p>
 
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Contact us&lt;/title&gt;
-    &lt;style type="text/css"&gt;
-        ul.errorlist {
-            margin: 0;
-            padding: 0;
-        }
-        .errorlist li {
-            background-color: red;
-            color: white;
-            display: block;
-            font-size: 1.2em;
-            margin: 0 0 3px;
-            padding: 4px 5px;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Contact us&lt;/h1&gt;
-    {% if form.errors %}
-        &lt;p style="color: red;"&gt;
-            Please correct the error{{ form.errors|pluralize }} below.
-        &lt;/p&gt;
-    {% endif %}
-    &lt;form action="" method="post" novalidate&gt;
-        &lt;table&gt;
-            {{ form.as_table }}
-        &lt;/table&gt;
-        {% csrf_token %}
-        &lt;input type="submit" value="Submit"&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre>
+<code>
 
-<ol>
-<li>urls进阶</li>
-</ol>
+    <html>
+    <head>
+        <title>Contact us</title>
+        <style type="text/css">
+            ul.errorlist {
+                margin: 0;
+                padding: 0;
+            }
+            .errorlist li {
+                background-color: red;
+                color: white;
+                display: block;
+                font-size: 1.2em;
+                margin: 0 0 3px;
+                padding: 4px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contact us</h1>
+        {% if form.errors %}
+            <p style="color: red;">
+                Please correct the error{{ form.errors|pluralize }} below.
+            </p>
+        {% endif %}
+        <form action="" method="post" novalidate>
+            <table>
+                {{ form.as_table }}
+            </table>
+            {% csrf_token %}
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
+</code>
+</pre>
 
+
+<p>10、urls进阶</p>
 
 <p>\urls.py</p>
 
