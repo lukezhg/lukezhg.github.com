@@ -1,0 +1,778 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Django cheat sheet - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境： mkvirtualenv DjangoApp 要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  
+  <link href="/stylesheets/mermaid.css" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/"> Home </a></li>
+  <li><a href="/about"> About </a></li>
+  <li><a href="/blog/archives">Blog</a></li>
+  <li><a href="/course"> Course </a></li>
+  <li><a href="/app"> App </a></li>
+  <li><a href="/cn"> 中文 </a></li>
+  <li><a href="/en"> English </a></li>
+  <li><a href="/log"> log </a></li>
+</ul>
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Django Cheat Sheet</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-31T09:50:00+08:00" pubdate data-updated="true">Dec 31<span>st</span>, 2017</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><ol>
+<li><p>通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+
+<p> mkvirtualenv DjangoApp</p></li>
+</ol>
+
+
+<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
+
+<pre><code>workon DjangoApp
+</code></pre>
+
+<p>在您的当前环境中安装 Django</p>
+
+<pre><code>pip install Django
+</code></pre>
+
+<ol>
+<li><p>使用 django-admin 命令创建项目</p>
+
+<p> django-admin startproject demoproject</p></li>
+<li><p>进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
+
+<p> cd demoproject
+ python manage.py startapp demoapp</p></li>
+<li><p>测试项目服务器，Ctrl+C退出服务器。</p>
+
+<p> python manage.py runserver
+或者指定服务器ip和端口。</p>
+
+<p>  python manage.py runserver 0.0.0.0:8000</p></li>
+<li><p>创建超级用户用于登陆django admin后台管理平台。</p>
+
+<p> python manage.py createsuperuser admin</p></li>
+<li><p>编辑设置文件和项目相关文件。<br/>
+settings.py 控制项目参数。</p>
+
+<p>  # Application definition
+  INSTALLED_APPS = [</p>
+
+<pre><code>  'django.contrib.admin',
+  'django.contrib.auth',
+  'django.contrib.contenttypes',
+  'django.contrib.sessions',
+  'django.contrib.messages',
+  'django.contrib.staticfiles',
+  'clips',
+</code></pre>
+
+  ]
+  # database setting
+  DATABASES = {
+
+<pre><code>  'default': {
+      'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
+      'USER': 'root',
+      'PASSWORD': '123456',
+      'NAME': 'demoproject',
+      'HOST': '127.0.0.1',
+      'PORT': '3306',
+  }
+</code></pre>
+
+<p>  }</p></li>
+</ol>
+
+
+<p>urls.py 控制访问请求路径</p>
+
+<pre><code>from django.conf.urls import url
+from django.contrib import admin
+from demoproject.views import hello
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^hello/$', hello),
+]
+</code></pre>
+
+<p>views.py 控制访问请求的应答</p>
+
+<pre><code>from django.http import HttpResponse
+def hello(request):
+    return HttpResponse("Hello world")
+</code></pre>
+
+<p>demoapp/models.py 控制数据结构（表格、变量、变量属性）</p>
+
+<pre><code># -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from django.db import models
+# Create your models here.
+class User(models.Model):
+    user_name = models.CharField(max_length=30)
+    password = models.CharField(max_length=40)
+    email = models.EmailField()
+    headshot = models.ImageField(upload_to='headshot',null=True,blank=True)
+    brief = models.CharField(max_length=100)
+    join_date = models.DateField()
+    user_star = models.CharField(max_length=30)
+    def __unicode__(self):
+        return self.user_name
+......
+</code></pre>
+
+<p>demoapp/admin.py 控制后台注册和数据呈现</p>
+
+<pre><code># -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from django.contrib import admin
+from .models import User, Clip, Link
+import sys;  
+reload(sys);  
+sys.setdefaultencoding("utf8")
+# Register your models here.
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('user_name', 'password', 'email')
+    search_fields = ('user_name', 'email')
+......
+admin.site.register(User,UserAdmin)
+......
+</code></pre>
+
+<ol>
+<li><p>当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
+
+<p> python manage.py makemigrations
+ python manage.py migrate</p></li>
+<li><p>利用template来呈现页面。</p></li>
+</ol>
+
+
+<p>首先要修改settings.py</p>
+
+<pre><code>TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            # ...
+</code></pre>
+
+<p>接下来建文件夹templates</p>
+
+<pre><code>\demoproject
+    \demoproject
+    \demoapp
+    \templates
+    manage.py
+</code></pre>
+
+<p>修改demoproject\views.py</p>
+
+<pre><code>from django.shortcuts import render
+import datetime
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render(request, 'current_datetime.html', {'current_date': now})
+</code></pre>
+
+<p>在templates文件夹，新建html模版文件current_datetime.html。</p>
+
+<pre><code># \mysite_project\mysite\templates\current_datetime.html
+&lt;html&gt;
+    &lt;body&gt;
+        It is now {{ current_date }}
+    &lt;/body&gt;
+&lt;/html&gt;
+It is now {{ current_date }}.
+</code></pre>
+
+<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
+参考：https://djangobook.com/templates-in-views/</p>
+
+<p>base.html</p>
+
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+    {% block content %}{% endblock %}
+    {% block footer %}
+    &lt;hr&gt;
+    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+    {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>current_datetime.html</p>
+
+<pre><code>{% extends "base.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+    &lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<p>hours_ahead.html</p>
+
+<pre><code>{% extends "base.html" %}
+{% block title %}Future time{% endblock %}
+{% block content %}
+&lt;p&gt;
+    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<ol>
+<li><p>利用form来获取用户数据。</p>
+
+<p> # mysite_project\mysite\books\templates\books\search_form.html
+ <html>
+ <head></p>
+
+<pre><code> &lt;title&gt;Search&lt;/title&gt;
+</code></pre>
+
+ </head>
+ <body>
+
+<pre><code> &lt;form action="/search/" method="get"&gt;
+     &lt;input type="text" name="q"&gt;
+     &lt;input type="submit" value="Search"&gt;
+ &lt;/form&gt;
+</code></pre>
+
+<p> </body>
+ </html></p>
+
+<p> # mysite\books\urls.py
+ from django.conf.urls import url
+ from books import views
+ urlpatterns = [</p>
+
+<pre><code> url(r'^search-form/$', views.search_form),
+ url(r'^search/$', views.search),
+</code></pre>
+
+<p> ]</p>
+
+<p> # mysite\urls.py
+ from django.conf.urls import include, url
+ urlpatterns = [
+ # &#8230;</p>
+
+<pre><code> url(r'^', include('books.urls')),
+</code></pre>
+
+<p> ]</p>
+
+<p> # \books\views.py
+ from django.shortcuts import render
+ def search_form(request):</p>
+
+<pre><code> return render(request, 'books/search_form.html')
+</code></pre>
+
+ def search(request):
+
+<pre><code> if 'q' in request.GET:
+     message = 'You searched for: %r' % request.GET['q']
+ else:
+     message = 'You submitted an empty form.'
+ return HttpResponse(message)
+</code></pre></li>
+</ol>
+
+
+<p>参考：https://djangobook.com/django-forms/</p>
+
+<p>定义表单类，更简洁的获取用户数据的方法。</p>
+
+<pre><code># mysite_project\mysite\mysite\forms.py
+from django import forms
+class ContactForm(forms.Form):
+    subject = forms.CharField()
+    email = forms.EmailField(required=False)
+    message = forms.CharField()
+
+
+# mysite_project\mysite\mysite\views.py
+#
+from django.http import Http404, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
+import datetime
+from mysite.forms import ContactForm    
+from django.core.mail import send_mail, get_connection
+#
+# ...
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            con = get_connection('django.core.mail.backends.console.EmailBackend')
+            send_mail(
+                cd['subject'],
+                cd['message'],
+                cd.get('email', 'noreply@example.com'),
+                ['siteowner@example.com'],
+                connection=con
+            )
+            return HttpResponseRedirect('/contact/thanks/')
+    else:
+        form = ContactForm()
+    return render(request, 'contact_form.html', {'form': form})
+
+
+
+# mysite_project\mysite\templates\contact_form.html
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Contact us&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        ul.errorlist {
+            margin: 0;
+            padding: 0;
+        }
+        .errorlist li {
+            background-color: red;
+            color: white;
+            display: block;
+            font-size: 1.2em;
+            margin: 0 0 3px;
+            padding: 4px 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Contact us&lt;/h1&gt;
+    {% if form.errors %}
+        &lt;p style="color: red;"&gt;
+            Please correct the error{{ form.errors|pluralize }} below.
+        &lt;/p&gt;
+    {% endif %}
+    &lt;form action="" method="post" novalidate&gt;
+        &lt;table&gt;
+            {{ form.as_table }}
+        &lt;/table&gt;
+        {% csrf_token %}
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ol>
+<li><p>urls进阶</p>
+
+<h1>\urls.py</h1>
+
+from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^hello/$', views.hello),
+url(r'^time/$', views.current_datetime),
+      url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
+</code></pre>
+
+<p>]</p>
+
+<h1>\urls.py</h1>
+
+from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^$', views.homepage),
+url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
+</code></pre>
+
+]
+if settings.DEBUG:
+
+<pre><code>urlpatterns += [url(r'^debuginfo/$', views.debug),]
+</code></pre>
+
+<h1>\urls.py</h1>
+
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^reviews/2003/$', views.special_case_2003),
+url(r'^reviews/([0-9]{4})/$', views.year_archive),
+url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
+</code></pre>
+
+<p>]</p></li>
+</ol>
+
+
+<p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-31T09:50:00+08:00" pubdate data-updated="true">Dec 31<span>st</span>, 2017</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/computer/'>computer</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tag/django/'>django</a>
+  
+</span>
+
+ 
+    </p>
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/12/30/mysql-charset-admin-django/" title="Previous Post: mysql charset admin django">&laquo; mysql charset admin django</a>
+      
+      
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style" align="right">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+
+    
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/反思'>反思 (8)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 98%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 98%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 98%" href="/tag/r/">R</a>
+<a style="font-size: 98%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 98%" href="/tag/github/">github</a>
+<a style="font-size: 98%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 103%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 107%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 98%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 98%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 98%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 98%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 98%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 98%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/12/31/django-cheat-sheet/">Django cheat sheet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/12/30/mysql-charset-admin-django/">mysql charset admin django</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/12/29/swf-send-data-to-java-script/">Swf send data to Java Script</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/12/18/the-writing-tips-of-the-story-coco/">《寻梦环游记》的故事元素</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/12/15/ajax-and-chatbot/">AJAX and Chatbot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/27/how-to-run-js-node-and-appche/">How to run JS node and appche</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/13/super-city-and-abc/">超级城市与潜在的机会</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/12/science-theater/">Science Theater</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/10/use-mermaid-to-render-graph/">Use mermaid to render Graph</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/11/04/stem-and-love/">STEM &amp; Love</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/';
+        var disqus_url = 'http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: computer | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/computer/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-30T23:12:20+08:00</updated>
+  <updated>2017-12-31T13:04:57+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,415 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Django cheat sheet]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/"/>
+    <updated>2017-12-31T09:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+
+<p> mkvirtualenv DjangoApp</p></li>
+</ol>
+
+
+<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
+
+<pre><code>workon DjangoApp
+</code></pre>
+
+<p>在您的当前环境中安装 Django</p>
+
+<pre><code>pip install Django
+</code></pre>
+
+<ol>
+<li><p>使用 django-admin 命令创建项目</p>
+
+<p> django-admin startproject demoproject</p></li>
+<li><p>进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
+
+<p> cd demoproject
+ python manage.py startapp demoapp</p></li>
+<li><p>测试项目服务器，Ctrl+C退出服务器。</p>
+
+<p> python manage.py runserver
+或者指定服务器ip和端口。</p>
+
+<p>  python manage.py runserver 0.0.0.0:8000</p></li>
+<li><p>创建超级用户用于登陆django admin后台管理平台。</p>
+
+<p> python manage.py createsuperuser admin</p></li>
+<li><p>编辑设置文件和项目相关文件。<br/>
+settings.py 控制项目参数。</p>
+
+<p>  # Application definition
+  INSTALLED_APPS = [</p>
+
+<pre><code>  'django.contrib.admin',
+  'django.contrib.auth',
+  'django.contrib.contenttypes',
+  'django.contrib.sessions',
+  'django.contrib.messages',
+  'django.contrib.staticfiles',
+  'clips',
+</code></pre>
+
+  ]
+  # database setting
+  DATABASES = {
+
+<pre><code>  'default': {
+      'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
+      'USER': 'root',
+      'PASSWORD': '123456',
+      'NAME': 'demoproject',
+      'HOST': '127.0.0.1',
+      'PORT': '3306',
+  }
+</code></pre>
+
+<p>  }</p></li>
+</ol>
+
+
+<p>urls.py 控制访问请求路径</p>
+
+<pre><code>from django.conf.urls import url
+from django.contrib import admin
+from demoproject.views import hello
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^hello/$', hello),
+]
+</code></pre>
+
+<p>views.py 控制访问请求的应答</p>
+
+<pre><code>from django.http import HttpResponse
+def hello(request):
+    return HttpResponse("Hello world")
+</code></pre>
+
+<p>demoapp/models.py 控制数据结构（表格、变量、变量属性）</p>
+
+<pre><code># -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from django.db import models
+# Create your models here.
+class User(models.Model):
+    user_name = models.CharField(max_length=30)
+    password = models.CharField(max_length=40)
+    email = models.EmailField()
+    headshot = models.ImageField(upload_to='headshot',null=True,blank=True)
+    brief = models.CharField(max_length=100)
+    join_date = models.DateField()
+    user_star = models.CharField(max_length=30)
+    def __unicode__(self):
+        return self.user_name
+......
+</code></pre>
+
+<p>demoapp/admin.py 控制后台注册和数据呈现</p>
+
+<pre><code># -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from django.contrib import admin
+from .models import User, Clip, Link
+import sys;  
+reload(sys);  
+sys.setdefaultencoding("utf8")
+# Register your models here.
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('user_name', 'password', 'email')
+    search_fields = ('user_name', 'email')
+......
+admin.site.register(User,UserAdmin)
+......
+</code></pre>
+
+<ol>
+<li><p>当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
+
+<p> python manage.py makemigrations
+ python manage.py migrate</p></li>
+<li><p>利用template来呈现页面。</p></li>
+</ol>
+
+
+<p>首先要修改settings.py</p>
+
+<pre><code>TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            # ...
+</code></pre>
+
+<p>接下来建文件夹templates</p>
+
+<pre><code>\demoproject
+    \demoproject
+    \demoapp
+    \templates
+    manage.py
+</code></pre>
+
+<p>修改demoproject\views.py</p>
+
+<pre><code>from django.shortcuts import render
+import datetime
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render(request, 'current_datetime.html', {'current_date': now})
+</code></pre>
+
+<p>在templates文件夹，新建html模版文件current_datetime.html。</p>
+
+<pre><code># \mysite_project\mysite\templates\current_datetime.html
+&lt;html&gt;
+    &lt;body&gt;
+        It is now {{ current_date }}
+    &lt;/body&gt;
+&lt;/html&gt;
+It is now {{ current_date }}.
+</code></pre>
+
+<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
+参考：https://djangobook.com/templates-in-views/</p>
+
+<p>base.html</p>
+
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+    {% block content %}{% endblock %}
+    {% block footer %}
+    &lt;hr&gt;
+    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+    {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>current_datetime.html</p>
+
+<pre><code>{% extends "base.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+    &lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<p>hours_ahead.html</p>
+
+<pre><code>{% extends "base.html" %}
+{% block title %}Future time{% endblock %}
+{% block content %}
+&lt;p&gt;
+    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<ol>
+<li><p>利用form来获取用户数据。</p>
+
+<p> # mysite_project\mysite\books\templates\books\search_form.html
+ <html>
+ <head></p>
+
+<pre><code> &lt;title&gt;Search&lt;/title&gt;
+</code></pre>
+
+ </head>
+ <body>
+
+<pre><code> &lt;form action="/search/" method="get"&gt;
+     &lt;input type="text" name="q"&gt;
+     &lt;input type="submit" value="Search"&gt;
+ &lt;/form&gt;
+</code></pre>
+
+<p> </body>
+ </html></p>
+
+<p> # mysite\books\urls.py
+ from django.conf.urls import url
+ from books import views
+ urlpatterns = [</p>
+
+<pre><code> url(r'^search-form/$', views.search_form),
+ url(r'^search/$', views.search),
+</code></pre>
+
+<p> ]</p>
+
+<p> # mysite\urls.py
+ from django.conf.urls import include, url
+ urlpatterns = [
+ # ...</p>
+
+<pre><code> url(r'^', include('books.urls')),
+</code></pre>
+
+<p> ]</p>
+
+<p> # \books\views.py
+ from django.shortcuts import render
+ def search_form(request):</p>
+
+<pre><code> return render(request, 'books/search_form.html')
+</code></pre>
+
+ def search(request):
+
+<pre><code> if 'q' in request.GET:
+     message = 'You searched for: %r' % request.GET['q']
+ else:
+     message = 'You submitted an empty form.'
+ return HttpResponse(message)
+</code></pre></li>
+</ol>
+
+
+<p>参考：https://djangobook.com/django-forms/</p>
+
+<p>定义表单类，更简洁的获取用户数据的方法。</p>
+
+<pre><code># mysite_project\mysite\mysite\forms.py
+from django import forms
+class ContactForm(forms.Form):
+    subject = forms.CharField()
+    email = forms.EmailField(required=False)
+    message = forms.CharField()
+
+
+# mysite_project\mysite\mysite\views.py
+#
+from django.http import Http404, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
+import datetime
+from mysite.forms import ContactForm    
+from django.core.mail import send_mail, get_connection
+#
+# ...
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            con = get_connection('django.core.mail.backends.console.EmailBackend')
+            send_mail(
+                cd['subject'],
+                cd['message'],
+                cd.get('email', 'noreply@example.com'),
+                ['siteowner@example.com'],
+                connection=con
+            )
+            return HttpResponseRedirect('/contact/thanks/')
+    else:
+        form = ContactForm()
+    return render(request, 'contact_form.html', {'form': form})
+
+
+
+# mysite_project\mysite\templates\contact_form.html
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Contact us&lt;/title&gt;
+    &lt;style type="text/css"&gt;
+        ul.errorlist {
+            margin: 0;
+            padding: 0;
+        }
+        .errorlist li {
+            background-color: red;
+            color: white;
+            display: block;
+            font-size: 1.2em;
+            margin: 0 0 3px;
+            padding: 4px 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Contact us&lt;/h1&gt;
+    {% if form.errors %}
+        &lt;p style="color: red;"&gt;
+            Please correct the error{{ form.errors|pluralize }} below.
+        &lt;/p&gt;
+    {% endif %}
+    &lt;form action="" method="post" novalidate&gt;
+        &lt;table&gt;
+            {{ form.as_table }}
+        &lt;/table&gt;
+        {% csrf_token %}
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ol>
+<li><p>urls进阶</p>
+
+<h1>\urls.py</h1>
+
+from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^hello/$', views.hello),
+url(r'^time/$', views.current_datetime),
+      url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
+</code></pre>
+
+<p>]</p>
+
+<h1>\urls.py</h1>
+
+from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^$', views.homepage),
+url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
+</code></pre>
+
+]
+if settings.DEBUG:
+
+<pre><code>urlpatterns += [url(r'^debuginfo/$', views.debug),]
+</code></pre>
+
+<h1>\urls.py</h1>
+
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+
+<pre><code>url(r'^reviews/2003/$', views.special_case_2003),
+url(r'^reviews/([0-9]{4})/$', views.year_archive),
+url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
+</code></pre>
+
+<p>]</p></li>
+</ol>
+
+
+<p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mysql charset admin django]]></title>
