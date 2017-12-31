@@ -128,43 +128,48 @@
  python manage.py startapp demoapp</p></li>
 <li><p>测试项目服务器，Ctrl+C退出服务器。</p>
 
-<p> python manage.py runserver
-或者指定服务器ip和端口。</p>
+<p> python manage.py runserver</p></li>
+</ol>
 
-<p>  python manage.py runserver 0.0.0.0:8000</p></li>
+
+<p>或者指定服务器ip和端口。</p>
+
+<pre><code>python manage.py runserver 0.0.0.0:8000
+</code></pre>
+
+<ol>
 <li><p>创建超级用户用于登陆django admin后台管理平台。</p>
 
 <p> python manage.py createsuperuser admin</p></li>
-<li><p>编辑设置文件和项目相关文件。<br/>
-settings.py 控制项目参数。</p>
-
-<p>  INSTALLED_APPS = [</p>
-
-<pre><code>  'django.contrib.admin',
-  'django.contrib.auth',
-  'django.contrib.contenttypes',
-  'django.contrib.sessions',
-  'django.contrib.messages',
-  'django.contrib.staticfiles',
-  'clips',
-</code></pre>
-
-<p>  ]</p>
-
-<p>  DATABASES = {</p>
-
-<pre><code>  'default': {
-      'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
-      'USER': 'root',
-      'PASSWORD': '123456',
-      'NAME': 'demoproject',
-      'HOST': '127.0.0.1',
-      'PORT': '3306',
-  }
-</code></pre>
-
-<p>  }</p></li>
+<li><p>编辑设置文件和项目相关文件。  <br/>
+settings.py 控制项目参数。</p></li>
 </ol>
+
+
+<pre>
+<code>
+    INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'clips',
+    ]
+    
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
+            'USER': 'root',
+            'PASSWORD': '123456',
+            'NAME': 'demoproject',
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+        }
+    }
+</code>
+</pre>
 
 
 <p>urls.py 控制访问请求路径</p>
@@ -275,30 +280,39 @@ It is now {{ current_date }}.
 
 <p>base.html</p>
 
-<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
-    {% block content %}{% endblock %}
-    {% block footer %}
-    &lt;hr&gt;
-    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
-    {% endblock %}
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<pre>
+<code>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+    <html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <h1>My helpful timestamp site</h1>
+        {% block content %}{% endblock %}
+        {% block footer %}
+        <hr>
+        <p>Thanks for visiting my site.</p>
+        {% endblock %}
+    </body>
+    </html>
+</code>
+</pre>
+
 
 <p>current_datetime.html</p>
 
-<pre><code>{% extends "base.html" %}
-{% block title %}The current time{% endblock %}
-{% block content %}
-    &lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
-{% endblock %}
-</code></pre>
+<pre>
+<code>
+
+    {% extends "base.html" %}
+    {% block title %}The current time{% endblock %}
+    {% block content %}
+        <p>It is now {{ current_date }}.</p>
+    {% endblock %}
+</code>
+</pre>
+
 
 <p>hours_ahead.html</p>
 
