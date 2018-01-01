@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2017-12-31T22:32:20+08:00</updated>
+  <updated>2018-01-01T08:26:15+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[octopress update]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/31/octopress-update/"/>
+    <updated>2017-12-31T23:46:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/31/octopress-update</id>
+    <content type="html"><![CDATA[<p>升级导致的问题。</p>
+
+<p>octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Django cheat sheet]]></title>
@@ -1780,23 +1791,6 @@ score = model.evaluate(x_test, y_test, batch_size=128)
 <p>报名咨询:请扫描二维码，留言“袋鼠爸爸”，添加好友进行交流。
 微信号：光合阳光
 <img src="https://raw.github.com/lukezhg/Freyja/master/guangheyangguang.png" alt="二维码" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[有所不为]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/03/27/stop-doing-everything/"/>
-    <updated>2017-03-27T21:19:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/03/27/stop-doing-everything</id>
-    <content type="html"><![CDATA[<p>事情是做不完的。</p>
-
-<p>不要尝试做所有的事情。</p>
-
-<p>紧急并不代表重要。</p>
-
-<p>有所不为，才能有所为。</p>
-
-<p>不是没有时间，是这件事不重要。</p>
 ]]></content>
   </entry>
   

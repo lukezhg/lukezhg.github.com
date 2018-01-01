@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy. American &hellip;">
+  <meta name="description" content="I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures. The following are my scripts:
+1. Sina &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,9 +25,6 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  
-  <link href="/stylesheets/mermaid.css" rel="stylesheet" type="text/css">
-
   <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -56,20 +54,102 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/"> Home </a></li>
-  <li><a href="/about"> About </a></li>
-  <li><a href="/blog/archives">Blog</a></li>
-  <li><a href="/course"> Course </a></li>
-  <li><a href="/app"> App </a></li>
-  <li><a href="/cn"> 中文 </a></li>
-  <li><a href="/en"> English </a></li>
-  <li><a href="/log"> log </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
 </ul>
+
 </nav>
   <div id="main">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/">Firefox Extension FireGesture Scripts</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-26T18:23:00+08:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/26/firefox-extension-firegesture-scripts/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
+
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code></p>
+
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+2. iciba(RLR)<br/>
+<code></p>
+
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+3.  Copy the title and url</p>
+
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -284,63 +364,6 @@ Should science teaching keep the same as before? Never.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/">找中学 V2.0发布</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-25T18:30:00+08:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/25/middle-school-search-engine-2-dot-0/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://www.google.com.hk/cse/home?cx=003236158428466992246:mvbdsgvf6hk">找中学v2.0</a></h2>
-
-<p>本搜索引擎覆盖全国31个省市地区（香港、澳门、台湾除外），2264所中学，欢迎测试。</p>
-
-<div>
-<script>
-  (function() {
-    var cx = '003236158428466992246:mvbdsgvf6hk';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</div>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/46/">&larr; Older</a>
@@ -355,12 +378,15 @@ Should science teaching keep the same as before? Never.</p>
   
     <section>
   <h1>About Me</h1>
-  <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
-  <p>慧行坚勇 <a href="http://zhangchunlei.com/about/">More</a> <a href="http://zhangchunlei.com/blog/categories/%E6%95%99%E5%AD%A6/">教学</a> <a href="http://zhangchunlei.com/blog/categories/%E7%A7%91%E7%A0%94/">科研</a> <a href="http://www.skc.ecnu.edu.cn/">skc</a> </p>
+  <p>A little something about me.</p>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/12/31/octopress-update/">octopress update</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/12/31/django-cheat-sheet/">Django cheat sheet</a>
@@ -396,10 +422,6 @@ Should science teaching keep the same as before? Never.</p>
     
       <li class="post">
         <a href="/blog/2017/11/10/use-mermaid-to-render-graph/">Use mermaid to render Graph</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/11/04/stem-and-love/">STEM &amp; Love</a>
       </li>
     
   </ul>
@@ -525,7 +547,7 @@ window.onload=function(){
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2017 - chunlei -
+  Copyright &copy; 2018 - chunlei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
