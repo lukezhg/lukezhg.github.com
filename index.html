@@ -9,8 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="升级导致的问题。 octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。
-">
+  <meta name="description" content="升级导致的问题。 octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。 找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286117/incompatible-character- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,6 +96,71 @@
   <div class="entry-content"><p>升级导致的问题。</p>
 
 <p>octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。</p>
+
+<p>找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</p>
+
+<p>但是试过了对我无效。</p>
+
+<p>回顾一下问题出现的原因，首先出现错误代码是：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Liquid Exception: Unknown tag 'static' in</span></code></pre></td></tr></table></div></figure>
+
+
+<p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。</p>
+
+<p>解决的方式是： 利用 raw 和 endraw标记。如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        {% block content %}{% endblock %}
+</span><span class='line'>        {% block footer %}
+</span><span class='line'>        <span class="nt">&lt;hr&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        {% endblock %}
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。</p>
+
+<p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：</p>
+
+<pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT
+</code></pre>
+
+<p>这个错误很严重，直接rake generate吹产生错误的页面。</p>
+
+<p>网上查的各种方法都没用，最后看自己的博客，发现一招删除rake：</p>
+
+<pre><code>sudo gem uninstall rake  
+</code></pre>
+
+<p>之后选择要删除的版本，我直接是删除所有高级版本，原因是我的octopress是5年前的，肯定和高级版本不合拍。于是试了一下，问题解决了！！</p>
 </div>
   
   
