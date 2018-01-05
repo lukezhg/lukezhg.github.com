@@ -9,13 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="为了检测课程改革实施的效果或者某个项目的成效，你往往需要首先设计出一个评价方案。 你可以按照以下步骤来设计：
-1、首先描述项目的目的
-2、其次描述出项目的具体目标
-3、对项目内容及过程进行描述
-4、列出项目评估问题
-5、列出评估数据来源
-6、给出收集数据的方法和工具 实际上前3项都是项目描述， &hellip;">
+  <meta name="description" content="注意力
+成人的注意力一般能维持17分钟，所以讲授一般不要超过15分钟，甚至更短。如果是40分钟的课堂，建议在15分钟至30分钟时段开展互动性或参与性强的教学活动，最后10分钟则可以用于归纳、讨论和总结。一般最开始和最末尾的学习内容最容易记得，因此教师可以把最重要的事情放在这两个时段。 等待时间（ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +67,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/12/08/numbers-and-figures-that-teacher-should-keep-in-mind/">教师秘籍：数字和图像</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-12-08T17:07:00+08:00" pubdate data-updated="true">Dec 8<span>th</span>, 2015</time>
+        
+         | <a href="/blog/2015/12/08/numbers-and-figures-that-teacher-should-keep-in-mind/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>注意力<br/>
+成人的注意力一般能维持17分钟，所以讲授一般不要超过15分钟，甚至更短。如果是40分钟的课堂，建议在15分钟至30分钟时段开展互动性或参与性强的教学活动，最后10分钟则可以用于归纳、讨论和总结。一般最开始和最末尾的学习内容最容易记得，因此教师可以把最重要的事情放在这两个时段。</p>
+
+<p>等待时间（wait time）<br/>
+提问后要给学生思考的时间，一般至少要30秒，有深度和挑战的问题要更长，甚至1分30秒。</p>
+
+<p>目光接触<br/>
+老师要目中有人，一般要60%的时间与学生有目光接触。</p>
+
+<p>记忆力<br/>
+艾宾浩斯遗忘规律<br/>
+curve</p>
+
+<p>让我听我忘记，让我看我记得，让我参与我理解。</p>
+
+<p>信息保留率<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/learningpyramid.png" alt="learning pyramid" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -510,113 +559,6 @@ http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-loca
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/11/26/face-detection-and-recognition/">人脸定位和识别</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-11-26T10:03:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2015</time>
-        
-         | <a href="/blog/2015/11/26/face-detection-and-recognition/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>现在很多智能手机或者照相机都有人脸检测的功能了。不仅如此，现在的人工智能还能对照片进行比对看两个照片是不是同一个人，或者基于一个样本库，直接识别照片中人的姓名，正确率一般能达到80%以上。</p>
-
-<h3>人脸定位</h3>
-
-<p>功能：在一张照片中定位所有人脸的位置。</p>
-
-<p>实现：使用python sklearn和openCV进行人脸检测和定位。</p>
-
-<p>找到代码：face-boxer.py<br/>
-<a href="https://gist.github.com/dannguyen/cfa2fb49b28c82a1068f#file-face-boxer-py">https://gist.github.com/dannguyen/cfa2fb49b28c82a1068f#file-face-boxer-py</a></p>
-
-<p>使用时出现问题：</p>
-
-<p><strong>问题1</strong><br/>
-由于我在ubuntu上安装的是最新版本的openCV3.0.0，有些语句更改了，造成原始代码错误：<br/>
-<code>
-"face_detect.py", line 21, in flags = cv2.cv.CV_HAAR_SCALE_IMAGE AttributeError: 'module' object has no attribute 'cv'
-</code></p>
-
-<p>问题解决的办法：</p>
-
-<p>具体方法如下：<br/>
-   the cv2.cv submodule got removed in opencv3.0, also some constants were changed.<br/>
-   please use cv2.CASCADE_SCALE_IMAGE instead<br/>
-   (do a help(cv2) to see the updated constants)<br/>
-参见<a href="http://stackoverflow.com/questions/30013009/opencv-3-0-0-dev-python-bindings-not-working-properly">opencv 3.0.0-dev python bindings not working properly - Stack Overflow</a></p>
-
-<p><strong>实际上只需要将原来的cv2.cv.CV_HAAR_SCALE_IMAGE替换为cv2.CASCADE_SCALE_IMAGE</strong></p>
-
-<p><strong>问题2</strong><br/>
-之后又发现程序不报错，但是不能产生人脸识别好的图片</p>
-
-<p>处理：<br/>
-修改产生图片文件名的那一句，去掉/temp/等内容，之后就可以正常产生人脸检测的图片了。</p>
-
-<p>总结：下次遇到问题，特别是程序运行出错，去http://stackoverflow.com找答案会比较便捷。</p>
-
-<p>实际上我在安装openCV的时候也遇到了麻烦，最后参照下面教程安装成功：<br/>
-Installing OpenCV 3.0.0 on Ubuntu 14.04 » Rodrigo Berriel<br/>
-<a href="http://rodrigoberriel.com/2014/10/installing-opencv-3-0-0-on-ubuntu-14-04/">http://rodrigoberriel.com/2014/10/installing-opencv-3-0-0-on-ubuntu-14-04/</a></p>
-
-<p>这个教程提供了自动安装的脚本，但是我还是手动安装的。</p>
-
-<h3>人脸识别</h3>
-
-<p>Python的好处就是可以用二三十行的语句就能完成几乎所有任务</p>
-
-<p>学习资源：<br/>
-<a href="http://scikit-learn.org/stable/datasets/labeled_faces.html">5.5.4. The Labeled Faces in the Wild face recognition dataset — scikit-learn 0.17 documentation</a><br/>
-这个资源介绍了LFW数据库和其用法，lfw是一个从互联网上获得的名人人脸数据库。</p>
-
-<p>Faces recognition example using eigenfaces and SVMs — scikit-learn 0.17 documentation
-<a href="http://scikit-learn.org/stable/auto_examples/applications/face_recognition.html">http://scikit-learn.org/stable/auto_examples/applications/face_recognition.html</a></p>
-
-<p><b>我跑的代码也是上面这个，文件名face_recognition.py</b></p>
-
-<p>对这个代码详细解释的教程见这里：<br/>
-Machine learning for facial recognition | EFavDB<br/>
-<a href="http://efavdb.com/machine-learning-for-facial-recognition-3/">http://efavdb.com/machine-learning-for-facial-recognition-3/</a></p>
-
-<h3>进一步学习</h3>
-
-<p>下面是一个叫Frolian的程序员博客，介绍了如何通过类似的方法在摄像头中识别笑脸。有空可以好好研究一下。</p>
-
-<p>Smile Recognition Using OpenCV and scikit-learn<br/>
-<a href="http://flothesof.github.io/smile-recognition.html">http://flothesof.github.io/smile-recognition.html</a></p>
-
-<p>关于机器学习的另一个比较经典的学习资源：<br/>
-2.11. scikit-learn: machine learning in Python — Scipy lecture notes<br/>
-<a href="http://www.scipy-lectures.org/advanced/scikit-learn/index.html">http://www.scipy-lectures.org/advanced/scikit-learn/index.html</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/13/">&larr; Older</a>
@@ -636,6 +578,10 @@ Machine learning for facial recognition | EFavDB<br/>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/01/05/life-algorithm/">人生算法</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/12/31/octopress-update/">octopress update</a>
@@ -673,15 +619,11 @@ Machine learning for facial recognition | EFavDB<br/>
         <a href="/blog/2017/11/12/science-theater/">Science Theater</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/11/10/use-mermaid-to-render-graph/">Use mermaid to render Graph</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/反思'>反思 (8)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/反思'>反思 (9)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>

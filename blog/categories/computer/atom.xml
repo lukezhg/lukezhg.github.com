@@ -4,7 +4,7 @@
   <title><![CDATA[Category: computer | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/computer/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-01-01T09:28:34+08:00</updated>
+  <updated>2018-01-05T15:42:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -189,17 +189,17 @@ def current_datetime(request):
 <p>\mysite_project\mysite\templates\current_datetime.html</p>
 
 <p>```
-</p>
 
-<pre><code>&lt;html&gt;
-    &lt;body&gt;
-        It is now {{ current_date }}
-    &lt;/body&gt;
-&lt;/html&gt;
-It is now {{ current_date }}.
+<html></p>
+
+<pre><code>&lt;body&gt;
+    It is now {{ current_date }}
+&lt;/body&gt;
 </code></pre>
 
-<p>
+<p></html>
+It is now {{ current_date }}.
+
 ```</p>
 
 <p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
@@ -207,78 +207,84 @@ It is now {{ current_date }}.
 
 <p>base.html<br/>
 ```html
-</p>
 
-<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
-    {% block content %}{% endblock %}
-    {% block footer %}
-    &lt;hr&gt;
-    &lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
-    {% endblock %}
-&lt;/body&gt;
-&lt;/html&gt;
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head></p>
+
+<pre><code>&lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
 </code></pre>
 
-<p>
+<p></head>
+<body></p>
+
+<pre><code>&lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+{% block content %}{% endblock %}
+{% block footer %}
+&lt;hr&gt;
+&lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<p></body>
+</html>
+
 ```</p>
 
 <p>current_datetime.html<br/>
 ```html
-</p>
 
-<pre><code>{% extends "base.html" %}
+{% extends "base.html" %}
 {% block title %}The current time{% endblock %}
-{% block content %}
-    &lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
-{% endblock %}
+{% block content %}</p>
+
+<pre><code>&lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
 </code></pre>
 
-<p>
+<p>{% endblock %}
+
 ```</p>
 
 <p>hours_ahead.html</p>
 
 <p>```html
-</p>
 
-<pre><code>{% extends "base.html" %}
+{% extends "base.html" %}
 {% block title %}Future time{% endblock %}
-{% block content %}
-&lt;p&gt;
-    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
-&lt;/p&gt;
-{% endblock %}
-</code></pre>
+{% block content %}</p>
 
 <p>
+    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+</p>
+
+
+<p>{% endblock %}
+
 ```</p>
 
 <p>9、利用form来获取用户数据。</p>
 
 <p>mysite_project\mysite\books\templates\books\search_form.html
 ```html
-</p>
 
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Search&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;form action="/search/" method="get"&gt;
-        &lt;input type="text" name="q"&gt;
-        &lt;input type="submit" value="Search"&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<html>
+<head></p>
+
+<pre><code>&lt;title&gt;Search&lt;/title&gt;
 </code></pre>
 
-<p>
+<p></head>
+<body></p>
+
+<pre><code>&lt;form action="/search/" method="get"&gt;
+    &lt;input type="text" name="q"&gt;
+    &lt;input type="submit" value="Search"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p></body>
+</html>
+
 ```</p>
 
 <p>mysite\books\urls.py
@@ -369,45 +375,48 @@ def contact(request):
 <p>mysite_project\mysite\templates\contact_form.html</p>
 
 <p>```html
-</p>
 
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;Contact us&lt;/title&gt;
-    &lt;style type="text/css"&gt;
-        ul.errorlist {
-            margin: 0;
-            padding: 0;
-        }
-        .errorlist li {
-            background-color: red;
-            color: white;
-            display: block;
-            font-size: 1.2em;
-            margin: 0 0 3px;
-            padding: 4px 5px;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Contact us&lt;/h1&gt;
-    {% if form.errors %}
-        &lt;p style="color: red;"&gt;
-            Please correct the error{{ form.errors|pluralize }} below.
-        &lt;/p&gt;
-    {% endif %}
-    &lt;form action="" method="post" novalidate&gt;
-        &lt;table&gt;
-            {{ form.as_table }}
-        &lt;/table&gt;
-        {% csrf_token %}
-        &lt;input type="submit" value="Submit"&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<html>
+<head></p>
+
+<pre><code>&lt;title&gt;Contact us&lt;/title&gt;
+&lt;style type="text/css"&gt;
+    ul.errorlist {
+        margin: 0;
+        padding: 0;
+    }
+    .errorlist li {
+        background-color: red;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        margin: 0 0 3px;
+        padding: 4px 5px;
+    }
+&lt;/style&gt;
 </code></pre>
 
-<p>
+<p></head>
+<body></p>
+
+<pre><code>&lt;h1&gt;Contact us&lt;/h1&gt;
+{% if form.errors %}
+    &lt;p style="color: red;"&gt;
+        Please correct the error{{ form.errors|pluralize }} below.
+    &lt;/p&gt;
+{% endif %}
+&lt;form action="" method="post" novalidate&gt;
+    &lt;table&gt;
+        {{ form.as_table }}
+    &lt;/table&gt;
+    {% csrf_token %}
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p></body>
+</html>
+
 ```</p>
 
 <p>10、urls进阶</p>
