@@ -9,7 +9,11 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="今天在公寓的小区里跑步，无意中发现草坪上有鸟，而且很多，有图为证。而且这些鸟并不十分怕人，我给它们拍照，没有一只鸟惊飞，对这就是美国的鸟，中国人眼里的傻鸟。傻鸟有傻福。 不仅如此，我在公寓里工作的时候，经常会有不同颜色和大小的鸟拜访我窗前的小树。它们叽叽喳喳的叫个不停，很是有趣，我也经常给他们留影 &hellip;">
+  <meta name="description" content="如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：
+第一步：产生答题者
+第二步：产生题目
+第三部：产生答题者对题目的作答结果
+你只负责设置参数就可以，其他的程序帮你完成，设置第一步和第二部参数的时候，可以查看图形效果，进而作进一步的调整。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +70,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/18/play-with-wingen-and-bilog/">如何使用Wingen和BILOG</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-18T14:39:00+08:00" pubdate data-updated="true">Feb 18<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/02/18/play-with-wingen-and-bilog/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：<br/>
+第一步：产生答题者<br/>
+第二步：产生题目<br/>
+第三部：产生答题者对题目的作答结果<br/>
+你只负责设置参数就可以，其他的程序帮你完成，设置第一步和第二部参数的时候，可以查看图形效果，进而作进一步的调整。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/wingen.png" alt="wingen" /></p>
+
+<p>接下来可以利用BILOG对你的数据进行模型设定和估算<br/>
+实际上BILOG可以直接使用你用wingen产生的数据，因为都是纯文本，只是你需要建立自己的BLM文件，也并不困难，下图就是在例子的基础上修盖的BLM文件。只是要注意答题者数、题目数要与数据一致，此外文件中有一句要注意 （1A1,9x,30A1），这句表示的是数据的格式，意思是第一列为标号，后面有9列空行，再后面有30列的数据（也就是每个答题者对30到题目的作答情况），这个格式一定要与数据相互吻合。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bilog.png" alt="bilog" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -265,72 +316,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/01/23/pck-example-one/">项目反应理论是个啥</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-23T16:20:00+08:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time>
-        
-         | <a href="/blog/2014/01/23/pck-example-one/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>统计学中有很多概念很抽象不容易理解，但是如果有恰当的例子作桥梁，就可以深入浅出，容易让人领悟了。</p>
-
-<p>最近尝试学习一些关于项目反映理论（IRT）的东西，觉得很多学习资料都使用公式吓唬人，并没有把这个概念浅显化和生活化。总之，这些资料不够友好，让初学者望而生畏。</p>
-
-<p>那么什么是项目反映理论呢？我试着解释解释。这样从测量开始说起。举个例子，推铅球比赛。每个运动员都会按照规定选择一定大小的铅球站在指定的地点，用尽全力把球向着一个方向推出去。然后裁判会用尺子测量落地点与原点的距离，读出读数作为成绩。实际上测量的是选手的推力和推送技巧，它有一个理论的真值。而裁判的读数则是观测值。但是理论值并不等于观测值。理论值=观测值+误差。这就是经典的测量理论。但是铅球有不同重量和大小，假如在比赛记录中，有两个不同时期的运动员，一个用的是15斤，一个是10斤，前者推了15米，后者推出了20米，那么那个选手的成绩更好呢。这个时候经典测验理论就无能为力了，要解决这个问题必须要再把两个运动员找来，用同一个铅球重新比过。但是项目反映理论则可以解决这个问题。</p>
-
-<p>实际上，教育测量往往比这个情境还要复杂。推铅球我们还能直接测量然后读数，即使有误差，多测几次就能减少误差。当是教育测量则通常是纸笔测验，这个题答对那个题每答对，最后有个总分。那么这个总分就是我们学生的学业能力吗？当然不是，比如这张试卷一共十个题目。有些简单题目很多人答对，有些难题则很少人答对。假如有两个学生都得了8分。一个学生把难题都做对了，但是简单题却错了两个。另外一个则是两个最难的题目都做错了。那么他们的学业能力真的一样吗？你觉得谁的学业能力应该更强一些？（想一想）</p>
-
-<p>如何思考这个问题呢？我们还是用推铅球这个例子。由于某种原因，我们无法直接测量了，比如没有尺子并且是夜晚。那怎么比赛呢，于是我们选几个离河边远近不同的几个测试点，然后在每个点放一堆大小相同的铅球。虽然我们不能测量，但是我们仍然能区分铅球是否落水，听到落水声就得1分，否则0分。就好像做选择题，我们能判断是否选择了正确的选项。由于每个测试点离河边远近的距离都不同，铅球的大小也不同，而且河岸的形状也有变化，所以每个测试点的难度也不同。但是同一个选手在状态相同的情况下，测试结果理论上是相同的。我们将会根据每个测试点选手的表现来估计其能力水平。如果按照总分把所有选手分成高分组和低分组，对于同一个测试点，我们会发现高分组的通过率会高于低分组，如果从群体中随机选取一个选手的话，来自高分组的选手将会有更高的概率通过，而低分组的选手则通过率会比较低。如果我们以选手的能力为横坐标，以通过某个测试点的概率为纵轴，那么就得到下面的曲线。<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/Itermcharasticcurve.jpg" alt="IRT ICC 项目特征曲线" /></p>
-
-<p>从这个项目特征曲线中我们可以看到，随着能力（theta）的提高，答对这个题目的概率也在提升。不同题目的曲线也不同，也许你已经想象出一道更简单题的题目的项目特征曲线将会相对这条曲线左移，而难题的曲线则右移。假如通过大量的测验知道了每个题目的项目特征曲线，那么我们就可以根据选手对一组题目的作答情况来估测其能力水平。即便是两个选手作答的两组试题并不相同，我们也能够比较两个选手的能力高低了。</p>
-
-<p>当然项目特征曲线有简单的也有复杂的，简单1个参数（难度），也有2个（难度，区分度）或3个参数（难度，区分度和猜测参数）的，也就是所谓1P模型，2P，3P模型。</p>
-
-<p>了解更多关于IRT的知识，请参考学习资料见：<a href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/">IRT learning resources - Chunlei&#8217;s Blog</a></p>
-
-<p>为了更好解释项目反映理论，我曾经想过很多其他的例子，但是还是觉得推铅球这个例子最好，最能深入浅出，又不失去科学性。但是好的例子往往不是一下子就想到的，而且往往需要比较后才能选择出来，我以前想到的例子也列出来，读者可以自己比较比较。</p>
-
-<p>A 抛硬币或者骰子<br/>
-B 测量身高<br/>
-C 摸高<br/>
-D 跳高</p>
-
-<p>比较的依据：<br/>
-1 是否用来衡量某种能力<br/>
-2 是否可测量，与经典测量理论相联系<br/>
-3 群体的这种能力的分布是否为正态分布<br/>
-4 是否能解决不同尺子测量结果比较的问题</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/32/">&larr; Older</a>
@@ -350,6 +335,10 @@ D 跳高</p>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/01/09/sandwith-style-working/">做事的三明治法则</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/01/05/life-algorithm/">人生算法</a>
@@ -387,15 +376,11 @@ D 跳高</p>
         <a href="/blog/2017/11/13/super-city-and-abc/">超级城市与潜在的机会</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/11/12/science-theater/">Science Theater</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/反思'>反思 (9)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (3)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (1)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (1)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (5)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (17)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (50)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (2)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (10)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: sandwith | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/sandwith/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2018-01-09T09:02:11+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[做事的三明治法则]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/01/09/sandwith-style-working/"/>
+    <updated>2018-01-09T08:55:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/01/09/sandwith-style-working</id>
+    <content type="html"><![CDATA[<p>首先做一件具体而简单的事</p>
+
+<p>然后做一件明确但是有挑战的事</p>
+
+<p>再然做一件不明确而且有挑战的事</p>
+
+<p>最后做一件明确而简单的事</p>
+
+<p>做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难于的肉馅蔬菜放在里边。</p>
+
+<p>这样做的好处是，容易形成正向的成功经验，切不会对困难望而生畏。</p>
+]]></content>
+  </entry>
+  
+</feed>
