@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-01-14T08:32:00+08:00</updated>
+  <updated>2018-02-03T17:47:21+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,127 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[IRT BILOG equating notes]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes/"/>
+    <updated>2018-02-03T15:55:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes</id>
+    <content type="html"><![CDATA[<p>一、数据的格式</p>
+
+<p>DATA</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+</span><span class='line'>NOT                                                                        
+</span><span class='line'>40001 1 011111011111111111011111011                                        
+</span><span class='line'>45137 1 011011111111011000001001100                                        
+</span><span class='line'>60001 2                     111111101101000111011110111                    
+</span><span class='line'>60002 2                     110011100000001001100110111                    
+</span><span class='line'>82913 3                                         111111011111000111000001111
+</span><span class='line'>82914 3                                         111111001110100000000101111</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注释：<br/>
+第一列是答案。第二列是NOT。第三列开始都是数据。</p>
+
+<p>二、命令文件</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+</span><span class='line'>&gt;COMMENT
+</span><span class='line'>Science test equating
+</span><span class='line'>&gt;GLOBAL DFName = 'data.DAT', 
+</span><span class='line'>        NPArm = 2, 
+</span><span class='line'>        SAVe;
+</span><span class='line'>&gt;SAVE PARm = 'data.PAR', 
+</span><span class='line'>      SCOre = 'data.SCO', 
+</span><span class='line'>      TSTat = 'data.TST';
+</span><span class='line'>&gt;LENGTH NITems = (67);
+</span><span class='line'>&gt;INPUT NTOtal = 67, 
+</span><span class='line'>       NIDchar = 5, 
+</span><span class='line'>       NGRoup = 3, 
+</span><span class='line'>       KFName = 'data.DAT', 
+</span><span class='line'>       NFName = 'data.DAT';
+</span><span class='line'>&gt;ITEMS INAmes = (M01(1)M67);
+</span><span class='line'>&gt;TEST1 TNAme = 'SCIT', 
+</span><span class='line'>       INUmber = (1(1)67);
+</span><span class='line'>&gt;GROUP1 GNAme = 'GRADE 4', 
+</span><span class='line'>        LENgth = 27, 
+</span><span class='line'>        INUmbers = (1(1)27);
+</span><span class='line'>&gt;GROUP2 GNAme = 'GRADE 6', 
+</span><span class='line'>        LENgth = 27, 
+</span><span class='line'>        INUmbers = (21(1)47);
+</span><span class='line'>&gt;GROUP3 GNAme = 'GRADE 8', 
+</span><span class='line'>        LENgth = 27, 
+</span><span class='line'>        INUmbers = (41(1)67);
+</span><span class='line'>(5A1,1X,I1,1X,67A1)
+</span><span class='line'>&gt;CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+</span><span class='line'>&gt;SCORE IDIst = 3, RSCtype = 3, NOPrint;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>三、输出文件<br/>
+data.PAR&#8211;>试题参数文件。<br/>
+data.SCO&#8211;>学生成绩文件。<br/>
+data.PH1&#8211;>经典测量理论参数，如原始分，正答率，相关系数等。<br/>
+data.PH2&#8211;>模型和试题参数。<br/>
+data.PH3&#8211;>rescaled 试题参数。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From AI to IA]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/01/21/from-ai-to-ia/"/>
+    <updated>2018-01-21T16:57:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/01/21/from-ai-to-ia</id>
+    <content type="html"><![CDATA[<p>AI stands for Artificial Intelligence.<br/>
+IA stands for Intellectual Assistant.</p>
+
+<p>We don&#8217;t need AI. We need IA.</p>
+
+<p>AI sounds amazing but hard to understand for common computer users. Even for programers it take time and effort to fully understand and make use of AI power.</p>
+
+<p>AI includes many sub-feilds, such as machine learning, natural language processing, expert system and so on. As an amateur programer, what I really need is not AI but an assisstant to help me learn and work. I call it intellectural assisstant (IA).</p>
+
+<p>IA make use of AI power to recognize friends&#8217; faces, remember ceremony days, record your life experiences and predict your personal needs and action. IA is not a technology method, it is your personal smart accompany.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[研究生科研能力进阶]]></title>
@@ -1676,194 +1797,6 @@ conversations:
 能用自己的语言进行陈述，组织合理、整合恰当。没有任何照搬的现象。包括所有主要观点，且理解正确。</p>
 
 <p>根据这个标准，写作者可以对自己的summary进行自评。这样在会写summary的基础上，写review就有基础了，也不会总是犯罗列和照抄等低级错误。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[tips for mac users]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/09/07/tips-for-mac-users/"/>
-    <updated>2017-09-07T18:10:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/09/07/tips-for-mac-users</id>
-    <content type="html"><![CDATA[<h2>快捷键：</h2>
-
-<p>Finder
-显示隐藏文件：shift + command + .<br/>
-回到主目录：shift+command+H</p>
-
-<p>需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
-复制：command+c
-粘贴：command+v
-拖拽的功能很厉害。</p>
-
-<h2>bash命令：</h2>
-
-<p>复制：cp
-目录：cd
-列表：ls
-移动：mv  源文件 目标文件</p>
-
-<h2>批量重命名：</h2>
-
-<p>Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
-
-<h1>设置文件：</h1>
-
-<pre><code>vi ~/.bash_profile  #编辑设置文件
-ls -l -a   列出指定目录下文件
-           -l 显示文件的详细信息
-           -a 显示目录下所有文件（包括隐藏文件）
-           -d 显示指定目录pwd  显示当前的工作目录的路径
-touch 目录名：查看指定文件，若没有此文件则创建空文件；更改文件时间戳
-chmod 更改指定文件或目录的权限
-</code></pre>
-
-<h2>进程管理</h2>
-
-<pre><code>ps aux 静态查看进程
-top 动态查看进程
-kill 杀死进程
-kill -9 pid       杀死指定进程
-</code></pre>
-
-<h2>其他命令</h2>
-
-<pre><code>man  显示帮助文件（按q退出）
-ifconfig 查看或修改ip地址
-sudo 以root权限执行一次命令
-clear / ctrl+L   清屏
-ctrl+C     无条件终止
-</code></pre>
-
-<h2>文件操作</h2>
-
-<pre><code>rm –rf * 强制删除当前目录下所有文件
-rm -rf        删除文件或目录
-cp -r         复制文件
-mv         移动文件
-stat 文件名  查看文件详细信息
-find  查找文件
-find / -name *       查找文件
-mkdir   创建新目录
-rmdir   只能删除空目录
-</code></pre>
-
-<h2>修改文件：</h2>
-
-<pre><code>echo:输出字符串或变量值
-echo “字符串” &gt; file  #用&gt;时，指定的文件若不存在，创建文件；若存在，覆盖原文件内容
-echo “字符串” &gt;&gt; file #用&gt;&gt;时，指定的文件若不存在，创建文件；若存在，在原文件内容后追加内容
-</code></pre>
-
-<h2>ssh文件同步</h2>
-
-<p>同步到服务器</p>
-
-<pre><code>scp -r localhome/* root@ip:/home/localhome/
-</code></pre>
-
-<p>同步到本地</p>
-
-<pre><code>scp -r root@ip:/home/localhome/* localhome／
-</code></pre>
-
-<h2>多个Python共存</h2>
-
-<pre><code>pyenv versions #参看版本信息
-pyenv global 3.6.3 #切换3
-pyenv global 2.7.13 #切换到2
-source ~/.bash_profile
-</code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Haxe Sublime PackageControl]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/09/07/haxe-sublime-packagecontrol/"/>
-    <updated>2017-09-07T09:50:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/09/07/haxe-sublime-packagecontrol</id>
-    <content type="html"><![CDATA[<p>Flash已经慢慢被H5取代，但是最近缺还是用flash编制了一个小游戏，一个太空穿越游戏。</p>
-
-<p>因此，想尝试将其转化为H5，最直接的方法就是手动改，这种方法最有效直接，也最靠谱。</p>
-
-<p>但是本着懒人的精神，google了其他的方法，方法有很多种，比如swiffy就是一种能将swf转化成h5的应用，而且特别是对于只有动画的flash和as2.0特别好用。但是对于我用AS3写的游戏，不靠谱。</p>
-
-<p>于是又找到了一种方法，就是用haxe这种跨语言的程序语言，它继承了很多AS的特性，因此很容易改写代码，然后也很容发布称为H5，不过还是绕不开人工改写。其实有一个AS3HX的插件可以自动转化代码，我是一了一下，出现错误。也就放弃了。</p>
-
-<p>但是，我却对Haxe产生了兴趣，并且安装了haxe和openfl，还找了一个<a href="http://haxecoder.com/post.php?id=14">现成的代码</a>玩了一下，还是挺容易上手的。</p>
-
-<p>大体过程bash如下：</p>
-
-<pre><code>
-openfl create project ProjectName #新建项目
-cd ProjectName #进入项目目录
-sublime Source/Main.hx #修改代码
-openfl test html5 #测试，或者 openfl test neko 或者 openfl test flash
-</code>></pre>
-
-
-<blockquote></blockquote>
-
-<p>这个例子打开了Haxe的窗口，用这种程序代码就不担心发布的产品因为受到语言软件限制而必须改写，因为直接换一种形式发布就ok了。</p>
-
-<p>下面是展示一张图片的代码，来自：<a href="http://www.openfl.org/learn/tutorials/displaying-a-bitmap/">openfl官网</a></p>
-
-<pre><code>
-package;
-
-import openfl.display.Bitmap;
-import openfl.display.Sprite;
-import openfl.Assets;
-
-class Main extends Sprite {
-
-    public function new () {
-
-        super ();
-
-        var bitmapData = Assets.getBitmapData ("assets/openfl.png");
-        var bitmap = new Bitmap (bitmapData);
-        addChild (bitmap);
-
-        bitmap.x = (stage.stageWidth - bitmap.width) / 2;
-        bitmap.y = (stage.stageHeight - bitmap.height) / 2;
-
-    }
-
-
-</code></pre>
-
-
-<p>要注意的是，展示的图片，放在assets文件夹中，然后直接调用即可。</p>
-
-<p>下面是一个推球游戏代码：<br/>
-http://haxecoder.com/post.php?id=14
-我们需要修改项目目录下的application.xml文件，来修改窗口大小和背景等属性。<br/>
-下面的两行代码就是设定窗口大小为 500x500，背景色为#333333:</p>
-
-<pre><code>
-<window background="#333333" fps="60" />
-<window width="500" height="500" unless="mobile" />
-</code></pre>
-
-
-<p>在测试这些代码的时候，我发现在sublime、终端、文件夹之间切换效率特别低，于是专门搜索了一下sublime的用法，其实sublime有很多插件可用，比如sidebar enhancement，haxe，markdown，terminal等，只需要从preference-package control进去，然后install相应的插件即可。这里大有文章可做。</p>
-
-<p>为了提高文件夹切换的效率，可以通过添加文件夹到项目的办法，这样sublime侧边栏就可以直接切换多个文件。</p>
-
-<p>为了让自发布博客更有效，我还在自己的~/.bash_profile中添加了alias语句，它的格式是：<br/>
-alias [别名]=&#8217;[指令名称]&#8217;)</p>
-
-<p>目的是在终端输入 rake的时候，系统会自动解读为 bundle exec rake。</p>
-
-<pre><code>
-alias rake='bundle exec rake'
-</code></pre>
-
-
-<p>通过这么一番折腾，mac的使用效率提升了不少。</p>
-
-<p>昨夜西风凋碧树
-独上高楼，望断天涯路</p>
 ]]></content>
   </entry>
   

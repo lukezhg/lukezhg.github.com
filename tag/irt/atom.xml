@@ -4,7 +4,7 @@
   <title><![CDATA[tags: IRT | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/irt/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-01-14T08:32:00+08:00</updated>
+  <updated>2018-02-03T17:47:21+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,93 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[IRT BILOG equating notes]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes/"/>
+    <updated>2018-02-03T15:55:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes</id>
+    <content type="html"><![CDATA[<p>一、数据的格式</p>
+
+<p>DATA<br/>
+<code>
+KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+NOT                                                                        
+40001 1 011111011111111111011111011                                        
+45137 1 011011111111011000001001100                                        
+60001 2                     111111101101000111011110111                    
+60002 2                     110011100000001001100110111                    
+82913 3                                         111111011111000111000001111
+82914 3                                         111111001110100000000101111
+</code></p>
+
+<p>注释：<br/>
+第一列是答案。第二列是NOT。第三列开始都是数据。</p>
+
+<p>二、命令文件<br/>
+```
+EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS</p>
+
+<blockquote><p>COMMENT
+Science test equating
+GLOBAL DFName = 'data.DAT',</p>
+
+<pre><code>    NPArm = 2, 
+    SAVe;
+</code></pre>
+
+<p>SAVE PARm = 'data.PAR',</p>
+
+<pre><code>  SCOre = 'data.SCO', 
+  TSTat = 'data.TST';
+</code></pre>
+
+<p>LENGTH NITems = (67);
+INPUT NTOtal = 67,</p>
+
+<pre><code>   NIDchar = 5, 
+   NGRoup = 3, 
+   KFName = 'data.DAT', 
+   NFName = 'data.DAT';
+</code></pre>
+
+<p>ITEMS INAmes = (M01(1)M67);
+TEST1 TNAme = 'SCIT',</p>
+
+<pre><code>   INUmber = (1(1)67);
+</code></pre>
+
+<p>GROUP1 GNAme = 'GRADE 4',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (1(1)27);
+</code></pre>
+
+<p>GROUP2 GNAme = 'GRADE 6',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (21(1)47);
+</code></pre>
+
+<p>GROUP3 GNAme = 'GRADE 8',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (41(1)67);
+</code></pre>
+
+<p>(5A1,1X,I1,1X,67A1)
+CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+SCORE IDIst = 3, RSCtype = 3, NOPrint;
+```</p></blockquote>
+
+<p>三、输出文件<br/>
+data.PAR-->试题参数文件。<br/>
+data.SCO-->学生成绩文件。<br/>
+data.PH1-->经典测量理论参数，如原始分，正答率，相关系数等。<br/>
+data.PH2-->模型和试题参数。<br/>
+data.PH3-->rescaled 试题参数。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[如何使用Wingen和BILOG]]></title>
