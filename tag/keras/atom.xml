@@ -4,7 +4,7 @@
   <title><![CDATA[tags: keras | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/keras/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-02-09T18:27:23+08:00</updated>
+  <updated>2018-02-22T22:14:06+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -79,6 +79,11 @@ score = model.evaluate(x_test, y_test, batch_size=128)
 
 <p>（5）应用<br/>
 当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。</p>
+
+<p>机器学习可以用于：分类、聚类、回归、异常识别等。</p>
+
+<p>还可以制作聊天记起，比如利用chatbot制作的聊天机器人，还具有学习新对话的能力。<br/>
+http://127.0.0.1:8000/chat/</p>
 ]]></content>
   </entry>
   
