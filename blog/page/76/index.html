@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="这是在读到一篇科学教育研究的文章时接触到这个词汇的（water dowsing）。相关资料很多，众说纷纭，相信会对大众的科学素养以及信息甄别能力会有很大的锻炼。下面列出相关信息，切记不是某个人说的或者贴在某个网上的东西就是正确的，自己学会分辨和批判性思维。 下面是有待读者自己去检验的信息： &hellip;">
+  <meta name="description" content="以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。 就我的理解，GAE就是运行在互联网上的可执行程序。要想造就这样的一个程序，你首先要你的程序找一个存放的地方，Google提供了这样的地方， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,76 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/02/18/knowlege-of-gae/">今天学习了一些关于GAE的知识</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-02-18T00:00:00+08:00" pubdate data-updated="true">Feb 18<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/02/18/knowlege-of-gae/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。</p>
+
+<p>就我的理解，GAE就是运行在互联网上的可执行程序。要想造就这样的一个程序，你首先要你的程序找一个存放的地方，Google提供了这样的地方，而且是免费的，也就是是<a href="http://appengine.google.com/" target="_blank">Google App Engine</a>， 目前每个用户可以免费创建十个这样的应用程序。</p>
+
+<p>点击上面的地址之后，你需要用你的gmail账号登陆，没有可以先去申请一个。进入<a href="http://appengine.google.com/" target="_blank">http://appengine.google.com/</a>之后，点击Create an Application，然后填写应用标识和应用标题两栏，其中标识很重要，一会我们还会用到它，比如说这个标识名为：helloworld</p>
+
+<p>完成之后，我们就为应用程序申请了一个托管的空间，而且也获得一个应用标识。接下来，我们就是要开发一个网络应用程序，为了开发这个网络应用程序，我们需要下载并安装两个软件（这个两个软件也就构成了开发环境）：
+<ul>
+	<li>Google App Engine SDK 下载地址<a href="http://code.google.com/intl/zh-CN/appengine/downloads.html">http://code.google.com/intl/zh-CN/appengine/downloads.html</a></li>
+</ul>
+<ul>
+	<li>Python 2.5.4 下载地址<a href="http://www.python.org/download/releases/2.5.4/">http://www.python.org/download/releases/2.5.4/</a></li>
+</ul>
+开发的具体过程，要根据你程序的功能不同而不同，当然你也可以找一找别人已经开发好的程序，然后在这个基础上修改一下，这样会很容易，不过一般只能完成相对简单的功能，而且会受到原有代码的限制，不如自己编写的符合自己的目的和需要。</p>
+
+<p>开发好之后，我们就要把这个程序上传到我们申请的那个空间上去。通常所有的程序都会放到一个目录中，比如这个目录是E:\myfiles\code\lukesvn<br />
+接下来就是用记事本打开myapp目录中app.yaml文件，修改应用名为你申请的应用标识(helloworld)。 然后打开cmd，执行appcfg.py update E:\myfiles\code\lukesvn<br />
+你会被要求输入你的gmail账号和密码，之后你的程序就上传到你先前申请到的那个空间了，你可以访问 <span style="text-decoration: underline;">标识名.appspot.com</span> 来访问你的网络应用程序了，这个例子中也就是访问 helloworld.appspot.com</p>
+
+<p>相关的学习资源
+<ul>
+	<li>上传您的应用程序 - Google App Engine - Google 代码</li>
+</ul>
+: <a href="http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html" target="_blank">http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html</a>
+<ul>
+	<li>Google App Engine使用简介-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/1880.html" target="_blank">http://www.williamlong.info/archives/1880.html</a>
+<ul>
+	<li>Twitter实时同步到Ping.fm和Hellotxt-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/2067.html" target="_blank">http://www.williamlong.info/archives/2067.html</a>
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=f8f16231-5097-86d4-8c6c-d8ac8605c0af" alt="" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -235,44 +305,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/01/25/how-to-use-google-docs-to-cowriting/">如何利用Google Docs进行文章合作写作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-25T00:00:00+08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/01/25/how-to-use-google-docs-to-cowriting/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><div style="text-align: justify;"><span style="color: rgb(153, 0, 255);"><b>按：</b><br />以下写的内容都是在</span><span style="color: rgb(153, 0, 255);">2009年5-7月份</span><span style="color: rgb(153, 0, 255);">与<a title="庄老师" href="http://sociallearnlab.org/xiuli/" id="j7t8">庄老师</a>和<a title="余波" href="http://sociallearnlab.org/alexyu/" id="j6k:">余波</a>两位使用Google Docs合作写作过程记录的，回过头来在重新审视一下这种行为，也是件有意思的事，</span><b style="background-color: rgb(255, 255, 255); color: rgb(153, 0, 255);">特此留下文字给未来的合作编辑者。</b><br /></div><br /><br /><h1 style="text-align: center;">如何利用Google Docs进行文章合作写作</h1><b>问题1：为什么合作？选择谁合作？</b><br /><br />一个人的思路容易走向困境，需要通过碰撞和对话才生新的想法。一个人做事太随意，容易放弃，不易坚持，因此不一定能够完成工作，两个人合作可以互相鼓励，大大加强了完成工作的可能性。一个人可以很好的统揽全局，观点比较一致，两个人或者多个人容易有观点冲突，难于协调统一。因此，对于写作而言，不易太多人，而且需要有人进行布置和统帅。合作者最好能够优势互补，各有所长。因此易选择专业背景不同的伙伴进行合作，这样便于分工和增加责任感。<br /><br /><b>问题2：怎么合作？</b><br />首先需要介绍一下google docs服务，以及这种服务的使用方法和技巧。<br /><br />1、设立明确的deadline,如果没有deadline文章就可能陷入长期的无止境的纠缠之中。<br />2、开始就确立好组织者，并由组织者来控制全局，选择和组织其他作者参与。协调分工，使得各尽其能，各负其责。参加合作的人，认领颜色标记。<br />组织者要担负起主要责任，从发起到结稿，完整负责<br />需要确定文章的主要标题、内容框架、思路、读者、杂志、文献等。<br />参与者需要贡献自己的想法、补充、批判性和建设性意见并参与具体段落的编写和完善，并且努力达到贡献文章内容的三分之一。<br />最后依据贡献多少，来决定署名的顺序。<br /><b><br />问题3：怎么写？</b><br />3、文章撰写的一般过程：<br /><br />3.1 初期<br />头脑风暴——收集文章的要素<br />灵感捕捉——信笔写来<br />利用（XX 署名@）或者comments来实现异步对话和沟通，利用状态标签来协同工作。<br /><br />3.2 中期<br /><ul><li>进行深刻的思考和整理、剪裁（剪裁是一件痛苦的事）</li><li>明确写作目的和内容和读者，建立框架，确定标题</li><li>完善框架中的各个段落</li><li>小节全文</li></ul>3.3 收尾<br />完善文章的结构，比如补充参考文献，写摘要、关键字、作者信息。<br /><br />投稿时要把投稿文章发给合作作者，一定要做到守信、坦诚、公正、并珍视这种合作关系。<br /><br /><b>问题4：我们能从合作写作中获得什么？</b><br />4、合作中可以学到什么？<br />4.1 向别人学习<br /><ul><li>别人是如何写文章的，技术，技巧</li><li>文章写作的过程</li><li>别人是如何修改文章的，别人心目中好文章的标准，比如按照读者的视角审视、突出主线、精炼文字</li><li>留心别人的写作准备、选题、写作思路、论证方式、语言、写作策略等</li></ul><br />4.2 向过程学习<br />遇到的困难，解决的办法，及时的反思和总结，改变自己的错误认识或看法<br /> 锻炼自己与人沟通、协作的能力<br /><b><br /><br />总结：</b><br />我们经常遇到的情况是要毕业了，还再为写文章发愁，然后埋头写作，但是收效甚微。其实写作是一门技能，它不是在短时间内就可以形成<br />的，而需要循序渐进的积累和练习；它也不是可以闭门造车就快速增长的，相反它需要与人交流、观摩、切磋；另外写作还需要换位思考，明确自己的写作目的和文章的受众，进而选择内容、素材和写作风格，所以写作和做演讲一样，它需要把读者、内容和写作目的三者有机的结合起来，然读者受益，让著者满意，让内容成为读者与著者心灵沟通的桥梁。<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=eea4515d-19e4-85ad-9760-5387494b52ba" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/77/">&larr; Older</a>
@@ -292,6 +324,10 @@
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/25/protect-our-brain/">保护我们的大脑</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/02/22/bow-keyboard-shortcut-for-mac/">bow keyboard shortcut for mac</a>
@@ -327,10 +363,6 @@
     
       <li class="post">
         <a href="/blog/2017/12/31/django-cheat-sheet/">Django cheat sheet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/12/30/mysql-charset-admin-django/">mysql charset admin django</a>
       </li>
     
   </ul>

@@ -9,9 +9,10 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Durying my study in UGA, I will obey 3 rules:
-* 能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.
-* 能自己做的不让别人做 Things &hellip;">
+  <meta name="description" content="Python重要用法示例 dir(list)
+显示关键字相关的函数 help(list.reverse)
+查询某个函数的功能 set 让一个list变成无重复元素的set
+例如： shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +69,152 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/30/python-brief/">Python简明手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-30T14:25:00+08:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/07/30/python-brief/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Python重要用法示例</p>
+
+<blockquote><blockquote><blockquote><p>dir(list)
+显示关键字相关的函数</p>
+
+<p>help(list.reverse)
+查询某个函数的功能</p></blockquote></blockquote></blockquote>
+
+<p>set 让一个list变成无重复元素的set
+例如：</p>
+
+<blockquote><blockquote><blockquote><p>shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;,&#8217;circle&#8217;]
+setOfShapes = set(shapes)
+setOfShapes
+set([&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;])
+setOfShapes.add(&#8216;polygon&#8217;)
+&#8216;rhombus&#8217; in setOfShapes
+False
+setOfShapes - setOfFavoriteShapes
+setOfShapes &amp; setOfFavoriteShapes
+setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+
+<p>map和lambda</p>
+
+<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]</p></blockquote></blockquote></blockquote>
+
+<p>Object 先定义一个类，然后给类生成实例
+定义如：
+class FruitShop:</p>
+
+<pre><code>def __init__(self, name, fruitPrices):
+    """
+        name: Name of the fruit shop
+
+        fruitPrices: Dictionary with keys as fruit 
+        strings and prices for values e.g. 
+        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
+    """
+    self.fruitPrices = fruitPrices
+    self.name = name
+    print 'Welcome to the %s fruit shop' % (name)
+
+def getCostPerPound(self, fruit):
+    """
+        fruit: Fruit string
+    Returns cost of 'fruit', assuming 'fruit'
+    is in our inventory or None otherwise
+    """
+    if fruit not in self.fruitPrices:
+        print "Sorry we don't have %s" % (fruit)
+        return None
+    return self.fruitPrices[fruit]
+
+def getPriceOfOrder(self, orderList):
+    """
+        orderList: List of (fruit, numPounds) tuples
+
+    Returns cost of orderList. If any of the fruit are  
+    """ 
+    totalCost = 0.0             
+    for fruit, numPounds in orderList:
+        costPerPound = self.getCostPerPound(fruit)
+        if costPerPound != None:
+            totalCost += numPounds * costPerPound
+    return totalCost
+
+def getName(self):
+    return self.name
+</code></pre>
+
+<p>调用winsound 函数</p>
+
+<pre><code>
+import winsound
+# press a make a beep
+if event.KeyID==65: winsound.Beep(200,9)
+# press ESC play exit sound
+if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+</code></pre>
+
+
+<p>使用pyHook监听鼠标和键盘事件</p>
+
+<pre><code>
+import pythoncom
+import pyHook
+
+def onKeyboardEvent(event):
+    global switch
+    # 监听键盘事件
+    if switch:
+        print "Key:", event.Key
+        print "KeyID:", event.KeyID
+    return True #监听函数的返回值
+
+def main():
+    # 定义一个实例
+    hm = pyHook.HookManager()
+    # 监听所有键盘事件
+    hm.KeyDown = onKeyboardEvent
+    # 设置键盘监听器
+    hm.HookKeyboard()
+    # 循环并保持一直处于监听状态
+    pythoncom.PumpMessages()
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -306,50 +453,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/05/15/Chindogu-designed-by-me/">设计Chindogu锻炼创造力</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-15T19:33:00+08:00" pubdate data-updated="true">May 15<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/05/15/Chindogu-designed-by-me/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近参加了一门网络课程，是关于创造力的，课程活动要求参与者设计一些chindogu，这个词源于日本，是指一些没有实际用途但是有趣的设计产品。于是我设计了以下作品： <br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/beauty-in-your-cup.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hourglass-bath.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/couple-zipper-umbrella.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/lovers-dancing-shoe.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/hand-tap-1.png" alt="beauty-in-your-cup" />
-<img src="https://raw.github.com/lukezhg/Freyja/master/music-tap-1.png" alt="beauty-in-your-cup" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/52/">&larr; Older</a>
@@ -369,6 +472,10 @@
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/25/protect-our-brain/">保护我们的大脑</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/02/22/bow-keyboard-shortcut-for-mac/">bow keyboard shortcut for mac</a>
@@ -404,10 +511,6 @@
     
       <li class="post">
         <a href="/blog/2017/12/31/django-cheat-sheet/">Django cheat sheet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/12/30/mysql-charset-admin-django/">mysql charset admin django</a>
       </li>
     
   </ul>
