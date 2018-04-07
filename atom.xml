@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-03-25T16:02:38+08:00</updated>
+  <updated>2018-04-07T13:31:50+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[论文写作与修改原则]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/04/07/paper-writing/"/>
+    <updated>2018-04-07T13:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/04/07/paper-writing</id>
+    <content type="html"><![CDATA[<p>原则1:论文要提出、有价值的、可研究的研究问题。<br/>
+为了提出这样的问题，必须要做好文献综述工作，梳理已有的研究问题、研究对象、研究方法、研究结果，进而了解哪些有价值的问题还没有研究，哪些研究方法是可以尝试的研究方法，现有的研究基础是怎样的。这些工作需要在论文开题时就要完成。</p>
+
+<p>这也构成了论文研究的前半部分：<br/>
+研究背景（做这项研究的目的和背景）
+研究综述（总结已有相关研究，确定研究理论框架，提出值得进一步探索的研究问题）
+研究方法（针对研究问题明确研究思路、研究对象、研究工具、要收集的数据）</p>
+
+<p>原则2:论文要有明确的论点、可信的证据和严谨的论证过程。<br/>
+为了回应研究问题，研究者需要基于收集的数据和研究结果得出结论。这些结论必须明确，并且有可信的证据支持，论证过程必须符合逻辑。要注意是否有被忽略的证据和价值观假设，是否有其他可能的解释等。此外，在讨论部分还要交代研究的结论与别人研究的关系如何？对理论和现实有哪些价值？</p>
+
+<p>这部分构成了论文的后半部分：<br/>
+研究结果：基于数据分析描述研究的结果
+研究结论和讨论：基于结果得出结论，并与其他研究相比较，讨论研究的意义和价值。</p>
+
+<p>原则3:论文要有清晰的结构和严谨的格式。<br/>
+写论文时应该把论文的框架做成概念图，并调整内容顺序，直到呈现清晰而有条理的结构。<br/>
+要检查标题、摘要、关键词、目录、表格、图片、参考文献的格式。细节彰显态度。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[保护我们的大脑]]></title>
@@ -1831,77 +1857,6 @@ From the Command Palette: Mermaid: View In Browser</p>
 <p>科学大本营——第一季</p>
 
 <p>STEM&amp;爱：主演：大我，小爱。 编剧：chunlei</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[build a chat bot with ChatterBot Django]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/10/21/build-a-chat-bot-with-chatterbot-django/"/>
-    <updated>2017-10-21T22:27:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/10/21/build-a-chat-bot-with-chatterbot-django</id>
-    <content type="html"><![CDATA[<p>ChatterBot Django是基于Python和Django框架构建的一个聊天程序。</p>
-
-<p>其使用的基本方法可以查看<a href="http://chatterbot.readthedocs.io/en/stable/examples.html">这个文档</a>。</p>
-
-<p>根据已有的对话进行训练（其中对话数据储存在chatterbot_corpus文件夹中）</p>
-
-<pre><code>python manage.py train
-</code></pre>
-
-<p>打开服务器(访问[http://127.0.0.1:8000]浏览)</p>
-
-<pre><code>python manage.py runserver
-</code></pre>
-
-<p>如果修改数据库文件的话，比如删除db.sqlite3文件，就需要运行下面的命令来从新配置框架。</p>
-
-<pre><code>python manage.py migrate
-</code></pre>
-
-<p>修改settings.py文件。<br/>
-<code></p>
-
-<pre><code># ChatterBot settings
-CHATTERBOT = {
-'name': 'Django ChatterBot Example',
-'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
-'training_data': [
-     'chatterbot.corpus.english.greetings',#set the traing data
-     'chatterbot.corpus.custom.myown',
-     'chatterbot.corpus.swedish.food',
-],
-'django_app_name': 'django_chatterbot'
-}
-</code></pre>
-
-<p></code>></p>
-
-<p>修改chatterbot_corpus文件夹中训练数据。<br/>
-训练数据格式如下
-<code></p>
-
-<pre><code>categories:
-- greetings
-conversations:
-- - Hello
-  - Hi
-- - Hi
-  - Hello
-- - Greetings!
-  - Hello
-- - Hello
-  - Greetings!
-- - Hi, How is it going?
-  - Good
-- - Hi, How is it going?
-  - Fine
-- - Hi, How is it going?
-  - Okay
-</code></pre>
-
-<p></code></p>
-
-<p>可以尝试利用英语8000句来训练。</p>
 ]]></content>
   </entry>
   
