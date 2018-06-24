@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: ocw | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: OCW | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/ocw/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-06-12T15:17:14+08:00</updated>
+  <updated>2018-06-24T23:16:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,26 +14,44 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Online course I finished]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished/"/>
-    <updated>2013-09-20T20:52:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/09/20/online-course-i-finished</id>
-    <content type="html"><![CDATA[<p>I just received the Stanford <a href="https://novoed.com/designthinking/statement/76155">Online Course Statement of Accomplishment Of DTAL from Novoed</a>.</p>
+    <title type="html"><![CDATA[对斯坦福DTAL课程学习环境的反思]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course/"/>
+    <updated>2013-08-27T19:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/27/reflection-of-the-learning-environment-of-dtal-course</id>
+    <content type="html"><![CDATA[<p>开始的时候，视频中介绍的学习环境设计，以及流动的环境给我的印象极其深刻。</p>
 
-<p>I also accomplished another similar course <a href="https://novoed.com/education/statement/76155">Designing a New Learning Environment</a></p>
+<p>再有，在论坛中谈到，站着进行头脑风暴的效率要比坐着的小组高。很小的设计改变就可以产生很大的影响。站立和坐着也是一种环境设计。</p>
 
-<p>I had spent 5~10 hours per week on each course. In fact, I didn't expect to accomplished them and got certificates. They just appeared interesting and related with my work. So I tried my best to take the boat and take every advantages of  the learning oportunities and resources. But the statments of accomplishment do encourage me to take more similar courses, so they are powerful in this sense.</p>
+<p>在提供了简短的视频介绍之后，主要通过明确的任务来推进学习。不仅有明确的要求、评价标准，还有可以利用的工具推荐、技术技巧介绍、过程和案例等。这给学习者很大的自主学习空间，在完成作业的过程中边做边学。</p>
 
-<p>Free Online course resources:<br/>
-<a href="/blog/2011/11/29/opencourseware-collection/">Open Course Collection</a><br/>
-<a href="/blog/categories/opencourse/">Category-opencourse</a></p>
+<p>在组建learning squire的时候，这次我加入了别人的小组，并且进行了积极的交流。比上两次的小组要成功。小组的同伴学习虽然并没有对我的学习起到觉得性的作用，不过还是交了几个朋友。也进行了视频对话，对于语言和沟通能力是有帮助的。此外，因为没有小组作品，所以大家也没有分工合作，主要是相互分享信息和求助，这种人际环境也会让学习者具有黏性或依赖感。</p>
 
-<p>Strongly recommaned Online courses Platforms:<br/>
+<p>总体来讲，单就本次课程而言，其学习环境主要包括媒体环境和人际环境，其实作业任务中也有要我们去采访和测试prototype，如果这个加上的话就有实践环境在里面了。其媒体环境的设计是非常值得学习的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[网络公开课资源梳理（OpenCourseWare）]]></title>
+    <link href="http://zhangchunlei.com/blog/2011/11/29/opencourseware-collection/"/>
+    <updated>2011-11-29T00:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2011/11/29/opencourseware-collection</id>
+    <content type="html"><![CDATA[<p>Strongly recommaned Online courses Platforms:<br/>
 1. <a href="https://novoed.com/">Novoed</a><br/>
 2. <a href="https://www.udacity.com/">Udacity</a><br/>
 3. <a href="https://www.edx.org/">edX</a></p>
 
-<p>The pdf version of my Online Course Statement of Accomplishments:   <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Design_Thinking_Action_Lab.pdf">DTAL</a> and <a href="https://raw.github.com/lukezhg/Freyja/master/Chunlei_Zhang_Designing_a_New_Learning_Environment.pdf">DNLE</a></p>
+<p><b>一般类</b><br />CICIstudy网络公开课<br />: http://www.cicistudy.com/index.php<br /><br />400 Free Online Courses from Top Universities | Open Culture<br />: http://www.openculture.com/freeonlinecourses<br /><br />所有开放课程目录<br />Free Online Course Materials | Courses | MIT OpenCourseWare<br />: http://www.core.org.cn/OcwWeb/all-courses.htm<br /><br /><b>生命科学类</b><br /><u><a href="http://ocw.mit.edu/courses/biology/7-013-introductory-biology-spring-2006"><u>Introductory Biology</u></a></u><br />麻省理工 - MIT公开课: 生物学: Biology - Introductory Biology 第1课<br />: http://www.cicistudy.com/video.php?videoID=1214<br /><br />麻省理工学院开放课件 | Biology | 7.012 Introduction to Biology, Fall 2001 | Lecture Notes<br />: http://www.core.org.cn/OcwWeb/Biology/7-012Introduction-to-BiologyFall2001/LectureNotes/index.htm<br /><br />MIT OpenCourseWare | Biology | 7.391 Concept-Centered Teaching, Fall 2005 | Readings<br />: http://www.core.org.cn/OcwWeb/Biology/7-391Fall-2005/Readings/index.htm<br /><br />MIT OpenCourseWare | Biology | 7.391 Concept-Centered Teaching, Spring 2006 | Home<br />: http://www.core.org.cn/OcwWeb/Biology/7-391Spring-2006/CourseHome/index.htm<br /><br /><b>科学教育类</b><br />MIT OpenCourseWare | Urban Studies and Planning | 11.129 Educational Theory and Practice I, Fall 2006 | Home<br />: http://ocw.mit.edu/courses/urban-studies-and-planning/11-129-educational-theory-and-practice-i-fall-2006/<br /><br />Syllabus — Free Online Course Materials — USU OpenCourseWare<br />: http://ocw.usu.edu/education/research-for-the-classroom-teacher/syllabus.html<br /><br />
+
+<a href="http://ocw.mit.edu/courses/urban-studies-and-planning/11-127j-computer-games-and-simulations-for-investigation-and-education-spring-2009">Computer Games and Simulations for Investigation and Education</a><br />
+
+<a href="http://ocw.mit.edu/courses/special-programs/sp-291-learning-seminar-experiments-in-education-spring-2003">Learning Seminar: Experiments in Education</a><br />
+<a href="http://ocw.mit.edu/courses/urban-studies-and-planning/11-124-introduction-to-teaching-and-learning-mathematics-and-science-fall-2004">Introduction to Teaching and Learning Mathematics and Science</a><br />
+</u><u><a href="http://ocw.mit.edu/courses/urban-studies-and-planning/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009"><u>Introduction to Education: Understanding and Evaluating Education</u></a><br /><br /></u><u><a href="http://ocw.mit.edu/courses/urban-studies-and-planning/11-129-educational-theory-and-practice-i-fall-2006"><u>Educational Theory and Practice I</u></a></u><br />                                                         <a href="http://ocw.mit.edu/courses/urban-studies-and-planning/11-131-educational-theory-and-practice-iii-spring-2007"><u>Educational Theory and Practice III</u>                               </a><br />
+<br /><b>学习科学</b><br /><br />
+
+ <a href="http://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-081-human-memory-and-learning-fall-2002"><br /><u>Human Memory and Learning</u><br /></a><br />                         
+<br /><a href="http://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-641j-introduction-to-neural-networks-spring-2005">Introduction to Neural Networks</a>
+
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-06-12T15:17:14+08:00</updated>
+  <updated>2018-06-24T23:16:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New tech new class]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/06/24/new-tech-new-class/"/>
+    <updated>2018-06-24T22:51:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/06/24/new-tech-new-class</id>
+    <content type="html"><![CDATA[<p>技术为课堂变革提供了新机遇。但是是否能掌握这个机遇，取决于我们使用这个技术，取决于我们如何重新设计我们的学校。</p>
+
+<p>最近参观了一所中学，观摩了传说中的平板教学。师生人手一个平板，信息在平板之间流动，学生在教师、平板以及大屏幕之间来回切换，媒体观摩、屏幕分享、教师点拨都体现的非常不错。</p>
+
+<p>但是，一个明显的感觉就是，学生交流合作，学生举手发言，学生的学还是和传统的课堂一样。这样的学习模式应该更自由，而不是被束缚于刻板的课堂结构和师生关系中。如果是屏幕分享，教师只需要一个平板就可以，学生完全可以在纸上完成所有操作，需要分享教师拿着平板电脑拍张照片就可以。如果是学生之间的合作，不用平板也可以合作。那么，问题就来了，每个学生都用一个平板，其根本优势是什么的？</p>
+
+<p>如何要发挥新技术的潜力，就有必要对我们现有的课堂结构、课程机构和组织结构进行重新思考、重新定义、重新设计。从技术和学习科学的角度，学习至少应该发生3个重要的转变。</p>
+
+<p>第一，是个性化。每个人一个平板，每个人就可以有独立的学习进程，独立的学习内容，每个人都应该有个性的学习体验，而不是被固定的教学时间、统一的学习步调而打扰。</p>
+
+<p>第二，是可视化。学生要能看到自己的学习路径和学习进度，要能看到自己的学习优势和短板，还要能适当的看到别人的学习路径和优势，相互帮助和借鉴。这不仅需要学习测评、学习分析技术的深度介入，同时还需要可视化技术的充分运用。</p>
+
+<p>第三，是智能化。学生的学不应该再向过去完全依赖教师的知道，教师的集体智慧需要转化成人工智能，让学生的学习内容、难度、路线、步调、方式更加与学生相匹配。这个需要机器学习、语音、图像识别以及专家系统技术的深入介入。</p>
+
+<p>我们还处于从传统学校向未来学校的过渡期，学校固有的体制和惯性还会在相当长一段时间限制和阻碍我们对新技术的创新应用。整个教育生态系统也将发生深刻的变革，教育升级不是一个部件的问题，我们面临的是一个次系统升级。但是，学校教育变革的第一枪，应该从课堂打响。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[精益生产]]></title>
@@ -1759,53 +1782,6 @@ sudo apachectl -t #检测配置文件语法是否有错
 What is the educational value of science theater? Nature of science; the life history of scientists; the process of sciences; what else?</p>
 
 <p>Science theater may not be real, but science theater repopulates sciences.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Use mermaid to render Graph]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph/"/>
-    <updated>2017-11-10T17:48:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/11/10/use-mermaid-to-render-graph</id>
-    <content type="html"><![CDATA[<p>Mermaid是一个可以把markdown格式代码，渲染成流程图的工具。<br/>
-git:https://github.com/knsv/mermaid/
-在octopress上实现mermaid的方法参考：http://mostlyblather.com/blog/2015/05/23/mermaid-jekyll-octopress/</p>
-
-<p>比如下面的代码：</p>
-
-<pre><code>graph TD
-A[Christmas] --&gt;|Get money| B(Go shopping)
-B --&gt; C{Let me think}
-C --&gt;|One| D[Laptop]
-C --&gt;|Two| E[iPhone]
-C --&gt;|Three| F[Car]
-</code></pre>
-
-<p>渲染的结果如下：<br/>
-<img src="https://github.com/lukezhg/Freyja/raw/master/mermaid.png" alt="mermaid graph" /></p>
-
-<div class="mermaid">
-graph TD
-A[Christmas] &#8211;>|Get money| B(Go shopping)
-B &#8211;> C{Let me think}
-C &#8211;>|One| D[Laptop]
-C &#8211;>|Two| E[iPhone]
-C &#8211;>|Three| F[Car]
-</div>
-
-
-
-
-<script src="http://zhangchunlei.com/javascripts/mermaid.min.js"></script>
-
-
-<script>mermaid.initialize({startOnLoad:true});</script>
-
-
-<p>sublime有一个<a href="https://packagecontrol.io/packages/Mermaid">插件</a>可以在浏览器中预览效果：<br/>
-From the Command Palette: Mermaid: View In Browser</p>
-
-<p>快捷键：shift+command+p</p>
 ]]></content>
   </entry>
   

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[tags: python | Chunlei's Blog]]></title>
+  <title><![CDATA[tags: Python | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-06-12T15:17:14+08:00</updated>
+  <updated>2018-06-24T23:16:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -14,524 +14,119 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Django cheat sheet]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/"/>
-    <updated>2017-12-31T09:50:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet</id>
-    <content type="html"><![CDATA[<p>1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+    <title type="html"><![CDATA[Python简明手册]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/07/30/python-brief/"/>
+    <updated>2013-07-30T14:25:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/07/30/python-brief</id>
+    <content type="html"><![CDATA[<p>Python重要用法示例</p>
 
-<pre><code>mkvirtualenv DjangoApp
+<blockquote><blockquote><blockquote><p>dir(list)
+显示关键字相关的函数</p>
+
+<p>help(list.reverse)
+查询某个函数的功能</p></blockquote></blockquote></blockquote>
+
+<p>set 让一个list变成无重复元素的set
+例如：</p>
+
+<blockquote><blockquote><blockquote><p>shapes = ['circle','square','triangle','circle']
+setOfShapes = set(shapes)
+setOfShapes
+set(['circle','square','triangle'])
+setOfShapes.add('polygon')
+'rhombus' in setOfShapes
+False
+setOfShapes - setOfFavoriteShapes
+setOfShapes &amp; setOfFavoriteShapes
+setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+
+<p>map和lambda</p>
+
+<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]</p></blockquote></blockquote></blockquote>
+
+<p>Object 先定义一个类，然后给类生成实例
+定义如：
+class FruitShop:</p>
+
+<pre><code>def __init__(self, name, fruitPrices):
+    """
+        name: Name of the fruit shop
+
+        fruitPrices: Dictionary with keys as fruit 
+        strings and prices for values e.g. 
+        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
+    """
+    self.fruitPrices = fruitPrices
+    self.name = name
+    print 'Welcome to the %s fruit shop' % (name)
+
+def getCostPerPound(self, fruit):
+    """
+        fruit: Fruit string
+    Returns cost of 'fruit', assuming 'fruit'
+    is in our inventory or None otherwise
+    """
+    if fruit not in self.fruitPrices:
+        print "Sorry we don't have %s" % (fruit)
+        return None
+    return self.fruitPrices[fruit]
+
+def getPriceOfOrder(self, orderList):
+    """
+        orderList: List of (fruit, numPounds) tuples
+
+    Returns cost of orderList. If any of the fruit are  
+    """ 
+    totalCost = 0.0             
+    for fruit, numPounds in orderList:
+        costPerPound = self.getCostPerPound(fruit)
+        if costPerPound != None:
+            totalCost += numPounds * costPerPound
+    return totalCost
+
+def getName(self):
+    return self.name
 </code></pre>
 
-<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
-
-<pre><code>workon DjangoApp
-</code></pre>
-
-<p>在您的当前环境中安装 Django</p>
-
-<pre><code>pip install Django
-</code></pre>
-
-<p>2、使用 django-admin 命令创建项目</p>
-
-<pre><code>django-admin startproject demoproject
-</code></pre>
-
-<p>3、进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
-
-<pre><code>cd demoproject
-python manage.py startapp demoapp
-</code></pre>
-
-<p>4、测试项目服务器，Ctrl+C退出服务器。</p>
-
-<pre><code>python manage.py runserver
-</code></pre>
-
-<p>或者指定服务器ip和端口。</p>
-
-<pre><code>python manage.py runserver 0.0.0.0:8000
-</code></pre>
-
-<p>5、创建超级用户用于登陆django admin后台管理平台。</p>
-
-<pre><code>python manage.py createsuperuser admin
-</code></pre>
-
-<p>6、编辑设置文件和项目相关文件。  <br/>
-settings.py 控制项目参数。</p>
-
-<p>```</p>
-
-<pre><code>INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'clips',
-]
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'NAME': 'demoproject',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
-}
-</code></pre>
-
-<p>```</p>
-
-<p>urls.py 控制访问请求路径</p>
-
-<pre><code>from django.conf.urls import url
-from django.contrib import admin
-from demoproject.views import hello
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^hello/$', hello),
-]
-</code></pre>
-
-<p>views.py 控制访问请求的应答</p>
-
-<pre><code>from django.http import HttpResponse
-def hello(request):
-    return HttpResponse("Hello world")
-</code></pre>
-
-<p>demoapp/models.py 控制数据结构（表格、变量、变量属性）
-```</p>
-
-<pre><code>from __future__ import unicode_literals
-from django.db import models
-
-class User(models.Model):
-    user_name = models.CharField(max_length=30)
-    password = models.CharField(max_length=40)
-    email = models.EmailField()
-    headshot = models.ImageField(upload_to='headshot',null=True,blank=True)
-    brief = models.CharField(max_length=100)
-    join_date = models.DateField()
-    user_star = models.CharField(max_length=30)
-    def __unicode__(self):
-        return self.user_name
-......
-</code></pre>
-
-<p>```
-demoapp/admin.py 控制后台注册和数据呈现</p>
-
-<p>```</p>
-
-<pre><code>from __future__ import unicode_literals
-from django.contrib import admin
-from .models import User, Clip, Link
-import sys;  
-reload(sys);  
-sys.setdefaultencoding("utf8")
-
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('user_name', 'password', 'email')
-    search_fields = ('user_name', 'email')
-......
-admin.site.register(User,UserAdmin)
-......
-</code></pre>
-
-<p>```</p>
-
-<p>7、当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
-
-<pre><code>python manage.py makemigrations
-python manage.py migrate
-</code></pre>
-
-<p>8、利用template来呈现页面。</p>
-
-<p>首先要修改settings.py</p>
-
-<pre><code>TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            # ...
-</code></pre>
-
-<p>接下来建文件夹templates</p>
-
-<pre><code>\demoproject
-    \demoproject
-    \demoapp
-    \templates
-    manage.py
-</code></pre>
-
-<p>修改demoproject\views.py</p>
-
-<pre><code>from django.shortcuts import render
-import datetime
-def current_datetime(request):
-    now = datetime.datetime.now()
-    return render(request, 'current_datetime.html', {'current_date': now})
-</code></pre>
-
-<p>在templates文件夹，新建html模版文件current_datetime.html。</p>
-
-<p>\mysite_project\mysite\templates\current_datetime.html</p>
-
-<p>```
-
-<html></p>
-
-<pre><code>&lt;body&gt;
-    It is now {{ current_date }}
-&lt;/body&gt;
-</code></pre>
-
-<p></html>
-It is now {{ current_date }}.
-
-```</p>
-
-<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
-参考：https://djangobook.com/templates-in-views/</p>
-
-<p>base.html<br/>
-```html
-
-&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
-<head></p>
-
-<pre><code>&lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
-</code></pre>
-
-<p></head>
-<body></p>
-
-<pre><code>&lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
-{% block content %}{% endblock %}
-{% block footer %}
-&lt;hr&gt;
-&lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
-{% endblock %}
-</code></pre>
-
-<p></body>
-</html>
-
-```</p>
-
-<p>current_datetime.html<br/>
-```html
-
-{% extends "base.html" %}
-{% block title %}The current time{% endblock %}
-{% block content %}</p>
-
-<pre><code>&lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
-</code></pre>
-
-<p>{% endblock %}
-
-```</p>
-
-<p>hours_ahead.html</p>
-
-<p>```html
-
-{% extends "base.html" %}
-{% block title %}Future time{% endblock %}
-{% block content %}</p>
-
-<p>
-    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
-</p>
-
-
-<p>{% endblock %}
-
-```</p>
-
-<p>9、利用form来获取用户数据。</p>
-
-<p>mysite_project\mysite\books\templates\books\search_form.html
-```html
-
-<html>
-<head></p>
-
-<pre><code>&lt;title&gt;Search&lt;/title&gt;
-</code></pre>
-
-<p></head>
-<body></p>
-
-<pre><code>&lt;form action="/search/" method="get"&gt;
-    &lt;input type="text" name="q"&gt;
-    &lt;input type="submit" value="Search"&gt;
-&lt;/form&gt;
-</code></pre>
-
-<p></body>
-</html>
-
-```</p>
-
-<p>mysite\books\urls.py
-```python</p>
-
-<pre><code>from django.conf.urls import url
-from books import views
-urlpatterns = [
-    url(r'^search-form/$', views.search_form),
-    url(r'^search/$', views.search),
-]
-</code></pre>
-
-<p>```</p>
-
-<p>mysite\urls.py
-```python</p>
-
-<pre><code>from django.conf.urls import include, url
-urlpatterns = [
-# ...
-    url(r'^', include('books.urls')),
-]
-</code></pre>
-
-<p>```
-books\views.py</p>
-
-<pre><code>from django.shortcuts import render
-def search_form(request):
-    return render(request, 'books/search_form.html')
-def search(request):
-    if 'q' in request.GET:
-        message = 'You searched for: %r' % request.GET['q']
-    else:
-        message = 'You submitted an empty form.'
-    return HttpResponse(message)
-</code></pre>
-
-<p>参考：https://djangobook.com/django-forms/</p>
-
-<p>定义表单类，更简洁的获取用户数据的方法。</p>
-
-<p>mysite_project\mysite\mysite\forms.py
-```python</p>
-
-<pre><code>from django import forms
-class ContactForm(forms.Form):
-    subject = forms.CharField()
-    email = forms.EmailField(required=False)
-    message = forms.CharField()
-</code></pre>
-
-<p>```</p>
-
-<p>mysite_project\mysite\mysite\views.py</p>
-
-<p>```python</p>
-
-<pre><code>from django.http import Http404, HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
-import datetime
-from mysite.forms import ContactForm    
-from django.core.mail import send_mail, get_connection
-
-
-def contact(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            cd = form.cleaned_data
-            con = get_connection('django.core.mail.backends.console.EmailBackend')
-            send_mail(
-                cd['subject'],
-                cd['message'],
-                cd.get('email', 'noreply@example.com'),
-                ['siteowner@example.com'],
-                connection=con
-            )
-            return HttpResponseRedirect('/contact/thanks/')
-    else:
-        form = ContactForm()
-    return render(request, 'contact_form.html', {'form': form})
-</code></pre>
-
-<p>```</p>
-
-<p>mysite_project\mysite\templates\contact_form.html</p>
-
-<p>```html
-
-<html>
-<head></p>
-
-<pre><code>&lt;title&gt;Contact us&lt;/title&gt;
-&lt;style type="text/css"&gt;
-    ul.errorlist {
-        margin: 0;
-        padding: 0;
-    }
-    .errorlist li {
-        background-color: red;
-        color: white;
-        display: block;
-        font-size: 1.2em;
-        margin: 0 0 3px;
-        padding: 4px 5px;
-    }
-&lt;/style&gt;
-</code></pre>
-
-<p></head>
-<body></p>
-
-<pre><code>&lt;h1&gt;Contact us&lt;/h1&gt;
-{% if form.errors %}
-    &lt;p style="color: red;"&gt;
-        Please correct the error{{ form.errors|pluralize }} below.
-    &lt;/p&gt;
-{% endif %}
-&lt;form action="" method="post" novalidate&gt;
-    &lt;table&gt;
-        {{ form.as_table }}
-    &lt;/table&gt;
-    {% csrf_token %}
-    &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-</code></pre>
-
-<p></body>
-</html>
-
-```</p>
-
-<p>10、urls进阶</p>
-
-<p>\urls.py</p>
-
-<pre><code>from django.conf.urls import include, url
-from . import views
-urlpatterns = [
-    url(r'^hello/$', views.hello),
-    url(r'^time/$', views.current_datetime),
-          url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
-]
-</code></pre>
-
-<p>\urls.py</p>
-
-<pre><code>from django.conf import settings
-from django.conf.urls import url
-from . import views
-urlpatterns = [
-    url(r'^$', views.homepage),
-    url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
-]
-if settings.DEBUG:
-    urlpatterns += [url(r'^debuginfo/$', views.debug),]
-</code></pre>
-
-<p>\urls.py</p>
-
-<pre><code>from django.conf.urls import url
-from . import views
-urlpatterns = [
-    url(r'^reviews/2003/$', views.special_case_2003),
-    url(r'^reviews/([0-9]{4})/$', views.year_archive),
-    url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
-    url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
-]
-</code></pre>
-
-<p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[deep learning]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/08/25/deep-learning/"/>
-    <updated>2017-08-25T11:00:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/08/25/deep-learning</id>
-    <content type="html"><![CDATA[<p>机器学习是人工智能中非常重要的一个分支。而深度学习则是机器学习中一个重要的方向。所以人工智能、机器学习和深度学习三个概念的关系是：<br/>
-【人工智能【机器学习【深度学习】】】</p>
-
-<p>在教育领域和计算机科学领域的深度学习并不是一个概念。</p>
-
-<p>这里主要尝试利用keras和python来进行深度学习模拟。</p>
-
-<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：</p>
+<p>调用winsound 函数</p>
 
 <pre><code>
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD
-
-# Generate dummy data
-import numpy as np
-x_train = np.random.random((1000, 20))
-y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
-x_test = np.random.random((100, 20))
-y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)
-
-model = Sequential()
-# Dense(64) is a fully-connected layer with 64 hidden units.
-# in the first layer, you must specify the expected input data shape:
-# here, 20-dimensional vectors.
-model.add(Dense(64, activation='relu', input_dim=20))
-model.add(Dropout(0.5))
-model.add(Dense(64, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(10, activation='softmax'))
-
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy',
-              optimizer=sgd,
-              metrics=['accuracy'])
-
-model.fit(x_train, y_train,
-          epochs=20,
-          batch_size=128)
-score = model.evaluate(x_test, y_test, batch_size=128)
+import winsound
+# press a make a beep
+if event.KeyID==65: winsound.Beep(200,9)
+# press ESC play exit sound
+if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
 </code></pre>
 
 
-<p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
+<p>使用pyHook监听鼠标和键盘事件</p>
 
-<p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
+<pre><code>
+import pythoncom
+import pyHook
 
-<p>（1）数据定义<br/>
-定义训练数据和检验数据，必要的时候需要对数据进行处理，从而使的数据的形状和大小符合要求。</p>
+def onKeyboardEvent(event):
+    global switch
+    # 监听键盘事件
+    if switch:
+        print "Key:", event.Key
+        print "KeyID:", event.KeyID
+    return True #监听函数的返回值
 
-<p>（2）模型定义 <br/>
-定义输入层、输出层以及中间的隐藏层，层的类别和神经元数量。</p>
+def main():
+    # 定义一个实例
+    hm = pyHook.HookManager()
+    # 监听所有键盘事件
+    hm.KeyDown = onKeyboardEvent
+    # 设置键盘监听器
+    hm.HookKeyboard()
+    # 循环并保持一直处于监听状态
+    pythoncom.PumpMessages()
+</code></pre>
 
-<p>（3）训练<br/>
-利用训练数据对模型进行fit，使得模型的参数与训练数据更好的吻合。</p>
-
-<p>（4）检验<br/>
-利用检验数据对模型及其参数进行检验，通常会依靠正确率以及gradient descent对模型进行评估和完善。</p>
-
-<p>（5）应用<br/>
-当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。</p>
-
-<p>机器学习可以用于：分类、聚类、回归、异常识别等。</p>
-
-<p>还可以制作聊天记起，比如利用chatbot制作的聊天机器人，还具有学习新对话的能力。<br/>
-http://127.0.0.1:8000/chat/</p>
 ]]></content>
   </entry>
   
