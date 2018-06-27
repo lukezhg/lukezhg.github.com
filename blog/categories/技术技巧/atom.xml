@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/技术技巧/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-06-26T21:53:27+08:00</updated>
+  <updated>2018-06-27T08:11:17+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OCR for mac]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/06/27/ocr-for-mac/"/>
+    <updated>2018-06-27T08:04:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/06/27/ocr-for-mac</id>
+    <content type="html"><![CDATA[<p>itext是一个限制次数的文字识别软件。按年收费。</p>
+
+<p>实际上这个技术已经相对成熟，甚至可以考虑自己做一个类似的软件。<br/>
+思路是：</p>
+
+<pre><code>1. 截取图像。  
+2. 识别图像中的字母或汉子。  
+3. 重新按照原文结构进行拼接。  
+4. 返回结果。  
+</code></pre>
+
+<p>还有就是可以使用谷歌浏览器插件：copyfish可以进行屏幕文字识别和翻译。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Word必须要打开两次才能打开]]></title>
@@ -132,21 +152,6 @@ var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
 clipboard.copyString(txt);
 </code></pre>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Computer tips recently discovered]]></title>
-    <link href="http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered/"/>
-    <updated>2013-08-07T17:34:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2013/08/07/computer-tips-recently-discovered</id>
-    <content type="html"><![CDATA[<p>Recently I found some useful tips to get things done more effectively.</p>
-
-<p>How do you capture your screen when you are watching a vedio without stop it.<br/>
--   The answer is that you can setup some softwares to do this. One of them is <a href="http://www.aplusfreeware.com/categories/mmedia/FastStoneCapture.html">FastStone Caputure</a>. You just set the auto save folder and the hot key in the settings. Then, things get much easier, everytime you want capture your screen, just press the hot key. The picture can be saved in the folder with disturbing your watching. It is so useful.</p>
-
-<p>After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?<br/>
--   The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.</p>
 ]]></content>
   </entry>
   
