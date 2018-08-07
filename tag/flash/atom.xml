@@ -4,7 +4,7 @@
   <title><![CDATA[tags: flash | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/flash/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-07-28T21:58:42+08:00</updated>
+  <updated>2018-08-07T22:14:07+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -429,6 +429,29 @@ box.gotoAndStop(1);<br/>
 box.gotoAndPlay(3);<br/>
 box.gotoAndStop(Math.round(6*Math.random()));<br/>
 </code></p>
+
+<p>影片剪辑的控制</p>
+
+<pre><code/>
+import flash.display.*;
+import flash.events.*;
+mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听
+
+//startDragFace函数
+function startDragFace(e:MouseEvent):void {
+mcFace.startDrag();
+}
+
+mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);
+
+function stopDragFace(e:MouseEvent):void {
+mcFace.stopDrag();
+
+}
+</code></pre>
+
+
+<p></p>
 
 <p>播放和定制按钮<br/>
 1、制作按钮<br/>
