@@ -9,12 +9,9 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="安装软件：
-输入法 ：搜狗输入法
-视频播放：VLC media player
-文本编辑：Vim
-图片查看：gwenview
-浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly, &hellip;">
+  <meta name="description" content="实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。
+比如git,ruby等 安装的过程基本可以参照：
+rominyue的Ubuntu14.04下搭建Octopress 其中最容易出问题的是这里： $ gem install bundler # &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +68,81 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/11/28/try-octopress-in-ubuntu-again/">尝试在ubuntu系统中使用octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-28T17:43:00+08:00" pubdate data-updated="true">Nov 28<span>th</span>, 2015</time>
+        
+         | <a href="/blog/2015/11/28/try-octopress-in-ubuntu-again/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
+
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler #要在gemfile中更新用taobao的https源  
+$ bundle install #出错提示版本号不对  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。</p>
+
+<pre><code>$ gem uninstall rake #之后选择要删除的版本即可  
+</code></pre>
+
+<p>参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>多人协作时，编辑前先获得最近版本</p>
+
+<pre><code>$ cd octopress  
+$ git pull origin source  
+$ cd ./_deploy  
+$ git pull origin master  
+</code></pre>
+
+<p>保存博客源码到github source分支:</p>
+
+<blockquote><pre><code>$ git add .  
+  $ git commit -m 'blog source'  
+  $ git push origin source  
+</code></pre></blockquote>
+
+<p>最后重新建立ssh密钥，参见：<a href="https://help.github.com/articles/generating-ssh-keys/">这里</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -404,54 +476,6 @@ comment_share: true
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/11/17/kids-are-kids-do-not-let-them-become-little-adults/">亲子关系就像国与国</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-11-17T10:33:00+08:00" pubdate data-updated="true">Nov 17<span>th</span>, 2015</time>
-        
-         | <a href="/blog/2015/11/17/kids-are-kids-do-not-let-them-become-little-adults/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>玩童，顽童，爱玩，不听话。</p>
-
-<p>但是但是大人，家长，需要耐心，需要避免简单粗暴的教育方式。因为你的教育很可能会影响孩子未来对人对事的方式，从这个意义上讲，家庭教育甚至影响一个国家的文化。</p>
-
-<p>假如，你和孩子站在平等的地位，假如你把自己与孩子关系作为国家与国家的关系，你还是采取简单粗暴的教育方法吗？</p>
-
-<p>孩子有孩子的世界，成人有成人的世界，所以我们需要的更多的是相互尊重和理解，需要的是沟通和协商，真的就像国家与国家一样。</p>
-
-<p>宝宝喜欢玩水，但是现在天气冷了，玩水的时候会把衣服弄湿，会把小手冻得冰凉，会容易感冒。于是，家长不希望孩子玩水。但是孩子心想，水里的泡泡好漂亮啊，水里的东西会游来游去，水可以抓可以捧可以浇，好好玩啊！我最喜欢玩水了！</p>
-
-<p>怎么办？说服，说服不了。强制，不能简单暴力。协商和妥协，玩水的时候把袖子挽上，最好穿一个小雨衣，玩水不能超过一定的时间。好，成交！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/17/">&larr; Older</a>
@@ -471,6 +495,10 @@ comment_share: true
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/new-standard-2017-notes/">研读2017版普通高中生物学课程标准笔记</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/07/28/the-4-characteristics-of-21st-centry-learning-abcd/">The 4 characteristics of 21st century learning - ABCD</a>
@@ -506,10 +534,6 @@ comment_share: true
     
       <li class="post">
         <a href="/blog/2018/04/07/paper-writing/">论文写作与修改原则</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2018/03/25/protect-our-brain/">保护我们的大脑</a>
       </li>
     
   </ul>

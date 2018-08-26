@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-08-07T22:14:07+08:00</updated>
+  <updated>2018-08-26T10:19:14+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,109 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[研读2017版普通高中生物学课程标准笔记]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/08/26/new-standard-2017-notes/"/>
+    <updated>2018-08-26T10:15:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/08/26/new-standard-2017-notes</id>
+    <content type="html"><![CDATA[<pre>
+###前言
+党的十九大：立德树人的根本任务、发展素质教育、推进教育公平、全面发展的社会主义建设者和接班人。
+
+2003年，教育部印发普通高中课程方案和课程标准实验稿。在教育理念的更新、人才培养模式、教师水平提升、考试评价制度变革作出了积极的贡献，但是面对新时代新要求，实验稿也存在一些不适应和亟待改进的地方。
+
+2013年，教育部启动普通高中课程修订工作。
+
+###修订的原则：
+1、坚持正确的政治方向；
+2、坚持反应时代要求；
+3、坚持科学论证；
+4、坚持继承发展。
+
+###课程方案的主要变化：
+1、进一步明确目标定位：发生核心素养的大众教育。
+2、进一步优化课程结构：全修全考；选修选考；选修不考或者参考。
+3、强化了课程实施制度建设：明确课程实施环节的责任主体和要求。
+
+###课程标准的主要变化：
+1、凝练了核心素养；
+2、更新了教学内容；精选学科大概念、融入社会主义核心价值观、呈现经济、政治、文化、社会发展的新成果。
+3、研制了学业质量标准；
+4、增强了指导性：
+
+###目录
+一、课程性质与基本理念
+二、学科核心素养与课程目标
+三、课程结构
+四、课程内容
+五、学业质量
+六、实施建议
+附录：学科核心素养水平的划分；教学与评价案例。
+
+研读《普通高中生物学课程标准2017版》是每个中学生物学教师的必修课。
+是教材编写者的必修课；是考试命题者的必修课。
+
+律师要懂得法律条文；司机要懂得交通规则一样。
+
+###一、课程性质与基本理念
+课程性质：自然科学、基础学科
+基本理念：
+1、核心素养为宗旨
+2、内容聚焦大概念（课程教学“少而精”）
+3、教学过程重实践（探究性活动或工程学任务）
+4、学业评价促发展（诊断、激励、促进作用）
+（弱化单向的甄别选拔带了的负面影响）
+
+###二、学科核心素养与课程目标
+学科核心素养：学科育人价值的集中体现
+1、生命观念：生命现象的解释抽象，实证后的孤单点，以生物学概念为基础。
+2、科学思维：尊重证据、注重逻辑的思维习惯。
+3、科学探究：探索生命现象的研究过程。
+4、社会责任：社会事务参与和问题解决的担当。
+
+课程目标：发展核心素养
+
+###三、课程结构
+设计依据：
+高中课程方案为依据
+核心素养为宗旨
+吸纳科学教育研究成果和课改经验
+满足学生多元化需求，突出课程的基础性和选择性
+
+
+###四、课程内容
+
+内容要求：陈述句描述大概念和重要概念
+教学提示：重要的教学活动：观察、实验或动手
+学业要求：重要概念的学生表现性期望
+
+
+###五、学业质量
+维度：核心素养
+水平：每个维度都有4个水平，情境的复杂程度和问题解决程度逐级提升。
+
+水平2是合格考的依据
+水平4是等级考的依据
+
+###六、实施建议
+（一）教学建议：关注核心素养的达成；促进学生主动学习；聚焦大概念；加强完善实验教学；STS教育；跨学科联系；科学史和科学本质的学习；
+（二）评价建议：促进教师的教和学生的学；
+1、评价原则如导向性、激励性和共同发展
+2、评价内容聚焦核心素养
+3、评价方式多样化
+4、结果反馈的科学性和实效性
+
+（三）教材编写建议
+（四）地方和学校实施本课程的建议
+
+附录
+</pre>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The 4 characteristics of 21st century learning - ABCD]]></title>
@@ -1380,101 +1483,6 @@ urlpatterns = [
 </code></pre>
 
 <p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[mysql charset admin django]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/12/30/mysql-charset-admin-django/"/>
-    <updated>2017-12-30T22:37:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/12/30/mysql-charset-admin-django</id>
-    <content type="html"><![CDATA[<p>中文乱码永远是程序猿的痛！！</p>
-
-<p>今天使用django-admin就遇到了乱码问题，是仿照<a href="https://djangobook.com/adding-models-to-django-admin/">django book</a>的model用法，做一个资源管理平台出现的问题。</p>
-
-<p>代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能的解决措施：</p>
-
-<p>1、修改admin.py</p>
-
-<pre><code>import sys;   
-reload(sys);  
-sys.setdefaultencoding("utf8") 
-</code></pre>
-
-<p>这个办法曾经帮助我解决了chatbot项目的乱码问题。</p>
-
-<p>2、修改mysql的配置文件/etc/my.cnf<br/>
-方案一：</p>
-
-<pre><code>[mysqld]
-character-set-server=utf8 
-[client]
-default-character-set=utf8 
-[mysql]
-default-character-set=utf8
-</code></pre>
-
-<p>方案二：utf8mb4兼容utf8，且比utf8能表示更多的字符，是utf8字符集的超集。所以现在一些新的业务，比如ISO等，会将MySQL数据库的字符集设置为utf8mb4。</p>
-
-<pre><code>[client]  
-default-character-set=utf8mb4  
-
-[mysqld]  
-character-set-server = utf8mb4  
-collation-server = utf8mb4_unicode_ci  
-init_connect='SET NAMES utf8mb4'  
-skip-character-set-client-handshake = true  
-
-[mysql]  
-default-character-set = utf8mb4  
-</code></pre>
-
-<p>3、关键还是要会使用命令诊断问题所在。<br/>
-我的问题出在新建的数据库中表单变量的字符码设置不是utf8，后来把数据库drop掉，重新配置my.cnf文件，然后重建mysql数据库就没问题了。</p>
-
-<p>4、常用的mysql命令和django命令。</p>
-
-<pre><code>mysql -u db_user -p
-SHOW DATABASES;
-CREATE DATABASE blog_data;
-drop database mydb;
-SHOW DATABASES;
-</code></pre>
-
-<p>CTRL + D退出mysql。</p>
-
-<p>通过show variables 命令查看字符编码，发现部分变量的编码果然不是utf8，难怪乱码。</p>
-
-<pre><code>show variables like '%char%’;
-</code></pre>
-
-<p>尝试重制响应的字符编码设置。</p>
-
-<pre><code>set character_set_server=utf8;
-set character_set_database=utf8;
-show variables like '%char%’;
-</code></pre>
-
-<p>结果无效，于是进一步查看响应的数据库及其表单：</p>
-
-<pre><code>use my_db;
-show tables;
-show full columns from table1; ／／这条命令可以看到table1中的变量情况，发现果然编码有问题。 
-</code></pre>
-
-<p>尝试修改这个表单中的变量设置,也就是my_db.table1表单中的my_var变量字符编码。</p>
-
-<pre><code>ALTER TABLE my_db.table1 MODIFY COLUMN my_var VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
-</code></pre>
-
-<p>错误代码位置发生了改变，这说明改动有效，于是重新建立数据库（见3）。</p>
-
-<p>5、Django的一些命令。</p>
-
-<pre><code>python manage.py createsuperuser #生成admin登陆的超级用户和密码
-python manage.py makemigrations #当更改model时，通过此命令把变动反应到数据库中
-python manage.py migrate
-</code></pre>
 ]]></content>
   </entry>
   

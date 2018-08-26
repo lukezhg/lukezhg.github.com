@@ -9,7 +9,15 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="首先，做一件具体而简单的事 然后，做一件明确但是有挑战的事 再然后，做一件不明确但是简单的事 再然后，做一件不明确而且复杂的事 最后，做一件明确而简单的事 做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难拿的肉馅蔬菜放在里边。 这样做的好处是，容易形成积极的成功经验，有适当的缓冲， &hellip;">
+  <meta name="description" content="首先在网页上新建项目：new Repository 然后在本地： 1
+2
+3
+4
+5
+git clone https://github.com/lukezhg/space-craft.git
+cd space-craft
+git add .
+git commit -m "save space &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +74,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2018/01/12/use-github-to-save-your-code/">Use Github to Save Your Code</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2018-01-12T21:34:00+08:00" pubdate data-updated="true">Jan 12<span>th</span>, 2018</time>
+        
+         | <a href="/blog/2018/01/12/use-github-to-save-your-code/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>首先在网页上新建项目：new Repository</p>
+
+<p>然后在本地：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/lukezhg/space-craft.git
+</span><span class='line'>cd space-craft
+</span><span class='line'>git add .
+</span><span class='line'>git commit  -m "save space craft"
+</span><span class='line'>git push -u origin master #需要输入用户名和密码</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -905,130 +967,6 @@ urlpatterns = [
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/12/30/mysql-charset-admin-django/">Mysql Charset Admin Django</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-12-30T22:37:00+08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/12/30/mysql-charset-admin-django/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>中文乱码永远是程序猿的痛！！</p>
-
-<p>今天使用django-admin就遇到了乱码问题，是仿照<a href="https://djangobook.com/adding-models-to-django-admin/">django book</a>的model用法，做一个资源管理平台出现的问题。</p>
-
-<p>代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能的解决措施：</p>
-
-<p>1、修改admin.py</p>
-
-<pre><code>import sys;   
-reload(sys);  
-sys.setdefaultencoding("utf8") 
-</code></pre>
-
-<p>这个办法曾经帮助我解决了chatbot项目的乱码问题。</p>
-
-<p>2、修改mysql的配置文件/etc/my.cnf<br/>
-方案一：</p>
-
-<pre><code>[mysqld]
-character-set-server=utf8 
-[client]
-default-character-set=utf8 
-[mysql]
-default-character-set=utf8
-</code></pre>
-
-<p>方案二：utf8mb4兼容utf8，且比utf8能表示更多的字符，是utf8字符集的超集。所以现在一些新的业务，比如ISO等，会将MySQL数据库的字符集设置为utf8mb4。</p>
-
-<pre><code>[client]  
-default-character-set=utf8mb4  
-
-[mysqld]  
-character-set-server = utf8mb4  
-collation-server = utf8mb4_unicode_ci  
-init_connect='SET NAMES utf8mb4'  
-skip-character-set-client-handshake = true  
-
-[mysql]  
-default-character-set = utf8mb4  
-</code></pre>
-
-<p>3、关键还是要会使用命令诊断问题所在。<br/>
-我的问题出在新建的数据库中表单变量的字符码设置不是utf8，后来把数据库drop掉，重新配置my.cnf文件，然后重建mysql数据库就没问题了。</p>
-
-<p>4、常用的mysql命令和django命令。</p>
-
-<pre><code>mysql -u db_user -p
-SHOW DATABASES;
-CREATE DATABASE blog_data;
-drop database mydb;
-SHOW DATABASES;
-</code></pre>
-
-<p>CTRL + D退出mysql。</p>
-
-<p>通过show variables 命令查看字符编码，发现部分变量的编码果然不是utf8，难怪乱码。</p>
-
-<pre><code>show variables like '%char%’;
-</code></pre>
-
-<p>尝试重制响应的字符编码设置。</p>
-
-<pre><code>set character_set_server=utf8;
-set character_set_database=utf8;
-show variables like '%char%’;
-</code></pre>
-
-<p>结果无效，于是进一步查看响应的数据库及其表单：</p>
-
-<pre><code>use my_db;
-show tables;
-show full columns from table1; ／／这条命令可以看到table1中的变量情况，发现果然编码有问题。 
-</code></pre>
-
-<p>尝试修改这个表单中的变量设置,也就是my_db.table1表单中的my_var变量字符编码。</p>
-
-<pre><code>ALTER TABLE my_db.table1 MODIFY COLUMN my_var VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
-</code></pre>
-
-<p>错误代码位置发生了改变，这说明改动有效，于是重新建立数据库（见3）。</p>
-
-<p>5、Django的一些命令。</p>
-
-<pre><code>python manage.py createsuperuser #生成admin登陆的超级用户和密码
-python manage.py makemigrations #当更改model时，通过此命令把变动反应到数据库中
-python manage.py migrate
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -1048,6 +986,10 @@ python manage.py migrate
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/new-standard-2017-notes/">研读2017版普通高中生物学课程标准笔记</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/07/28/the-4-characteristics-of-21st-centry-learning-abcd/">The 4 characteristics of 21st century learning - ABCD</a>
@@ -1083,10 +1025,6 @@ python manage.py migrate
     
       <li class="post">
         <a href="/blog/2018/04/07/paper-writing/">论文写作与修改原则</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2018/03/25/protect-our-brain/">保护我们的大脑</a>
       </li>
     
   </ul>
