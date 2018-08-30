@@ -64,7 +64,6 @@ post_asides: [custom/asides/category_list.html, custom/asides/tags.html, asides/
 tag_dir: tag
 tag_title_prefix: "tags: "
 
-
 # Weibo
 # Please refer to http://weibo.com/tool/weiboshow to get your uid and verifier. 
 weibo_uid: 1692535814     #uid

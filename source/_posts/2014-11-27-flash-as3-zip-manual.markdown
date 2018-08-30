@@ -239,7 +239,27 @@ box.gotoAndStop(1);
 box.gotoAndPlay(3);  
 box.gotoAndStop(Math.round(6*Math.random()));  
 </code>  
+
+影片剪辑的控制  
   
+<pre><code/>
+import flash.display.*;
+import flash.events.*;
+mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听
+
+//startDragFace函数
+function startDragFace(e:MouseEvent):void {
+mcFace.startDrag();
+}
+
+mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);
+
+function stopDragFace(e:MouseEvent):void {
+mcFace.stopDrag();
+
+}
+</code></pre> 
+
 播放和定制按钮  
 1、制作按钮  
 2、给按钮命名为btn  

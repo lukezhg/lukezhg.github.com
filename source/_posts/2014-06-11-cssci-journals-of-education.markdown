@@ -30,7 +30,7 @@ tags: [CSSCI,journals]
 
 教育技术类（3种）  
 期刊名称	主办（管）单位	CN号  
-[电化教育研究](http://aver.nwnu.edu.cn/admin/login_author.aspx?&channel_id=42&menu_id=42)	西北师范大学等	CN62-1022/G4  
+[电化教育研究](http://210.26.111.59/Login/AuthLogin.do)	西北师范大学等	CN62-1022/G4  
 [中国电化教育](http://www.webcet.cn/)	中央电化教育馆	CN11-3792/G4  
 现代教育技术	清华大学	CN11-4525/N  
 
@@ -47,7 +47,7 @@ tags: [CSSCI,journals]
 教育与经济	华中师范大学、中国教育经济学研究会	CN42-1268/G4  
 [教育学报](http://xkjy.chinajournal.net.cn/EditorEN/index.aspx?t=1)	北京师范大学	CN11-5306/G4  
 [教育研究与实验](http://www.jyyjysy.net/)	华中师范大学	CN42-1041/G4  
-全球教育展望	华东师范大学	CN31-1842/G4  
+[全球教育展望](http://wgjn.cbpt.cnki.net/EditorEN/Desktop/Desktop.aspx)	华东师范大学	CN31-1842/G4  
 教育科学	辽宁师范大学	CN21-1066/G4  
 国家教育行政学院学报	国家教育行政学院	CN11-5047/D  
 [湖南师范大学教育科学学报](http://jkb.hunnu.edu.cn/)	湖南师范大学	CN43-1381/G4  
@@ -57,6 +57,8 @@ tags: [CSSCI,journals]
 期刊名称	主办（管）单位	CN号  
 [课程.教材.教法](http://bkstg.pep.com.cn)	人民教育出版社课程教材研究所	CN11-1278/G4  
 中国特殊教育	中央教育科学研究所	CN11-3826/G4  
-[中国教育学刊](http://www.zgjyxkzz.com/)	中国教育学会	CN11-2606/G4  
-投稿地址: 北京东城区鼓楼外大街56号教师大厦901, 邮编: 100011,《中国教育学刊》编辑部。查询稿件电话: 010- 64264430-811 寿老师  
+[中国教育学刊](http://www.jcse.com.cn/)	中国教育学会	CN11-2606/G4  
 学前教育研究	中国学前教育研究会、长沙师范学校	CN43-1038/G4  
+
+其他扩展期刊或者非CSSCI期刊  
+[当代教育科学](http://www.zgcrjy.com/m_TContributions/contribute.aspx#)
