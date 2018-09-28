@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-08-30T11:46:06+08:00</updated>
+  <updated>2018-09-29T06:59:22+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[科学教育资源]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/09/29/resources-for-science-education/"/>
+    <updated>2018-09-29T06:42:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/09/29/resources-for-science-education</id>
+    <content type="html"><![CDATA[<p>作为新手科学教师或者科学教育工作者，一个头疼的问题就是没有合适的资源开展教育、教学活动。如何解决这一问题呢？</p>
+
+<p>问题分析：<br/>
+首先我们需要分析一下产生这种问题的可能原因？以及这个问题的实际原因？前者是理论分析，后者需要实证。</p>
+
+<p>可能的原因：<br/>
+1. 不知道有相关的资源。<br/>
+2. 知道有这样的资源，但是不能获取。<br/>
+3. 获取了相关的资源，但是不知道如何物尽其用。<br/>
+4. 获取了相安的资源，但是不能对资源进行改造和因地制宜。
+5. 这样的资源根本不存在，需要自己生产，自己生产的资源最好用。
+6. 是否还有其他可能？</p>
+
+<p>实际的情况：
+1、2、3是初级利用的水平，可能也是大多新手面临的问题。但，这仅仅是一个猜测，需要验证。</p>
+
+<p>问题解决的可能办法：<br/>
+1. 帮助教师发展资源素养<br/>
+2. 构建资源库，改变外部资源环境<br/>
+3. 构建资源匹配系统</p>
+
+<p>解决问题的实际办法：<br/>
+资源地图项目</p>
+
+<p>资源建设项目</p>
+
+<p>学习工具项目</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Elegy]]></title>
@@ -866,82 +901,6 @@ APAF（Aim Plan Action Feedback）</p>
 <p>行动：在执行任务的时候，需要采用合理的策略应对自身和环境的变化。比如合适的自我监控机制和环境变化应对策略等。</p>
 
 <p>反馈：明确目标达成的检验方法和反馈机制才能激励自己实现目标。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[octopress update]]></title>
-    <link href="http://zhangchunlei.com/blog/2017/12/31/octopress-update/"/>
-    <updated>2017-12-31T23:46:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2017/12/31/octopress-update</id>
-    <content type="html"><![CDATA[<p>升级导致的问题。</p>
-
-<p>octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。</p>
-
-<p>找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</p>
-
-<p>但是试过了对我无效。</p>
-
-<p>回顾一下问题出现的原因，首先出现错误代码是：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Liquid Exception: Unknown tag 'static' in</span></code></pre></td></tr></table></div></figure>
-
-
-<p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。</p>
-
-<p>解决的方式是： 利用 raw 和 endraw标记。如下：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>
-</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>        {% block content %}{% endblock %}
-</span><span class='line'>        {% block footer %}
-</span><span class='line'>        <span class="nt">&lt;hr&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>        {% endblock %}
-</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。</p>
-
-<p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：</p>
-
-<pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT
-</code></pre>
-
-<p>这个错误很严重，直接rake generate吹产生错误的页面。</p>
-
-<p>网上查的各种方法都没用，最后看自己的博客，发现一招删除rake：</p>
-
-<pre><code>sudo gem uninstall rake  
-</code></pre>
-
-<p>之后选择要删除的版本，我直接是删除所有高级版本，原因是我的octopress是5年前的，肯定和高级版本不合拍。于是试了一下，问题解决了！！</p>
 ]]></content>
   </entry>
   
