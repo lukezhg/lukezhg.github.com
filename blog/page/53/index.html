@@ -283,40 +283,44 @@
   </header>
 
 
-  <div class="entry-content"><p>Python重要用法示例</p>
+  <div class="entry-content"><p>使用Python已经有几年了，也写过很多文本分析的程序，包括输入输出，写文案，抓网页等。最大的体会是Python的简洁性，你可以用最好的代码做最多的事儿，前提是你知道怎么做。Python可以让你实现人工智能、大数据分析、网页开发，几乎无所不能。所以，如果你想进入码农行业，你要认真的考虑一下是否要学习Python。</p>
 
-<blockquote><blockquote><blockquote><p>dir(list)
-显示关键字相关的函数</p>
+<p>本文列举了个人常用的命令，并不系统。后面期望不断改善。</p>
 
-<p>help(list.reverse)
-查询某个函数的功能</p></blockquote></blockquote></blockquote>
+<p>Python重要用法示例</p>
+
+<pre><code>dir(list)#显示关键字相关的函数
+help(list.reverse)#查询某个函数的功能
+</code></pre>
 
 <p>set 让一个list变成无重复元素的set
 例如：</p>
 
-<blockquote><blockquote><blockquote><p>shapes = [&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;,&#8217;circle&#8217;]
+<pre><code>shapes = ['circle','square','triangle','circle']
 setOfShapes = set(shapes)
-setOfShapes
-set([&#8216;circle&#8217;,&#8217;square&#8217;,&#8217;triangle&#8217;])
-setOfShapes.add(&#8216;polygon&#8217;)
-&#8216;rhombus&#8217; in setOfShapes
-False
-setOfShapes - setOfFavoriteShapes
-setOfShapes &amp; setOfFavoriteShapes
-setOfShapes | setOfFavoriteShapes</p></blockquote></blockquote></blockquote>
+setOfShapes 
+set(['circle','square','triangle']) 
+ setOfShapes.add('polygon') 
+'rhombus' in setOfShapes 
+False 
+setOfShapes - setOfFavoriteShapes 
+setOfShapes &amp; setOfFavoriteShapes 
+setOfShapes | setOfFavoriteShapes 
+</code></pre>
 
 <p>map和lambda</p>
 
-<blockquote><blockquote><blockquote><p>map(lambda x: x * x, [1,2,3])
+<pre><code>map(lambda x: x * x, [1,2,3])
 [1, 4, 9]
-filter(lambda x: x > 3, [1,2,3,4,5,4,3,2,1])
-[4, 5, 4]</p></blockquote></blockquote></blockquote>
+filter(lambda x: x &gt; 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]
+</code></pre>
 
 <p>Object 先定义一个类，然后给类生成实例
-定义如：
-class FruitShop:</p>
+定义如：</p>
 
-<pre><code>def __init__(self, name, fruitPrices):
+<pre><code>class FruitShop:
+def __init__(self, name, fruitPrices):
     """
         name: Name of the fruit shop
 
@@ -351,7 +355,6 @@ def getPriceOfOrder(self, orderList):
         if costPerPound != None:
             totalCost += numPounds * costPerPound
     return totalCost
-
 def getName(self):
     return self.name
 </code></pre>
@@ -392,6 +395,114 @@ def main():
     pythoncom.PumpMessages()
 </code></pre>
 
+
+<p>用pyenv的基本操作命令管理python版本</p>
+
+<pre><code>pyenv versions# 查看当前已安装的 python 版本
+pyenv install ... #安装指定版本的 python
+pyenv global python版本 #切换全局 python 版本
+source ~/.bash_profile
+pyenv local python版本 #切换当前文件夹下的 python 版本
+pyenv shell python版本 #切换当前 shell 中的 python 版本
+pyenv version #查看当前使用的 python 版本
+</code></pre>
+
+<p>python 数据库开发</p>
+
+<p>取消所有8000进程：</p>
+
+<pre><code>sudo lsof -t -i tcp:8000 | xargkill -9
+</code></pre>
+
+<p>创建项目</p>
+
+<pre><code>django-admin startproject demoproject
+</code></pre>
+
+<p>创建应用</p>
+
+<pre><code>cd demoproject
+python manage.py startapp TestModel
+</code></pre>
+
+<p>打开 mysql服务器</p>
+
+<pre><code>mysql -u root -p
+</code></pre>
+
+<p>http://djangobook.py3k.cn/chapter05/</p>
+
+<p>现在我们可以创建数据库表了。首先，用下面的命令对校验模型的有效性：</p>
+
+<p>python manage.py validate</p>
+
+<p>模型确认没问题了，运行下面的命令来生成 CREATE TABLE 语句：</p>
+
+<p>python manage.py sqlall books</p>
+
+<p>python manage.py syncdb</p>
+
+<p>打开服务器
+python manage.py runserver
+python manage.py migrate
+python manage.py makemigrations</p>
+
+<p>查看sql服务是否启动</p>
+
+<h1>还可以这么查看，MySQL服务器是否启动</h1>
+
+<p>ps -ef | grep mysqld</p>
+
+<h1>查看服务运行的状态</h1>
+
+<p>service mysqld status</p>
+
+<p>替换该文件之后，需要跑一下systemctl restart httpd命令才能生效</p>
+
+<p>Mysql
+mysql -u db_user -p
+SHOW DATABASES;
+CREATE DATABASE blog_data;
+drop database mydb;
+SHOW DATABASES;
+Whenever you&#8217;d like to exit MySQL server, press CTRL + D.</p>
+
+<p>show variables like &#8216;%char%’;
+set character_set_server=utf8;
+set character_set_database=utf8;</p>
+
+<p>show variables like &#8216;%char%’;</p>
+
+<p>ALTER DATABASE classlinkr DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci</p>
+
+<p>use my_db;
+show tables;</p>
+
+<p>show full columns from clips_clip;</p>
+
+<p>ALTER TABLE classlinkr.clips_clip MODIFY COLUMN concept VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</p>
+
+<p>闲来无事，随便看看Python 3.0的文档，发现了一个很pythonic的模块：声音播放 for windows；凑个流行语叫做“很傻很天真”，不过挺好使得。</p>
+
+<p>1 winsound.Beep</p>
+
+<p>每一个都有不同的用法，一个一个来看吧。</p>
+
+<pre><code>winsound.Beep(frequency, duration)
+</code></pre>
+
+<p>PC扬声器滴的一声，就是它了。第一个参数frequency表示分贝数，大小在37到32767之间。第二个参数是持续时间，以毫秒为单位(有耐心的话可以试试winsound.Beep(32767,9999999)，嘿嘿)。</p>
+
+<p>2 winsound.PlaySound</p>
+
+<pre><code>1. import winsound
+2. # Play Windows exit sound.
+3. winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+4. # Probably play Windows default sound, if any is registered (because
+5. # "*" probably isn't the registered name of any sound).
+6. winsound.PlaySound("*", winsound.SND_ALIAS)
+不过只能播放wav,不能播放wma和mp3文件，这2种还需要其他包的支持。
+</code></pre>
 </div>
   
   
