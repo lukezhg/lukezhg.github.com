@@ -4,7 +4,7 @@
   <title><![CDATA[tags: Python | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-10-14T11:41:03+08:00</updated>
+  <updated>2018-10-14T11:50:27+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -165,34 +165,31 @@ python manage.py startapp TestModel
 <pre><code>mysql -u root -p
 </code></pre>
 
-<p>http://djangobook.py3k.cn/chapter05/</p>
+<p>参考：<a href="http://djangobook.py3k.cn/chapter05/">手册</a></p>
 
 <p>现在我们可以创建数据库表了。首先，用下面的命令对校验模型的有效性：</p>
 
-<p>python manage.py validate</p>
+<pre><code>python manage.py validate
+</code></pre>
 
 <p>模型确认没问题了，运行下面的命令来生成 CREATE TABLE 语句：</p>
 
-<p>python manage.py sqlall books</p>
+<pre><code>python manage.py sqlall books
+python manage.py syncdb
+</code></pre>
 
-<p>python manage.py syncdb</p>
+<p>打开服务器</p>
 
-<p>打开服务器
-python manage.py runserver
+<pre><code>python manage.py runserver
 python manage.py migrate
-python manage.py makemigrations</p>
+python manage.py makemigrations
+</code></pre>
 
 <p>查看sql服务是否启动</p>
 
-<h1>还可以这么查看，MySQL服务器是否启动</h1>
-
-<p>ps -ef | grep mysqld</p>
-
-<h1>查看服务运行的状态</h1>
-
-<p>service mysqld status</p>
-
-<p>替换该文件之后，需要跑一下systemctl restart httpd命令才能生效</p>
+<pre><code>ps -ef | grep mysqld#查看MySQL服务器是否启动
+service mysqld status#查看服务运行的状态
+</code></pre>
 
 <p>Mysql
 mysql -u db_user -p
@@ -238,6 +235,11 @@ show tables;</p>
 6. winsound.PlaySound("*", winsound.SND_ALIAS)
 不过只能播放wav,不能播放wma和mp3文件，这2种还需要其他包的支持。
 </code></pre>
+
+<p>网站维护：<br/>
+使用Django框架<br/>
+前端口用h5和JS开发<br/>
+替换该文件之后，需要跑一下systemctl restart httpd命令才能生效</p>
 ]]></content>
   </entry>
   
