@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-10-14T11:50:27+08:00</updated>
+  <updated>2018-10-22T23:34:23+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[pepermint os for kids]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/10/22/pepermint-os-for-kids/"/>
+    <updated>2018-10-22T23:21:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/10/22/pepermint-os-for-kids</id>
+    <content type="html"><![CDATA[<p>Happy asked again.</p>
+
+<blockquote><p>Dad, did you update my laptop? <br/>
+No, I said. <br/>
+Ok, It doesn&#8217;t matter I will give you one more day. <br/>
+Thank you.</p></blockquote>
+
+<p>Today, I did update his laptop computer. In fact, I changed his OS from sugar lab to Peppermint. I am not sure if this new system suits him. But I did my job anyway.</p>
+
+<p>I should upload a picture here for happy.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Minerva大学的新物种]]></title>
@@ -927,31 +945,6 @@ IA stands for Intellectual Assistant.</p>
 </span><span class='line'>  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）
 </span><span class='line'>* 在公共场合独立介绍和展示自己的研究工作并交流讨论
 </span><span class='line'>* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[use github to save your code]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/01/12/use-github-to-save-your-code/"/>
-    <updated>2018-01-12T21:34:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/01/12/use-github-to-save-your-code</id>
-    <content type="html"><![CDATA[<p>首先在网页上新建项目：new Repository</p>
-
-<p>然后在本地：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://github.com/lukezhg/space-craft.git
-</span><span class='line'>cd space-craft
-</span><span class='line'>git add .
-</span><span class='line'>git commit  -m "save space craft"
-</span><span class='line'>git push -u origin master #需要输入用户名和密码</span></code></pre></td></tr></table></div></figure>
-
-
 
 ]]></content>
   </entry>
