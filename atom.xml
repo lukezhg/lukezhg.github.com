@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-10-27T17:44:39+08:00</updated>
+  <updated>2018-11-25T23:43:29+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Epistemological beliefs]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/11/25/epistemological-beliefs/"/>
+    <updated>2018-11-25T23:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/11/25/epistemological-beliefs</id>
+    <content type="html"><![CDATA[<p>Epistemological beliefs is about what knowledge and knowing is and is not.</p>
+
+<p>Read the following paper to know more about EB.</p>
+
+<p>Kampa, N., Neumann, I., Heitmann, P., &amp; Kremer, K. (2016). Epistemological beliefs in science—a person-centered approach to investigate high school students&#8217; profiles. Contemporary educational psychology, 46, 81-93.</p>
+
+<pre><code>The four factors split into two factors in the area of nature of knowledge ([1] certainty and [2] development of scientific knowl- edge) and two factors in the area of nature of knowing ([3] source and [4] justification of scientific knowing).
+
+1.certainty.   
+Beliefs on the certainty of knowledge span from viewing scientific knowledge as either being right or wrong (naïve) to viewing scientific knowledge as a reflection from more than one perspective (sophisticated). 
+
+2.development.  
+Beliefs on the development of knowledge span from viewing scientific knowledge as a static and unchanging subject (naïve) to accepting that scientific ideas and theories change over time in light of new evidence (sophisticated). 
+
+3.source.  
+Beliefs on the source of knowing refer to viewing knowledge as residing in external authorities such as scientists or teachers (naïve) versus viewing knowledge as created within the student (sophisticated). 
+
+4.justification.  
+Beliefs on the justification of knowing refer to discovering phenomena through scientific investigations, e.g., experiment or observation (naïve) versus understanding that knowledge comes from reasoning, thinking, and multiple experimentations as well as observations (sophisticated; Conley et al., 2004).
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[pepermint os for kids]]></title>
@@ -883,69 +911,6 @@ IA stands for Intellectual Assistant.</p>
 <p>AI includes many sub-feilds, such as machine learning, natural language processing, expert system and so on. As an amateur programer, what I really need is not AI but an assisstant to help me learn and work. I call it intellectural assisstant (IA).</p>
 
 <p>IA make use of AI power to recognize friends&#8217; faces, remember ceremony days, record your life experiences and predict your personal needs and action. IA is not a technology method, it is your personal smart accompany.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[研究生科研能力进阶]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/01/14/research-task-level/"/>
-    <updated>2018-01-14T08:08:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/01/14/research-task-level</id>
-    <content type="html"><![CDATA[<p>这个时代变化太快。技术、产业革新周期越来越短，短到可怕。行业竞争正在从数量竞争转向质量竞争。谁还在按照惯性而行，谁就注定被惯性束缚，被体制牵绊。这是个最好的时代，因为万事皆可能。这也是一个最坏的的时代，因为你面临选择，面临无限多个选择，选择的机会成本无限飙升，时间成为最后稀缺资源和最昂贵的成本。未来是个超级岔路口，你是否能掌握住自己的命运，关键在于你现在的选择，关键在于你如何花费你的时间。时间就生命。</p>
-
-<p>在短暂的研究生学习期间，你可以集中精力尝试按照下面的进阶路径发展自己的科研能力，也能为你节约宝贵的时间。5个水平具有先后顺序，你一定要从1到5，不要轻易越级，每个水平中有3项任务，建议全部完成后再挑战下一个水平的任务。当然你还可以利用这个水平等级任务估计自己所处的水平，然后再次出发。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Level 1：在详细指导下参与项目工作
-</span><span class='line'>* 按照给定要求收集数据
-</span><span class='line'>* 按照给定格式录入数据
-</span><span class='line'>* 对给定资料进行翻译
-</span><span class='line'>
-</span><span class='line'>Level 2：在指定任务要求下开展工作
-</span><span class='line'>* 就给定主题收集、整理资料或者独立做一次访谈
-</span><span class='line'>* 就给定文献库撰写文章概要
-</span><span class='line'>* 按照APA要求完善论文格式
-</span><span class='line'>
-</span><span class='line'>Level 3：独立进行信息加工和概括
-</span><span class='line'>* 撰写文献综述
-</span><span class='line'>* 撰写读书报告
-</span><span class='line'>* 撰写数据分析报告
-</span><span class='line'>
-</span><span class='line'>Level 4：在具体提示下开展研究工作
-</span><span class='line'>* 提出研究问题，并制订研究计划
-</span><span class='line'>* 尝试编制研究工具，并修改完善
-</span><span class='line'>* 撰写研究计划书
-</span><span class='line'>
-</span><span class='line'>Level 5：在方向性提示下完成研究工作
-</span><span class='line'>* 结合文献、研究结果、现状撰写论文（标题 摘要 关键词 前言 
-</span><span class='line'>  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）
-</span><span class='line'>* 在公共场合独立介绍和展示自己的研究工作并交流讨论
-</span><span class='line'>* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护</span></code></pre></td></tr></table></div></figure>
-
 ]]></content>
   </entry>
   
