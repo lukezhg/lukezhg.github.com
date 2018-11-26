@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2018-11-25T23:43:29+08:00</updated>
+  <updated>2018-11-26T23:10:34+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Gene edited baby what you should know]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/11/26/gene-edited-baby-what-you-should-know/"/>
+    <updated>2018-11-26T22:23:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/11/26/gene-edited-baby-what-you-should-know</id>
+    <content type="html"><![CDATA[<p>2018年11月26号晚上，微信瞬间被刷屏，基因编辑婴儿诞生引起专家和网友热议。</p>
+
+<p>了解事情的来龙去脉，请戳下面这篇赛先生资讯连接：</p>
+
+<p><a href="https://mp.weixin.qq.com/s/x7BRorMMGYc5KKJqxniqig">激烈反弹：基因改变婴儿导致生物医学界普遍批评</a></p>
+
+<p>简单的说，就是一个研究团队，利用基因编辑技术，对一个受精卵进行了基因编辑，敲除了一个更HIV感染有关的基因，目的是让新生儿对HIV病毒天然免疫。</p>
+
+<p>似乎是一件好事，但实际上是极不负责任的行为，会产生一系列的医学问题、伦理问题和社会问题。</p>
+
+<p>首先，为什么早期胚胎编辑在美国和欧洲不被容许，不仅仅是因为伦理问题，还因为这种技术并不完善、不安全，会产生很多非目标基因突变，也就是说产生的新生命很可能因为这些突变而致病甚至死亡。</p>
+
+<p>CRISPR基因编辑可能导致非目标基因突变的证据见：<br/>
+基因编辑存在的问题——CRISPR基因编辑技术导致小鼠体内上百种非目标基因突变
+http://www.sohu.com/a/144701672_354973</p>
+
+<p>但是，这个团队竟然敢用在人身上，而且是对受精卵进行基因编辑，竟然还出生了。这意味着基因编辑产生的遗传影响将有可能遗传给下一代，并进入人类基因池，其可能造成的风险不可估计。要知道，对早期胚胎进行基因编辑在国际上是不被容许的，是违反国际科研伦理的，但是这个研究的伦理审查竟然被中国的一所医院轻易的就通过了，难以想象！</p>
+
+<p>下面是MIT Technology Review和Nature对该事件的报道，其中的专家观点值得深思。<br/>
+MIT Technology Review：Chinese scientists are creating CRISPR babies
+https://www.technologyreview.com/s/612458/exclusive-chinese-scientists-are-creating-crispr-babies/</p>
+
+<p>Nature：Genome-edited baby claim provokes international outcry
+https://www.nature.com/articles/d41586-018-07545-0</p>
+
+<p>这次的基因编辑婴儿事件，不仅不安全，不道德，还反人类。它反应的是对人的漠视，把人当成实验动物，对其草率的更改遗传信息，忽视这个个体将来要面临的健康风险，忽视这个个体将来要面对社会角色问题，比如这个生命是否为人，是否享受生育权。未来，人类是否可以随意设计自己的子女？设计出来的子女还是你的子女吗？谁有权设计未来的人类？人类社会是否会因为这一技术滥用爆发不可调和的冲突，比如生命权的不对等，生殖权的不对等，进而走向毁灭。从这个意义上讲，它是反人类的。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Epistemological beliefs]]></title>
@@ -893,24 +927,6 @@ Group2中INUmbers = (1(1)4,25(1)51);#表示一部分共有题目是1(1)4，另�
 1、BILOG输出文件可以使用双空格置换为单空格，最后将所有空格置换为分隔符，然后粘贴到EXCEL中即可。</p>
 
 <p>2、构建数据文件时，首先需要在EXCEL中构建数据结构，原始数据不要有空值，如有有空值提前用0或者9填充空值。填充空值时，先选择编辑-查找-定位，选择空值，即可选择所有空值。然后在输入值区域输入要填充的值比如0，按CTRL+Enter即可全部填充。数据按照试题关系粘贴好之后，会产生很多空白区域，可以用半角空格替换空白区域。然后将所有数据拷贝到文本编辑器中，用空值替换所有分隔符。然后把所有数据作为文本粘贴到EXCEL中添加学生编号和组别即可，再略微编辑即可。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[From AI to IA]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/01/21/from-ai-to-ia/"/>
-    <updated>2018-01-21T16:57:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/01/21/from-ai-to-ia</id>
-    <content type="html"><![CDATA[<p>AI stands for Artificial Intelligence.<br/>
-IA stands for Intellectual Assistant.</p>
-
-<p>We don&#8217;t need AI. We need IA.</p>
-
-<p>AI sounds amazing but hard to understand for common computer users. Even for programers it take time and effort to fully understand and make use of AI power.</p>
-
-<p>AI includes many sub-feilds, such as machine learning, natural language processing, expert system and so on. As an amateur programer, what I really need is not AI but an assisstant to help me learn and work. I call it intellectural assisstant (IA).</p>
-
-<p>IA make use of AI power to recognize friends&#8217; faces, remember ceremony days, record your life experiences and predict your personal needs and action. IA is not a technology method, it is your personal smart accompany.</p>
 ]]></content>
   </entry>
   
