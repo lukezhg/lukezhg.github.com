@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-01-23T18:18:44+08:00</updated>
+  <updated>2019-01-29T09:42:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3个动作帮助你缓解膝盖疼痛]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/01/29/there-gestures-to-protect-your-knees/"/>
+    <updated>2019-01-29T09:04:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/01/29/there-gestures-to-protect-your-knees</id>
+    <content type="html"><![CDATA[<p>一般轻微的膝盖劳损可以采用保守治疗的方法，如果难以行动或非常疼痛则应该及时去医院检查，必要时采取手术治疗。</p>
+
+<p>保守治疗的方法，<a href="http://dl.tzuchi.com.tw/jointcenter/node/103">国际膝关节健康促进中心</a>介绍以下3个动作，能有效改善膝关节状况。</p>
+
+<p>动作一：钩脚， 每天10次，每次10秒。</p>
+
+<p>动作二：抱膝， 每天5次， 每次30秒。</p>
+
+<p>动作三：压膝， 每天5次， 每次30秒。</p>
+
+<p>如下图所示，此外应该避免从事表中对膝关节不利的运动。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/knee-gestures.png" alt="three gestures to improve your knee pain" /></p>
+
+<p>下面这个视频对膝关节康复和治疗以及这三个动作进行了介绍。</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dqcLNUnfV2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[非暴力沟通与教育]]></title>
@@ -772,35 +799,6 @@ Technology rich learning environment give the advantage of supporting each stude
 <-o-><br/>
   |<br/>
   V</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[论文写作与修改原则]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/04/07/paper-writing/"/>
-    <updated>2018-04-07T13:00:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/04/07/paper-writing</id>
-    <content type="html"><![CDATA[<h3>原则1:论文要提出、有价值的、可研究的研究问题。</h3>
-
-<p>为了提出这样的问题，必须要做好文献综述工作，梳理已有的研究问题、研究对象、研究方法、研究结果，进而了解哪些有价值的问题还没有研究，哪些研究方法是可以尝试的研究方法，现有的研究基础是怎样的。这些工作需要在论文开题时就要完成。</p>
-
-<p>这也构成了论文研究的前半部分：<br/>
-研究背景（做这项研究的目的和背景）
-研究综述（总结已有相关研究，确定研究理论框架，提出值得进一步探索的研究问题）
-研究方法（针对研究问题明确研究思路、研究对象、研究工具、要收集的数据）</p>
-
-<h3>原则2:论文要有明确的论点、可信的证据和严谨的论证过程。</h3>
-
-<p>为了回应研究问题，研究者需要基于收集的数据和研究结果得出结论。这些结论必须明确，并且有可信的证据支持，论证过程必须符合逻辑。要注意是否有被忽略的证据和价值观假设，是否有其他可能的解释等。此外，在讨论部分还要交代研究的结论与别人研究的关系如何？对理论和现实有哪些价值？</p>
-
-<p>这部分构成了论文的后半部分：<br/>
-研究结果：基于数据分析描述研究的结果
-研究结论和讨论：基于结果得出结论，并与其他研究相比较，讨论研究的意义和价值。</p>
-
-<h3>原则3:论文要有清晰的结构和严谨的格式。</h3>
-
-<p>写论文时应该把论文的框架做成概念图，并调整内容顺序，直到呈现清晰而有条理的结构。<br/>
-要检查标题、摘要、关键词、目录、表格、图片、参考文献的格式。细节彰显态度。</p>
 ]]></content>
   </entry>
   
