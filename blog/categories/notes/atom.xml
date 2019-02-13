@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: notes | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/notes/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2019-02-13T12:41:42+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[new born]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/02/13/new-born/"/>
+    <updated>2019-02-13T12:33:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/02/13/new-born</id>
+    <content type="html"><![CDATA[<p>I do it for myself. But where is myself. If myself doesn't exist,then I do it for who. I do it not for myself, because myself doesn't exist. I do it not for someone else, because someone else also doesn't exist. I do it not for all, because all also do not exist. Should I stop? No. I do it for no reason, for nobody, for no aim. Just do it as it shoud be done.</p>
+]]></content>
+  </entry>
+  
+</feed>
