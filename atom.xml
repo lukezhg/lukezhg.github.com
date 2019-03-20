@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-02-13T12:41:42+08:00</updated>
+  <updated>2019-03-20T11:09:52+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[如何制作中文标签云]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/03/20/how-to-create-tag-cloud-in-chinese/"/>
+    <updated>2019-03-20T10:46:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/03/20/how-to-create-tag-cloud-in-chinese</id>
+    <content type="html"><![CDATA[<h3>第一步：分词</h3>
+
+<p>与英文不同，为了制作标签云，中文必须分词，也就是从语料中提取词语，并统计词频。<br/>
+可以使用的工具：<br/>
+中文词频统计工具：<a href="http://translation.education/topwords/">http://translation.education/topwords/</a></p>
+
+<p>语料库在线：<a href="http://corpus.zhonghuayuwen.org/CpsTongji.aspx">http://corpus.zhonghuayuwen.org/CpsTongji.aspx</a></p>
+
+<p>通过这两个工具，就可以把一段文字的词频统计出来，接下来就是要图形化，形成一个合适的标签云了，这个时候我们要借助标签云可视化工具。</p>
+
+<h3>第二部：可视化</h3>
+
+<p>可视化，就是根据词频来设置词语的字体大小，从而在二维平面上形象的展示出预料中的词语的出现情况。<br/>
+可以使用的工具：<br/>
+wordart：<a href="https://wordart.com/create">https://wordart.com/create</a>
+这是一个英文词频可视化工具，可以制作很多高质量的标签云。它对英文支持的比较好，但是其实也可以支持中文，前提是上传和使用你自己的中文字体。<br/>
+比如微软雅黑字体下载：http://www.font5.com.cn/zitixiazai/1/36.html</p>
+
+<p>操作步骤：<br/>
+首先，把中文词频工具获得的词频信息复制到剪切板。然后在wordart这个地方点击Create，点击words，Import，粘贴你的词频表格，记住要勾选CSV format。</p>
+
+<p>然后，在FONTS这个地方上传你的字体，选择你自己的字体，点击Visualize就可以实现中文词频的可视化了。</p>
+
+<p>比如我生成的标签云：<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/New-teacher-challenges.png" alt="New teacher challenges" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[new born]]></title>
@@ -741,32 +774,6 @@ Technology rich learning environment give the advantage of supporting each stude
 </code></pre>
 
 <p>还有就是可以使用谷歌浏览器插件：copyfish可以进行屏幕文字识别和翻译。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[短视频平台：快手和抖音]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/06/26/kuaishou-and-douyin/"/>
-    <updated>2018-06-26T20:30:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/06/26/kuaishou-and-douyin</id>
-    <content type="html"><![CDATA[<p>这两个视频平台发展非常快，用户也非常活跃。有一定潜力发展成为YouTube一样的体积。</p>
-
-<p>为什么这两个平台会火呢？短适应了快节奏的现代网民，同时人的注意力也很难长时间维持。因此11秒是一个不错的选择。同时短视频也更加高效，制作、上传、生成都能更快完成，并且占用的资源也更少。</p>
-
-<p>可以用短视频平台干点什么？</p>
-
-<p>可以记录自己做一件事情的历程。<br/>
-可以分享趣事和见闻。<br/>
-学习这样严肃的事就不要用快手了，除非是操作性技能。  <br/>
-创意和点子展示可以用这个。<br/>
-表演魔术和技艺可以用这个。比如平衡术。<br/>
-分享异国见闻可以用这个。非洲见闻。<br/>
-吵架可以用这个。<br/>
-舞蹈可以用这个。<br/>
-书法可以用这个。<br/>
-武术技巧可以用这个。<br/>
-雕刻可以用这个。<br/>
-新闻可以用这个。</p>
 ]]></content>
   </entry>
   
