@@ -9,7 +9,11 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="花了很长时间找资源，不见得找的得到，找到了不见得资源好，资源好不见得适用，适用不见得会用，会用不见得学习效果好。经过这样的不断地阻挠，寻找有效的资源已经变得不那么重要了，因为即使找到了，也不见得能很好的整合。 教师自己制作的资源往往最有效。教师自己列的资源清单往往最对口。资源不是一天两天积累的， &hellip;">
+  <meta name="description" content="Action Script 3.0 简明手册
+在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。
+变量与常量
+变量有不同的类型，一个变量由变量名和值构成。 var value2:Number = 17;
+const SALES_TAX_RATE: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +76,407 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/11/27/flash-as3-zip-manual/">Flash AS3 Zip Manual</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-27T14:48:00-05:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/11/27/flash-as3-zip-manual/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Action Script 3.0 简明手册<br/>
+在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br/>
+变量与常量<br/>
+变量有不同的类型，一个变量由变量名和值构成。<br/>
+<code/>
+var value2:Number = 17;<br/>
+const SALES_TAX_RATE:Number = 0.07;<br/>
+</code><br/>
+属性<br/>
+简单地视为包含在对象中的“子”变量。</p>
+
+<p><code/>
+square.x = 100;<br/>
+square.y = 150;<br/>
+square.rotation = triangle.rotation;<br/>
+square.scaleX = 1.5;<br/>
+square.scaleY = 1.5;<br/>
+square.currentFrame<br/>
+square.alpha = 30;<br/>
+square.height =20;<br/>
+square.width =40;<br/>
+square.visible =false;<br/>
+</code></p>
+
+<p>调用方法：变量名-点-属性名<br/>
+方法<br/>
+方法是指可以由对象执行的操作。</p>
+
+<pre><code>shortFilm.play();  
+shortFilm.stop();  
+shortFilm.gotoAndStop(1);  
+</code></pre>
+
+<p>某些方法可以执行计算并返回可以像变量一样使用的结果。</p>
+
+<pre><code>var numericData:Number = 9;  
+var textData:String = numericData.toString();  
+calculatorDisplay.text = numericData.toString();  
+</code></pre>
+
+<p>事件<br/>
+本质上，事件就是所发生的、ActionScript 能够识别并可响应的事情。<br/>
+在编写执行事件处理时三个重要元素：</p>
+
+<pre><code>事件源：事件实际发生的位置。  
+事件：发生的事情。  
+响应：事件发生时的执行动作。  
+
+this.stop();  
+function playMovie(event:MouseEvent):void{  
+this.play();}  
+
+playButton.addEventListener(MouseEvent.CLICK, playMovie);  
+</code></pre>
+
+<p>算数运算符<br/>
++-*/^</p>
+
+<h1>逻辑运算符  </h1>
+
+<p>&amp;&amp;<br/>
+||</p>
+
+<p>if (dayOfWeek == &#8220;Wednesday&#8221;){<br/>
+takeOutTrash();}</p>
+
+<p>//单行注释<br/>
+/<em>多行<br/>
+注释<br/>
+</em>/</p>
+
+<p>流控制<br/>
+函数<br/>
+调用函数调用函数</p>
+
+<pre><code>trace("Use trace to help debug your script");  
+var randomNum:Number = Math.random();  
+
+var someDate:Date = new Date();  
+var dayNum:uint = someDate.getDay();  
+</code></pre>
+
+<p>定义函数</p>
+
+<pre><code>function traceParameter(aParam:String){  
+    trace(aParam);}  
+
+traceParameter("hello"); // hello  
+</code></pre>
+
+<p>从函数返回值</p>
+
+<pre><code>function doubleNum(baseNum:int):int{  
+    return (baseNum * 2);}  
+</code></pre>
+
+<p><code/>
+function passPrimitives(xParam:int, yParam:int):void{</p>
+
+<pre><code>xParam++;  
+yParam++;  
+trace(xParam, yParam);  
+</code></pre>
+
+<p>}<br/>
+</code><br/>
+函数参数</p>
+
+<pre><code>var xValue:int = 10;  
+var yValue:int = 15;  
+trace(xValue, yValue);// 10 15  
+passPrimitives(xValue, yValue); // 11 16  
+trace(xValue, yValue);// 10 15  
+</code></pre>
+
+<p>循环</p>
+
+<p>for循环</p>
+
+<pre><code>var i:int;  
+for (i = 0; i &lt; 5; i++){  
+trace(i);}  
+
+for..in  
+
+var myObj:Object = {x:20, y:30};  
+for (var i:String in myObj){  
+trace(i + ": " + myObj[i]);  
+}  
+//output:  
+//x: 20  
+// y: 30  
+</code></pre>
+
+<p>条件语句</p>
+
+<pre><code>if (x &gt; 0){  
+trace("x is positive");}  
+else if (x &lt; 0){  
+trace("x is negative");}  
+else{  
+trace("x is 0");}  
+</code></pre>
+
+<p>switch语句</p>
+
+<p><code/>
+switch(dayNum){<br/>
+case 0:trace(&#8220;Sunday&#8221;);<br/>
+break;<br/>
+case 1:trace(&#8220;Monday&#8221;);<br/>
+break;<br/>
+case 2:trace(&#8220;Tuesday&#8221;);<br/>
+break;<br/>
+case 3:trace(&#8220;Wednesday&#8221;);<br/>
+break;<br/>
+case 4:trace(&#8220;Thursday&#8221;);<br/>
+break;<br/>
+case 5:trace(&#8220;Friday&#8221;);<br/>
+break;<br/>
+case 6:trace(&#8220;Saturday&#8221;);<br/>
+break;<br/>
+default:trace(&#8220;Out of range&#8221;);<br/>
+break;<br/>
+}<br/>
+</code></p>
+
+<p>类<br/>
+点语法</p>
+
+<p>点运算符 (.) 提供对对象的属性和方法的访问。使用点语法，可以使用后跟点运算符和属性名或方法名的实例名来引用类的属性或方法。以下面的类定义为例：</p>
+
+<p><code/>
+class DotExample<br/>
+{<br/>
+public var prop1:String;<br/>
+public function method1():void {}<br/>
+}<br/>
+</code><br/>
+借助于点语法，可以使用在如下代码中创建的实例名来访问 prop1 属性和 method1() 方法：<br/>
+<code/><br/>
+var myDotEx:DotExample = new DotExample();<br/>
+myDotEx.prop1 = &#8220;hello&#8221;;<br/>
+myDotEx.method1();<br/>
+</code><br/>
+定义包时，可以使用点语法。可以使用点运算符来引用嵌套包。例如，EventDispatcher 类位于一个名为 events 的包中，该包嵌套在名为 flash 的包中。可以使用下面的表达式来引用 events 包：</p>
+
+<p>flash.events</p>
+
+<p>还可以使用此表达式来引用 EventDispatcher 类：</p>
+
+<p>flash.events.EventDispatcher</p>
+
+<p>数组</p>
+
+<p><code/>
+var names:Array = new Array(&#8220;John&#8221;, &#8220;Jane&#8221;, &#8220;David&#8221;);<br/>
+trace(names.length); //output: 3<br/>
+trace(names[0]);// output: John<br/>
+trace(names[1]); //output: Jane<br/>
+trace(names[2]);// output: David<br/>
+</code></p>
+
+<p>实例教程<br/>
+对象的初始化<br/>
+1 在主场景中新建一个矩形，全选然后F8转换为元件，命名为box。在第一帧里面尝试加入：<br/>
+代码1</p>
+
+<p><code/>
+box.x = 10;<br/>
+box.y = 150;<br/>
+</code><br/>
+代码2<br/>
+<code/><br/>
+box.rotation = triangle.rotation;<br/>
+box.scaleX = 1.5;<br/>
+box.scaleY = 1.5;<br/>
+</code><br/>
+2 把box变成一个骰子，尝试<br/>
+代码3<br/>
+<code/><br/>
+box.currentFrame<br/>
+box.alpha = 30;<br/>
+box.height =20;<br/>
+box.width =40;<br/>
+box.visible =false;<br/>
+</code><br/>
+3 尝试使用随机函数<br/>
+代码4<br/>
+<code/><br/>
+box.x = this.stage.width<em>Math.random();<br/>
+box.y = this.stage.height</em>Math.random();<br/>
+</code></p>
+
+<p>影片剪辑的控制</p>
+
+<p><code/>
+box.stop();<br/>
+box.play();<br/>
+box.gotoAndStop(1);<br/>
+box.gotoAndPlay(3);<br/>
+box.gotoAndStop(Math.round(6*Math.random()));<br/>
+</code></p>
+
+<p>影片剪辑的控制</p>
+
+<pre><code/>
+import flash.display.*;
+import flash.events.*;
+mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听
+
+//startDragFace函数
+function startDragFace(e:MouseEvent):void {
+mcFace.startDrag();
+}
+
+mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);
+
+function stopDragFace(e:MouseEvent):void {
+mcFace.stopDrag();
+
+}
+</code></pre>
+
+
+<p></p>
+
+<p>播放和定制按钮<br/>
+1、制作按钮<br/>
+2、给按钮命名为btn<br/>
+3、在第一帧添加代码（该实例来自：AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+btn.addEventListener(MouseEvent.ROLL_OVER,btnRollOver);//注册鼠标放上事件帧听器  
+btn.addEventListener(MouseEvent.ROLL_OUT,btnRollOut);//注册鼠标离开事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+trace(e.currentTarget.name);//trace就是在输出面板里输出内容，这里输出"btn"，只有在flash测试的时候才有效  
+}  
+</code></pre>
+
+<p>//鼠标放在btn上的事件处理函数</p>
+
+<pre><code>function btnRollOver(e:MouseEvent):void{  
+txt.text="鼠标放在了按钮上";//给文本框txt的text属性赋值为"鼠标放在了按钮上"  
+}  
+</code></pre>
+
+<p>//鼠标从btn上离开的事件处理函数</p>
+
+<pre><code>function btnRollOut(e:MouseEvent):void{  
+txt.text="鼠标从按钮上离开了";  
+}  
+</code></pre>
+
+<p>4、添加一个动态文本框，命名为txt<br/>
+ctrl+enter测试影片<br/>
+修改代码如下：</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+box.gotoAndStop(Math.round(6*Math.random()));  
+}  
+</code></pre>
+
+<p>测试影片，如果成功则再建一个按钮元件，命名为btnPlay,修改代码为：</p>
+
+<pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnClick(e:MouseEvent):void{  
+box.stop();  
+}  
+btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件帧听器  
+</code></pre>
+
+<p>//点击事件处理函数</p>
+
+<pre><code>function btnPlayClick(e:MouseEvent):void{  
+box.play();  
+}  
+</code></pre>
+
+<p>如何使用文本框（Text）</p>
+
+<p>使用前可以导入以下声明</p>
+
+<pre><code>import flash.text.TextField;
+import flash.text.TextFormat;
+import flash.text.TextFormatAlign;
+</code></pre>
+
+<p>Number()将字符型转化为数值型变量<br/>
+toString()将数值转化为字符</p>
+
+<p>5、尝试仿照实例让代码与fla源文件分离：<br/>
+实例：（AS3基础教程实例1 给按钮添加动作 | 且行电子学档: http://www.eportfolios.cn/node/2146）</p>
+
+<p>本文参考了:<br/>
+adobe AS3帮助手册：http://tinyurl.com/7ujc2yp</p>
+
+<p>Flash实例<br/>
+简单实例</p>
+
+<pre><code>Flash教程：送给初学者的一点使用技巧_Flash实例教程_IT部落: http://edu.itbulo.com/200711/120855.htm  
+立体板-Flash源文件-闪吧Flash8: http://www.flash8.net/fla/10364.shtml  
+放大镜-Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10144.shtml  
+卷轴和毛笔写字- Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10342.shtml  
+地球旋转-上传：明月老师 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10237.shtml  
+瀑布-上传：CC851246330 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/9515.shtml  
+</code></pre>
+
+<p>复杂实例<br/>
+ActionScript 3.0的流程控制语法<em>知行网: http://www.zhixing123.cn/Flash/2111.html<br/>
+flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Flash/20080.html</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/">教学资源梳理——只有会用才显优势</a></h1>
     
     
@@ -88,7 +493,7 @@
   
 
 
-<time datetime="2014-11-13T16:54:00+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2014</time>
+<time datetime="2014-11-13T16:54:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/#disqus_thread">Comments</a>
         
@@ -177,7 +582,7 @@
   
 
 
-<time datetime="2014-11-08T17:42:00+08:00" pubdate data-updated="true">Nov 8<span>th</span>, 2014</time>
+<time datetime="2014-11-08T17:42:00-05:00" pubdate data-updated="true">Nov 8<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/11/08/what-does-a-good-lesson-look-like/#disqus_thread">Comments</a>
         
@@ -224,7 +629,7 @@
   
 
 
-<time datetime="2014-11-05T17:06:00+08:00" pubdate data-updated="true">Nov 5<span>th</span>, 2014</time>
+<time datetime="2014-11-05T17:06:00-05:00" pubdate data-updated="true">Nov 5<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/11/05/common-problems-in-college-students-thesises/#disqus_thread">Comments</a>
         
@@ -364,7 +769,7 @@
   
 
 
-<time datetime="2014-10-27T17:50:00+08:00" pubdate data-updated="true">Oct 27<span>th</span>, 2014</time>
+<time datetime="2014-10-27T17:50:00-04:00" pubdate data-updated="true">Oct 27<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/10/27/how-to-observe-a-lesson/#disqus_thread">Comments</a>
         
@@ -413,54 +818,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/23/why-lesson-plan/">那个什么教案，真的有必要写吗？</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-23T21:43:00+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2014</time>
-        
-         | <a href="/blog/2014/10/23/why-lesson-plan/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我第一年当高中生物学教师的时候，也曾经有这样的困惑。因为当时，新教师写教案是要检查盖章的，所以有的时候让人误以为是写给别人看的，教学目标设计、学生分析等常规项目，老师们也多是从教参和网络上其他优秀教案“借”来的，只是再针对自己班级的实际情况增增减减罢了。写教案变成了抄教案，不是为自己的教学服务的，到变成了应付检查的，这就是所谓的写教案的异化吧。于是才有此问，写教案真的必要吗？</p>
-
-<p>在新课程暑期研修交流的时候，有教师也提出了这样的疑问——写教案真的必要吗？我记得，但是刘恩山老师的回答是有必要，新教师应该对自己的教学做好充分的准备，可以写电子的教案作为一种记录和备份，这样下一年可以回顾上一年的教学情况，然后只需要在它的基础上做进一步的完善和调整即可。这样既可以避免重复的工作，也是一种记录和积累，对于教师的专业成长非常有好处。</p>
-
-<p>在我看来，写教案是否必要，关键在于写什么、怎样写。应该明确教案首先是写给自己的，就像我写博客一样，也是写给自己的，是对自己思想的记录和知识的管理。写教案有3方面的作用，首先它是一种记录和积累，是对自己内容理解、教学思路、活动创意和实施效果的一种记录，它是今后教学革新和优化的基础。其次，它是一种思考和反思，之所以把教学活动的设计落到笔端，其目的是进一步理清思路、明确重点，而不是稀里糊涂的，课堂教学是一项目的性特别强的活动，它需要在有限的时间内最大取得效果，教案就是活动的蓝本，建筑的蓝图，它是教学有序高效开展的重要保证之一。最后它还也是一种分享和表达，教师的教学智慧通过教案得以表现和传播，教师的教学困难因教案得到解决，一句话，它是教师专业知识的重要载体和交流途径。所以，写教案必要吗，当然必要，真的问题应该是怎么写教案。</p>
-
-<p>新教师第一轮，应该认认真真的、老老实实的写教案，不取巧，写电子版的教案，以备后用。一轮下来，把自己的创意、想法、实践、问题都写下来，会非常有收获，第二轮也会轻松不少，而且是站在原有的基础上再优化的，起点就高了一截，也可以避免机械的重复。</p>
-
-<p>那么究竟改写详案还是写简案呢？或者哪些该详写，哪些该略写呢？其实，这要依人而定。假如，一个对内容不熟悉，或者语言表达能力差的老师，是可以通过写详案来帮助自己克服这些困难的，这样在课堂上可以表达更好些、更有自信些。详案的另外一个好处在于可以精炼自己的语言，一节课一共就40分钟，精炼的设问、讲解、总结才能讲完，也才能让学生更容易消化理解，有一位有20多年教龄的专家教师还坚持写详案，锤炼自己的语言，特别是问题的表述和比喻的陈述，让我尤为钦佩。对于新或者准教师，如果能把一节课的关键性问题、例子、总结详细写出来，就非常有帮助，因为这些东西是你肯定要用的，有准备和现场发挥还是有差距的，这至少可以保证这节发挥的不至于太差。教案中常规性的项目，第一次就好好的写好，因为这些东西变化不会太大，后面只需要做微调就可以重复使用（电子教案的优势所在）。教学活动则可以把关键性的描述和要点写好即可，不必要提前就把师生所有的问答设计好，这是不现实的，学生的答案是很难预想到的，但是可以对学生答案的可能归类有一个预期就够了，便于教师总结和引出新的议题。完成的教案除了蓝图之外，还应该有实施情况的记录和教学反思，可以反思目标的设定，可以反思目标的达成，也可以反思学习任务的设计和教学活动的过程，甚至具体到某个问题、某个例子、某个资源，效果好的要记录，以后继续用，效果不好的也要记录，分析原因，改造或者丢掉。没有这样的一个尝试、反思、调整、再尝试的过程，优秀教师是成长不起来的。</p>
-
-<p>路漫漫其修远兮，我将上下而求索。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/27/">&larr; Older</a>
@@ -480,6 +837,10 @@
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/04/06/a-way-of-no-way-and-take-full-ownership-of-yourself/">A way of no way and take full ownership of yourself</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/03/27/obstacles-in-the-way-of-learning-to-teach/">教师成长之路上的危机四伏</a>
@@ -515,10 +876,6 @@
     
       <li class="post">
         <a href="/blog/2018/11/26/gene-edited-baby-what-you-should-know/">Gene edited baby what you should know</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2018/11/25/epistemological-beliefs/">Epistemological beliefs</a>
       </li>
     
   </ul>

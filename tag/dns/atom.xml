@@ -4,7 +4,7 @@
   <title><![CDATA[tags: DNS | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/dns/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
     <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
-    <updated>2014-12-01T21:28:00+08:00</updated>
+    <updated>2014-12-01T21:28:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
     <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
 

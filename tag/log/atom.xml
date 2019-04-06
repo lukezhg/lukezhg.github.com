@@ -4,7 +4,7 @@
   <title><![CDATA[tags: log | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/log/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[用ALT代替左键单击]]></title>
     <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
-    <updated>2015-12-20T10:50:00+08:00</updated>
+    <updated>2015-12-20T10:50:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
     <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
 
@@ -29,7 +29,7 @@
   <entry>
     <title type="html"><![CDATA[replace disqus with youyan]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan/"/>
-    <updated>2015-11-24T09:43:00+08:00</updated>
+    <updated>2015-11-24T09:43:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
     <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
 将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。</p>
@@ -62,7 +62,7 @@ comment_share: true
   <entry>
     <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
     <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
-    <updated>2014-12-01T21:28:00+08:00</updated>
+    <updated>2014-12-01T21:28:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
     <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
 
@@ -104,7 +104,7 @@ https://www.dnspod.cn/Domain#zhangchunlei.com</p>
   <entry>
     <title type="html"><![CDATA[提高网页加载速度]]></title>
     <link href="http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog/"/>
-    <updated>2014-10-06T15:42:00+08:00</updated>
+    <updated>2014-10-06T15:42:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/10/06/improving-the-loading-speed-of-this-blog</id>
     <content type="html"><![CDATA[<h3>维护计划</h3>
 
@@ -130,7 +130,7 @@ https://www.dnspod.cn/Domain#zhangchunlei.com</p>
   <entry>
     <title type="html"><![CDATA[Octopress的markdown语法]]></title>
     <link href="http://zhangchunlei.com/blog/2014/10/05/octopress-tips/"/>
-    <updated>2014-10-05T19:37:00+08:00</updated>
+    <updated>2014-10-05T19:37:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2014/10/05/octopress-tips</id>
     <content type="html"><![CDATA[<h3>markdown语法示例</h3>
 

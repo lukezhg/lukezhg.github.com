@@ -4,7 +4,7 @@
   <title><![CDATA[tags: github | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/github/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
     <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
-    <updated>2014-12-01T21:28:00+08:00</updated>
+    <updated>2014-12-01T21:28:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
     <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
 
@@ -58,7 +58,7 @@ https://www.dnspod.cn/Domain#zhangchunlei.com</p>
   <entry>
     <title type="html"><![CDATA[在ubuntu中部署octopress发布博文]]></title>
     <link href="http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
-    <updated>2013-02-04T12:17:00+08:00</updated>
+    <updated>2013-02-04T12:17:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
     <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
 终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
@@ -129,7 +129,7 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   <entry>
     <title type="html"><![CDATA[使用Octopress发布Github page博客]]></title>
     <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
-    <updated>2012-12-27T21:05:00+08:00</updated>
+    <updated>2012-12-27T21:05:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
     <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
 

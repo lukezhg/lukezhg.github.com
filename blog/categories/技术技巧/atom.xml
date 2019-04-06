@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 技术技巧 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/技术技巧/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[OCR for mac]]></title>
     <link href="http://zhangchunlei.com/blog/2018/06/27/ocr-for-mac/"/>
-    <updated>2018-06-27T08:04:00+08:00</updated>
+    <updated>2018-06-27T08:04:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2018/06/27/ocr-for-mac</id>
     <content type="html"><![CDATA[<p>itext是一个限制次数的文字识别软件。按年收费。</p>
 
@@ -36,7 +36,7 @@
   <entry>
     <title type="html"><![CDATA[Word必须要打开两次才能打开]]></title>
     <link href="http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice/"/>
-    <updated>2016-11-17T19:21:00+08:00</updated>
+    <updated>2016-11-17T19:21:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2016/11/17/word-have-to-open-twice</id>
     <content type="html"><![CDATA[<p>我的系统是win7，有一个问题一直困扰着我，就是每次打开word文档的时候总是第一次失败，第二次正常。</p>
 
@@ -49,7 +49,7 @@
   <entry>
     <title type="html"><![CDATA[用ALT代替左键单击]]></title>
     <link href="http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/"/>
-    <updated>2015-12-20T10:50:00+08:00</updated>
+    <updated>2015-12-20T10:50:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down</id>
     <content type="html"><![CDATA[<p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
 
@@ -62,7 +62,7 @@
   <entry>
     <title type="html"><![CDATA[在Ubuntu中布置和使用GAE]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu/"/>
-    <updated>2013-08-31T18:07:00+08:00</updated>
+    <updated>2013-08-31T18:07:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/31/play-gae-in-ubuntu</id>
     <content type="html"><![CDATA[<p>本来在windows下我是建立了GAE开发环境的，但是python的版本是2.5,GAE的数据库又升级了，但是我又不想再windows下从新布置，觉得很麻烦。所以开始在Ubuntu中布置GAE。事实上在Ubuntu中的布置简单的难以相信。<br/>
 首先，下载<a href="https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python">Google App Engine SDK for Python</a><br/>
@@ -100,7 +100,7 @@ $ python appcfg.py update myapps/helloworld
   <entry>
     <title type="html"><![CDATA[Firefox extension FireGesture Scripts]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts/"/>
-    <updated>2013-08-26T18:23:00+08:00</updated>
+    <updated>2013-08-26T18:23:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts</id>
     <content type="html"><![CDATA[<p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
 

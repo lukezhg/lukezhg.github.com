@@ -4,7 +4,7 @@
   <title><![CDATA[tags: share button | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/share-button/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[replace disqus with youyan]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan/"/>
-    <updated>2015-11-24T09:43:00+08:00</updated>
+    <updated>2015-11-24T09:43:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/24/replace-discus-with-youyan</id>
     <content type="html"><![CDATA[<p>将jiathis的喜欢按钮以及分享按钮放在sharing.html文件末尾。<br/>
 将友言的代码放在share_comment.html文件中（source/<em>includes/post/share_comment.html），并通过disqus（source/</em>includes/disqus.html）加载，也就是在这个文件中加入下面的代码。</p>

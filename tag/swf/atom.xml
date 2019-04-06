@@ -4,7 +4,7 @@
   <title><![CDATA[tags: swf | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/swf/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Swf send data to Java Script]]></title>
     <link href="http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/"/>
-    <updated>2017-12-29T19:21:00+08:00</updated>
+    <updated>2017-12-29T19:21:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script</id>
     <content type="html"><![CDATA[<p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
 1、首先在html网页中通过object嵌入swf文件</p>

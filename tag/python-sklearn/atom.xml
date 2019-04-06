@@ -4,7 +4,7 @@
   <title><![CDATA[tags: python.sklearn | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python-sklearn/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[人脸定位和识别]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/26/face-detection-and-recognition/"/>
-    <updated>2015-11-26T10:03:00+08:00</updated>
+    <updated>2015-11-26T10:03:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/26/face-detection-and-recognition</id>
     <content type="html"><![CDATA[<p>现在很多智能手机或者照相机都有人脸检测的功能了。不仅如此，现在的人工智能还能对照片进行比对看两个照片是不是同一个人，或者基于一个样本库，直接识别照片中人的姓名，正确率一般能达到80%以上。</p>
 

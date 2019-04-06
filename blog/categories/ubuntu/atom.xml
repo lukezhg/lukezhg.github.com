@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-03-27T19:56:30+08:00</updated>
+  <updated>2019-04-06T07:52:59-04:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[尝试在ubuntu系统中使用octopress]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
-    <updated>2015-11-28T17:43:00+08:00</updated>
+    <updated>2015-11-28T17:43:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
     <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
 比如git,ruby等</p>
@@ -62,7 +62,7 @@ $ git pull origin master
   <entry>
     <title type="html"><![CDATA[重装Ubuntu备忘]]></title>
     <link href="http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall/"/>
-    <updated>2015-11-26T10:54:00+08:00</updated>
+    <updated>2015-11-26T10:54:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall</id>
     <content type="html"><![CDATA[<p>安装软件：<br/>
 输入法 ：搜狗输入法<br/>
@@ -149,7 +149,7 @@ http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-loca
   <entry>
     <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
     <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
-    <updated>2013-11-08T22:14:00+08:00</updated>
+    <updated>2013-11-08T22:14:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
     <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can't start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
 
@@ -173,7 +173,7 @@ setup it (always select the first selection and ok)
   <entry>
     <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
     <link href="http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/"/>
-    <updated>2013-11-08T13:56:00+08:00</updated>
+    <updated>2013-11-08T13:56:00-05:00</updated>
     <id>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu</id>
     <content type="html"><![CDATA[<p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
 
@@ -268,7 +268,7 @@ Now almost done, and wait to be expanded.</p>
   <entry>
     <title type="html"><![CDATA[Ubuntu命令手册]]></title>
     <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
-    <updated>2013-08-31T12:33:00+08:00</updated>
+    <updated>2013-08-31T12:33:00-04:00</updated>
     <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
     <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
 安装和执行程序<br/>
