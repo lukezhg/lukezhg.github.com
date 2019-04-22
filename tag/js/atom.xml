@@ -4,7 +4,7 @@
   <title><![CDATA[tags: Js | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/js/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-04-06T08:50:45-04:00</updated>
+  <updated>2019-04-22T17:06:10+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[How to run JS node and appche]]></title>
     <link href="http://zhangchunlei.com/blog/2017/11/27/how-to-run-js-node-and-appche/"/>
-    <updated>2017-11-27T11:50:00-05:00</updated>
+    <updated>2017-11-27T11:50:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2017/11/27/how-to-run-js-node-and-appche</id>
     <content type="html"><![CDATA[<p>最近接触了不少Java script的代码，但是如何让这些代码运行起来呢？</p>
 

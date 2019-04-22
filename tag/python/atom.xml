@@ -4,7 +4,7 @@
   <title><![CDATA[tags: Python | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/python/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-04-06T08:50:45-04:00</updated>
+  <updated>2019-04-22T17:06:10+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Python简明手册]]></title>
     <link href="http://zhangchunlei.com/blog/2013/07/30/python-brief/"/>
-    <updated>2013-07-30T14:25:00-04:00</updated>
+    <updated>2013-07-30T14:25:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2013/07/30/python-brief</id>
     <content type="html"><![CDATA[<p>使用Python已经有几年了，也写过很多文本分析的程序，包括输入输出，写文案，抓网页等。最大的体会是Python的简洁性，你可以用最好的代码做最多的事儿，前提是你知道怎么做。Python可以让你实现人工智能、大数据分析、网页开发，几乎无所不能。所以，如果你想进入码农行业，你要认真的考虑一下是否要学习Python。</p>
 

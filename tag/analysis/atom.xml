@@ -4,7 +4,7 @@
   <title><![CDATA[tags: analysis | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/analysis/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-04-06T08:50:45-04:00</updated>
+  <updated>2019-04-22T17:06:10+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Pick the right test]]></title>
     <link href="http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test/"/>
-    <updated>2014-05-30T14:14:00-04:00</updated>
+    <updated>2014-05-30T14:14:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2014/05/30/pick-the-right-test</id>
     <content type="html"><![CDATA[<p>You have to pick a test to analysis your data. The question is which test is the right one. Well, it depends on your data and your hypothesis. Usually there are lot of choices, but only one solves your problem best.</p>
 
