@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: STEM | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/stem/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2019-07-08T18:25:28+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[STEM education and PBL]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/07/08/stem-education-and-pbl/"/>
+    <updated>2019-07-08T18:22:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/07/08/stem-education-and-pbl</id>
+    <content type="html"><![CDATA[<p>STEM教育按照其目标来分，至少可以分为3类：<br/>
+* 基于工程设计的STEM教育
+* 基于科学探究的STEM教育
+* 基于社区服务的STEM教育</p>
+
+<h3>基于工程设计的STEM教育</h3>
+
+<p>1、卡扣的研究与设计
+* 服饰中卡扣设计 腰带 拉链
+* 家居生活中的卡扣设计
+* 电器中卡扣设计
+* 工业当中得卡扣设计
+* 生物学中卡扣设计</p>
+
+<h3>基于科学探究的STEM教育</h3>
+
+<p>2、微生物探究
+* 真菌与皮肤病
+* 乳酸菌与酸奶制作
+* 细菌与画家
+* 抗生素的发现</p>
+
+<h3>基于社区服务的STEM教育</h3>
+
+<p>3、设计垃圾分类方案或环保产品
+* 设计垃圾桶
+* 设计垃圾企业策划
+* 设计环境友好的产品
+* 设计垃圾分类公益广告</p>
+
+<p>STEM学习= 真实的问题（学生提出或者师生共同提出）+ 跨学科学习（不受学科边界的限制，充分依赖学生和其他学科老师）+ 整体性学习成果（创造性解决问题的能力、批判性思维能力、交流与合作能力）</p>
+]]></content>
+  </entry>
+  
+</feed>

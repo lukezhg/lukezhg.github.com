@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-07-04T11:46:53+08:00</updated>
+  <updated>2019-07-08T18:25:28+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[STEM education and PBL]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/07/08/stem-education-and-pbl/"/>
+    <updated>2019-07-08T18:22:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/07/08/stem-education-and-pbl</id>
+    <content type="html"><![CDATA[<p>STEM教育按照其目标来分，至少可以分为3类：<br/>
+* 基于工程设计的STEM教育
+* 基于科学探究的STEM教育
+* 基于社区服务的STEM教育</p>
+
+<h3>基于工程设计的STEM教育</h3>
+
+<p>1、卡扣的研究与设计
+* 服饰中卡扣设计 腰带 拉链
+* 家居生活中的卡扣设计
+* 电器中卡扣设计
+* 工业当中得卡扣设计
+* 生物学中卡扣设计</p>
+
+<h3>基于科学探究的STEM教育</h3>
+
+<p>2、微生物探究
+* 真菌与皮肤病
+* 乳酸菌与酸奶制作
+* 细菌与画家
+* 抗生素的发现</p>
+
+<h3>基于社区服务的STEM教育</h3>
+
+<p>3、设计垃圾分类方案或环保产品
+* 设计垃圾桶
+* 设计垃圾企业策划
+* 设计环境友好的产品
+* 设计垃圾分类公益广告</p>
+
+<p>STEM学习= 真实的问题（学生提出或者师生共同提出）+ 跨学科学习（不受学科边界的限制，充分依赖学生和其他学科老师）+ 整体性学习成果（创造性解决问题的能力、批判性思维能力、交流与合作能力）</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[道德经的帛书文稿]]></title>
@@ -943,41 +982,6 @@ wordart：<a href="https://wordart.com/create">https://wordart.com/create</a>
 <p>管理知识的最终目标是发展个人专长。如果你打算在一个领域发展自己的专长，这个专长体现在你占有的数据、信息上，体现在你个人专业技能和技艺上，体现在你的社会人脉上，体现在你的代表作品上。</p>
 
 <p>专长是智慧的范畴，是知识的再次升华。一个有知识的人，可能给出某个问题的答案。一个有专长的人，则能解决别人不能解决的真实问题。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Gene edited baby what you should know]]></title>
-    <link href="http://zhangchunlei.com/blog/2018/11/26/gene-edited-baby-what-you-should-know/"/>
-    <updated>2018-11-26T22:23:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2018/11/26/gene-edited-baby-what-you-should-know</id>
-    <content type="html"><![CDATA[<p>2018年11月26号晚上，微信瞬间被刷屏，基因编辑婴儿诞生引起专家和网友热议。了解事情的来龙去脉，请戳下面这篇赛先生资讯连接：<br/>
-<a href="https://mp.weixin.qq.com/s/x7BRorMMGYc5KKJqxniqig">激烈反弹：基因改变婴儿导致生物医学界普遍批评</a></p>
-
-<p>简单的说，就是一个研究团队，利用基因编辑技术，对一个受精卵进行了基因编辑，敲除了一个更HIV感染有关的基因，目的是让新生儿对HIV病毒天然免疫。似乎是一件好事，但实际上是极不负责任的行为，会产生一系列的医学问题、伦理问题和社会问题。</p>
-
-<h3>1.不安全</h3>
-
-<p>为什么早期胚胎编辑在美国和欧洲不被容许，不仅仅是因为伦理问题，还因为这种技术并不完善、不安全，会产生很多非目标基因突变，也就是说产生的新生命很可能因为这些突变而致病甚至死亡。</p>
-
-<p>CRISPR基因编辑可能导致非目标基因突变的证据见：<br/>
-基因编辑存在的问题——CRISPR基因编辑技术导致小鼠体内上百种非目标基因突变
-http://www.sohu.com/a/144701672_354973</p>
-
-<h3>2.不符合伦理规范</h3>
-
-<p>但是，这个团队竟然敢用在人身上，而且是对受精卵进行基因编辑，竟然还出生了。这意味着基因编辑产生的遗传影响将有可能遗传给下一代，并进入人类基因池，其可能造成的风险不可估计。要知道，对早期胚胎进行基因编辑在国际上是不被容许的，是违反国际科研伦理的，但是这个研究的伦理审查竟然被中国的一所医院轻易的就通过了，难以想象！</p>
-
-<p>下面是MIT Technology Review和Nature对该事件的报道，其中的专家观点值得参考和深思。<br/>
-<a href="https://www.technologyreview.com/s/612458/exclusive-chinese-scientists-are-creating-crispr-babies/">MIT Technology Review：Chinese scientists are creating CRISPR babies</a></p>
-
-<p><a href="https://www.nature.com/articles/d41586-018-07545-0">Nature：Genome-edited baby claim provokes international outcry</a></p>
-
-<h3>3.会带来一系列社会问题和潜在风险</h3>
-
-<p>这次的基因编辑婴儿事件，不仅不安全，不道德，还反人类。它反应的是对人的漠视，把人当成实验动物，对其草率的更改遗传信息，忽视这个个体将来要面临的健康风险，忽视这个个体将来要面对社会角色问题，比如这个生命是否为人，是否享受生育权。</p>
-
-<p>未来，人类是否可以随意设计自己的子女？设计出来的子女还是你的子女吗？谁有权设计未来的人类？人类社会是否会因为这一技术滥用爆发不可调和的冲突，比如生命权的不对等，生殖权的不对等，进而走向毁灭。从这个意义上讲，它是反人类的。</p>
 ]]></content>
   </entry>
   
