@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: Disciplines | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/disciplines/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2019-07-09T10:27:27+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[4 DISCIPLINES]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/07/09/4-disciplines/"/>
+    <updated>2019-07-09T10:02:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/07/09/4-disciplines</id>
+    <content type="html"><![CDATA[<p>Recently, I just started to read a book called <The road less travelled>. It introduce four disciplines:</p>
+
+<pre><code>Delay satisfaction 延迟满足
+Take responsibilites 承担责任
+Seek truth 献身真理
+Keep balance 保持平衡
+</code></pre>
+
+<p>Life is suffering. Disciplines make life less suffering.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -9,8 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="生命是一种形式的传承。一旦无法传承，就意味着生命的终结。而决定其命运的就是其核心算法。 生物如此，人也是如此。作为种族如此，作为个体也是如此。 1、做正确的事。
-有人把成功的秘诀归结为一句话：做正确的事。找工作也好，找女朋友也好，创业也罢，要想成功就要能够在正确的时间、正确的地点、做正确的事。 &hellip;">
+  <meta name="description" content="首先，做一件具体而简单的事 然后，做一件明确但是有挑战的事 再然后，做一件不明确但是简单的事 再然后，做一件不明确而且复杂的事 最后，做一件明确而简单的事 做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难拿的肉馅蔬菜放在里边。 这样做的好处是，容易形成积极的成功经验，有适当的缓冲， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,58 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2018/01/09/sandwith-style-working/">做事的三明治法则</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2018-01-09T08:55:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2018</time>
+        
+         | <a href="/blog/2018/01/09/sandwith-style-working/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>首先，做一件具体而简单的事</p>
+
+<p>然后，做一件明确但是有挑战的事</p>
+
+<p>再然后，做一件不明确但是简单的事</p>
+
+<p>再然后，做一件不明确而且复杂的事</p>
+
+<p>最后，做一件明确而简单的事</p>
+
+<p>做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难拿的肉馅蔬菜放在里边。</p>
+
+<p>这样做的好处是，容易形成积极的成功经验，有适当的缓冲，不容易望而生畏。</p>
+
+<p>当然，最好的做事原则仍然是：要事第一。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -978,293 +1029,6 @@ python manage.py migrate
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/12/29/swf-send-data-to-java-script/">Swf Send Data to Java Script</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-12-29T19:21:00+08:00" pubdate data-updated="true">Dec 29<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/12/29/swf-send-data-to-java-script/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
-1、首先在html网页中通过object嵌入swf文件</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>
-</span><span class='line'>    &lt;body&gt;
-</span><span class='line'>    &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
-</span><span class='line'>    &lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
-</span><span class='line'>    &lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
-</span><span class='line'>    &lt;/object&gt;
-</span><span class='line'>    &lt;/body&gt;
-</span><span class='line'></span></code></pre></td></tr></table></div></figure>
-
-
-<p>2、在网页的头部嵌入要调用的函数hello</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script&gt;
-</span><span class='line'>    function hello(v){ 
-</span><span class='line'>        alert("hello: "+v);
-</span><span class='line'>        document.location.href = '/search';
-</span><span class='line'>    } 
-</span><span class='line'>    function thisMovie(movieName) { 
-</span><span class='line'>        if (navigator.appName.indexOf("Microsoft") != -1) { 
-</span><span class='line'>            return window[movieName] 
-</span><span class='line'>        } 
-</span><span class='line'>        else { 
-</span><span class='line'>            return document[movieName] 
-</span><span class='line'>        } 
-</span><span class='line'>    }
-</span><span class='line'>&lt;/script&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>package {
-</span><span class='line'>import flash.net.*;
-</span><span class='line'>import flash.events.Event;
-</span><span class='line'>import flash.events.MouseEvent;
-</span><span class='line'>import flash.display.MovieClip;
-</span><span class='line'>import flash.external.ExternalInterface; 
-</span><span class='line'>public class test extends MovieClip {
-</span><span class='line'>    public function test(): void {
-</span><span class='line'>        submit.addEventListener(MouseEvent.CLICK, postForm);
-</span><span class='line'>    }
-</span><span class='line'>    private function postForm(evt: MouseEvent): void {
-</span><span class='line'>        ExternalInterface.call("hello", txt1.text); 
-</span><span class='line'>    }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>4、实现的效果如下：<br/>
-当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。</p>
-
-<p>5、原理解释<br/>
-fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
-
-<p>6、JS调用AS函数的实现方法。<br/>
-上面实现了AS调用JS并传递参数，那么反过来，JS是否可以调用AS函数呢？答案是肯定的。</p>
-
-<p>AS类这样写：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>package {
-</span><span class='line'>    import flash.net.*;
-</span><span class='line'>    import flash.events.Event;
-</span><span class='line'>    import flash.events.MouseEvent;
-</span><span class='line'>    import flash.display.MovieClip;
-</span><span class='line'>    import flash.external.ExternalInterface;
-</span><span class='line'>    
-</span><span class='line'>    public class test extends MovieClip {
-</span><span class='line'>        public function test(): void {
-</span><span class='line'>            submit.addEventListener(MouseEvent.CLICK, postForm);
-</span><span class='line'>            ExternalInterface.addCallback("say", say); //regist 
-</span><span class='line'>        }
-</span><span class='line'>        
-</span><span class='line'>        private function say(txt: String) {
-</span><span class='line'>            txt2.text = txt;
-</span><span class='line'>        }
-</span><span class='line'>        
-</span><span class='line'>        private function postForm(evt: MouseEvent): void {
-</span><span class='line'>            //call js function
-</span><span class='line'>            ExternalInterface.call("hello", txt1.text);
-</span><span class='line'>        }
-</span><span class='line'>    }
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Html这样写：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>
-</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;title&gt;</span>As communicate with JS<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;script&gt;</span>
-</span><span class='line'>            <span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">v</span><span class="p">){</span>
-</span><span class='line'>                <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hello: &quot;</span><span class="o">+</span><span class="nx">v</span><span class="p">);</span>
-</span><span class='line'>                <span class="c1">//document.location.href = &#39;/search&#39;;</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>            <span class="kd">function</span> <span class="nx">thisMovie</span><span class="p">(</span><span class="nx">movieName</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">appName</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;Microsoft&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>                    <span class="k">return</span> <span class="nb">window</span><span class="p">[</span><span class="nx">movieName</span><span class="p">]</span>
-</span><span class='line'>                <span class="p">}</span>
-</span><span class='line'>                <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>                    <span class="k">return</span> <span class="nb">document</span><span class="p">[</span><span class="nx">movieName</span><span class="p">]</span>
-</span><span class='line'>                <span class="p">}</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>            <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn1&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test1&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
-</span><span class='line'>                <span class="p">});</span>
-</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn2&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test2&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Hello world!&lt;/b&gt;&quot;</span><span class="p">);</span>
-</span><span class='line'>                <span class="p">});</span>
-</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn3&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>                    <span class="c1">//$(&quot;#test3&quot;).val(&quot;Dolly Duck&quot;);</span>
-</span><span class='line'>                    <span class="kd">var</span> <span class="nx">txt</span><span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test3&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
-</span><span class='line'>                    <span class="nx">thisMovie</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">).</span><span class="nx">say</span><span class="p">(</span><span class="nx">txt</span><span class="p">);</span>
-</span><span class='line'>                <span class="p">});</span>
-</span><span class='line'>            <span class="p">});</span>
-</span><span class='line'>        <span class="nt">&lt;/script&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">data=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span>  <span class="na">name=</span><span class="s">&quot;test&quot;</span> <span class="na">width=</span><span class="s">&quot;550&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;allowScriptAccess&quot;</span> <span class="na">value=</span><span class="s">&quot;sameDomain&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;movie&quot;</span> <span class="na">value=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span> <span class="nt">/&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span> <span class="na">name=</span><span class="s">&quot;test&quot;</span> <span class="na">quality=</span><span class="s">&quot;high&quot;</span> <span class="na">allowScriptAccess=</span><span class="s">&quot;always&quot;</span> <span class="na">swLiveConnect=</span><span class="s">&quot;true&quot;</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">width=</span><span class="s">&quot;550&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;&lt;/embed&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;/object&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;br&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">&quot;test1&quot;</span><span class="nt">&gt;</span>This is a paragraph.<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">&quot;test2&quot;</span><span class="nt">&gt;</span>This is another paragraph.<span class="nt">&lt;/p&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Input field: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;test3&quot;</span> <span class="na">value=</span><span class="s">&quot;Mickey Mouse&quot;</span><span class="nt">&gt;&lt;/p&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn1&quot;</span><span class="nt">&gt;</span>Set Text<span class="nt">&lt;/button&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn2&quot;</span><span class="nt">&gt;</span>Set HTML<span class="nt">&lt;/button&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn3&quot;</span><span class="nt">&gt;</span>Set Value<span class="nt">&lt;/button&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>7、遗留的问题：这样的写法谷歌浏览器没问题，但是火狐浏览器不成功，也就是不能把参数传到swf上。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/11/">&larr; Older</a>
@@ -1284,6 +1048,10 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/07/09/4-disciplines/">4 DISCIPLINES</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/07/08/enterainment-is-our-instinct/">难道娱乐是一个必需品</a>
@@ -1321,15 +1089,11 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
         <a href="/blog/2019/04/22/one-planet/">看到全景保护地球</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2019/04/06/fact-vs-oppinion/">事实与观点</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (51)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (11)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (51)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (11)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
