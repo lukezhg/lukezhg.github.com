@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境： mkvirtualenv DjangoApp 要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 &hellip;">
+  <meta name="description" content="升级导致的问题。 octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。 找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286117/incompatible-character- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,111 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/12/31/octopress-update/">Octopress Update</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-31T23:46:00+08:00" pubdate data-updated="true">Dec 31<span>st</span>, 2017</time>
+        
+         | <a href="/blog/2017/12/31/octopress-update/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>升级导致的问题。</p>
+
+<p>octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。</p>
+
+<p>找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</p>
+
+<p>但是试过了对我无效。</p>
+
+<p>回顾一下问题出现的原因，首先出现错误代码是：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Liquid Exception: Unknown tag 'static' in</span></code></pre></td></tr></table></div></figure>
+
+
+<p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。</p>
+
+<p>解决的方式是： 利用 raw 和 endraw标记。如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        {% block content %}{% endblock %}
+</span><span class='line'>        {% block footer %}
+</span><span class='line'>        <span class="nt">&lt;hr&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        {% endblock %}
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。</p>
+
+<p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：</p>
+
+<pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT
+</code></pre>
+
+<p>这个错误很严重，直接rake generate吹产生错误的页面。</p>
+
+<p>网上查的各种方法都没用，最后看自己的博客，发现一招删除rake：</p>
+
+<pre><code>sudo gem uninstall rake  
+</code></pre>
+
+<p>之后选择要删除的版本，我直接是删除所有高级版本，原因是我的octopress是5年前的，肯定和高级版本不合拍。于是试了一下，问题解决了！！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1156,120 +1261,6 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/12/15/ajax-and-chatbot/">AJAX and Chatbot</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-12-15T20:14:00+08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/12/15/ajax-and-chatbot/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>AJAX是一个缩写，代表：Asynchronous JavaScript And XML.</p>
-
-<pre><code>AJAX is a developer's dream, because you can:
-# Read data from a web server - after the page has loaded
-# Update a web page without reloading the page
-# Send data to a web server - in the background
-</code></pre>
-
-<p>今天改写了一个代码实现了聊天的过程中不需要重新加载页面。代码如下：</p>
-
-<p>urls.py</p>
-
-<pre><code>url(r'^api/chat/', post), 
-</code></pre>
-
-<p>view.py</p>
-
-<pre><code>def post(request, *args, **kwargs):
-    """
-    Return a response to the statement in the posted data.
-    """
-    bot = ChatBot("Training Example")
-    bot.set_trainer(ListTrainer)
-    input_data = json.loads(request.read().decode('utf-8'))
-    response = bot.get_response(input_data)
-    response_data = response.serialize()
-    return JsonResponse(response_data, status=200)
-</code></pre>
-
-<p>chat.html</p>
-
-<pre><code>&lt;script&gt;
-  var chatterbotUrl = '/api/chat/';
-  var csrftoken = Cookies.get('csrftoken');
-  function csrfSafeMethod(method) {
-    // these HTTP methods do not require CSRF protection
-    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-  }
-
-  $.ajaxSetup({
-    beforeSend: function(xhr, settings) {
-      if (!csrfSafeMethod(settings.type) &amp;&amp; !this.crossDomain) {
-        xhr.setRequestHeader("X-CSRFToken", csrftoken);
-      }
-    }
-  });
-
-  var $input = $('#input');
-  var $sayButton = $('#sayButton');
-  var $answer = $('#answer');
-
-  function submitInput() {
-    var inputData = {
-      'text': $input.val()
-    }
-    var $submit = $.ajax({
-      type: 'POST',
-      url: chatterbotUrl,
-      data: JSON.stringify(inputData),
-      contentType: 'application/json'
-    });
-
-    $submit.done(function(statement) {
-        $answer.val(statement.text);
-        // Clear the input field
-        $input.val('');
-        //alert(statement.text)
-    });
-
-  $sayButton.click(function() {
-    submitInput();
-  });
-</code></pre>
-
-<p>原理是这样的，首先你需要通过urls.py文件指定在请求特定url的时候，触发的函数。这个函数是在view.py中定义的，也就是post函数。post函数需要至少一个参数，也就是request，request必须包含一个text的属性才能被read()出来而不出错。之后，post函数会返回一个JsonResponse，其中机器人的回答可以通过statement.text来获取和使用，见chat.html中的$submit.done函数。</p>
-
-<p>当不知道传递的是何值时，可以通过html 中的alert或者python中的print（）来监听调试。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -1289,6 +1280,10 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/12/15/biology-curriculum-resources/">生物课程资源与案例（精选top100）</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/08/02/what-make-a-business-survival-successful/">成功企业的基因</a>
@@ -1324,10 +1319,6 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
     
       <li class="post">
         <a href="/blog/2019/05/08/face-yourself-is-hard/">直面自己</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2019/04/29/life-questioning/">我把生命给了谁</a>
       </li>
     
   </ul>

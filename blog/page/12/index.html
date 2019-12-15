@@ -9,9 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="最近接触了不少Java script的代码，但是如何让这些代码运行起来呢？ 有两个办法最可行，一个是node，一个是开服务器appche。 对应的可以参考这两个网页：
-node.js&#8211;>https://nodejs.org
-appche&#8211;>http://www. &hellip;">
+  <meta name="description" content="AJAX是一个缩写，代表：Asynchronous JavaScript And XML. AJAX is a developer's dream, because you can:
+# Read data from a web server - after the page has loaded &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +67,120 @@ appche&#8211;>http://www. &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/12/15/ajax-and-chatbot/">AJAX and Chatbot</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-15T20:14:00+08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/12/15/ajax-and-chatbot/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>AJAX是一个缩写，代表：Asynchronous JavaScript And XML.</p>
+
+<pre><code>AJAX is a developer's dream, because you can:
+# Read data from a web server - after the page has loaded
+# Update a web page without reloading the page
+# Send data to a web server - in the background
+</code></pre>
+
+<p>今天改写了一个代码实现了聊天的过程中不需要重新加载页面。代码如下：</p>
+
+<p>urls.py</p>
+
+<pre><code>url(r'^api/chat/', post), 
+</code></pre>
+
+<p>view.py</p>
+
+<pre><code>def post(request, *args, **kwargs):
+    """
+    Return a response to the statement in the posted data.
+    """
+    bot = ChatBot("Training Example")
+    bot.set_trainer(ListTrainer)
+    input_data = json.loads(request.read().decode('utf-8'))
+    response = bot.get_response(input_data)
+    response_data = response.serialize()
+    return JsonResponse(response_data, status=200)
+</code></pre>
+
+<p>chat.html</p>
+
+<pre><code>&lt;script&gt;
+  var chatterbotUrl = '/api/chat/';
+  var csrftoken = Cookies.get('csrftoken');
+  function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+  }
+
+  $.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+      if (!csrfSafeMethod(settings.type) &amp;&amp; !this.crossDomain) {
+        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+      }
+    }
+  });
+
+  var $input = $('#input');
+  var $sayButton = $('#sayButton');
+  var $answer = $('#answer');
+
+  function submitInput() {
+    var inputData = {
+      'text': $input.val()
+    }
+    var $submit = $.ajax({
+      type: 'POST',
+      url: chatterbotUrl,
+      data: JSON.stringify(inputData),
+      contentType: 'application/json'
+    });
+
+    $submit.done(function(statement) {
+        $answer.val(statement.text);
+        // Clear the input field
+        $input.val('');
+        //alert(statement.text)
+    });
+
+  $sayButton.click(function() {
+    submitInput();
+  });
+</code></pre>
+
+<p>原理是这样的，首先你需要通过urls.py文件指定在请求特定url的时候，触发的函数。这个函数是在view.py中定义的，也就是post函数。post函数需要至少一个参数，也就是request，request必须包含一个text的属性才能被read()出来而不出错。之后，post函数会返回一个JsonResponse，其中机器人的回答可以通过statement.text来获取和使用，见chat.html中的$submit.done函数。</p>
+
+<p>当不知道传递的是何值时，可以通过html 中的alert或者python中的print（）来监听调试。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -348,120 +461,6 @@ From the Command Palette: Mermaid: View In Browser</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/11/04/stem-and-love/">STEM &amp; Love</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-11-04T12:02:00+08:00" pubdate data-updated="true">Nov 4<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/11/04/stem-and-love/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>旁白：有人向往远方，有人向往床上</p>
-
-<p>（大我来到小爱的床前，小爱还在睡觉。）</p>
-
-<p>我：有那么多觉要睡吗？睡那么多，死了之后不怕失眠吗？</p>
-
-<p>爱：谁在唠唠叨叨的呢？把我的美梦都惊扰了！</p>
-
-<p>我：还睡啊！该去上裴老师的STEM课了！</p>
-
-<p>爱：啊今天有课？什么课？什么课？</p>
-
-<p>我：STEM课</p>
-
-<p>爱：弹（tan）幕课有什么好上的？网上不到处都是！</p>
-
-<p>我：姐姐，不是弹（tan）幕，是弹（dan）幕，去去去。 不是弹（tan）幕，也不是弹（dan）幕。是stem，S.T.E.M</p>
-
-<p>爱：嗨，S.T.E.M，我以为是什么呢？那我更要去睡觉了？</p>
-
-<p>我：啊！为什么？</p>
-
-<p>爱：睡觉很重要啊，不是S。T。E。M。吗，第一字母是不是就是S？</p>
-
-<p>我：对呀</p>
-
-<p>爱：S吗，S代表的是SLEEP，当然要睡好了。</p>
-
-<p>我：等下，等下，STEM的S好像是Science，科学吧。</p>
-
-<p>爱：什么SCIENCE，科学能有睡觉重要吗？</p>
-
-<p>我：俄，那T又代表什么？</p>
-
-<p>爱：T都不知道，T代表的是Think啊，思考啊，还真拿我当猪了？只知道睡啊，偶尔思考思考人生，思考思考未来，思考思考如何提高睡眠质量。</p>
-
-<p>我：果然还是只知道睡，哪，哪我问你，E代表什么？</p>
-
-<p>爱：E啊，E就是吃啊，Eat懂不。</p>
-
-<p>我：还真是狗改不了吃屎，除了睡就是吃，三句话不离本行。</p>
-
-<p>爱：怎么说话呢，怎么说化呢，吃可是我们中国的文化精华啊，你不不知道我们中华民族几乎三分之一的时间和智慧都用在吃上了。</p>
-
-<p>我：真的吗？精华也不能乱涂啊，E不是engineering吗！</p>
-
-<p>爱：Engineering是什么鬼？</p>
-
-<p>我：Engineering是工程的意思，浅薄了吧？</p>
-
-<p>爱：不浅薄，工程是吧，工程不就是干活，一边是干活，一边是吃，你选哪一个，傻子都会选。</p>
-
-<p>我：俄……</p>
-
-<p>爱：当然是吃了，笨蛋。</p>
-
-<p>我：天啊，哪，哪，哪M呢？我问你</p>
-
-<p>爱：俄，这个，这个，M就是make啊，你真拿我当猪啊，只知道吃是吧。我还会创作。我可是当今最火的创客，什么黑客、慕课、微课、蜗居客，都统统给我靠边站，我是创客。I am a Maker。I am a Maker。</p>
-
-<p>我：什么Maker，我看你是谣言的Maker。别信她的，同学们，STEM是科学、技术、工程、数学的缩写，不是什么Sleep、Think、Eat、Make的缩写，而且现在STEM已经慢慢变为STEAM了，这个新增加的A就是ART。art，艺术懂不？</p>
-
-<p>爱：什么Art呀，不，不是ART。确实STEM正在变为STEAM，不过这个A不是什么art。</p>
-
-<p>我：那是什么？</p>
-
-<p>爱：是AI懂不，现在最火的，讨论的最热的，各行各业都心惊胆战的</p>
-
-<p>我：什么呀？</p>
-
-<p>爱：AI AI，就是爱呀。瞧你的英文这么溜儿，拼音都没学好。你以为我只知道到吃了睡，睡了吃啊！除了思考、创造，没有别的爱好？告诉你，我的爱好就是爱啊！如果生活没有爱，还有什么可期待？对不起，我要去爱了，拜拜，这才是生活！</p>
-
-<p>我：AI不是artificial intelligence吗？爱，等我一下，爱，你没穿鞋！</p>
-
-<p>科学大本营——第一季</p>
-
-<p>STEM&amp;爱：主演：大我，小爱。 编剧：chunlei</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/13/">&larr; Older</a>
@@ -481,6 +480,10 @@ From the Command Palette: Mermaid: View In Browser</p>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/12/15/biology-curriculum-resources/">生物课程资源与案例（精选top100）</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/08/02/what-make-a-business-survival-successful/">成功企业的基因</a>
@@ -516,10 +519,6 @@ From the Command Palette: Mermaid: View In Browser</p>
     
       <li class="post">
         <a href="/blog/2019/05/08/face-yourself-is-hard/">直面自己</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2019/04/29/life-questioning/">我把生命给了谁</a>
       </li>
     
   </ul>
