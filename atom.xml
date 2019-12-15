@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-12-15T11:31:39+08:00</updated>
+  <updated>2019-12-15T11:36:39+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -138,17 +138,17 @@
 <p>【1】作业帮<br/>
 【2】博学宝<br/>
 【3】quizz在线测试工具：<a href="https://quizizz.com/">https://quizizz.com/</a><br/>
-【4】Evernote(笔记同步工具)
+【4】Evernote(笔记同步工具)<br/>
 【5】Diigo(书签管理和网页注释工具):<a href="https://diigo.com">https://diigo.com</a><br/>
 【6】<a href="https://www.wjx.cn/">问卷星</a><br/>
 【7】<a href="https://quizizz.com/">Quizizz</a><br/>
-基于网页的在线即时反馈测验工具
+基于网页的在线即时反馈测验工具<br/>
 【8】<a href="https://kahoot.it/">Kahoot</a><br/>
-基于网页的即时手机交互式测评工具，教师出好题目，学生用手机加入，之后就可以游戏答题。
+基于网页的即时手机交互式测评工具，教师出好题目，学生用手机加入，之后就可以游戏答题。<br/>
 【9】形色(植物识别手机app) <br/>
-【10】Quora知识问答:<a href="https://www.quora.com/">https://www.quora.com/</a>
+【10】Quora知识问答:<a href="https://www.quora.com/">https://www.quora.com/</a><br/>
 【11】<a href="https://www.processon.com/">processon</a><br/>
-基于网页的概念图或流程制作工具
+基于网页的概念图或流程制作工具<br/>
 【12】<a href="https://padlet.com/">Padlet</a><br/>
 基于网页便签的交流协作工具</p>
 
@@ -252,7 +252,9 @@
 
 <p></p>
 
-<p>资源卡片见：https://zh-cn.padlet.com/lukezhg/top100</p>
+<p>参考：<br/>
+资源卡片见：https://zh-cn.padlet.com/lukezhg/top100<br/>
+markdown 目录技术参考：https://blog.csdn.net/zhezhebie/article/details/80764496</p>
 ]]></content>
   </entry>
   
