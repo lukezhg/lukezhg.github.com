@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-12-15T11:36:39+08:00</updated>
+  <updated>2019-12-15T11:53:26+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,7 +18,7 @@
     <link href="http://zhangchunlei.com/blog/2019/12/15/biology-curriculum-resources/"/>
     <updated>2019-12-15T08:57:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2019/12/15/biology-curriculum-resources</id>
-    <content type="html"><![CDATA[<p>课程资源，适合你的才最有用的！
+    <content type="html"><![CDATA[<p>课程资源，适合你的才是最有用的！
 <span id="top"></p>
 
 <!-- MarkdownTOC -->
@@ -63,9 +63,12 @@
 
 <p>发展学生的核心素养需要相应的课程资源支持。趁着春节之际，我把手头上的课程资源整理一下与大家共同分享！每张资源卡片大家都可以评分或反馈，同时也欢迎大家点击+号添新资源，进而精选出最好用的TOP100生物学课程资源！！</p>
 
-<p>资源卡片模版
-资源名称：网址或资源获取方法
-资源介绍（如资源的类型，制作者，资源内容和功用等）</p>
+<p>资源卡片模版（欢迎大家补充推荐），示例如下：</p>
+
+<pre><code>资源名称：美国NIH课程资源
+网址：https://science.education.nih.gov/
+资源介绍：提供很多初中、高中科学选修的课程例如《细胞生物学与癌症》
+</code></pre>
 
 <p><a id="%E7%BD%91%E7%BB%9C%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%BA%90"></a></p>
 
