@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-12-15T10:21:24+08:00</updated>
+  <updated>2019-12-15T10:44:31+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -19,18 +19,53 @@
     <updated>2019-12-15T08:57:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2019/12/15/biology-curriculum-resources</id>
     <content type="html"><![CDATA[<p>课程资源，适合你的才最有用的！
-<span id=”top”></p>
+<span id="top"></p>
 
-<p>[TOC]</p>
+<!-- MarkdownTOC -->
+
+
+<ul>
+<li>导语</li>
+<li>网络课程资源
+
+<ul>
+<li>网站</li>
+<li>多媒体课程资源</li>
+<li>程序应用（APP）</li>
+<li>微信公众号</li>
+<li>图书</li>
+</ul>
+</li>
+<li>常见课程资源
+
+<ul>
+<li>中文杂志</li>
+<li>外文杂志</li>
+<li>模型教具</li>
+</ul>
+</li>
+<li>组织、机构、年会
+
+<ul>
+<li>组织机构</li>
+<li>教育研究年会</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- /MarkdownTOC -->
+
 
 <h2>导语</h2>
 
 <p>发展学生的核心素养需要相应的课程资源支持。趁着春节之际，我把手头上的课程资源整理一下与大家共同分享！每张资源卡片大家都可以评分或反馈，同时也欢迎大家点击+号添新资源，进而精选出最好用的TOP100生物学课程资源！！</p>
 
-<h2>资源卡片模版</h2>
-
-<p>资源名称：网址或资源获取方法
+<p>资源卡片模版
+资源名称：网址或资源获取方法
 资源介绍（如资源的类型，制作者，资源内容和功用等）</p>
+
+<h2>网络课程资源</h2>
 
 <h3>网站</h3>
 
@@ -136,7 +171,7 @@ Bioart
 
 <p><a href="#top">返回目录</a></p>
 
-<h2>杂志和教材</h2>
+<h2>常见课程资源</h2>
 
 <h3>中文杂志</h3>
 
@@ -168,6 +203,8 @@ DNA双螺旋模型
 染色体剪纸模型
 </code></pre>
 
+<h2>组织、机构、年会</h2>
+
 <h3>组织机构</h3>
 
 <ul>
@@ -178,7 +215,7 @@ DNA双螺旋模型
 </ul>
 
 
-<h3>年会</h3>
+<h3>教育研究年会</h3>
 
 <ul>
 <li>全国高等师范院校生物学课程与教学论年会</li>
@@ -189,6 +226,11 @@ DNA双螺旋模型
 
 
 <p><a href="#top">返回目录</a></p>
+
+<!--/MarkdownTOC levels="2,3" autolink="true" style="ordered"-->
+
+
+<p></p>
 
 <p>资源卡片见：https://zh-cn.padlet.com/lukezhg/top100</p>
 ]]></content>
