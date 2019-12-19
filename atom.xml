@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-12-15T13:37:41+08:00</updated>
+  <updated>2019-12-19T20:34:07+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -153,7 +153,9 @@
 【11】<a href="https://www.processon.com/">processon</a><br/>
 基于网页的概念图或流程制作工具<br/>
 【12】<a href="https://padlet.com/">Padlet</a><br/>
-基于网页便签的交流协作工具</p>
+基于网页便签的交流协作工具 <br/>
+【13】讯飞有声<br/>
+帮你阅读电子书，从看书变为听书，支持txt和pdf电子书。</p>
 
 <p><a href="#top">返回目录</a></p>
 
@@ -320,7 +322,7 @@ markdown 目录技术参考：https://blog.csdn.net/zhezhebie/article/details/80
     <link href="http://zhangchunlei.com/blog/2019/07/09/4-disciplines/"/>
     <updated>2019-07-09T10:02:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2019/07/09/4-disciplines</id>
-    <content type="html"><![CDATA[<p>Recently, I just started to read a book called <The road less travelled>. It introduce four disciplines:</p>
+    <content type="html"><![CDATA[<p>Recently, I just started to read a book called &#8220;The road less travelled&#8221;. It introduce four disciplines:</p>
 
 <pre><code>Delay satisfaction 延迟满足
 Take responsibilites 承担责任
