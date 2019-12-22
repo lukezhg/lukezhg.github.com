@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="这个五一花了很多时间在ubuntu上，解决3d桌面的安装问题，花费了1天多的时间，显然这样的时间花费还是太奢侈了。如何能节约一点时间呢？相信你遇到的问题，别人一般也遇到过，所以可以把问题表述好，然后google。充分利用集体智慧，找到相应的论坛或者邮件列表，发贴求助。适时放弃或者搁置， &hellip;">
+  <meta name="description" content="今天杨同学跟我私下交流了一下自己的看法，ta说多次试讲同一个内容，大家都疲惫了，交流的内容也总是重复。微格课程中确实存在一个较为严重的问题，那就是大家都是新手，生活经历以及知识范畴相同度很高，对于教学的认识层次也相差不大，这样需要就造成对于同一个问题相同的声音太多， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/10/how-to-let-peer-discussion-in-micro-teaching-be-productive/">如何让微格试讲的同伴交流研讨走向深入</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-10T00:00:00+08:00" pubdate data-updated="true">May 10<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/10/how-to-let-peer-discussion-in-micro-teaching-be-productive/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天杨同学跟我私下交流了一下自己的看法，ta说多次试讲同一个内容，大家都疲惫了，交流的内容也总是重复。微格课程中确实存在一个较为严重的问题，那就是大家都是新手，生活经历以及知识范畴相同度很高，对于教学的认识层次也相差不大，这样需要就造成对于同一个问题相同的声音太多，而不同的观点或者不同角度的看法就较少，一句话，同感有余，而异质交流不足。我觉得这个问题从以下几个方面来解决：<br /><ol><li>鼓励微格学员打开自己的思想束缚，认真倾听别人的意见和见解，发现不同之处。很多时候，并不是表面上看到的那样，大家观点都一致，而是你没有发现其中的不同，或者有些不同的声音被忽略掉了，被过滤掉了，甚至没有来得及发出。认真的倾听，去发现别人的可取之处尤为重要。<br /></li><li>引入异质成员，比如请一些一线教师参与交流给他们指点，我觉得可以把他们实习的指导老师邀请进来，或者让他们走出小社区，走进大社区，比如好看簿上的相关社区，以及生物教学茶吧等社区。这样，就会有不同的声音进来，相互启发之处会增多。</li><li>除了对某个内容反复试讲之外，还应该带着研究的性质对这部分的内容的教学进行研究。研究的过程包括查阅相关教学设计的文献，查找相关专家教师的视频案例并一起观看、分析、模仿、借鉴，甚至可以尝试把自己的教学设计化为真实的教学过程，比如与一线教师合作，或者直接走进中学课堂。人说读万卷书，行万里路，说的就是知识来自阅读，实践出真知。<br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=53262a09-a315-8258-bdfa-22f058e48fe7" /></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -224,44 +262,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/">终于能在ubuntu10.04与xp之间自由切换了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-05T00:00:00+08:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/04/05/jump-freely-between-ubuntu10-04-and-windowsXP/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>前些天，在一番穷折腾之后（Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始 « chunlei&#8217;s blog: http://sociallearnlab.org/chunlei/2011/03/27/archives/180），终于把启动的问题解决了。<br /><br />问题表现：能够更改bios的启动顺序来选择要启动的系统，但是不能自己在grub4dos下启动ubuntu10.04。<br />解决过程：先下载最新版本的grub4dos,解压缩后，把其中的grldr和menu.lst两个文件拷贝到c盘根目录下。<br />替换menu.lst的内容如下：<br /><blockquote>timeout 10<br />default /default<br />title Ubuntu 10.04<br />find /boot/grub/core.img<br />root (hd1,1)<br />kernel /boot/grub/core.img<br />boot<br /></blockquote>修改C盘根目录的boot.ini，在最后加上一行 c:\grldr=&#8221;grub4dos&#8221;。方法，我的电脑-右键属性-高级-启动与故障修复-设置-编辑-保存即可。<br /><br />但是尝试了几次，都提示错误，找不到文件。后来我在ubuntu上没有安装grub，并且用手工的方式确定了ubuntu所在位置为 （hd1,1）修改了menu.lst后问题解决！吼！<br /><br /><br />关于grub4dos的使用参考和修改boot.ini请参考：在移动硬盘中安装ubuntu的一点小问题解决_游走江湖_百度空间: http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html<br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a0016852-a3bc-8474-8036-61a54f84cf0e" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/76/">&larr; Older</a>
@@ -281,6 +281,10 @@
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/12/22/play-tennis/">网球训练中的游戏</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/12/15/biology-curriculum-resources/">生物学课程资源与案例（精选top100）</a>
@@ -318,15 +322,11 @@
         <a href="/blog/2019/05/26/survivorship-bias/">Survivorship-bias</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2019/05/08/face-yourself-is-hard/">直面自己</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (51)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (51)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (6)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
