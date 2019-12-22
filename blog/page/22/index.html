@@ -9,8 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="注意力
-成人的注意力一般能维持17分钟，所以讲授一般不要超过15分钟，甚至更短。如果是40分钟的课堂，建议在15分钟至30分钟时段开展互动性或参与性强的教学活动，最后10分钟则可以用于归纳、讨论和总结。一般最开始和最末尾的学习内容最容易记得，因此教师可以把最重要的事情放在这两个时段。 等待时间（ &hellip;">
+  <meta name="description" content="鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。 首先通过控制面板开启键盘鼠标，这样就可以通过数字键键盘上的5代替鼠标左键单击了。但是这个数字离左手很远，按起来不方便。 解决的办法就是，用一个“键值更换器”小软件来更换键值 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/">用ALT代替左键单击</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-12-20T10:50:00+08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2015</time>
+        
+         | <a href="/blog/2015/12/20/use-alt-to-replace-mouse-event-left-down/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>鼠标设计的不人性化，使用久了就成了鼠标手。但是有总是摆脱不了对鼠标的依赖，所以想出了一个没有办法的办法。用键盘代替鼠标单击。</p>
+
+<p>首先通过控制面板开启键盘鼠标，这样就可以通过数字键键盘上的5代替鼠标左键单击了。但是这个数字离左手很远，按起来不方便。</p>
+
+<p>解决的办法就是，用一个“键值更换器”小软件来更换键值，用right ALT替代数字键盘上的5.这样就万事大吉了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -443,122 +484,6 @@ $ git pull origin master
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/11/26/ubuntu-reinstall/">重装Ubuntu备忘</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-11-26T10:54:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2015</time>
-        
-         | <a href="/blog/2015/11/26/ubuntu-reinstall/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>安装软件：<br/>
-输入法 ：搜狗输入法<br/>
-视频播放：VLC media player<br/>
-文本编辑：Vim<br/>
-图片查看：gwenview<br/>
-浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)</p>
-
-<p>firefox安装flash插件<br/>
-<code>
-sudo apt-get update<br/>
-sudo apt-get install flashplugin-installer<br/>
-</code></p>
-
-<p>开机亮度设置<br/>
-一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
-
-<p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
-
-<p>网络不稳定<br/>
-修改/etc/ppp/options</p>
-
-<pre><code>sudo gedit options  
-</code></pre>
-
-<p>应会发以下选项：</p>
-
-<pre><code>lcp-echo-interval 30  
-lcp-echo-failure 4  
-</code></pre>
-
-<p>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：</p>
-
-<pre><code>lcp-echo-interval 30  
-lcp-echo-failure 15  
-</code></pre>
-
-<p>关闭ipv6</p>
-
-<pre><code>cat /proc/sys/net/ipv6/conf/all/disable_ipv6
-显示0说明ipv6开启，1说明关闭
-</code></pre>
-
-<p>如果开启，关闭ipv6的方法：<br/>
-在 /etc/sysctl.conf 增加下面几行，并重启。</p>
-
-<h1>disable IPv6</h1>
-
-<pre><code>net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1
-</code></pre>
-
-<p>安装scikit-learn<br/>
-<code>
-python 运行文件名<br/>
-python -V<br/>
-sudo apt-get install python3-pip<br/>
-sudo apt-get install python-scipy<br/>
-sudo apt-get install python-numpy<br/>
-sudo apt-get install python-matplotlib<br/>
-sudo apt-get install nautilus-open-terminal<br/>
-</code></p>
-
-<p>pip install -U scikit-learn<br/>
-参考：
-Installing scikit-learn — scikit-learn 0.17 documentation<br/>
-http://scikit-learn.org/stable/install.html</p>
-
-<p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br/>
-http://penandpants.com/2012/02/24/install-python/</p>
-
-<p>安装 ipython notebook<br/>
-   pip install ipython
-   apt-get install ipython-notebook<br/>
-   ipython notebook &#8211;pylab inline &#8211;ip 0.0.0.0<br/>
-   然后用了浏览器访问对应的ip即可看到</p>
-
-<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br/>
-http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/23/">&larr; Older</a>
@@ -578,6 +503,10 @@ http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-loca
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2019/12/22/the-people-ahead/">走在前面的人</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/12/22/play-tennis/">网球训练中的游戏</a>
@@ -613,10 +542,6 @@ http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-loca
     
       <li class="post">
         <a href="/blog/2019/06/05/see-the-whole-and-protect-our-earth/">看到全景，保护地球 </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2019/05/26/survivorship-bias/">Survivorship-bias</a>
       </li>
     
   </ul>

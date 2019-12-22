@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2019-12-22T08:49:36+08:00</updated>
+  <updated>2019-12-22T23:50:55+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[走在前面的人]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/12/22/the-people-ahead/"/>
+    <updated>2019-12-22T19:33:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/12/22/the-people-ahead</id>
+    <content type="html"><![CDATA[<p>万维刚的博客：同人于野——学而时嘻之：<a href="https://www.geekonomics10000.com/">https://www.geekonomics10000.com/</a></p>
+
+<p>吴晓波的专栏：<a href="http://wuxiaobo.blogchina.com/">http://wuxiaobo.blogchina.com/</a></p>
+
+<p>英文图书库：<a href="http://www.gutenberg.org/">http://www.gutenberg.org/</a></p>
+
+<p>Ebook <a href="https://archive.org/">https://archive.org/</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[网球训练中的游戏]]></title>
@@ -1172,39 +1187,6 @@ I am very upset. I spend lot of time on set down to work.</p>
 <p>我访谈过10多位专家教师，他们有一个共同的特点，就是对自己的学科和教学充满热情，那是一种发自心底的喜欢，所以他们可以不厌倦、孜孜以求，他们总是保持一颗好学之心。但是，反观我们很多一线教师，工作三五年就已经产生了职业怠倦，两者形成了鲜明的对比。为什么有些老师能够在看似枯燥的、重复的教学工作中不断创新、学习和进取，而有些老师则很容易走进僵化的套路和定势？从社会认知的角度，一个重要的原因是教师的自我封闭、自我设限。古典写过一本书叫做《拆掉思维里的墙》，讲的就是如何从思维定势中走出来，活出一个不一样的生活。</p>
 
 <p>实际上，我们无时无刻不在自我设限。我的英语不好，所以我就不说英语了。别人没有提出异议，我为什么要提取异议。我尝试了几次投稿，结果都被拒绝了，看了我真的不是写作的料。很多的自我设限都是用过去的眼光约束限制的自己，给自己贴一个标签，然后就放弃继续尝试和努力了。这就是思维里的墙，是对自己身份、能力的自我设障，把你自己围起来了。对于这种困境，如果你不自己走出来，别人很难帮到你。而要想自己走出来，首先就是要打开自己的眼睛和思想，阅读是非常好方式，也许你看的下一本书就会改变你的命运。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何制作中文标签云]]></title>
-    <link href="http://zhangchunlei.com/blog/2019/03/20/how-to-create-tag-cloud-in-chinese/"/>
-    <updated>2019-03-20T10:46:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2019/03/20/how-to-create-tag-cloud-in-chinese</id>
-    <content type="html"><![CDATA[<h3>第一步：分词</h3>
-
-<p>与英文不同，为了制作标签云，中文必须分词，也就是从语料中提取词语，并统计词频。<br/>
-可以使用的工具：<br/>
-中文词频统计工具：<a href="http://translation.education/topwords/">http://translation.education/topwords/</a></p>
-
-<p>语料库在线：<a href="http://corpus.zhonghuayuwen.org/CpsTongji.aspx">http://corpus.zhonghuayuwen.org/CpsTongji.aspx</a></p>
-
-<p>通过这两个工具，就可以把一段文字的词频统计出来，接下来就是要图形化，形成一个合适的标签云了，这个时候我们要借助标签云可视化工具。</p>
-
-<h3>第二部：可视化</h3>
-
-<p>可视化，就是根据词频来设置词语的字体大小，从而在二维平面上形象的展示出预料中的词语的出现情况。<br/>
-可以使用的工具：<br/>
-wordart：<a href="https://wordart.com/create">https://wordart.com/create</a>
-这是一个英文词频可视化工具，可以制作很多高质量的标签云。它对英文支持的比较好，但是其实也可以支持中文，前提是上传和使用你自己的中文字体。<br/>
-比如微软雅黑字体下载：http://www.font5.com.cn/zitixiazai/1/36.html</p>
-
-<p>操作步骤：<br/>
-首先，把中文词频工具获得的词频信息复制到剪切板。然后在wordart这个地方点击Create，点击words，Import，粘贴你的词频表格，记住要勾选CSV format。</p>
-
-<p>然后，在FONTS这个地方上传你的字体，选择你自己的字体，点击Visualize就可以实现中文词频的可视化了。</p>
-
-<p>比如我生成的标签云：<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/New-teacher-challenges.png" alt="New teacher challenges" /></p>
 ]]></content>
   </entry>
   
