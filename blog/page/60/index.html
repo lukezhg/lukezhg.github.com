@@ -9,7 +9,8 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Sometimes you want to run away confronting a challenge. Usually, you have your own reasons. It is too hard. It is too boring. I am not good at this. &hellip;">
+  <meta name="description" content="One of the most deep impressions I got of US is the pursuing of simple and comfortable life. First is the bus design.
+There is a button out side of &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/16/design-for-convinence-for-people/">Design for Convinence for People</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-16T13:10:00+08:00" pubdate data-updated="true">Aug 16<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/16/design-for-convinence-for-people/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of the most deep impressions I got of US is the pursuing of simple and comfortable life.</p>
+
+<p>First is the bus design.<br/>
+There is a button out side of the bus that customers can push to kneel the bus. Another design is that there is a string along the windows. You can pull the string to let bus stop. You don&#8217;t even need to stand up.</p>
+
+<p>Another interesting thing I discovered the yellow alert along the road. First I though it is to let people wark accross the street. But when I look into it carefully, It said &#8220;State law: stop when human on the line&#8221;, it is for the car. No wonder evertime when I was on the line, the drive will stop let me pass first. What a nice law!  <br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/statelaw.jpg" alt="Statelaw" /><br/>
+One day, when I was on my way home from supermarket, I found there is an American Bank ATM special for car drivers near the shops. I have never saw such ATM before in China. You don&#8217;t have to get out of your car when you using the ATM In China, when you go to banks, usually you have wait for half an hour to get your turns in Shanghai. Why it is so different! This is a really good question to think about.</p>
+
+<p>The last discovery is kitchen. They have kitchen not only in the apartment where I live but also in the office. There is a special kitchen room for professors and students to heat their lunch or make coffee. So nice!<br/>
+Oh, I nearly forget. The water ﻿purifier﻿. It is so cool and useful, I love it too much.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/water.jpg" alt="water purifier" /></p>
+
+<p>It is evident that the goal of American people is to pursue a simple and comfortable life. Maybe not very luxurious but comfortable.</p>
+
+<p>How did they achieve that, market and competition may be the driving power. What it doesn&#8217;t happen in China? Big question!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -253,265 +307,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/30/python-brief/">Python简明手册</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-30T14:25:00+08:00" pubdate data-updated="true">Jul 30<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/07/30/python-brief/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>使用Python已经有几年了，也写过很多文本分析的程序，包括输入输出，写文案，抓网页等。最大的体会是Python的简洁性，你可以用最好的代码做最多的事儿，前提是你知道怎么做。Python可以让你实现人工智能、大数据分析、网页开发，几乎无所不能。所以，如果你想进入码农行业，你要认真的考虑一下是否要学习Python。</p>
-
-<p>本文列举了个人常用的命令，并不系统。后面期望不断改善。</p>
-
-<p>Python重要用法示例</p>
-
-<pre><code>dir(list)#显示关键字相关的函数
-help(list.reverse)#查询某个函数的功能
-</code></pre>
-
-<p>set 让一个list变成无重复元素的set
-例如：</p>
-
-<pre><code>shapes = ['circle','square','triangle','circle']
-setOfShapes = set(shapes)
-setOfShapes 
-set(['circle','square','triangle']) 
- setOfShapes.add('polygon') 
-'rhombus' in setOfShapes 
-False 
-setOfShapes - setOfFavoriteShapes 
-setOfShapes &amp; setOfFavoriteShapes 
-setOfShapes | setOfFavoriteShapes 
-</code></pre>
-
-<p>map和lambda</p>
-
-<pre><code>map(lambda x: x * x, [1,2,3])
-[1, 4, 9]
-filter(lambda x: x &gt; 3, [1,2,3,4,5,4,3,2,1])
-[4, 5, 4]
-</code></pre>
-
-<p>Object 先定义一个类，然后给类生成实例
-定义如：</p>
-
-<pre><code>class FruitShop:
-def __init__(self, name, fruitPrices):
-    """
-        name: Name of the fruit shop
-
-        fruitPrices: Dictionary with keys as fruit 
-        strings and prices for values e.g. 
-        {'apples':2.00, 'oranges': 1.50, 'pears': 1.75} 
-    """
-    self.fruitPrices = fruitPrices
-    self.name = name
-    print 'Welcome to the %s fruit shop' % (name)
-
-def getCostPerPound(self, fruit):
-    """
-        fruit: Fruit string
-    Returns cost of 'fruit', assuming 'fruit'
-    is in our inventory or None otherwise
-    """
-    if fruit not in self.fruitPrices:
-        print "Sorry we don't have %s" % (fruit)
-        return None
-    return self.fruitPrices[fruit]
-
-def getPriceOfOrder(self, orderList):
-    """
-        orderList: List of (fruit, numPounds) tuples
-
-    Returns cost of orderList. If any of the fruit are  
-    """ 
-    totalCost = 0.0             
-    for fruit, numPounds in orderList:
-        costPerPound = self.getCostPerPound(fruit)
-        if costPerPound != None:
-            totalCost += numPounds * costPerPound
-    return totalCost
-def getName(self):
-    return self.name
-</code></pre>
-
-<p>调用winsound 函数</p>
-
-<pre><code>
-import winsound
-# press a make a beep
-if event.KeyID==65: winsound.Beep(200,9)
-# press ESC play exit sound
-if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
-</code></pre>
-
-
-<p>使用pyHook监听鼠标和键盘事件</p>
-
-<pre><code>
-import pythoncom
-import pyHook
-
-def onKeyboardEvent(event):
-    global switch
-    # 监听键盘事件
-    if switch:
-        print "Key:", event.Key
-        print "KeyID:", event.KeyID
-    return True #监听函数的返回值
-
-def main():
-    # 定义一个实例
-    hm = pyHook.HookManager()
-    # 监听所有键盘事件
-    hm.KeyDown = onKeyboardEvent
-    # 设置键盘监听器
-    hm.HookKeyboard()
-    # 循环并保持一直处于监听状态
-    pythoncom.PumpMessages()
-</code></pre>
-
-
-<p>用pyenv的基本操作命令管理python版本</p>
-
-<pre><code>pyenv versions# 查看当前已安装的 python 版本
-pyenv install ... #安装指定版本的 python
-pyenv global python版本 #切换全局 python 版本
-source ~/.bash_profile
-pyenv local python版本 #切换当前文件夹下的 python 版本
-pyenv shell python版本 #切换当前 shell 中的 python 版本
-pyenv version #查看当前使用的 python 版本
-</code></pre>
-
-<p>python 数据库开发</p>
-
-<p>取消所有8000进程：</p>
-
-<pre><code>sudo lsof -t -i tcp:8000 | xargkill -9
-</code></pre>
-
-<p>创建项目</p>
-
-<pre><code>django-admin startproject demoproject
-</code></pre>
-
-<p>创建应用</p>
-
-<pre><code>cd demoproject
-python manage.py startapp TestModel
-</code></pre>
-
-<p>打开 mysql服务器</p>
-
-<pre><code>mysql -u root -p
-</code></pre>
-
-<p>参考：<a href="http://djangobook.py3k.cn/chapter05/">手册</a></p>
-
-<p>现在我们可以创建数据库表了。首先，用下面的命令对校验模型的有效性：</p>
-
-<pre><code>python manage.py validate
-</code></pre>
-
-<p>模型确认没问题了，运行下面的命令来生成 CREATE TABLE 语句：</p>
-
-<pre><code>python manage.py sqlall books
-python manage.py syncdb
-</code></pre>
-
-<p>打开服务器</p>
-
-<pre><code>python manage.py runserver
-python manage.py migrate
-python manage.py makemigrations
-</code></pre>
-
-<p>查看sql服务是否启动</p>
-
-<pre><code>ps -ef | grep mysqld#查看MySQL服务器是否启动
-service mysqld status#查看服务运行的状态
-</code></pre>
-
-<p>Mysql
-mysql -u db_user -p
-SHOW DATABASES;
-CREATE DATABASE blog_data;
-drop database mydb;
-SHOW DATABASES;
-Whenever you&#8217;d like to exit MySQL server, press CTRL + D.</p>
-
-<p>show variables like &#8216;%char%’;
-set character_set_server=utf8;
-set character_set_database=utf8;</p>
-
-<p>show variables like &#8216;%char%’;</p>
-
-<p>ALTER DATABASE classlinkr DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci</p>
-
-<p>use my_db;
-show tables;</p>
-
-<p>show full columns from clips_clip;</p>
-
-<p>ALTER TABLE classlinkr.clips_clip MODIFY COLUMN concept VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</p>
-
-<p>闲来无事，随便看看Python 3.0的文档，发现了一个很pythonic的模块：声音播放 for windows；凑个流行语叫做“很傻很天真”，不过挺好使得。</p>
-
-<p>1 winsound.Beep</p>
-
-<p>每一个都有不同的用法，一个一个来看吧。</p>
-
-<pre><code>winsound.Beep(frequency, duration)
-</code></pre>
-
-<p>PC扬声器滴的一声，就是它了。第一个参数frequency表示分贝数，大小在37到32767之间。第二个参数是持续时间，以毫秒为单位(有耐心的话可以试试winsound.Beep(32767,9999999)，嘿嘿)。</p>
-
-<p>2 winsound.PlaySound</p>
-
-<pre><code>1. import winsound
-2. # Play Windows exit sound.
-3. winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
-4. # Probably play Windows default sound, if any is registered (because
-5. # "*" probably isn't the registered name of any sound).
-6. winsound.PlaySound("*", winsound.SND_ALIAS)
-不过只能播放wav,不能播放wma和mp3文件，这2种还需要其他包的支持。
-</code></pre>
-
-<p>网站维护：<br/>
-使用Django框架<br/>
-前端口用h5和JS开发<br/>
-替换该文件之后，需要跑一下systemctl restart httpd命令才能生效</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/61/">&larr; Older</a>
@@ -531,6 +326,10 @@ show tables;</p>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/01/11/flow/">心流</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2019/12/30/one-goal-one-life/">人生一个目标足以</a>
@@ -568,15 +367,11 @@ show tables;</p>
         <a href="/blog/2019/08/02/what-make-a-business-survival-successful/">成功企业的基因</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2019/07/10/3-bugs-behind-choosing-famous-schools/">名校逻辑背后的3个漏洞</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (5)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (6)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -702,7 +497,7 @@ window.onload=function(){
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2019 - chunlei -
+  Copyright &copy; 2020 - chunlei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
