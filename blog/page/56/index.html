@@ -9,7 +9,11 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="I just watched a TV program named Ridiculous. The following is special one. Really Ridiculous, I can&#8217;t help laughing when thinking of the great &hellip;">
+  <meta name="description" content="在摸索过程中经常使用的命令： 安装和执行程序
+- sudo apt-get install appname 安装程序应用
+- make install 编译并安装 .tar.gz2 - sh xx.sh 执行.sh文件
+- sudo su 切换到root用户
+- sudo exit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +70,105 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/31/ubuntu-command-brief/">Ubuntu命令手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-31T12:33:00+08:00" pubdate data-updated="true">Aug 31<span>st</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/31/ubuntu-command-brief/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post[&#8220;post title&#8221;]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名</p>
+
+<pre><code>rename 's/lecture/slide/' *.jpg  
+</code></pre>
+
+<p>将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容</p>
+
+<pre><code>perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+</code></pre>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -295,58 +398,6 @@ clipboard.copyString(txt);
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/">Strong Sense of Crisis Make a Nation Grow Sturdy</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-26T15:43:00+08:00" pubdate data-updated="true">Aug 26<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/26/strong-sense-of-crisis-make-a-nation-grow-sturdy/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>People who have strong sense of crisis tend to study and practice hard. Nation with strong sense of crisis is more likely to grow sturdy.</p>
-
-<p>American people and Unite States are good examples.</p>
-
-<p>Here are some pictures evidence.<br/>
-The first thing was the emergency chair at the corner of stairwell. You can break the window and use the chair to take somebody hurt going downstairs. What a considerate safety concern! You can find an emergency shower at every classroom, which hardly seen in Chinese classroom.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/dangerchair.jpg" alt="Emergency Chair in Aderhold" /><br/>
-&lt;&#8211;!more&#8211;>
-The safety shower is just at the right of the door.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/Safety_Shower.jpg" alt="Emergency Shower in Classroom" /></p>
-
-<p>Im my apartment, there is a white notice like following.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/safetyalert.jpg" alt="Safety Alert in Apartment" /></p>
-
-<p>It doesn&#8217;t look nice on the door. But it is there.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/57/">&larr; Older</a>
@@ -366,6 +417,10 @@ The safety shower is just at the right of the door.<br/>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/01/18/online-game-for-kids/">Online game for kids</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/01/11/flow/">心流</a>
@@ -401,10 +456,6 @@ The safety shower is just at the right of the door.<br/>
     
       <li class="post">
         <a href="/blog/2019/12/15/biology-curriculum-resources/">生物学课程资源与案例（精选top100）</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2019/08/02/what-make-a-business-survival-successful/">成功企业的基因</a>
       </li>
     
   </ul>
