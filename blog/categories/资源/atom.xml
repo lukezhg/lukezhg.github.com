@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 资源 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/资源/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-02-13T03:50:52+08:00</updated>
+  <updated>2020-02-13T12:12:43+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[B site Learning resources]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/02/13/b-site-learning-resources/"/>
+    <updated>2020-02-13T11:08:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/02/13/b-site-learning-resources</id>
+    <content type="html"><![CDATA[<p>媒介素养能力</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=32177692&cid=56291852&page=12" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>工程设计
+Reversibility &amp; Irreversibility</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=54722755&cid=95723151&page=9" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>Robot</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=54722755&cid=95725235&page=34" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>how to be an engineer.</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=54722755&cid=95726247&page=46" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>人工智能</p>
+
+<p>3种学习方式：强化学习，无监督学习，监督学习</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=75707591&cid=129512304&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>Google机器学习速成教程<br/>
+Machine Learning Crash Course by Google</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=20229263&cid=33031914&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>游戏</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=20656596&cid=84981067&page=19" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+
+<p>学习技能
+如何应付拖延症</p>
+
+<iframe src="http://zhangchunlei.com//player.bilibili.com/player.html?aid=16785517&cid=27425621&page=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Atlas and NGSS]]></title>
@@ -206,16 +258,6 @@ pluginspage="http://www.macromedia.com/go/getflashplayer">
 <p>中国污染地图 <a href="https://ditu.google.com/maps/ms?msa=0&amp;msid=118244671891871382452.0004763f27eca98ca1be8&amp;dg=feature">China Pollution Map - Google Maps</a></p>
 
 <p><a href="http://www.ipe.org.cn/pollution/index.aspx">公众环境研究中心-中国水污染地图</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Molecular Workbench——在交互模拟中学习科学]]></title>
-    <link href="http://zhangchunlei.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/"/>
-    <updated>2011-12-15T00:00:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model</id>
-    <content type="html"><![CDATA[<p>今天收到一封邮件，大意是说Concord Consortium从google.com获得了250万美元的奖励。<br /><br />Concord的分子工作台项目非常让人耳目一新，它将动画模拟、交互、游戏、评价融为一体，此外你还可以根据自己的需求定做和创造适合自己的模型。下面是他们的网站：<br /><br />Molecular Workbench - An Interface to the Molecular World<br />: http://mw.concord.org/modeler/<br /><br />你只需要下载一个Java的程序，就可以在线使用这些交互动画和学习资源。其实类似的项目，曾经也介绍过一个:<br />PhET Interactive Simulations 交互式模拟——在游戏操作中学习 - Open Learning<br />: http://open-learning.appspot.com/131.html<br /><br />不知道两者有怎样的关系？<br /><br />其实作为科学教师，虽然不一定会编程、会做动画，但是要让最新的教学资源和科研成果为己所用，也不失为优秀教师。而我们的教师教育也在这些方面也应该给予相应的关注。<br /><br /></p>
-
 ]]></content>
   </entry>
   
