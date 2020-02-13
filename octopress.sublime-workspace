@@ -7,6 +7,56 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "source/_posts/2019-12-15-biology-curriculum-resources.markdown",
+			"settings":
+			{
+				"buffer_size": 5940,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/chunleizhang/Downloads/工程素养",
+			"settings":
+			{
+				"buffer_size": 168,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "工程素养"
+			}
+		},
+		{
+			"contents": "网球练习游戏\n\n\n一、人与场地\n慢跑跑圈\n\n横向错步跑\n\n高抬腿\n\n踢屁股跑\n\n休整\n\n压腿\n\n速度跑\n\n跳格子\n\n二、人、拍子练习\n持拍横向拉开归位\n\n纵向前后拉开归位\n\n前后进退反复练习\n\n左右测移反复练习\n\n持拍练习\n\n方向\n\n横向\n\n三、人与球的游戏\n用小桶接球\n\n跳跃躲避教练打过来的球\n\n队员之间传接球+横向移动\n\n用手原地拍球3次\n\n用手原地向上抛球\n\n抛球击打标志桶\n\n四、人、球、拍网球动作练习\n\n定点击球：正手、反手\n\n移动接球：正手、反手\n\n会和球：控制球的落点和速度\n\n发球\n\n五、复原场地\n\n捡球游戏\n\n惩罚：跑圈\n",
+			"file": "/Users/chunleizhang/Downloads/网球游戏",
+			"file_size": 138,
+			"file_write_time": 132213861201405057,
+			"settings":
+			{
+				"buffer_size": 271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "网球游戏"
+			}
+		},
+		{
+			"contents": "教育心理学在过去五六十年，一直在研究到底是什么因素，对学习有最强的影响力？\n\n这里面，当然有许多潜在因素都在发挥影响，但我根据自己的观察，总结了最重要的三点：\n\n一是孩子的个性特点；\n\n二是学习态度；\n\n三是时间管理等行为习惯。\n\nCAT\n\ncharacter\nattitude\ntime",
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Unix",
+				"name": "教育心理学在过去五六十年，一直在研究到底是什么因素，对学习有最强的影响力？"
+			}
+		},
+		{
+			"file": "source/_posts/2019-12-22-the-people-ahead.markdown",
+			"settings":
+			{
+				"buffer_size": 375,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -16,9 +66,13 @@
 	"command_palette":
 	{
 		"height": 367.0,
-		"last_filter": "Package Control: ",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"m",
+				"Mermaid: View In Browser"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -58,20 +112,34 @@
 	"expanded_folders":
 	[
 		"/Users/chunleizhang/octopress",
-		"/Users/chunleizhang/octopress/search",
 		"/Users/chunleizhang/octopress/source",
+		"/Users/chunleizhang/octopress/source/_includes",
+		"/Users/chunleizhang/octopress/source/_includes/post",
 		"/Users/chunleizhang/octopress/source/_posts"
 	],
 	"file_history":
 	[
+		"/Users/chunleizhang/octopress/source/_posts/2019-12-22-play-tennis.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2018-04-07-paper-writing.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2019-07-09-4-disciplines.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2014-06-11-cssci-journals-of-education.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2019-05-08-face-yourself-is-hard.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2019-02-13-new-born.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2019-01-30-buddhism-and-teaching.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2019-04-06-buddhism-and-faith.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2017-09-18-how-to-write-a-summary.markdown",
+		"/Users/chunleizhang/octopress/source/_includes/post/sharing.html",
+		"/Users/chunleizhang/octopress/_config.yml",
+		"/Users/chunleizhang/octopress/source/_includes/footer.html",
+		"/Users/chunleizhang/octopress/source/_posts/2013-07-30-python-brief.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2018-10-06-parents-design-education.markdown",
+		"/Users/chunleizhang/octopress/source/_posts/2018-10-13-minerva-school-case-study.markdown",
 		"/Users/chunleizhang/octopress/source/_posts/2018-09-29-resources-for-science-education.markdown",
 		"/Users/chunleizhang/octopress/source/_posts/2018-08-26-elegy.markdown",
-		"/Users/chunleizhang/octopress/source/_posts/2018-10-06-parents-design-education.markdown",
 		"/Users/chunleizhang/Downloads/Education 500",
 		"/Users/chunleizhang/octopress/source/_posts/2014-06-21-birds-in-usa.markdown",
 		"/Users/chunleizhang/octopress/source/_posts/2013-09-20-metaphors-for-teaching.markdown",
 		"/Users/chunleizhang/octopress/source/_posts/2014-11-27-flash-as3-zip-manual.markdown",
-		"/Users/chunleizhang/octopress/source/_posts/2014-06-11-cssci-journals-of-education.markdown",
 		"/Users/chunleizhang/Desktop/test",
 		"/Users/chunleizhang/octopress/source/_posts/2015-03-20-how-to-ask-question.markdown",
 		"/Users/chunleizhang/octopress/source/_posts/2018-03-25-protect-our-brain.markdown",
@@ -81,8 +149,6 @@
 		"/Volumes/NO NAME/data/irt/data.DAT",
 		"/Users/chunleizhang/Desktop/李秀菊/初步分析结果/data1.DAT",
 		"/Users/chunleizhang/Desktop/李秀菊/初步分析结果/data.DAT",
-		"/Users/chunleizhang/octopress/_config.yml",
-		"/Users/chunleizhang/octopress/source/_includes/post/sharing.html",
 		"/Users/chunleizhang/octopress/source/_includes/post/disqus_thread.html",
 		"/Users/chunleizhang/octopress/source/_posts/2018-01-05-life-algorithm.markdown",
 		"/Users/chunleizhang/octopress/stylesheets/screen.css",
@@ -180,18 +246,7 @@
 		"/Users/chunleizhang/webdev/ictweb/testmodel/models.py",
 		"/Users/chunleizhang/demoproject/demoproject/urls.py",
 		"/Users/chunleizhang/demoproject/demoapp/views.py",
-		"/Users/chunleizhang/demoproject/demoproject/settings.py",
-		"/Users/chunleizhang/code/ai/mememoji_api-master/README.md",
-		"/Users/chunleizhang/demoproject/demoapp/models.py",
-		"/Users/chunleizhang/demoproject/demoapp/v100.py",
-		"/Users/chunleizhang/demoproject/webapp/admin.py",
-		"/Users/chunleizhang/demoproject/demoapp/admin.py",
-		"/Users/chunleizhang/demoproject/demoapp/tests.py",
-		"/Users/chunleizhang/demoproject/demoapp/__init__.pyc",
-		"/Users/chunleizhang/demoproject/demoapp/__init__.py",
-		"/Users/chunleizhang/demoproject/manage.py",
-		"/Users/chunleizhang/Desktop/code/ai/mememoji_api-master/README.md",
-		"/Users/chunleizhang/Desktop/code/fla/交互测评/fla中的代码"
+		"/Users/chunleizhang/demoproject/demoproject/settings.py"
 	],
 	"find":
 	{
@@ -256,8 +311,155 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "source/_posts/2019-12-15-biology-curriculum-resources.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1151,
+								1151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 9.0,
+						"translation.y": 985.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/chunleizhang/Downloads/工程素养",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"auto_name": "工程素养",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 209.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/chunleizhang/Downloads/网球游戏",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								271
+							]
+						],
+						"settings":
+						{
+							"auto_name": "网球游戏",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								113
+							]
+						],
+						"settings":
+						{
+							"auto_name": "教育心理学在过去五六十年，一直在研究到底是什么因素，对学习有最强的影响力？",
+							"default_dir": "/Users/chunleizhang/octopress/source/_posts",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/_posts/2019-12-22-the-people-ahead.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								262
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -342,7 +544,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 297.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

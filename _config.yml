@@ -96,7 +96,12 @@ disqus_show_comment_count: True
 google_analytics_tracking_id: #UA-43313809-1
 
 # Facebook Like
-facebook_like: 
+facebook_like: True
 
 # jiathis
-comment_share: true
+comment_share: True
+
+# Livere
+livere_on: True
+livere_uid: MTAyMC80ODYwMy8yNTA5Nw==
+

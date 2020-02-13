@@ -11,8 +11,8 @@ tags: [CSSCI,journals]
 
 远成职继类（4种）  
 期刊名称	主办（管）单位	CN号  
-开放教育研究	上海远程教育集团、上海电视大学	CN31-1724/G4  
-远程教育杂志	浙江广播电视大学	CN33-1304/G4  
+[开放教育研究](http://www.kfjyyj.cn/)	上海远程教育集团、上海电视大学	CN31-1724/G4  
+[远程教育杂志](http://dej.zjtvu.edu.cn/)	浙江广播电视大学	CN33-1304/G4  
 现代远程教育研究	四川广播电视大学	CN51-1580/G4  
 现代远距离教育	黑龙江广播电视大学等	CN23-1066/G4  
 
@@ -21,7 +21,7 @@ tags: [CSSCI,journals]
 高等教育研究	华中科技大学等	CN42-1024/G4  
 高等工程教育研究	华中科技大学等	CN42-1026/G4  
 中国高教研究	中国高等教育学会	CN11-2962/G4  
-中国高等教育	中国教育报刊社	CN11-1200/G4  
+[中国高等教育](http://www.jyb.cn/zggdjy/tgxz/201507/t20150703_628657.html)	中国教育报刊社	CN11-1200/G4  
 学位与研究生教育	国务院学位委员会	CN11-1736/G4  
 大学教育科学	湖南大学等	CN43-1398/G4  
 现代大学教育	湖南省高等教育学会等	CN43-1358/G4  
@@ -32,25 +32,25 @@ tags: [CSSCI,journals]
 期刊名称	主办（管）单位	CN号  
 [电化教育研究](http://210.26.111.59/Login/AuthLogin.do)	西北师范大学等	CN62-1022/G4  
 [中国电化教育](http://www.webcet.cn/)	中央电化教育馆	CN11-3792/G4  
-现代教育技术	清华大学	CN11-4525/N  
+[现代教育技术](http://xjjs.cbpt.cnki.net/)	清华大学	CN11-4525/N  
 
 教育综合类（16种）   
 期刊名称	主办（管）单位	CN号  
-教育研究	中央教育科学研究所	CN11-1281/G4  
+[教育研究](http://www.nies.net.cn/jyyj/)	中央教育科学研究所	CN11-1281/G4  
 北京大学教育评论	北京大学	CN11-4848/G4  
 [清华大学教育研究](http://www.qhdxjyyj.cn/)	清华大学	CN11-1610/G4  
 华东师范大学学报(教育科学版)	华东师范大学	CN31-1007/G4  
-教育发展研究	上海市教育科学研究院等	CN31-1772/G4  
+[教育发展研究](http://www.jyfzyjzz.cn/html/list-13-1.html)	上海市教育科学研究院等	CN31-1772/G4  投稿邮箱：jyfz@263.net    
 [教师教育研究](http://www.jsjyyj.cn)	教育部高校师资培训交流北京中心等	CN11-5147/G4  
 [比较教育研究](http://www.bjjy.chinajournal.net.cn)	北京师范大学	CN11-2878/G4  
 复旦教育论坛	复旦大学	CN31-1891/G4  
 教育与经济	华中师范大学、中国教育经济学研究会	CN42-1268/G4  
 [教育学报](http://xkjy.chinajournal.net.cn/EditorEN/index.aspx?t=1)	北京师范大学	CN11-5306/G4  
-[教育研究与实验](http://www.jyyjysy.net/)	华中师范大学	CN42-1041/G4  
+[教育研究与实验](http://www.jyyjysy.cn)	华中师范大学	CN42-1041/G4  
 [全球教育展望](http://wgjn.cbpt.cnki.net/EditorEN/Desktop/Desktop.aspx)	华东师范大学	CN31-1842/G4  
 教育科学	辽宁师范大学	CN21-1066/G4  
 国家教育行政学院学报	国家教育行政学院	CN11-5047/D  
-[湖南师范大学教育科学学报](http://jkb.hunnu.edu.cn/)	湖南师范大学	CN43-1381/G4  
+[湖南师范大学教育科学学报](http://fljy.cbpt.cnki.net)	湖南师范大学	CN43-1381/G4  
 外国教育研究	东北师范大学	CN22-1022/G4  
 
 基础教育类（4种）  
@@ -61,4 +61,4 @@ tags: [CSSCI,journals]
 学前教育研究	中国学前教育研究会、长沙师范学校	CN43-1038/G4  
 
 其他扩展期刊或者非CSSCI期刊  
-[当代教育科学](http://www.zgcrjy.com/m_TContributions/contribute.aspx#)
+[当代教育科学](http://www.zgcrjy.com/)
