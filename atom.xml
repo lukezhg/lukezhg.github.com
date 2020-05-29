@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-04-27T23:58:21+08:00</updated>
+  <updated>2020-05-29T09:42:05+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[知识传递的方法]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/05/29/knowledge-transfer-methods/"/>
+    <updated>2020-05-29T08:59:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/05/29/knowledge-transfer-methods</id>
+    <content type="html"><![CDATA[<p>今天，我们要讨论的问题是知识可以怎样传递？</p>
+
+<p>首先，这个问题我们可以简单化一下，问题改写为信息可以怎样传递？</p>
+
+<p>那么，什么是信息？如果根据数据-信息-知识-智慧金字塔的话，信息是数据的有意义连接。比如今天的最高温度27摄氏度，这是一条信息。这条信息有主体+属性+数值构成。它不是随机的，而是实际情况的一个真实描述。其中今天是主体，最高温度是属性，而27是数值。</p>
+
+<p>那么，我们如何传递信息呢？<br/>
+1、口耳相传，我们可以说给别人听，信息以声音的方式传播。</p>
+
+<p>2、文字传播，我们可以把这条信息写在某种媒介上，然后通过这种媒介来传播。</p>
+
+<p>3、肢体语言传播，我们还可以打手势来传播这条消息，比如手语。</p>
+
+<p>传播信息的方式，一方面取决于信息的发出方法，另一方面也取决于信息接收的方式，此外还取决于信息传播的途径。</p>
+
+<p>以上3种方式，有一个前提条件，那就是信息是容易表征的，至少是可表征的。但是，对于那些无法清晰表征的信息，或者在传递之前还未完整的信息，该如何传递呢？</p>
+
+<p>比如看到一个风景之后的感受，有时可以用语言表达出来，有时则很难用语言表达出来。还有的时候，信息的传递不是一次性的、单方向的，比如两个人的观感，这时候的信息传递就需要专门的信息通道。而且信息通道的选择还会影响信息传递的内容的方式。</p>
+
+<p>所以，信息本身的特征也是信息传递关键影响因素之一。</p>
+
+<p>好，让我们用一个公式总结一下，信息传递的内涵。信息传播类型=（信息生成）发出方式-（媒介通道）传播途径-（信息解码）接收方式。</p>
+
+<p>那么，如果信息是这样传播的，知识传播会有怎样的不同？<br/>
+知识是信息的概括。知识等同于信息树。</p>
+
+<p>知识生成、知识表征、知识传播、知识获取、知识整合、知识应用。</p>
+
+<p>那么，智慧又可以怎样传播？<br/>
+智慧是知识的应用。智慧等同于知识树。<br/>
+智慧只能个体生成，不能简单传播。智慧生成过程受内外状态影响。内外状态的改变与知识传播密切相关。有些知识可以表征，有些知识难于表征，有些知识不可表征。分别是显性知识，隐性知识，意会知识。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[循证教学]]></title>
@@ -1194,34 +1233,6 @@ High five， Byebye
 <p>参考：<br/>
 资源卡片见：https://zh-cn.padlet.com/lukezhg/top100<br/>
 markdown 目录技术参考：https://blog.csdn.net/zhezhebie/article/details/80764496</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[成功企业的基因]]></title>
-    <link href="http://zhangchunlei.com/blog/2019/08/02/what-make-a-business-survival-successful/"/>
-    <updated>2019-08-02T14:55:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2019/08/02/what-make-a-business-survival-successful</id>
-    <content type="html"><![CDATA[<p>要看一个商业是否成功，只需要看优秀杰出的人才是流入还是流出。</p>
-
-<p>成功的企业应该至少具有以下特征：
-1. 聚集优秀的人才：人才保障 <br/>
-2. 适当竞争和淘汰：制度支撑 <br/>
-3. 胸怀天下的担当：文化积淀</p>
-
-<p>还有就是看这个公司是否采用了科学策略和方法，这里不是迷信科学，而是要看这个公司能不能尽量避免无谓的失败，并且能从自己的尝试获得教训而取得成功。</p>
-
-<p>吴军的科技60讲中，有这样的一句话“用信息换能量”，这句话特别耐人寻味。</p>
-
-<p>很多公司的成功都跟这句话有关： <br/>
-比如电话业赶超邮政业<br/>
-比如移动通讯业赶超电信业  <br/>
-比如滴滴打车赶超出租业 <br/>
-比如电商赶超传统零售业</p>
-
-<p>信息技术革命所带来的变化远远不仅如此，它正在颠覆所有的行业，与其坐以待毙，不如主动出击。</p>
-
-<p>很多复杂的事物，竟然背后是简单的规律在发挥作用。真所谓，大道至简，诚不欺我。</p>
 ]]></content>
   </entry>
   

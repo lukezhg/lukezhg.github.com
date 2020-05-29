@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="中文乱码永远是程序猿的痛！！ 今天使用django-admin就遇到了乱码问题，是仿照django book的model用法，做一个资源管理平台出现的问题。 代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能的解决措施： 1、修改admin.py import sys; &hellip;">
+  <meta name="description" content="1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境： mkvirtualenv DjangoApp 要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,616 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/12/31/django-cheat-sheet/">Django Cheat Sheet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-31T09:50:00+08:00" pubdate data-updated="true">Dec 31<span>st</span>, 2017</time>
+        
+         | <a href="/blog/2017/12/31/django-cheat-sheet/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+
+<pre><code>mkvirtualenv DjangoApp
+</code></pre>
+
+<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
+
+<pre><code>workon DjangoApp
+</code></pre>
+
+<p>在您的当前环境中安装 Django</p>
+
+<pre><code>pip install Django
+</code></pre>
+
+<p>2、使用 django-admin 命令创建项目</p>
+
+<pre><code>django-admin startproject demoproject
+</code></pre>
+
+<p>3、进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
+
+<pre><code>cd demoproject
+python manage.py startapp demoapp
+</code></pre>
+
+<p>4、测试项目服务器，Ctrl+C退出服务器。</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>或者指定服务器ip和端口。</p>
+
+<pre><code>python manage.py runserver 0.0.0.0:8000
+</code></pre>
+
+<p>5、创建超级用户用于登陆django admin后台管理平台。</p>
+
+<pre><code>python manage.py createsuperuser admin
+</code></pre>
+
+<p>6、编辑设置文件和项目相关文件。  <br/>
+settings.py 控制项目参数。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>INSTALLED_APPS = [
+</span><span class='line'>    'django.contrib.admin',
+</span><span class='line'>    'django.contrib.auth',
+</span><span class='line'>    'django.contrib.contenttypes',
+</span><span class='line'>    'django.contrib.sessions',
+</span><span class='line'>    'django.contrib.messages',
+</span><span class='line'>    'django.contrib.staticfiles',
+</span><span class='line'>    'clips',
+</span><span class='line'>]
+</span><span class='line'>
+</span><span class='line'>DATABASES = {
+</span><span class='line'>    'default': {
+</span><span class='line'>        'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
+</span><span class='line'>        'USER': 'root',
+</span><span class='line'>        'PASSWORD': '123456',
+</span><span class='line'>        'NAME': 'demoproject',
+</span><span class='line'>        'HOST': '127.0.0.1',
+</span><span class='line'>        'PORT': '3306',
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>urls.py 控制访问请求路径</p>
+
+<pre><code>from django.conf.urls import url
+from django.contrib import admin
+from demoproject.views import hello
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^hello/$', hello),
+]
+</code></pre>
+
+<p>views.py 控制访问请求的应答</p>
+
+<pre><code>from django.http import HttpResponse
+def hello(request):
+    return HttpResponse("Hello world")
+</code></pre>
+
+<p>demoapp/models.py 控制数据结构（表格、变量、变量属性）</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from __future__ import unicode_literals
+</span><span class='line'>from django.db import models
+</span><span class='line'>
+</span><span class='line'>class User(models.Model):
+</span><span class='line'>    user_name = models.CharField(max_length=30)
+</span><span class='line'>    password = models.CharField(max_length=40)
+</span><span class='line'>    email = models.EmailField()
+</span><span class='line'>    headshot = models.ImageField(upload_to='headshot',null=True,blank=True)
+</span><span class='line'>    brief = models.CharField(max_length=100)
+</span><span class='line'>    join_date = models.DateField()
+</span><span class='line'>    user_star = models.CharField(max_length=30)
+</span><span class='line'>    def __unicode__(self):
+</span><span class='line'>        return self.user_name
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p>demoapp/admin.py 控制后台注册和数据呈现</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>from __future__ import unicode_literals
+</span><span class='line'>from django.contrib import admin
+</span><span class='line'>from .models import User, Clip, Link
+</span><span class='line'>import sys;  
+</span><span class='line'>reload(sys);  
+</span><span class='line'>sys.setdefaultencoding("utf8")
+</span><span class='line'>
+</span><span class='line'>class UserAdmin(admin.ModelAdmin):
+</span><span class='line'>    list_display = ('user_name', 'password', 'email')
+</span><span class='line'>    search_fields = ('user_name', 'email')
+</span><span class='line'>......
+</span><span class='line'>admin.site.register(User,UserAdmin)
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p>7、当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
+
+<pre><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre>
+
+<p>8、利用template来呈现页面。</p>
+
+<p>首先要修改settings.py</p>
+
+<pre><code>TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            # ...
+</code></pre>
+
+<p>接下来建文件夹templates</p>
+
+<pre><code>\demoproject
+    \demoproject
+    \demoapp
+    \templates
+    manage.py
+</code></pre>
+
+<p>修改demoproject\views.py</p>
+
+<pre><code>from django.shortcuts import render
+import datetime
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render(request, 'current_datetime.html', {'current_date': now})
+</code></pre>
+
+<p>在templates文件夹，新建html模版文件current_datetime.html。</p>
+
+<p>\mysite_project\mysite\templates\current_datetime.html</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'>&lt;html&gt;
+</span><span class='line'>    &lt;body&gt;
+</span><span class='line'>        It is now {{ current_date }}
+</span><span class='line'>    &lt;/body&gt;
+</span><span class='line'>&lt;/html&gt;
+</span><span class='line'>It is now {{ current_date }}.
+</span><span class='line'></span></code></pre></td></tr></table></div></figure>
+
+
+<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
+参考：https://djangobook.com/templates-in-views/</p>
+
+<p>base.html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>{% block title %}{% endblock %}<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>My helpful timestamp site<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>    {% block content %}{% endblock %}
+</span><span class='line'>    {% block footer %}
+</span><span class='line'>    <span class="nt">&lt;hr&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;p&gt;</span>Thanks for visiting my site.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    {% endblock %}
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>current_datetime.html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>{% extends &quot;base.html&quot; %}
+</span><span class='line'>{% block title %}The current time{% endblock %}
+</span><span class='line'>{% block content %}
+</span><span class='line'>    <span class="nt">&lt;p&gt;</span>It is now {{ current_date }}.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>{% endblock %}
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>hours_ahead.html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>{% extends &quot;base.html&quot; %}
+</span><span class='line'>{% block title %}Future time{% endblock %}
+</span><span class='line'>{% block content %}
+</span><span class='line'><span class="nt">&lt;p&gt;</span>
+</span><span class='line'>    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+</span><span class='line'><span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>{% endblock %}
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>9、利用form来获取用户数据。</p>
+
+<p>mysite_project\mysite\books\templates\books\search_form.html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Search<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;/search/&quot;</span> <span class="na">method=</span><span class="s">&quot;get&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;q&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Search&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mysite\books\urls.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">url</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">books</span> <span class="kn">import</span> <span class="n">views</span>
+</span><span class='line'><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'>    <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^search-form/$&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">search_form</span><span class="p">),</span>
+</span><span class='line'>    <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^search/$&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">search</span><span class="p">),</span>
+</span><span class='line'><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mysite\urls.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.conf.urls</span> <span class="kn">import</span> <span class="n">include</span><span class="p">,</span> <span class="n">url</span>
+</span><span class='line'><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span class='line'><span class="c"># ...</span>
+</span><span class='line'>    <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;books.urls&#39;</span><span class="p">)),</span>
+</span><span class='line'><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>books\views.py</p>
+
+<pre><code>from django.shortcuts import render
+def search_form(request):
+    return render(request, 'books/search_form.html')
+def search(request):
+    if 'q' in request.GET:
+        message = 'You searched for: %r' % request.GET['q']
+    else:
+        message = 'You submitted an empty form.'
+    return HttpResponse(message)
+</code></pre>
+
+<p>参考：https://djangobook.com/django-forms/</p>
+
+<p>定义表单类，更简洁的获取用户数据的方法。</p>
+
+<p>mysite_project\mysite\mysite\forms.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django</span> <span class="kn">import</span> <span class="n">forms</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">ContactForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Form</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">subject</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">()</span>
+</span><span class='line'>    <span class="n">email</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">EmailField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">message</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mysite_project\mysite\mysite\views.py</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">Http404</span><span class="p">,</span> <span class="n">HttpResponse</span><span class="p">,</span> <span class="n">HttpResponseRedirect</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">datetime</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">mysite.forms</span> <span class="kn">import</span> <span class="n">ContactForm</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">django.core.mail</span> <span class="kn">import</span> <span class="n">send_mail</span><span class="p">,</span> <span class="n">get_connection</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">contact</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">&#39;POST&#39;</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">form</span> <span class="o">=</span> <span class="n">ContactForm</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+</span><span class='line'>            <span class="n">cd</span> <span class="o">=</span> <span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span>
+</span><span class='line'>            <span class="n">con</span> <span class="o">=</span> <span class="n">get_connection</span><span class="p">(</span><span class="s">&#39;django.core.mail.backends.console.EmailBackend&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">send_mail</span><span class="p">(</span>
+</span><span class='line'>                <span class="n">cd</span><span class="p">[</span><span class="s">&#39;subject&#39;</span><span class="p">],</span>
+</span><span class='line'>                <span class="n">cd</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">],</span>
+</span><span class='line'>                <span class="n">cd</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;email&#39;</span><span class="p">,</span> <span class="s">&#39;noreply@example.com&#39;</span><span class="p">),</span>
+</span><span class='line'>                <span class="p">[</span><span class="s">&#39;siteowner@example.com&#39;</span><span class="p">],</span>
+</span><span class='line'>                <span class="n">connection</span><span class="o">=</span><span class="n">con</span>
+</span><span class='line'>            <span class="p">)</span>
+</span><span class='line'>            <span class="k">return</span> <span class="n">HttpResponseRedirect</span><span class="p">(</span><span class="s">&#39;/contact/thanks/&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">else</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">form</span> <span class="o">=</span> <span class="n">ContactForm</span><span class="p">()</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s">&#39;contact_form.html&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;form&#39;</span><span class="p">:</span> <span class="n">form</span><span class="p">})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>mysite_project\mysite\templates\contact_form.html</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Contact us<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">ul</span><span class="nc">.errorlist</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="nc">.errorlist</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">font-size</span><span class="o">:</span> <span class="m">1.2em</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">3px</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">5px</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="nt">&lt;/style&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>    {% if form.errors %}
+</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;color: red;&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            Please correct the error{{ form.errors|pluralize }} below.
+</span><span class='line'>        <span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    {% endif %}
+</span><span class='line'>    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;&quot;</span> <span class="na">method=</span><span class="s">&quot;post&quot;</span> <span class="na">novalidate</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;table&gt;</span>
+</span><span class='line'>            {{ form.as_table }}
+</span><span class='line'>        <span class="nt">&lt;/table&gt;</span>
+</span><span class='line'>        {% csrf_token %}
+</span><span class='line'>        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Submit&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>10、urls进阶</p>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+    url(r'^hello/$', views.hello),
+    url(r'^time/$', views.current_datetime),
+          url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
+]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^$', views.homepage),
+    url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
+]
+if settings.DEBUG:
+    urlpatterns += [url(r'^debuginfo/$', views.debug),]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^reviews/2003/$', views.special_case_2003),
+    url(r'^reviews/([0-9]{4})/$', views.year_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
+]
+</code></pre>
+
+<p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -660,87 +1270,6 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/11/27/how-to-run-js-node-and-appche/">How to Run JS Node and Appche</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-11-27T11:50:00+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/11/27/how-to-run-js-node-and-appche/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近接触了不少Java script的代码，但是如何让这些代码运行起来呢？</p>
-
-<p>有两个办法最可行，一个是node，一个是开服务器appche。</p>
-
-<p>对应的可以参考这两个网页：<br/>
-node.js&#8211;><a href="https://nodejs.org">https://nodejs.org</a><br/>
-appche&#8211;><a href="http://www.jianshu.com/p/d006a34a343f">http://www.jianshu.com/p/d006a34a343f</a></p>
-
-<p>Node可以直接在本地运行javascript，比如读写文件。<br/>
-appche直接开服务器来实现数据的储存，可以配合mysql一起使用。</p>
-
-<p>比如Node读文件的代码(demo_readfile.js)：</p>
-
-<pre><code>var http = require('http');
-var fs = require('fs');
-http.createServer(function (req, res) {
-  fs.readFile('demofile1.html', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-  });
-}).listen(8080);
-</code></pre>
-
-<p>再比如Node写文件的代码（demo_fs_write.js）：</p>
-
-<pre><code>var fs = require('fs');
-//create a file named mynewfile3.txt:
-fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
-});
-</code></pre>
-
-<p>Mac系统自带了Apache，需要设置和启动即可，具体设置可以查考上面简书的文章。</p>
-
-<p>常用端口命令：</p>
-
-<pre><code>httpd -v #查看apache的版本信息
-sudo apachectl start
-sudo apachectl stop
-sudo apachectl restart
-sudo apachectl -t #检测配置文件语法是否有错
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/16/">&larr; Older</a>
@@ -760,6 +1289,10 @@ sudo apachectl -t #检测配置文件语法是否有错
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/05/29/knowledge-transfer-methods/">知识传递的方法</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/04/27/evidence-based-teaching/">循证教学</a>
@@ -797,15 +1330,11 @@ sudo apachectl -t #检测配置文件语法是否有错
         <a href="/blog/2020/02/13/b-site-learning-resources/">B站视频学习资源筛选</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/01/18/online-game-for-kids/">Online game for kids</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
