@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-06-26T08:01:32+08:00</updated>
+  <updated>2020-07-07T14:23:14+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Impostor syndrome]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/07/07/impostor-syndrome/"/>
+    <updated>2020-07-07T14:05:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/07/07/impostor-syndrome</id>
+    <content type="html"><![CDATA[<p>Wikipedia对这个术语的含义有解释：<br/>
+<a href="https://en.wikipedia.org/wiki/Impostor_syndrome">https://en.wikipedia.org/wiki/Impostor_syndrome</a></p>
+
+<p>这个词，我是在二附中的一个宣传栏上看到的，上面写的是自我否定。网上查了一下，更完整的称呼是“自我否定”心理倾向。简单的说就是这种人即便取得成功也会把成功的原因归因为运气，认为自己并没有相应的能力，而且从心底里认为自己是一个冒牌伪装者。这种错误的归因和自我否定，会让患者不能做自己，同时也会产生自我妨碍。</p>
+
+<p>有的人认为，这是本质上是当事人过于害怕失败而导致心理扭曲（弗洛伊德）。也有人认为，这是实际上是个体不想踏出自己熟悉的情景而编造的结构（阿德勒）。问题不在于发生了什么（比如失败、失恋），而在于你如何看待这件事情。从这个立场出发，阿德勒的观点更有意思。</p>
+
+<p>弗洛伊德的解释性心理学是阿德勒心理学的一部分。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hierarchical Linear Models]]></title>
@@ -43,6 +59,13 @@ C. An analysis of student scores as a function of school poverty (as operational
 </code></pre>
 
 <p>这个软件，这个步骤，这个方法，这个视角，相互匹配才是值得借鉴的。</p>
+
+<p>使用这种方法的步骤：<br/>
+1、明确要研究的问题和倾向性，比如这篇文章就是要研究排除其他因素的影响，到底科学探究是否有效，从学生学习成绩的角度</p>
+
+<p>2、区分自变量的层次，明确先后关系，比如这篇文章是把关心的影响因素最后放进去，那是不是意味着我也要把最关心的变量放在最后一层</p>
+
+<p>3、使用的软件，spss可以做线性回归，但是不如HLM专业，似乎中心化处理这一步也没有，这个可以查一查。</p>
 ]]></content>
   </entry>
   
@@ -962,60 +985,6 @@ B组学生：当他们赶往大礼堂之前，研究人员告诉他们：“时�
 <p>英文图书库：<a href="http://www.gutenberg.org/">http://www.gutenberg.org/</a></p>
 
 <p>Ebook <a href="https://archive.org/">https://archive.org/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[网球训练中的游戏]]></title>
-    <link href="http://zhangchunlei.com/blog/2019/12/22/play-tennis/"/>
-    <updated>2019-12-22T08:40:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2019/12/22/play-tennis</id>
-    <content type="html"><![CDATA[<h3>一、人与场地交互游戏</h3>
-
-<pre><code>慢跑热身
-横向错步跑
-高抬腿跑
-踢屁股跑
-速度跑
-跳格子锻炼协调性
-</code></pre>
-
-<h3>二、人、拍子练习</h3>
-
-<pre><code>持拍横向拉开归位
-纵向前后拉开归位
-前后进退反复练习
-左右测移反复练习
-原地持拍挥拍练习
-</code></pre>
-
-<h3>三、人与球的游戏</h3>
-
-<pre><code>用小桶接球
-跳跃躲避教练打过来的球
-队员之间传接球+横向移动
-用手原地拍球3次
-用手原地向上抛球接住（小桶接住或者徒手）
-抛球击打标志桶
-</code></pre>
-
-<h3>四、人、球、拍网球动作练习</h3>
-
-<pre><code>定点击球：正手、反手
-移动接球：正手、反手
-控制回合球：控制球的落点和速度
-发球：左侧、右侧
-</code></pre>
-
-<h3>五、场地复原和休整</h3>
-
-<pre><code>捡球游戏
-惩罚：跑圈
-休整
-压腿
-仰卧起坐
-High five， Byebye
-</code></pre>
 ]]></content>
   </entry>
   
