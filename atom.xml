@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-07-07T14:23:14+08:00</updated>
+  <updated>2020-07-28T15:43:05+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,123 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[海蒂列表]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/07/28/hattie-ranking/"/>
+    <updated>2020-07-28T15:31:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/07/28/hattie-ranking</id>
+    <content type="html"><![CDATA[<p>之前给大家推荐过《循证教学》这本书。</p>
+
+<p>还有一本书也非常值得推荐，那就是《可见的学习》这本书。在这本书里，澳大利亚研究者海蒂收集并分析了全球800多个元研究，对能够有效促进学生成绩提高的教学策略进行了归纳，200多种教学策略按照效应量大小进行了排列，结果见这里：https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/</p>
+
+<p>其中前50名，我进行了简单的翻译如下：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Rank    影响  Influence   Effect size d (Dec 2017)
+</span><span class='line'>1   教师集体性效能感    Collective teacher efficacy 1.57
+</span><span class='line'>2   自我报告的成绩 Self-reported grades    1.33
+</span><span class='line'>3   老师对成绩的估计    Teacher estimates of achievement    1.29
+</span><span class='line'>4   认知任务分析  Cognitive task analysis 1.29
+</span><span class='line'>5   对干扰的应对  Response to intervention    1.29
+</span><span class='line'>6   皮亚杰项目   Piagetian programs  1.28
+</span><span class='line'>7   拼图教学法   Jigsaw method   1.2
+</span><span class='line'>8   概念转变项目  Conceptual change programs  0.99
+</span><span class='line'>9   先验能力    Prior ability   0.94
+</span><span class='line'>10  与先验知识融合的策略  Strategy to integrate with prior knowledge  0.93
+</span><span class='line'>11  自我效能    Self-efficacy   0.92
+</span><span class='line'>12  教师信誉    Teacher credibility 0.9
+</span><span class='line'>13  微观教学/课程视频回顾 Micro-teaching/video review of lessons  0.88
+</span><span class='line'>14  迁移策略    Transfer strategies 0.86
+</span><span class='line'>15  课堂讨论    Classroom discussion    0.82
+</span><span class='line'>16  脚手架 Scaffolding 0.82
+</span><span class='line'>17  刻意练习    Deliberate practice 0.79
+</span><span class='line'>18  总结  Summarization   0.79
+</span><span class='line'>19  努力  Effort  0.77
+</span><span class='line'>20  对有学习需求的学生干预 Interventions for students with learning needs  0.77
+</span><span class='line'>21  助记符 Mnemonics   0.76
+</span><span class='line'>22  计划与预测   Planning and prediction 0.76
+</span><span class='line'>23  重复阅读项目  Repeated reading programs   0.75
+</span><span class='line'>24  老师清晰    Teacher clarity 0.75
+</span><span class='line'>25  知识精致和组织 Elaboration and organization    0.75
+</span><span class='line'>26  评价与反思   Evaluation and reflection   0.75
+</span><span class='line'>27  互惠教学（学生教学）  Reciprocal teaching 0.74
+</span><span class='line'>28  重复和记忆   Rehearsal and memorization  0.73
+</span><span class='line'>29  理解性课程教学计划   Comprehensive instructional programs for teachers   0.72
+</span><span class='line'>30  主动寻求帮助  Help seeking    0.72
+</span><span class='line'>31  语音教学    Phonics instruction 0.7
+</span><span class='line'>32  反馈  Feedback    0.7
+</span><span class='line'>33  深刻的动机和方法    Deep motivation and approach    0.69
+</span><span class='line'>34  领域自主    Field independence  0.68
+</span><span class='line'>35  加速学习项目  Acceleration programs   0.68
+</span><span class='line'>36  学习目标与无目标    Learning goals vs. no goals 0.68
+</span><span class='line'>37  解决问题的教学 Problem-solving teaching    0.68
+</span><span class='line'>38  概述和转化   Outlining and transforming  0.66
+</span><span class='line'>39  概念图 Concept mapping 0.64
+</span><span class='line'>40  词汇项目    Vocabulary programs 0.62
+</span><span class='line'>41  创新项目    Creativity programs 0.62
+</span><span class='line'>42  行为干预计划  Behavioral intervention programs    0.62
+</span><span class='line'>43  制定自我判断标准    Setting standards for self-judgement    0.62
+</span><span class='line'>44  老师不给学生贴标签   Teachers not labeling students  0.61
+</span><span class='line'>45  高中与大学成就的关系  Relations of high school to university achievement  0.6
+</span><span class='line'>46  元认知策略   Meta-cognitive strategies   0.6
+</span><span class='line'>47  间隔练习相对集中练习  Spaced vs. mass practice    0.6
+</span><span class='line'>48  直接教学    Direct instruction  0.6
+</span><span class='line'>49  数学课程    Mathematics programs    0.59
+</span><span class='line'>50  适当挑战性的目标    Appropriately challenging goals 0.59</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Impostor syndrome]]></title>
@@ -26,6 +143,12 @@
 <p>有的人认为，这是本质上是当事人过于害怕失败而导致心理扭曲（弗洛伊德）。也有人认为，这是实际上是个体不想踏出自己熟悉的情景而编造的结构（阿德勒）。问题不在于发生了什么（比如失败、失恋），而在于你如何看待这件事情。从这个立场出发，阿德勒的观点更有意思。</p>
 
 <p>弗洛伊德的解释性心理学是阿德勒心理学的一部分。</p>
+
+<p>听了TED演讲：如何改变“自我能力否定倾向”</p>
+
+<p>演讲者是一个澳大利亚人，他经常会感觉到自己在冒充一类人，但是他心里明明知道自己不是。他说，don&#8217;t freeze,fing a way out.有一次，他质问特斯拉电动车能够解决澳大利亚的能源危机，是不是在开玩笑，结果马斯克在twitter回复，这绝对不是开玩笑。之后很多联系他，把他当成了能源专家。他只好花了一周的时间把什么是工业电池，什么是普通电池，等相关知识痛补了一顿，他甚至还跟能源部长交流了一下。结果，他真做成了几件对澳大利亚能源危机有益的事情。最搞笑的一次是，一个漂亮的女人想他走过来，错把他当成某个人，结果他就装作继续谈话，还留了电话号码，最后他们还结了婚，有4个孩子。他很担心，妻子一觉醒来，质问他，你为什么睡在我的床上，他跟妻子沟通这种想法，他妻子也有类似的想法，但是这恰恰让她们两个特别珍惜这段情感。</p>
+
+<p>还记得有一个桥段，说是哪个有两角书橱之称的股神巴菲特的朋友查理王格，我记不清楚，也许是股神巴菲特。反正是某个人，有阅读障碍，但是记忆力特别好，刚好有个股神一样的任务要去机场，他就问可以否搭便车，其他他根本就不需要去机场，然后他们就聊了起来，竟然发现是校友，这个大神就问主人公是否懂股票，因为他特别善于伪装，结果这位大神还信以为真，推荐他做期货。还给了他一张名片，说下周可以去他们公司实习。于是，主人公开始找到一本期货的书什么都不敢就开始，啃。他有读书障碍，他读的很慢，不过一个星期还是让他啃完了，结果到了交易所，他就直接可以谈论该买哪一只股票了，后来这个家伙就就成了巴菲特一样的人物。你看冒充，居然可以冒充得这么牛掰。</p>
 ]]></content>
   </entry>
   
@@ -970,21 +1093,6 @@ B组学生：当他们赶往大礼堂之前，研究人员告诉他们：“时�
 
 <p>我们每个人都浮在水面上，生活在自己的苦海里，至于是否能到达彼岸，天知道。但是唯一确定的是，你当下看待生活的视角，你如果往上看，就会看到阳光、蓝天和白云，你如果往下看，就会看到深不见底的黑暗海水，还有随时可能袭击你的鲨鱼。光明与黑暗、利润与风险、乐观与悲观仅仅一线之隔，仅仅在那一线之间。<br/>
 怎样选择，怎样取舍，你应该怀疑你自己，怀疑你的经验、怀疑你的怀疑。怎样了解真相，如何筛选，你应该感知自己，感知你的身体和意识、感知你的感知。怎样行动，怎样抉择，你应该思考过去，思考未来，思考你的思考。当下、觉察、思考、行动就构成了一个不属于自己的你。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[走在前面的人]]></title>
-    <link href="http://zhangchunlei.com/blog/2019/12/22/the-people-ahead/"/>
-    <updated>2019-12-22T19:33:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2019/12/22/the-people-ahead</id>
-    <content type="html"><![CDATA[<p>万维刚的博客：同人于野——学而时嘻之：<a href="https://www.geekonomics10000.com/">https://www.geekonomics10000.com/</a></p>
-
-<p>吴晓波的专栏：<a href="http://wuxiaobo.blogchina.com/">http://wuxiaobo.blogchina.com/</a></p>
-
-<p>英文图书库：<a href="http://www.gutenberg.org/">http://www.gutenberg.org/</a></p>
-
-<p>Ebook <a href="https://archive.org/">https://archive.org/</a></p>
 ]]></content>
   </entry>
   
