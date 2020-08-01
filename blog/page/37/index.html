@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Dr. Oliver gave us an assignment to design a demonstration of science teaching. I already had several ideas. One was show them The surprising trees. &hellip;">
+  <meta name="description" content="I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,62 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/30/clustering-maps-by-similarity/">Clustering Maps by Similarity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-30T19:17:00+08:00" pubdate data-updated="true">Jun 30<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/06/30/clustering-maps-by-similarity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me by leaving a comment.</p>
+
+<p>Although there was no direct solutions for me, but I did find something. I can use UCINET to do cluster analysis &#8211; the problem is I must provide a similarity/dissimilarity matrix for this software.</p>
+
+<p>There are at least two ways to create the matrix. First, use Pearson correlations. I can easily get the table by SPSS. Second, I have to figure out a way to count the similarity or dissimilarity myself. Well, it is not too hard, if I just consider the different links and the same links, and give values to different situations, such as 11, 00, 10, 01, then I can count the dissimilarity. I can use R to count the matrix and then use <a href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/">Multidimensional Scaling in R</a> to plot out the people. In this way, I can have a look whether clusters exist obviously. Then I can use UCINET to do the rest job.</p>
+
+<p>I have to consider both the links and the notes at the same time, otherwise I can not make full use of the information in the data. In other words, I need to compare the stuctures rather than the dots. If two people have linked similar structures, they should score higher than two people have the same number of similar links but not connected. I use the following abbreviation:</p>
+
+<pre><code>bh(both have)
+bl(both lack)
+hl(one have one lack)
+lh(one lack one have)
+ss(similarity score)
+
+ss=bh*2+bl-hl-lh-breaks(可以参考序列比对)
+</code></pre>
+
+<p>References:<br/>
+<a href="http://faculty.ucr.edu/~hanneman/nettext/C13_%20Structural_Equivalence.html">Equivalence: Measures of similarity and structural equivalence</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -308,68 +364,6 @@ And you will never forget it anymore.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/17/inquiry-and-demonstration/">Inquiry and Demonstration</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-17T14:15:00+08:00" pubdate data-updated="true">Jun 17<span>th</span>, 2014</time>
-        
-         | <a href="/blog/2014/06/17/inquiry-and-demonstration/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Today Dr. Oliver gave us an amazing class about demonstration and inquiry. He first asked what question to think about or ask ourselves when using demonstration. Then we played two demonstration games with everybody totally engaged.</p>
-
-<p>The first is radiometer (<a href="http://en.wikipedia.org/wiki/Crookes_radiometer">Crookes radiometer - Wikipedia</a>).<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/radiometer.jpg" alt="Crookes Radiometer" /></p>
-
-<p>He just put it on a table and lighted up another bulb, it began to rotate. It was my first time to see this, I was very curious of its work principle. After close observation, I found that it rotated always the same direction with white vane in front and black vane behind.</p>
-
-<p>Then we began to wonder what factors caused the vanes to rotate. Lights? But how? Temperature? how? What else? How can we found out? Try it. I tried using different angles of the light.</p>
-
-<p>We also tried to use hot water and cold water to pure on it. It rotate exactly the same direction as using light when using hot water but the opposite direction when using cold water.<br/>
-Nobody came up with a good explantion at the end. First I thought it was because the momentum of the absorbed Photon just like Crookes did which was wrong in this situation.</p>
-
-<p>Then we began to do another game &#8211;Buoyancy.<br/>
-First Dr. Oliver sent out a pre-test with 3 yes no questions about buoyancy followed why you believe so. Then we talked about each question a little while. Students answers and opinions are totally different.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/pre-test.png" alt="Pre-test" /><br/>
-Let us found out. So he did another demonstration droppiing a brass cube into water cup which had been balanced. He asked us what would happen if he immersed it into the water.<br/>
-<img src="https://raw.github.com/lukezhg/Freyja/master/drop-into-water.png" alt="Brass cube into water" /><br/>
-We made our predictions and then we did the experiment. We also tried some other settings which were carefully designed but playfully demonstrated.How do you use these demonstration in large class size like 30 students?</p>
-
-<p>At the end of the class, he use his front pocket quesitons to reflect this lesson:<br/>
-Does it elict students&#8217; ideas for teaching?<br/>
-Does it it help student make sense of the material activity?<br/>
-Dose it press students for evidenced based reasoning and communicating?</p>
-
-<p>Yes it does! Yeah, we succeed!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/38/">&larr; Older</a>
@@ -389,6 +383,10 @@ Dose it press students for evidenced based reasoning and communicating?</p>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/08/01/back-to-basics/">Back to basics</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/07/29/mindset/">Mindset</a>
@@ -426,15 +424,11 @@ Dose it press students for evidenced based reasoning and communicating?</p>
         <a href="/blog/2020/03/30/building-trust-relationship/">信任是如何建立的</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/03/28/learning-facts/">学习的四大真相</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (52)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (2)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
