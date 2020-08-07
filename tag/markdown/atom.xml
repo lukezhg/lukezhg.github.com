@@ -4,7 +4,7 @@
   <title><![CDATA[tags: markdown | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/markdown/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-08-07T16:03:02+08:00</updated>
+  <updated>2020-08-07T16:12:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -18,7 +18,7 @@
     <link href="http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link/"/>
     <updated>2020-08-07T15:36:00+08:00</updated>
     <id>http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link</id>
-    <content type="html"><![CDATA[<p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1">1</a><a id="2"></a>
+    <content type="html"><![CDATA[<p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1d">1</a><a id="1u"></a>
 中间是若干文字</p>
 
 <p>中<br/>
@@ -30,7 +30,7 @@
 文.<br/>
 字.</p>
 
-<p><a id="1"></a><a href="#1up">1</a>：我的注释</p>
+<p><a id="1d"></a><a href="#1u">1</a>：我的注释</p>
 
 <p>代码如下：</p>
 
