@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 电脑技巧 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/电脑技巧/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-08-07T15:32:24+08:00</updated>
+  <updated>2020-08-07T15:47:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[用Html实现脚注跳转]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link/"/>
+    <updated>2020-08-07T15:36:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link</id>
+    <content type="html"><![CDATA[<p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1">1</a><a id="1up"></a>
+中间是若干文字</p>
+
+<p>中
+间
+是
+一
+大
+段
+文
+字</p>
+
+<p><a id="1"></a><a href="#1up">1</a>：我的注释</p>
+
+<p>代码如下：</p>
+
+<p>```
+<a href="#1">1</a><a id="1up"></a></p>
+
+<p><a id="1"></a><a href="#1up">1</a>：我的注释</p>
+
+<p>```</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[bow keyboard shortcut for mac]]></title>

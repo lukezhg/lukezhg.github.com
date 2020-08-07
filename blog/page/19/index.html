@@ -9,7 +9,12 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Flash已经慢慢被H5取代，但是最近缺还是用flash编制了一个小游戏，一个太空穿越游戏。 因此，想尝试将其转化为H5，最直接的方法就是手动改，这种方法最有效直接，也最靠谱。 但是本着懒人的精神，google了其他的方法，方法有很多种，比如swiffy就是一种能将swf转化成h5的应用， &hellip;">
+  <meta name="description" content="快捷键： Finder
+显示隐藏文件：shift + command + .
+回到主目录：shift+command+H 需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
+复制：command+c
+粘贴：command+v
+拖拽的功能很厉害。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +71,132 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/09/07/tips-for-mac-users/">Tips for Mac Users</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-09-07T18:10:00+08:00" pubdate data-updated="true">Sep 7<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/09/07/tips-for-mac-users/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>快捷键：</h2>
+
+<p>Finder
+显示隐藏文件：shift + command + .<br/>
+回到主目录：shift+command+H</p>
+
+<p>需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
+复制：command+c
+粘贴：command+v
+拖拽的功能很厉害。</p>
+
+<h2>bash命令：</h2>
+
+<p>复制：cp
+目录：cd
+列表：ls
+移动：mv  源文件 目标文件</p>
+
+<h2>批量重命名：</h2>
+
+<p>Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
+
+<h1>设置文件：</h1>
+
+<pre><code>vi ~/.bash_profile  #编辑设置文件
+ls -l -a   列出指定目录下文件
+           -l 显示文件的详细信息
+           -a 显示目录下所有文件（包括隐藏文件）
+           -d 显示指定目录pwd  显示当前的工作目录的路径
+touch 目录名：查看指定文件，若没有此文件则创建空文件；更改文件时间戳
+chmod 更改指定文件或目录的权限
+</code></pre>
+
+<h2>进程管理</h2>
+
+<pre><code>ps aux 静态查看进程
+top 动态查看进程
+kill 杀死进程
+kill -9 pid       杀死指定进程
+</code></pre>
+
+<h2>其他命令</h2>
+
+<pre><code>man  显示帮助文件（按q退出）
+ifconfig 查看或修改ip地址
+sudo 以root权限执行一次命令
+clear / ctrl+L   清屏
+ctrl+C     无条件终止
+</code></pre>
+
+<h2>文件操作</h2>
+
+<pre><code>rm –rf * 强制删除当前目录下所有文件
+rm -rf        删除文件或目录
+cp -r         复制文件
+mv         移动文件
+stat 文件名  查看文件详细信息
+find  查找文件
+find / -name *       查找文件
+mkdir   创建新目录
+rmdir   只能删除空目录
+</code></pre>
+
+<h2>修改文件：</h2>
+
+<pre><code>echo:输出字符串或变量值
+echo “字符串” &gt; file  #用&gt;时，指定的文件若不存在，创建文件；若存在，覆盖原文件内容
+echo “字符串” &gt;&gt; file #用&gt;&gt;时，指定的文件若不存在，创建文件；若存在，在原文件内容后追加内容
+</code></pre>
+
+<h2>ssh文件同步</h2>
+
+<p>同步到服务器</p>
+
+<pre><code>scp -r localhome/* root@ip:/home/localhome/
+</code></pre>
+
+<p>同步到本地</p>
+
+<pre><code>scp -r root@ip:/home/localhome/* localhome／
+</code></pre>
+
+<h2>多个Python共存</h2>
+
+<pre><code>pyenv versions #参看版本信息
+pyenv global 3.6.3 #切换3
+pyenv global 2.7.13 #切换到2
+source ~/.bash_profile
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -391,68 +522,6 @@ http://127.0.0.1:8000/chat/</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/06/24/summer-camp-plan-for-kids/">Summer Camp Plan for Kids</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-06-24T16:07:00+08:00" pubdate data-updated="true">Jun 24<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/06/24/summer-camp-plan-for-kids/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>袋鼠爸爸夏令营策划</p>
-
-<p>  你是不是因为漫长的暑假孩子没人照顾而苦恼;你是不是因为孩子在家里老是
-看电视而担心;你是不是因为各种良莠不齐的暑假幼托班而不知所措;你是不是期
-望爸爸也能与孩子有更多的互动，从而弥补幼儿园教育相对缺少的阳刚之气。
-  机会来了，袋鼠爸爸夏令营能让这些问题迎刃而解!!</p>
-
-<p>我们的理念:
-1、在安全健康的环境中养成习惯;在游戏中发展社交、认知、运动等能力。 <br/>
-2、让爸爸也参与到教育中来，各展所长，培养宝宝们坚强、勇敢的品格。 <br/>
-3、AA制自助式幼托班，量身定制的活动内容，个性化即时反馈。</p>
-
-<p>费用说明:<br/>
-每个月孩子的基础费用:2400元(主要包括场地费、午餐费、活动材料费、教师聘用等)<br/>
-每个月孩子的暑托费用:3000元(每个月，爸爸可以参与3~4个全天的活动组织，每参加 一次活动，可以领回800元，最多可以将暑托费用全部领回)</p>
-
-<p>活动内容:<br/>
-1、在游戏中认知(语言文字、找规律、讲故事、编程、人工彩虹等) 2、在游戏中社交(丢手绢、击鼓传球、交易谈判、科学商店等) 3、在游戏中运动(老鹰捉小鸡、闯城、各种儿时的经典游戏等) 4、在游戏中表演(唱歌、话剧、舞蹈等)</p>
-
-<p>规则保障:
-每天的活动由至少一名幼教专业老师和一名爸爸两人共同监护，上课期间手机必须关机， 家长有事可以拨打固定电话。每个班级人数7-10人，报满为止。</p>
-
-<p>报名咨询:请扫描二维码，留言“袋鼠爸爸”，添加好友进行交流。
-微信号：光合阳光
-<img src="https://raw.github.com/lukezhg/Freyja/master/guangheyangguang.png" alt="二维码" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/20/">&larr; Older</a>
@@ -472,6 +541,10 @@ http://127.0.0.1:8000/chat/</p>
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/08/07/html-for-sub-link/">用Html实现脚注跳转</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/08/07/performance-assessment/">表现性评价</a>
@@ -509,15 +582,11 @@ http://127.0.0.1:8000/chat/</p>
         <a href="/blog/2020/04/27/the-courage-to-teach/">教学勇气</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/04/07/bee/">bee</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (1)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
@@ -557,6 +626,7 @@ http://127.0.0.1:8000/chat/</p>
 <a style="font-size: 107%" href="/tag/list/">list</a>
 <a style="font-size: 107%" href="/tag/log/">log</a>
 <a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
 <a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
 <a style="font-size: 110%" href="/tag/modeling/">modeling</a>
 <a style="font-size: 90%" href="/tag/msci/">msci</a>
