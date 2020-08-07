@@ -4,7 +4,7 @@
   <title><![CDATA[tags: flash | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/flash/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-08-07T14:56:45+08:00</updated>
+  <updated>2020-08-07T15:12:35+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -22,7 +22,7 @@
 1、首先在html网页中通过object嵌入swf文件</p>
 
 <p>```
-</p>
+{% raw %}</p>
 
 <pre><code>&lt;body&gt;
 &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
@@ -32,7 +32,7 @@
 &lt;/body&gt;
 </code></pre>
 
-<p>
+<p>{% endraw %}
 ```</p>
 
 <p>2、在网页的头部嵌入要调用的函数hello</p>
@@ -122,7 +122,7 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 <p>Html这样写：</p>
 
 <p>```html
-</p>
+{% raw %}</p>
 
 <pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
 &lt;html lang="en"&gt;
@@ -174,7 +174,7 @@ fla文件中，导入了flash.external.ExternalInterface类，它是专门负责
 &lt;/html&gt;
 </code></pre>
 
-<p>
+<p>{% endraw %}
 ```</p>
 
 <p>7、遗留的问题：这样的写法谷歌浏览器没问题，但是火狐浏览器不成功，也就是不能把参数传到swf上。</p>
