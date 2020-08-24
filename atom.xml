@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-08-07T16:12:35+08:00</updated>
+  <updated>2020-08-24T13:45:53+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[期刊的不同境界]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/08/24/the-levels-of-journal/"/>
+    <updated>2020-08-24T12:48:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/08/24/the-levels-of-journal</id>
+    <content type="html"><![CDATA[<p>我们经常提及的都是期刊的等级，鲜少有人关注期刊的人品境界。</p>
+
+<p>如果把期刊比做人，等级相当于社会地位，境界则相当于人品。一个人可以具有很高的社会地位，但其人品不一定高。反之，亦然。</p>
+
+<p>等级可分为C刊、S刊、EI、SCI，那么，境界又如何划分呢？</p>
+
+<p>境界主要看期刊是如何对待作者和读者的。以作者为例，有的投稿时间长，有的短。有的见刊快，有的慢。有的收较高版面费，有的收的少或不收。有的审稿快，有的慢。有的反馈审稿意见，有的稿件收到都懒得回复。还有些杂志专靠收版面费牟利。</p>
+
+<p>根据这些标准，期刊境界可划分如下：</p>
+
+<p>海境：审稿2周；有反馈；见刊快；进度可查询；版面费合理</p>
+
+<p>湖境：审稿1月；有反馈；见刊快；进度可查询；版面费合理</p>
+
+<p>河境：审稿3月；无反馈；见刊慢；进度可查询；版面费合理</p>
+
+<p>溪境：审稿3月；无反馈；见刊慢；进度不可查询；版面费较高</p>
+
+<p>沟境：审稿2周；无反馈；见刊快；进度不可查询；版面费离谱</p>
+
+<p>在教育类期刊里，据我所知，教育研究、开发教育研究、电化教育研究有望冲击一下海境、湖境，其他的最多也就河境，投完就鸟无音信的，有很多重量级期刊也赫然在列。这跟期刊管理有关，跟投稿平台有关，跟服务理念有关，总之，跟其对待作者的态度有关，跟期刊等级无关。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[用Html实现脚注跳转]]></title>
@@ -37,9 +66,9 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[1](#1)&lt;a id="1up"&gt;&lt;/a&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>[1](#1d)&lt;a id="1u"&gt;&lt;/a&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;a id="1"&gt;&lt;/a&gt;[1](#1up)：我的注释
+</span><span class='line'>[1](#1u)&lt;a id="1d"&gt;&lt;/a&gt;：我的注释
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
@@ -937,25 +966,6 @@ Codewar：<a href="https://www.codewars.com/">https://www.codewars.com/</a>
 <p>这是会上瘾的！！</p>
 
 <p>但也这是实实在在的生命拓展和自我解放！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[人生一个目标足以]]></title>
-    <link href="http://zhangchunlei.com/blog/2019/12/30/one-goal-one-life/"/>
-    <updated>2019-12-30T11:59:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2019/12/30/one-goal-one-life</id>
-    <content type="html"><![CDATA[<p>有时思考人生的意义何在？也许只有真的偷闲的时候，才会想这么严肃的问题。但是，问题就是问题，不容回避。但即便没想不清楚，还是的继续活下去，因为万一那天心里有了那个答案呢。所以想了还是比没想好的。这样看来，对于这个问题，寻找意义本身也是一种意义。</p>
-
-<p>人生的意义就在于追寻本身。</p>
-
-<p>虽然你可以很多梦想和愿望，但是对于人生目标，一个足矣。</p>
-
-<p>小故事：手表定律</p>
-
-<p>森林里生活着一群猴子，日出而作，日落而息，日子过得平淡而幸福。 直道一天猴子猛可捡到一块手表。它很快就搞清了手表的用途，成了整个猴群 的明星。猴子们都渐渐习惯向猛可请 教确切的时间，尤其在阴雨天的时候。 整个猴群的作息时间也由猛可来规定。猛可逐渐建立起威望，最后当上了猴王。</p>
-
-<p>做了猴王的猛可认识到是手表给自己带来了机遇与好运，于是每天加倍时 间地在森林里寻找，希望能够得到更多的手表。功夫不负有心人，猛可果然相继 得到了第二、第三块手表。 但出乎猛可的意料，得到了三块手 表反而有了新麻烦，因为三块手表显示 的时间都不相同，猛可也不能确定哪块手表上显示的时间是正确的。因此，当 猴子来询问时间时，猛可总是支支吾吾 回答不上来。于是猛可的威望大降，整 个猴群的作息时间也变得一塌糊涂。 只有一块手表，可以知道是几点， 拥有得更多，反而会失去对准确时间的信息，这就是手表定律。</p>
 ]]></content>
   </entry>
   

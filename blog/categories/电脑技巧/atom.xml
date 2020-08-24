@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 电脑技巧 | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/blog/categories/电脑技巧/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-08-07T16:12:35+08:00</updated>
+  <updated>2020-08-24T13:45:53+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -35,9 +35,9 @@
 <p>代码如下：</p>
 
 <p>```
-<a href="#1">1</a><a id="1up"></a></p>
+<a href="#1d">1</a><a id="1u"></a></p>
 
-<p><a id="1"></a><a href="#1up">1</a>：我的注释</p>
+<p><a href="#1u">1</a><a id="1d"></a>：我的注释</p>
 
 <p>```</p>
 ]]></content>
