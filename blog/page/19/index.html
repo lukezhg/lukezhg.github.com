@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="回想一下你去过的地方、见过的人、看过的书，大多可能都不记得了，但是有些却印象深刻，想忘也忘不了。 画家：艾琳·汉森 什么是印象？ 百度词条这样描述： 印象是个体（认知主体）头脑中有关认知客体的形象。个体接触新的社会情境时，总是按照以往经验，将情境中的人或事进行归类，明确它对自己的意义， &hellip;">
+  <meta name="description" content="ChatterBot Django是基于Python和Django框架构建的一个聊天程序。 其使用的基本方法可以查看这个文档。 根据已有的对话进行训练（其中对话数据储存在chatterbot_corpus文件夹中） python manage.py train 打开服务器(访问[http:// &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,106 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/10/21/build-a-chat-bot-with-chatterbot-django/">Build a Chat Bot With ChatterBot Django</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-10-21T22:27:00+08:00" pubdate data-updated="true">Oct 21<span>st</span>, 2017</time>
+        
+         | <a href="/blog/2017/10/21/build-a-chat-bot-with-chatterbot-django/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ChatterBot Django是基于Python和Django框架构建的一个聊天程序。</p>
+
+<p>其使用的基本方法可以查看<a href="http://chatterbot.readthedocs.io/en/stable/examples.html">这个文档</a>。</p>
+
+<p>根据已有的对话进行训练（其中对话数据储存在chatterbot_corpus文件夹中）</p>
+
+<pre><code>python manage.py train
+</code></pre>
+
+<p>打开服务器(访问[http://127.0.0.1:8000]浏览)</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>如果修改数据库文件的话，比如删除db.sqlite3文件，就需要运行下面的命令来从新配置框架。</p>
+
+<pre><code>python manage.py migrate
+</code></pre>
+
+<p>修改settings.py文件。<br/>
+<code></p>
+
+<pre><code># ChatterBot settings
+CHATTERBOT = {
+'name': 'Django ChatterBot Example',
+'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
+'training_data': [
+     'chatterbot.corpus.english.greetings',#set the traing data
+     'chatterbot.corpus.custom.myown',
+     'chatterbot.corpus.swedish.food',
+],
+'django_app_name': 'django_chatterbot'
+}
+</code></pre>
+
+<p></code>></p>
+
+<p>修改chatterbot_corpus文件夹中训练数据。<br/>
+训练数据格式如下
+<code></p>
+
+<pre><code>categories:
+- greetings
+conversations:
+- - Hello
+  - Hi
+- - Hi
+  - Hello
+- - Greetings!
+  - Hello
+- - Hello
+  - Greetings!
+- - Hi, How is it going?
+  - Good
+- - Hi, How is it going?
+  - Fine
+- - Hi, How is it going?
+  - Okay
+</code></pre>
+
+<p></code></p>
+
+<p>可以尝试利用英语8000句来训练。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -431,61 +531,6 @@ alias rake='bundle exec rake'
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/09/04/spcae-craft-game/">Space Craft Game</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2017-09-04T15:08:00+08:00" pubdate data-updated="true">Sep 4<span>th</span>, 2017</time>
-        
-         | <a href="/blog/2017/09/04/spcae-craft-game/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>object</h3>
-
-<object 
-codebase="http://download.macromedia.com/pub/shockwave/
-cabs/flash/swflash.cab#version=6,0,40,0" 
-width="550" height="400" 
- id="mymoviename"> 
-<param name="movie"  value="https://raw.github.com/lukezhg/Freyja/master/space-craft.swf" /> 
-<param name="quality" value="high" /> 
-<param name="bgcolor" value="#ffffff" /> 
-
-<embed src="https://raw.github.com/lukezhg/Freyja/master/space-craft.swf" quality="high" bgcolor="#ffffff"
-width="550" height="400" 
-name="mymoviename" align="" type="application/x-shockwave-flash" 
-pluginspage="http://www.macromedia.com/go/getflashplayer"> 
-</embed> 
-</object>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/20/">&larr; Older</a>
@@ -505,6 +550,10 @@ pluginspage="http://www.macromedia.com/go/getflashplayer">
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/08/27/child-and-media/">幼儿成长与媒体</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/08/26/how-do-you-distinguish-beans-from-soybeans/">你如何区分生根的是黄豆还是绿豆</a>
@@ -542,15 +591,11 @@ pluginspage="http://www.macromedia.com/go/getflashplayer">
         <a href="/blog/2020/06/26/hierarchical-linear-models/">Hierarchical Linear Models</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/05/29/knowledge-transfer-methods/">知识传递的方法</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (6)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (4)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
