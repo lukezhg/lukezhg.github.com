@@ -9,11 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="Action Script 3.0 简明手册
-在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。
-变量与常量
-变量有不同的类型，一个变量由变量名和值构成。 var value2:Number = 17;
-const SALES_TAX_RATE: &hellip;">
+  <meta name="description" content="我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。 Page build failure The page build failed with the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +66,77 @@ const SALES_TAX_RATE: &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/12/01/modify-a-record-of-my-website-dns/">Modify a Record of My Website DNS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-01T21:28:00+08:00" pubdate data-updated="true">Dec 1<span>st</span>, 2014</time>
+        
+         | <a href="/blog/2014/12/01/modify-a-record-of-my-website-dns/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
+
+<h3>Page build failure</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>The custom domain for your GitHub Pages site is pointed at an outdated IP address. You must take immediate corrective action to ensure that your site remains available after December 1st, 2014. Additional details can be found at https://github.com/blog/1917-github-pages-legacy-ip-deprecation. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages.</p>
+
+<h3>How do I know if I&#8217;m affected?</h3>
+
+<p><a href="https://github.com/blog/1917-github-pages-legacy-ip-deprecation">GitHub Pages Legacy IP Deprecation · GitHub</a><br/>
+The following helps!</p>
+
+<pre><code>On a Windows machine, you'll want to run nslookup your-domain.com and ensure that the output does not include any of the deprecated IP addresses (207.97.227.XXX, 204.232.175.XX, or 199.27.73.XXX).
+If you're on a Mac or Linux machine, simply paste this command into a terminal window, replacing your-domain.com with, your site's domain. dig your-domain.com | grep -E '(207.97.227.245|204.232.175.78|199.27.73.133)' || echo "OK". If you see the word "OK", you're all set.
+</code></pre>
+
+<h3>Configuring an A record with your DNS provider</h3>
+
+<p><a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Tips for configuring an A record with your DNS provider - User Documentation</a></p>
+
+<p>关键信息<br/>
+With your DNS provider, create A records that resolve to the following IP addresses:</p>
+
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre>
+
+<h3>修改DNS的A记录</h3>
+
+<p>我的域名 - DNSPod<br/>
+https://www.dnspod.cn/Domain#zhangchunlei.com</p>
+
+<p>按照新的IP地址添加两条新的A记录，删除原来的A记录即可。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -769,76 +836,6 @@ flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Fla
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/27/how-to-observe-a-lesson/">如何听课</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-27T17:50:00+08:00" pubdate data-updated="true">Oct 27<span>th</span>, 2014</time>
-        
-         | <a href="/blog/2014/10/27/how-to-observe-a-lesson/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>问题的缘起</h2>
-
-<p>一次和师范生聊天，聊起了听课，我问：你们见习了几个星期，都在听课的过程中学到了什么？出乎我的意料，从发言中我感觉到同学们似乎并不知道如何听课？他们关注的是上课的教师是否有激情，学生是否活跃或者睡觉。但是，为什么有的课上的好，有的课上的不好，却说不太好。一句话，同学们还是停留在感性的观察，缺乏理性的分析和思考，缺乏对课堂有针对性的观察和琢磨，这样学生很难充有更多的收获，而使得听课成为走过场，走过了就忘记了，没留下半点踪影。</p>
-
-<h2>如何听课</h2>
-
-<p>那么听课到底怎么听呢？用耳朵听。当然还还要用眼睛看。更重要的是要用手记录和用大脑去思考。有思考才会有学习，有思考才会有针对性的听和看，才会带着问题去听，带着目的去听。那么，究竟应该听什么，看什么，记什么，思考什么呢？</p>
-
-<p>在我看来教学就是教师帮助学生建立连接的过程。一节课有若干个内容，教师需要想办法把这些内容首先联系起来，这样就有了问题串或者教学主线。接下来还要想方设法把每个内容与学生联系起来，联系学生已有的知识、生活经验以及兴趣特点，尝试把每个内容用学生听得懂的方式表述，用学生看的懂的方式表征，用学生做得会的方式设计活动。这样教师就把学生与内容联系起来了，学生也能将自己的已有知识与新知识联系起来，这样才能学会。这也许就是我的教学观，它反过来指引我如何观摩课堂。</p>
-
-<p>听同样一节课，每个人的收获都是不一样的，这取决于不同人的思维框架和听课目的。对于师范生来讲，听课主要是一个学习的过程，而不是对足主讲教师评头论足的过程，因此师范生听课是通过别人的直接经验来学习的过程。所以应该时时刻刻都思考，这个老师要完成什么样的任务？他是如何完成的？遇到了什么问题？他是如何解决的？效果如何？为什么会有这样的效果？如果换成是我会怎么办？该主讲教师哪些设问、例子、比喻、活动设计是应该学习和牢记的？哪些行为、讲解、应对是要避免的。这样听课，才能真正进入角色，而不是做一个不思考的看客。</p>
-
-<p>一节课，虽然仅仅有40分钟，但是有研究表明，教师会在这短短的时间里做出上百个决策，因此对于听课者也往往只能从某一两个方面去观摩、记录和分析，而不是观察所有的细节。那么可以选择哪些角度呢？</p>
-
-<p>（1）师生对话<br/>
-如果有录音的话，可以分析教师讲了多上时间，学生发言占据多长时间。教师的设问，是自问自答还是学生回答，是封闭性问题还是开放性问题，是教师最后给出答案还是学生讨论或辩论得出答案，教师给学生的反馈是具体的还是抽象的，是鼓励的还是批评的。教师的语言是否精炼、清晰、科学准确、鲜活。等等。</p>
-
-<p>（2）师生互动方式和范围<br/>
-教师的活动范围是怎样的？教师经常与哪些学生互动？教师与学生的互动是否有针对性和和合理？</p>
-
-<p>（3）问题串设计和内容过度<br/>
-这堂课的逻辑线索是什么？教师是如何通过问题串或者比喻把内容穿起来的？过度的是否自然而然？设计的问题是否是本节内容的核心内容？师生花费在不同问题的时间是否合理？</p>
-
-<p>（4）学生的注意力和互动情况<br/>
-有多少学生与教师有目光交流？有多少学生不专心或者干别的？哪些学生的行为可能会影响其他学生的学习？教师是如何应对这些情况的？教师是否设计了学生与学生之间的互动？是基于什么样的任务或者情境？是否合理？哪些互动是教师未设计但却发生了？应该如何利用这样的互动？</p>
-
-<p>（5）教师对课堂氛围的调节<br/>
-在课堂的开头、中间、结尾教师都是如何调节学习氛围的？使用了哪些技巧？课堂是放松的还是紧张的？是活泼的还是压抑的？是否有师生共同的欢笑？要知道，放松状态下的警觉是学习发生的最好契机。</p>
-
-<p>（6）教师的肢体语言<br/>
-不同的教师，其教学风格各异。有的教师特别善用肢体语言，而且是自然的表露，一个轻抚又或者是一个点头微笑，让人觉得亲切而尊敬。除了基本的指示等，还有的老师会巧妙的借用自己身体辅助学生的理解。比如讲到主动运输的时候，一位老教师把自己类别为载体，把过道比作细胞膜，然后就开始了“主动运输”货物的过程，铅笔、橡皮、小刀，不同的手型运输不同的货物，一个一个通过教师的运输到达了另一侧。快速的运转工作让教师自己也出了汗，教师总结到：“这的确是一个耗能的过程，这么一会我汗都出来了”。</p>
-
-<p>听课其实还有很多方面可以关注，这里不可能一一列举。无论是对于听课者还是授课者而言，一般只会选择性的着重分析和关注其中的一两个方面，新教师作为听课者，其关注和分析是为了学习、模仿、思考。如果新教师作为授课者，其实也可以有意识的选择自己急需改善的方面让研究者或者经验教师进行系统的记录和分析，从而基于数据和事实，更快更好的诊断和解决自己在教学上遇到的问题，快速的成长为专家教师。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/36/">&larr; Older</a>
@@ -858,6 +855,10 @@ flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Fla
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2020/10/18/knowledge-learning-and-innovation/">知识效率与创新</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/08/27/child-and-media/">幼儿成长与媒体</a>
@@ -893,10 +894,6 @@ flash actionScript3 处理xml 教程</em>知行网: http://www.zhixing123.cn/Fla
     
       <li class="post">
         <a href="/blog/2020/07/07/impostor-syndrome/">自我否定</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/26/hierarchical-linear-models/">Hierarchical Linear Models</a>
       </li>
     
   </ul>
