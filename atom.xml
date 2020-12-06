@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-12-06T21:26:22+08:00</updated>
+  <updated>2020-12-06T23:48:30+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -26,13 +26,13 @@ https://www.jianshu.com/p/e18fb2166178</p>
 
 <p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
 
-<p><code>
+<p><code><pre>
 cd /webdev/chatterbot
 python manage.py runserver
 alice: http://127.0.0.1:8000/chat/
 ctrl + C 退出程序
 url.py 可以修改响应
-</code></p>
+</pre></code></p>
 
 <p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
 如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
@@ -47,7 +47,7 @@ docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
 nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
 
 <p>简明教程：<br/>
-<code>
+<code><pre>
 docker search nginx</p>
 
 <h1>查找 Docker Hub 上的 nginx 镜像</h1>
@@ -78,10 +78,10 @@ docker search nginx</p>
 
 <h1>测试页面</h1>
 
-<p></code>></p>
+<p></pre>></code>></p>
 
 <p>常用docker命令：
-<code>
+<code><pre>
 docker ps -a
 docker pull centos
 docker run -itd centos /bin/bash
@@ -95,9 +95,9 @@ httpd -k start
 curl localhost:80
 ctrl+d
 curl localhost:8080
-</code></p>
+</pre></code></p>
 
-<p><code>
+<p><code><pre>
 docker pull centos
 docker run -itd centos /bin/bash
 docker exec -it (输入容器ID) bash
@@ -105,39 +105,49 @@ httpd -k start
 docker commit containerid chatbot/live
 docker run -d -p 8000:80 chatbot/live /bin/bash
 curl localhost:8000
-</code></p>
+</pre></code></p>
 
 <h2>appche</h2>
 
 <p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
 
-<p>1.查看版本
-apache -v
+<p>1.查看版本</p>
+
+<pre><code>apache -v
 httpd -v
-2.开启apche服务：
-apachectl start
+</code></pre>
+
+<p>2.开启apche服务：</p>
+
+<pre><code>apachectl start 
 apachectl stop
-3.启动和关闭httpd的命令
-systemctl start httpd
+</code></pre>
+
+<p>3.启动和关闭httpd的命令</p>
+
+<pre><code>systemctl start httpd
 systemctl stop httpd
-systemctl restart httpd</p>
+systemctl restart httpd
+</code></pre>
 
 <p>网页位置：/var/www/html/</p>
 
 <h2>编辑 nginx配置文件</h2>
 
-<p>vi /etc/nginx/nginx.conf</p>
+<pre><code>vi /etc/nginx/nginx.conf
 
-<p>nginx -t                    # 查看nginx状态
+nginx -t                    # 查看nginx状态
 nginx -s reload            # 重新载入配置文件
 nginx -s reopen           # 重启 Nginx
-nginx -s stop               # 停止 Nginx</p>
+nginx -s stop               # 停止 Nginx
+</code></pre>
 
 <h2>控制防火墙</h2>
 
-<p>systemctl stop firewalld<br/>
-systemctl start firewalld<br/>
-systemctl mask firewalld</p>
+<pre><code>systemctl stop firewalld  
+systemctl start firewalld  
+systemctl mask firewalld  
+</code></pre>
 
 <p>添加端口<br/>
 firewall-cmd &#8211;zone=public &#8211;add-port=80/tcp &#8211;permanent  （&#8211;permanent永久生效，没有此参数重启后失效）</p>
