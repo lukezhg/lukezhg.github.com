@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-12-05T15:34:48+08:00</updated>
+  <updated>2020-12-06T21:26:22+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,152 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[用docker在服务器上布置虚拟环境]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/06/docker-the-tool-to-setup-your-server/"/>
+    <updated>2020-12-06T12:49:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/06/docker-the-tool-to-setup-your-server</id>
+    <content type="html"><![CDATA[<p>最近想在服务器上布置一个聊天机器人。
+简书上有教程：</p>
+
+<p>https://www.jianshu.com/p/5997f73eccb9<br/>
+https://www.jianshu.com/p/e18fb2166178</p>
+
+<p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
+
+<p><code>
+cd /webdev/chatterbot
+python manage.py runserver
+alice: http://127.0.0.1:8000/chat/
+ctrl + C 退出程序
+url.py 可以修改响应
+</code></p>
+
+<p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
+如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
+docker提供了很好的解决方案。</p>
+
+<p>docker的用途在于，它可以在服务器上建立多个虚拟环境，而在这个虚拟环境中安装的软件环境，并不会相互影响，比如chatterbot这个项目需要python3，但是其他应用可能需要的是python2.7，两个应用无法在同一个环境下运行。实际的情况更复杂，因为依赖的环境不仅是python。</p>
+
+<p>如何使用docker，网上有很多教程，比如：<br/>
+详细教程：https://blog.csdn.net/baidu_37832943/article/details/105218649<br/>
+阮一峰提供的教程： <br/>
+docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
+nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
+
+<p>简明教程：<br/>
+<code>
+docker search nginx</p>
+
+<h1>查找 Docker Hub 上的 nginx 镜像</h1>
+
+<p>docker pull nginx</p>
+
+<h1>拉取官方的Nginx镜像</h1>
+
+<p>docker images nginx</p>
+
+<h1>查找 REPOSITORY 为 nginx 的镜像</h1>
+
+<h1>基于已有镜像创建并运行一个容器并映射到特定端口</h1>
+
+<p>docker run --rm --name nginx-test -p 8080:80 -d nginx</p>
+
+<pre><code>  --rm：容器终止运行后，自动删除容器文件。
+  --name nginx-test：将容器命名为nginx-test
+  -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
+  -d：容器启动后，在后台运行
+</code></pre>
+
+<p>docker container ps</p>
+
+<h1>查看启动的docker容器</h1>
+
+<p>curl localhost:8080</p>
+
+<h1>测试页面</h1>
+
+<p></code>></p>
+
+<p>常用docker命令：
+<code>
+docker ps -a
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+yum install -y httpd
+ctrl+d
+docker commit -m “install httpd” -a “keyuan_test” (输入容器ID) 新的镜像名
+docker run -itd -p 8080:80 新的镜像名 /bin/bash
+docker exec -it 新的镜像产生的容器ID bash
+httpd -k start
+curl localhost:80
+ctrl+d
+curl localhost:8080
+</code></p>
+
+<p><code>
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+httpd -k start
+docker commit containerid chatbot/live
+docker run -d -p 8000:80 chatbot/live /bin/bash
+curl localhost:8000
+</code></p>
+
+<h2>appche</h2>
+
+<p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
+
+<p>1.查看版本
+apache -v
+httpd -v
+2.开启apche服务：
+apachectl start
+apachectl stop
+3.启动和关闭httpd的命令
+systemctl start httpd
+systemctl stop httpd
+systemctl restart httpd</p>
+
+<p>网页位置：/var/www/html/</p>
+
+<h2>编辑 nginx配置文件</h2>
+
+<p>vi /etc/nginx/nginx.conf</p>
+
+<p>nginx -t                    # 查看nginx状态
+nginx -s reload            # 重新载入配置文件
+nginx -s reopen           # 重启 Nginx
+nginx -s stop               # 停止 Nginx</p>
+
+<h2>控制防火墙</h2>
+
+<p>systemctl stop firewalld<br/>
+systemctl start firewalld<br/>
+systemctl mask firewalld</p>
+
+<p>添加端口<br/>
+firewall-cmd &#8211;zone=public &#8211;add-port=80/tcp &#8211;permanent  （&#8211;permanent永久生效，没有此参数重启后失效）</p>
+
+<p>firewall-cmd &#8211;zone=public &#8211;add-port=1000-2000/tcp &#8211;permanent</p>
+
+<p>重新载入<br/>
+firewall-cmd &#8211;reload<br/>
+查看<br/>
+firewall-cmd &#8211;zone=public &#8211;query-port=80/tcp<br/>
+删除<br/>
+firewall-cmd &#8211;zone=public &#8211;remove-port=80/tcp &#8211;permanent</p>
+
+<h2>阿里服务器端口控制</h2>
+
+<p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
+
+<p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[研究报告表达的神话--逻辑谬误]]></title>
@@ -873,35 +1019,6 @@ learning.</p>
 学习的最大成就是获得自我解放，把自己从自我中解放出来，从过去经验和未来焦虑中解放出来，从当下周遭事物和嘈杂声中解放出来。解放不是逃离，也不是独立，而是束缚的解脱，窗口的打开，沟通的建立。</p>
 
 <p>以上最大其实是我眼中最大，非真有最大。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[学习任务游戏化设计3原则]]></title>
-    <link href="http://zhangchunlei.com/blog/2020/03/07/educational-game-design/"/>
-    <updated>2020-03-07T22:15:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2020/03/07/educational-game-design</id>
-    <content type="html"><![CDATA[<p>受（新型冠状病毒）疫情影响，2亿中小学生居家在线学习。没了老师的督导和与同伴一起学习的氛围，孩子们能否保质保量的完成学习任务、是否愿意学、坚持学，成为在线学习的关键。</p>
-
-<p>在学校的课堂环境下，学生是有老师监督的，必须听讲和完成作业。当在线居家学习成为常态，学生失去了这种约束之后，教师必须要思考如何让学习任务本身吸引住学生。其中一种有效的策略就是对学习任务进行游戏化设计。那么，如何做呢？这里我分享3个原则。</p>
-
-<p>原则1:简单。<br/>
-每个学习任务都要简单，要能够给学生带来有趣的学习体验，学生要一看就会，一看就知道如何玩。所以规则一定要简单到极致，要尽可能借用学习者已有的经验，为学生设计一个易用环境，让他想错也难。什么叫做，简单到极致，就像刷抖音一样，你说要做的就是那么一滑。什么是易用环境，就是容许学生走错，但是一旦走错马上就把你拉回来。比如你买了一部智能手机，你打开包装玩两三分钟就会用了。为什么这么容易学会，因为设计者充分考虑和借用了你原有的生活经验，比如开机屏幕上显示一个拉锁，你自然就会用手指按住一滑。</p>
-
-<p>原则2:满足。<br/>
-完成学习任务一定要能给学生某种满足。这种满足可以是虚拟激励，比如小红星、勋章，也可以是实实在在的奖励，比如奖励一张帖子。可以是智力上的满足，解决了一个难题，获得了成就感。也可以是情感上的满足，比如跟朋友建立了更默契的关系，赢得同伴的尊敬和认同。在完成任务的过程中，学些者要能不断感受愉悦、快乐、好奇心得到满足。合适的激励机制可以让学生乐此不疲，持续不断有动力玩下去。随机和意外则是用来满足好奇心的。过去我们重视智力上的满足，其实情感也特别重要。不仅要让学生有智力上的喜悦，更要有从内到外的感动。</p>
-
-<p>原则3:阶梯。<br/>
-学习任务要遵循先易后难，循序渐进的设计原则，也就是要恰当的阶梯。教师需要具备两方面的能力，第一是要会设计阶梯性学习任务，第二是要能为学生匹配合适难度的任务挑战。就要好像要学生登高，如果直接让他登上高墙，他只能是撞墙，头破血流。但是如果你给他一个梯子，他就能一节一节爬上去。但是，如果仅此而已，学生也不会感兴趣。但是如果在高墙另外一边放一个光滑的斜坡，他可以开心的滑下去，那他就乐此不疲了。因为，这就是幼儿园最受欢迎的滑滑梯呀。我们设计游戏化的学习任务，就是要设计出这样的滑滑梯。</p>
-
-<p>思考题：<br/>
-如果你要设计一款教育游戏，有两种方案：<br/>
-A 设置15关，每关平均用时2分钟； <br/>
-B 设置5关，每关平均用时6分钟。<br/>
-你会选择哪一个方案？你依据的原则是？</p>
-
-<p>小结：今天我们讲了学习任务游戏化设计的三原则：简单、满足、循序渐进。<br/>
-希望我们老师能设计出孩子有趣、有料、有梯度学习任务，让学习即便没有老师监督也能自主发生。</p>
 ]]></content>
   </entry>
   
