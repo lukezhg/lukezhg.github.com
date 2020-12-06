@@ -4,7 +4,7 @@
   <title><![CDATA[tags: chatterbot | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/chatterbot/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-12-06T23:48:30+08:00</updated>
+  <updated>2020-12-06T23:57:39+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -26,13 +26,12 @@ https://www.jianshu.com/p/e18fb2166178</p>
 
 <p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
 
-<p><code><pre>
-cd /webdev/chatterbot
+<pre><code>cd /webdev/chatterbot
 python manage.py runserver
 alice: http://127.0.0.1:8000/chat/
 ctrl + C 退出程序
 url.py 可以修改响应
-</pre></code></p>
+</code></pre>
 
 <p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
 如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
@@ -46,43 +45,32 @@ docker提供了很好的解决方案。</p>
 docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
 nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
 
-<p>简明教程：<br/>
-<code><pre>
-docker search nginx</p>
+<p>简明教程：</p>
 
-<h1>查找 Docker Hub 上的 nginx 镜像</h1>
+<pre><code>docker search nginx 
+#查找 Docker Hub 上的 nginx 镜像
 
-<p>docker pull nginx</p>
+docker pull nginx 
+#拉取官方的Nginx镜像
 
-<h1>拉取官方的Nginx镜像</h1>
+docker images nginx 
+#查找 REPOSITORY 为 nginx 的镜像
 
-<p>docker images nginx</p>
-
-<h1>查找 REPOSITORY 为 nginx 的镜像</h1>
-
-<h1>基于已有镜像创建并运行一个容器并映射到特定端口</h1>
-
-<p>docker run --rm --name nginx-test -p 8080:80 -d nginx</p>
-
-<pre><code>  --rm：容器终止运行后，自动删除容器文件。
-  --name nginx-test：将容器命名为nginx-test
-  -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
-  -d：容器启动后，在后台运行
+#基于已有镜像创建并运行一个容器并映射到特定端口
+docker run --rm --name nginx-test -p 8080:80 -d nginx
+      --rm：容器终止运行后，自动删除容器文件。
+      --name nginx-test：将容器命名为nginx-test
+      -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
+      -d：容器启动后，在后台运行
+docker container ps 
+#查看启动的docker容器
+curl localhost:8080 
+#测试页面
 </code></pre>
 
-<p>docker container ps</p>
+<p>常用docker命令：</p>
 
-<h1>查看启动的docker容器</h1>
-
-<p>curl localhost:8080</p>
-
-<h1>测试页面</h1>
-
-<p></pre>></code>></p>
-
-<p>常用docker命令：
-<code><pre>
-docker ps -a
+<pre><code>docker ps -a
 docker pull centos
 docker run -itd centos /bin/bash
 docker exec -it (输入容器ID) bash
@@ -95,9 +83,9 @@ httpd -k start
 curl localhost:80
 ctrl+d
 curl localhost:8080
-</pre></code></p>
 
-<p><code><pre>
+
+
 docker pull centos
 docker run -itd centos /bin/bash
 docker exec -it (输入容器ID) bash
@@ -105,7 +93,7 @@ httpd -k start
 docker commit containerid chatbot/live
 docker run -d -p 8000:80 chatbot/live /bin/bash
 curl localhost:8000
-</pre></code></p>
+</code></pre>
 
 <h2>appche</h2>
 
@@ -147,19 +135,17 @@ nginx -s stop               # 停止 Nginx
 <pre><code>systemctl stop firewalld  
 systemctl start firewalld  
 systemctl mask firewalld  
+
+添加端口  
+firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效） 
+firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent  
+重新载入  
+firewall-cmd --reload  
+查看  
+firewall-cmd --zone=public --query-port=80/tcp  
+删除  
+firewall-cmd --zone=public --remove-port=80/tcp --permanent  
 </code></pre>
-
-<p>添加端口<br/>
-firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效）</p>
-
-<p>firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent</p>
-
-<p>重新载入<br/>
-firewall-cmd --reload<br/>
-查看<br/>
-firewall-cmd --zone=public --query-port=80/tcp<br/>
-删除<br/>
-firewall-cmd --zone=public --remove-port=80/tcp --permanent</p>
 
 <h2>阿里服务器端口控制</h2>
 
