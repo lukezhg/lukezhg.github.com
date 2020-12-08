@@ -16,6 +16,13 @@ ChatterBot Django是基于Python和Django框架构建的一个聊天程序。
 打开服务器(访问[http://127.0.0.1:8000]浏览)  
     python manage.py runserver
 
+<code>
+目录：/webdev/chatterbot  
+alice: http://127.0.0.1:8000/chat/  
+ctrl + C 退出程序  
+url.py 可以修改响应  
+</code>
+
 如果修改数据库文件的话，比如删除db.sqlite3文件，就需要运行下面的命令来从新配置框架。  
     python manage.py migrate
 
@@ -58,4 +65,13 @@ ChatterBot Django是基于Python和Django框架构建的一个聊天程序。
       - Okay
 </code>
 
+###接下来可以做的  
+
 可以尝试利用英语8000句来训练。  
+
+如何为其添加三元组知识图谱？    
+
+可以用她来做什么？练英语；学编程；或者其他。
+
+如何把它迁移到平台上？
+

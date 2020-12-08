@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Redifine Education"
+title: "教育是什么"
 date: 2019-12-25 11:53
 comments: true
 categories: 
