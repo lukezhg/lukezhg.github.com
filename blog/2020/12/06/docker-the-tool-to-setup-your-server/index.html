@@ -230,6 +230,19 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
 <p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
 
 <p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
+
+<h2>列出所有端口</h2>
+
+<p>netstat -ntlp</p>
+
+<p>https://www.cnblogs.com/xqzt/p/4919191.html</p>
+
+<h2>使用docker的方法</h2>
+
+<p>将需要改变的文件映射到主机<br/>
+把所有不变的环境变为运行的容器<br/>
+将容器运行起来之后，就可以ctrl+D退出<br/>
+应用就跑起来了</p>
 </div>
 
 
@@ -315,6 +328,8 @@ var jiathis_config = {data_track_clickback:'true'};
       
         <a class="basic-alignment left" href="/blog/2020/11/02/wrong-logic-of-academic-presentation/" title="Previous Post: 研究报告表达的神话--逻辑谬误">&laquo; 研究报告表达的神话--逻辑谬误</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2020/12/07/aiva-chatbot-with-neo4j-brain/" title="Next Post: aiva chatbot with neo4j brain">aiva chatbot with neo4j brain &raquo;</a>
       
     </p>
   </footer>
@@ -434,6 +449,10 @@ var jiathis_config = {data_track_clickback:'true'};
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2020/12/07/aiva-chatbot-with-neo4j-brain/">aiva chatbot with neo4j brain</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/">用docker在服务器上布置虚拟环境</a>
       </li>
     
@@ -467,10 +486,6 @@ var jiathis_config = {data_track_clickback:'true'};
     
       <li class="post">
         <a href="/blog/2020/08/07/performance-assessment/">表现性评价</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/01/back-to-basics/">教育需要返璞归真</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[tags: docker | Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/tag/docker/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2020-12-06T23:57:39+08:00</updated>
+  <updated>2020-12-12T12:54:19+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -152,6 +152,19 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
 <p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
 
 <p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
+
+<h2>列出所有端口</h2>
+
+<p>netstat -ntlp</p>
+
+<p>https://www.cnblogs.com/xqzt/p/4919191.html</p>
+
+<h2>使用docker的方法</h2>
+
+<p>将需要改变的文件映射到主机<br/>
+把所有不变的环境变为运行的容器<br/>
+将容器运行起来之后，就可以ctrl+D退出<br/>
+应用就跑起来了</p>
 ]]></content>
   </entry>
   
