@@ -9,13 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="郑钧的调调~ 爱在你身边
-等待你呼唤
-默默无闻
-将你陪伴 心中有个ta
-ta在你身边
-你，
-却视而不见 ">
+  <meta name="description" content="Alternative way to install ruby, by RVM,（ highly recommended）: bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +72,53 @@ ta在你身边
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2020/12/16/ruby/">Ruby</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2020-12-16T08:18:00+08:00" pubdate data-updated="true">Dec 16<span>th</span>, 2020</time>
+        
+         | <a href="/blog/2020/12/16/ruby/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Alternative way to install ruby, by RVM,（ highly recommended）:</p>
+
+<pre><code> bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
+ source ~/.bash_profile
+ rvm install 1.9.2
+ rvm use 1.9.2 --default
+</code></pre>
+
+<p>参考：https://blog.csdn.net/JimyJimang/article/details/7195388</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2020/12/16/love-is-beside-you/">爱在你身边</a></h1>
     
     
@@ -127,7 +168,7 @@ ta在你身边
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2020/12/12/knowledge-graph/">Knowledge Graph</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/12/12/knowledge-graph/">什么是知识图谱</a></h1>
     
     
       <p class="meta">
@@ -152,7 +193,73 @@ ta在你身边
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h3>什么是知识图谱？</h3>
+
+<p>概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。</p>
+
+<p>知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。</p>
+
+<p>知识图谱按照应用情境和范围的不同，可以分为通用指示图图谱GKG和领域知识图谱DKG，分别适应于一般性人机交流和特定领域的人机交流。</p>
+
+<h3>知识图谱的构成</h3>
+
+<p>构成知识图谱的基本单位是三元组。三元组由实体-连接-实体构成，记录了网络中实体与实体的关系，它是本质上就是一条知识连接，一个陈述句，一个命题。命题是可以判断真假的陈述句。命题也是构成知识系统的
+基本单位。因此，理论上所以知识都可以表征为命题，继而表征为知识图谱中的三元组。<br/>
+举一个生物学的例子，比如：</p>
+
+<pre><code>真核细胞-是-细胞
+真核细胞-有-细胞核
+</code></pre>
+
+<p>用这2个三元组就描述了关于真核细胞的2个命题。</p>
+
+<h3>三元组的不同形式</h3>
+
+<p>理论上，我们可以将任何一个命题表述为三元组，这就需要三元组具有不同的形式，以适应不同的句子。比如：</p>
+
+<pre><code>实体-状态-1：我笑了
+实体-关系-实体：我吃饭
+实体-关系-实体（状态）：我找到了一家高档的餐馆
+三元组-关系-实体：我与朋友的关系不是很和睦
+实体-关系-三元组：他不同意我与玛丽结婚
+三元组-关系-三元组：他对待玛丽就像父亲对待女儿
+三元组-三元组-三元组：我肚子饿了和我要去餐馆是事件的前因后果
+</code></pre>
+
+<h3>知识图谱的基本概念</h3>
+
+<p>实体（Entity）是对客观个体的抽象，知识图谱中的实体多是具体的。例如：李安，姚明。<br/>
+类型（type）是对具有相同特点或属性的实体集合的抽象。例如：国家，运动员。<br/>
+关系（relation）是实体与实体之间关系的抽象。例如：导演，父女。<br/>
+属性（property）是对实体与实体之间关系的抽象。例如：导演，身高。<br/>
+域（domain）是类型的集合，凌驾于类型之上，是对某一领域所有类型的抽象。例如：地理位置，职业。<br/>
+值（value）是用来描述实体的，可以分为文本型和数值型。例如：性别：男，身高：226cm。</p>
+
+<h3>知识图谱中的关系类型</h3>
+
+<p>【关系类型】
+隶属：（is-a）
+同义：（similar)
+从属：（part-of）
+相关：（relate-to）
+因果：（cause）：forward(促进)、restraint(抑制)
+从事：（do）：发现（discover）、发明（invent）</p>
+
+<h3>知识图谱的应用</h3>
+
+<p>知识图谱的应用十分广泛，涉及各个行业。比如：</p>
+
+<pre><code>+ 信息检索：搜索引擎中对实体的精准聚合和匹配、对关键词的理解以及对搜索意图的语义分析等；
++ 自然语言理解：知识图谱中的知识作为理解自然语言中实体和关系的背景信息；
++ 问答系统：匹配问答模式和知识图谱中知识子图之间的映射；
++ 推荐系统：将知识图谱作为一种辅助信息集成到推荐系统中以提供更加精准的推荐选项；
++ 电子商务：构建商品知识图谱来精准地匹配用户的购买意愿和商品候选集合；
++ 金融风控：利用实体关系来分析金融活动的风险以提供在风险触发后的补救措施；
++ 公安刑侦：分析实体和实体之间的关系以获得线索等；
++ 司法辅助：法律条文的结构化表示和查询来辅助案件的判决等；
++ 教育医疗：提供可视化的知识表示，用于药物分析、疾病诊断等；
+来源：知乎链接：https://www.zhihu.com/question/59281410/answer/579230733
+</code></pre>
 </div>
   
   
@@ -324,190 +431,6 @@ CREATE (p:Person {id: toInteger(csvLine.id), name: csvLine.name})</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/">用docker在服务器上布置虚拟环境</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2020-12-06T12:49:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2020</time>
-        
-         | <a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近想在服务器上布置一个聊天机器人。
-简书上有教程：</p>
-
-<p>https://www.jianshu.com/p/5997f73eccb9<br/>
-https://www.jianshu.com/p/e18fb2166178</p>
-
-<p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
-
-<pre><code>cd /webdev/chatterbot
-python manage.py runserver
-alice: http://127.0.0.1:8000/chat/
-ctrl + C 退出程序
-url.py 可以修改响应
-</code></pre>
-
-<p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
-如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
-docker提供了很好的解决方案。</p>
-
-<p>docker的用途在于，它可以在服务器上建立多个虚拟环境，而在这个虚拟环境中安装的软件环境，并不会相互影响，比如chatterbot这个项目需要python3，但是其他应用可能需要的是python2.7，两个应用无法在同一个环境下运行。实际的情况更复杂，因为依赖的环境不仅是python。</p>
-
-<p>如何使用docker，网上有很多教程，比如：<br/>
-详细教程：https://blog.csdn.net/baidu_37832943/article/details/105218649<br/>
-阮一峰提供的教程： <br/>
-docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
-nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
-
-<p>简明教程：</p>
-
-<pre><code>docker search nginx 
-#查找 Docker Hub 上的 nginx 镜像
-
-docker pull nginx 
-#拉取官方的Nginx镜像
-
-docker images nginx 
-#查找 REPOSITORY 为 nginx 的镜像
-
-#基于已有镜像创建并运行一个容器并映射到特定端口
-docker run --rm --name nginx-test -p 8080:80 -d nginx
-      --rm：容器终止运行后，自动删除容器文件。
-      --name nginx-test：将容器命名为nginx-test
-      -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
-      -d：容器启动后，在后台运行
-docker container ps 
-#查看启动的docker容器
-curl localhost:8080 
-#测试页面
-</code></pre>
-
-<p>常用docker命令：</p>
-
-<pre><code>docker ps -a
-docker pull centos
-docker run -itd centos /bin/bash
-docker exec -it (输入容器ID) bash
-yum install -y httpd
-ctrl+d
-docker commit -m “install httpd” -a “keyuan_test” (输入容器ID) 新的镜像名
-docker run -itd -p 8080:80 新的镜像名 /bin/bash
-docker exec -it 新的镜像产生的容器ID bash
-httpd -k start
-curl localhost:80
-ctrl+d
-curl localhost:8080
-
-
-
-docker pull centos
-docker run -itd centos /bin/bash
-docker exec -it (输入容器ID) bash
-httpd -k start
-docker commit containerid chatbot/live
-docker run -d -p 8000:80 chatbot/live /bin/bash
-curl localhost:8000
-</code></pre>
-
-<h2>appche</h2>
-
-<p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
-
-<p>1.查看版本</p>
-
-<pre><code>apache -v
-httpd -v
-</code></pre>
-
-<p>2.开启apche服务：</p>
-
-<pre><code>apachectl start 
-apachectl stop
-</code></pre>
-
-<p>3.启动和关闭httpd的命令</p>
-
-<pre><code>systemctl start httpd
-systemctl stop httpd
-systemctl restart httpd
-</code></pre>
-
-<p>网页位置：/var/www/html/</p>
-
-<h2>编辑 nginx配置文件</h2>
-
-<pre><code>vi /etc/nginx/nginx.conf
-
-nginx -t                    # 查看nginx状态
-nginx -s reload            # 重新载入配置文件
-nginx -s reopen           # 重启 Nginx
-nginx -s stop               # 停止 Nginx
-</code></pre>
-
-<h2>控制防火墙</h2>
-
-<pre><code>systemctl stop firewalld  
-systemctl start firewalld  
-systemctl mask firewalld  
-
-添加端口  
-firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效） 
-firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent  
-重新载入  
-firewall-cmd --reload  
-查看  
-firewall-cmd --zone=public --query-port=80/tcp  
-删除  
-firewall-cmd --zone=public --remove-port=80/tcp --permanent  
-</code></pre>
-
-<h2>阿里服务器端口控制</h2>
-
-<p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
-
-<p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
-
-<h2>列出所有端口</h2>
-
-<p>netstat -ntlp</p>
-
-<p>https://www.cnblogs.com/xqzt/p/4919191.html</p>
-
-<h2>使用docker的方法</h2>
-
-<p>将需要改变的文件映射到主机<br/>
-把所有不变的环境变为运行的容器<br/>
-将容器运行起来之后，就可以ctrl+D退出<br/>
-应用就跑起来了</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -527,11 +450,15 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2020/12/16/ruby/">ruby</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2020/12/16/love-is-beside-you/">爱在你身边</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2020/12/12/knowledge-graph/">knowledge graph</a>
+        <a href="/blog/2020/12/12/knowledge-graph/">什么是知识图谱</a>
       </li>
     
       <li class="post">
@@ -562,15 +489,11 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
         <a href="/blog/2020/08/27/child-and-media/">幼儿成长与媒体</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/08/26/how-do-you-distinguish-beans-from-soybeans/">你如何区分生根的是黄豆还是绿豆</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (2)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (7)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
