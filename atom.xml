@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-01-16T18:02:05+08:00</updated>
+  <updated>2021-01-23T15:09:04+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[如何使用github进行项目协作]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/01/23/github-project-collaboration/"/>
+    <updated>2021-01-23T13:45:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/01/23/github-project-collaboration</id>
+    <content type="html"><![CDATA[<h3>终端窗口Shell的切换</h3>
+
+<p>改变默认的shell脚本：</p>
+
+<pre><code>chsh -s /bin/zsh
+</code></pre>
+
+<p>从 zsh 切换回 bash</p>
+
+<pre><code>chsh -s /bin/bash
+</code></pre>
+
+<p>zsh 和 bash 的环境变量
+bash 的环境变量是~/.bash_profile文件。
+zsh 的环境变量是~/.zshrc文件。</p>
+
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 source ~/.bash_profile即可。</p>
+
+<p>参考：<a href="https://www.jianshu.com/p/8d822ce0d425">MacOS 的 zsh 和 bash 切换</a></p>
+
+<h3>github工作思路和流程</h3>
+
+<p>项目负责人建立项目并且邀请合作者共同开发<br/>
+合作者打开项目地址，接受邀请。<br/>
+项目负责人将合作者ssh-pub添加到项目，便于合作者访问。</p>
+
+<h4>如何查看ssh-pub公钥</h4>
+
+<pre><code>cd ~/.ssh
+cat id_rsa.pub
+</code></pre>
+
+<p>复杂公钥给项目负责人，进行添加。建立合作关系。</p>
+
+<h4>如何查看浏览器提交的数据</h4>
+
+<p>command+alt+i 调出后台<br/>
+在web交互实验页面上输入正确的答案<br/>
+点击属性变为全局变量temp1 <br/>
+利用json.stringfy(temp1) 转变为字符</p>
+
+<p>复制实验正确答案到文件位置</p>
+
+<h4>上传代码</h4>
+
+<pre><code>git pull #继承合作的修改
+git add . 
+git commit -m "message"
+git push #更新修改到远程文件
+</code></pre>
+
+<h4>合并分支</h4>
+
+<p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
+
+<pre><code>git checkout main
+git merge ictweb-sf
+</code></pre>
+
+<h4>服务器上让代码生效</h4>
+
+<pre><code>cd /var/djangoweb/ictweb/ 
+git status
+git pull
+systemctl restart httpd.service
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Happy网球训练方案]]></title>
@@ -992,123 +1066,6 @@ Where什么地点-公共地点</p>
 <p>有时不在一个方面努力是为了在另一个方面更努力。比如我不会投身歌唱的行业，而会把时间留给写作。这时，这种放弃努力是一种积极的脱离，因为其目的是更好地探索其他方向，所以就整体而言还是成长型思维。但有时，不断探索也可能是为了维持自己在别人心目中形象的一种假象，那就会生活在别人看法中，其本质是谋求他人的认可，这是另外一种自我偏离。此外，还要记得并不是所有的目标都值得不断努力的。</p>
 
 <p>人是复杂的，需要自己对自己有清晰的认识。当固定型思维阻碍我们发展时，要有勇气走出思维的墙，探索崭新的自己和外面的世界。因为，世界能够给你的要比你想象的多得多，你能做到的也要比你认为你能做到的多得多。善！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[海蒂列表]]></title>
-    <link href="http://zhangchunlei.com/blog/2020/07/28/hattie-ranking/"/>
-    <updated>2020-07-28T15:31:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2020/07/28/hattie-ranking</id>
-    <content type="html"><![CDATA[<p>之前给大家推荐过《循证教学》这本书。</p>
-
-<p>还有一本书也非常值得推荐，那就是《可见的学习》这本书。在这本书里，澳大利亚研究者海蒂收集并分析了全球800多个元研究，对能够有效促进学生成绩提高的教学策略进行了归纳，200多种教学策略按照效应量大小进行了排列，结果见这里：https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/</p>
-
-<p>其中前50名，我进行了简单的翻译如下：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Rank    影响  Influence   Effect size d (Dec 2017)
-</span><span class='line'>1   教师集体性效能感    Collective teacher efficacy 1.57
-</span><span class='line'>2   自我报告的成绩 Self-reported grades    1.33
-</span><span class='line'>3   老师对成绩的估计    Teacher estimates of achievement    1.29
-</span><span class='line'>4   认知任务分析  Cognitive task analysis 1.29
-</span><span class='line'>5   早期干扰  Response to intervention    1.29
-</span><span class='line'>6   皮亚杰项目   Piagetian programs  1.28
-</span><span class='line'>7   拼图教学法   Jigsaw method   1.2
-</span><span class='line'>8   概念转变项目  Conceptual change programs  0.99
-</span><span class='line'>9   先验能力    Prior ability   0.94
-</span><span class='line'>10  与先验知识融合的策略  Strategy to integrate with prior knowledge  0.93
-</span><span class='line'>11  自我效能    Self-efficacy   0.92
-</span><span class='line'>12  教师信誉    Teacher credibility 0.9
-</span><span class='line'>13  微观教学/课程视频回顾 Micro-teaching/video review of lessons  0.88
-</span><span class='line'>14  迁移策略    Transfer strategies 0.86
-</span><span class='line'>15  课堂讨论    Classroom discussion    0.82
-</span><span class='line'>16  脚手架 Scaffolding 0.82
-</span><span class='line'>17  刻意练习    Deliberate practice 0.79
-</span><span class='line'>18  总结  Summarization   0.79
-</span><span class='line'>19  努力  Effort  0.77
-</span><span class='line'>20  对有学习需求的学生干预 Interventions for students with learning needs  0.77
-</span><span class='line'>21  助记符 Mnemonics   0.76
-</span><span class='line'>22  计划与预测   Planning and prediction 0.76
-</span><span class='line'>23  重复阅读项目  Repeated reading programs   0.75
-</span><span class='line'>24  老师清晰    Teacher clarity 0.75
-</span><span class='line'>25  知识精致和组织 Elaboration and organization    0.75
-</span><span class='line'>26  评价与反思   Evaluation and reflection   0.75
-</span><span class='line'>27  互惠教学（学生教学）  Reciprocal teaching 0.74
-</span><span class='line'>28  重复和记忆   Rehearsal and memorization  0.73
-</span><span class='line'>29  理解性课程教学计划   Comprehensive instructional programs for teachers   0.72
-</span><span class='line'>30  主动寻求帮助  Help seeking    0.72
-</span><span class='line'>31  语音教学    Phonics instruction 0.7
-</span><span class='line'>32  反馈  Feedback    0.7
-</span><span class='line'>33  深刻的动机和方法    Deep motivation and approach    0.69
-</span><span class='line'>34  领域自主    Field independence  0.68
-</span><span class='line'>35  加速学习项目  Acceleration programs   0.68
-</span><span class='line'>36  学习目标与无目标    Learning goals vs. no goals 0.68
-</span><span class='line'>37  解决问题的教学 Problem-solving teaching    0.68
-</span><span class='line'>38  概述和转化   Outlining and transforming  0.66
-</span><span class='line'>39  概念图 Concept mapping 0.64
-</span><span class='line'>40  词汇项目    Vocabulary programs 0.62
-</span><span class='line'>41  创新项目    Creativity programs 0.62
-</span><span class='line'>42  行为干预计划  Behavioral intervention programs    0.62
-</span><span class='line'>43  制定自我判断标准    Setting standards for self-judgement    0.62
-</span><span class='line'>44  老师不给学生贴标签   Teachers not labeling students  0.61
-</span><span class='line'>45  高中与大学成就的关系  Relations of high school to university achievement  0.6
-</span><span class='line'>46  元认知策略   Meta-cognitive strategies   0.6
-</span><span class='line'>47  间隔练习相对集中练习  Spaced vs. mass practice    0.6
-</span><span class='line'>48  直接教学    Direct instruction  0.6
-</span><span class='line'>49  数学课程    Mathematics programs    0.59
-</span><span class='line'>50  适当挑战性的目标    Appropriately challenging goals 0.59</span></code></pre></td></tr></table></div></figure>
-
 ]]></content>
   </entry>
   

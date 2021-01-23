@@ -9,9 +9,9 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="0、应该避免的动作和姿势 避免膝盖过度承载造成损伤(比如纵向跳跃) 避免膝关节内扣的运动姿势
-** 避免横向劈叉导致膝盖内扣 1、热身运动 慢跑一圈 关节热身 【常规网球训练】 2、针对性训练1 膝盖弓步大腿内侧拉伸 静态青蛙趴+动态青蛙趴
-** 鞋内侧踢毽子 【常规网球训练】 3、针对性训练2（ &hellip;">
+  <meta name="description" content="终端窗口Shell的切换 改变默认的shell脚本： chsh -s /bin/zsh 从 zsh 切换回 bash chsh -s /bin/bash zsh 和 bash 的环境变量
+bash 的环境变量是~/.bash_profile文件。
+zsh 的环境变量是~/.zshrc文件。 PS： &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,109 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2021-01-23T13:45:00+08:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2021</time>
+        
+         | <a href="/blog/2021/01/23/github-project-collaboration/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>终端窗口Shell的切换</h3>
+
+<p>改变默认的shell脚本：</p>
+
+<pre><code>chsh -s /bin/zsh
+</code></pre>
+
+<p>从 zsh 切换回 bash</p>
+
+<pre><code>chsh -s /bin/bash
+</code></pre>
+
+<p>zsh 和 bash 的环境变量
+bash 的环境变量是~/.bash_profile文件。
+zsh 的环境变量是~/.zshrc文件。</p>
+
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 source ~/.bash_profile即可。</p>
+
+<p>参考：<a href="https://www.jianshu.com/p/8d822ce0d425">MacOS 的 zsh 和 bash 切换</a></p>
+
+<h3>github工作思路和流程</h3>
+
+<p>项目负责人建立项目并且邀请合作者共同开发<br/>
+合作者打开项目地址，接受邀请。<br/>
+项目负责人将合作者ssh-pub添加到项目，便于合作者访问。</p>
+
+<h4>如何查看ssh-pub公钥</h4>
+
+<pre><code>cd ~/.ssh
+cat id_rsa.pub
+</code></pre>
+
+<p>复杂公钥给项目负责人，进行添加。建立合作关系。</p>
+
+<h4>如何查看浏览器提交的数据</h4>
+
+<p>command+alt+i 调出后台<br/>
+在web交互实验页面上输入正确的答案<br/>
+点击属性变为全局变量temp1 <br/>
+利用json.stringfy(temp1) 转变为字符</p>
+
+<p>复制实验正确答案到文件位置</p>
+
+<h4>上传代码</h4>
+
+<pre><code>git pull #继承合作的修改
+git add . 
+git commit -m "message"
+git push #更新修改到远程文件
+</code></pre>
+
+<h4>合并分支</h4>
+
+<p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
+
+<pre><code>git checkout main
+git merge ictweb-sf
+</code></pre>
+
+<h4>服务器上让代码生效</h4>
+
+<pre><code>cd /var/djangoweb/ictweb/ 
+git status
+git pull
+systemctl restart httpd.service
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -371,76 +474,6 @@ Student performance in Beijing, Shanghai, Jiangsu and Zhejiang (PISA 2018).https
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2020/12/16/love-is-beside-you/">爱在你身边</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2020-12-16T07:57:00+08:00" pubdate data-updated="true">Dec 16<span>th</span>, 2020</time>
-        
-         | <a href="/blog/2020/12/16/love-is-beside-you/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>郑钧的调调~《灰姑娘》</p>
-
-<pre><code>爱在你身边
-等待你呼唤
-默默无闻
-将你来陪伴
-
-心中有个ta
-ta在你身边  
-别看手机了
-Ta在看你呢
-
-生活如此美丽
-你却如此心急
-快发SC
-快发SC
-
-怎么会迷上你
-我在问自己
-我什么都能放弃
-居然今天难离去
-
-你并不不美丽
-但是你可爱之极
-我的灰姑娘
-我的灰姑娘
-
-我曾经忍耐
-我如此等待
-也许在等你到来
-也许在等你到来
-也许在等你到来
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -458,6 +491,10 @@ Ta在看你呢
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2021/01/16/happy-training-plan/">Happy网球训练方案</a>
@@ -493,10 +530,6 @@ Ta在看你呢
     
       <li class="post">
         <a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/">用docker在服务器上布置虚拟环境</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/11/02/wrong-logic-of-academic-presentation/">研究报告表达的神话&#8211;逻辑谬误</a>
       </li>
     
   </ul>
