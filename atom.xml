@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-03-02T08:59:05+08:00</updated>
+  <updated>2021-03-03T22:05:37+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[self-grow system]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/03/03/self-grow-system/"/>
+    <updated>2021-03-03T21:01:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/03/03/self-grow-system</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[被讨厌的勇气-笔记]]></title>
@@ -1049,38 +1058,6 @@ Where什么地点-公共地点</p>
 <p>在教育类期刊里，据我所知，教育研究、开放教育研究、电化教育研究有望冲击一下海境、湖境，其他的最多也就河境，投完就鸟无音信的有很多重量级期刊也赫然在列。这跟期刊管理有关，跟投稿平台有关，跟服务理念有关，总之，跟其对待作者的态度有关，反而跟期刊等级关系不大。</p>
 
 <p>这不是一个好兆头。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[用Html实现脚注跳转]]></title>
-    <link href="http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link/"/>
-    <updated>2020-08-07T15:36:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link</id>
-    <content type="html"><![CDATA[<p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1d">1</a><a id="1u"></a>
-中间是若干文字</p>
-
-<p>中<br/>
-间<br/>
-是<br/>
-一. <br/>
-大.<br/>
-段.<br/>
-文.<br/>
-字.</p>
-
-<p><a id="1d"></a><a href="#1u">1</a>：我的注释</p>
-
-<p>代码如下：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[1](#1d)&lt;a id="1u"&gt;&lt;/a&gt;
-</span><span class='line'>
-</span><span class='line'>[1](#1u)&lt;a id="1d"&gt;&lt;/a&gt;：我的注释
-</span></code></pre></td></tr></table></div></figure>
-
 ]]></content>
   </entry>
   
