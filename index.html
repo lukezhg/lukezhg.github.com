@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="每个人都是一个系统，但是大多系统都是被动响应的系统，到处救火、上蹿下跳，直到呜呼哀。这样的人生其实不值得一过。如何才能拥有成功、自由的人生呢？ 那么，我么必须构建一个自我成长系统。 自由的本质是自律 首先，人从生下来就不自由，你的出身、你的天资、你的父母都不是你能决定的。即便成年之后， &hellip;">
+  <meta name="description" content="柯尔莫哥洛夫复杂度：一个字符串生成的最简单算法。越有规律的越容易用更短的代码生成。无规律的反而只能老老实实的输出。但是有趣的是数学家已经证明柯尔莫哥洛夫复杂度无法使用一个固定的算法计算。你永远不知道是否有更简单、更深刻的算法存在。这也给了人们不断逼近本质的希望。 纪律的悖论。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/03/06/complexity/">复杂</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2021-03-06T00:02:00+08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2021</time>
+        
+         | <a href="/blog/2021/03/06/complexity/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>柯尔莫哥洛夫复杂度：一个字符串生成的最简单算法。越有规律的越容易用更短的代码生成。无规律的反而只能老老实实的输出。但是有趣的是数学家已经证明柯尔莫哥洛夫复杂度无法使用一个固定的算法计算。你永远不知道是否有更简单、更深刻的算法存在。这也给了人们不断逼近本质的希望。</p>
+
+<p>纪律的悖论。美国近些年涌现一批回归传统教学、强调纪律甚至比中国还严重的学校，KIPP宪章学校，这个宪章学校叫做成功学院(success academy charter school),这个学习对学生的纪律要求非常极端，整堂课学生必须把手放在前面，眼睛必须观看教师，学生发言时，其他学生必须看着他，如果谁没有看，发言的学生还需要指出来，如果做不到，老师就会约谈这个学生。这样严格的学校，以至于有20%的学生坚持不下来，他们一想到上学就紧张的想呕吐，有些老师虽然不认可，但是还必须这样做，坚持不多久就离开。</p>
+
+<p>这样培养的学生确实成绩更好，但是也发现一些问题。学生进入到大学往往无法坚持读完大学，他们缺乏自主学习能力和创造力。学校也尝试给学生一些自由，但是一旦放松一点，课堂纪律就无法保证，最后有只好回到纪律严格的从前。万老师认为每种制度都不完美，问题的关键是什么时候选择效率，什么时候选择质量。 纽约的外部环境不利于儿童成长，很多孩子都是问题少年，所以选择KIPP实际上解决了社会问题。而中国已经不在满足过去的应试教育了，对学生的创造、批评思维能力发展有更高要求，所以更多教师和学习都拥抱进步主义教学模式。</p>
+
+<p>假如一个新老师进入KIPP想提高学生自主性、培养创造能力的及进步主义教学尝试，那么基于这个实际案例，她可能会失败。但是真的这个问题就无解吗？未必。关键是去除路径依赖。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -344,109 +388,6 @@ https://bookauthority.org/books/best-math-books
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2021-01-23T13:45:00+08:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2021</time>
-        
-         | <a href="/blog/2021/01/23/github-project-collaboration/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>终端窗口Shell的切换</h3>
-
-<p>改变默认的shell脚本：</p>
-
-<pre><code>chsh -s /bin/zsh
-</code></pre>
-
-<p>从 zsh 切换回 bash</p>
-
-<pre><code>chsh -s /bin/bash
-</code></pre>
-
-<p>zsh 和 bash 的环境变量
-bash 的环境变量是~/.bash_profile文件。
-zsh 的环境变量是~/.zshrc文件。</p>
-
-<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 source ~/.bash_profile即可。</p>
-
-<p>参考：<a href="https://www.jianshu.com/p/8d822ce0d425">MacOS 的 zsh 和 bash 切换</a></p>
-
-<h3>github工作思路和流程</h3>
-
-<p>项目负责人建立项目并且邀请合作者共同开发<br/>
-合作者打开项目地址，接受邀请。<br/>
-项目负责人将合作者ssh-pub添加到项目，便于合作者访问。</p>
-
-<h4>如何查看ssh-pub公钥</h4>
-
-<pre><code>cd ~/.ssh
-cat id_rsa.pub
-</code></pre>
-
-<p>复杂公钥给项目负责人，进行添加。建立合作关系。</p>
-
-<h4>如何查看浏览器提交的数据</h4>
-
-<p>command+alt+i 调出后台<br/>
-在web交互实验页面上输入正确的答案<br/>
-点击属性变为全局变量temp1 <br/>
-利用json.stringfy(temp1) 转变为字符</p>
-
-<p>复制实验正确答案到文件位置</p>
-
-<h4>上传代码</h4>
-
-<pre><code>git pull #继承合作的修改
-git add . 
-git commit -m "message"
-git push #更新修改到远程文件
-</code></pre>
-
-<h4>合并分支</h4>
-
-<p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
-
-<pre><code>git checkout main
-git merge ictweb-sf
-</code></pre>
-
-<h4>服务器上让代码生效</h4>
-
-<pre><code>cd /var/djangoweb/ictweb/ 
-git status
-git pull
-systemctl restart httpd.service
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -464,6 +405,10 @@ systemctl restart httpd.service
 </section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
@@ -499,10 +444,6 @@ systemctl restart httpd.service
     
       <li class="post">
         <a href="/blog/2020/12/16/ruby/">ruby</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/12/16/love-is-beside-you/">爱在你身边</a>
       </li>
     
   </ul>
