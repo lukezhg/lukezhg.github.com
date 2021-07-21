@@ -4,7 +4,7 @@
   <title><![CDATA[Chunlei's Blog]]></title>
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-04T21:59:55+08:00</updated>
+  <updated>2021-07-21T22:44:49+08:00</updated>
   <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[python draw graph to visualize data]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/07/21/python-draw-graph-to-visualize-data/"/>
+    <updated>2021-07-21T22:06:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/07/21/python-draw-graph-to-visualize-data</id>
+    <content type="html"><![CDATA[<p>在线教学在疫情期间成为唯一教学选择，那么教师真实的教学体验如何？通过问卷我们收集到了一些老师的回答，量化数据分析还好说，但是对于老师们的文字反馈，确实让人头疼。</p>
+
+<p>如果严格的分析，需要使用质性分析的方法，通过逐句逐句阅读和编码，形成初步的一级编码，然后对一级编辑进行概括和联系形成二级编码，最后识别主要的theme，进而对问题形成解释模型。但是，时间关系我根本来不及做这样的分析，我只想得到一个大体的结果，形成一个具有概括性的图示来揭示问题。</p>
+
+<p>于是我首先对每个回答进行的标签标记，再经过3个半天的工作后，终于完成了对1000多条反馈的初步标记。最终形成18个重要的类别，不同的教师反馈的标签组合也不同。我最终获得的数据就是1000X18的一个数据表，某个标签出现标记为1，否则0。标签工作是做完了，但是我总不能把这么大的一个表展示给同行吧，于是任务的关键变成了如何将这个数据表可视化。于是我想到了python。我在做博士论文数据可视化的时候就用过，但是还是zoom quite帮我编的程序，这次又需要它救场了。</p>
+
+<p>首先我查了一下python可视化的方法，很多，比较常用的法案是matplotlib+pandas+networkx，其中pandas对接数据，networkx对接网图，matplot对接制图。</p>
+
+<p>可视化的关键是找到绘图思路，我的思路就是如果哪些关键词同时出现，那么这些关键词之间就存在联系，如果同时出现的频率越高，联系也就越紧，所以我想用数据绘制一个关键词网络，进而反应关键词之间的关系和主体划分。</p>
+
+<p>下面我解释一下代码实现过程，下面就是完整的代码：</p>
+
+<pre><code>#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+</code></pre>
+
+<p>声明编码类型，这里选择UTF-8是为了兼容中英文。</p>
+
+<pre><code># libraries
+import pandas as pd
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+</code></pre>
+
+<p>导入相应的库，python就一个优点，库多，没有找不到的，只有你想不到的，扩张了：）。</p>
+
+<pre><code>df = pd.read_csv('map.csv')  
+#print df[1]
+</code></pre>
+
+<p>使用pd阅读csv文件，确保文件与程序文件在相同目录。</p>
+
+<pre><code>df=df.fillna(np.random.rand()*0.1)
+</code></pre>
+
+<p>填充缺省值，数据表中很多数据缺失，这里使用了一个小于0.1的随机数进行替换。</p>
+
+<pre><code>print(df.loc[0,:])
+</code></pre>
+
+<p>检测一下数据是否成功获取</p>
+
+<pre><code># Calculate the correlation between individuals. We have to transpose first, because the corr function calculate the pairwise correlations between columns.
+corr = df.corr()
+
+# Transform it in a links data frame (3 columns only):
+links = corr.stack().reset_index()
+links.columns = ['var1', 'var2', 'value']
+</code></pre>
+
+<p>计算相关系数，并把计算结果储存在links中</p>
+
+<pre><code># Keep only correlation over a threshold and remove self correlation (cor(A,A)=1)
+links_filtered=links.loc[ (links['value'] &gt; 0.1) &amp; (links['var1'] != links['var2']) ]
+</code></pre>
+
+<p>筛选相关系数大于特点临界值的关联。</p>
+
+<pre><code># Build your graph
+G=nx.from_pandas_edgelist(links_filtered, 'var1', 'var2')
+# Plot the network:
+nx.draw(G, with_labels=True, node_color='orange', node_size=400, edge_color='black', linewidths=1, font_size=10)
+</code></pre>
+
+<p>基于links_filtered，利用nx构建和绘制网图</p>
+
+<pre><code>plt.show()
+</code></pre>
+
+<p>如果你的图没显示出来，上面的命令就是把绘制好的图展示出来。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[中国80后]]></title>
@@ -928,50 +1007,6 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
 <p>批注：学者可以分享别人的研究，但是必须突出自己的研究。同时也要批判性地审视他人的研究，并为其负责。如果没有自己的观点或研究，其实也没有必要来分享了。</p>
 
 <p>研究者千万别认为自己很牛，别人可以这样认为，但是研究者自己不可以，因为在这会毁掉学术，也会毁掉自己。相反很牛的科学家都认为在自己研究的伟大事物面前，自己格外渺小，而正是这种发自内心的谦卑，才让倾听大自然的声音成为可能。好的报告要让听者听得懂、有启发，最好还有能应用。如果有大牛的报告你没听懂，那就提问吧，给研究者一个戴罪立功的机会！：）</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ 技术如何赋能教育]]></title>
-    <link href="http://zhangchunlei.com/blog/2020/10/22/how-technology-empower-education/"/>
-    <updated>2020-10-22T13:50:00+08:00</updated>
-    <id>http://zhangchunlei.com/blog/2020/10/22/how-technology-empower-education</id>
-    <content type="html"><![CDATA[<p>课例研讨：《呼吸系统与 ECMO 技术》</p>
-
-<p>视频内容</p>
-
-<pre><code>第一段 基于数字系统的学习
-00：00-4：30
-应用数字系统探索和认识人的呼吸系统【剪辑】
-7：50-12：22
-患者的检查结果，呼吸困难，白肺
-13：30-13：57+17：50
-白肺治疗无效
-
-第二段 设计人工肺
-17：35-19：40 
-设计人工肺 画设计图【剪辑】
-22：50-26：30
-小组分享自己的设计【剪辑】
-26：30-29：50【剪辑】
-对设计进行点评反馈
-
-第三段 ECMO原理
-30：00- 34：50【剪辑】
-用ECMO原理图对比自己的设计加深认识
-肺通气、其他交换、动力
-模拟的是哪个部分
-
-第四段 不完美的结局
-35：45-43：00【剪辑】
-不完美的结局反思和疑问
-</code></pre>
-
-<p>技术赋能教育创新主题报告：教育智能体与应用场景 <br/>
-上海市电教馆馆长 张治</p>
-
-<p>视频播放地址：<br/>
-<a href="http://live.wenxiang.org/livepf/weiXinPclogin.jspx?activityId=55034b134f724086a5d2f3fd678be160&amp;locale=zh_CN">http://live.wenxiang.org/livepf/weiXinPclogin.jspx?activityId=55034b134f724086a5d2f3fd678be160&amp;locale=zh_CN</a></p>
 ]]></content>
   </entry>
   
