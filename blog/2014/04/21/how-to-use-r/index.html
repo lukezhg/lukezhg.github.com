@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>R语言学习笔记 - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="##week1
+getwd() #获取当前工作目录
+setwd(dir) #设定当前工作目录 也可以直接通过菜单界面设定
+source("myfunction.R") #加入源之后才可以使用这个函数 ##week2
+#list
+> a <- 1:10
+> b <- c(1,3,4,5,8,9, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">R语言学习笔记</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T23:35:00+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><pre><code>
+##week1
+getwd() #获取当前工作目录
+setwd(dir) #设定当前工作目录 也可以直接通过菜单界面设定
+source("myfunction.R") #加入源之后才可以使用这个函数
+
+##week2
+#list
+> a <- 1:10
+> b <- c(1,3,4,5,8,9,11,14,15,18)
+> b <- b[-2] #去除第二个元素
+> c(1,2)*c(2,3)
+[1] 2 6
+
+> m <- c(1,2,3)
+> mynames <- c("1-2","2-3","4-5")
+> mytable <- setNames(m,mynames)#之后可以通过name来调用元素值
+1-2 2-3 4-5 
+  1   2   3 
+
+> union(x, y) #并集
+> intersect(x, y) #交集
+> setdiff(x, y) #前者有后者没有的
+> setequal(x, y) #元素是否全部相同
+> is.element(el, set)
+> unlist() #将层级list变为单层
+> unique(x) # 获取非重复元素
+
+# logical operation
+x <- FALSE
+y <- TRUE
+! x
+x & y
+x && y
+x | y
+x || y
+xor(x, y)
+
+isTRUE(x)
+cbind(a,b) #
+rbind(a,b) #
+length(a) #
+class(a)
+as.character()
+as.logical()
+as.numeric()
+m <- matrix(a,nrow=2,ncol=5)
+dim(m) #[1] 2 5
+attributes(m) $dim [1] 2 5
+m <- 1:10
+dim(m) < c(2,5) #
+f <- factor("yes","no","yes","yes")
+table(f) # yes 3 no 1
+x <- c()
+x <- c(x,1)
+mean() #求平均值
+cor(a,b) #求相关系数
+is.na()
+is.nan()
+
+## file 文件
+read.table() #读取txt表格
+read.csv() #读取csv文件
+# 写文件略过row name
+write.csv(data, "data.csv", row.names=FALSE)
+# 同样写文件，当用空白替换"NA"
+write.csv(data, "data.csv", row.names=FALSE, na="")
+# 使用tabs略过row col name
+write.table(data, "data.csv", sep="\t", row.names=FALSE, col.names=FALSE) 
+参考[Cookbook for R » Writing data to a file](http://www.cookbook-r.com/Data_input_and_output/Writing_data_to_a_file/)
+write.table(sim, "pcksim.csv", row.names=na,col.names=c("",na),sep = ",") # 可以写列名称
+
+names()
+x[!is.na(x)] # 去除缺失的数据
+data <- data.frame(id=1:10,height=170:180)
+data["id"] #返回局部data.frame
+data["id"][!is.na(data["height"])] #返回height无缺失的id
+data[[id]] #返回vector
+paste("00","1",".csv",sep="") # 001.csv
+paste(a,collapse="") # 将一个list连成一个长字符
+
+for (i in 1:length(id)){
+    s <- as.character(id[i])
+    spre <- paste(rep("0",3-nchar(s)),collapse="") # use collapse join vector
+    fn <- paste(directory,"/",spre,s,".csv",sep="") # use sep to join string
+    data <- read.csv(fn)
+}
+
+if(length(x)>0){print(x)}else{}
+
+##Week3
+x <- list(a=1:5,b=rnorm(10))
+lapply(x,mean)#$a[1] 3  $b[1] 0.03937816
+如果x不是一个list,那么它将被自动转换成list,相当于使用as.list()函数
+x <- list(a=matrix(1:4,2,2),b=matrix(1:6,3,2))
+lapply(x,function(elt)elt[,1]) #$a[1] 1 2  $b[1] 1 2 3
+lapply(x,function(elt) strsplit(elt,"-")) #对每个元素使用“-”进行拆分
+sapply(x,mean) #会自动简化结果，返回一个vector或者matrix，不能简化返回list
+x <- matrix(rnorm(200),20,10)
+apply(x,2,mean) #返回10列的均值
+apply(x,1,sum) #返回每行的总和共20个
+a <- array(rnorm(2*2*10),c(2,2,10)) #三维数组
+apply(a,c(1,2),mean)
+          [,1]      [,2]
+[1,] 0.1888774 0.5517366
+[2,] 0.2667046 0.2412767
+
+str() #Compactly Display the Structure of an Arbitrary R Object
+str(tapply)
+> x <- c(rnorm(10),runif(10),rnorm(10,1))
+> f <-gl(3,10) #生成标签 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3
+> tapply(x,f,mean) #具有相同标签的数值的平均值
+with(mtcars, tapply(mpg, cyl, mean))# mtcars is a data.frame with cyl and mpg
+
+> split(x,f) #利用标签将list进行拆分
+> s <- split(airdata, airdata$Month)
+> lapply(s,function(x) colMeans(x[,c("Ozone","Solar.R","Wind")]))
+split(x,list(f1,f2),drop=TRUE) # empty levels can be dropped
+
+## 字符串 string
+> as.character()
+> strsplit("1-2,3-4,5-6",",") #对字符串进行拆分
+> strsplit("1-2,3-4,5-6",",")[[1]][1] #返回 "1-2"
+> paste(rev(strsplit("abc", split = "")[[1]]), collapse = "") #反转字符串
+> grep("bcd", "abcd") # return 1 # 
+> regexpr("bcd","aabcd")
+[1] 3
+attr(,"match.length")
+[1] 3
+attr(,"useBytes")
+[1] TRUE
+
+> gregexpr("1","1-2,2-3,1-5") #返回所有匹配位置 也能利用length获取匹配数目
+> length(gregexpr("1","1-2,2-3,1-5,1-9,1-8")[[1]]) #返回4
+
+
+> mapply(rep,1:4,4:1)
+[[1]]
+[1] 1 1 1 1
+
+[[2]]
+[1] 2 2 2
+
+[[3]]
+[1] 3 3
+
+[[4]]
+[1] 4
+
+## debug
+traceback() # print out where error occurs,else do nothing
+debug() # step through one line at a time
+browser() #suspend the execution wherever called and put it in debug mode
+trace() # insert debug code in specific place
+
+#Play with the iris data
+library(datasets)
+data(iris)
+
+#Play with $
+> x <- makeCacheMatrix()
+> x
+$set
+function (y) 
+{
+    x <<- y
+    inv <<- NULL
+}
+
+$get
+function () 
+x
+
+$setinverse
+function (inverse) 
+inv <<- inverse
+
+$getinverse
+function () 
+inv
+
+> x$set(matrix(rnorm(9),3,3))
+> x$get()
+
+> x$set(a)
+> x$get()
+            [,1]      [,2]       [,3]
+[1,] -0.50184759 -0.751659 -2.1276852
+[2,]  0.37466264 -1.448643  1.1807655
+[3,] -0.06093845  0.740338 -0.8508723
+> cacheSolve(x)
+           [,1]       [,2]       [,3]
+[1,] -0.4668678  2.8847043  5.1705844
+[2,] -0.3214999 -0.3872940  0.2664879
+[3,] -0.2462983 -0.5435808 -1.3137063
+
+#week4
+#统计
+str(str)# see the structure of a object
+m <- matrix(rnorm(100),10,10)
+str(m)
+str(lm)
+str(ls)
+x <- rnorm(100,2,4)
+summary(x) #摘要
+table(x) #返回频数表
+str(x)
+
+#作图
+hist(rnorm(1000,2,4))
+hist(BMI, breaks=20, main="Breaks=20")
+hist(BMI, breaks=seq(17,32,by=3), main="Breaks is vector of breakpoints")
+seq(0, 1, length.out = 10) #在一定范围产生制定数目的序列
+plot(x,y)
+
+#拟合
+> set.seed(20)  #进而可以再次产生同样的随机数 方便别人重复模拟
+> x <- rnorm(100)
+> e <-rnorm(100,0,2)
+> y <- 0.5+2*x+e
+> sumary(y)
+
+#评估运算时间 user time（cpu 时间消耗）elipsed time(流逝壁钟时间)
+> system.time(readLines("http://www.jhsph.edu"))
+
+#就
+make.Negloglik <- function(data, fixed=c(FALSE,FALSE)){
+    params<- fixed
+    function(p){
+        params[!fixed] <- p
+        mu <- params[1]
+        sigma <- params[2]
+        a <- -0.5*length(data)*log(2*pi*sigma^2)
+        b <- -0.5*sum((data-mu)^2)/(sigma^2)
+        -(a+b)
+    }
+}
+set.seed(1)
+normals <- rnorm(100,1,2)
+nLL <- make.Negloglik(normals)
+optim(c(mu=0,sigma=1),nLL)$par
+
+> # Fixing sigma=2
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> optimize(nLL,c(-1,3))$minimum
+[1] 1.217775
+> optimize(nLL,c(-1,2))$minimum
+[1] 1.217775
+> #Fixing u=1
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> optimize(nLL,c(1e-6,10))$minimum
+[1] 1.800596
+> nLL <- make.Negloglik(normals,c(1,FALSE))
+> x <- seq(1.7,1.9,len=100)
+> y <- sapply(x,nLL)
+> plot (x,exp(-(y-min(y))),type="l")
+> nLL <- make.Negloglik(normals,c(FALSE,2))
+> x <- seq(0.5,1.5,len=100)
+> y <-sapply(x,nLL)
+> plot(x,exp(-(y-min(y))),type="l")
+
+
+Assignment 3
+#在R中有的时候表达方式是不一样的，比如
+引用某个变量的子变量用
+time$year #而不是time.year
+
+##常犯错误
+该使用[]的时候错误的使用了（），特别是在操作data.frame的时候
+该使用[[]]错误的使用了[]，前者可以变为向量，后者还是data.frame
+忘记了使用%%进行
+判断是否包含 
+"a" %in% c("a","b","c")
+表示数组相乘用 
+%*%
+
+如何使用Order
+> (ii <- order(x <- c(1,1,3:1,1:4,3), y <- c(9,9:1), z <- c(2,1:9)))
+ [1]  6  5  2  1  7  4 10  8  3  9
+ > rbind(x, y, z)[,ii] # shows the reordering (ties via 2nd & 3rd arg)
+  [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+x    1    1    1    1    2    2    3    3    3     4
+y    5    6    9    9    4    7    1    3    8     2
+z    5    4    1    2    6    3    9    7    2     8
+
+
+</code></pre>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-21T23:35:00+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/统计/'>统计</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+
+
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style" align="right">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+</div>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/19/how-to-generate-electricity/" title="Previous Post: 不同发电机的原理">&laquo; 不同发电机的原理</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/29/lost-in-local-extrema/" title="Next Post: Lost in local extrema">Lost in local extrema &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- LiveRe City install code -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80ODYwMy8yNTA5Nw==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+</div>
+<!-- completed City install code --></div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2021 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/';
+        var disqus_url = 'http://zhangchunlei.com/blog/2014/04/21/how-to-use-r/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

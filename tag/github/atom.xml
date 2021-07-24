@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: github | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/github/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/github/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,10 +14,52 @@
 
   
   <entry>
-    <title type="html"><![CDATA[try to use ubuntu to press]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
+    <title type="html"><![CDATA[Modify A record of my website DNS]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns/"/>
+    <updated>2014-12-01T21:28:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/12/01/modify-a-record-of-my-website-dns</id>
+    <content type="html"><![CDATA[<p>我的Email收到页面发布失败通知，原因是github更新了服务，需要永久性调整服务器IP地址，需要我相应更改DNS。一直没有时间修改，一直也不是特别清楚如何修改，今天终于把这个问题解决了。</p>
+
+<h3>Page build failure</h3>
+
+<p>The page build failed with the following error:</p>
+
+<p>The custom domain for your GitHub Pages site is pointed at an outdated IP address. You must take immediate corrective action to ensure that your site remains available after December 1st, 2014. Additional details can be found at https://github.com/blog/1917-github-pages-legacy-ip-deprecation. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages.</p>
+
+<h3>How do I know if I'm affected?</h3>
+
+<p><a href="https://github.com/blog/1917-github-pages-legacy-ip-deprecation">GitHub Pages Legacy IP Deprecation · GitHub</a><br/>
+The following helps!</p>
+
+<pre><code>On a Windows machine, you'll want to run nslookup your-domain.com and ensure that the output does not include any of the deprecated IP addresses (207.97.227.XXX, 204.232.175.XX, or 199.27.73.XXX).
+If you're on a Mac or Linux machine, simply paste this command into a terminal window, replacing your-domain.com with, your site's domain. dig your-domain.com | grep -E '(207.97.227.245|204.232.175.78|199.27.73.133)' || echo "OK". If you see the word "OK", you're all set.
+</code></pre>
+
+<h3>Configuring an A record with your DNS provider</h3>
+
+<p><a href="https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/">Tips for configuring an A record with your DNS provider - User Documentation</a></p>
+
+<p>关键信息<br/>
+With your DNS provider, create A records that resolve to the following IP addresses:</p>
+
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre>
+
+<h3>修改DNS的A记录</h3>
+
+<p>我的域名 - DNSPod<br/>
+https://www.dnspod.cn/Domain#zhangchunlei.com</p>
+
+<p>按照新的IP地址添加两条新的A记录，删除原来的A记录即可。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在ubuntu中部署octopress发布博文]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press/"/>
     <updated>2013-02-04T12:17:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
+    <id>http://zhangchunlei.com/blog/2013/02/04/try-to-use-ubuntu-to-press</id>
     <content type="html"><![CDATA[<p>以前使用的是windows下git环境更新octopress，现在想把所有与编程有关的东东都在ubuntu下完成。于是开始了折腾，并且折腾了很长时间。<br/>
 终于安装好了ubuntu并且初步使用布置好的git和ruby环境来更新博客。</p>
 
@@ -26,8 +68,9 @@
 <p>下面把遇到的问题记录汇总如下：<br/>
 一、安装和使用ubuntu过程中遇到的问题：<br/>
 1  安装ubuntu时遇到不能正常开机，或者进入系统后随机死机。<br/>
-2  安装ubuntu显卡驱动
-3  无线链接不能建立，尽管密码正确。</p>
+2  安装ubuntu显卡驱动<br/>
+3  无线链接不能建立，尽管密码正确。<br/>
+4  如何安装和使用电池管理（tp-smapi）实现到达阈值自动停止充电</p>
 
 <p>二、安装git和ruby遇到的问题：<br/>
 1  更新git版本耗时过长以至于不能完成<br/>
@@ -45,7 +88,15 @@
 <p>1.2  我的显卡是amd的，所以需要在amd官方网上下载闭源驱动进行安装。<br/>
 <a href="http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx?type=2.4.1&amp;product=2.4.1.3.42&amp;lang=English">AMD Catalyst™ Proprietary Display Driver - Linux x86 &amp; Linux x86_64</a></p>
 
-<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。</p>
+<p>1.3  取消“启用无线”的勾选，然后在从新勾选上。
+但是这样治标不治本，于是参考了<a href="http://www.linuxdiyf.com/viewarticle.php?id=101861">这个网址</a></p>
+
+<blockquote><p>ppp 的很多选项都是默认的，其中lcp-echo-failure次数被设为4，而lcp-echo-interval设为30秒。也就是说，如果120秒钟之内，ADSL服务器没有给回echo-reply信号，UBuntu便会认为网络已经出了问题，就会断开网络，搞得人非常不爽。症结找到了，问题就要解决了，打开配置文件/etc/ppp/options，将lcp-echo-failure次数设为一个较大的数值就行了，我将该值修改为10。</p></blockquote>
+
+<p>1.5  安装tp-smapi
+参考：<a href="http://www.linuxdiyf.com/linux/201108/688.html">http://www.linuxdiyf.com/linux/201108/688.html</a><br/>
+但是始终无法完成最后一步：sudo modprobe tp_smapi<br/>
+但是反复安装和尝试了之后不知道为什么电池终于冲到71%就补充电了。原因还在继续查找中。</p>
 
 <p>2.1  使用https:而不是git:, 有可能是git被封造成的。<br/>
 参考：<a href="http://www.linuxidc.com/Linux/2012-09/71193.htm">Ubuntu git 安装和使用</a>
@@ -69,23 +120,6 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
 
 <p>3.2  检查所有博文以及设置文件冒号后面都应该有一个空格。  我的就是在tag：后忘了留空格，结果rake generate总是报错。</p>
 
-<p>在摸索过程中经常使用的命令： <br/>
-1 sudo apt-get install appname<br/>
-2 rvm list known<br/>
-3 rvm list<br/>
-4 vi filename<br/>
-5 gedit filename<br/>
-6 rake generate<br/>
-7 rake preview<br/>
-8 rake deploy<br/>
-9 rake new_post["post title"]<br/>
-  cp  复制文件 到另外一个目录<br/>
-  mkdir 目录名创建一个目录<br/>
-  rmdir 空目录名删除一个空目录<br/>
-  rm 文件名文件名删除一个文件或多个文件<br/>
-  rm –rf 非空目录名删除一个非空目录下的一切<br/>
-  touch 文件名创建一个空文件</p>
-
 <p>参考文章：<br/>
 1  <a href="http://blog.sina.com.cn/s/blog_565e192a01013xjp.html">在ubuntu中安装ruby 1.9.3_kingwmj_新浪博客</a><br/>
 2  <a href="http://yangdd.github.com/blog/2012/09/14/issue/">使用Octopress遇到的问题 - 长老的 Octopress Blog</a></p>
@@ -93,10 +127,10 @@ $ gem source -r http://rubygems.org/;gem source -a http://ruby.taobao.org</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Github Blog with Octopress]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress/"/>
+    <title type="html"><![CDATA[使用Octopress发布Github page博客]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
     <updated>2012-12-27T21:05:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
     <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
 
 <p>搭建的步骤如下：<br/>
@@ -206,15 +240,10 @@ _config.yml文件：</li>
 
 <p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
 
-<p>markdown语法示例
-句子的尾部输入两个空格然后回车就可以断行 <br/>
-* 无序项目1 <br/>
-* 项目2 <br/>
-* 项目3  <br/>
-<img src="\images\bird_32_gray.png" alt="Alt text" /></p>
+<p>（去除了Markdown语法，已经添加到octopress tips页面去了）</p>
 
 <p>主要参考：
-<a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
+<a id="1"></a><a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
 ]]></content>

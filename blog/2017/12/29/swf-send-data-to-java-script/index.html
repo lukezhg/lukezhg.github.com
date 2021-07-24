@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Swf send data to Java Script - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：
+1、首先在html网页中通过object嵌入swf文件 1
+2
+3
+4
+5
+6
+7
+8 &lt;body&gt; &lt;object type="application/x- &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Swf Send Data to Java Script</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-29T19:21:00+08:00" pubdate data-updated="true">Dec 29<span>th</span>, 2017</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
+1、首先在html网页中通过object嵌入swf文件</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>
+</span><span class='line'>    &lt;body&gt;
+</span><span class='line'>    &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+</span><span class='line'>    &lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+</span><span class='line'>    &lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+</span><span class='line'>    &lt;/object&gt;
+</span><span class='line'>    &lt;/body&gt;
+</span><span class='line'></span></code></pre></td></tr></table></div></figure>
+
+
+<p>2、在网页的头部嵌入要调用的函数hello</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script&gt;
+</span><span class='line'>    function hello(v){ 
+</span><span class='line'>        alert("hello: "+v);
+</span><span class='line'>        document.location.href = '/search';
+</span><span class='line'>    } 
+</span><span class='line'>    function thisMovie(movieName) { 
+</span><span class='line'>        if (navigator.appName.indexOf("Microsoft") != -1) { 
+</span><span class='line'>            return window[movieName] 
+</span><span class='line'>        } 
+</span><span class='line'>        else { 
+</span><span class='line'>            return document[movieName] 
+</span><span class='line'>        } 
+</span><span class='line'>    }
+</span><span class='line'>&lt;/script&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package {
+</span><span class='line'>import flash.net.*;
+</span><span class='line'>import flash.events.Event;
+</span><span class='line'>import flash.events.MouseEvent;
+</span><span class='line'>import flash.display.MovieClip;
+</span><span class='line'>import flash.external.ExternalInterface; 
+</span><span class='line'>public class test extends MovieClip {
+</span><span class='line'>    public function test(): void {
+</span><span class='line'>        submit.addEventListener(MouseEvent.CLICK, postForm);
+</span><span class='line'>    }
+</span><span class='line'>    private function postForm(evt: MouseEvent): void {
+</span><span class='line'>        ExternalInterface.call("hello", txt1.text); 
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4、实现的效果如下：<br/>
+当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。</p>
+
+<p>5、原理解释<br/>
+fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
+
+<p>6、JS调用AS函数的实现方法。<br/>
+上面实现了AS调用JS并传递参数，那么反过来，JS是否可以调用AS函数呢？答案是肯定的。</p>
+
+<p>AS类这样写：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package {
+</span><span class='line'>    import flash.net.*;
+</span><span class='line'>    import flash.events.Event;
+</span><span class='line'>    import flash.events.MouseEvent;
+</span><span class='line'>    import flash.display.MovieClip;
+</span><span class='line'>    import flash.external.ExternalInterface;
+</span><span class='line'>    
+</span><span class='line'>    public class test extends MovieClip {
+</span><span class='line'>        public function test(): void {
+</span><span class='line'>            submit.addEventListener(MouseEvent.CLICK, postForm);
+</span><span class='line'>            ExternalInterface.addCallback("say", say); //regist 
+</span><span class='line'>        }
+</span><span class='line'>        
+</span><span class='line'>        private function say(txt: String) {
+</span><span class='line'>            txt2.text = txt;
+</span><span class='line'>        }
+</span><span class='line'>        
+</span><span class='line'>        private function postForm(evt: MouseEvent): void {
+</span><span class='line'>            //call js function
+</span><span class='line'>            ExternalInterface.call("hello", txt1.text);
+</span><span class='line'>        }
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Html这样写：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'>    <span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>As communicate with JS<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>            <span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">v</span><span class="p">){</span>
+</span><span class='line'>                <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;hello: &quot;</span><span class="o">+</span><span class="nx">v</span><span class="p">);</span>
+</span><span class='line'>                <span class="c1">//document.location.href = &#39;/search&#39;;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="kd">function</span> <span class="nx">thisMovie</span><span class="p">(</span><span class="nx">movieName</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">appName</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;Microsoft&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                    <span class="k">return</span> <span class="nb">window</span><span class="p">[</span><span class="nx">movieName</span><span class="p">]</span>
+</span><span class='line'>                <span class="p">}</span>
+</span><span class='line'>                <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>                    <span class="k">return</span> <span class="nb">document</span><span class="p">[</span><span class="nx">movieName</span><span class="p">]</span>
+</span><span class='line'>                <span class="p">}</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn1&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test1&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
+</span><span class='line'>                <span class="p">});</span>
+</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn2&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>                    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test2&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Hello world!&lt;/b&gt;&quot;</span><span class="p">);</span>
+</span><span class='line'>                <span class="p">});</span>
+</span><span class='line'>                <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#btn3&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>                    <span class="c1">//$(&quot;#test3&quot;).val(&quot;Dolly Duck&quot;);</span>
+</span><span class='line'>                    <span class="kd">var</span> <span class="nx">txt</span><span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#test3&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+</span><span class='line'>                    <span class="nx">thisMovie</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">).</span><span class="nx">say</span><span class="p">(</span><span class="nx">txt</span><span class="p">);</span>
+</span><span class='line'>                <span class="p">});</span>
+</span><span class='line'>            <span class="p">});</span>
+</span><span class='line'>        <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">data=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span>  <span class="na">name=</span><span class="s">&quot;test&quot;</span> <span class="na">width=</span><span class="s">&quot;550&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;allowScriptAccess&quot;</span> <span class="na">value=</span><span class="s">&quot;sameDomain&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;movie&quot;</span> <span class="na">value=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span> <span class="nt">/&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">&quot;{% static &quot;</span><span class="na">flash</span><span class="err">/</span><span class="na">test</span><span class="err">.</span><span class="na">swf</span><span class="err">&quot;</span> <span class="err">%}&quot;</span> <span class="na">name=</span><span class="s">&quot;test&quot;</span> <span class="na">quality=</span><span class="s">&quot;high&quot;</span> <span class="na">allowScriptAccess=</span><span class="s">&quot;always&quot;</span> <span class="na">swLiveConnect=</span><span class="s">&quot;true&quot;</span> <span class="na">type=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">width=</span><span class="s">&quot;550&quot;</span> <span class="na">height=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;&lt;/embed&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/object&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;br&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">&quot;test1&quot;</span><span class="nt">&gt;</span>This is a paragraph.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">&quot;test2&quot;</span><span class="nt">&gt;</span>This is another paragraph.<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>Input field: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;test3&quot;</span> <span class="na">value=</span><span class="s">&quot;Mickey Mouse&quot;</span><span class="nt">&gt;&lt;/p&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn1&quot;</span><span class="nt">&gt;</span>Set Text<span class="nt">&lt;/button&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn2&quot;</span><span class="nt">&gt;</span>Set HTML<span class="nt">&lt;/button&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;btn3&quot;</span><span class="nt">&gt;</span>Set Value<span class="nt">&lt;/button&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/html&gt;</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>7、遗留的问题：这样的写法谷歌浏览器没问题，但是火狐浏览器不成功，也就是不能把参数传到swf上。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-12-29T19:21:00+08:00" pubdate data-updated="true">Dec 29<span>th</span>, 2017</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/computer/'>computer</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+
+
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style" align="right">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+</div>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/12/18/the-writing-tips-of-the-story-coco/" title="Previous Post: 《寻梦环游记》的故事元素">&laquo; 《寻梦环游记》的故事元素</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2017/12/30/mysql-charset-admin-django/" title="Next Post: mysql charset admin django">mysql charset admin django &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- LiveRe City install code -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80ODYwMy8yNTA5Nw==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+</div>
+<!-- completed City install code --></div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2021 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/';
+        var disqus_url = 'http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

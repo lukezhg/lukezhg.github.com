@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: rake | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/rake/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Homebrew出错的种种折腾]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/12/brew-lesson/"/>
+    <updated>2020-12-12T13:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/12/brew-lesson</id>
+    <content type="html"><![CDATA[<p>我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。</p>
+
+<p>你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。</p>
+
+<p>本来是想安装一个知识图谱的机器人的项目，但是这个方案很复杂，而且依赖很多程序。于是开始折腾，mac部分程序需要依赖brew安装，但是我突然发现brew无法连接到库，愿意是网络不通。</p>
+
+<p>于是只能换源，但是之后无法更新，于是之后重装，但是重装报错，于是开始运行brew doctor诊断，发现有些多余文件，尝试删除，无法删除，于是强制删除，结果就悲催了。原来的很多程序都出现了问题。比如我的Octopress、mysql都除了问题。</p>
+
+<p>这次事故的诱因很多，比如电脑系统旧，网络不畅，人性贪婪，对程序原理一知半解，最后从一个瑕疵演变成一个事故，甚至是要重装电脑。我真打算重装了，结果发现因为磁盘空间不足，根本没有备份可以还原。</p>
+
+<p>经过这次事件，总结几个道理：<br/>
+*  不要瞎折腾，特别是一知半解的时候。<br/>
+*  很多安装更新失败的问题多是网络不畅的问题。<br/>
+*  要保持备份的习惯，这样万一出了问题，你还可以回去。（数据备份、系统备份、环境备份）<br/>
+*  要系统的学习git和docker<br/>
+*  很多的折腾可以放在服务器，使用docker选择以及布置好环境的repo去布置和测试</p>
+
+<p>折腾之后学的的知识，都是一些常识，比如mac软件包的安装是有顺序的，不同软件存在依赖关系，本来brew就能解决这些问题，但是DNA被污染之后，你很难连到官方的服务器，进而产生一系列问题。</p>
+
+<p>参考网址：<br/>
+常用 Git 命令清单 by 阮一峰：
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html</p>
+
+<p>RVM安装：<br/>
+GitHub访问不了，是获取不到安装的脚本文件。执行下面的脚本可以进行安装。</p>
+
+<pre><code>/usr/bin/ruby -e "$(curl -fsSL https://gitee.com/xueweihan/codes/vfrgh7z8qcjlx1ubwt6nk71/raw\?blob_name\=brew_install.sh)"
+</code></pre>
+
+<p>Homebrew安装与卸载：<br/>
+安装脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+</code></pre>
+
+<p>卸载脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[尝试在ubuntu系统中使用octopress]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
+    <updated>2015-11-28T17:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
+    <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
+
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler #要在gemfile中更新用taobao的https源  
+$ bundle install #出错提示版本号不对  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。</p>
+
+<pre><code>$ gem uninstall rake #之后选择要删除的版本即可  
+</code></pre>
+
+<p>参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>多人协作时，编辑前先获得最近版本</p>
+
+<pre><code>$ cd octopress  
+$ git pull origin source  
+$ cd ./_deploy  
+$ git pull origin master  
+</code></pre>
+
+<p>保存博客源码到github source分支:</p>
+
+<blockquote><pre><code>$ git add .  
+  $ git commit -m 'blog source'  
+  $ git push origin source  
+</code></pre></blockquote>
+
+<p>最后重新建立ssh密钥，参见：<a href="https://help.github.com/articles/generating-ssh-keys/">这里</a></p>
+]]></content>
+  </entry>
+  
+</feed>

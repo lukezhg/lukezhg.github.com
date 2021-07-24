@@ -9,7 +9,17 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="思路：先从delicious获取xml书签文件:实现https://USERNAME:PASSWORD@api.del.icio.us/v1/posts/all修改xml文件格式为evernote导出文件格式，后缀名为.enex：delicious2evernote.py用evernote导入文件 &hellip;">
+  <meta name="description" content="很久以前就用过Markdown，但是一直没有实现脚注功能。1
+中间是若干文字 中
+间
+是
+一. 大.
+段.
+文.
+字. 1：我的注释 代码如下： 1
+2
+3
+[1](#1d)&lt;a id="1u"&gt;&lt;/a&gt; [1](#1u)&lt;a id="1d"&gt;&lt;/a&gt &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lukezhg.github.com/blog/page/6/">
+  <link rel="canonical" href="http://zhangchunlei.com/blog/page/6/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -37,8 +47,6 @@
   <header role="banner"><hgroup>
   <h1><a href="/">Chunlei's Blog</a></h1>
   
-    <h2>A blog for future.</h2>
-  
 </hgroup>
 
 </header>
@@ -47,9 +55,9 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
+<form action="http://google.com.hk/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:lukezhg.github.com" />
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -57,8 +65,9 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/tag">Tags</a></li>
-  <li><a href="/search">Search</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
   <li><a href="/about">About</a></li>
 </ul>
 
@@ -73,7 +82,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/11/13/how-to-import-delicious-bookmarks-to-evernote/">在evernote中导入delicious书签</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/08/07/html-for-sub-link/">用Html实现脚注跳转</a></h1>
     
     
       <p class="meta">
@@ -89,16 +98,39 @@
   
 
 
-<time datetime="2011-11-13T00:00:00+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2011</time>
+<time datetime="2020-08-07T15:36:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/11/13/how-to-import-delicious-bookmarks-to-evernote/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/08/07/html-for-sub-link/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>思路：<br /><ol><li>先从delicious获取xml书签文件:实现https://USERNAME:PASSWORD@api.del.icio.us/v1/posts/all</li><li>修改xml文件格式为evernote导出文件格式，后缀名为.enex：delicious2evernote.py</li><li>用evernote导入文件.enex文件，成功！</li></ol>参考：<br /><ol><li>Dr.Palaniraja: Import Delicious bookmarks to Evernote including tags<br />: http://dr-palaniraja.blogspot.com/2010/12/import-delicious-bookmarks-to-evernote.html<br /></li></ol></p>
+  <div class="entry-content"><p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1d">1</a><a id="1u"></a>
+中间是若干文字</p>
+
+<p>中<br/>
+间<br/>
+是<br/>
+一. <br/>
+大.<br/>
+段.<br/>
+文.<br/>
+字.</p>
+
+<p><a id="1d"></a><a href="#1u">1</a>：我的注释</p>
+
+<p>代码如下：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[1](#1d)&lt;a id="1u"&gt;&lt;/a&gt;
+</span><span class='line'>
+</span><span class='line'>[1](#1u)&lt;a id="1d"&gt;&lt;/a&gt;：我的注释
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
   
   
@@ -111,7 +143,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/11/12/children-learng-resources-recommandation/">儿童学习资源推荐</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/08/07/performance-assessment/">表现性评价</a></h1>
     
     
       <p class="meta">
@@ -127,16 +159,54 @@
   
 
 
-<time datetime="2011-11-12T00:00:00+08:00" pubdate data-updated="true">Nov 12<span>th</span>, 2011</time>
+<time datetime="2020-08-07T10:36:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/11/12/children-learng-resources-recommandation/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/08/07/performance-assessment/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>网站：<br /><ol><li>十万个为什么全集&#8211;三齐儿童网（3kid.net）</li></ol>: http://www.3kid.net/ertong/shi-wan-ge-wei-shi-me.htm<br /><br />图书：<br /><br /><br />俱乐部：<br /><br />活动：<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=62560225-5b01-8a24-a879-6767b1538a77" /></div></p>
+  <div class="entry-content"><p>雨下的淅淅沥沥，空气中弥漫着泥土的清新，地上新采摘的10个植物标本经过小雨的洗礼更加娇艳欲滴。一位位同学撑着雨伞从这些标本面前走过，时不时蹲下身，数一下花瓣、观察一下花蕊或者拨弄一下果实，然后便在纸上记上一笔。我也是其中的一员，前面几个标本都比较熟悉，很快就写好了答案。但是，有一个标本让我蹲下身、眉头紧皱，我拼命回想眼前植物标本的相关信息，一个重要信息浮现出脑海“苹果它妈山丁子” <a href="#1d">1</a><a id="1u"></a>，可是不敢确定，突然眼前一亮，既然它可以嫁接苹果树，哪它的果子估计与苹果相似，于是不管三七二十一上去就咬了一口，咦，味道不错。于是很笃定的就把三丁子写在了答卷上。</p>
+
+<p>这大概是2002年的事情，当时我们正在小龙门进行本科植物实习，考试的方式就是认植物标本。这一幕可算是记忆深刻，那场小雨还有那颗三丁子，到现在已经快20年了，我还是记忆犹新。因为这次考试的方式别开新面，以往的考试都是纸笔考试，要写出不同植物科属的特征，记忆力是关键。但是这次，光有记忆力还不行，还需要观察和理解力，比如向我通过味觉分辨植物估计也是超出了考官的想想了吧，但确特别真实。恍惚间甚至有了神农尝百草的领悟。当时也没觉什么，就是觉得这种考法挺新鲜有趣。现在才知道，这是一种不同于传统纸笔评价方式的评价——表现性评价（Performance Assessment）。</p>
+
+<p>什么是表现性评价呢？真实的情景，真实的任务，开方向性的问题解决策略，评估综合性素养。与纸笔评价不同的是，表现性评价不局限于纸笔，考生往往需要在真实的问题情景下完成真实任务，考官更具考生的任务表现对考生的能力做出评测。这种表现可以是最后的产品，也可以是过程本身，或者两者都包含。比如，上面的植物实习考试，老师可以看最后的答案，也可以观察考生鉴别并最终确定答案的过程（不知道我当时哪一口是否已经被老师记录在案了）。</p>
+
+<p>还有很多与表现性评价相近的表述，比如真实性评价，也有翻译为实做评价，替代性评价。其中替代性评价强调的是用其他评价方式替代传统的纸笔评价，它是从评价形式的不同来命名的。还有学者对表现性评价和真实性评价做了却分，认为表现性评价强调的是基于行为作出评判，而真实性评价强调通过生活中真实的问题情境和任务来评判，两者都强调通过任务表现能力。由于我们一般设计表现性评价任务都具有真实的情景，所以我们把表现性评价与真实性评价等同处理，从而避免名词过多而造成的不变。</p>
+
+<p>如果你的学生对纸笔考试已经厌烦了，那么，你就要任真考虑一下表现性评价了。因为，它对于激发学生的动机具有更大的优势。特别是当下，核心素养的提出，其本质就是要发展学生的综合能力和品格，而表现性评价恰恰最适合这一任务。</p>
+
+<p>表现性评价的构成：任务；观察；解释；认知模型。表现性评价需要教师设计一个对于学生具有真实意义的任务，任务的目标尽可能明确，评价的标准也应事先让学生知晓，任务应该具有一定的挑战性。可以是个人任务也可以是小组任务。通常表现性评价的任务可以是制作一个产品，也可以是设计的问题解决方案，还可以是两者的融合，比如导演一部话剧。我们以制作一个产品为例，解释一下表现性评价的设计过程。</p>
+
+<h3>任务</h3>
+
+<p>一位小学科学老师在给4年级的学生上课。他们今天要学习的内容是浮与沉。老师不仅让他们观察不同的日常生活用品在水里的沉浮状态并找到浮沉与密度之间的关系，为了检测和巩固他们的理解，老师还带他们做了一个趣味活动项目————制作橡皮泥船。</p>
+
+<p>每个孩子分到一块同等大小的橡皮泥，然后可以把它捏成各种形状的船，观察能否浮在水面，还可看这个船能够承载多少硬币。每个小组的成员之间可以交流、合作，最后选出承载能力最强的船参加比赛，之后老师会让同学们分享成功或失败的原因。课上，孩子们对这个项目非常着迷，他们尝试不同的形状，每次自己的船能够承载更多的硬币时，他们都会欢声雀跃。为了防止橡皮泥溶于水，有的孩子想到用塑料薄膜把船包起来，这个想法得到了老师的公开表扬。还有的孩子虽然承载能力不是最大的，但是船的颜色和形状非常美观，也得到了老师的称赞和认可。</p>
+
+<p>在这个案例中，老师没有按照常规的，一个个科学概念去讲解，质量，体积，密度，也没有去讲浮力的公式，而是让学生进行一场比赛，什么比赛呢？用相同体积的橡皮泥，制作一艘承载能力最大的船。这个任务真是既好玩又长本领。这位老师真是太有智慧和想象力了！</p>
+
+<p>任务本身包括任务的目标、条件限制、竞争规则。比如这个活动的目标就是制作橡皮泥船，并且让它能承载更多的硬币。条件限制就是大家的橡皮泥一样多，其他材料也一样多。规则就是自己动手设计制作，测试，改善，最后参加比赛。</p>
+
+<h3>观察</h3>
+
+<p>明确观察点和数据收集。在这个任务中教师要观察学生的那些行为，收集哪些数据。比如教师可以观察学生合作情况、测试次数，还可以提问学生你们为什么这么设计，为什么选择球形或者长方体形等等，当然还要记录最后的比赛数据。</p>
+
+<h3>解释</h3>
+
+<p>教师应该根据学生在任务中的表现给出解释，这样的行为表明学生发展达到了什么样的层次，下一步应该提供哪些教学指导，从而进一步提高。</p>
+
+<h3>认知模型</h3>
+
+<p>给出解释的并不是简单的根据观察结果和数据做出的，而需要依据认知模型。所谓，认知模型就是学生在某一个认知领域的发展水平是如何由低到高一步一步进阶发展的。不同水平有怎样的差异，水平的高低如何划分和排序。认知模型可能开始是一个假设的理论模型，经过不断检验优化就成为具有证据支持的可操作性模型了。它是连接解释和观察的桥梁，是做出评判的依据，也是表现性评价设计的核心和难点。</p>
+
+<p>教育测量把观察、解释、认知模型成为测量三角，它是每个高质量教育测评的核心要素。而任务则是为观察、解释、认知模型建构提供了最佳视角和依据。</p>
+
+<h3>注脚</h3>
+
+<p><a id="1d"></a>[<a href="#1u">1</a>]:以前山丁子多是野生的，经常用于做苹果树的砧木。所谓砧木就是利用山丁子的根和茎为苹果枝条提供矿物质元素和水分，下面的山丁子是砧木，上面嫁接的苹果树枝条叫做砧穗。嫁接的好处就是克服了苹果树对土壤的要求，而且同样还可以结出苹果。戏剧的是，现在发生了反转。有人发现山丁子味甘酸、性凉、无毒，能润、生津、利痰、健脾、解酒，营养成分高于苹果。有人发明了以苹果树做砧木嫁接山丁子的方法。真是世事无常，十年河东十年河西，看来当年那一口的营养价值还不低。</p>
 </div>
   
   
@@ -149,7 +219,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/11/11/the-language-using-frequency-online/">网上各种语言资料所占的比例是多少</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/08/01/back-to-basics/">教育需要返璞归真</a></h1>
     
     
       <p class="meta">
@@ -165,16 +235,26 @@
   
 
 
-<time datetime="2011-11-11T00:00:00+08:00" pubdate data-updated="true">Nov 11<span>th</span>, 2011</time>
+<time datetime="2020-08-01T10:55:00+08:00" pubdate data-updated="true">Aug 1<span>st</span>, 2020</time>
         
-         | <a href="/blog/2011/11/11/the-language-using-frequency-online/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/08/01/back-to-basics/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;">网络上的资料是海量的，那么这些资料有多少是英文的，又有多少是中文，占据前十的语言及其比例是多少呢？</span><div><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><br /></span></div><div><span style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;">我们学习了很多工具的使用，大家看看能否找到答案。大约一周后我们会汇总我们的结果，并发布，希望大家都能在这个活动中画上一笔。</span></div> <br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=c9972d7d-f5de-8850-ab15-f1ca89042ce2" /></div></p>
+  <div class="entry-content"><p>一位老人，买了一块清净之地安享晚年。但是，来了一群孩子，总是在草坪上踢球，让老人不得清闲。幸亏老人学过心理学。有一天，他对这群孩子说，你们来这踢球让我不再孤的了，我要奖励你们10元钱。孩子们很高兴，就继续卖力踢。过了一段时间，老人说我积蓄不多了，只能给你们5元了，孩子想了想5元也不错还是继续踢。后来老人说我只能给你们1元了，这回领头的孩子站了出来。他说，我们踢球很累的，1元可不够。于是，他们就到别的地方去踢了，再也没回来。</p>
+
+<p>很多家长喜欢通过奖励激励孩子学习，而不知其中的风险。就像老人与孩子的故事一样，如果一旦奖励消失或者减少，学习的行为就会减退甚至丧失。究其根本原因，奖励使得学生学习的内在动机产生了外化，我们可以称之为习得性动机外化，或者叫做习得性内在动机丧失。奖着奖着，踢球就变成了赚钱的工具，学习就变成了父母的事。所以，想简单粗暴的刺激学习，长久来看得不偿失。</p>
+
+<p>那么，到底该用什么方法呢？得用笨方法，那就是让孩子发现学习的内在价值和乐趣。比如阅读，父母首先要喜欢阅读，要摆一些书在家里，并且时常翻阅，孩子就会好奇书里有什么。接下来可以给孩子买一些他喜欢的书，也可以安排亲子阅读时间。慢慢的孩子的阅读兴趣就有了，你不让他看，他跑到卫生间里看。</p>
+
+<p>学习也是想通的，要让孩子发现学习的价值，将学习与生活联系起来，与游戏、社交、表达、创造联系起来，特别是表达和社交可以让孩子爱上学习。因为学习一方面可以通过表达和社交实现，一方面又可以用于表达和社交。社会性是人的本质特性，孩子的学习也应该社会化。而在这一点，我们当下的学校教育做得不够，需要家长进一步扩展，做孩子的社交代理人。</p>
+
+<p>一土学校是李一诺创办的，其办学理念有一条就是为了让孩子有一个好的教育，需要有一个好的社区、好的社会作为支撑。“教育不仅是课程，也不仅是学校，而是一场几乎全社会不得不参与的社会体验”，而家庭、社区就是这种社会体验组成部分。</p>
+
+<p>所以，教育很难，需要家长亲身示范，教育也很简单，用最笨的方法亲身带动就可以。</p>
 </div>
   
   
@@ -187,7 +267,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/11/11/how-to-import-tiddlywiki-notes-into-evernote/">如何把tiddlywiki笔记导入到evernote</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/07/29/mindset/">成长型思维与固定型思维模式</a></h1>
     
     
       <p class="meta">
@@ -203,16 +283,43 @@
   
 
 
-<time datetime="2011-11-11T00:00:00+08:00" pubdate data-updated="true">Nov 11<span>th</span>, 2011</time>
+<time datetime="2020-07-29T21:55:00+08:00" pubdate data-updated="true">Jul 29<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/11/11/how-to-import-tiddlywiki-notes-into-evernote/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/07/29/mindset/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>tiddlywiki是一个很不错的非线性网页笔记本，它是一个存在你硬盘上的一个单个html文件，但是打开之后你会发现它实际上是一个用语言写的笔记本程序，而且你可以更具自己的需要进行界面以及插件的定制，比如我为学生定制的tiddlywiki(<a target="_blank" href="http://ecnubio.wikispaces.com/tiddlywiki">http://ecnubio.wikispaces.com/tiddlywiki</a>)。<br /><br />在tiddlywiki已经有了很多笔记之后，它的打开和保存速度会有所下降，而且我使用了很多笔记服务，我想搜索笔记的时候经常忘记，这个笔记是在博客上，还是在diigo上，还是在googlereader上，还是在tiddlywiki上，还是在evernote上。所以你看，我的问题很明显，我要要把所有的笔记最好能在同一个地方存储一份。（这个问题让我很头疼，若果有其他更好的解决方法，不妨赐教）<br /><br />所以我要把tiddlywiki上的笔记导入到evernote以便备份和搜索。尝试的解决方案：<br /><ol><li>使用ExportTiddlersPlugin: (http://www.tiddlytools.com/#ExportTiddlersPlugin)导出，纯文本文件，然后再编写文本分割程序，将每个笔记存为单独的txt文件。然后使用evernote-工具-导入文件夹。但是遇到了问题，第一导出的纯文本非常混乱，而且中文出现了乱码。折腾了半天，这个方案弃用。</li><li>又重新搜索，于是找到了一个老外的解决方案（The Strange Zen Of JavaScript: TiddlyWiki hack: exporting tiddler HTML: http://jszen.blogspot.com/2005/06/tiddlywiki-hack-exporting-tiddler-html.html）。在这个方案里提到使用火狐浏览器，可以通过选择tiddlywiki中的所有文字，然后右键，参看所选源代码，果然我看到了tiddlywiki中的所有笔记，而且这个笔记的格式非常统一，于是就动手把相应的笔记拷贝到一个txt文件中。接下来使用py编写了一个简单的文本切割程序，把文件中每个笔记单独的保存到一个txt文件中，然后导入，大功告成。yeah！！</li></ol>总结：<br /><ol><li>动手之前好好做一下搜索工作非常必要，还是那句话，你遇到的问题99%已经有人遇到了过了，参考使用别人的解决方案，可以避免无谓的时间浪费和重复性工作。</li><li>遇到不熟悉的领域，找到相关的论坛进行搜索和求助是更容易的事情。<br /></li><li>学好英文是非常关键的，这决定了你的阅读范围。能看英文的文档能让你的阅读范围扩大很多倍。多少倍呢？个人保守估计10倍左右，这取决于互联[[网上不用语言资料所占的比例]]。<br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=345c8cf1-94d0-82dc-b3dd-613af2142346" /></div></p>
+  <div class="entry-content"><p>温柔的注视</p>
+
+<p>男孩在练习网球，父亲在观看。每次球总是打下网，教练就换另外一个女孩继续练习。男孩很失望往回走看着父亲，父亲也看他，没有任何表示，好像下网是很平常。男孩继续尝试，终于能够和教练打了10多个回合，教练很满意，男孩也很满意，看着父亲，父亲会心微笑，伸出大拇指。</p>
+
+<p>这是一个切实发生在我身上的故事，哪个男孩就是我的儿子。但当时，他打得不好，我也挺着急，但是我暗暗告诉自己不要有任何表情，不指责，也不鼓励，因为这时鼓励实际上还是说他做的不够好。但是，当他通过努力练习取得效果时，就要把发在内心的喜悦表漏出来，大大地给予赞赏。孩子非常敏锐，他能感受到。</p>
+
+<p>这背后其实蕴涵一个原则，就是在放大他自身的积极情绪，而弱化他的消极情绪，同时帮助他形成正确的归因，那就是通过努力能够得到成功，失败说明努力得不够。</p>
+
+<p>最近读了一本书《终身成长》（斯坦福大学心理学家卡罗尔.得韦克），推荐给大家读。它的核心观点就是要树立成长型思维模式，而脱离固定型思维模式的束缚。</p>
+
+<p>这么简单的一个观点，值得写一本书吗，值得！而且是全美排名前十的畅销书。书中介绍了一系列的案例和策略，值得想就此做出改变的读者一读为快。那么，成长型思维与固定型思维究竟有什么不同呢？主要有以下不同：<br/>
+1、成败观不同<br/>
+成长型思维的人对失败具有更强的承受力，他们会认为失败是因为自己努力不够或者方法需要改进。而固定型思维的人则会认为自己不擅长而放弃继续努力。成功时，成长型思维会因为努力得到回报，而付出更多努力。但是，固定型思维会认为这是理所应当的，而且会不愿尝试新的挑战，因为一旦失败自己就会备受打击。</p>
+
+<p>2、自我观念不同<br/>
+成长型思维的人认为万事皆有可能，只要付出努力。也就是自己是可以改变的。因此会通过付出更多的努力来让自己获得发展，至于因为努力而获得成就反而成为副产品。但固定型思维的人则会认为自己的状态无法通过努力而该改变，于是就不再谋求改变，而原地踏步。</p>
+
+<p>3、反馈观不同<br/>
+成长型思维愿意接收外部的评价反馈，因为他们把评价反馈看作发展的机会。但是固定型思维模式的人则逃避评价反馈，他们会认为评价是一种威胁，危及他们的自我认识。</p>
+
+<p>4、探求欲不同<br/>
+成长型思维的人喜欢不断挑战自己，比如喜欢做难题的总是想方设法找一些更难的题目来做，或者探索自己不熟悉的领域，他们很容易走出自己的心理舒适区。相反，固定型思维模式的人则不愿意承担名誉扫地的风险，喜欢炫耀自己的能力，习惯呆在自己安全的领域，对于未知的领域缺乏同样的好奇心。</p>
+
+<p>最后，一点非常重要，那就是把人分为成长型思维和固定型思维本身就是一种固定型思维，两者是可以相互转化的。有些人在某些方面持有固定型思维，有些方面则持有成长型思维。比如我认为自己五音不全，不适合唱歌，这就是固定思维。我认为，可以通过不断写作本身来提高写作能力，这是成长型思维。</p>
+
+<p>有时不在一个方面努力是为了在另一个方面更努力。比如我不会投身歌唱的行业，而会把时间留给写作。这时，这种放弃努力是一种积极的脱离，因为其目的是更好地探索其他方向，所以就整体而言还是成长型思维。但有时，不断探索也可能是为了维持自己在别人心目中形象的一种假象，那就会生活在别人看法中，其本质是谋求他人的认可，这是另外一种自我偏离。此外，还要记得并不是所有的目标都值得不断努力的。</p>
+
+<p>人是复杂的，需要自己对自己有清晰的认识。当固定型思维阻碍我们发展时，要有勇气走出思维的墙，探索崭新的自己和外面的世界。因为，世界能够给你的要比你想象的多得多，你能做到的也要比你认为你能做到的多得多。善！</p>
 </div>
   
   
@@ -225,7 +332,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/10/29/teacher-should-be-a-good-story-teller/">教师应该是一个善于讲故事的人</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/07/28/hattie-ranking/">海蒂列表</a></h1>
     
     
       <p class="meta">
@@ -241,206 +348,124 @@
   
 
 
-<time datetime="2011-10-29T00:00:00+08:00" pubdate data-updated="true">Oct 29<span>th</span>, 2011</time>
+<time datetime="2020-07-28T15:31:00+08:00" pubdate data-updated="true">Jul 28<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/10/29/teacher-should-be-a-good-story-teller/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>很小的时候，我就很喜欢听故事。等大了一点，还编一些非常离奇的故事，将给小孩子听，虽然是现编现讲，而且非常离谱，但是它们居然还听的津津有味。这说明不了我多美会讲故事，只是说明孩子确实是非常喜欢听故事的。为什么呢？我觉得故事最贴近我们的生活体验，它是按照我们的个人经验范式叙事的，同时它也可能刚好符合了我们大脑的神经网络的情景记忆模式。<br /><br />作为老师，要把一堂课上好，要用好的例子，比喻，表征，还有就是要会讲故事。无论是自己亲身经历的故事，还是别人的故事。善于搞科研的老师讲科研的故事，善于实践和反思的老师讲自己的故事，广泛阅读的老师讲经典的具有教育意义的故事。故事可以让你的课堂生动起来，鲜活起来，丰富起来，有趣起来，成为一个整体。当然前提是，你要善于讲，会讲故事。<br /><br />教师讲故事应该把握一些原则：<br /><ol><li>主题相符（符合教学需要）</li><li>真实生动（真实可鉴，形象具体，绘声绘色）</li><li>短小精悍（占用时间短，语言精练）</li><li>发人深思（具有冲击性和启发性）</li><li>智慧活泼（让人会意一笑）</li></ol>为了运用好这些故事，教师要注意日常的素材的搜集、整理和加工，最后才能为我所用。比如今天，我就在<a target="_blank" href="http://www.nwp.cn">新世界数字出版网</a>上看到一本在线读物<a href="http://www.nwp.cn/book/233.shtml">《18岁以前孩子应该懂得的做事方法》</a>（http://www.nwp.cn/book/233_6871.shtml），上面运用了很多故事素材，来达到教育意义。<br /><br />教师也应该是一个有故事的人。平常的教学反思、教育叙事、生活经历都可以积累成自己的故事。<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=916de64b-dae9-86d3-a169-f3f336db5e25" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/26/flash-learning-resources/">Flash动画制作学习资源</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-26T00:00:00+08:00" pubdate data-updated="true">Oct 26<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/26/flash-learning-resources/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/07/28/hattie-ranking/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>为了方便flash爱好者的学习，特将flash相关学习资源汇集如下：<br />（一）网络图文教程：<br /><ul><li>Flash动画制作学习教程-信息技术教学: <a target="_blank" href="http://www.edudown.net/Article/lunwen/200509/327.html">http://www.edudown.net/Article/lunwen/200509/327.html</a></li><li>Flash动画制作视频教程－eNet网络学院: <a target="_blank" href="http://www.enet.com.cn/eschool/zhuanti/4u2vflash/">http://www.enet.com.cn/eschool/zhuanti/4u2vflash/</a><br /></li><li>Flash CS3 Action Script3.0 实用视频教程基础篇&#8211;eNet学院: <a target="_blank" href="http://www.enet.com.cn/eschool/video/flashcs3/">http://www.enet.com.cn/eschool/video/flashcs3/</a></li><li>Flash CS3 Action Script3.0 组件高级编程&#8211;eNet网络学院: <a target="_blank" href="http://www.enet.com.cn/eschool/video/flashactionscrip3/">http://www.enet.com.cn/eschool/video/flashactionscrip3/</a></li><li>Flash AS3.0菜鸟学飞教程 - ITeye专栏频道: <a target="_blank" href="http://www.iteye.com/wiki/blog/638594">http://www.iteye.com/wiki/blog/638594</a></li><li>12网站帮你学习Flash/ActionScript - 编程语言 - ITeye资讯: <a target="_blank" href="http://www.iteye.com/news/17932">http://www.iteye.com/news/17932</a></li><li>Flash AS 入门到精通教程 - 技术分享 - 豆豆网: <a target="_blank" href="http://tech.ddvip.com/2006-10/11616280969846.html">http://tech.ddvip.com/2006-10/11616280969846.html</a></li><li>AS3.0经典实例入门 - abin - ITeye技术网站: <a target="_blank" href="http://varyall.iteye.com/blog/809945">http://varyall.iteye.com/blog/809945</a><br /></li></ul><br />（二）视频教程网址：<br /><ul><li>Flash动画制作教程_在线观看15个视频_土豆网: <a target="_blank" href="http://www.tudou.com/playlist/p/l13115810i69737550.html">http://www.tudou.com/playlist/p/l13115810i69737550.html</a></li></ul>（三）Flash源代码以及素材网站：<br /><ul><li><a target="_blank" href="http://www.flash8.net/">http://www.flash8.net/</a></li><li><a target="_blank" href="http://www.5uflash.com">http://www.5uflash.com</a><br /></li></ul>（四）Flash相册：<br /><ul><li>非常棒的flash+xml相册 闪吧Flash8: <a target="_blank" href="http://www.flash8.net/fla/9831.shtml">http://www.flash8.net/fla/9831.shtml</a></li></ul>（五）中文论坛：<br /><ul><li>Adobe - Flash 开发人员中心: http://www.adobe.com/cn/devnet/flash/<br /></li><li>闪吧论坛: <a target="_blank" href="http://space.flash8.net/bbs/index.php">http://space.flash8.net/bbs/index.php</a></li><li>天地会论坛 FLASH开发社区: <a target="_blank" href="http://bbs.9ria.com/">http://bbs.9ria.com/</a><br /></li></ul>（六）优秀的外国学习站点<br /><ol><li>Flash Bestiary: A compendium of actionscript code: <a target="_blank" href="http://www.krazydad.com/bestiary/">http://www.krazydad.com/bestiary/</a></li><li>Flash and AS3 links - EduTech Wiki: <a target="_blank" href="http://edutechwiki.unige.ch/en/Flash_and_AS3_links_-_tutorials">http://edutechwiki.unige.ch/en/Flash_and_AS3_links_-_tutorials</a><br /></li><li>aM laboratory: <a target="_blank" href="http://lab.andre-michelle.com/tag/flash9/">http://lab.andre-michelle.com/tag/flash9/</a></li><li>Flash ActionScript 3.0 Tutorials: <a target="_blank" href="http://www.republicofcode.com/tutorials/flash/">http://www.republicofcode.com/tutorials/flash/</a><br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=4b96fcb9-d8c6-8e35-8773-f4591e9f6499" /></div></p>
-</div>
-  
-  
+  <div class="entry-content"><p>之前给大家推荐过《循证教学》这本书。</p>
 
+<p>还有一本书也非常值得推荐，那就是《可见的学习》这本书。在这本书里，澳大利亚研究者海蒂收集并分析了全球800多个元研究，对能够有效促进学生成绩提高的教学策略进行了归纳，200多种教学策略按照效应量大小进行了排列，结果见这里：https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/</p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/17/the-core-skills-of-21st-century/">21世纪核心技能</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>其中前50名，我进行了简单的翻译如下：</p>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Rank    影响  Influence   Effect size d (Dec 2017)
+</span><span class='line'>1   教师集体性效能感    Collective teacher efficacy 1.57
+</span><span class='line'>2   自我报告的成绩 Self-reported grades    1.33
+</span><span class='line'>3   老师对成绩的估计    Teacher estimates of achievement    1.29
+</span><span class='line'>4   认知任务分析  Cognitive task analysis 1.29
+</span><span class='line'>5   早期干扰  Response to intervention    1.29
+</span><span class='line'>6   皮亚杰项目   Piagetian programs  1.28
+</span><span class='line'>7   拼图教学法   Jigsaw method   1.2
+</span><span class='line'>8   概念转变项目  Conceptual change programs  0.99
+</span><span class='line'>9   先验能力    Prior ability   0.94
+</span><span class='line'>10  与先验知识融合的策略  Strategy to integrate with prior knowledge  0.93
+</span><span class='line'>11  自我效能    Self-efficacy   0.92
+</span><span class='line'>12  教师信誉    Teacher credibility 0.9
+</span><span class='line'>13  微观教学/课程视频回顾 Micro-teaching/video review of lessons  0.88
+</span><span class='line'>14  迁移策略    Transfer strategies 0.86
+</span><span class='line'>15  课堂讨论    Classroom discussion    0.82
+</span><span class='line'>16  脚手架 Scaffolding 0.82
+</span><span class='line'>17  刻意练习    Deliberate practice 0.79
+</span><span class='line'>18  总结  Summarization   0.79
+</span><span class='line'>19  努力  Effort  0.77
+</span><span class='line'>20  对有学习需求的学生干预 Interventions for students with learning needs  0.77
+</span><span class='line'>21  助记符 Mnemonics   0.76
+</span><span class='line'>22  计划与预测   Planning and prediction 0.76
+</span><span class='line'>23  重复阅读项目  Repeated reading programs   0.75
+</span><span class='line'>24  老师清晰    Teacher clarity 0.75
+</span><span class='line'>25  知识精致和组织 Elaboration and organization    0.75
+</span><span class='line'>26  评价与反思   Evaluation and reflection   0.75
+</span><span class='line'>27  互惠教学（学生教学）  Reciprocal teaching 0.74
+</span><span class='line'>28  重复和记忆   Rehearsal and memorization  0.73
+</span><span class='line'>29  理解性课程教学计划   Comprehensive instructional programs for teachers   0.72
+</span><span class='line'>30  主动寻求帮助  Help seeking    0.72
+</span><span class='line'>31  语音教学    Phonics instruction 0.7
+</span><span class='line'>32  反馈  Feedback    0.7
+</span><span class='line'>33  深刻的动机和方法    Deep motivation and approach    0.69
+</span><span class='line'>34  领域自主    Field independence  0.68
+</span><span class='line'>35  加速学习项目  Acceleration programs   0.68
+</span><span class='line'>36  学习目标与无目标    Learning goals vs. no goals 0.68
+</span><span class='line'>37  解决问题的教学 Problem-solving teaching    0.68
+</span><span class='line'>38  概述和转化   Outlining and transforming  0.66
+</span><span class='line'>39  概念图 Concept mapping 0.64
+</span><span class='line'>40  词汇项目    Vocabulary programs 0.62
+</span><span class='line'>41  创新项目    Creativity programs 0.62
+</span><span class='line'>42  行为干预计划  Behavioral intervention programs    0.62
+</span><span class='line'>43  制定自我判断标准    Setting standards for self-judgement    0.62
+</span><span class='line'>44  老师不给学生贴标签   Teachers not labeling students  0.61
+</span><span class='line'>45  高中与大学成就的关系  Relations of high school to university achievement  0.6
+</span><span class='line'>46  元认知策略   Meta-cognitive strategies   0.6
+</span><span class='line'>47  间隔练习相对集中练习  Spaced vs. mass practice    0.6
+</span><span class='line'>48  直接教学    Direct instruction  0.6
+</span><span class='line'>49  数学课程    Mathematics programs    0.59
+</span><span class='line'>50  适当挑战性的目标    Appropriately challenging goals 0.59</span></code></pre></td></tr></table></div></figure>
 
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-17T00:00:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/17/the-core-skills-of-21st-century/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>核心科目知识和技能<br />学习和创新技能<br />信息、媒体、技术相关技能<br />生活和职业技能<br /><br />参考：<br />The Partnership for 21st Century Skills - Framework for 21st Century Learning<br />: http://www.p21.org/index.php?option=com_content&amp;task=view&amp;id=254&amp;Itemid=120<br /><br />An Investigation of Senior High School biology teachers&#8217; learning environment<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=ee3a8b82-6520-8315-ae12-49c1e28cbd65" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/17/help-students-propose-good-questions/">帮助学生提出他们自己的问题-跨上思想的野马</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-17T00:00:00+08:00" pubdate data-updated="true">Oct 17<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/17/help-students-propose-good-questions/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>提问实际上是一个思考的过程？而提问是一种尝试建立连接的过程，因此对于学习非常有益。这种益处表现在，一方面，当你提问的时候，你会觉得寻找问题的答案是自己的责任，你会想方设法解决它。而当学生知道如何提出自己的问题时，他们会为自己的学习负起更多的责任，深化交流，建立新的连接和获得新的发现。<br /><br />教师借助问题生成技巧（Question Formulation Technique）来辅助学生提问。<br /><ol><li>教师设计问题的焦点（图片、视频、声音，获得学会生注意，使其快速提出问题）</li><li>学生提出问题（规则是尽可能多的提出问题，不要停下来讨论，评判或者试图回答，写下原封不动的写下这些问题，把每个表述都变成问句。一但学生工作起来，这个规则可以使得学生进入开放的思考状态。）</li><li>学生完善自己的问题。区分哪些是开放性的，哪些是封闭性的问题。它们的优缺点如何，教师可以让学生至少把一个开放性问题转变成封闭性问题，并且把一个封闭性问题转变成一个开放性问题。让学生意识到，如何表述一个问题，会影响问题的深度、质量以及获得信息的价值。</li><li>学生优选自己的问题。单元学习开始时，选择你最想扩展学习的问题。实验时选择三个可以检验的问题。</li><li>师生共同决定下一步行动。</li><li>学生反思自己学到了什么。</li></ol>阅读摘录自：http://www.hepg.org/hel/article/507#home<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=d642e021-5eba-8cde-9620-4e508d47c977" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/04/students-assessments-discussion/">欢迎参加活动——学生评价大讨论</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-04T00:00:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/04/students-assessments-discussion/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>作为教师经常关注的问题是怎么教？也就是教学法的问题，但是教什么，为什么教，教得怎么样？这样的问题却相对较少的关注。为什么呢，教什么已经由课程内容 标准以及教科书做了规定和一定的限制，所以教师关注与否都很难改变，而为什么教，也就是教育目标的问题，也已经有国家政策文件进行了阐述。至于教的怎么样 呢？看高考。所以留给教师的只有一个问题，那就是如何教，也仅仅在这个问题上一线教师才有话语权。<br /><br />真的是这样吗？差不多。真的应该这样吗？我个人觉得绝不应这样。因为教师不等于教书匠。教师的工作是创造性的工作，而绝不是教育生产线上的终端分装器，把 各科知识按照需要分装到学生的头脑里。课程试图屏蔽教师个人的影响，就像绘画试图剔除画家特有的风格一样愚蠢。除非这个课程是没有教师的课程，但是即便如 此，也会涌现出一些学习领袖对整个课程的学习产生巨大的影响。学习领袖难道不是扮演了教师的角色吗。<br /><br />因此，教师越不应该只关注怎么教，还要关注为什么教，教什么，教的怎么样，在哪里教，交给谁等一系列的问题，也只有这样教师才能成长为教学专家，成长为教育家。<br /><br />而实际上为什么教，教什么，以及教得怎么样，这三个问题是密切相关，而且都会反映在学生评价当中。那么我们不妨就“学习评价”，就我们应该如何评价我们的 学生，这个问题展开一次讨论。考高命题也许并不由我们教师决定，但是课堂教学中对学生的评价的权利却在掌握在我们教师手里。我们要如何行使这项权利呢？  欢迎大家参与此次在线讨论！<br /><br />讨论方式：<br />1：直接参与邮件列表中的讨论<br />2：参加新浪微博上的讨论，你可以在这里（http://q.weibo.com/367208）发言，也可以在微博中添加标签<b><span style="color: rgb(255, 0, 0);"> #学生评价大讨论#</span></b><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=9b38d4c8-6fe4-8382-a061-46f5e15feb94" /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/04/problems-students-meet-in-ICT-and-solutions/">信息技术课程中学生遇到的一些问题和解决方向</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-04T00:00:00+08:00" pubdate data-updated="true">Oct 4<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/04/problems-students-meet-in-ICT-and-solutions/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><b>问题1：</b>机房的电脑浏览器版本过低，相关软件未安装好，切带有硬盘保护。<br />解决方案：求助机房管理人员安装必要软件和浏览器；鼓励学员使用便携版系统和浏览器。比如可以使用便携版火狐 Firefox Portable（新浪下载页面： <a target="_blank" href="http://down.tech.sina.com.cn/content/1528.html">http://down.tech.sina.com.cn/content/1528.html</a>）<br /><br />此外，很多开源或者绿色软件都可以尝试装在优盘中，而且不影响正常使用。<br /><br /><b>问题2</b>：学员遇到问题之后，常常无不知道如何解决？<br />解决方案：<br /><ol><li><b>明确表述你的问题或者需要。</b>比如问题1中由于机房电脑的限制，实际上我们需要的是找到能够在闪存中运行的版本的软件。</li><li><b>使用搜索引擎查找解决方案</b>。比如上面的例子中，我只要搜索“便携版firefox”，结果就找到了先关的软件。</li><li><b>尝试按照方案解决实际问题。</b>尝试是很重要的，如果你有了某些想法，不妨试一试，没准你就找到了一个绝佳的问题解决方案。没有尝试，就不能获得更多的反馈信心，没有这些反馈信息就根本找不到适合自己的方法。这就像学习游泳一样，教练把动作讲的再清楚，你不下水实践，那么还是不能学会如何游泳。</li><li><b>利用尝试过程信息求助论坛。</b>经历了一些尝试之后，如果遇到了新的问题或困难，或者不知道进一步解决问题的方向，可以结合这些反馈信息到邮件列表或论坛里求助。这个步骤当然也包括向你认识的所有人求助，甚至包括不认识的相关专家。</li><li><b>记录分享你的问题解决方案</b>。最后你可以把自己问题解决的过程以及最后的问题解决发难通过博客、wiki、邮件、微博等形式进行记录和分享，让在这个过程中给予你帮助的所有人也能分享你的解决方案。</li></ol><b>问题3</b>：如何更好的管理自己的学习过程？学员要以小组的形式完成教师选定的或者自己选定的学习任务，通常会有两个难题摆在学员面前：<br /><ol><li>如何提高团队的工作效率？</li><li>如何提高自己i的工作效率？</li></ol><b>问题3.1：</b>如何提高团队的工作效率？<br />解决方案：<br /><ul><li><b>小组长要负起责任</b>，做好组织和联系的工作，激发团队的士气以及互帮互助的氛围。</li><li><b>明确的分工</b>，必须把工作分解并分配每个人，当然最好让每个学员都能发挥自己的优势。</li><li><b>设定截止日期</b>，明确约定每个人在什么时候完成什么任务到什么程度。</li><li><b>学会沟通和换位思考</b></li><li><b>给每个学员以反馈和鼓励<br /></b></li></ul><b>问题3.2</b>：如何提高个人的学习效率？<br /><ul><li><b>使用电脑前，先列好清单</b>，一件一件的完成，决绝网络其他娱乐方式的诱惑（比如聊天、浏览新闻、图片、视频等）。</li><li><b>掌握好时间的分配</b>。上课的时候应该专心听讲，而不应该在尝试去解决自己没有解决的问题，这些问题完全可以等老师讲完去问老师或同学。其次，在问题解决过程中如果遇到难题，10分钟还没有任何进展，暂时挂起该任务，另寻其他解决途径，而不应该花费一上午去查阅某些东西或者去尝试安装某些软件。因此在学习中，当一个任务10分钟还没有任何进展，那么就把这个问题挂起，或者抛到邮件列表里进行询问。另外要规划好自己的学习时间。</li><li>最最重要的，最最本质的，起就是<b>能够管理自己，自我调控</b>。<br /></li></ul><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a2106dc2-e8a9-8603-94ae-97ac6d7bbac1" /></div></p>
 </div>
   
   
@@ -462,79 +487,179 @@
   
     <section>
   <h1>About Me</h1>
-  <p>Chunlei is lazy, but he wants do something.</p>
-</section>
-
-<section>
-  <h1>新浪微博</h1>
-  <ul id="weibo">
-    <li>
-      <iframe width="100%" 
-	    height="550" 
-		class="share_self"  
-		frameborder="0" 
-		scrolling="no" 
-		src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1692535814&verifier=27e84cd9&dpc=1">
-      </iframe>
-    </li>
-  </ul>
-</section>
-
-
-
-
-<section>
+  <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
+  <p>慧行坚勇 <a href="http://zhangchunlei.com/about/">More</a> <a href="http://zhangchunlei.com/blog/categories/%E6%95%99%E5%AD%A6/">教学</a> <a href="http://zhangchunlei.com/blog/categories/%E7%A7%91%E7%A0%94/">科研</a> <a href="http://www.skc.ecnu.edu.cn/">skc</a> <a href="https://scholar.google.co.uk/">gs</a><a href="https://xueshu.baidu.com/">xs</a></p>
+</section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/22/what-robot-can-do-for-me/">what robot can do for me</a>
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/21/front-of-class/">front of class</a>
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
       </li>
     
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/rss'>RSS (1)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (6)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/总结'>总结 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (2)</a></li><li><a href='/blog/categories/杂谈'>杂谈 (1)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活观察'>生活观察 (1)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
   <ul class="tag-cloud">
-<a style="font-size: 112%" href="/tag/english/">English</a>
-<a style="font-size: 112%" href="/tag/bioteahouse/">bioteahouse</a>
-<a style="font-size: 112%" href="/tag/github/">github</a>
-<a style="font-size: 143%" href="/tag/linux/">linux</a>
-<a style="font-size: 112%" href="/tag/pck/">pck</a>
-<a style="font-size: 112%" href="/tag/try/">try</a>
-<a style="font-size: 112%" href="/tag/标签云/">标签云</a>
-<a style="font-size: 165%" href="/tag/随笔/">随笔</a>
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
 
   </ul>
 </section><section>
 	<h1>最新评论</h1>
 	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
 </section><section>
-  <h1>知识共享协议</h1>
+<h1>Halley&#8217;s Comet</h1>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(date1-new Date())/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
+}
+//]]>
+</script>
+<div id="thenceThen"></div>
+<h1>太平洋夏令时 (PDT)</h1>
+<div class="thetimenow-embeddable-clock" data-type="clock" data-font-color="#000000" data-border-color="#000000" data-background-color="#ffffff" data-font-size="60" > <a href="http://zh.thetimenow.com/" rel="nofollow" target="_blank">© The Time Now</a> </div> 
+<script type="text/javascript" src="http://zh.thetimenow.com/ttn-embed.min.js"></script>
+</section><section>
+  <h1>Links</h1>
+  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
+  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
+</section><section>
+  <h1>Visitors to this Blog</h1>
+    <div id="clustrmaps-widget"></div>
+	  <script type="text/javascript">var _clustrmaps = {'url' : 'http://zhangchunlei.com/', 'user' : 1092323, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2013-09-14', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+	  <noscript><a href="http://www2.clustrmaps.com/user/d1910aae3"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/zhangchunlei.com--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section><section>
+  <h1>Creative Commons</h1>
   <p>
    <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
-  本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
   </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
 </section>
   
 </aside>
@@ -542,7 +667,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - chunlei -
+  Copyright &copy; 2021 - chunlei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -566,17 +691,18 @@
 
 
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
+
+
 
 
 

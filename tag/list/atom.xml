@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: list | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/list/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[海蒂列表]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/07/28/hattie-ranking/"/>
+    <updated>2020-07-28T15:31:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/07/28/hattie-ranking</id>
+    <content type="html"><![CDATA[<p>之前给大家推荐过《循证教学》这本书。</p>
+
+<p>还有一本书也非常值得推荐，那就是《可见的学习》这本书。在这本书里，澳大利亚研究者海蒂收集并分析了全球800多个元研究，对能够有效促进学生成绩提高的教学策略进行了归纳，200多种教学策略按照效应量大小进行了排列，结果见这里：https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/</p>
+
+<p>其中前50名，我进行了简单的翻译如下：<br/>
+<code>
+Rank    影响  Influence   Effect size d (Dec 2017)
+1   教师集体性效能感    Collective teacher efficacy 1.57
+2   自我报告的成绩 Self-reported grades    1.33
+3   老师对成绩的估计    Teacher estimates of achievement    1.29
+4   认知任务分析  Cognitive task analysis 1.29
+5   早期干扰  Response to intervention    1.29
+6   皮亚杰项目   Piagetian programs  1.28
+7   拼图教学法   Jigsaw method   1.2
+8   概念转变项目  Conceptual change programs  0.99
+9   先验能力    Prior ability   0.94
+10  与先验知识融合的策略  Strategy to integrate with prior knowledge  0.93
+11  自我效能    Self-efficacy   0.92
+12  教师信誉    Teacher credibility 0.9
+13  微观教学/课程视频回顾 Micro-teaching/video review of lessons  0.88
+14  迁移策略    Transfer strategies 0.86
+15  课堂讨论    Classroom discussion    0.82
+16  脚手架 Scaffolding 0.82
+17  刻意练习    Deliberate practice 0.79
+18  总结  Summarization   0.79
+19  努力  Effort  0.77
+20  对有学习需求的学生干预 Interventions for students with learning needs  0.77
+21  助记符 Mnemonics   0.76
+22  计划与预测   Planning and prediction 0.76
+23  重复阅读项目  Repeated reading programs   0.75
+24  老师清晰    Teacher clarity 0.75
+25  知识精致和组织 Elaboration and organization    0.75
+26  评价与反思   Evaluation and reflection   0.75
+27  互惠教学（学生教学）  Reciprocal teaching 0.74
+28  重复和记忆   Rehearsal and memorization  0.73
+29  理解性课程教学计划   Comprehensive instructional programs for teachers   0.72
+30  主动寻求帮助  Help seeking    0.72
+31  语音教学    Phonics instruction 0.7
+32  反馈  Feedback    0.7
+33  深刻的动机和方法    Deep motivation and approach    0.69
+34  领域自主    Field independence  0.68
+35  加速学习项目  Acceleration programs   0.68
+36  学习目标与无目标    Learning goals vs. no goals 0.68
+37  解决问题的教学 Problem-solving teaching    0.68
+38  概述和转化   Outlining and transforming  0.66
+39  概念图 Concept mapping 0.64
+40  词汇项目    Vocabulary programs 0.62
+41  创新项目    Creativity programs 0.62
+42  行为干预计划  Behavioral intervention programs    0.62
+43  制定自我判断标准    Setting standards for self-judgement    0.62
+44  老师不给学生贴标签   Teachers not labeling students  0.61
+45  高中与大学成就的关系  Relations of high school to university achievement  0.6
+46  元认知策略   Meta-cognitive strategies   0.6
+47  间隔练习相对集中练习  Spaced vs. mass practice    0.6
+48  直接教学    Direct instruction  0.6
+49  数学课程    Mathematics programs    0.59
+50  适当挑战性的目标    Appropriately challenging goals 0.59
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[教学资源梳理——只有会用才显优势]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/11/13/the-resources-only-help-when-they-are-well-used/"/>
+    <updated>2014-11-13T16:54:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/11/13/the-resources-only-help-when-they-are-well-used</id>
+    <content type="html"><![CDATA[<p>花了很长时间找资源，不见得找的得到，找到了不见得资源好，资源好不见得适用，适用不见得会用，会用不见得学习效果好。经过这样的不断地阻挠，寻找有效的资源已经变得不那么重要了，因为即使找到了，也不见得能很好的整合。</p>
+
+<p>教师自己制作的资源往往最有效。教师自己列的资源清单往往最对口。资源不是一天两天积累的，就像蜜蜂采蜜一样，需要有耐心，有恒心，有目标，有意识。</p>
+
+<p>有了资源，教师需要基于资源结合学情，设计出好的学习活动和任务，与特定的内容、目标、学生相切合，任务的设计和活动的组织是其中的关键。</p>
+
+<h2>优质教学视频、动画库：</h2>
+
+<p><a href="http://www.hhmi.org/biointeractive/explore-animations">Explore Animations | HHMI.org</a></p>
+
+<p><a href="http://concord.org/stem-resources">STEM Resource Finder | The Concord Consortium</a></p>
+
+<p><a href="http://phet.colorado.edu/en/simulations/category/new">PhET Simulations</a></p>
+
+<p><a href="http://biologycorner.com/">The Biology Corner</a></p>
+
+<h2>表单</h2>
+
+<p>Biology tools and simulations for teachers &amp; parents.
+<a href="http://www.cloudetal.com/tools/biology-tools">http://www.cloudetal.com/tools/biology-tools</a></p>
+
+<p>Biology Labs - OnlineLabs.in - Virtual laboratory simulations for science education
+<a href="http://onlinelabs.in/biology">http://onlinelabs.in/biology</a></p>
+
+<h2>单个资源：</h2>
+
+<p>虚拟显微镜考核
+<a href="http://www.udel.edu/biology/ketcham/microscope/scope.html">Visual Microscope</a></p>
+
+<p>制作染色体图谱
+<a href="http://learn.genetics.utah.edu/content/chromosomes/karyotype/">Make A Karyotype</a></p>
+
+<p>为什么热带鸟产更少的蛋？
+<a href="http://www.mhhe.com/biosci/genbio/tlw3/virtual_labs/lab2/labs/lab2/home.html">Virtual Labs</a></p>
+
+<p>光合作用
+<a href="http://www.science.smith.edu/departments/Biology/Bio231/default.html">Bio 231 Cell Biology Laboratory Home Page</a></p>
+
+<p>果蝇杂交模拟实验
+<a href="http://i-biology.net/ibdpbio/04-genetics-and-genetic-engineering/drosophilab/">DrosophiLab | i-Biology</a></p>
+
+<p>传统育种与现代育种
+<a href="http://www.pbs.org/wgbh/harvest/engineer/">PBS - harvest of fear: engineer a crop (hot science)</a></p>
+
+<p>工业黑化<br/>
+<a href="http://biologycorner.com/worksheets/pepperedmoth.html">Peppered Moth Simulation</a><br/>
+这个网站有很多不错的整合信息技术的教案</p>
+
+<h2>教学视频</h2>
+
+<p>TIMSS video study<br/>
+<a href="http://www.timssvideo.com/timss-video-study">http://www.timssvideo.com/timss-video-study</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Metaphors for teaching and education reform]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/20/metaphors-for-teaching/"/>
+    <updated>2013-09-20T23:18:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/20/metaphors-for-teaching</id>
+    <content type="html"><![CDATA[<h3>Metaphors for teaching:</h3>
+
+<p>A teacher is just like a cook. You can tell a good cook by the taste of his dishes, so you can also tell a good teacher by his students' acheivements. Sometimes you can also tell a good cook by observing his cooking process. Good cook can aways get everything ready quickly and easily. Good teacher do the same thing.</p>
+
+<p>Teachers' job is adapting the curriculum and materials to local settings and particular learning goals. Effective teachers are aware of what they are currently doing, aways pursueing new effecive ways to teach the same content. It is just like cooks making foods for different customers.  <br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom" /></p>
+
+<!--more-->
+
+
+<p>
+Teachers' content knowledge affect their abilities of transfroming the curriculum and materials to students in a special context to acheive a designed learning goal. It is the foundation of science teacher knowledge. If there is no good content knowledge, there is no good content to transform.</p>
+
+<p>It is like the nutrition in the food, if the food contain no nutriton, the best cook can do nothing to help.</p>
+
+<p>It is also like taxi driving. The taxi driver who knows the traffic system well, is possiblely able to figure out the most quick way to go for you at a special time and location. Content knowledge just provide more pathes to consider and follow. Otherwise, it is easy to get lost and embarrassed.
+<img src="https://raw.github.com/lukezhg/Freyja/master/traffic-jam.png" alt="traffic jam" /></p>
+
+<h3>Metaphor for education reform:</h3>
+
+<p>Sometimes science teacher educators complain that teachers' beliefs are stubborn and reluctant to change their practices. Well, It is true.</p>
+
+<p>The teacher is like a swimmer in a river. <br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-is-swimmer.png" alt="teacher is swimmer" /></p>
+
+<p>The science teacher educator stand on the river bank and tell the swimmer where to go, how to swim, which style is more effective than others. But the most important thing for a person in the river is to keep safty and the most reliable style is the style which he already got. How can we blame them not trying to change, if their safty is not guaranteed and new skills not developed.</p>
+
+<p>As a science teacher educator, you can not always stand by but jump into the water and provide necessary skills and safety.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A list of science labs that rocks]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks/"/>
+    <updated>2013-09-10T00:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks</id>
+    <content type="html"><![CDATA[<p>I will make a list of science labs activities which are so fun and interesting that you can't miss.</p>
+
+<p>Real Labs<br/>
++   Mystery tube(modeling), see <a href="http://lasp.colorado.edu/home/wp-content/uploads/2011/06/Mystery-Tube.pdf">lesson plan</a><br/>
+观察和记录现象；根据现象猜想和建构模型；做出预期并验证模型；交流、修正和完善模型。<br/>
++   Candle in the tube above water(causal model)<br/>
++   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3600?ref=search">Transpiration lab</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/careerstart-grade8/5540">Cell theory and plant respiration G8</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/criticalthinking/6650">Water quality - Critical thinking in science</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3226?ref=search">Amazing amaryllis activitiesm G2-3 4Ws</a></p>
+
+<p>Hands on activities<br/>
++   <a href="http://www.education.com/activity/article/Sourdough_bread/">Sourdough Science!</a><br/>
++   Making a safty harmer<br/>
++   Design a sprinkler head for watering lawn</p>
+
+<p>Virual Labs/ Simulations<br/>
++   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
++   PhET: <a href="http://phet.colorado.edu/">Free online simulations</a><br/>
++   <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities - Chunlei's Blog</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modeling activities and reflection]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection/"/>
+    <updated>2013-08-19T23:24:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/19/modeling-activities-and-reflection</id>
+    <content type="html"><![CDATA[<p>Recently I attended Dr Luft's class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.</p>
+
+<p>This is the list:<br/>
+-   Candle in the water tube make it go out(Dr Luft's class)<br/>
+-   Black box(<a href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)<br/>
+-   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
+-   Mystery Tube (Dr C's class)<br/>
+-   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
+If you have more good modeling activities, welcome recommandations.</p>
+
+<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.</p>
+
+<p>Reflections on Modeling in science teaching<br/>
+The charm of modeling:<br/>
+-   Naturally need students to make careful observation,recording data,drawing conclusions<br/>
+-   Naturally engage students' prior ideas for explaination or application<br/>
+-   Naturally put students into the test, debate and revisement of their models or prior ideas<br/>
+-   Naturally let students experience the full process of science inquiry and nature of science</p>
+
+<p>What to focus in the modeling activites as a science teacher?</p>
+
+<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?</p>
+
+<p>Welcome to join the discussion of these open questions!</p>
+]]></content>
+  </entry>
+  
+</feed>

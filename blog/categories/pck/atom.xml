@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pck | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/pck/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/pck/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,10 +14,28 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The metaphor of rock climbing]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/25/the-metaphor-of-rock-climbing/"/>
+    <updated>2013-10-25T20:44:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/25/the-metaphor-of-rock-climbing</id>
+    <content type="html"><![CDATA[<p>It is so hard to descibe how teacher develop related knowledge to teach a special topic.</p>
+
+<p>I have come up with many analogies to assit my thinking and modeling of teacher knowledge development.</p>
+
+<p>Here is another wonderful analogy Rock Climbing. The following is a picture:<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/rock-climbing.png" alt="rock climbing" /><br/>
+More about <a href="http://en.wikipedia.org/wiki/Rock_climbing#Crack_climbing">Rock climbing</a><br/>
+The teacher developed lots of intermediate representations (just like the cracks, faces, slabs in rock climbing) to help students learning the scientific concept.</p>
+
+<p>Good teacher can "see" the postions of students and can "arise" the right representation to help. The subject matter knowledge is the moutain. The "safety rope" is the good teacher-student relationship which keep the safe environment for learning. The routes can be fun and the goal can be challenging. They all motivates student to climb and learn.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[NARST's 2010 Annual International Conference]]></title>
-    <link href="http://lukezhg.github.com/blog/2010/04/10/NARST-2010-Annual-International-Conference/"/>
+    <link href="http://zhangchunlei.com/blog/2010/04/10/NARST-2010-Annual-International-Conference/"/>
     <updated>2010-04-10T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2010/04/10/NARST-2010-Annual-International-Conference</id>
+    <id>http://zhangchunlei.com/blog/2010/04/10/NARST-2010-Annual-International-Conference</id>
     <content type="html"><![CDATA[<p><h3 style="margin-bottom: 0px;">NARST's 2010 Annual International Conference was held in March at <strong>Philadelphia, PA</strong>. On this meeting, there are many papers on PCK. The following are 5 of the 27 meeting papers with PCK as its keyword. This five are that I like best.</h3>
 1  S9.11.2 Exploring Process of Constructing Pedagogical Content Knowledge (PCK) in Science Teaching<br />
 Kongju Mun, Ewha Womans University, munkongju@ewhain.net<br />
@@ -72,9 +90,9 @@ Silvia Espinosa-Bueno, Universidad Nacional Aut’noma de MexicoKira Padilla, Un
   
   <entry>
     <title type="html"><![CDATA[TPCK course for Chinese middle school biology teachers]]></title>
-    <link href="http://lukezhg.github.com/blog/2009/08/30/tpck-course-for-chinese-middle-school-biology-teachers/"/>
+    <link href="http://zhangchunlei.com/blog/2009/08/30/tpck-course-for-chinese-middle-school-biology-teachers/"/>
     <updated>2009-08-30T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2009/08/30/tpck-course-for-chinese-middle-school-biology-teachers</id>
+    <id>http://zhangchunlei.com/blog/2009/08/30/tpck-course-for-chinese-middle-school-biology-teachers</id>
     <content type="html"><![CDATA[<p>Rencently, I am preparing and making lesson plans for my TPCＫcourse. TPCK stands for "Technological Pedagogical Content Knowledge". Inorder to teach a science concept well, the teacher need to know many kind of knowledge, such as students' prior concept, subject matter knowledge, pedagogical knowledge, how to assess, how to orgnize the content, how to use ICT to promot students' learning.  So teaching is not a easy thing, and with the fast development of  science and technology, it becomes more and more a challenge.</p>
 
 
@@ -93,9 +111,9 @@ Silvia Espinosa-Bueno, Universidad Nacional Aut’noma de MexicoKira Padilla, Un
   
   <entry>
     <title type="html"><![CDATA[All about pedagogical content knowledge(PCK)]]></title>
-    <link href="http://lukezhg.github.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck/"/>
+    <link href="http://zhangchunlei.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck/"/>
     <updated>2009-06-21T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck</id>
+    <id>http://zhangchunlei.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck</id>
     <content type="html"><![CDATA[<p>PCK is a kind of teacher knowledge and beliefs which enable teachers to help students to learn a particular topic-related knowledge easily. Lots of reasearcher have do lots of studies of PCK. Here I collect some web links which may be useful for students and researchers who are now studying PCK.</p>
 
 
@@ -155,9 +173,9 @@ TPCK:
   
   <entry>
     <title type="html"><![CDATA[Name list of researchers who published papers on PCK]]></title>
-    <link href="http://lukezhg.github.com/blog/2009/06/10/name-list-of-researchers-who-published-papers-on-pck/"/>
+    <link href="http://zhangchunlei.com/blog/2009/06/10/name-list-of-researchers-who-published-papers-on-pck/"/>
     <updated>2009-06-10T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2009/06/10/name-list-of-researchers-who-published-papers-on-pck</id>
+    <id>http://zhangchunlei.com/blog/2009/06/10/name-list-of-researchers-who-published-papers-on-pck</id>
     <content type="html"><![CDATA[<p>I collect about 300 research papers on pedagogical content Knowledge(PCK) study.  After a simple statistics， the authors' name and the number of his/her published papers are listed as the following.
 <table style="border-collapse: collapse; width: 206pt;" border="0" cellspacing="0" cellpadding="0" width="275">
 <tbody>

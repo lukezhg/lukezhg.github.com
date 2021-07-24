@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: 期刊 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/期刊/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[科学教育期刊]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/09/30/science-education-journals/"/>
+    <updated>2015-09-30T04:15:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/09/30/science-education-journals</id>
+    <content type="html"><![CDATA[<p>SSCI英文期刊：<br/>
+Science Education(SE)<br/>
+International Journal of Science Education(IJSE)<br/>
+Journal of Research in Science Teaching(JRST)</p>
+
+<p>英文期刊数据库：<br/>
+<a href="http://onlinelibrary.wiley.com">Wiley</a><br/>
+<a href="http://www.springer.com">Springer</a><br/>
+<a href="http://eric.ed.gov/">Eric</a><br/>
+<a href="http://www.tandfonline.com">tandfonline</a><br/>
+搜索引擎：google scholar</p>
+
+<p>ECNU libary links <a href="http://202.120.82.17:8080/ldb/">here</a><br/>
+<a href="http://0-onlinelibrary.wiley.com.libecnu.lib.ecnu.edu.cn/">Wiley Online Library</a><br/>
+<a href="http://0-link.springer.com.libecnu.lib.ecnu.edu.cn/">SpringerLink Journals</a><br/>
+<a href="http://0-online.sagepub.com.libecnu.lib.ecnu.edu.cn/">SAGE Social Science &amp; Humanities Package</a><br/>
+<a href="http://0-www.webofknowledge.com.libecnu.lib.ecnu.edu.cn/wos">Web of Science</a></p>
+
+<p>CSSCI中文期刊：<br/>
+教育研究<br/>
+教育科学<br/>
+课程.教材.教法</p>
+
+<p>生物学科类：<br/>
+中学生物教学<br/>
+生物学教学<br/>
+生物学通报<br/>
+中学生物学</p>
+]]></content>
+  </entry>
+  
+</feed>

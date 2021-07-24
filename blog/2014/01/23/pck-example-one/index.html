@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>项目反应理论是个啥 - Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="统计学中有很多概念很抽象不容易理解，但是如果有恰当的例子作桥梁，就可以深入浅出，容易让人领悟了。 最近尝试学习一些关于项目反映理论（IRT）的东西，觉得很多学习资料都使用公式吓唬人，并没有把这个概念浅显化和生活化。总之，这些资料不够友好，让初学者望而生畏。 那么什么是项目反映理论呢？我试着解释解释 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/2014/01/23/pck-example-one/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">项目反应理论是个啥</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-23T16:20:00+08:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>统计学中有很多概念很抽象不容易理解，但是如果有恰当的例子作桥梁，就可以深入浅出，容易让人领悟了。</p>
+
+<p>最近尝试学习一些关于项目反映理论（IRT）的东西，觉得很多学习资料都使用公式吓唬人，并没有把这个概念浅显化和生活化。总之，这些资料不够友好，让初学者望而生畏。</p>
+
+<p>那么什么是项目反映理论呢？我试着解释解释。这样从测量开始说起。举个例子，推铅球比赛。每个运动员都会按照规定选择一定大小的铅球站在指定的地点，用尽全力把球向着一个方向推出去。然后裁判会用尺子测量落地点与原点的距离，读出读数作为成绩。实际上测量的是选手的推力和推送技巧，它有一个理论的真值。而裁判的读数则是观测值。但是理论值并不等于观测值。理论值=观测值+误差。这就是经典的测量理论。但是铅球有不同重量和大小，假如在比赛记录中，有两个不同时期的运动员，一个用的是15斤，一个是10斤，前者推了15米，后者推出了20米，那么那个选手的成绩更好呢。这个时候经典测验理论就无能为力了，要解决这个问题必须要再把两个运动员找来，用同一个铅球重新比过。但是项目反映理论则可以解决这个问题。</p>
+
+<p>实际上，教育测量往往比这个情境还要复杂。推铅球我们还能直接测量然后读数，即使有误差，多测几次就能减少误差。当是教育测量则通常是纸笔测验，这个题答对那个题每答对，最后有个总分。那么这个总分就是我们学生的学业能力吗？当然不是，比如这张试卷一共十个题目。有些简单题目很多人答对，有些难题则很少人答对。假如有两个学生都得了8分。一个学生把难题都做对了，但是简单题却错了两个。另外一个则是两个最难的题目都做错了。那么他们的学业能力真的一样吗？你觉得谁的学业能力应该更强一些？（想一想）</p>
+
+<p>如何思考这个问题呢？我们还是用推铅球这个例子。由于某种原因，我们无法直接测量了，比如没有尺子并且是夜晚。那怎么比赛呢，于是我们选几个离河边远近不同的几个测试点，然后在每个点放一堆大小相同的铅球。虽然我们不能测量，但是我们仍然能区分铅球是否落水，听到落水声就得1分，否则0分。就好像做选择题，我们能判断是否选择了正确的选项。由于每个测试点离河边远近的距离都不同，铅球的大小也不同，而且河岸的形状也有变化，所以每个测试点的难度也不同。但是同一个选手在状态相同的情况下，测试结果理论上是相同的。我们将会根据每个测试点选手的表现来估计其能力水平。如果按照总分把所有选手分成高分组和低分组，对于同一个测试点，我们会发现高分组的通过率会高于低分组，如果从群体中随机选取一个选手的话，来自高分组的选手将会有更高的概率通过，而低分组的选手则通过率会比较低。如果我们以选手的能力为横坐标，以通过某个测试点的概率为纵轴，那么就得到下面的曲线。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Itermcharasticcurve.jpg" alt="IRT ICC 项目特征曲线" /></p>
+
+<p>从这个项目特征曲线中我们可以看到，随着能力（theta）的提高，答对这个题目的概率也在提升。不同题目的曲线也不同，也许你已经想象出一道更简单题的题目的项目特征曲线将会相对这条曲线左移，而难题的曲线则右移。假如通过大量的测验知道了每个题目的项目特征曲线，那么我们就可以根据选手对一组题目的作答情况来估测其能力水平。即便是两个选手作答的两组试题并不相同，我们也能够比较两个选手的能力高低了。</p>
+
+<p>当然项目特征曲线有简单的也有复杂的，简单1个参数（难度），也有2个（难度，区分度）或3个参数（难度，区分度和猜测参数）的，也就是所谓1P模型，2P，3P模型。</p>
+
+<p>了解更多关于IRT的知识，请参考学习资料见：<a href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/">IRT learning resources - Chunlei&#8217;s Blog</a></p>
+
+<p>为了更好解释项目反映理论，我曾经想过很多其他的例子，但是还是觉得推铅球这个例子最好，最能深入浅出，又不失去科学性。但是好的例子往往不是一下子就想到的，而且往往需要比较后才能选择出来，我以前想到的例子也列出来，读者可以自己比较比较。</p>
+
+<p>A 抛硬币或者骰子<br/>
+B 测量身高<br/>
+C 摸高<br/>
+D 跳高</p>
+
+<p>比较的依据：<br/>
+1 是否用来衡量某种能力<br/>
+2 是否可测量，与经典测量理论相联系<br/>
+3 群体的这种能力的分布是否为正态分布<br/>
+4 是否能解决不同尺子测量结果比较的问题</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">chunlei</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-23T16:20:00+08:00" pubdate data-updated="true">Jan 23<span>rd</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/irt/'>IRT</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+
+
+<!-- JiaThis Button UY -->
+  
+    <!-- JiaThis share Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share?uid=2072381" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- JiaThis like Button BEGIN -->
+<div class="jiathis_style" align="right">
+	<a class="jiathis_like_tsina" data="width=120"></a>
+	<a class="jiathis_like_qzone"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2072381" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2072381"></script>
+<!-- UY END -->
+
+  
+</div>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/22/irt-learning-resources/" title="Previous Post: IRT learning resources">&laquo; IRT learning resources</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/25/science-bowl/" title="Next Post: Science Bowl">Science Bowl &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- LiveRe City install code -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80ODYwMy8yNTA5Nw==">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+</script>
+<noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+</div>
+<!-- completed City install code --></div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2021 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://zhangchunlei.com/blog/2014/01/23/pck-example-one/';
+        var disqus_url = 'http://zhangchunlei.com/blog/2014/01/23/pck-example-one/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

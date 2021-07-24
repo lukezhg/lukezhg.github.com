@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
@@ -253,106 +254,1017 @@ what will the robot do for us in future.</p>
 <p>人是需要回顾过去的，比如回顾一年的工作和生活，回顾一个月的收获和行动，回顾一个星期的时间花费。等等。但是有的时候我们实在太忙了，忙的没有时间回顾，没有时间思考，没有时间想一想我们到底在忙些什么。</p>
 
 <p>我曾经这样告诫自己，要立长志，不要常立志。但是很多时候还是做不到，还是常立志，后来想想常立志也还过得去，只要每次立的都是同样的志向，那么也就在接近立长志了。</p>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+>>>>>>> origin/master
 
-<p>我有一个坏毛病，容易虎头蛇尾。可能这也证明我自己其实地的确确就是一个普通人，坚持做一件事情是困难的，坚持把一件事情做好更是难上加难，但无论怎样，我还是要我劝慰，be proactive, 积极的思考和行动。很多时候，失败就失败在不积极、不主动、充满了猜疑和戒备，那样的话成功的几率几乎为零。</p>
+  <title><![CDATA[Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-<p>因此，我不禁要劝自己积极的思考和行动，也要去鼓励我周边的人积极的思考和行动，用正能量去感染自己和他人，让我们共同更接近成功！</p>
+  
+  <entry>
+    <title type="html"><![CDATA[python draw graph to visualize data]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/07/21/python-draw-graph-to-visualize-data/"/>
+    <updated>2021-07-21T22:06:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/07/21/python-draw-graph-to-visualize-data</id>
+    <content type="html"><![CDATA[<p>在线教学在疫情期间成为唯一教学选择，那么教师真实的教学体验如何？通过问卷我们收集到了一些老师的回答，量化数据分析还好说，但是对于老师们的文字反馈，确实让人头疼。</p>
+
+<p>如果严格的分析，需要使用质性分析的方法，通过逐句逐句阅读和编码，形成初步的一级编码，然后对一级编辑进行概括和联系形成二级编码，最后识别主要的theme，进而对问题形成解释模型。但是，时间关系我根本来不及做这样的分析，我只想得到一个大体的结果，形成一个具有概括性的图示来揭示问题。</p>
+
+<p>于是我首先对每个回答进行的标签标记，再经过3个半天的工作后，终于完成了对1000多条反馈的初步标记。最终形成18个重要的类别，不同的教师反馈的标签组合也不同。我最终获得的数据就是1000X18的一个数据表，某个标签出现标记为1，否则0。标签工作是做完了，但是我总不能把这么大的一个表展示给同行吧，于是任务的关键变成了如何将这个数据表可视化。于是我想到了python。我在做博士论文数据可视化的时候就用过，但是还是zoom quite帮我编的程序，这次又需要它救场了。</p>
+
+<p>首先我查了一下python可视化的方法，很多，比较常用的法案是matplotlib+pandas+networkx，其中pandas对接数据，networkx对接网图，matplot对接制图。</p>
+
+<p>可视化的关键是找到绘图思路，我的思路就是如果哪些关键词同时出现，那么这些关键词之间就存在联系，如果同时出现的频率越高，联系也就越紧，所以我想用数据绘制一个关键词网络，进而反应关键词之间的关系和主体划分。</p>
+
+<p>下面我解释一下代码实现过程，下面就是完整的代码：</p>
+
+<pre><code>#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+</code></pre>
+
+<p>声明编码类型，这里选择UTF-8是为了兼容中英文。</p>
+
+<pre><code># libraries
+import pandas as pd
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+</code></pre>
+
+<p>导入相应的库，python就一个优点，库多，没有找不到的，只有你想不到的，扩张了：）。</p>
+
+<pre><code>df = pd.read_csv('map.csv')  
+#print df[1]
+</code></pre>
+
+<p>使用pd阅读csv文件，确保文件与程序文件在相同目录。</p>
+
+<pre><code>df=df.fillna(np.random.rand()*0.1)
+</code></pre>
+
+<p>填充缺省值，数据表中很多数据缺失，这里使用了一个小于0.1的随机数进行替换。</p>
+
+<pre><code>print(df.loc[0,:])
+</code></pre>
+
+<p>检测一下数据是否成功获取</p>
+
+<pre><code># Calculate the correlation between individuals. We have to transpose first, because the corr function calculate the pairwise correlations between columns.
+corr = df.corr()
+
+# Transform it in a links data frame (3 columns only):
+links = corr.stack().reset_index()
+links.columns = ['var1', 'var2', 'value']
+</code></pre>
+
+<p>计算相关系数，并把计算结果储存在links中</p>
+
+<pre><code># Keep only correlation over a threshold and remove self correlation (cor(A,A)=1)
+links_filtered=links.loc[ (links['value'] &gt; 0.1) &amp; (links['var1'] != links['var2']) ]
+</code></pre>
+
+<p>筛选相关系数大于特点临界值的关联。</p>
+
+<pre><code># Build your graph
+G=nx.from_pandas_edgelist(links_filtered, 'var1', 'var2')
+# Plot the network:
+nx.draw(G, with_labels=True, node_color='orange', node_size=400, edge_color='black', linewidths=1, font_size=10)
+</code></pre>
+
+<p>基于links_filtered，利用nx构建和绘制网图</p>
+
+<pre><code>plt.show()
+</code></pre>
+
+<p>如果你的图没显示出来，上面的命令就是把绘制好的图展示出来。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[公交车上的寒与暖]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/05/bus-story/"/>
-    <updated>2013-01-05T07:17:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/05/bus-story</id>
-    <content type="html"><![CDATA[<p>今天早上起了一个大早，去送LP上班。昨天下了雪，地上湿湿的，上海就是存不住雪。</p>
+    <title type="html"><![CDATA[中国80后]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/07/04/the-chinese-post-80s/"/>
+    <updated>2021-07-04T20:05:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/07/04/the-chinese-post-80s</id>
+    <content type="html"><![CDATA[<p>新房子要装修，定制的柜子今天到了，老婆让我去接货，说师傅在外面等着呢。我刚把二宝哄睡，哄睡的方式十分奇葩，孩子吃完午饭，把她放在小车里，在小区里推一圈，推到一半孩子就睡着了。坐在睡着的，头歪在肩膀上，弯成九十度。即便是在搬砖铺砌的小路上颠簸，也没把她颠醒，可见是真困了。跟我一样，午饭后特别犯困。有人曾经一度以为这是一种病，其实就是血液都跑到肠道去了，大脑缺血导致的犯困。</p>
 
-<p>快要到公交车站了，结果就过去一辆，没赶上。本来LP就是想赶这辆车的，她天还没亮就爬起来，黑灯瞎火的找衣服，还说不用我送了，让我多睡一会。但是我怕早上路滑，还是硬着头皮爬起来了。LP怀孕有8个月了，但是还要坚持上班，每次上班都要挤公交，而且中间还需要换乘一次，路上一共要2个小时的时间。所以明明是八点半上班，早上5点半就要起床了。我经常说她很牛，这么冷得天，这么长的路，也照样不耽误。</p>
+<p>接到催促的电话，我并没有马上行动，因为我发现孩子大臂内侧肿了一个长条形的大包。可能是推她遛弯的时候，不小心被蚊子咬了。我让自己保持镇定，赶紧去厨房找来大蒜，去皮然后用指甲扣掉一部分，反复刮大蒜瓣上的切口，搞出一点大蒜汁液抹在大包上。一般蚊子叮咬之后，越快抹上越有效果。等弄完了一切，我才找到车钥匙赶紧去给师傅开门。</p>
 
-<p>其实，上海的公交车以及地铁还是相对非常文明的。我们也越到很多好心人，主动给lp让座，并且嘘寒问暖，尽管素不相识。其中大部分让座的是女性，而且是略微年长的女性，都是做过妈妈的人，才知道其中的不容易。昨天我们就地铁上遇到2位热心人，她们是成都的，来上海旅游，其实年龄也挺大的了，大概有50多岁，但是还要一定把作为让给我们。虽然素不相识，但是还是热情的攀谈起来，下了地铁lp说：“还是成都人热情”。其次是大学生，我们就与遇到好几次，大部分学生还是非常有礼貌的，值得赞扬。</p>
+<p>等我到的时候，看到一辆大货车，但是并没看到人。我起着电瓶车就往楼门口骑，在楼房前面，迎面走来一位满脸汗水的汉子，他的个子并不高，但是上身很宽、很结实。我问他是不是往18楼送货，他说：是的，一卡车，有98包。这时保安骑着巡逻车跟了上了，说这里不能停车。我问他可以停哪，他说停到哪边的停车点。我说好的。汉子让我去看已经搬下车并放在楼外面的包裹。这些包裹都是用纸壳箱打包而成的，里面还裹着一层塑料泡沫，主要是防止里面的板材被刮伤。他指了指靠在墙上的2人多高长条形包裹，又指了指靠在另一边又长又宽的包裹，这个包裹用木头订了框架进行保护，他说估计这两个没办法弄上去，因为进不了电梯。我刚想回话，这时保安已经下了巡逻车，催促我不能停车，汉子这时帮腔道：他也没想停这里。我歉意的向汉子挥了挥手，我说等我一下，我先停一下车。于是停了车才回来研究如何把其中的超长和超宽包裹搞上去。汉子说如果能进电梯，我肯定能帮你都送进屋里，但是这2个估计困难，我不可能背着上18楼。我说我也没有办法。并埋怨到发货的也不动动脑子，这样的包裹能好进屋吗。如果不能进屋有两个办法，一个是走楼梯，18楼真实让人望而却步。另外一个办法是用绳子拽上去，但是根本没有这样的绳子和滑轮。于是我说：我也没办法，要不先搬能搬的吧。</p>
 
-<p>当然，我们也遇到过不愿意让座的人。lp一般也会比较体谅别人，比如正赶上上班下班，很多年轻人忙了一整天了，就会在这个时间玩玩手机或者睡一会，也就注意不到帮助那些需要帮助的人。当然，其中也有看到假装没看到的，或者就是视而不见，尽管他的座位傍边写着老幼孕妇专座，尽管公交车的喇叭反复重复“请给需要帮助的乘客让个座”。</p>
+<p>于是，我开了门，就在屋里等着师傅把包裹送上了，等了10分钟，估计师傅基本已经把货都卸下来了，才看到师傅用小推车把六七个包裹送上了，我让他放在事先用纸壳铺好的客厅。纸壳是我用了100元在废品回收站买的，这样可以放在弄坏地板。于是我开始数包裹的数量，师傅开始往上搬。中间师傅接了一个电话，我听口音是四川话，就问他是不是四川人，他说是的。他让我计数，因为最后要拍照发给公司。中间他好说起自己曾经装过门窗，搞过装修，他说这个客厅移门可以拆掉，我就说你要不要，要的话，你就拉走好了。他说我可以找小区收废品的，不要钱他们会帮忙运走。大概花了2个小时，师傅终于把能进电梯的都搬上来了。中间我也下去帮忙了几次，主要是挡住电梯门和帮忙调整角度，都不是什么累活。在师傅搬货的过程中，我也打电话向老婆报告了情况，让她联系厂家看是否有办法。搬了一半的时候，刚好老婆和儿子参加完疯狂猫儿童表演活动回来。看到了最后三个无法进电梯的包裹，就跟厂家联系，最后只好把包裹拆开，看里面的货物是否可以一件一件拿上去。老婆看了客厅里的包裹后，十分吃惊，这都是师傅一个人搬上来的。加在一起，大概有一顿多重。她说应可把板子锯断也不能让师傅背了。她让我赶紧去送孩子去打网球，因为5点半的网球课马上开始了。我驮上孩子去出租屋取球拍，顺便我还带上了锯子，准备把特别长的板子锯断。中间我发了一条短信，我说如果师傅要走楼梯的话，就让他背那块板子，另外两个比较轻的我们可以自己拿上18楼。等我送完孩子，回来之后发现板子以及不见了，原来是他们把包裹拆了之后，放进电梯里弄上去了。最后剩下的两条长板子实在是太长不能放进电梯只能走楼梯，但是我们也没让师傅拿，而是我和老婆自己扛上18楼的，幸好并不重。只是每次转弯处都十分困难，想走快也走不快，只能慢慢爬楼，经过10分钟左右，我们两个重要把最后3块板子弄上了楼。</p>
 
-<p>我就见过一例，是一个年轻男性，看着大肚子在他前面，还是只顾着玩他的手机，当时我真有动手的冲动。但是这就是社会道德规范，不同于法律，别人可以遵守也可以不遵守，你可以谴责这种行为，但是却不能伤害其人身。作为一位即将当爸爸的男士，我想给自己提个醒，一定要给你身边需要帮助的人让一个座，因为你也有需要他人帮助的时候，你也会有老婆、孩子，你也会有变老的一天。还是很怀念那些阿姨，她们身上会散发出伟大的母性的爱，让人倍感温暖。</p>
+<p>我刚送完孩子的时候，回来看到老婆正在和师傅谈话，因为离的比较远也不知道他们再聊什么。后来，老婆吃完饭的时候说，师傅太累了，她当时还劝师傅换一个工作。我补充到这个钱可不是那么好赚的。我妈说每个人都有自己的工作，他不干还是会有别人干。</p>
 
-<p>公车来了，人很多，希望有人能为lp让个座。用公交师傅的话说：“给大肚皮让个座，谢谢！”</p>
+<p>回来上楼的时候，我遇到了一个男人和一个男孩，以为他们是父子，他们也到18楼。电梯里我就看这个男人十分熟悉，但是就是想不起来。后来还是老婆在楼下认出来了，他是孩子以前的钢琴启蒙老师赵老师。他就住我们隔壁，老婆问以后是否可以跟赵老师学钢琴。赵老师说他现在教的是基础比较好的，跟着他上楼的就是他的学生。我心想还是搞艺术的人挣钱容易呀。</p>
+
+<p>中国有一群特别的年轻人，他们干劲十足，他们也有同情心，他们都是80后，他们心里也有不平衡，但更多的是拼搏，无论是自觉还是不自觉。他们有不同的社会分工，他们有很大的差异，但是相同的是他们都在牺牲着某些东西，进而追赶社会发展的车轮。而这些牺牲，可能是身体，可能是健康，可能是时间，可能是自由，他们换取的却主要是金钱，不知道他们老了之后，是否会后悔这样的选择。至少在我父亲（50后）弯曲的右手和蹒跚的双腿上，我从内心并不认同这种交换。但奇怪的是我们都被裹挟着、忙碌着、交换着，好像是自愿的，但却也可能是无意识的。我不禁要问：这真是我们最好的选择吗？这真是我们期待的时代吗？我们是不是都丢了什么？</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[debug is hard]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/30/debug-is-hard/"/>
-    <updated>2012-12-30T01:14:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/30/debug-is-hard</id>
-    <content type="html"><![CDATA[<p>The hard thing si debug.<br/>
-how can we make it more easier!</p>
+    <title type="html"><![CDATA[相对论的理解]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/04/14/theory-of-relativity/"/>
+    <updated>2021-04-14T13:51:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/04/14/theory-of-relativity</id>
+    <content type="html"><![CDATA[<p>爱因斯坦提出狭义和广义相对论，推翻了刚性时空观，解决了物理学在不同参考系的均权问题。其本质是物理学规律和实验不会随着参考系的不同而不同。也就是，所以的惯性参考系都是等权的。</p>
 
-<p>It would be better if you avoid it before meet it.</p>
+<p>狭义相对论还假设光速在不同参考系测量值应该相同。基于以上假定就可以推导出洛伦兹变换。见网页-简单推导洛伦兹变换（狭义相对论）： <a href="https://zhuanlan.zhihu.com/p/105732091">https://zhuanlan.zhihu.com/p/105732091</a></p>
+
+<p>在两个相对运动的参考系中，一个参考系对同一个事件的观察量与另一个参考系的观察量具有线性关系。真实的情况是相对运动的参考系尺度会比自身参考系尺度放大，他测结果会比我测结果小（动车收缩），他测时间会比我测时间短（动钟变慢）</p>
+
+<p>有研究者放弃了光速恒定原理，而仅利用等权原理进行了洛伦兹推导，结果得出了带有参数K的洛伦兹变换。有意思的是当K取不同值时，其物理学意义也不同，特别是V可以区超光速时，其中蕴含了与因果关系相矛盾的情形，与量子力学中概率性、多因果性具有相似之处，作者提出是否可以作为量子力学与相对论联系的纽带。网址：<a href="https://www.sohu.com/a/393799883_348129">https://www.sohu.com/a/393799883_348129</a></p>
+
+<p>对于相对论的理解，讲得非常透彻的是《宇宙的琴弦》这本书，每个理论的提出都是源于物理学不可调和的冲突，而每个理论的产生又会制作新的麻烦，就是这这样的不断推翻、重建、再重建的过程中，物理学构建了自己的理论大夏，而即便是这样，其根基仍然尚未彻底牢固。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Github Blog with Octopress]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress/"/>
-    <updated>2012-12-27T21:05:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress</id>
-    <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
+    <title type="html"><![CDATA[自卑与超越]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/04/13/task-of-life/"/>
+    <updated>2021-04-13T08:16:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/04/13/task-of-life</id>
+    <content type="html"><![CDATA[<p>人生而受限，于是追求超越。胆怯的人选择捷径，结果弥足深陷，勇敢的人选择直面困难，反而实现超越。</p>
 
-<p>搭建的步骤如下：<br/>
-1.首先是准备工作，下载和安装必要的软件。<br/>
-2.然后是克隆octopress并安装 <br/>
-3.接下来是将octopress配置好并发布博文。 <br/>
-具体步骤可以重点参考<a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">这篇</a>文章。</p>
+<p>阿德勒在《自卑与超越》概括了每个人必须面对的三大人生任务：从事对社会有用的职业或工作、建立卓有成效的人际关系和实现一个人在爱情、婚姻和家庭生活中的角色。</p>
 
-<h2>具体步骤纪要：</h2>
+<p>这三大任务如果从生物进化的角度看就是生存、社群、繁殖。其中社区的需要是作为社会性物质的必然，它通过提高生存率和繁殖成功率作用于人类的进化。这也是将人类连接在一起的3条纽带：身体与自然、个人与他人、男人与女人。</p>
 
-<ol>
-<li>准备工作，下载<a href="http://windows.github.com/">gitinstaller</a>, <a href="http://rubyforge.org/frs/?group_id=167">ruby197</a>, <a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">devkit</a>, 然后安装。
-gitinstalller和ruby197只要一路next过去就可以安装好，ruby我选择的都是c盘根目录。devkit解压到c盘根目录。安装如下：
+<p>健康的人格是自尊、自力、合作。所有的天才都是为社会做出重大贡献的，因为他们更擅长合作。将自己的工作建立在人类工作的基础之上，将自己的工作作为他人继续工作的基础。个体发展相应的就存在自尊的障碍、自力的障碍、合作的障碍。</p>
 
-<blockquote><pre><code>$ cd C:\DevKit  
+<p>心智（mindset）或者精神是环境作用于身体神经器官和各种感官的反应，是身体与环境的中介，是个体现有生活方式和目的的桥梁。心智出现的问题，从个体心理学的角度看，往往是个体因为过往认知的偏差和局限导致自我蒙蔽、自我欺骗和自我设限，往往是个体因为缺乏面对环境变化的勇气，而选择了一个错误的目标和路径（捷径），从而逃避作为社会成员的责任，比如自力更生、与人合作、建立家庭。</p>
+
+<p>“自我”本质上是心智进化的副产品。个体心理学研究的就是个体对自我印象的态度。但是这种自我印象往往是基于过去的经验和认知，因此具有局限性，制约我们对未来生活的预期，让我过度悲观或者盲目乐观。由于身体是心灵与社会的中介，身体的孱弱或器官功能的缺失会导致个体花费更多的心力才能达成与别人相同的目标，这容易使得他们没有余力留心环境和关爱他人，结果影响其社会情感和合作能力的发展。</p>
+
+<p>与精神分析学派不同，个体心理学不再停留于对病理现象成因的解释，而是要充分获取个体各种表征片段的基础上，将一个人的目的与其行为作为一个整体进行诠释。《自卑与超越》中描述了这样一个案例：</p>
+
+<pre><code>有一个12岁的小男孩患有尿床症，并且他还经常和妈妈吵架，所以当年他被带到了我的诊所。他儿时的记忆中有这样一段经历：有一次，他躲进了衣橱中，然而妈妈却以为他走丢了，所以非常担心，于是她跑到大街上焦急地去寻找，拼命地呼喊。这样，在他的记忆中就留有了这样一种印象：要想引起别人的注意就要制造一些麻烦。在遭到别人忽视的时候，我可以通过欺骗他人而得到重视。尿床症使他成为众人关心和注意的对象，所以母亲的焦虑和担心更使他对自己的观点深信不疑。在这个例子中我们可以看出：在男孩的心里，外面是一个充满危险的世界，只有让别人担心他才会拥有安全感。他一直认为这是最可靠的方法，在需要的时候，这种办法屡试不爽。
 </code></pre>
 
-<p>   $ ruby dk.rb init<br/>
-   $ ruby dk.rb instal</p></blockquote></li>
-</ol>
+<p>从这个案例可以看出，医生如果只从尿床这个问题下手，根本无助于问题的解决。医生需要了解行为背后的前因后果，进而才能解释问题的本质，从根本上解决问题。比如医生需要改变男孩对环境的恐惧，形成与其他孩子的合作关系，降低对母亲的过度依赖，才能解决尿床问题。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[复杂]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/03/06/complexity/"/>
+    <updated>2021-03-06T00:02:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/03/06/complexity</id>
+    <content type="html"><![CDATA[<p>柯尔莫哥洛夫复杂度：一个字符串生成的最简单算法。越有规律的越容易用更短的代码生成。无规律的反而只能老老实实的输出。但是有趣的是数学家已经证明柯尔莫哥洛夫复杂度无法使用一个固定的算法计算。你永远不知道是否有更简单、更深刻的算法存在。这也给了人们不断逼近本质的希望。</p>
 
+<p>纪律的悖论。美国近些年涌现一批回归传统教学、强调纪律甚至比中国还严重的学校，KIPP宪章学校，这个宪章学校叫做成功学院(success academy charter school),这个学习对学生的纪律要求非常极端，整堂课学生必须把手放在前面，眼睛必须观看教师，学生发言时，其他学生必须看着他，如果谁没有看，发言的学生还需要指出来，如果做不到，老师就会约谈这个学生。这样严格的学校，以至于有20%的学生坚持不下来，他们一想到上学就紧张的想呕吐，有些老师虽然不认可，但是还必须这样做，坚持不多久就离开。</p>
 
-<p>布置环境：</p>
+<p>这样培养的学生确实成绩更好，但是也发现一些问题。学生进入到大学往往无法坚持读完大学，他们缺乏自主学习能力和创造力。学校也尝试给学生一些自由，但是一旦放松一点，课堂纪律就无法保证，最后有只好回到纪律严格的从前。万老师认为每种制度都不完美，问题的关键是什么时候选择效率，什么时候选择质量。 纽约的外部环境不利于儿童成长，很多孩子都是问题少年，所以选择KIPP实际上解决了社会问题。而中国已经不在满足过去的应试教育了，对学生的创造、批评思维能力发展有更高要求，所以更多教师和学习都拥抱进步主义教学模式。</p>
 
-<blockquote><pre><code>$ gem sources --remove http://rubygems.org/  
-  $ gem sources -a http://ruby.taobao.org/  
-  $ gem install rdoc bundler   
-  $ vi Gemfile  #将行 ：source "http://rubygems.org/" 改为:source "http://ruby.taobao.org/"
-  $ bundle install  #如果出错，改执行：bundle update; rake install   
-</code></pre></blockquote>
+<p>假如一个新老师进入KIPP想提高学生自主性、培养创造能力的及进步主义教学尝试，那么基于这个实际案例，她可能会失败。但是真的这个问题就无解吗？未必。关键是去除路径依赖。</p>
 
-<ol>
-<li>克隆远程octopress到本地文件夹，本地文件夹名称无所谓，比如我的就放在G:/github/myblog<br/>
-接下来进入git shell, 在命令行中执行一系列的命令来安装octopress，命令代码如下：
+<p>Zentralblatt fur Didaktik der Mathematik (ZDM)
+Zentralblatt für Didaktik der Mathematik</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[自我成长系统]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/03/03/self-grow-system/"/>
+    <updated>2021-03-03T21:01:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/03/03/self-grow-system</id>
+    <content type="html"><![CDATA[<p>每个人都是一个系统，但是大多系统都是被动响应的系统，到处救火、上蹿下跳，直到呜呼哀。这样的人生其实不值得一过。如何才能拥有成功、自由的人生呢？</p>
 
-<blockquote><pre><code>$ git clone git://github.com/imathis/octopress.git myblog  
+<p>那么，我么必须构建一个自我成长系统。</p>
+
+<h3>自由的本质是自律</h3>
+
+<p>首先，人从生下来就不自由，你的出身、你的天资、你的父母都不是你能决定的。即便成年之后，你还会受到周围人的裹挟，你的领导，你的家人，你的朋友，你最亲密的人，都可能会让你无法做自己想做的事。你可能永远无法成为你自己。</p>
+
+<p>此外，你生活的时代、地理、文化环境也会要求你这样做，而不能那样作为。你生活在社会文化的脉络当中，收到文化中一些根深蒂固的观念的制约。</p>
+
+<p>一个个体不仅收到其遗传基因的影响，还会受到社会模因的影响。你可以想想，如果你有成为一个朋克，按照自己的想法生活会有多难。</p>
+
+<p>于是，有的人受基因操控的欲望的趋势，有的人受模因中文化道德的约束，唯独不能自己，于是就会产生各种生理或者心理的疾病。弗洛伊德从本我出发，认为一切都是源于超我对本我的压抑，特别是对性的压抑。本我是基因的化身，超我则是模因的化身，人无时无刻不生活在这样的复杂的矛盾之中。</p>
+
+<p>无论是基因还是模因都让人难于自由。但是我们也不得不承认，正是这些基本如何不自由的我们有了追求自由的可能。何期自性本自具足。我们因为不自由而拥有了追求自由的能力。而自由并不是按照本我或者超我的招呼行事，真正的自由在于自律，在于对自己有极端的所有权。</p>
+
+<p>所以我们达成了第一个观点：自由=自律。</p>
+
+<h3>我们需要发展一个系统，而不目标</h3>
+
+<p>其次，我们的生活表现为过程与目标的脱离，我们经常为了达成一个目标而做事，比如工作是为了赚钱养家糊口。这到没什么大错，毕竟大家大多都是如此。但是，我们也需要注意其背后隐患，那就是生活的异化，我们的生活变成了有目的的生活，但是糟糕的是这个目的不断变化，而且多种多样，让人眼花目盲。而且我们越来越难以享受做的当下，享受做事本身。当你有目的的和朋友交往，朋友变不在是朋友，而成了人脉。当你把做事本身和目的割裂时，做事就变成了工具，而失去了味道。当生活变成了达成某些目标的工具是，生活的色彩也随之退却。目标也是让我们迷失自我的毒药。</p>
+
+<p>因此，我们真正需要发展的是一个系统，而不是什么具体的目标。两者的区别在于系统发展的目的是其本身，它是一个长期的可以不断产出的，不能简单评判，而目标则是外化的，短期的，有成败之分。</p>
+
+<p>正所谓：一切有为法 如梦幻泡影 如雾亦如电 应作如是观。</p>
+
+<p>与其追求梦幻泡影，倒不如回归己身，找到真我。相比于目标的纷繁复杂，发展一个系统形成一个闭环，更有助于找到自己、获得解放。</p>
+
+<p>所以我们达成第二点认识：要系统而不是目标。</p>
+
+<h3>主动攻击而不是被动防守</h3>
+
+<p>寻求自我解放的道理并不是一番丰顺的，甚至可以说是无路之路。那么，如何才能走出羁绊，获得自由呢？<br/>
+这就需要第三个阶梯：要主动而不是被动。你要谦逊、诚实、积极的面对这个世界，这样你才能成为你自己的那个选择。在平行宇宙中你才不会与自己失之交臂。</p>
+
+<p>有哪一种遗憾会比与自我失之交臂更遗憾呢！不可想！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[被讨厌的勇气-笔记]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/03/02/the-courage-to-be-disliked/"/>
+    <updated>2021-03-02T08:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/03/02/the-courage-to-be-disliked</id>
+    <content type="html"><![CDATA[<p>人都恐惧被孤立的天性，这有助于更好的社会交流、协作和形成责任感。这种天性是自然进化的结果。缺乏这种敏感度的个体往往被放逐和驱除而难于存活。</p>
+
+<p>所以人们都喜欢被认可，害怕被讨厌。</p>
+
+<p>但是没有人有义务让所有人满意，也没有人能够让所有人满意。生活在别人的目光里，故意讨好所以人及不必要也不可能。更为重要的是你将无法做你自己，更难于获得真正的幸福。</p>
+
+<p>从某种意义上讲，你就是你的选择，包括选择做自己和做别人眼中的自己。做自己不是任意妄想，而是诚实的面对自己的真实诉求，选择做出努力获得内在的幸福。其中的关键是打通自己的闭环，不依赖于别人的评判。精英的道歉并不寻求对方原谅，而是给自己的一个交代。</p>
+
+<p>人的一切烦恼都来自人际关系，而人的幸福感则来源于共同体感觉。</p>
+
+<p>低级的幸福来自与人比较，高级的幸福来自共同体感觉。</p>
+
+<p>一个会笑的老师课堂氛围不会太差。一个会搞笑的老师学生会很幸福。<br/>
+东方关注人文，西方关注自然。比如同样是思想实验，东西方会有明显差别。</p>
+
+<pre><code>伽利略思想实验。-落球实验。
+中国的思想实验。-落水实验。  
 </code></pre>
 
-<p>   $ cd myblog<br/>
-   $ rake setup_github_pages<br/>
-按照提示输入：git@github.com:username/username.github.com.git, 比如我的github用户名为lukezhg，那么我就需要输入 git@github.com:lukezhg/lukezhg.github.com.git</p>
+<p>人生的三大课题：工作、交友、爱。</p>
 
-<pre><code>$ rake generate   #生成本地文件
+<p>我们必须把自己的课题与别人的课题区分开来。</p>
+
+<p>学习是孩子自己的课题。我们需要把自己帮助孩子成才这一课题和孩子自己的课题（学习）区分开。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[写作心得]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/02/08/writing-principles/"/>
+    <updated>2021-02-08T13:32:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/02/08/writing-principles</id>
+    <content type="html"><![CDATA[<p>写作不一定能改变人生，但是却可以让你回归人生。</p>
+
+<p>有很多介绍写作技巧的书，但是我偏偏认为写作没有技巧。一个记者询问一个知名作家是如何写出那么多伟大作品的，作家的回答很是让人意外，他说：“一个字一个字下”。</p>
+
+<p>有人问我读书是否有捷径，我告诉他：“最大的捷径就是不寻找捷径。”</p>
+
+<p>如果有人问我写作的捷径，我想我会告诉他相同的答案，没有捷径，写就是了。</p>
+
+<p>因为，再多的技巧、原则、策略都是写作的附属品，不是因为有了它们你才能写出好文章，而是因为你坚持写作才让它们成为好文章的注脚。</p>
+
+<p>所以，今天所写仅仅是行路风景，一时兴起记录而已。文章的功夫体现在头、尾、展开、收拢、具体、深刻几个方面。</p>
+
+<p>一、开头和结尾<br/>
+开头漂亮<br/>
+结尾有力</p>
+
+<p>二、展开和收拢<br/>
+摘要是文章的收拢，正文是摘要的展开。
+展开要有层次和逻辑条理<br/>
+收拢要点破迷帐、聚焦关键要害</p>
+
+<p>三、具体和深刻<br/>
+具体到实践中，聚焦操作细节和教学现象<br/>
+深刻到骨子里，抽象背后的立场、机制和逻辑</p>
+
+<p>文章需要清晰的脉络和强悍的逻辑。写作的过程好像移山填海。首先要定海，然后是造山，其次是跋山，最后是望山。</p>
+
+<p>定海<br/>
+锚定关键问题和关键技术。毕竟西湖六月中，风光不与四时同。</p>
+
+<p>造山<br/>
+填充相关内容，搭建成山。衣带渐宽终不悔，为伊消得人憔悴。</p>
+
+<p>跋山<br/>
+反复阅读修改，形成文脉。黄河之水天上来，奔流到海不复回。</p>
+
+<p>望山<br/>
+退出既定视角，借山远观。不识庐山真面目，只缘身在此山中。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数学学习资源与方法]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/01/28/math-for-kids/"/>
+    <updated>2021-01-28T16:42:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/01/28/math-for-kids</id>
+    <content type="html"><![CDATA[<h3>数学学习的应用程序</h3>
+
+<p><a href="https://www.mathplayground.com/">https://www.mathplayground.com/</a><br/>
+<a href="https://www.doodlemaths.com/available-apps/">https://www.doodlemaths.com/available-apps/</a></p>
+
+<h3>网站</h3>
+
+<p><a href="https://www.ck12.org/student/">https://www.ck12.org/student/</a><br/>
+<a href="https://schoolyourself.org/learn">https://schoolyourself.org/learn</a></p>
+
+<h3>自学图书推荐</h3>
+
+<pre><code>https://www.neilwithdata.com/mathematics-self-learner
+https://marktomforde.com/academic/mathmajors/textbook-suggestions.html
+https://www.myopenmath.com/info/selfstudy.php
+https://mathblog.com/mathematics-books/
+https://www.adequatedeal.com/blog/best-selling-mathematics-textbooks-of-all-time-must-read-it/
+https://bookauthority.org/books/best-math-books
 </code></pre>
 
-<p>   $ rake preview  #实现本地预览 访问  http://localhost:4000 查看效果  （可选）
-   $ rake deploy  #发布本地文件到服务器</p></blockquote></li>
-</ol>
+<h3>数学家谈数学怎么学</h3>
+
+<p><a href="http://zhishifenzi.com/depth/depth/5720.html">丁玖：数学应该怎么学？</a></p>
+
+<pre><code>专注于自己的学习  
+理解概念   
+费恩曼读书法   
+看懂定理的证明  
+科学地做题  
+正确看待考试  
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何使用github进行项目协作]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/01/23/github-project-collaboration/"/>
+    <updated>2021-01-23T13:45:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/01/23/github-project-collaboration</id>
+    <content type="html"><![CDATA[<h3>终端窗口Shell的切换</h3>
+
+<p>改变默认的shell脚本：</p>
+
+<pre><code>chsh -s /bin/zsh
+</code></pre>
+
+<p>从 zsh 切换回 bash</p>
+
+<pre><code>chsh -s /bin/bash
+</code></pre>
+
+<p>zsh 和 bash 的环境变量
+bash 的环境变量是~/.bash_profile文件。
+zsh 的环境变量是~/.zshrc文件。</p>
+
+<p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 source ~/.bash_profile即可。</p>
+
+<p>参考：<a href="https://www.jianshu.com/p/8d822ce0d425">MacOS 的 zsh 和 bash 切换</a></p>
+
+<h3>github工作思路和流程</h3>
+
+<p>项目负责人建立项目并且邀请合作者共同开发<br/>
+合作者打开项目地址，接受邀请。<br/>
+项目负责人将合作者ssh-pub添加到项目，便于合作者访问。</p>
+
+<h4>如何查看ssh-pub公钥</h4>
+
+<pre><code>cd ~/.ssh
+cat id_rsa.pub
+</code></pre>
+
+<p>复杂公钥给项目负责人，进行添加。建立合作关系。</p>
+
+<h4>如何查看浏览器提交的数据</h4>
+
+<p>command+alt+i 调出后台<br/>
+在web交互实验页面上输入正确的答案<br/>
+点击属性变为全局变量temp1 <br/>
+利用json.stringfy(temp1) 转变为字符</p>
+
+<p>复制实验正确答案到文件位置</p>
+
+<h4>上传代码</h4>
+
+<pre><code>git pull #继承合作的修改
+git add . 
+git commit -m "message"
+git push #更新修改到远程文件
+</code></pre>
+
+<h4>合并分支</h4>
+
+<p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
+
+<pre><code>git checkout main
+git merge ictweb-sf
+</code></pre>
+
+<h4>服务器上让代码生效</h4>
+
+<pre><code>cd /var/djangoweb/ictweb/ 
+git status
+git pull
+systemctl restart httpd.service
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Happy网球训练方案]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/01/16/happy-training-plan/"/>
+    <updated>2021-01-16T17:47:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/01/16/happy-training-plan</id>
+    <content type="html"><![CDATA[<h3>0、应该避免的动作和姿势</h3>
+
+<p><strong> 避免膝盖过度承载造成损伤(比如纵向跳跃)
+</strong> 避免膝关节内扣的运动姿势
+** 避免横向劈叉导致膝盖内扣</p>
+
+<h3>1、热身运动</h3>
+
+<p><strong> 慢跑一圈<br/>
+</strong> 关节热身</p>
+
+<p>【常规网球训练】</p>
+
+<h3>2、针对性训练1</h3>
+
+<p><strong> 膝盖弓步大腿内侧拉伸
+</strong> 静态青蛙趴+动态青蛙趴
+** 鞋内侧踢毽子</p>
+
+<p>【常规网球训练】</p>
+
+<h3>3、针对性训练2（助力带）</h3>
+
+<p><strong> 蚌式开合腿（球、助力带）<br/>
+</strong> 侧向平板支持–外展肌群训练（膝盖支点、脚支点）<br/>
+** 脚踝旋转助力训练（助力带）</p>
+
+<p>【常规网球训练】</p>
+
+<h3>4、整理运动</h3>
+
+<p><strong> 蝴蝶下压<br/>
+</strong> 纵向青蛙蹲/开膝下蹲<br/>
+** 单腿放在另外一条大腿上，旋转脚踝</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于上海PISA考试成绩的争论]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/29/shanghai-pisa-score-debate/"/>
+    <updated>2020-12-29T08:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/29/shanghai-pisa-score-debate</id>
+    <content type="html"><![CDATA[<p>2009年，上海参加了PISA考试，取得了全球第一的好成绩。一时间全球舆论哗然，而且不少媒体用来“hard to believe”来表达他们的震惊，其实这个结果我们也没想到，我们虽然对上海有把握，觉得不会太差，但是也没想到那么高，也可能是偶然现象。但是2012年，上海又参加了PISA考试，还是全球第一，这下可就不是偶然了。后来我们又扩大了参与的范围，2015年，北京、上海、江苏、广东参加了PISA，取得了总分第10的成绩，2018年，浙江替换广东上场，又重新拿回了第一宝座。4次PISA考试，可以说都有上海的功劳在里面。那么，到底该如何解读上海的PISA考试成绩呢？</p>
+
+<h3>上海的PISA成绩可信吗？</h3>
+
+<p>有国外的学者和媒体提出了质疑，认为上海参加PISA考试的学生没有保护流动人口的子女（Loveless，2013），因此上海的PISA参与样本不具有代表性。</p>
+
+<blockquote><p>美国布鲁金斯学会在其网站上刊发了汤姆·拉夫莱斯教授的一篇文章，质疑上海参加PISA测试的学生样本有问题。拉夫莱斯教授提出的一个重要观点是:上海官方提交的10.8万15岁学生数是错误的，漏掉了“12万或者更多的”打工者子女。</p></blockquote>
+
+<p>上海的流动人口确实比例极大，2009年上海的常住流动人口达到542万，在上海常住人口中占28.2%。那么，是不是我们参加PISA的学生都是所谓的上海本地人的子女，而没有新上海人的子女呢？上海PISA测试负责人张民选给出了否定的回答，他表示2009年测试就包含了父母是新上海人的子女，而且比例在增加（张民选，2013）。以2012年PISA考试为例：</p>
+
+<blockquote><p>根据 2010 年第六次全国人口普查数据，上海的常住人口(包括户籍人口及在沪居住六个月以上的暂住人口)为 23019196。分年龄统计中，当年为13岁(2012 年为 15 岁)的人数为108056，其中外来人口为29966，占27.73%。这一数字也是我们向OECDPISA 协作组织提交的2012年上海15岁学生人数统计数据。可见，除了我们提供的10.8万这一数字外，拉夫莱斯所谓的上海还有“12万或者更多的”15岁学生是根本不存在的，是无端猜测。</p></blockquote>
+
+<p>问题在于拉夫莱斯（Loveless）将发达国家(地区)的人口年龄比例简单套用到上海的流动人口结构是不合适的，原因在于上海的流动人口特点呈现为幼儿和青壮年居多，而青少年比例相对偏低，不仅如此，上海人口本身就存在“少子化现象”，因此不能简单套用香港等地的人口结构。</p>
+
+<p>综上所述，上海的PISA成绩在样本代表性上是没问题的，和其他参与PISA考试国家的成绩一样可信。</p>
+
+<h3>上海的PISA成绩意味着什么？</h3>
+
+<p>既然成绩是可信的，那么是不是全球第一PISA成绩的取得就意味着上海的基础教育领先呢？我们，不能简单得出这样的结论。一方面从结果产出来看确实上海教育质量整体水平较高，但是另一方面我们却不得考虑教育投入的问题。上海是中国的经济中心，也是一线沿海发达城市，家长、政府、学校的教育投入较高，学生的时间投入也较高。经济投入暂且不说，如果单纯从学生时间投入与成绩产出来看，上海学生的学习效率并不高，而且属于过度学习的红色：“炼狱区”。</p>
+
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20190308/4a7f7d9afbbc4b81a98772737821f8d0.jpeg" alt="PISA成绩与学生时间投入" /></p>
+
+<p>因此，我不能简单得出上海教育已经全球第一的结论，而是要从中发现潜在的问题，比如学习负担过重，学习效率不高，学习兴趣缺失，学习动力不足等。</p>
+
+<p>当然，我们也不能完全自我否定，PISA成绩至少证明，上海的教育能够培养学生灵活的问题解决能力和各项综合素养。</p>
+
+<p>关于上海之所以能够取得如此好的PISA考试成绩，OECE报告的论述还是相对客观的（OECD ，2011）。这里既有自上而下系统的课程改革、学校教育创新的作用，也有各级教研活动、教研组和教师的教学实践创新的作用，还有不可忽略的文化因素影响，比如社会对教育以及考试的重视和投入。</p>
+
+<h3>上海教育未来发展的方向</h3>
+
+<p>虽然，上海取得了总分全球第一的佳绩，震惊了国际教育界，但是作为教育工作者和研究者，我们却要非常谨慎的对待和理解这一成绩，实事求是，不要盲目自大或者戴高帽子，同时也要对上海教育改革增强自信，积极发现和解决潜在的问题，应对教育发展不均衡、学生学习负担过重、教育体制机制创新不够等问题。</p>
+
+<p>未来上海教育面临的挑战和发展方向：</p>
+
+<p>1、从优质教育到教育均衡发展  <br/>
+虽然，在政府投入、招生制度、办学政策、学校考评等方面已经采取了一些改革，也取得了不少成绩，但是学校教育平衡发展问题仍然严峻。学校与学校的差距、地区自己的差距依然较大，特别是城乡、地区差距以及流动子女教育问题仍然是重点攻坚的课题。</p>
+
+<p>2、从学生学习成果到学习成效<br/>
+如何提高学生的内生学习动力和兴趣，如何在保持高水平学习成果的同时提高学习效率，依然是上海教育需要着重探讨的问题。如何利用新技术赋能教育，赋能学生学习，任然是重要的研究方向。</p>
+
+<p>3、从打造优质学校到教育生态<br/>
+如何抓住时代发展的契机，创新管理、服务机制，合理调动民间力量，从扶植重点学校到打造适合学校创新发展的教育大生态是上海教育未来发展的重要保障。</p>
+
+<p>参考文章：</p>
+
+<p>张民选. 是什么导致了对PISA结果的误读[N]. 文汇报,2013-12-16(005). http://www.360doc.com/content/13/1218/07/14624814_338038702.shtml<br/>
+张佳,彭新强.上海PISA夺冠与课程改革之间的关系[J].复旦教育论坛,2015,13(02):25-31.
+http://www.cssn.cn/jyx/jyx_ptjyx/201510/t20151028_2547233.shtml<br/>
+搜狐博文，2019.PISA测试中国成绩大幅度下降，说明了什么？
+https://www.sohu.com/a/299875504_287574
+Tom Loveless（2013）. Attention OECD-PISA: Your Silence on China is Wrong: https://www.educationnext.org/attention-oecd-pisa-your-silence-on-china-is-wrong/<br/>
+OECD (2011), Lessons from PISA for the United States, Strong Performers and Successful Reformers in Education, OECD Publishing.<br/>
+http://dx.doi.org/10.1787/9789264096660-en (OECD. Shanghai and Hong Kong: Two Distinct Examples of Education Reform in China. https://www.oecd.org/countries/hongkongchina/46581016.pdf) <br/>
+OECD(2018).B-S-J-Z (China)
+Student performance in Beijing, Shanghai, Jiangsu and Zhejiang (PISA 2018).https://gpseducation.oecd.org/CountryProfile?plotter=h5&amp;primaryCountry=BSZ&amp;treshold=5&amp;topic=PI.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何矫正的膝外翻]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/25/how-to-correct-knee-valgus/"/>
+    <updated>2020-12-25T22:36:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/25/how-to-correct-knee-valgus</id>
+    <content type="html"><![CDATA[<p>孩子成长的过程中，腿并不是一直是直的。</p>
+
+<p>专家指出：</p>
+
+<pre><code>1岁~2岁的幼儿，会出现轻微O型腿的现象;两岁以后，又渐渐会出现X型腿的迹象。到3岁左右时，X型腿最明显。6岁以后直到成年期，若依然呈现轻微的X型腿，均属正常的生理现象。  
+</code></pre>
+
+<p>那么，什么是轻微呢？双膝相触时双足间有空隙。如果空隙的宽度在3厘米以下，属于轻度，不需医学处理; 3厘米~6厘米间，属于中度，应针对原因，穿矫正鞋或支架，一般需较长(甚至数年)的矫正时间; 超过6厘米以上属重度。严重的X型可能与疾病、骨骼异常有关，建议父母及时带孩子就诊。</p>
+
+<h3>膝外翻产生的原因</h3>
+
+<p>扁平足或者足弓塌陷容易伴随产生膝外翻。原因是这两者都会造成地面给脚的支撑力往小腿内侧偏，这样小腿（胫骨）为了传递力量就会往外撇，膝盖内旋，而大腿（股骨）也会随之内旋，膝关节内侧缝隙增加，髋关节也会受到影响，而产生所谓的滑膜炎。要解决问题，就需要排查问题，检查足弓是否有塌陷，以及是否存在不正确的体位（比如W型坐姿）或者训练姿势（膝关节内扣、并膝等）。</p>
+
+<p>接下来就需要从上、下两个方面解决问题。比如使用矫正扁平足的鞋垫，调整受力线；或者按摩髋关节特定部位改善位置。从而从上下两个方面来解决问题。此外还需要调节小腿和大腿的肌肉群，让薄弱的肌群得到锻炼和增强，从而改善膝外翻的状况。</p>
+
+<h3>矫正X型腿的方法</h3>
+
+<p>那么，如何矫正膝外翻或者X型腿呢？<br/>
+1.游戏法   <br/>
+（1）按摩。用软毛刷从孩子的大腿内侧刷起，向下刷到脚踝，动作要稍快些。 <br/>
+活动益处:可促进腿部内侧肌肉群 张力提升，产生将腿往内拉扯的效果。</p>
+
+<p>（2）小腿夹球游戏。亲子各自将中型皮球夹在小腿间，慢步走，比赛时不要让球掉下来。也可将中球改成小球，做同样的游戏。<br/>
+活动益处:可强化小腿内侧肌肉群的张力，有助拉近双脚距离。</p>
+
+<p>（3）脚内侧踢球。家长面对孩子身体 的右侧站立，将大球轻轻踢到孩子的右脚边，教孩子用左脚的内缘， 将球侧踢给家长，如此反复玩。 <br/>
+活动益处:可强化孩子腿部内侧肌肉群的张力，有助拉近双脚距离。</p>
+
+<p>2.训练法(一周3次，每次30分钟，每组20个，做3组 )<br/>
+（1）小腿外侧肌肉拉伸和深层肌肉放松</p>
+
+<p>（2）双手抱住脚掌向内旋转</p>
+
+<p>（3）髋关节 <br/>
+侧向平板支持&#8211;外展肌群训练</p>
+
+<p>弹力带大腿外旋&#8211;外旋肌群训练</p>
+
+<p>（4）踝关节：弹力带脚踝力量训练和拉伸小腿外侧肌群</p>
+
+<p>（5）训练臀部肌肉
+躺下抬臀分腿脚并拢</p>
+
+<p>（6）蚌式开合腿（弹力带可增加阻力）</p>
+
+<p>（7）剪刀开合腿（弹力带可增加阻力）</p>
+
+<p>3.体操法<br/>
+（1）静态青蛙趴<br/>
+（2）动态青蛙趴</p>
+
+<p>4、应该避免的动作和姿势<br/>
+（1）W坐姿<br/>
+（2）横向劈叉<br/>
+（3）膝关节内扣的运动姿势</p>
+
+<p>医生建议：</p>
+
+<p>(1)坐在椅子上，两手后撑，足踝处夹一物体(可由厚换薄)，两膝并拢，然后直腿上举至水平，再下落，15-20次X3组。</p>
+
+<p>(2)两腿屈膝坐地，膝外开，脚掌相对，两臂弯曲，两手扶在膝关节内侧，用力下压膝关节，至最大限度 保持2秒，再还原。</p>
+
+<p>(3)直腿坐，两手体后撑地，两膝间夹一软物(如小皮球)，用橡皮筋将踝关节捆住，练习5 分钟。要求小腿用力夹物体。</p>
+
+<p>(4)两腿开立成二位，两膝尽量向两边分开，挺胸立背，屈膝半蹲，慢慢抬起脚 跟，然后下落，反复提起并下落脚跟，直至小腿有酸胀感。</p>
+
+<p>(5)小腿向内侧踢毽子，两腿交替进行。白天按摩大腿外侧肌肉，晚上在入睡后作两踝及股骨髁靠拢并以鋼 带绑紧或利用夹板固定来逐渐矫正，补钙和维生素D，并多晒太阳。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ruby]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/16/ruby/"/>
+    <updated>2020-12-16T08:18:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/16/ruby</id>
+    <content type="html"><![CDATA[<p>Alternative way to install ruby, by RVM,（ highly recommended）:</p>
+
+<pre><code> bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bash_profile
+ source ~/.bash_profile
+ rvm install 1.9.2
+ rvm use 1.9.2 --default
+</code></pre>
+
+<p>参考：https://blog.csdn.net/JimyJimang/article/details/7195388</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[爱在你身边]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/16/love-is-beside-you/"/>
+    <updated>2020-12-16T07:57:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/16/love-is-beside-you</id>
+    <content type="html"><![CDATA[<p>郑钧的调调~《灰姑娘》</p>
+
+<pre><code>爱在你身边
+等待你呼唤
+默默无闻
+将你来陪伴
+
+心中有个ta
+ta在你身边  
+别看手机了
+Ta在看你呢
+
+生活如此美丽
+你却如此心急
+快发SC
+快发SC
+
+怎么会迷上你
+我在问自己
+我什么都能放弃
+居然今天难离去
+
+你并不不美丽
+但是你可爱之极
+我的灰姑娘
+我的灰姑娘
+
+我曾经忍耐
+我如此等待
+也许在等你到来
+也许在等你到来
+也许在等你到来
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[什么是知识图谱]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/12/knowledge-graph/"/>
+    <updated>2020-12-12T15:25:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/12/knowledge-graph</id>
+    <content type="html"><![CDATA[<h3>什么是知识图谱？</h3>
+
+<p>概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。</p>
+
+<p>知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。</p>
+
+<p>知识图谱按照应用情境和范围的不同，可以分为通用指示图图谱GKG和领域知识图谱DKG，分别适应于一般性人机交流和特定领域的人机交流。</p>
+
+<h3>知识图谱的构成</h3>
+
+<p>构成知识图谱的基本单位是三元组。三元组由实体-连接-实体构成，记录了网络中实体与实体的关系，它是本质上就是一条知识连接，一个陈述句，一个命题。命题是可以判断真假的陈述句。命题也是构成知识系统的
+基本单位。因此，理论上所以知识都可以表征为命题，继而表征为知识图谱中的三元组。<br/>
+举一个生物学的例子，比如：</p>
+
+<pre><code>真核细胞-是-细胞
+真核细胞-有-细胞核
+</code></pre>
+
+<p>用这2个三元组就描述了关于真核细胞的2个命题。</p>
+
+<h3>三元组的不同形式</h3>
+
+<p>理论上，我们可以将任何一个命题表述为三元组，这就需要三元组具有不同的形式，以适应不同的句子。比如：</p>
+
+<pre><code>实体-状态-1：我笑了
+实体-关系-实体：我吃饭
+实体-关系-实体（状态）：我找到了一家高档的餐馆
+三元组-关系-实体：我与朋友的关系不是很和睦
+实体-关系-三元组：他不同意我与玛丽结婚
+三元组-关系-三元组：他对待玛丽就像父亲对待女儿
+三元组-三元组-三元组：我肚子饿了和我要去餐馆是事件的前因后果
+</code></pre>
+
+<h3>知识图谱的基本概念</h3>
+
+<pre><code>实体（Entity）是对客观个体的抽象，知识图谱中的实体多是具体的。例如：李安，姚明。  
+类型（type）是对具有相同特点或属性的实体集合的抽象。例如：国家，运动员。  
+关系（relation）是实体与实体之间关系的抽象。例如：导演，父女。  
+属性（property）是对实体与实体之间关系的抽象。例如：导演，身高。  
+域（domain）是类型的集合，凌驾于类型之上，是对某一领域所有类型的抽象。例如：地理位置，职业。  
+值（value）是用来描述实体的，可以分为文本型和数值型。例如：性别：男，身高：226cm。  
+</code></pre>
+
+<h3>知识图谱中的关系类型</h3>
+
+<pre><code>隶属：（is-a）
+同义：（similar)
+从属：（part-of）
+相关：（relate-to）
+因果：（cause）：forward(促进)、restraint(抑制)
+从事：（do）：发现（discover）、发明（invent）
+</code></pre>
+
+<h3>知识图谱的应用</h3>
+
+<p>知识图谱的应用十分广泛，涉及各个行业。比如：</p>
+
+<pre><code>+ 信息检索：搜索引擎中对实体的精准聚合和匹配、对关键词的理解以及对搜索意图的语义分析等；
++ 自然语言理解：知识图谱中的知识作为理解自然语言中实体和关系的背景信息；
++ 问答系统：匹配问答模式和知识图谱中知识子图之间的映射；
++ 推荐系统：将知识图谱作为一种辅助信息集成到推荐系统中以提供更加精准的推荐选项；
++ 电子商务：构建商品知识图谱来精准地匹配用户的购买意愿和商品候选集合；
++ 金融风控：利用实体关系来分析金融活动的风险以提供在风险触发后的补救措施；
++ 公安刑侦：分析实体和实体之间的关系以获得线索等；
++ 司法辅助：法律条文的结构化表示和查询来辅助案件的判决等；
++ 教育医疗：提供可视化的知识表示，用于药物分析、疾病诊断等；
+来源：知乎链接：https://www.zhihu.com/question/59281410/answer/579230733
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Homebrew出错的种种折腾]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/12/brew-lesson/"/>
+    <updated>2020-12-12T13:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/12/brew-lesson</id>
+    <content type="html"><![CDATA[<p>我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。</p>
+
+<p>你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。</p>
+
+<p>本来是想安装一个知识图谱的机器人的项目，但是这个方案很复杂，而且依赖很多程序。于是开始折腾，mac部分程序需要依赖brew安装，但是我突然发现brew无法连接到库，愿意是网络不通。</p>
+
+<p>于是只能换源，但是之后无法更新，于是之后重装，但是重装报错，于是开始运行brew doctor诊断，发现有些多余文件，尝试删除，无法删除，于是强制删除，结果就悲催了。原来的很多程序都出现了问题。比如我的Octopress、mysql都除了问题。</p>
+
+<p>这次事故的诱因很多，比如电脑系统旧，网络不畅，人性贪婪，对程序原理一知半解，最后从一个瑕疵演变成一个事故，甚至是要重装电脑。我真打算重装了，结果发现因为磁盘空间不足，根本没有备份可以还原。</p>
+
+<p>经过这次事件，总结几个道理：<br/>
+*  不要瞎折腾，特别是一知半解的时候。<br/>
+*  很多安装更新失败的问题多是网络不畅的问题。<br/>
+*  要保持备份的习惯，这样万一出了问题，你还可以回去。（数据备份、系统备份、环境备份）<br/>
+*  要系统的学习git和docker<br/>
+*  很多的折腾可以放在服务器，使用docker选择以及布置好环境的repo去布置和测试</p>
+
+<p>折腾之后学的的知识，都是一些常识，比如mac软件包的安装是有顺序的，不同软件存在依赖关系，本来brew就能解决这些问题，但是DNA被污染之后，你很难连到官方的服务器，进而产生一系列问题。</p>
+
+<p>参考网址：<br/>
+常用 Git 命令清单 by 阮一峰：
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html</p>
+
+<p>RVM安装：<br/>
+GitHub访问不了，是获取不到安装的脚本文件。执行下面的脚本可以进行安装。</p>
+
+<pre><code>/usr/bin/ruby -e "$(curl -fsSL https://gitee.com/xueweihan/codes/vfrgh7z8qcjlx1ubwt6nk71/raw\?blob_name\=brew_install.sh)"
+</code></pre>
+
+<p>Homebrew安装与卸载：<br/>
+安装脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+</code></pre>
+
+<p>卸载脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[aiva chatbot with neo4j brain]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/07/aiva-chatbot-with-neo4j-brain/"/>
+    <updated>2020-12-07T23:10:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/07/aiva-chatbot-with-neo4j-brain</id>
+    <content type="html"><![CDATA[<h3>主教程</h3>
+
+<p>https://explosion.ai/blog/chatbot-node-js-spacy</p>
+
+<h3>构建虚拟环境</h3>
+
+<p>https://virtualenv.pypa.io/en/latest/user_guide.html</p>
+
+<pre><code>cd myproject
+virtualenv venv  
+source venv/bin/activate #进入
+deactivate #退出
+(venv) chunleizhang@Mac~/lib/aiva
+</code></pre>
+
+<h3>用npm开启aiva</h3>
+
+<pre><code>npm install
+npm run setup
+npm start --debug
+</code></pre>
+
+<h3>编辑aiva设置文件</h3>
+
+<pre><code>vi config/default.json
+</code></pre>
+
+<h3>Start the bot</h3>
+
+<pre><code>npm start --debug
+</code></pre>
+
+<h3>neo4j brain</h3>
+
+<p>开关neo4j服务</p>
+
+<pre><code>neo4j start
+neo4j stop
+</code></pre>
+
+<p>http://localhost:7474/browser/</p>
+
+<p>https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/
+LOAD CSV WITH HEADERS FROM &#8220;file:///persons.csv&#8221; AS csvLine
+CREATE (p:Person {id: toInteger(csvLine.id), name: csvLine.name})</p>
+
+<p>/usr/local/Cellar/neo4j/3.5.3/libexec/import</p>
+
+<h3>slack端口</h3>
+
+<p>https://app.slack.com/client/THS32FKN0/D01FW5UR2EB</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用docker在服务器上布置虚拟环境]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/06/docker-the-tool-to-setup-your-server/"/>
+    <updated>2020-12-06T12:49:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/06/docker-the-tool-to-setup-your-server</id>
+    <content type="html"><![CDATA[<p>最近想在服务器上布置一个聊天机器人。
+简书上有教程：</p>
+
+<p>https://www.jianshu.com/p/5997f73eccb9<br/>
+https://www.jianshu.com/p/e18fb2166178</p>
+
+<p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
+
+<pre><code>cd /webdev/chatterbot
+python manage.py runserver
+alice: http://127.0.0.1:8000/chat/
+ctrl + C 退出程序
+url.py 可以修改响应
+</code></pre>
+
+<p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
+如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
+docker提供了很好的解决方案。</p>
+
+<p>docker的用途在于，它可以在服务器上建立多个虚拟环境，而在这个虚拟环境中安装的软件环境，并不会相互影响，比如chatterbot这个项目需要python3，但是其他应用可能需要的是python2.7，两个应用无法在同一个环境下运行。实际的情况更复杂，因为依赖的环境不仅是python。</p>
+
+<p>如何使用docker，网上有很多教程，比如：<br/>
+详细教程：https://blog.csdn.net/baidu_37832943/article/details/105218649<br/>
+阮一峰提供的教程： <br/>
+docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
+nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
+
+<p>简明教程：</p>
+
+<pre><code>docker search nginx 
+#查找 Docker Hub 上的 nginx 镜像
+
+docker pull nginx 
+#拉取官方的Nginx镜像
+
+docker images nginx 
+#查找 REPOSITORY 为 nginx 的镜像
+
+#基于已有镜像创建并运行一个容器并映射到特定端口
+docker run --rm --name nginx-test -p 8080:80 -d nginx
+      --rm：容器终止运行后，自动删除容器文件。
+      --name nginx-test：将容器命名为nginx-test
+      -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
+      -d：容器启动后，在后台运行
+docker container ps 
+#查看启动的docker容器
+curl localhost:8080 
+#测试页面
+</code></pre>
+
+<p>常用docker命令：</p>
+
+<pre><code>docker ps -a
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+yum install -y httpd
+ctrl+d
+docker commit -m “install httpd” -a “keyuan_test” (输入容器ID) 新的镜像名
+docker run -itd -p 8080:80 新的镜像名 /bin/bash
+docker exec -it 新的镜像产生的容器ID bash
+httpd -k start
+curl localhost:80
+ctrl+d
+curl localhost:8080
 
 
-<p>保存博客源码到github source分支:</p>
 
-<blockquote><pre><code>$ git add .  
-  $ git commit -m 'blog source'  
-  $ git push origin source
-</code></pre></blockquote>
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+httpd -k start
+docker commit containerid chatbot/live
+docker run -d -p 8000:80 chatbot/live /bin/bash
+curl localhost:8000
+</code></pre>
 
+<h2>appche</h2>
+
+<p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
+
+<p>1.查看版本</p>
+
+<pre><code>apache -v
+httpd -v
+</code></pre>
+
+<p>2.开启apche服务：</p>
+
+<pre><code>apachectl start 
+apachectl stop
+</code></pre>
+
+<p>3.启动和关闭httpd的命令</p>
+
+<pre><code>systemctl start httpd
+systemctl stop httpd
+systemctl restart httpd
+</code></pre>
+
+<p>网页位置：/var/www/html/</p>
+
+<h2>编辑 nginx配置文件</h2>
+
+<pre><code>vi /etc/nginx/nginx.conf
+
+nginx -t                    # 查看nginx状态
+nginx -s reload            # 重新载入配置文件
+nginx -s reopen           # 重启 Nginx
+nginx -s stop               # 停止 Nginx
+</code></pre>
+
+<h2>控制防火墙</h2>
+
+<pre><code>systemctl stop firewalld  
+systemctl start firewalld  
+systemctl mask firewalld  
+
+添加端口  
+firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效） 
+firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent  
+重新载入  
+firewall-cmd --reload  
+查看  
+firewall-cmd --zone=public --query-port=80/tcp  
+删除  
+firewall-cmd --zone=public --remove-port=80/tcp --permanent  
+</code></pre>
+
+<h2>阿里服务器端口控制</h2>
+
+<p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
+
+<p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
+
+<h2>列出所有端口</h2>
+
+<p>netstat -ntlp</p>
+
+<p>https://www.cnblogs.com/xqzt/p/4919191.html</p>
+
+<h2>使用docker的方法</h2>
+
+<p>将需要改变的文件映射到主机<br/>
+把所有不变的环境变为运行的容器<br/>
+将容器运行起来之后，就可以ctrl+D退出<br/>
+应用就跑起来了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[研究报告表达的神话--逻辑谬误]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/11/02/wrong-logic-of-academic-presentation/"/>
+    <updated>2020-11-02T10:01:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/11/02/wrong-logic-of-academic-presentation</id>
+    <content type="html"><![CDATA[<p>【谬误1】我是这个领域的专家，所以我就讲的你们听不懂，因为你们听不懂，所以我是这个领域的专家</p>
+
+<p>批注：专家可能会表达不清楚，但是别人听不懂不能说明你是专家，恰恰相反大牛都能把最前沿的东西用最浅显的语言给新手讲明白，如果讲不明白说明报告人自己也没想清楚，这样的报告不做也罢</p>
+
+<p>【谬误2】我有很多头衔，所以我很牛，我的观点就是权威，就是正确的</p>
+
+<p>批注：顶尖科学家可能有社会地位，也可能没有，但是有社会地位的不一定是顶尖科学家。社会地位不等于科学地位。而且，顶尖科学家不会用权威说事，恰恰相反，科学家是反权威的，要用证据说事。</p>
+
+<p>【谬误3】我的研究样本量很大，所以很牛</p>
+
+<p>批注：样本数量的多少是可以在一定程度上增强研究结论的可行性，但是还要看研究的问题、理论基础、研究设计以及数据质量，不是所有的大规模研究就一定可信，也不是大规模研究就等同于高质量研究。</p>
+
+<p>【谬误4】我分享的都是别人的观点，所以错误也是被人的</p>
+
+<p>批注：学者可以分享别人的研究，但是必须突出自己的研究。同时也要批判性地审视他人的研究，并为其负责。如果没有自己的观点或研究，其实也没有必要来分享了。</p>
+
+<<<<<<< HEAD
 <ol>
 <li>初步配置octopress<br/>
 _config.yml文件：</li>
@@ -567,3 +1479,10 @@ can you see it.</p>
   </entry>
   
 </feed>
+=======
+<p>研究者千万别认为自己很牛，别人可以这样认为，但是研究者自己不可以，因为在这会毁掉学术，也会毁掉自己。相反很牛的科学家都认为在自己研究的伟大事物面前，自己格外渺小，而正是这种发自内心的谦卑，才让倾听大自然的声音成为可能。好的报告要让听者听得懂、有启发，最好还有能应用。如果有大牛的报告你没听懂，那就提问吧，给研究者一个戴罪立功的机会！：）</p>
+]]></content>
+  </entry>
+  
+</feed>
+>>>>>>> origin/master

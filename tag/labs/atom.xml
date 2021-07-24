@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: labs | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/labs/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A list of science labs that rocks]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks/"/>
+    <updated>2013-09-10T00:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/10/a-list-of-science-labs-that-rocks</id>
+    <content type="html"><![CDATA[<p>I will make a list of science labs activities which are so fun and interesting that you can't miss.</p>
+
+<p>Real Labs<br/>
++   Mystery tube(modeling), see <a href="http://lasp.colorado.edu/home/wp-content/uploads/2011/06/Mystery-Tube.pdf">lesson plan</a><br/>
+观察和记录现象；根据现象猜想和建构模型；做出预期并验证模型；交流、修正和完善模型。<br/>
++   Candle in the tube above water(causal model)<br/>
++   Timms video <a href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3600?ref=search">Transpiration lab</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/careerstart-grade8/5540">Cell theory and plant respiration G8</a><br/>
++   <a href="http://www.learnnc.org/lp/editions/criticalthinking/6650">Water quality - Critical thinking in science</a><br/>
++   <a href="http://www.learnnc.org/lp/pages/3226?ref=search">Amazing amaryllis activitiesm G2-3 4Ws</a></p>
+
+<p>Hands on activities<br/>
++   <a href="http://www.education.com/activity/article/Sourdough_bread/">Sourdough Science!</a><br/>
++   Making a safty harmer<br/>
++   Design a sprinkler head for watering lawn</p>
+
+<p>Virual Labs/ Simulations<br/>
++   Next Generation Science Standards <a href="http://concord.org/ngss/">simulation activities in Concord</a><br/>
++   PhET: <a href="http://phet.colorado.edu/">Free online simulations</a><br/>
++   <a href="http://zhangchunlei.com/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities - Chunlei's Blog</a></p>
+]]></content>
+  </entry>
+  
+</feed>

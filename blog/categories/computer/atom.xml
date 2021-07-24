@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: computer | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/computer/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Homebrew出错的种种折腾]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/12/12/brew-lesson/"/>
+    <updated>2020-12-12T13:07:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/12/12/brew-lesson</id>
+    <content type="html"><![CDATA[<p>我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。</p>
+
+<p>你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。</p>
+
+<p>本来是想安装一个知识图谱的机器人的项目，但是这个方案很复杂，而且依赖很多程序。于是开始折腾，mac部分程序需要依赖brew安装，但是我突然发现brew无法连接到库，愿意是网络不通。</p>
+
+<p>于是只能换源，但是之后无法更新，于是之后重装，但是重装报错，于是开始运行brew doctor诊断，发现有些多余文件，尝试删除，无法删除，于是强制删除，结果就悲催了。原来的很多程序都出现了问题。比如我的Octopress、mysql都除了问题。</p>
+
+<p>这次事故的诱因很多，比如电脑系统旧，网络不畅，人性贪婪，对程序原理一知半解，最后从一个瑕疵演变成一个事故，甚至是要重装电脑。我真打算重装了，结果发现因为磁盘空间不足，根本没有备份可以还原。</p>
+
+<p>经过这次事件，总结几个道理：<br/>
+*  不要瞎折腾，特别是一知半解的时候。<br/>
+*  很多安装更新失败的问题多是网络不畅的问题。<br/>
+*  要保持备份的习惯，这样万一出了问题，你还可以回去。（数据备份、系统备份、环境备份）<br/>
+*  要系统的学习git和docker<br/>
+*  很多的折腾可以放在服务器，使用docker选择以及布置好环境的repo去布置和测试</p>
+
+<p>折腾之后学的的知识，都是一些常识，比如mac软件包的安装是有顺序的，不同软件存在依赖关系，本来brew就能解决这些问题，但是DNA被污染之后，你很难连到官方的服务器，进而产生一系列问题。</p>
+
+<p>参考网址：<br/>
+常用 Git 命令清单 by 阮一峰：
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html</p>
+
+<p>RVM安装：<br/>
+GitHub访问不了，是获取不到安装的脚本文件。执行下面的脚本可以进行安装。</p>
+
+<pre><code>/usr/bin/ruby -e "$(curl -fsSL https://gitee.com/xueweihan/codes/vfrgh7z8qcjlx1ubwt6nk71/raw\?blob_name\=brew_install.sh)"
+</code></pre>
+
+<p>Homebrew安装与卸载：<br/>
+安装脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+</code></pre>
+
+<p>卸载脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Django cheat sheet]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet/"/>
+    <updated>2017-12-31T09:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/31/django-cheat-sheet</id>
+    <content type="html"><![CDATA[<p>1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：</p>
+
+<pre><code>mkvirtualenv DjangoApp
+</code></pre>
+
+<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：</p>
+
+<pre><code>workon DjangoApp
+</code></pre>
+
+<p>在您的当前环境中安装 Django</p>
+
+<pre><code>pip install Django
+</code></pre>
+
+<p>2、使用 django-admin 命令创建项目</p>
+
+<pre><code>django-admin startproject demoproject
+</code></pre>
+
+<p>3、进入demo project文件夹，使用python manage.py startapp 创建应用.</p>
+
+<pre><code>cd demoproject
+python manage.py startapp demoapp
+</code></pre>
+
+<p>4、测试项目服务器，Ctrl+C退出服务器。</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p>或者指定服务器ip和端口。</p>
+
+<pre><code>python manage.py runserver 0.0.0.0:8000
+</code></pre>
+
+<p>5、创建超级用户用于登陆django admin后台管理平台。</p>
+
+<pre><code>python manage.py createsuperuser admin
+</code></pre>
+
+<p>6、编辑设置文件和项目相关文件。  <br/>
+settings.py 控制项目参数。</p>
+
+<p>```</p>
+
+<pre><code>INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'clips',
+]
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',#mysql.connector.django
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'NAME': 'demoproject',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+</code></pre>
+
+<p>```</p>
+
+<p>urls.py 控制访问请求路径</p>
+
+<pre><code>from django.conf.urls import url
+from django.contrib import admin
+from demoproject.views import hello
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^hello/$', hello),
+]
+</code></pre>
+
+<p>views.py 控制访问请求的应答</p>
+
+<pre><code>from django.http import HttpResponse
+def hello(request):
+    return HttpResponse("Hello world")
+</code></pre>
+
+<p>demoapp/models.py 控制数据结构（表格、变量、变量属性）
+```</p>
+
+<pre><code>from __future__ import unicode_literals
+from django.db import models
+
+class User(models.Model):
+    user_name = models.CharField(max_length=30)
+    password = models.CharField(max_length=40)
+    email = models.EmailField()
+    headshot = models.ImageField(upload_to='headshot',null=True,blank=True)
+    brief = models.CharField(max_length=100)
+    join_date = models.DateField()
+    user_star = models.CharField(max_length=30)
+    def __unicode__(self):
+        return self.user_name
+......
+</code></pre>
+
+<p>```
+demoapp/admin.py 控制后台注册和数据呈现</p>
+
+<p>```</p>
+
+<pre><code>from __future__ import unicode_literals
+from django.contrib import admin
+from .models import User, Clip, Link
+import sys;  
+reload(sys);  
+sys.setdefaultencoding("utf8")
+
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('user_name', 'password', 'email')
+    search_fields = ('user_name', 'email')
+......
+admin.site.register(User,UserAdmin)
+......
+</code></pre>
+
+<p>```</p>
+
+<p>7、当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。</p>
+
+<pre><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre>
+
+<p>8、利用template来呈现页面。</p>
+
+<p>首先要修改settings.py</p>
+
+<pre><code>TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            # ...
+</code></pre>
+
+<p>接下来建文件夹templates</p>
+
+<pre><code>\demoproject
+    \demoproject
+    \demoapp
+    \templates
+    manage.py
+</code></pre>
+
+<p>修改demoproject\views.py</p>
+
+<pre><code>from django.shortcuts import render
+import datetime
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render(request, 'current_datetime.html', {'current_date': now})
+</code></pre>
+
+<p>在templates文件夹，新建html模版文件current_datetime.html。</p>
+
+<p>\mysite_project\mysite\templates\current_datetime.html</p>
+
+<p>```
+
+<html></p>
+
+<pre><code>&lt;body&gt;
+    It is now {{ current_date }}
+&lt;/body&gt;
+</code></pre>
+
+<p></html>
+It is now {{ current_date }}.
+
+```</p>
+
+<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br/>
+参考：https://djangobook.com/templates-in-views/</p>
+
+<p>base.html<br/>
+```html
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head></p>
+
+<pre><code>&lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+</code></pre>
+
+<p></head>
+<body></p>
+
+<pre><code>&lt;h1&gt;My helpful timestamp site&lt;/h1&gt;
+{% block content %}{% endblock %}
+{% block footer %}
+&lt;hr&gt;
+&lt;p&gt;Thanks for visiting my site.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+
+<p></body>
+</html>
+
+```</p>
+
+<p>current_datetime.html<br/>
+```html
+
+{% extends "base.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}</p>
+
+<pre><code>&lt;p&gt;It is now {{ current_date }}.&lt;/p&gt;
+</code></pre>
+
+<p>{% endblock %}
+
+```</p>
+
+<p>hours_ahead.html</p>
+
+<p>```html
+
+{% extends "base.html" %}
+{% block title %}Future time{% endblock %}
+{% block content %}</p>
+
+<p>
+    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+</p>
+
+
+<p>{% endblock %}
+
+```</p>
+
+<p>9、利用form来获取用户数据。</p>
+
+<p>mysite_project\mysite\books\templates\books\search_form.html
+```html
+
+<html>
+<head></p>
+
+<pre><code>&lt;title&gt;Search&lt;/title&gt;
+</code></pre>
+
+<p></head>
+<body></p>
+
+<pre><code>&lt;form action="/search/" method="get"&gt;
+    &lt;input type="text" name="q"&gt;
+    &lt;input type="submit" value="Search"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p></body>
+</html>
+
+```</p>
+
+<p>mysite\books\urls.py
+```python</p>
+
+<pre><code>from django.conf.urls import url
+from books import views
+urlpatterns = [
+    url(r'^search-form/$', views.search_form),
+    url(r'^search/$', views.search),
+]
+</code></pre>
+
+<p>```</p>
+
+<p>mysite\urls.py
+```python</p>
+
+<pre><code>from django.conf.urls import include, url
+urlpatterns = [
+# ...
+    url(r'^', include('books.urls')),
+]
+</code></pre>
+
+<p>```
+books\views.py</p>
+
+<pre><code>from django.shortcuts import render
+def search_form(request):
+    return render(request, 'books/search_form.html')
+def search(request):
+    if 'q' in request.GET:
+        message = 'You searched for: %r' % request.GET['q']
+    else:
+        message = 'You submitted an empty form.'
+    return HttpResponse(message)
+</code></pre>
+
+<p>参考：https://djangobook.com/django-forms/</p>
+
+<p>定义表单类，更简洁的获取用户数据的方法。</p>
+
+<p>mysite_project\mysite\mysite\forms.py
+```python</p>
+
+<pre><code>from django import forms
+class ContactForm(forms.Form):
+    subject = forms.CharField()
+    email = forms.EmailField(required=False)
+    message = forms.CharField()
+</code></pre>
+
+<p>```</p>
+
+<p>mysite_project\mysite\mysite\views.py</p>
+
+<p>```python</p>
+
+<pre><code>from django.http import Http404, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
+import datetime
+from mysite.forms import ContactForm    
+from django.core.mail import send_mail, get_connection
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            con = get_connection('django.core.mail.backends.console.EmailBackend')
+            send_mail(
+                cd['subject'],
+                cd['message'],
+                cd.get('email', 'noreply@example.com'),
+                ['siteowner@example.com'],
+                connection=con
+            )
+            return HttpResponseRedirect('/contact/thanks/')
+    else:
+        form = ContactForm()
+    return render(request, 'contact_form.html', {'form': form})
+</code></pre>
+
+<p>```</p>
+
+<p>mysite_project\mysite\templates\contact_form.html</p>
+
+<p>```html
+
+<html>
+<head></p>
+
+<pre><code>&lt;title&gt;Contact us&lt;/title&gt;
+&lt;style type="text/css"&gt;
+    ul.errorlist {
+        margin: 0;
+        padding: 0;
+    }
+    .errorlist li {
+        background-color: red;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        margin: 0 0 3px;
+        padding: 4px 5px;
+    }
+&lt;/style&gt;
+</code></pre>
+
+<p></head>
+<body></p>
+
+<pre><code>&lt;h1&gt;Contact us&lt;/h1&gt;
+{% if form.errors %}
+    &lt;p style="color: red;"&gt;
+        Please correct the error{{ form.errors|pluralize }} below.
+    &lt;/p&gt;
+{% endif %}
+&lt;form action="" method="post" novalidate&gt;
+    &lt;table&gt;
+        {{ form.as_table }}
+    &lt;/table&gt;
+    {% csrf_token %}
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p></body>
+</html>
+
+```</p>
+
+<p>10、urls进阶</p>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+    url(r'^hello/$', views.hello),
+    url(r'^time/$', views.current_datetime),
+          url(r'^time/plus/(d{1,2})/$', views.hours_ahead),
+]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^$', views.homepage),
+    url(r'^(\d{4})/([a-z]{3})/$', views.archive_month),
+]
+if settings.DEBUG:
+    urlpatterns += [url(r'^debuginfo/$', views.debug),]
+</code></pre>
+
+<p>\urls.py</p>
+
+<pre><code>from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^reviews/2003/$', views.special_case_2003),
+    url(r'^reviews/([0-9]{4})/$', views.year_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/$', views.month_archive),
+    url(r'^reviews/([0-9]{4})/([0-9]{2})/([0-9]+)/$', views.review_detail),
+]
+</code></pre>
+
+<p>更多参考： https://djangobook.com/advanced-views-urlconfs/</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[mysql charset admin django]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/30/mysql-charset-admin-django/"/>
+    <updated>2017-12-30T22:37:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/30/mysql-charset-admin-django</id>
+    <content type="html"><![CDATA[<p>中文乱码永远是程序猿的痛！！</p>
+
+<p>今天使用django-admin就遇到了乱码问题，是仿照<a href="https://djangobook.com/adding-models-to-django-admin/">django book</a>的model用法，做一个资源管理平台出现的问题。</p>
+
+<p>代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能的解决措施：</p>
+
+<p>1、修改admin.py</p>
+
+<pre><code>import sys;   
+reload(sys);  
+sys.setdefaultencoding("utf8") 
+</code></pre>
+
+<p>这个办法曾经帮助我解决了chatbot项目的乱码问题。</p>
+
+<p>2、修改mysql的配置文件/etc/my.cnf<br/>
+方案一：</p>
+
+<pre><code>[mysqld]
+character-set-server=utf8 
+[client]
+default-character-set=utf8 
+[mysql]
+default-character-set=utf8
+</code></pre>
+
+<p>方案二：utf8mb4兼容utf8，且比utf8能表示更多的字符，是utf8字符集的超集。所以现在一些新的业务，比如ISO等，会将MySQL数据库的字符集设置为utf8mb4。</p>
+
+<pre><code>[client]  
+default-character-set=utf8mb4  
+
+[mysqld]  
+character-set-server = utf8mb4  
+collation-server = utf8mb4_unicode_ci  
+init_connect='SET NAMES utf8mb4'  
+skip-character-set-client-handshake = true  
+
+[mysql]  
+default-character-set = utf8mb4  
+</code></pre>
+
+<p>3、关键还是要会使用命令诊断问题所在。<br/>
+我的问题出在新建的数据库中表单变量的字符码设置不是utf8，后来把数据库drop掉，重新配置my.cnf文件，然后重建mysql数据库就没问题了。</p>
+
+<p>4、常用的mysql命令和django命令。</p>
+
+<pre><code>mysql -u db_user -p
+SHOW DATABASES;
+CREATE DATABASE blog_data;
+drop database mydb;
+SHOW DATABASES;
+</code></pre>
+
+<p>CTRL + D退出mysql。</p>
+
+<p>通过show variables 命令查看字符编码，发现部分变量的编码果然不是utf8，难怪乱码。</p>
+
+<pre><code>show variables like '%char%’;
+</code></pre>
+
+<p>尝试重制响应的字符编码设置。</p>
+
+<pre><code>set character_set_server=utf8;
+set character_set_database=utf8;
+show variables like '%char%’;
+</code></pre>
+
+<p>结果无效，于是进一步查看响应的数据库及其表单：</p>
+
+<pre><code>use my_db;
+show tables;
+show full columns from table1; ／／这条命令可以看到table1中的变量情况，发现果然编码有问题。 
+</code></pre>
+
+<p>尝试修改这个表单中的变量设置,也就是my_db.table1表单中的my_var变量字符编码。</p>
+
+<pre><code>ALTER TABLE my_db.table1 MODIFY COLUMN my_var VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+</code></pre>
+
+<p>错误代码位置发生了改变，这说明改动有效，于是重新建立数据库（见3）。</p>
+
+<p>5、Django的一些命令。</p>
+
+<pre><code>python manage.py createsuperuser #生成admin登陆的超级用户和密码
+python manage.py makemigrations #当更改model时，通过此命令把变动反应到数据库中
+python manage.py migrate
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Swf send data to Java Script]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script/"/>
+    <updated>2017-12-29T19:21:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/29/swf-send-data-to-java-script</id>
+    <content type="html"><![CDATA[<p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br/>
+1、首先在html网页中通过object嵌入swf文件</p>
+
+<p>```
+</p>
+
+<pre><code>&lt;body&gt;
+&lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+&lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+&lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+&lt;/object&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>
+```</p>
+
+<p>2、在网页的头部嵌入要调用的函数hello</p>
+
+<p>```</p>
+
+<pre><code>&lt;script&gt;
+    function hello(v){ 
+        alert("hello: "+v);
+        document.location.href = '/search';
+    } 
+    function thisMovie(movieName) { 
+        if (navigator.appName.indexOf("Microsoft") != -1) { 
+            return window[movieName] 
+        } 
+        else { 
+            return document[movieName] 
+        } 
+    }
+&lt;/script&gt;
+</code></pre>
+
+<p>```</p>
+
+<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮</p>
+
+<p>```</p>
+
+<pre><code>package {
+import flash.net.*;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.display.MovieClip;
+import flash.external.ExternalInterface; 
+public class test extends MovieClip {
+    public function test(): void {
+        submit.addEventListener(MouseEvent.CLICK, postForm);
+    }
+    private function postForm(evt: MouseEvent): void {
+        ExternalInterface.call("hello", txt1.text); 
+    }
+}
+</code></pre>
+
+<p>```</p>
+
+<p>4、实现的效果如下：<br/>
+当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。</p>
+
+<p>5、原理解释<br/>
+fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。</p>
+
+<p>6、JS调用AS函数的实现方法。<br/>
+上面实现了AS调用JS并传递参数，那么反过来，JS是否可以调用AS函数呢？答案是肯定的。</p>
+
+<p>AS类这样写：</p>
+
+<p>```</p>
+
+<pre><code>package {
+    import flash.net.*;
+    import flash.events.Event;
+    import flash.events.MouseEvent;
+    import flash.display.MovieClip;
+    import flash.external.ExternalInterface;
+
+    public class test extends MovieClip {
+        public function test(): void {
+            submit.addEventListener(MouseEvent.CLICK, postForm);
+            ExternalInterface.addCallback("say", say); //regist 
+        }
+
+        private function say(txt: String) {
+            txt2.text = txt;
+        }
+
+        private function postForm(evt: MouseEvent): void {
+            //call js function
+            ExternalInterface.call("hello", txt1.text);
+        }
+    }
+}
+</code></pre>
+
+<p>```</p>
+
+<p>Html这样写：</p>
+
+<p>```html
+</p>
+
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;As communicate with JS&lt;/title&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        function hello(v){ 
+            alert("hello: "+v);
+            //document.location.href = '/search';
+        }
+        function thisMovie(movieName) { 
+            if (navigator.appName.indexOf("Microsoft") != -1) { 
+                return window[movieName] 
+            } 
+            else { 
+                return document[movieName] 
+            } 
+        }
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#test1").text("Hello world!");
+            });
+            $("#btn2").click(function(){
+                $("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");
+            });
+            $("#btn3").click(function(){
+                //$("#test3").val("Dolly Duck");
+                var txt=$("#test3").val();
+                thisMovie("test").say(txt);
+            });
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400"&gt;
+    &lt;param name="allowScriptAccess" value="sameDomain" /&gt; 
+    &lt;param name="movie" value="{% static "flash/test.swf" %}" /&gt;
+    &lt;embed src="{% static "flash/test.swf" %}" name="test" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash" width="550" height="400"&gt;&lt;/embed&gt;
+    &lt;/object&gt;
+    &lt;br&gt;
+    &lt;p id="test1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p id="test2"&gt;This is another paragraph.&lt;/p&gt;
+    &lt;p&gt;Input field: &lt;input type="text" id="test3" value="Mickey Mouse"&gt;&lt;/p&gt;
+    &lt;button id="btn1"&gt;Set Text&lt;/button&gt;
+    &lt;button id="btn2"&gt;Set HTML&lt;/button&gt;
+    &lt;button id="btn3"&gt;Set Value&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>
+```</p>
+
+<p>7、遗留的问题：这样的写法谷歌浏览器没问题，但是火狐浏览器不成功，也就是不能把参数传到swf上。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[AJAX and Chatbot]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/12/15/ajax-and-chatbot/"/>
+    <updated>2017-12-15T20:14:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/12/15/ajax-and-chatbot</id>
+    <content type="html"><![CDATA[<p>AJAX是一个缩写，代表：Asynchronous JavaScript And XML.</p>
+
+<pre><code>AJAX is a developer's dream, because you can:
+# Read data from a web server - after the page has loaded
+# Update a web page without reloading the page
+# Send data to a web server - in the background
+</code></pre>
+
+<p>今天改写了一个代码实现了聊天的过程中不需要重新加载页面。代码如下：</p>
+
+<p>urls.py</p>
+
+<pre><code>url(r'^api/chat/', post), 
+</code></pre>
+
+<p>view.py</p>
+
+<pre><code>def post(request, *args, **kwargs):
+    """
+    Return a response to the statement in the posted data.
+    """
+    bot = ChatBot("Training Example")
+    bot.set_trainer(ListTrainer)
+    input_data = json.loads(request.read().decode('utf-8'))
+    response = bot.get_response(input_data)
+    response_data = response.serialize()
+    return JsonResponse(response_data, status=200)
+</code></pre>
+
+<p>chat.html</p>
+
+<pre><code>&lt;script&gt;
+  var chatterbotUrl = '/api/chat/';
+  var csrftoken = Cookies.get('csrftoken');
+  function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+  }
+
+  $.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+      if (!csrfSafeMethod(settings.type) &amp;&amp; !this.crossDomain) {
+        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+      }
+    }
+  });
+
+  var $input = $('#input');
+  var $sayButton = $('#sayButton');
+  var $answer = $('#answer');
+
+  function submitInput() {
+    var inputData = {
+      'text': $input.val()
+    }
+    var $submit = $.ajax({
+      type: 'POST',
+      url: chatterbotUrl,
+      data: JSON.stringify(inputData),
+      contentType: 'application/json'
+    });
+
+    $submit.done(function(statement) {
+        $answer.val(statement.text);
+        // Clear the input field
+        $input.val('');
+        //alert(statement.text)
+    });
+
+  $sayButton.click(function() {
+    submitInput();
+  });
+</code></pre>
+
+<p>原理是这样的，首先你需要通过urls.py文件指定在请求特定url的时候，触发的函数。这个函数是在view.py中定义的，也就是post函数。post函数需要至少一个参数，也就是request，request必须包含一个text的属性才能被read()出来而不出错。之后，post函数会返回一个JsonResponse，其中机器人的回答可以通过statement.text来获取和使用，见chat.html中的$submit.done函数。</p>
+
+<p>当不知道传递的是何值时，可以通过html 中的alert或者python中的print（）来监听调试。</p>
+]]></content>
+  </entry>
+  
+</feed>

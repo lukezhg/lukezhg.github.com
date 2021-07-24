@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 教学 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/教学/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/教学/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,70 +14,359 @@
 
   
   <entry>
-    <title type="html"><![CDATA[fighting with plagiarism]]></title>
-    <link href="http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism/"/>
-    <updated>2013-01-11T17:59:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2013/01/11/fighting-with-plagiarism</id>
-    <content type="html"><![CDATA[<h2>什么是抄袭？</h2>
+    <title type="html"><![CDATA[表现性评价]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/08/07/performance-assessment/"/>
+    <updated>2020-08-07T10:36:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/08/07/performance-assessment</id>
+    <content type="html"><![CDATA[<p>雨下的淅淅沥沥，空气中弥漫着泥土的清新，地上新采摘的10个植物标本经过小雨的洗礼更加娇艳欲滴。一位位同学撑着雨伞从这些标本面前走过，时不时蹲下身，数一下花瓣、观察一下花蕊或者拨弄一下果实，然后便在纸上记上一笔。我也是其中的一员，前面几个标本都比较熟悉，很快就写好了答案。但是，有一个标本让我蹲下身、眉头紧皱，我拼命回想眼前植物标本的相关信息，一个重要信息浮现出脑海“苹果它妈山丁子” <a href="#1d">1</a><a id="1u"></a>，可是不敢确定，突然眼前一亮，既然它可以嫁接苹果树，哪它的果子估计与苹果相似，于是不管三七二十一上去就咬了一口，咦，味道不错。于是很笃定的就把三丁子写在了答卷上。</p>
 
-<p>所谓抄袭，就是让别人把不是你的误认为是你的。这里分两种情况，一种是有意抄袭，一种是无意抄袭。有意抄袭往往不会给出原作者的任何信息甚至故意隐去作者的相关信息，这种行为当然应该惩罚，因为这不仅是一种对别人劳动成果的不尊重，也是对自己工作的不尊重。无意抄袭，一般往往提供了作者相关的信息，但是行文中还是让人产生了误会，这种情况则需要学习和教育。</p>
+<p>这大概是2002年的事情，当时我们正在小龙门进行本科植物实习，考试的方式就是认植物标本。这一幕可算是记忆深刻，那场小雨还有那颗三丁子，到现在已经快20年了，我还是记忆犹新。因为这次考试的方式别开新面，以往的考试都是纸笔考试，要写出不同植物科属的特征，记忆力是关键。但是这次，光有记忆力还不行，还需要观察和理解力，比如向我通过味觉分辨植物估计也是超出了考官的想想了吧，但确特别真实。恍惚间甚至有了神农尝百草的领悟。当时也没觉什么，就是觉得这种考法挺新鲜有趣。现在才知道，这是一种不同于传统纸笔评价方式的评价——表现性评价（Performance Assessment）。</p>
 
-<!-- more -->
+<p>什么是表现性评价呢？真实的情景，真实的任务，开方向性的问题解决策略，评估综合性素养。与纸笔评价不同的是，表现性评价不局限于纸笔，考生往往需要在真实的问题情景下完成真实任务，考官更具考生的任务表现对考生的能力做出评测。这种表现可以是最后的产品，也可以是过程本身，或者两者都包含。比如，上面的植物实习考试，老师可以看最后的答案，也可以观察考生鉴别并最终确定答案的过程（不知道我当时哪一口是否已经被老师记录在案了）。</p>
 
+<p>还有很多与表现性评价相近的表述，比如真实性评价，也有翻译为实做评价，替代性评价。其中替代性评价强调的是用其他评价方式替代传统的纸笔评价，它是从评价形式的不同来命名的。还有学者对表现性评价和真实性评价做了却分，认为表现性评价强调的是基于行为作出评判，而真实性评价强调通过生活中真实的问题情境和任务来评判，两者都强调通过任务表现能力。由于我们一般设计表现性评价任务都具有真实的情景，所以我们把表现性评价与真实性评价等同处理，从而避免名词过多而造成的不变。</p>
 
-<p></p>
+<p>如果你的学生对纸笔考试已经厌烦了，那么，你就要任真考虑一下表现性评价了。因为，它对于激发学生的动机具有更大的优势。特别是当下，核心素养的提出，其本质就是要发展学生的综合能力和品格，而表现性评价恰恰最适合这一任务。</p>
 
-<h2>如何鉴别抄袭？</h2>
+<p>表现性评价的构成：任务；观察；解释；认知模型。表现性评价需要教师设计一个对于学生具有真实意义的任务，任务的目标尽可能明确，评价的标准也应事先让学生知晓，任务应该具有一定的挑战性。可以是个人任务也可以是小组任务。通常表现性评价的任务可以是制作一个产品，也可以是设计的问题解决方案，还可以是两者的融合，比如导演一部话剧。我们以制作一个产品为例，解释一下表现性评价的设计过程。</p>
 
-<p>鉴别抄袭当然可以依赖工具，但实际上更可靠的还是人工鉴别。这需要鉴别者对相关文献以及抄袭者有好的了解，这样就可以对其创造的作品的抄袭可能性作出判断。当然，其实没人愿意做这样的工作，所有的老师都不愿这种情况发生在自己学生身上，所有学生也不愿意被人怀疑抄袭。最好的还是防范抄袭，但是一旦发生了抄袭，教师和学生都应该认真面对，并且把这种谁都不愿意遇到的情况当成一次教育的机会。</p>
+<h3>任务</h3>
 
-<h2>如何应对抄袭？</h2>
+<p>一位小学科学老师在给4年级的学生上课。他们今天要学习的内容是浮与沉。老师不仅让他们观察不同的日常生活用品在水里的沉浮状态并找到浮沉与密度之间的关系，为了检测和巩固他们的理解，老师还带他们做了一个趣味活动项目————制作橡皮泥船。</p>
 
-<p>有很现成的工具，中文和英文的工具都有。最简单的工具就是搜索引擎，很多抄袭的来源都是互联网，因此搜索时自然就能找到来源。此外还有一些专门的在线工具和软件。</p>
+<p>每个孩子分到一块同等大小的橡皮泥，然后可以把它捏成各种形状的船，观察能否浮在水面，还可看这个船能够承载多少硬币。每个小组的成员之间可以交流、合作，最后选出承载能力最强的船参加比赛，之后老师会让同学们分享成功或失败的原因。课上，孩子们对这个项目非常着迷，他们尝试不同的形状，每次自己的船能够承载更多的硬币时，他们都会欢声雀跃。为了防止橡皮泥溶于水，有的孩子想到用塑料薄膜把船包起来，这个想法得到了老师的公开表扬。还有的孩子虽然承载能力不是最大的，但是船的颜色和形状非常美观，也得到了老师的称赞和认可。</p>
 
-<h2>英语在线工具：</h2>
+<p>在这个案例中，老师没有按照常规的，一个个科学概念去讲解，质量，体积，密度，也没有去讲浮力的公式，而是让学生进行一场比赛，什么比赛呢？用相同体积的橡皮泥，制作一艘承载能力最大的船。这个任务真是既好玩又长本领。这位老师真是太有智慧和想象力了！</p>
 
-<p><strong> <a href="http://www.duplichecker.com/">Duplichecker</a>  <br/>
-</strong> <a href="http://www.plagium.com/">Plagium</a>   <br/>
-<strong> <a href="http://www.articlechecker.com/">Articlechecher</a>     <br/>
-</strong></p>
+<p>任务本身包括任务的目标、条件限制、竞争规则。比如这个活动的目标就是制作橡皮泥船，并且让它能承载更多的硬币。条件限制就是大家的橡皮泥一样多，其他材料也一样多。规则就是自己动手设计制作，测试，改善，最后参加比赛。</p>
 
-<h2>中文在线工具：</h2>
+<h3>观察</h3>
 
-<p><strong> <a href="http://www.copycheck.net/OnlineCheck.aspx">Copycheck</a>  <br/>
-</strong> <a href="http://www.copycheck.com.cn/page.jsp">Copycheck.com</a>   <br/>
-<strong> <a href="http://check.cnki.net/bachelor/">Cnki科研诚信管理系统</a>  <br/>
-</strong></p>
+<p>明确观察点和数据收集。在这个任务中教师要观察学生的那些行为，收集哪些数据。比如教师可以观察学生合作情况、测试次数，还可以提问学生你们为什么这么设计，为什么选择球形或者长方体形等等，当然还要记录最后的比赛数据。</p>
+
+<h3>解释</h3>
+
+<p>教师应该根据学生在任务中的表现给出解释，这样的行为表明学生发展达到了什么样的层次，下一步应该提供哪些教学指导，从而进一步提高。</p>
+
+<h3>认知模型</h3>
+
+<p>给出解释的并不是简单的根据观察结果和数据做出的，而需要依据认知模型。所谓，认知模型就是学生在某一个认知领域的发展水平是如何由低到高一步一步进阶发展的。不同水平有怎样的差异，水平的高低如何划分和排序。认知模型可能开始是一个假设的理论模型，经过不断检验优化就成为具有证据支持的可操作性模型了。它是连接解释和观察的桥梁，是做出评判的依据，也是表现性评价设计的核心和难点。</p>
+
+<p>教育测量把观察、解释、认知模型成为测量三角，它是每个高质量教育测评的核心要素。而任务则是为观察、解释、认知模型建构提供了最佳视角和依据。</p>
+
+<h3>注脚</h3>
+
+<p><a id="1d"></a>[<a href="#1u">1</a>]:以前山丁子多是野生的，经常用于做苹果树的砧木。所谓砧木就是利用山丁子的根和茎为苹果枝条提供矿物质元素和水分，下面的山丁子是砧木，上面嫁接的苹果树枝条叫做砧穗。嫁接的好处就是克服了苹果树对土壤的要求，而且同样还可以结出苹果。戏剧的是，现在发生了反转。有人发现山丁子味甘酸、性凉、无毒，能润、生津、利痰、健脾、解酒，营养成分高于苹果。有人发明了以苹果树做砧木嫁接山丁子的方法。真是世事无常，十年河东十年河西，看来当年那一口的营养价值还不低。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[宝宝跳跳器——脚手架]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/04/26/baby-jump-helper-scaffolding/"/>
-    <updated>2012-04-26T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/04/26/baby-jump-helper-scaffolding</id>
-    <content type="html"><![CDATA[<p><div align="center"><img style="max-width: 800px;" src="http://img.pconline.com.cn/images/upload/upc/tx/babylib/1006/30/11/33/1277890659953_300x300.jpg" /><br /></div><br /><blockquote><p><font size="2"><span style="font-family: arial,helvetica,sans-serif;">“跳跳器是一种悬挂在门框金属夹具上的塑料椅或布椅。它由链条、弹簧或橡胶和布带构成。宝宝在上面跳起，就可以弹离地面。一些宝宝不喜欢跳跳器，而其他宝宝却很喜爱，直到学会走路。</span></font></p><p><font size="2"><span style="font-family: arial,helvetica,sans-serif;">跳 跳器也有一些问题：夹具可能会松开，带子可能会磨断，从而导致宝宝掉到地上或撞到门框。一些座椅对宝宝的大腿内侧压力过大，导致瘀痕或影响血液循环。安装 跳跳器也具有一定的难度。宝宝长时间使用会导致晕眩，症状与晕船相似。同时还有鞭抽式损伤的危险，因此我们不提倡使用跳跳器。” 摘自：怎样为刚刚学走路的孩子选择用具？ 博闻网: http://health.bowenwang.com.cn/how-to-choose-baby-equipment8.htm</span></font></p></blockquote>今天偶然在路上可到有一个家庭正在给宝宝使用跳跳器，这让我联想到脚手架的原理。宝宝在还没有学会走路的时候，家长有时候会用双手架在宝宝的腋下帮助其承担一部分的重量，这样宝宝就可以在双腿力量上不足够支撑身体重量的时候学习走路，这更我们的脚手架原理是一样的，学习者在教师提供特定帮助下完成学习任务，然后这种帮助会慢慢减少，直到学习者可以独立完成任务。<br /><br />这正应了那句名言“教是为了不教”。<br />还有一句是“不教也是一种教”。<br /></p>
+    <title type="html"><![CDATA[基于核心素养发展的教学案例设计——细胞的增殖]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/12/27/teaching-mitosis-according-to-new-standard/"/>
+    <updated>2019-12-27T23:24:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/12/27/teaching-mitosis-according-to-new-standard</id>
+    <content type="html"><![CDATA[<p>上了《中学生物学课程标准与教材研究》这门课，我们究竟学到了什么？大部分可以下面一张图概括：</p>
 
+<pre><code>   VR  
+  ====  
+   PCR
+ =======  
+   STAR
+==========  
+</code></pre>
+
+<p>字母含义如下：</p>
+
+<pre><code>VR: Value &amp; Rational-----------------------（价值、理念）  
+PCR: Pedagogy、Content、Representation----（教法、内容、表征）  
+STAR: Space、Time、Activity、Resources--（空间、时间、活动、资源）  
+</code></pre>
+
+<p>（一）上层结构。</p>
+
+<pre><code>价值：就是发展学生的学科核心素养，生命观念、理性思维、科学探究、社会责任。  
+理念：核心素养为宗旨，内容聚焦大概念，教学过程重实践，学业评价促发展。  
+</code></pre>
+
+<p>（二）中层结构。</p>
+
+<pre><code>教法：科学探究、启发式问答、科学论证、讲授法、社会性科学议题等。  
+内容：科学知识、科学探究与工程实践、科学本质、科学-技术-社会。  
+表征：抽象符号、示例、问答、隐喻、脚手架，其形式如文字、图片、媒体、程序等。   
+</code></pre>
+
+<p>（三）底层结构。</p>
+
+<pre><code>时间：时间对教学活动的限制和脉络。  
+空间：空间对教学活动的支持和限制。  
+活动：活动为学生创造的学习机会多与少，好与坏。
+资源：资源在时空的分布以及对活动的支持。  
+</code></pre>
+
+<p>以上修改自：张春雷.核心素养视角下课堂结构的审视与重构[J].教师教育研究.2018,30(179):66-71</p>
+
+<p>这个，有点抽象呀!!  ：/</p>
+
+<p>好，那么，让我们用一个具体的案例来说话。</p>
+
+<h2>《细胞的增殖》教学案例</h2>
+
+<p>【引出话题】你知道一个人拥有多少细胞吗？人类个体平均拥有37.2万亿个细胞。</p>
+
+<p>【吸引】我们知道人都是有一个细胞发育而来的，这个细胞就是受精卵。那么，一个受精卵如何变成数以万亿的细胞的呢？</p>
+
+<p>【研究】对于细胞数目是如何增多的这个问题，我们怎么研究呢？</p>
+
+<p>我们当然可以直接研究人，直接观察一个受精卵，但是相对比较困难，很难获得，价格昂贵，而且也存在医学风险和伦理道德隐患。</p>
+
+<p>【解释】上节课，我们研究了植物是如何进行细胞分裂的，我们选择洋葱根尖的分生区细胞作为实验材料。谁能说说选择这个材料有什么好处？</p>
+
+<p>结果，我们观察到了什么？你们记录下来了吗？</p>
+
+<p>这个一定要记录下来，照片或者绘图，这就是科学数据。这也是证明植物细胞是如何分类的重要证据。我很高兴有几位同学做了记录，还有同学技术很好拍到了很清晰的照片。下面，我们就选一张比较清晰、细胞形态最为多样的照片来分析植物细胞分裂的过程。</p>
+
+<p>出示：植物洋葱根尖分生区细胞照片<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mitosis-photo.png" alt="mitosis-photo" /></p>
+
+<p>首先，你们看到了什么？很多细胞是不是？这些细胞一样吗？怎么不一样了？那么，到底有多少种类型呢，你可以和同桌一起数一数吗？</p>
+
+<p>通过归类，我们发现有一种类型的细胞特别多，我们一起看一下这类细胞的结构特征。</p>
+
+<p>出示：典型细胞典型结构照片（细胞壁、细胞膜、细胞质、细胞核）<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/plant-cell2.png" alt="plant-cell" /></p>
+
+<p>其他类型的细胞，则相对数目较少，而且都有些特别之处，有哪些特别之处呢？有共同点吗？</p>
+
+<p>实际上，这些特别奇怪的细胞就是进入了细胞分裂期的细胞。而形态最典型的细胞则是没有进入分裂期的细胞，它们可能正在准备分裂，我们称之为间期。间期+分裂期刚好构成一个循环，也就是一个细胞周期。细胞可以向钟表一样一直分裂个不停，一个分成2个，2个分成4个，这样不断增加下去。这是不是就是解释了细胞是如何变多的这个问题。</p>
+
+<p>画板书：1分为2，2分为4，4分为8，……。  <br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/cell-cycle.png" alt="cell-cycle" /></p>
+
+<p>【吸引】那么，大家看一看，分裂期细胞多，还是分裂间期细胞多？这能说明什么？假如，照片中所有的细胞都是不停的正在进行细胞分裂的话，只是当我们给细胞染色的时候，这些细胞就被冻结到了它但是所处的时期，那么由此你可以就细胞分裂间期和分裂期的持续时间推测出什么？</p>
+
+<p>植物洋葱根尖分生区细胞是这样，我们再看看其他物种是不是也是这样？</p>
+
+<p>出示：不通物种细胞分裂周期表格<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mitosis-table.png" alt="mitosis-table" /></p>
+
+<p>【解释】从这个表格，我们能得出什么结论。</p>
+
+<p>【吸引】为什么是这样？大家有什么猜测吗？</p>
+
+<p>【探究】要回答这个问题，我们需要继续研究一下细胞分裂的过程。请大家为细胞分裂期的细胞进行排序。<br/>
+谁来说一下，有不同的排序方法吗？</p>
+
+<p>【解释】说说你的理由？你为什么这么排序？</p>
+
+<p>你认为这样证据足够吗？其实不太好说，因为照片提供的数据仅仅是一个切面，我们无法看到完整的过程。
+播放视频：细胞有丝分裂的动态过程。<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mitosis-vedio.png" alt="mitosis-vedio" /></p>
+
+<p>怎么办？让我们一起看一下，动态的细胞分裂过程？看清楚了吗？</p>
+
+<p>哪一种正确，这一种。为什么？</p>
+
+<p>接下来，为了让大家搞清楚，具体每个时期细胞发生的变化，我们借助一个动画来给大家演示。请大家一起观察、记录（画下来）并提问和讨论。</p>
+
+<p>演示动画：植物细胞有丝分类动画 <br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/mitosis-animation.png" alt="mitosis-animation" /></p>
+
+<p>首先，最开始肯定是细胞分类间期，之后进入前期、中期、后期、末期。要知道，这些时期都是人们根据形态特点认为划分的，而实际上细胞分类是一个连贯过程，并不会有任何停歇。</p>
+
+<p>细胞有丝分裂各个时期的特点：<br/>
+间期：蛋白质合成、DNA复制、细胞体积增加。<br/>
+前期：核仁、核膜逐渐消失；出现纺锤体、染色体。 <br/>
+中期：纺锤丝牵引染色体排列在细胞中央的一个平面上；染色体的最佳观察时期。<br/>
+后期：着丝点分裂成两个，姐妹染色单体也分开成为两条子染色体，在纺锤丝牵引下分向两极。<br/>
+末期：核仁、核膜重新出现；纺锤体、染色体消失；细胞板将一个细胞分隔成2个子细胞。</p>
+
+<p>【精致】<br/>
+前期：膜仁消失现两体<br/>
+中期：形定数清赤道齐<br/>
+后期：点裂体增均两极<br/>
+末期：两消两现重开始</p>
+
+<p>【吸引】了解了整个细胞有丝分裂的过程，我们发现细胞分裂不是简单的一分为二，还需要完成很多重要物质的分配？比如遗传物质、细胞器，还有什么？营养物质，磷脂分子、糖、酶、蛋白质、还有很多。它们的重要性一样吗？哪个最重要，遗传物质。遗传物质在哪里呢，就在染色体上。所以染色体的分配、或者说遗传物质DNA的分配就是细胞分裂的头等大事。为什么这样说呢？</p>
+
+<p>那么，染色体是怎么分配到2个子细胞的呢？平均分配。而且，非常严格的平均分配，不是简单的数目相等，而是要每个染色体都要复制一份，然后分到2个细胞中去。这有什么好处？不这样会有什么后果？</p>
+
+<p>好处是每个子细胞都完整的继承一套遗传物质，没有增加也没有减少，这样还可以保持遗传信息的完整性。如果不均等分配，有些细胞遗传物质就会部分缺失、甚至完全消失，这样的细胞失去了遗传物质的调控，生命活动就会紊乱，没有办法继续生活下去，当然更无法继续增殖。</p>
+
+<p>【解释】所以这是头等大事，下面我们就对细胞周期中的DNA数目变化进行追踪，进而更深入的体会细胞生命世界中的神奇和巧妙之处。</p>
+
+<p><img src="https://github.com/lukezhg/Freyja/raw/master/DNA-number.png" alt="DNA数量变化" /></p>
+
+<p>【评估】你能解释有丝分裂是如何保证细胞遗传物质的稳定性的吗？如果一个细胞在有丝分裂中期时有4条染色体，那么在后期有多少条染色体？假如，洋葱根尖分生区细胞的分裂周期是16小时，那么，你根据实验中拍摄的照片估计其分裂期的时常吗？说一说你理由。</p>
+
+<p>【精致】有丝分裂名词的由来。有丝分裂（Mitosis）是有佛莱明于1882年提出，其字首mitos来自希腊文，是指线，字尾osis是指过程，mitosis即为“有线形成的过程”，而当时佛莱明观察细胞分裂时，观察到的线状结构实际上是染色质浓缩而成的、显微镜下可以清晰看到的染色体。</p>
+
+<p>最后欣赏一下细胞中美景奇观：细胞同步分裂的荧光染色照片。<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/Synchronized-Division.png" alt="Synchronized-Division" /></p>
+
+<h2>案例设计要点</h2>
+
+<h3>价值和理念</h3>
+
+<p>构建细胞有丝分裂的过程模型，进一步理解细胞生命活动的物质基础，建构结构与功能相适应的生命观念。提高观察、记录、分析数据得出结论的科学探究能力，发展逻辑推理、概率统计等科学思维。学习过程注重调动学生主动思考和提问，为学生提供参与科学探究、分析实验结果、讨论实验材料的选取的学习机会，促进学生自主学习和合作交流。</p>
+
+<h3>内容、策略、表征</h3>
+
+<p>内容：选取了有丝分裂重点内容开展学习，主要包括细胞有丝分裂的意义、过程和机制。  <br/>
+策略：采用5E教学模式——吸引、探究、解释、精致、评估。<br/>
+表征：使用了照片、示意图、动画、视频、曲线图等多种知识表征的形式促进理解、引发思考。</p>
+
+<h3>空间、时间、活动、资源</h3>
+
+<p>与上一节的洋葱根尖分生区观察实验联系起来，基于前面实验的结果来开展本节课的学习，具有时间连续性。由于上课是在普通多媒体教室，因此采用了多种媒体资源，比如图片、视频、动画等配合教学活动，整个教学活动得到了相应的课程资源的支持。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[实验教学理论课的教学反思]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/02/20/reflection-on-frist-lesson-of-experimental-teaching/"/>
-    <updated>2012-02-20T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/02/20/reflection-on-frist-lesson-of-experimental-teaching</id>
-    <content type="html"><![CDATA[<p>今天上了实验教学的理论课，一个很深的体会是如果让学生连续听2个半小时的讲座，想让学生一直高度关注是很难的。反过来，让一个教室连续讲上2个半小时，想不累也是很难的。今天这次课就是同时做了这两件事情。<br /><br />成功之处：<br />觉得一些好的例子，是很不错的。比如小学探究热量的案例，光合作用影响因素的案例。此外三盒米饭的例子也很不错。对于思想的形象化解释和比喻也是不错的。在讲解的过程中调动学生的已学知识和概念的做法也是好的。<br /><br />不足之处：<br />总是想让学生动起来，不仅仅是行动起来，同时也是思考起来，活跃起来，更愿意表达核分享，但是同学还是不是十分想敢说。有啥说啥的勇气还是缺乏。<br />另外想讲的内容很多，而且ppt没有大标题标记，显得有些混乱，标题和标题之间的线索有些不清晰了。z老师提出建议其实可以把所有内容概括为三大块，做好大标题标记，并去掉一些多余的案例和干巴巴的理论，会更好。这些建议是中肯的。<br />在语言表的基本功上，我的语言表达能力还需要练习，表达得特别快的时候就会找不到合适的词语或者吐字不清，这点其实要在平时多积累词汇，多写，多说，厚积薄发，自然水到渠成。<br /><br />突发事件：<br />刚开始想使用投影仪，但是发现怎么弄都投不上去，于是换了一个接口，头上去了。<br />讲授的时候发现投影仪接口与前面的讲台很远，于是自己搬了个凳子在加了一个箱子做了一个临时讲台，效果不错。这样可以看电脑上的ppt也可以看到同学的眼睛了。（但是还是应该考虑买一个ppt遥控器）<br />本来想使用ofiice2007的演讲者播放模式，这样可以看自己的笔记同时大屏幕只显示演示内容，但是弄了一些没成功。<br />分组的时候，有两个组一个组全是女生，一个组全是男生，为了男女搭配，我只好让他们重新组合一下，但是有一点强制性了，对不住这两位女同学了，把她们调过去的时候她们可能不是特别乐意。现在想来还是可以让他们私下商量解决的，不必要教师干预。毕竟他们都是成人了。<br /><br />学生见解：<br />有同学提出想借用一楼的微格教室，但是为了管理方便，还是建议他们使用实验教室。但是提前就多练习和操练微格的这个意识是值得充分肯定的，这也说明有些同学确实是非常主动的。<br /><br /></p>
+    <title type="html"><![CDATA[教学中的自然与佛学]]></title>
+    <link href="http://zhangchunlei.com/blog/2019/01/30/buddhism-and-teaching/"/>
+    <updated>2019-01-30T16:16:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2019/01/30/buddhism-and-teaching</id>
+    <content type="html"><![CDATA[<p>佛学是中国文化的重要组成部分，中国人很多日常生活中都能看到佛学的缩影。佛学主张认识到我的虚无，进而能看破表现，走出我相、他相、寿者相等虚妄，进而脱离苦海。要想成佛，不仅要自救，还要救人，既要渡己，也要渡人，渡众生。但是，这样做不能有目的而为之，而要无我、无他、无物，三体轮空，也就是不执着，没有渡人我，也没有被我渡的他，更没有我给他的财物。</p>
 
+<p>每个僧人最重要工作之一就是布施，把财物捐给佛家三宝（佛、法、僧），所以僧人有时挨家挨户的布施，拿一个空碗到各家各户乞食，有人给多，有人给少，无论好坏不得挑剔，使众生平等。佛教认为，能布施斋僧的人，即与佛门有缘，僧人以募化乞食广结善缘，故称化缘。其实僧人只能吃化缘来的斋饭接受众生供养，而不能自给自足。这样做的好处，一则是去私心，二则结善缘，三则发宏愿，四则弘佛法。这样做，无时无刻不在提醒僧人你并无私人财产，众生对你有恩，你当渡化众人，弘扬无边佛法。</p>
+
+<p>在布施上，佛学讲究随缘、随心、随力、随喜。随缘就是因果使然，随心就是尽心而为，随力就是尽力而为，随喜就是众生平等。</p>
+
+<p>教学必然存在教师和学生，教学也讲究自然而然。这里所谓的自然而然，乃是在恰当的时机、针对恰当的人、利用恰当的方法促进学生的学习。这里面也讲究随缘、随心、随力和随喜。</p>
+
+<p>道法自然，教法也应自然。这种自然体现在表现是一种和谐与恰当，这里的恰当体现在教学素材和资源的选择上，学习任务的设置上、教学方式的设计上、学习活动的组织和评价上等等。所谓，自然就是不突兀，不牵强，学习不是被迫发生的，而是自然而然发生的。随风潜入夜，润物细无声。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Molecular Workbench——在交互模拟中学习科学]]></title>
-    <link href="http://lukezhg.github.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/"/>
-    <updated>2011-12-15T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model</id>
-    <content type="html"><![CDATA[<p>今天收到一封邮件，大意是说Concord Consortium从google.com获得了250万美元的奖励。<br /><br />Concord的分子工作台项目非常让人耳目一新，它将动画模拟、交互、游戏、评价融为一体，此外你还可以根据自己的需求定做和创造适合自己的模型。下面是他们的网站：<br /><br />Molecular Workbench - An Interface to the Molecular World<br />: http://mw.concord.org/modeler/<br /><br />你只需要下载一个Java的程序，就可以在线使用这些交互动画和学习资源。其实类似的项目，曾经也介绍过一个:<br />PhET Interactive Simulations 交互式模拟——在游戏操作中学习 - Open Learning<br />: http://open-learning.appspot.com/131.html<br /><br />不知道两者有怎样的关系？<br /><br />其实作为科学教师，虽然不一定会编程、会做动画，但是要让最新的教学资源和科研成果为己所用，也不失为优秀教师。而我们的教师教育也在这些方面也应该给予相应的关注。<br /><br /></p>
+    <title type="html"><![CDATA[What make a good teacher?]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/01/24/what-make-a-good-teacher/"/>
+    <updated>2017-01-24T21:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/01/24/what-make-a-good-teacher</id>
+    <content type="html"><![CDATA[<p>This post will not be another list of good teacher characters. There are already many lists. Some come from serious studies. Some come from just personal experiences or judge(like <a href="http://cgi.stanford.edu/~dept-ctl/tomprof/posting.php?ID=665">this one highly</a> recommended). Some come from student or teacher self-reports(read <a href="https://www.unicef.org/teachers/teacher/teacher.htm">this student self-report</a>). Well these lists of qualities of good teachers help little in explaining how teachers become good teachers. What I want to do here is think about the most critical character that make a teacher becoming a good teacher.</p>
 
+<p>The best answer (I can give for now) is being serious of their teaching job is the most important character in becoming a good teacher. Being serious means the teacher really care about students' learning in class and take enough efforts to make it better. The efforts include making the place, understanding students, building connections, organizing cognitive burdens, trying different ways or strategies, critical thinking and examine their own practices, keeping learning themselves, making meanings and so on. Well, maybe it is cheating answer because it nearly included all the characters in the lists. But how can teachers become better if they don't care teaching at all.</p>
+
+<p>The truth is that I care then I want to improve.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tony's tricks are not just tricks——week one summary]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/01/21/tonys-teaching-tricks/"/>
+    <updated>2017-01-21T18:15:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/01/21/tonys-teaching-tricks</id>
+    <content type="html"><![CDATA[<p>In this lovely week, our students enjoyed Tony's classes. WHY? Because Tony made it a lovely place to learn. HOW? In order to answer this question, I have to go back and inquiry Tony's classes and teaching practices. I hope I can recognize not only Tony's magic tricks but also his intentions behind. If I don't write it down, the ideas may disappear and never come up to my mind again. So the FRIST goal of this post is a reflection and a record for myself.</p>
+
+<p>It is a challenging job to decode a teacher's class, especially Tony's complicated, multicultural and bilingual class in with many educational goals, skills and strategies were embedded. Fortunately, Tony provided some clues. The clues were written on the whiteboard or explicitly said by Tony.</p>
+
+<h3>Monday 16th Nov, Hot Water Welcome</h3>
+
+<p>After we got in the door of Scarf building, we saw a welcome poster for our ECNU students in the corridor. It is not big, but well printed and mounted with a frame. The next day, It was put on the wall of our classroom. There were two hot water containers prepared for us. So nice! [MAKING THE PLACE]</p>
+
+<p>The thing we did in the morning was self-introduction. Tony provided some useful scaffoldings, a map of China, pins with student names and numbers, umbrellas and format of introduction. When TAs and faculties came, they introduced themselves too.[CONNECTING THE PEOPLE]</p>
+
+<p>In the afternoon, students went to corridor to look around their own pictures printed by Tony. The pictures were chosen by students. They stand for students' image of teaching or learning and also have special meaning for themselves. After they got back, they share a picture and the reasons why they choose it to share. Tony would welcome other students to make comments too. Then the picture owner reveal its meaning or story. [ENGAGING THE STUDENTS]</p>
+
+<h3>Tuesday 17th Nov, Placed Based Learning</h3>
+
+<p>Natalie introduced the place at different levels, Vancouver, BC, Canada, Turtle island, the Indigenous. Place based learning aim to make this change from I AM NO WHERE to I AM NOW HERE. Place represents layers of stories and it can included ecological education, bioregional education, critical pedagogy, experiential education, indigenous ways of knowing and being. Place based learning connects people and their places. It disrupts the idea of a one size fits all curriculum. Place is not about where we lived, buy rather about how we live where we live. Wisdom also sits in places. So our learning should not take place without a place.[PRESENT THE CONCEPTION]</p>
+
+<p>Place based learning should answer three questions:</p>
+
+<pre><code>WHAT IS WHERE  
+WHY IS IT THERE  
+WHY SHOULD I CARE  
+</code></pre>
+
+<p>Students explored the place around Scarf building in UBC. They must interview someone about the place and sit down some where in the building silently for 5 minutes to feel the place. Every group of 4 people needed to take 3 pictures and answer the three questions.[EXPLORE AND SHARE]</p>
+
+<p>They explored many places excitedly and discovered many culture differences. The pictures were printed out and put on the wall to share. In this activity, pictures provided many learning opportunities:</p>
+
+<pre><code>the pictures show interesting information and details  
+the pictures generate questions  
+the pictures have stories  
+</code></pre>
+
+<p>Natalie remind the students:</p>
+
+<pre><code>Place making=build and construct while,  
+place maker=every body make a part.   
+Teachers are place maker.  
+Forget place we forget how to make place.  
+</code></pre>
+
+<p>I think this [place based learning] was carefully selected for our students, because it help them to explore UBC, practice oral English and think about connections between people and places.</p>
+
+<h3>Wednesday 19th Nov, School Visit</h3>
+
+<p>let the children to be children</p>
+
+<p>I wrote a post about <a href="http://zhangchunlei.com/blog/2017/01/18/papep-norma-rose-point-school/">Norma Rose Point School</a>.</p>
+
+<p>How Learning theories are different and alike?[fill tables]</p>
+
+<h3>Thursday 19th Nov, Skits</h3>
+
+<p>Task: In your group, you are to perform a short skit that illustrates an "image of schooling" drawn from your experience as either a primary, secondary, or post-secondary school student. The performance lasts 2 or 3 minutes.[ROLE PLAY]</p>
+
+<p>How we can divide the groups?[TEACHER QUESTION]<br/>
+Students' answers: by group numbers,by tables, by a game, pick card, color of clothes, by students' abilities and so on.</p>
+
+<p>How much time do we need to prepare this skit?<br/>
+Students' answers: 20 minutes; 30 minutes; 25 minutes.<br/>
+Teacher: OK we choose the middle.<br/>
+[Democratic the Classroom]</p>
+
+<p>Teacher decides the activity but let students decide the time to prepare. To do so, students can have some ownership.</p>
+
+<p>Go to the corridor and divide groups by taking off a shoe.[MAKE IT ANOTHER WAY]</p>
+
+<pre><code>The only limit is your imagination.  
+</code></pre>
+
+<h3>Friday 20th NOV, TPI</h3>
+
+<p>[check in]<br/>
+Use check in to borrow students' ideas and questions as learning needs and learning opportunities.</p>
+
+<p>[music as alarm]<br/>
+When it is time for rest, turn on the music. When class begin, turn it off and student aware of that without a pain.</p>
+
+<p>Group dividing strategies:<br/>
+[Number the table and symbol the students]<br/>
+Let students pull out the table number[Democratic the Classroom] and teacher draw the symbol like a game. This strategy can engage more students. Don't' put back the table number if you don't want one table answer twice.</p>
+
+<p>[verbal curing]<br/>
+LET students know the signal 30 seconds ahead before you give the signal.</p>
+
+<p>Other cures:</p>
+
+<pre><code>verbal cure  
+eye contact  
+visual sight  
+audio sound  
+</code></pre>
+
+<p><a href="http://www.teachingperspectives.com/tpi/">Teaching Perspectives Inventory</a><br/>
+Students already took the survey and sent them to Tony. Tony print them out and sent it back to students. Then Tony began to count the heads who were dominant in one perspective and write the results on board. Then he let one student read the text about one perspective and then everyone try to summary the paragraph by keywords or phrase.<br/>
+Here is the result:</p>
+
+<pre><code>TRANSMISSION 1  
+    accuracy Anthony content knowledge
+APPRENTICESHIP 7  
+    skill norm practice
+DEVELOPMENTAL 4  
+    learner reasoning and thinking,make sense of something
+NURTURING 23  
+    safety heart support 
+SOCIAL REFORM 3  
+    change collective, deconstruction, who why interests
+</code></pre>
+
+<p>Tony let student write on a note what impress them most these days. Then let them post it up on the wall near their pictures.[MAKE A PLACE FOR STUDENTS to share]</p>
+
+<p>Let us get back to the question that I asked. My best answer for now is that Tony made good social and emotional connections with our students by making a place where they feel good by his hands, heart and minds. It was not tricks at all!</p>
 ]]></content>
   </entry>
   

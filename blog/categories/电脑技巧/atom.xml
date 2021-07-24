@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 电脑技巧 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/电脑技巧/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[用Html实现脚注跳转]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link/"/>
+    <updated>2020-08-07T15:36:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/08/07/html-for-sub-link</id>
+    <content type="html"><![CDATA[<p>很久以前就用过Markdown，但是一直没有实现脚注功能。<a href="#1d">1</a><a id="1u"></a>
+中间是若干文字</p>
+
+<p>中<br/>
+间<br/>
+是<br/>
+一. <br/>
+大.<br/>
+段.<br/>
+文.<br/>
+字.</p>
+
+<p><a id="1d"></a><a href="#1u">1</a>：我的注释</p>
+
+<p>代码如下：</p>
+
+<p>```
+<a href="#1d">1</a><a id="1u"></a></p>
+
+<p><a href="#1u">1</a><a id="1d"></a>：我的注释</p>
+
+<p>```</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[bow keyboard shortcut for mac]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/02/22/bow-keyboard-shortcut-for-mac/"/>
+    <updated>2018-02-22T22:11:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/02/22/bow-keyboard-shortcut-for-mac</id>
+    <content type="html"><![CDATA[<p>bow键盘控制mac快捷键</p>
+
+<p>存在的问题：该键盘的方向键没有被识别，但是打字并不影响。但是如何尽可能少的使用鼠标，多使用键盘。那么就需要设置和熟悉相应的快捷键。</p>
+
+<p>1、切换程序或窗口
+command（win）+tab：切换程序，然后鼠标选择相应的程序</p>
+
+<p>2、切换窗口、或者切换到桌面
+ctrl+向上方向键：然后鼠标选择也可以切换窗口或者切换到桌面</p>
+
+<p>command（win）+W：关闭窗口</p>
+
+<p>3、利用触发角切换
+ALT+向上箭头：向左移动窗口
+WIN+向上箭头：向右移动窗口</p>
+
+<p>左上角：mission control 相当于切换到桌面
+左下角：lanch pad 切换到程序面板
+右上角：Dash pad  切换到任务面板</p>
+]]></content>
+  </entry>
+  
+</feed>

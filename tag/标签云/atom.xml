@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: 标签云 | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/标签云/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/标签云/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Github Blog with Octopress]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress/"/>
+    <title type="html"><![CDATA[使用Octopress发布Github page博客]]></title>
+    <link href="http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress/"/>
     <updated>2012-12-27T21:05:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/github-blog-with-octopress</id>
+    <id>http://zhangchunlei.com/blog/2012/12/27/github-blog-with-octopress</id>
     <content type="html"><![CDATA[<p>本来想尝试使用其他的文本编辑器，以后再说吧。我就用这个editplus干活了，先把使用github以及octopress搭建博客的整个过程梳理下来。</p>
 
 <p>搭建的步骤如下：<br/>
@@ -127,28 +127,12 @@ _config.yml文件：</li>
 
 <p>（3）atom.xml不生效==》使用同样的方法先把文件代码剪贴，保存，然后再粘贴回来。</p>
 
-<p>markdown语法示例
-句子的尾部输入两个空格然后回车就可以断行 <br/>
-* 无序项目1 <br/>
-* 项目2 <br/>
-* 项目3  <br/>
-<img src="\images\bird_32_gray.png" alt="Alt text" /></p>
+<p>（去除了Markdown语法，已经添加到octopress tips页面去了）</p>
 
 <p>主要参考：
-<a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
+<a id="1"></a><a href="http://blog.log4d.com/2012/05/tag-cloud/">给 Octopress 加上标签功能</a>  <br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543706.html">利用GitHub Pages安装部署Octopress博客</a><br/>
 <a href="http://www.cnblogs.com/rubylouvre/archive/2012/06/10/2543744.html">在github上用octopress搭建博客过程纪要</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hi]]></title>
-    <link href="http://lukezhg.github.com/blog/2012/12/27/hi/"/>
-    <updated>2012-12-27T18:52:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2012/12/27/hi</id>
-    <content type="html"><![CDATA[<p>I don't konw if I can use editplus to edit this text.
-if you can see it
-then i means I can do it.</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: review | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/review/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Model-based Learning Review]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/10/03/model-based-learning-review/"/>
+    <updated>2013-10-03T10:15:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/10/03/model-based-learning-review</id>
+    <content type="html"><![CDATA[<h3>What is Model-based Learning(MBL)?</h3>
+
+<p>How students learn: science in classroom</p>
+
+<p>five epistemic features of scientific knowledge:(Windschitl,Thompson, &amp; Braaten,2008)
+testable 可验证性
+revisable 可修改性
+explanatory 解释性
+conjectural,and 推理性
+generative 启发性</p>
+
+<h3>Why to promote MBL now?</h3>
+
+<p>科学不仅仅是科学知识，还包括科学过程和科学的本质。学生不仅应该了解科学知识是什么，还应该了解科学知识是如何产生和发现的。MBL能够体现科学的全过程，是更真实的科学。<br/>
+科学探究在一线教学中面临很多困难，由于教学资源和时间的限制，学生很难有机会检验自己的假说是否正确，也较少有体会出自己的研究问题的机会。计算机模拟则可以解决这些困难，为学生提供模拟的科学探究体验。<br/>
+对于有效教学行为的研究所揭示的高效教学列表中，基于模型的科学探究覆盖了绝大部分的有效行为。因此，它是一种非常值得提倡的一种教学实践方式。</p>
+
+<h3>How MBL affects science learning?</h3>
+
+<h3>How to use MBL in science classroom?</h3>
+
+<h4>How to process MBL?</h4>
+
+<h4>How to assess students' work?</h4>
+
+<h4>How to adapt the activities for various needs?</h4>
+
+<h4>Simulation approach</h4>
+
+<h4>Collaboration approach</h4>
+
+<h4>Resources</h4>
+
+<h3>What are the Opportunities and Challenges for science teachers?</h3>
+
+<h4>Misunderstandings</h4>
+
+<h4>Lack of knowledges and skills</h4>
+
+<p>Reference<br/>
+<a href="http://www.vanderbilt.edu/m3lab/Rapp-Sengupta.pdf">Rapp &amp; Sengupta models and modeling in science learning(2).doc - Rapp-Sengupta.pdf</a></p>
+
+<p>Discourse Tools  model-based inquiry: <a href="http://tools4teachingscience.org/">http://tools4teachingscience.org/</a></p>
+
+<p>Windschitl, M., Thompson, J., &amp; Braaten, M. (2008). Beyond the scientific method: Model‐based inquiry as a new paradigm of preference for school science investigations. Science education, 92(5), 941-967.</p>
+
+<p>Index of /mwind/MWHome/downloads<br/>
+http://faculty.washington.edu/mwind/MWHome/downloads/</p>
+
+<p>reflection on groupwork modeling - Chunlei's Blog
+http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/</p>
+
+<p>Timss video and reflection of teaching science with modeling - Chunlei's Blog
+http://zhangchunlei.com/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/</p>
+]]></content>
+  </entry>
+  
+</feed>

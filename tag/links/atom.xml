@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: Links | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/links/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/links/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[All about pedagogical content knowledge(PCK)]]></title>
-    <link href="http://lukezhg.github.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck/"/>
+    <link href="http://zhangchunlei.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck/"/>
     <updated>2009-06-21T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck</id>
+    <id>http://zhangchunlei.com/blog/2009/06/21/all-about-pedagogical-content-knowledgepck</id>
     <content type="html"><![CDATA[<p>PCK is a kind of teacher knowledge and beliefs which enable teachers to help students to learn a particular topic-related knowledge easily. Lots of reasearcher have do lots of studies of PCK. Here I collect some web links which may be useful for students and researchers who are now studying PCK.</p>
 
 

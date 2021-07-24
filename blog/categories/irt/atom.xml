@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: IRT | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/irt/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[IRT BILOG equating notes]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes/"/>
+    <updated>2018-02-03T15:55:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/02/03/irt-bilog-notes</id>
+    <content type="html"><![CDATA[<p>一、数据的格式</p>
+
+<p>DATA<br/>
+<code>
+KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+NOT                                                                        
+40001 1 011111011111111111011111011                                        
+45137 1 011011111111011000001001100                                        
+60001 2                     111111101101000111011110111                    
+60002 2                     110011100000001001100110111                    
+82913 3                                         111111011111000111000001111
+82914 3                                         111111001110100000000101111
+</code></p>
+
+<p>注释：<br/>
+第一列是答案。第二列是NOT。第三列开始都是数据。</p>
+
+<p>二、命令文件<br/>
+```
+EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS</p>
+
+<blockquote><p>COMMENT
+Science test equating
+GLOBAL DFName = 'data.DAT',</p>
+
+<pre><code>    NPArm = 2, 
+    SAVe;
+</code></pre>
+
+<p>SAVE PARm = 'data.PAR',</p>
+
+<pre><code>  SCOre = 'data.SCO', 
+  TSTat = 'data.TST';
+</code></pre>
+
+<p>LENGTH NITems = (67);
+INPUT NTOtal = 67,</p>
+
+<pre><code>   NIDchar = 5, 
+   NGRoup = 3, 
+   KFName = 'data.DAT', 
+   NFName = 'data.DAT';
+</code></pre>
+
+<p>ITEMS INAmes = (M01(1)M67);
+TEST1 TNAme = 'SCIT',</p>
+
+<pre><code>   INUmber = (1(1)67);
+</code></pre>
+
+<p>GROUP1 GNAme = 'GRADE 4',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (1(1)27);
+</code></pre>
+
+<p>GROUP2 GNAme = 'GRADE 6',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (21(1)47);
+</code></pre>
+
+<p>GROUP3 GNAme = 'GRADE 8',</p>
+
+<pre><code>    LENgth = 27, 
+    INUmbers = (41(1)67);
+</code></pre>
+
+<p>(5A1,1X,I1,1X,67A1)
+CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+SCORE IDIst = 3, RSCtype = 3, NOPrint;
+```</p></blockquote>
+
+<p>三、输出文件<br/>
+data.PAR-->试题参数文件。<br/>
+data.SCO-->学生成绩文件。<br/>
+data.PH1-->经典测量理论参数，如原始分，正答率，相关系数等。<br/>
+data.PH2-->模型和试题参数。<br/>
+data.PH3-->rescaled 试题参数。</p>
+
+<p>案例2</p>
+
+<p>混合数据<br/>
+即有三卷共有题目，也有两卷共有题目，当然也包括一卷独有题目。<br/>
+<code>
+40001 1 1110111111011011111111011111011                                        
+40002 1 0110110111111001111111101111101                                        
+60001 2 0111                    111111100110011001111110111                    
+60002 2 1101                    110011101000000010100110111                    
+80001 3 1001                                        110110010000001000000000000
+80002 3 0101                                        111000000100001000000000110
+</code></p>
+
+<p>BLM文件<br/>
+```
+EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS</p>
+
+<blockquote><p>COMMENT
+Science test equating
+GLOBAL DFName = 'data.DAT',</p>
+
+<pre><code>    NPArm = 2, 
+    SAVe;
+</code></pre>
+
+<p>SAVE PARm = 'data.PAR',</p>
+
+<pre><code>  SCOre = 'data.SCO', 
+  TSTat = 'data.TST';
+</code></pre>
+
+<p>LENGTH NITems = (71);
+INPUT NTOtal = 71,</p>
+
+<pre><code>   NIDchar = 5, 
+   NGRoup = 3, 
+   KFName = 'data.DAT', 
+   NFName = 'data.DAT';
+</code></pre>
+
+<p>ITEMS INAmes = (M01(1)M71);
+TEST1 TNAme = 'SCIT',</p>
+
+<pre><code>   INUmber = (1(1)71);
+</code></pre>
+
+<p>GROUP1 GNAme = 'GRADE 4',</p>
+
+<pre><code>    LENgth = 31, 
+    INUmbers = (1(1)31);
+</code></pre>
+
+<p>GROUP2 GNAme = 'GRADE 6',</p>
+
+<pre><code>    LENgth = 31, 
+    INUmbers = (1(1)4,25(1)51);
+</code></pre>
+
+<p>GROUP3 GNAme = 'GRADE 8',</p>
+
+<pre><code>    LENgth = 31, 
+    INUmbers = (1(1)4,45(1)71);
+</code></pre>
+
+<p>(5A1,1X,I1,1X,71A1)
+CALIB NQPt = 71,</p>
+
+<pre><code>   CYCles = 30, 
+   REFerence = 2, 
+   TPRior;
+</code></pre>
+
+<p>SCORE IDIst = 3,</p>
+
+<pre><code>   RSCtype = 3, 
+   NOPrint;
+</code></pre>
+
+<p>```</p></blockquote>
+
+<p>解释说明：<br/>
+Group2中INUmbers = (1(1)4,25(1)51);#表示一部分共有题目是1(1)4，另外一部分共有题目是25(1)51，中间用“,”间隔。<br/>
+操作技巧：<br/>
+1、BILOG输出文件可以使用双空格置换为单空格，最后将所有空格置换为分隔符，然后粘贴到EXCEL中即可。</p>
+
+<p>2、构建数据文件时，首先需要在EXCEL中构建数据结构，原始数据不要有空值，如有有空值提前用0或者9填充空值。填充空值时，先选择编辑-查找-定位，选择空值，即可选择所有空值。然后在输入值区域输入要填充的值比如0，按CTRL+Enter即可全部填充。数据按照试题关系粘贴好之后，会产生很多空白区域，可以用半角空格替换空白区域。然后将所有数据拷贝到文本编辑器中，用空值替换所有分隔符。然后把所有数据作为文本粘贴到EXCEL中添加学生编号和组别即可，再略微编辑即可。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何使用Wingen和BILOG]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog/"/>
+    <updated>2014-02-18T14:39:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/02/18/play-with-wingen-and-bilog</id>
+    <content type="html"><![CDATA[<p>如何使用Wingen，下图是用2PLM模型产生客观题的参数。大体上3个步骤：<br/>
+第一步：产生答题者<br/>
+第二步：产生题目<br/>
+第三部：产生答题者对题目的作答结果<br/>
+你只负责设置参数就可以，其他的程序帮你完成，设置第一步和第二部参数的时候，可以查看图形效果，进而作进一步的调整。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/wingen.png" alt="wingen" /></p>
+
+<p>接下来可以利用BILOG对你的数据进行模型设定和估算<br/>
+实际上BILOG可以直接使用你用wingen产生的数据，因为都是纯文本，只是你需要建立自己的BLM文件，也并不困难，下图就是在例子的基础上修盖的BLM文件。只是要注意答题者数、题目数要与数据一致，此外文件中有一句要注意 （1A1,9x,30A1），这句表示的是数据的格式，意思是第一列为标号，后面有9列空行，再后面有30列的数据（也就是每个答题者对30到题目的作答情况），这个格式一定要与数据相互吻合。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/bilog.png" alt="bilog" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[项目反应理论是个啥]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/01/23/pck-example-one/"/>
+    <updated>2014-01-23T16:20:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/01/23/pck-example-one</id>
+    <content type="html"><![CDATA[<p>统计学中有很多概念很抽象不容易理解，但是如果有恰当的例子作桥梁，就可以深入浅出，容易让人领悟了。</p>
+
+<p>最近尝试学习一些关于项目反映理论（IRT）的东西，觉得很多学习资料都使用公式吓唬人，并没有把这个概念浅显化和生活化。总之，这些资料不够友好，让初学者望而生畏。</p>
+
+<p>那么什么是项目反映理论呢？我试着解释解释。这样从测量开始说起。举个例子，推铅球比赛。每个运动员都会按照规定选择一定大小的铅球站在指定的地点，用尽全力把球向着一个方向推出去。然后裁判会用尺子测量落地点与原点的距离，读出读数作为成绩。实际上测量的是选手的推力和推送技巧，它有一个理论的真值。而裁判的读数则是观测值。但是理论值并不等于观测值。理论值=观测值+误差。这就是经典的测量理论。但是铅球有不同重量和大小，假如在比赛记录中，有两个不同时期的运动员，一个用的是15斤，一个是10斤，前者推了15米，后者推出了20米，那么那个选手的成绩更好呢。这个时候经典测验理论就无能为力了，要解决这个问题必须要再把两个运动员找来，用同一个铅球重新比过。但是项目反映理论则可以解决这个问题。</p>
+
+<p>实际上，教育测量往往比这个情境还要复杂。推铅球我们还能直接测量然后读数，即使有误差，多测几次就能减少误差。当是教育测量则通常是纸笔测验，这个题答对那个题每答对，最后有个总分。那么这个总分就是我们学生的学业能力吗？当然不是，比如这张试卷一共十个题目。有些简单题目很多人答对，有些难题则很少人答对。假如有两个学生都得了8分。一个学生把难题都做对了，但是简单题却错了两个。另外一个则是两个最难的题目都做错了。那么他们的学业能力真的一样吗？你觉得谁的学业能力应该更强一些？（想一想）</p>
+
+<p>如何思考这个问题呢？我们还是用推铅球这个例子。由于某种原因，我们无法直接测量了，比如没有尺子并且是夜晚。那怎么比赛呢，于是我们选几个离河边远近不同的几个测试点，然后在每个点放一堆大小相同的铅球。虽然我们不能测量，但是我们仍然能区分铅球是否落水，听到落水声就得1分，否则0分。就好像做选择题，我们能判断是否选择了正确的选项。由于每个测试点离河边远近的距离都不同，铅球的大小也不同，而且河岸的形状也有变化，所以每个测试点的难度也不同。但是同一个选手在状态相同的情况下，测试结果理论上是相同的。我们将会根据每个测试点选手的表现来估计其能力水平。如果按照总分把所有选手分成高分组和低分组，对于同一个测试点，我们会发现高分组的通过率会高于低分组，如果从群体中随机选取一个选手的话，来自高分组的选手将会有更高的概率通过，而低分组的选手则通过率会比较低。如果我们以选手的能力为横坐标，以通过某个测试点的概率为纵轴，那么就得到下面的曲线。<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/Itermcharasticcurve.jpg" alt="IRT ICC 项目特征曲线" /></p>
+
+<p>从这个项目特征曲线中我们可以看到，随着能力（theta）的提高，答对这个题目的概率也在提升。不同题目的曲线也不同，也许你已经想象出一道更简单题的题目的项目特征曲线将会相对这条曲线左移，而难题的曲线则右移。假如通过大量的测验知道了每个题目的项目特征曲线，那么我们就可以根据选手对一组题目的作答情况来估测其能力水平。即便是两个选手作答的两组试题并不相同，我们也能够比较两个选手的能力高低了。</p>
+
+<p>当然项目特征曲线有简单的也有复杂的，简单1个参数（难度），也有2个（难度，区分度）或3个参数（难度，区分度和猜测参数）的，也就是所谓1P模型，2P，3P模型。</p>
+
+<p>了解更多关于IRT的知识，请参考学习资料见：<a href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/">IRT learning resources - Chunlei's Blog</a></p>
+
+<p>为了更好解释项目反映理论，我曾经想过很多其他的例子，但是还是觉得推铅球这个例子最好，最能深入浅出，又不失去科学性。但是好的例子往往不是一下子就想到的，而且往往需要比较后才能选择出来，我以前想到的例子也列出来，读者可以自己比较比较。</p>
+
+<p>A 抛硬币或者骰子<br/>
+B 测量身高<br/>
+C 摸高<br/>
+D 跳高</p>
+
+<p>比较的依据：<br/>
+1 是否用来衡量某种能力<br/>
+2 是否可测量，与经典测量理论相联系<br/>
+3 群体的这种能力的分布是否为正态分布<br/>
+4 是否能解决不同尺子测量结果比较的问题</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IRT learning resources]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources/"/>
+    <updated>2014-01-22T09:56:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/01/22/irt-learning-resources</id>
+    <content type="html"><![CDATA[<p>There are a lot learing resources for IRT(Item Response Theory). But the most useful onese are those fit you well.</p>
+
+<p>Here is a list which helped me a lot.<br/>
+Books:<br/>
+The Basics of Item Response Theory: Frank B. Baker: 9781886047037: <a href="http://www.amazon.com/The-Basics-Item-Response-Theory/dp/1886047030">Amazon.com: Books-link</a><br/>
+Item Response Theory: Parameter Estimation Techniques, Second Edition (Statistics: A Series of Textbooks and Monographs): Frank B. Baker, Seock-Ho Kim: 9780824758257: <a href="http://www.amazon.com/Item-Response-Theory-Estimation-Techniques/dp/0824758250">Amazon.com: Books link</a></p>
+
+<p>Vedios:<br/>
+<a href="https://www.youtube.com/watch?v=SrdbllMYq8M">A Conceptual Introduction to Item Response - YouTube</a></p>
+
+<p>Pdf Documents:<br/>
+A visual guide to item response theory <a href="http://www.metheval.uni-jena.de/irt/VisualIRT.pdf">VisualIRT.pdf</a><br/>
+<a href="http://echo.edres.org:8080/scripts/cat/genicc.asp">IRT mini-tutorial interactive</a><br/>
+<a href="http://echo.edres.org:8080/irt/baker/final.pdf">The Basics of Item Response Theory (by Frank Baker)</a></p>
+
+<p>Slides:<br/>
+<a href="http://www.slideshare.net/akdhamija/irt-dipr-1">IRT - Item response Theory</a><br/>
+<a href="http://wenku.baidu.com/view/a4e5c8a6dd3383c4bb4cd28a.html">基于项目反映理论_宋慧鹏</a></p>
+
+<p>Websites:<br/>
+<a href="http://echo.edres.org:8080/irt/">Item Response Theory GOOD</a><br/>
+<a href="http://luna.cas.usf.edu/~mbrannic/files/pmet/irt.htm">Item Response Theory cas.usf.edu</a></p>
+
+<p>Softwares:<br/>
+<a href="http://www.ssicentral.com/irt/index.html">SSI - Scientific Software International, Inc.</a><br/>
+<a href="http://www.umass.edu/remp/software/simcata/wingen/homeF.html">WinGen: Windows software that Generates IRT parameters and item responses</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -9,7 +9,7 @@
   <meta name="author" content="chunlei">
 
   
-  <meta name="description" content="在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件， &hellip;">
+  <meta name="description" content="什么是知识图谱？ 概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。 知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lukezhg.github.com/blog/page/4/">
+  <link rel="canonical" href="http://zhangchunlei.com/blog/page/4/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -37,8 +37,6 @@
   <header role="banner"><hgroup>
   <h1><a href="/">Chunlei's Blog</a></h1>
   
-    <h2>A blog for future.</h2>
-  
 </hgroup>
 
 </header>
@@ -47,9 +45,9 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
+<form action="http://google.com.hk/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:lukezhg.github.com" />
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -57,8 +55,9 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/tag">Tags</a></li>
-  <li><a href="/search">Search</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
   <li><a href="/about">About</a></li>
 </ul>
 
@@ -73,7 +72,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/">用flash制作试题交互动画项目</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/12/12/knowledge-graph/">什么是知识图谱</a></h1>
     
     
       <p class="meta">
@@ -89,19 +88,83 @@
   
 
 
-<time datetime="2011-12-17T00:00:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2011</time>
+<time datetime="2020-12-12T15:25:00+08:00" pubdate data-updated="true">Dec 12<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/12/17/use-flash-to-make-interactive-test-project/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/12/12/knowledge-graph/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><p>在网络中有很多互动的练习题都是用flash制作的，互动效果很好，学生可以利用这些动画巩固学习的知识，检测自己的掌握程度。但是很多练习题都是不提供源文件的，即便提供了原文件往往试题数据和源文件并没有分离，教师很难更改并为我所用。那么是不是可以创建一个flash源文件，让稍微动flash甚至是一点都不同flash的老师也能修改并展示自己的试题呢？当然是可以的，但是这个试题交互动画的设计应该数据与源文件分离的，也就是老师不需要修改源文件和代码，只需要修改数据文件就可以。</p>
-<p>制作的思路：<br /> 1、建立界面fla原文件（test.fla）<br /> 2、建立代码文件(xmlloader.as)<br /> 3、建立试题数据xml文件(sample.xml)</p>
-<p>使用代码加载试题数据xml文件，并在动态文本中展示试题，学习者点击选项按钮以及导航按钮参与互动。互动可以分为两种模式，一种是练习模式，一种是测验模式，用户可以自己选择。此外为了使得该动画可以在网站上调用，还增加一个输入文本框，用于导入特定位置的试题数据。</p>
-<p>发布：<br /> 最有作品提供全部文件，并以CC协议中的（署名 非商业使用 相同方式共享）<img src="http://creativecommons.org/icons/by/standard.gif" border="0" alt="by" /> <img src="http://creativecommons.org/icons/nc/standard.gif" border="0" alt="nc" /> <img src="http://creativecommons.org/icons/sa/standard.gif" border="0" alt="nd" />发布。</p></p>
+  <div class="entry-content"><h3>什么是知识图谱？</h3>
+
+<p>概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。</p>
+
+<p>知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。</p>
+
+<p>知识图谱按照应用情境和范围的不同，可以分为通用指示图图谱GKG和领域知识图谱DKG，分别适应于一般性人机交流和特定领域的人机交流。</p>
+
+<h3>知识图谱的构成</h3>
+
+<p>构成知识图谱的基本单位是三元组。三元组由实体-连接-实体构成，记录了网络中实体与实体的关系，它是本质上就是一条知识连接，一个陈述句，一个命题。命题是可以判断真假的陈述句。命题也是构成知识系统的
+基本单位。因此，理论上所以知识都可以表征为命题，继而表征为知识图谱中的三元组。<br/>
+举一个生物学的例子，比如：</p>
+
+<pre><code>真核细胞-是-细胞
+真核细胞-有-细胞核
+</code></pre>
+
+<p>用这2个三元组就描述了关于真核细胞的2个命题。</p>
+
+<h3>三元组的不同形式</h3>
+
+<p>理论上，我们可以将任何一个命题表述为三元组，这就需要三元组具有不同的形式，以适应不同的句子。比如：</p>
+
+<pre><code>实体-状态-1：我笑了
+实体-关系-实体：我吃饭
+实体-关系-实体（状态）：我找到了一家高档的餐馆
+三元组-关系-实体：我与朋友的关系不是很和睦
+实体-关系-三元组：他不同意我与玛丽结婚
+三元组-关系-三元组：他对待玛丽就像父亲对待女儿
+三元组-三元组-三元组：我肚子饿了和我要去餐馆是事件的前因后果
+</code></pre>
+
+<h3>知识图谱的基本概念</h3>
+
+<pre><code>实体（Entity）是对客观个体的抽象，知识图谱中的实体多是具体的。例如：李安，姚明。  
+类型（type）是对具有相同特点或属性的实体集合的抽象。例如：国家，运动员。  
+关系（relation）是实体与实体之间关系的抽象。例如：导演，父女。  
+属性（property）是对实体与实体之间关系的抽象。例如：导演，身高。  
+域（domain）是类型的集合，凌驾于类型之上，是对某一领域所有类型的抽象。例如：地理位置，职业。  
+值（value）是用来描述实体的，可以分为文本型和数值型。例如：性别：男，身高：226cm。  
+</code></pre>
+
+<h3>知识图谱中的关系类型</h3>
+
+<pre><code>隶属：（is-a）
+同义：（similar)
+从属：（part-of）
+相关：（relate-to）
+因果：（cause）：forward(促进)、restraint(抑制)
+从事：（do）：发现（discover）、发明（invent）
+</code></pre>
+
+<h3>知识图谱的应用</h3>
+
+<p>知识图谱的应用十分广泛，涉及各个行业。比如：</p>
+
+<pre><code>+ 信息检索：搜索引擎中对实体的精准聚合和匹配、对关键词的理解以及对搜索意图的语义分析等；
++ 自然语言理解：知识图谱中的知识作为理解自然语言中实体和关系的背景信息；
++ 问答系统：匹配问答模式和知识图谱中知识子图之间的映射；
++ 推荐系统：将知识图谱作为一种辅助信息集成到推荐系统中以提供更加精准的推荐选项；
++ 电子商务：构建商品知识图谱来精准地匹配用户的购买意愿和商品候选集合；
++ 金融风控：利用实体关系来分析金融活动的风险以提供在风险触发后的补救措施；
++ 公安刑侦：分析实体和实体之间的关系以获得线索等；
++ 司法辅助：法律条文的结构化表示和查询来辅助案件的判决等；
++ 教育医疗：提供可视化的知识表示，用于药物分析、疾病诊断等；
+来源：知乎链接：https://www.zhihu.com/question/59281410/answer/579230733
+</code></pre>
 </div>
   
   
@@ -114,7 +177,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/17/blog-quick-post-skills/">快速发布博文的方法与技巧</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/12/12/brew-lesson/">Homebrew出错的种种折腾</a></h1>
     
     
       <p class="meta">
@@ -130,21 +193,54 @@
   
 
 
-<time datetime="2011-12-17T00:00:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2011</time>
+<time datetime="2020-12-12T13:07:00+08:00" pubdate data-updated="true">Dec 12<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/12/17/blog-quick-post-skills/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/12/12/brew-lesson/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><p>发布博客的方法大体上可以分为三类：</p>
-<ol>
-<li>利用本地软件发布博客。比如使用windows live writer等安装在本地电脑上的软件来发博客。这种方法在撰写长博客的时候会非常稳定，不会受到网络的干扰，即便突然断线或者离线，也可以照写不误，同时留有本地备份。但是缺点是并不是所有博客都支持离线发布，而且这个软件也势必要占用磁盘空间，再有发布的时候，如果需要参考网页信息的话，需要来回切换窗口，比较麻烦。 </li>
-<li>利用网络浏览器的插件进行博客发布。比如火狐浏览器的scribefire以及谷歌浏览器的嘉写等。它的优点是你不需要离开网络浏览器，只需要使用快捷键启动插件，就可以发布。同时你可以很方便的引用网页上的文字、网址等信息。尤其是scribefire，它可以分屏显示，上面是特定的网页，引起了你的思考，你就可以按F8快捷键调用该插件，并在下方的编辑区中编写你的博客内容，然后发布。这种方法的好处是不需要再多安装一个软件，而仅仅是对你的浏览器进行一下扩展，再有它也会自动留备份在你的本地电脑，连线的时候也可以写博客，等有了网络再发布。 </li>
-<li>在线编辑博客。这个方法不用多说，大多数用回都用这正方法，缺点对网络依赖非常强，若果一旦不稳定或者浏览器崩溃，你的工作就可能白费。优点是最少的占用你的本地资源，而且所有的可能功能都容易实现。其实使用的时候可以利用一些技巧，比如为你写博客的网址建立一个书签或者鼠标手势，并保存密码登录（限个人电脑），这样你只要点击一下书签或者画一个手势，就自动进入编辑页面了，效率大大提高。</li>
-</ol></p>
+  <div class="entry-content"><p>我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。</p>
+
+<p>你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。</p>
+
+<p>本来是想安装一个知识图谱的机器人的项目，但是这个方案很复杂，而且依赖很多程序。于是开始折腾，mac部分程序需要依赖brew安装，但是我突然发现brew无法连接到库，愿意是网络不通。</p>
+
+<p>于是只能换源，但是之后无法更新，于是之后重装，但是重装报错，于是开始运行brew doctor诊断，发现有些多余文件，尝试删除，无法删除，于是强制删除，结果就悲催了。原来的很多程序都出现了问题。比如我的Octopress、mysql都除了问题。</p>
+
+<p>这次事故的诱因很多，比如电脑系统旧，网络不畅，人性贪婪，对程序原理一知半解，最后从一个瑕疵演变成一个事故，甚至是要重装电脑。我真打算重装了，结果发现因为磁盘空间不足，根本没有备份可以还原。</p>
+
+<p>经过这次事件，总结几个道理：<br/>
+*  不要瞎折腾，特别是一知半解的时候。<br/>
+*  很多安装更新失败的问题多是网络不畅的问题。<br/>
+*  要保持备份的习惯，这样万一出了问题，你还可以回去。（数据备份、系统备份、环境备份）<br/>
+*  要系统的学习git和docker<br/>
+*  很多的折腾可以放在服务器，使用docker选择以及布置好环境的repo去布置和测试</p>
+
+<p>折腾之后学的的知识，都是一些常识，比如mac软件包的安装是有顺序的，不同软件存在依赖关系，本来brew就能解决这些问题，但是DNA被污染之后，你很难连到官方的服务器，进而产生一系列问题。</p>
+
+<p>参考网址：<br/>
+常用 Git 命令清单 by 阮一峰：
+https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html</p>
+
+<p>RVM安装：<br/>
+GitHub访问不了，是获取不到安装的脚本文件。执行下面的脚本可以进行安装。</p>
+
+<pre><code>/usr/bin/ruby -e "$(curl -fsSL https://gitee.com/xueweihan/codes/vfrgh7z8qcjlx1ubwt6nk71/raw\?blob_name\=brew_install.sh)"
+</code></pre>
+
+<p>Homebrew安装与卸载：<br/>
+安装脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+</code></pre>
+
+<p>卸载脚本：</p>
+
+<pre><code>/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master
+</code></pre>
 </div>
   
   
@@ -157,7 +253,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/16/low-efficiency-start-from-lost-control/">低效率从失控开始</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/12/07/aiva-chatbot-with-neo4j-brain/">Aiva Chatbot With Neo4j Brain</a></h1>
     
     
       <p class="meta">
@@ -173,16 +269,66 @@
   
 
 
-<time datetime="2011-12-16T00:00:00+08:00" pubdate data-updated="true">Dec 16<span>th</span>, 2011</time>
+<time datetime="2020-12-07T23:10:00+08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/12/16/low-efficiency-start-from-lost-control/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/12/07/aiva-chatbot-with-neo4j-brain/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>不久前曾经看过一本书，叫《out of control》，中文名叫失控，不过只看了开头。书中介绍人类设计的系统最终会走向失控。<br /><br />其实，不仅仅是人类设计的机器会失控。其实人本身又何尝不是。总是有那么几次，自己很难控制自己去做某些重要的事情，而偏偏做了一些并不重要的无关的事情，这就是失控。失控是低效率的罪魁祸首，同时好像又避免不了，至少对于我而言是这样的。每次忙完一周之后，原本打算干点正事，但是总是被一些电脑的、网络技术的一些并不太重要问题和事情纠缠掉所有的时间。而重要的事情，则再次落空。长此以往，很难成功。<br /><br />从这些失败的教训让我反思，失控是一种常态，我们能做的是控制失控的程度，不至于让它产生过于严重的危害。比如避免成瘾，避免危险，避免死循环等等，恰当的学会失控，顺其自然也学比一味的约束自己有用。<br /><br />为什么会失控呢，这是本能以及周遭的环境再作祟。<br /></p>
+  <div class="entry-content"><h3>主教程</h3>
+
+<p>https://explosion.ai/blog/chatbot-node-js-spacy</p>
+
+<h3>构建虚拟环境</h3>
+
+<p>https://virtualenv.pypa.io/en/latest/user_guide.html</p>
+
+<pre><code>cd myproject
+virtualenv venv  
+source venv/bin/activate #进入
+deactivate #退出
+(venv) chunleizhang@Mac~/lib/aiva
+</code></pre>
+
+<h3>用npm开启aiva</h3>
+
+<pre><code>npm install
+npm run setup
+npm start --debug
+</code></pre>
+
+<h3>编辑aiva设置文件</h3>
+
+<pre><code>vi config/default.json
+</code></pre>
+
+<h3>Start the bot</h3>
+
+<pre><code>npm start --debug
+</code></pre>
+
+<h3>neo4j brain</h3>
+
+<p>开关neo4j服务</p>
+
+<pre><code>neo4j start
+neo4j stop
+</code></pre>
+
+<p>http://localhost:7474/browser/</p>
+
+<p>https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/
+LOAD CSV WITH HEADERS FROM &#8220;file:///persons.csv&#8221; AS csvLine
+CREATE (p:Person {id: toInteger(csvLine.id), name: csvLine.name})</p>
+
+<p>/usr/local/Cellar/neo4j/3.5.3/libexec/import</p>
+
+<h3>slack端口</h3>
+
+<p>https://app.slack.com/client/THS32FKN0/D01FW5UR2EB</p>
 </div>
   
   
@@ -195,7 +341,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/">Molecular Workbench——在交互模拟中学习科学</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/">用docker在服务器上布置虚拟环境</a></h1>
     
     
       <p class="meta">
@@ -211,16 +357,162 @@
   
 
 
-<time datetime="2011-12-15T00:00:00+08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2011</time>
+<time datetime="2020-12-06T12:49:00+08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2020</time>
         
-         | <a href="/blog/2011/12/15/molecular-workbench-learn-science-in-interactive-model/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/12/06/docker-the-tool-to-setup-your-server/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>今天收到一封邮件，大意是说Concord Consortium从google.com获得了250万美元的奖励。<br /><br />Concord的分子工作台项目非常让人耳目一新，它将动画模拟、交互、游戏、评价融为一体，此外你还可以根据自己的需求定做和创造适合自己的模型。下面是他们的网站：<br /><br />Molecular Workbench - An Interface to the Molecular World<br />: http://mw.concord.org/modeler/<br /><br />你只需要下载一个Java的程序，就可以在线使用这些交互动画和学习资源。其实类似的项目，曾经也介绍过一个:<br />PhET Interactive Simulations 交互式模拟——在游戏操作中学习 - Open Learning<br />: http://open-learning.appspot.com/131.html<br /><br />不知道两者有怎样的关系？<br /><br />其实作为科学教师，虽然不一定会编程、会做动画，但是要让最新的教学资源和科研成果为己所用，也不失为优秀教师。而我们的教师教育也在这些方面也应该给予相应的关注。<br /><br /></p>
+  <div class="entry-content"><p>最近想在服务器上布置一个聊天机器人。
+简书上有教程：</p>
+
+<p>https://www.jianshu.com/p/5997f73eccb9<br/>
+https://www.jianshu.com/p/e18fb2166178</p>
+
+<p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
+
+<pre><code>cd /webdev/chatterbot
+python manage.py runserver
+alice: http://127.0.0.1:8000/chat/
+ctrl + C 退出程序
+url.py 可以修改响应
+</code></pre>
+
+<p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br/>
+如何让它运行起来，并且原来的项目功能不受影响呢？<br/>
+docker提供了很好的解决方案。</p>
+
+<p>docker的用途在于，它可以在服务器上建立多个虚拟环境，而在这个虚拟环境中安装的软件环境，并不会相互影响，比如chatterbot这个项目需要python3，但是其他应用可能需要的是python2.7，两个应用无法在同一个环境下运行。实际的情况更复杂，因为依赖的环境不仅是python。</p>
+
+<p>如何使用docker，网上有很多教程，比如：<br/>
+详细教程：https://blog.csdn.net/baidu_37832943/article/details/105218649<br/>
+阮一峰提供的教程： <br/>
+docker：http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html<br/>
+nginx-docker：http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</p>
+
+<p>简明教程：</p>
+
+<pre><code>docker search nginx 
+#查找 Docker Hub 上的 nginx 镜像
+
+docker pull nginx 
+#拉取官方的Nginx镜像
+
+docker images nginx 
+#查找 REPOSITORY 为 nginx 的镜像
+
+#基于已有镜像创建并运行一个容器并映射到特定端口
+docker run --rm --name nginx-test -p 8080:80 -d nginx
+      --rm：容器终止运行后，自动删除容器文件。
+      --name nginx-test：将容器命名为nginx-test
+      -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
+      -d：容器启动后，在后台运行
+docker container ps 
+#查看启动的docker容器
+curl localhost:8080 
+#测试页面
+</code></pre>
+
+<p>常用docker命令：</p>
+
+<pre><code>docker ps -a
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+yum install -y httpd
+ctrl+d
+docker commit -m “install httpd” -a “keyuan_test” (输入容器ID) 新的镜像名
+docker run -itd -p 8080:80 新的镜像名 /bin/bash
+docker exec -it 新的镜像产生的容器ID bash
+httpd -k start
+curl localhost:80
+ctrl+d
+curl localhost:8080
+
+
+
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+httpd -k start
+docker commit containerid chatbot/live
+docker run -d -p 8000:80 chatbot/live /bin/bash
+curl localhost:8000
+</code></pre>
+
+<h2>appche</h2>
+
+<p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
+
+<p>1.查看版本</p>
+
+<pre><code>apache -v
+httpd -v
+</code></pre>
+
+<p>2.开启apche服务：</p>
+
+<pre><code>apachectl start 
+apachectl stop
+</code></pre>
+
+<p>3.启动和关闭httpd的命令</p>
+
+<pre><code>systemctl start httpd
+systemctl stop httpd
+systemctl restart httpd
+</code></pre>
+
+<p>网页位置：/var/www/html/</p>
+
+<h2>编辑 nginx配置文件</h2>
+
+<pre><code>vi /etc/nginx/nginx.conf
+
+nginx -t                    # 查看nginx状态
+nginx -s reload            # 重新载入配置文件
+nginx -s reopen           # 重启 Nginx
+nginx -s stop               # 停止 Nginx
+</code></pre>
+
+<h2>控制防火墙</h2>
+
+<pre><code>systemctl stop firewalld  
+systemctl start firewalld  
+systemctl mask firewalld  
+
+添加端口  
+firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效） 
+firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent  
+重新载入  
+firewall-cmd --reload  
+查看  
+firewall-cmd --zone=public --query-port=80/tcp  
+删除  
+firewall-cmd --zone=public --remove-port=80/tcp --permanent  
+</code></pre>
+
+<h2>阿里服务器端口控制</h2>
+
+<p>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。</p>
+
+<p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。</p>
+
+<h2>列出所有端口</h2>
+
+<p>netstat -ntlp</p>
+
+<p>https://www.cnblogs.com/xqzt/p/4919191.html</p>
+
+<h2>使用docker的方法</h2>
+
+<p>将需要改变的文件映射到主机<br/>
+把所有不变的环境变为运行的容器<br/>
+将容器运行起来之后，就可以ctrl+D退出<br/>
+应用就跑起来了</p>
 </div>
   
   
@@ -233,7 +525,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/14/how-to-let-micro-blog-syn-with-chinese-blogs/">如何将micro Blog自动同步到国内博客</a></h1>
+      <h1 class="entry-title"><a href="/blog/2020/11/02/wrong-logic-of-academic-presentation/">研究报告表达的神话&#8211;逻辑谬误</a></h1>
     
     
       <p class="meta">
@@ -249,206 +541,32 @@
   
 
 
-<time datetime="2011-12-14T00:00:00+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2011</time>
+<time datetime="2020-11-02T10:01:00+08:00" pubdate data-updated="true">Nov 2<span>nd</span>, 2020</time>
         
-         | <a href="/blog/2011/12/14/how-to-let-micro-blog-syn-with-chinese-blogs/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>用GAE架设的<a target="_blank" href="http://micolog.xuming.net/zh-cn">micro blog</a>非常不错，唯一的缺憾就是国内的朋友看不到，为什么看不到，我想你懂的。为了弥补这个缺憾，我就想把micro blog同步到国内的某个博客上，但似乎很难，因为国内的博客服务器也“看不到”我们appspot.com上的mblog。怎么办？于是搜索，尝试，终于找到一种暂行的方法：<br /><br />首先把micro blog的RSS变为国内能访问的RSS，我选用的是Feed43（<a target="_blank" href="http://feed43.com/">http://feed43.com/</a>）。这步解决了，其他的就好解决了。这里有一个教程：feed43使用教程 - Unique Slacker - 博客大巴: <a target="_blank" href="http://kenzone.blogbus.com/logs/2295747.html">http://kenzone.blogbus.com/logs/2295747.html</a><br /><br />然后把RSS转换为html代码直接插入到网页上，我用的是RSS2html（<a target="_blank" href="http://rss.bloople.net/">http://rss.bloople.net/</a>）。比如在博客大巴上插入自定义html就可以了。<br /><br />费了吃奶的劲，终于把外面的内容转移到了里面，何苦呢！中国人总是自己个自己下套。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/10/poem-rou-guang/">柔光</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-10T00:00:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/12/10/poem-rou-guang/#disqus_thread">Comments</a>
+         | <a href="/blog/2020/11/02/wrong-logic-of-academic-presentation/#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><div align="center"><big><big><big>绿油油的天啊<br /><br />波光荡漾<br /><br />小河里的水啊<br /><br />欢快的流淌<br /><br /><br />是谁让我倾心向往<br /><br />是……<br /><br />是希望，是梦想<br /><br />是照亮你我心底的那缕柔光<br /></big></big></big></div></p>
-</div>
-  
-  
+  <div class="entry-content"><p>【谬误1】我是这个领域的专家，所以我就讲的你们听不懂，因为你们听不懂，所以我是这个领域的专家</p>
 
+<p>批注：专家可能会表达不清楚，但是别人听不懂不能说明你是专家，恰恰相反大牛都能把最前沿的东西用最浅显的语言给新手讲明白，如果讲不明白说明报告人自己也没想清楚，这样的报告不做也罢</p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps/">常用概念图制作软件和在线工具</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>【谬误2】我有很多头衔，所以我很牛，我的观点就是权威，就是正确的</p>
 
+<p>批注：顶尖科学家可能有社会地位，也可能没有，但是有社会地位的不一定是顶尖科学家。社会地位不等于科学地位。而且，顶尖科学家不会用权威说事，恰恰相反，科学家是反权威的，要用证据说事。</p>
 
+<p>【谬误3】我的研究样本量很大，所以很牛</p>
 
+<p>批注：样本数量的多少是可以在一定程度上增强研究结论的可行性，但是还要看研究的问题、理论基础、研究设计以及数据质量，不是所有的大规模研究就一定可信，也不是大规模研究就等同于高质量研究。</p>
 
+<p>【谬误4】我分享的都是别人的观点，所以错误也是被人的</p>
 
+<p>批注：学者可以分享别人的研究，但是必须突出自己的研究。同时也要批判性地审视他人的研究，并为其负责。如果没有自己的观点或研究，其实也没有必要来分享了。</p>
 
-
-
-  
-
-
-<time datetime="2011-12-03T00:00:00+08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2011</time>
-        
-         | <a href="/blog/2011/12/03/softwares-and-online-tools-for-making-concept-maps/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>概念图制作软件下载地址：<br />Download - FreeMind: <a target="_blank" href="http://freemind.sourceforge.net/wiki/index.php/Download">http://freemind.sourceforge.net/wiki/index.php/Download</a><br />Download XMind - XMind - Mind Mapping and Storming: <a target="_blank" href="http://www.xmind.net/downloads/">http://www.xmind.net/downloads/</a><br />IHMC CmapTools - Download: <a target="_blank" href="http://cmap.ihmc.us/download/">http://cmap.ihmc.us/download/</a><br /><br />概念图制作在线工具网址：<br />Mind42.com - Collaborative mind mapping in your browser<br />: <a target="_blank" href="http://www.mind42.com/">http://www.mind42.com/</a><br /><br />Mind Mapping and Brainstorming Software - Mindomo<br />: <a target="_blank" href="http://www.mindomo.com/">http://www.mindomo.com/</a><br /><br />Online Mind Mapping and Brainstorming - MindMeister<br />: <a target="_blank" href="http://www.mindmeister.com/">http://www.mindmeister.com/</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/01/PBL-based-learning-knowledge-sharing/">基于问题的学习和知识分享（PBL &　PBS）</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-01T00:00:00+08:00" pubdate data-updated="true">Dec 1<span>st</span>, 2011</time>
-        
-         | <a href="/blog/2011/12/01/PBL-based-learning-knowledge-sharing/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我们在教学和学习的过程中，经常会使用到基于问题的学习（problem-based Learning）策略。原因很简单，因为人们经常是为了现在解决遇到的问题而学习的，而不是为了解决未来的问题而做准备，因为问题是很难预知的。遇到了，才知道。<br /><br />在基于问题的学习中，学习者可以基于自己的兴趣扩展学习，去查阅资料，却做尝试和实验，此外还要肩负起监控和调整自己学习过程的重担，元认知也能够得到锻炼。如果不能达到这些，这种教学策略对于学习成效的提高就很难起到帮助。<br /><br />我们不仅可以围绕问题展开学习，同样的我们也应该围绕问题展开知识的分享。在围绕问题分享知识的时候，我们要做三件事情：<br /><ol><li>具体清晰的描述自己遇到问题和自己想达成的目标。</li><li>给出问题解决的关键思想和具体解决步骤。</li><li>提供相关的扩展阅读的资料和参考文献。</li></ol>学习者完全可以只用这三个环节来分享知识，这会使得知识的交流的焦点更为集中，分享更有针对性和成效性。通常我们经常缺乏清晰描述自己问题的意识，以至于自己的解决方案究竟在遇到什么问题时才会派上用场也不清楚。还有就是只关注了给出具体的步骤，但是并没有提炼问题解决的核心思想，这样容易让读者只有步骤细节，而缺乏整体观，很容易产生误解和迷惑。此外，提供信息的参考来源有利于让读者了解信息的前前后后，或者为了进一步扩展阅读提供了可能。<br /><br /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/30/the-heart-beat-of-airconditioner/">会心跳的空调</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-30T00:00:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/11/30/the-heart-beat-of-airconditioner/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天天气不好，一直下着小雨，雨不是很大，但是借着较强的风势，横飞乱舞，打着伞身子也会被淋湿了一半。回到家，坐在办公桌前面打开电脑，正准备做一个flash演示文稿模板，突然听到一种很奇怪的声音，嘭~啪~嘭~啪~，周而复始，有点像流水的声音，又好像似一个人的心跳，但是家里明明只有我一个人。<br /><br />于是仗着胆子站起身来，细听声音的来处，原来就是侧对着办公桌的哪个空调发出的声音。好奇怪啊，这个空调明明没有开，怎么会有声音呢。外面的风刮的更厉害了，又传来了嘭啪嘭啪的声音，于是猜想是不是与这风有关系呢？本来想静下来做点事情的，这个空调老是给我执照噪音怎么行呢，于是就开始想解决的办法。<br /><br />我猜想可能是风速变化很大，时快时慢，使得空调的循环管受的压力不断变化，进而造成里面的液体的震荡所以产生了这种类似“心跳”的声音。加入这种猜想成立的话，如何解决呢? 首先想到的是用一个大塑料袋子把空调的风扇整个包起来来，这样这个风扇的管道就不对外开放了，但是找了一会没找到合适的袋子，而且风扇在阳台栏杆的外面，需要越过栏杆才能将其罩住，栏杆很脏，而且有一定危险性，于是放弃了这种方法。那么怎么办呢？<br /><br />仔细想了一下，由于天气有点冷，房子的门窗都关着，整个房子就好像一个秘密的容器，只有空调的循环管与外面相连，由于风速变化造成压力变化，所以会传来空调的心跳声。对了，如果我在打开一个通道不久行了嘛，于是我就把阳台的拉门打开了，果然空调的心跳停下来了，问题解决！<br /><br /><br /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/30/flash-learning-resources-1/">Flash动画制作视频学习资源</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-30T00:00:00+08:00" pubdate data-updated="true">Nov 30<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/11/30/flash-learning-resources-1/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>flash实例教程:幻灯片动画 - 视频 - 优酷视频 - 在线观看<br />: http://v.youku.com/v_show/id_XMzA3NjAwNTQ0.html<br /><br />倪栋老师教程网<br />: http://www.keepwalk.com/2010/<br /><br />Flash CS4动画设计与制作300例 - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_5128246.html<br /><br />Adobe.Flash.CS4专业版高级教程 - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_4213977.html<br /><br />Adobe Flash Catalyst - 专辑 - 优酷视频<br />: http://www.youku.com/playlist_show/id_5222497.html<br /></p>
+<p>研究者千万别认为自己很牛，别人可以这样认为，但是研究者自己不可以，因为在这会毁掉学术，也会毁掉自己。相反很牛的科学家都认为在自己研究的伟大事物面前，自己格外渺小，而正是这种发自内心的谦卑，才让倾听大自然的声音成为可能。好的报告要让听者听得懂、有启发，最好还有能应用。如果有大牛的报告你没听懂，那就提问吧，给研究者一个戴罪立功的机会！：）</p>
 </div>
   
   
@@ -470,79 +588,179 @@
   
     <section>
   <h1>About Me</h1>
-  <p>Chunlei is lazy, but he wants do something.</p>
-</section>
-
-<section>
-  <h1>新浪微博</h1>
-  <ul id="weibo">
-    <li>
-      <iframe width="100%" 
-	    height="550" 
-		class="share_self"  
-		frameborder="0" 
-		scrolling="no" 
-		src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1692535814&verifier=27e84cd9&dpc=1">
-      </iframe>
-    </li>
-  </ul>
-</section>
-
-
-
-
-<section>
+  <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
+  <p>慧行坚勇 <a href="http://zhangchunlei.com/about/">More</a> <a href="http://zhangchunlei.com/blog/categories/%E6%95%99%E5%AD%A6/">教学</a> <a href="http://zhangchunlei.com/blog/categories/%E7%A7%91%E7%A0%94/">科研</a> <a href="http://www.skc.ecnu.edu.cn/">skc</a> <a href="https://scholar.google.co.uk/">gs</a><a href="https://xueshu.baidu.com/">xs</a></p>
+</section><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/02/04/try-to-use-ubuntu-to-press/">try to use ubuntu to press</a>
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/22/what-robot-can-do-for-me/">what robot can do for me</a>
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/21/front-of-class/">front of class</a>
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/11/fighting-with-plagiarism/">fighting with plagiarism</a>
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/10/hello-tag/">hello tag</a>
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
       </li>
     
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/book'>book (1)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (3)</a></li><li><a href='/blog/categories/future-plan'>future plan (3)</a></li><li><a href='/blog/categories/gae'>GAE (2)</a></li><li><a href='/blog/categories/google'>Google (1)</a></li><li><a href='/blog/categories/iphone'>iphone (1)</a></li><li><a href='/blog/categories/meeting'>meeting (1)</a></li><li><a href='/blog/categories/my-thoughts'>my thoughts (2)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (3)</a></li><li><a href='/blog/categories/openlearning'>openlearning (5)</a></li><li><a href='/blog/categories/pck'>pck (4)</a></li><li><a href='/blog/categories/rss'>RSS (1)</a></li><li><a href='/blog/categories/tpck'>TPCK (1)</a></li><li><a href='/blog/categories/try'>try (4)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (2)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (6)</a></li><li><a href='/blog/categories/博客建站'>博客建站 (1)</a></li><li><a href='/blog/categories/反思'>反思 (4)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/学习记忆'>学习记忆 (1)</a></li><li><a href='/blog/categories/总结'>总结 (1)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (4)</a></li><li><a href='/blog/categories/教学'>教学 (4)</a></li><li><a href='/blog/categories/日志'>日志 (2)</a></li><li><a href='/blog/categories/杂谈'>杂谈 (1)</a></li><li><a href='/blog/categories/概念图'>概念图 (1)</a></li><li><a href='/blog/categories/生活观察'>生活观察 (1)</a></li><li><a href='/blog/categories/生活趣事'>生活趣事 (1)</a></li><li><a href='/blog/categories/科学探究'>科学探究 (2)</a></li><li><a href='/blog/categories/脑科学'>脑科学 (1)</a></li><li><a href='/blog/categories/资源'>资源 (2)</a></li><li><a href='/blog/categories/随笔'>随笔 (5)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
   <ul class="tag-cloud">
-<a style="font-size: 112%" href="/tag/english/">English</a>
-<a style="font-size: 112%" href="/tag/bioteahouse/">bioteahouse</a>
-<a style="font-size: 112%" href="/tag/github/">github</a>
-<a style="font-size: 143%" href="/tag/linux/">linux</a>
-<a style="font-size: 112%" href="/tag/pck/">pck</a>
-<a style="font-size: 112%" href="/tag/try/">try</a>
-<a style="font-size: 112%" href="/tag/标签云/">标签云</a>
-<a style="font-size: 165%" href="/tag/随笔/">随笔</a>
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
 
   </ul>
 </section><section>
 	<h1>最新评论</h1>
 	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
 </section><section>
-  <h1>知识共享协议</h1>
+<h1>Halley&#8217;s Comet</h1>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(date1-new Date())/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
+}
+//]]>
+</script>
+<div id="thenceThen"></div>
+<h1>太平洋夏令时 (PDT)</h1>
+<div class="thetimenow-embeddable-clock" data-type="clock" data-font-color="#000000" data-border-color="#000000" data-background-color="#ffffff" data-font-size="60" > <a href="http://zh.thetimenow.com/" rel="nofollow" target="_blank">© The Time Now</a> </div> 
+<script type="text/javascript" src="http://zh.thetimenow.com/ttn-embed.min.js"></script>
+</section><section>
+  <h1>Links</h1>
+  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
+  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
+</section><section>
+  <h1>Visitors to this Blog</h1>
+    <div id="clustrmaps-widget"></div>
+	  <script type="text/javascript">var _clustrmaps = {'url' : 'http://zhangchunlei.com/', 'user' : 1092323, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2013-09-14', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+	  <noscript><a href="http://www2.clustrmaps.com/user/d1910aae3"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/zhangchunlei.com--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section><section>
+  <h1>Creative Commons</h1>
   <p>
    <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
-  本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
   </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
 </section>
   
 </aside>
@@ -550,7 +768,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - chunlei -
+  Copyright &copy; 2021 - chunlei -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -574,17 +792,18 @@
 
 
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
+
+
 
 
 

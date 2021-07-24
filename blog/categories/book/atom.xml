@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: book | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/book/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/book/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,12 +14,463 @@
 
   
   <entry>
-    <title type="html"><![CDATA[大脑错觉（Brain bugs）]]></title>
-    <link href="http://lukezhg.github.com/blog/2011/11/27/brain-bugs/"/>
-    <updated>2011-11-27T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2011/11/27/brain-bugs</id>
-    <content type="html"><![CDATA[<p>在笑来的博客上看到，这本书《Brain bugs》，笑说有趣的很。于是打开看了一下目录还有网站的Demos如下：<br />Brain Bugs | Demos<br />: http://www.brainbugs.org/demos.html<br /><br />上面的页面上列举了很多brain bugs。<br />比如McGurk Effect，上面有一个女人在发言，但是当你闭上眼睛的时候，你听到的是一个声音，当你睁开眼睛的时候你听到的是另外一个声音。（我猜测是收到了发音者口型的影响）<br /><br />再比如Baker-baker Paradox<br />我们经常会忘记某个人的名字，但是多半会记得他的职业。即使是一个叫Baker的baker，我们还是容易自己的他是一个面包师。原因在于，我们记忆一个人的职业的时候，会有很多相关的概念协同起来，而名字则很少协同记忆。（也许老师们也可以尝试为学生的名字富于内涵，从而便于记忆）<br />这也提示我们，在教学过程中，应该把新概念与学生的已有概念产生更多的来联系，使其协同起来，而不是像名字一样孤零零的，最后被遗忘。<br /><br />再如Flash Lag Effect<br />我在预测红球的时候，总是预测超前50左右，这就是为什么足球边裁判罚越位中有24%为误判的原因。其原因是我们的视觉系统在关注其他信号的同时，总是倾向于超前估计运动物体的位置。<br /><br />再如Leaning Tower Illusion<br />看起来右侧的塔会更加的倾斜，但是其实两个塔的照片是完全相同。<br /><br />这是采访本书作者的录音：http://pd.npr.org/anon.npr-mp3/npr/fa/2011/07/20110714_fa_01.mp3<br /></p>
+    <title type="html"><![CDATA[循证教学]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/04/27/evidence-based-teaching/"/>
+    <updated>2020-04-27T23:51:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/04/27/evidence-based-teaching</id>
+    <content type="html"><![CDATA[<p>Evidence-Based Teaching:A Practical Approach
+Geoff Petty</p>
 
+<p>读书笔记</p>
+
+<h3>通用原则</h3>
+
+<p>Br​​ansford等（2000）提出了一些通用原则，高质量的学习要求：<br/>
+• 知识结构。学生必须了解所学内容的目的，要点和关键原则。先建立结构和含义，然后再添加细节。<br/>
+• 深刻理解。学生必须表达自己的意思和理解，而不仅仅是记住。这就要求看到结构之间的关系并在旧的基础上建立新的学习。我们从已知到未知，从具体到抽象学习。<br/>
+• 推理（不仅是再现）需要学习者将新概念与他们已经知道的内容联系起来，从而创造意义。我们需要设定“具有挑战性的目标”。<br/>
+• 反馈。学生的结构有错误和遗漏，必须加以改进。这就需要对学习者和老师进行反馈，以便两者都可以改善结构。对话是做到这一点的绝妙方法。<br/>
+• 时间和重复。学生需要熟悉材料才能将其“分解”为有意义的部分，至少需要六次接触。学生不只是简单地将概念和逻辑关系“写”到硬盘上。许多学习都是直觉的，而且下意识的。为此，学生需要在许多不同的背景下查看概念和原理的例子和例外，以便“获得”它们。<br/>
+• 多个方面和多种表现形式。学生需要左右脑的双重表示法，即“全脑学习”，以帮助理解。</p>
+
+<h3>关于方法的结论</h3>
+
+<p>适用于教授知识： <br/>
+自我系统（影响大小为0.74）和元认知系统（影响大小为0.72）影响很大。尽管专注于认知系统的策略的总体效果大小较低（效果大小为0.55），但某些单独的策略却非常有效：<br/>
+–相同但不同：1.32<br/>
+–图形或非语言表示：1.24<br/>
+–实验探究（产生假设）：1.14<br/>
+ </p>
+
+<h3>Marzano基于理论的元分析</h3>
+
+<p>用于教学词汇：<br/>
+•提供新术语的简要描述或定义（效果大小1.53）。<br/>
+•或者让学生从内容中找出术语的含义<br/>
+（效果尺寸1.59）或两者都更好（效果尺寸1.66）。<br/>
+•让学生自己表达新术语和新内容<br/>
+单词（效果大小为1.27）和非语言方式（例如思维导图）（效果大小为2.27）。</p>
+
+<h3>适用于浅层学习</h3>
+
+<p>例如教学细节，事实，术语含义等。<br/>
+•让学生回忆相关的先前学习（影响大小0.75）和问题（影响大小0.93）。以叙述或故事的形式或丰富的描述性上下文呈现内容（效果大小为0.63）。<br/>
+•让学生用口头或书面形式用自己的话语表达想法：笔记（效果大小0.99），摘要或同伴解释（效果大小0.63）。还可以在图片，思维导图，图表，图表等中以非语言形式表示想法（效果大小为1.24）。<br/>
+•与新的和已经学过的概念进行相同和不同的比较（效果大小1.32）。让学生对游戏中的新信息进行推理，例如决策，决策（效果大小0.89）。</p>
+
+<h3>适用于深层学习</h3>
+
+<p>•设定明确的目标，最好让学生参与（效果大小1.21）。用具体的术语直接公平地讲授抽象的思想，概念，概括和原理（效果大小2.55）。对于更复杂的想法，请确保使用大量示例。<br/>
+•特别注意提供信息的结构：高级组织者（效果大小0.78）。关系等最好以非语言形式给出，例如在图形组织器中（效果大小为1.24）。<br/>
+•让学生将概念，概括，原则应用于新情况（效果大小1.16）（推论）。例如，使用决策，决策（效果大小为0.89）。让学生使用这些想法来生成和检验假设（影响大小为1.14）或解决问题（影响大小为0.54）。
+对于任何类型的学习<br/>
+•确保学生获得关于他们擅长的方面的详尽的信息反馈：奖牌（效果大小0.74）。最好还是给他们奖牌和任务（效果大小为1.13）。任务是从工作中诊断出来的特定改进目标。</p>
+
+<h3>三个一般性原则：</h3>
+
+<p>• 目标原则：Achievement is enhanced to the degree that students and teachers set and communicate appropriate, specific and challenging goals.<br/>
+• 反馈原则：Achievement is enhanced as a function of feedback.<br/>
+• 转变原则：Increases in student learning involve ... a reconceptualisation of
+learning.</p>
+
+<h3>引导性提问</h3>
+
+<p>1.安排小组处理一个发人深省的问题或任务，以产生一个充分论证和合理的答案：<br/>
+‘新闻界应该自由发布想要的东西吗？’
+“为什么有些动物会产生很多卵，而有些却很少？”
+‘绘制3x2–4x+8方程的曲线。”</p>
+
+<p>2.老师监督这项工作，问：<br/>
+‘每个人都有答案吗？如果需要提示可以问我。’“有人需要更多时间吗？”
+如果某个团队不需要此帮助，则表示下一阶段是“公平竞争”。直到第六阶段，即使他们帮助了一个小组，老师也不会给出答案，即使是非语言的。</p>
+
+<p>3.老师点名个人表达小组答案，然后<br/>
+证明这一点：“爱丽丝，您小组的答案是什么？ ...您为什么这么认为？’老师感谢学生的回答，但没有对此进行评估。在可能的情况下，老师会要求每个小组提供部分答案，并在小组中四处走动，直到收集到所有答案。学生或老师可以将答案写在黑板上（这对于草图很有效）。</p>
+
+<p>4.教师以这种方式（至少是多个小组）从每个小组得到答复，然后指出小组答案之间的任何不一致之处。</p>
+
+<p>5.现在的目标是让全班同学同意他们的“班级答案”。老师鼓励班级讨论和评估他们的各种答案，达成共识并为“班级答案”辩护。如果没有一个答案是正确的，那么全班讨论不同答案的优点。允许少数派观点，但目的是达成共识。</p>
+
+<p>6.只有在班上同意他们的答案后，老师才会“给出”正确的答案，或者对给出的答案进行评估和评论。</p>
+
+<p>7.老师称赞学生在以上过程中的努力和成就。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[教学勇气]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/04/27/the-courage-to-teach/"/>
+    <updated>2020-04-27T15:18:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/04/27/the-courage-to-teach</id>
+    <content type="html"><![CDATA[<p>这本书很可能会改变你的教师观。</p>
+
+<p>对，我说的是教师观，而不仅仅是教学观。这不是一本教学技能的书，但是确是唤醒教师心灵的书。</p>
+
+<p>这部书的目录：<br/>
+0、源自心灵的教学<br/>
+1、教师的心灵——教学中的自身认同和完整<br/>
+2、一种工具文化——教育和分离的生活<br/>
+3、潜藏的整体——教与学的悖论<br/>
+4、认知共同体中——为伟大事物的魅力所凝聚<br/>
+5、教学于共同体中——以主体为中心的教育<br/>
+6、学习于共同体中——共事切磋<br/>
+7、不再分离——心怀希望教学<br/>
+8、呼唤新专业人士——教育就是转变</p>
+
+<h3>非此即彼的二元对立思维是问题的源头。</h3>
+
+<p>我们所认识的教育世界充满了被分离的悖论——还有毫无生命的结果：<br/>
+我们把头脑和心灵分离，其结果是：头脑不知道如何去感知，而心灵不知道如何去思考。<br/>
+我们把事实和感觉分离，其结果是：如今是世界冷漠而疏远的冷酷事实和把事实降低成跟着感觉走的盲目情感。 <br/>
+我们把理论和实践分离，其结果是：理论跟生活无关，而实践也为得益于理论。<br/>
+我们把教和学分离，结果是：老师只说不停，学生只听不说。</p>
+
+<h3>这个空间(教学空间)</h3>
+
+<p>即有界限又是开放的。<br/>
+即令人愉快又有紧张的气氛。<br/>
+即鼓励个人表达意见，也欢迎团体的意见。<br/>
+即尊重学生们琐碎的小故事，也尊重传统与纪律的大故事。<br/>
+即支持独处又随时有群体的资源支持。
+这个空间应该沉默和争论并存。</p>
+
+<h3>把握对立的张力</h3>
+
+<p>把握好悖论的张力以便学生们能在更深层次学习,是搞好教学最困难的一环,我们应该怎样做呢?</p>
+
+<p>想象你自己在教室里。你问了一个框架很好的问题,随之而来的是一片沉寂,你就等啊等。你知道你应该再等等,不要急,但是最终你觉得无助而失控,于是你怀着焦虑、愤怒、专断等复杂感情回答了自己的问题。带着这些情绪只会使事情变得更糟。然后,你眼睁睁地看着沉默营造出的学习的开放性化为乌有--而且教学越来越像头撞南墙瞎跑。</p>
+
+<p>这一情境对把握任何一种悖论(不只是沉默和表达)都指明了一个简单的真理:整体把握悖论的立足点在教师的心里,我们无力去把握它不是因为技巧的缺乏,而是因为我们内在生命的缺失。如果我们想在悖论的力量下教与学,必须接受心灵的再教育。</p>
+
+<h3>伟大事物的魅力</h3>
+
+<p>真正的共同体是承载着教育使命的概念,因为它拥抱这样一个基本事实:我们所归属的现实、我们渴望了解的现实,远远超越了人类彼此间的互动。在真正的共同体中,我们人类也与非人类形式的事物互动,它们与人类同等重要、一样强大,有时甚至比人类更重要、更强大。这个共同体并不只是借着我们个人思想和感觉的力量结合在一起,而是亦因“伟大事物的魅力"的力量结合在一起。</p>
+
+<h3>认知共同体在伟大事物的感召下形成</h3>
+
+<p>伟大事物是教育共同体的重要聚焦点。正如原始人曾经聚集在火堆周围,通过聚集在他们周围并尝试去理解他们,我们成为求知者、教师和学习者。若我们处于最高境界,表现出色,那就是因为伟大事物的魅力诱发出我们的美德,赋予教育共同体最佳最优的状态:<br/>
+·我们邀请多元化进入我们的共同体之内,不是为了行政上正确,而是因为伟大事物各式各样的奥秘需要多元的观点。<br/>
+·我们拥抱多重含意的解释,不是因为我们很困感或不能做出决定,而是因为我们清楚我们的概念不足,不能包含浩瀚的伟大事物。<br/>
+·我们欢迎创见性的论争,不是因为我们愤怒或怀有敌意,而是因为有必要通过论争来纠正我们对于伟大事物本质的偏见。<br/>
+·我们奉行诚实,不仅仅是因为我们应该彼此真诚相待,还因为对我们亲眼看到的事物说谎就等于出卖了伟大事物的真理。<br/>
+·我们体验谦卑,不是因为我们打了败仗、输了,而是因为我们只能通过谦卑这片透镜看到伟大事物,而一旦我们看到了伟大事物,谦卑是我们唯一应有的态度。<br/>
+·我们通过教育成为自由的人,不是因为我们得到了特殊的信息,而是因为只有被伟大事物的魅力吸引,才能战胜任何形式的暴君。</p>
+
+<h3>两种类型的共同体</h3>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/objectivist_myths_community.jpeg" alt="客观主义者关于认知的神话 " /></p>
+
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/real_community.jpeg" alt="真正的共同体" />
+在第一种共同体中，知识的发现者、传播者和学习者是分离的。而在第二中共同体中，三种身份是融合的，教师和学生都同时是伟大事物的发现者、传播者和学习者。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[一人一本书]]></title>
+    <link href="http://zhangchunlei.com/blog/2014/02/22/one-people-one-book/"/>
+    <updated>2014-02-22T23:32:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2014/02/22/one-people-one-book</id>
+    <content type="html"><![CDATA[<p>一不小心就已经三十岁，掐指算算不知道以前的日子怎么过的，还是觉得头脑空空。你不能埋怨这个社会什么，你只能从自己身上找原因，为什么没有独立的思想，为什么没有独立思想的走到了今天。</p>
+
+<p>就好像一个刚从梦里醒来的人，肚饿难当，也不知道昏睡了多久。</p>
+
+<p>但是不管怎样，醒来了就是醒来了，只能自己找吃的。不知道该吃什么，那就每样吃一点，先解决温饱再说。</p>
+
+<p>一人一本书，就是一个很重要的人，你选择他的一本书来读。这个法子不一定妥当，但是也并不太大的不妥。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[District standards and position description]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/18/district-standards-and-position-description/"/>
+    <updated>2013-09-18T13:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/18/district-standards-and-position-description</id>
+    <content type="html"><![CDATA[<p>The following is from the book <a href="http://books.google.com/books/about/Clinical_Supervision_and_Teacher_Develop.html?id=O3ycAAAAMAAJ">Clinical Supervision and Teacher Development</a>  .</p>
+
+<h3>District standards of competent performance</h3>
+
+<p>A standard is composed of three parts: a statement which establishes a general behavior, a list of indicators which specify how that behavior will be identified, and a principal's judgment as to the level of competent performance. The statement and indicators are listed for each standard. The level of expected performance of these standards will be determined by the professional judgment of the pnncipal. The judgment is influenced by the teacher's assignment, class size, experience, and available resources. To determine if the requirements of the standard have been met, the statement of general teacher behavior, all of the indicators, and the performance level must be considered.</p>
+
+<p>Section I—Instructional development<br/>
+Area: Diagnosing
+Standard 1 The competent teacher establishes procedures for gathering data by<br/>
+a. completing the diagnosis for each student<br/>
+b. using the diagnostic tools which are pertinent to the teacher's goals<br/>
+c. using a variety of diagnostic instruments and techniques<br/>
+d. requesting assistance from others, when needed, for more comprehensive diagnosis</p>
+
+<!--more-->
+
+
+<p>
+Standard 2 The competent teacher interprets diagnostic data to identify the needs and concerns of both the individual and the group by<br/>
+a. identifying the achievement level of each student<br/>
+b. explaining the significance of the achievement level diagnosed</p>
+
+<p>Area: Prescribing<br/>
+Standard 3 The competent teacher utilizes diagnostic data to establish instructional objectives and relates these to individual needs by<br/>
+a. writing instructional objectives<br/>
+b. preparing objectives that show the data gathered in diagnosis are utilized<br/>
+c. preparing objectives in terms of student performance<br/>
+d. preparing objectives that are measurable<br/>
+e. preparing both short- and long-term objectives for any assigned class</p>
+
+<p>Standard 4 The competent teacher plans lessons to meet individual and group needs by<br/>
+a. planning lessons that are consistent with the objectives<br/>
+b. planning lessons that include appropriate activities which meet individual and group needs<br/>
+c. planning to use appropriate resource materials related to instructional objectives<br/>
+d. planning alternatives to meet the needs of individual students<br/>
+e. accepting and using student feedback in planning instruction</p>
+
+<p>Area: Facilitating<br/>
+Standard 5 The competent teacher utilizes knowledge of subject matter by<br/>
+a. using words and content appropriate to the subject area and students' abilities<br/>
+b. using available media effectively and efficiently<br/>
+c. requesting and using materials and facilities based on instructional objectives<br/>
+d. knowing and utilizing community agencies, groups, and individuals to further the educational
+program</p>
+
+<p>Standard 6 The competent teacher uses effective classroom management techniques by<br/>
+a. showing respect for students<br/>
+b. providing an atmosphere in which students remain at task<br/>
+c. exhibiting consistency when dealing with behavior problems<br/>
+d. exhibiting positive verbal and nonverbal influence on students</p>
+
+<p>Standard 7 The competent teacher applies learning theory by<br/>
+a. utilizing and building upon students' interests and prior knowledge<br/>
+b. providing feedback as students progress toward goals<br/>
+c. allowing for a balance between intake of information and the expression of student ideas<br/>
+d. providing the individual with activities to develop attitudes, appreciations, and values</p>
+
+<p>Standard 8 The competent teacher uses a variety of instructional techniques appropriate to the students' needs by<br/>
+a. giving directions in a clear, concise manner<br/>
+b. phrasing questions so students may respond appropriately<br/>
+C. using strategies which involve students in higher levels of thinking<br/>
+d. pacing the activities within a lesson according to the needs of students</p>
+
+<p>Area: Student Performance Evaluation<br/>
+Standard 9 The competent teacher establishes procedures for assessing student performance by<br/>
+a. selecting means of evaluation which are appropriate to the objectives<br/>
+b. planning measurement procedures for specific purposes<br/>
+C. utilizing procedures whereby students receive feedback on their individual performance<br/>
+d. presenting information that indicates evaluation has taken place for each student</p>
+
+<p>Standard 10 The competent teacher interprets the results of student performance assessment by<br/>
+a.identifs ing the reasons why students have or have not met the performance objectives</p>
+
+<p>Standard 11 The competent teacher utilizes the results of student performance assessment by<br/>
+a. using objective data to arrive at a grade or indicator of student progress to be reported to parents and student<br/>
+b. providing feedback that facilitates the student accomplishment of goals.<br/>
+c. planning changes in teaching strategies based on the results of the evaluation.</p>
+
+<p>Section II—Professional development<br/>
+Area: Communication<br/>
+Standard 12 The competent teacher communicates effectively with students by<br/>
+a. listening to and considering student comments and suggestions<br/>
+b. being open to suggestions about ways in which to present material<br/>
+c. conveying an attitude that promotes participation in activities<br/>
+Standard 13 The competent teacher communicates effectively with colleagues and staff by<br/>
+a. participating in the group decision-making process<br/>
+b. listening to and considering suggestions from the staff<br/>
+c. sharing ideas and resources with others</p>
+
+<p>Standard 14 The competent teacher communicates responsibly to the public the significance of the school program by<br/>
+a. answering parents' inquiries promptly, honestly, and discretely<br/>
+b. initiating when necessary communication with parents<br/>
+c. having available or locating information to relate district philosophy to the community at large</p>
+
+<p>Area: School Relationships<br/>
+Standard 15 The competent teacher has a consistent and professional attitude toward accomplishment of own school goals by<br/>
+a. contributing to the decision-making process and abiding by group decisions
+b. accepting shared responsibilities in and out of the classroom during the school day
+c. maintaining consistency in record keeping as defined by building or district administrative regulations and procedures<br/>
+d. using adopted courses of study or adjusting teaching objectives to include such adoptions<br/>
+e. carrying out reasonable requests given by proper authority</p>
+
+<p>Standard 16 The competent teacher has a consistent and professional attitude toward the accom
+plishment of district and state goals by<br/>
+a adhering to and enforcing school law, state board regulations, school board policy, and established administrative procedures.<br/>
+b. adhering to the Employee Conduct and Responsibility requirements as stated in the Board Policy Handbook.</p>
+
+<p>Source: Adapted from Beaverton, Oregon Schools Personnel Handbook.</p>
+
+<h3>Position description</h3>
+
+<p>Position: Teacher
+Reports to: Principal (or His/Her Designee)
+Position Purpose:
+Implements, supervises, and maintains a high quality learning environment Tor students within the specific curriculum and standards of the district.<br/>
+Nature and Scope:
+The teacher is a professional with the responsibility for implementing a curriculum. Inherent in this responsibility is the requirement of related academic knowledge, technical skills, and professional attitudes and judgments.<br/>
+The teacher must have the ability to diagnose the needs of learners and to evaluate their performance. The teacher must also be able to prescribe learning activities appropriate to student needs and to constructively evaluate these activities. The teacher effects an optimum learning climate through appropriate and maximum use of all resources available, and through the use of effective instructional and classroom management techniques.<br/>
+In addition to the requirement of technical competence, the teacher maintains an attitude and
+conduct which is consistent with the district policy of professional conduct. The teacher follows building and district procedural guidelines and policy.<br/>
+Primary Accountabilities:
+1. Identifies the needs of students through diagnostic procedures and relates instructional objectives to these needs. Plans, prepares, and executes appropriate lessons, utilizing appropriate resource materials and activities.<br/>
+2. Maintains student records as required by the school.<br/>
+3. Communicates with parents, students, and other professional staff regarding student progress(behavioral and academic).<br/>
+4. Follows a curriculum that is prescribed by state, district, or building.<br/>
+5. Assures students of learning opportunities within a classroom environment that facilitates learning.<br/>
+6. Meets the district's Standards of Competent Performance at all times.<br/>
+7. Follows district and school policies, procedures, rules, regulations, and guidelines and the provisions of the contract.</p>
+
+<p>Source: School District 48J, Beaverton, OR.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Effective teaching notes]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes/"/>
+    <updated>2013-09-17T11:25:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/09/17/effective-teaching-notes</id>
+    <content type="html"><![CDATA[<p>Recently I was reading a book <a href="http://books.google.com/books/about/Clinical_Supervision_and_Teacher_Develop.html?id=O3ycAAAAMAAJ">Clinical Supervision and Teacher Development</a></p>
+
+<p>The following are summary notes of Chapter 3 Using clinical supervision to promote effective teaching.</p>
+
+<p>Characteristics of Good Teaching in Students' Mind?<br/>
+Niss(Nice)<br/>
+ *   Nice(respect, patient and easy to get along with)<br/>
+ *   Interesting(makes subject interesting and fun with students engaged)<br/>
+ *   Sense of humor(tell jokes and smiles a lot)<br/>
+ *   Sensitive to students' need( Listent to students' question and make changes to help students learn )</p>
+
+<p>Teacher characteristics associated with gain in students' academic achievement?<br/>
+Creati<br/>
+ +   Clarity<br/>
+ +   Raise Variety(of materials, methods, question types and levels)<br/>
+ +   Enthusiasm<br/>
+ +   avoid harsh criticism<br/>
+ +   Task-oriented<br/>
+ +   Indirect teaching style</p>
+
+<p>Substantive interaction that increase students' at-task time:<br/>
+Equal<br/>
+  -   Explain(content to students)<br/>
+  -   questioning<br/>
+  -   using feedback<br/>
+  -   assistance<br/>
+  -   list the steps or tasks(chunlei added)</p>
+
+<p>Effective Classroom Preconditions:<br/>
+Amazing
+- Attention and motivation<br/>
+- Meaningful(students can find personal meaning in the information being presented)<br/>
+- Applications(opportunities to practice using new information)<br/>
+- Include both lower-coginitive and higher-cognitive tasks or questions<br/>
+- Group work process in the classroom</p>
+
+<p>Notes taken from another book chapter-Glickman -chapter 4.pdf<br/>
+Research on effective instruction() indicates that effective instruction is based on adaption of curriculum and materials to local settings and particular learning goals. In other words, effective teachers think about what they are currently doing, assess the results of their practice, explore with each other new possibilities  for teaching students, and are able to consider students' perspectives.<br/>
+<img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom" /></p>
+
+<p>The following was added at 2014/10/30
+Evidence based Teaching notes<br/>
+<a href="http://books.google.com/books/about/Evidence_Based_Teaching.html?id=DZRhPQAACAAJ">Evidence-Based Teaching: A Practical Approach by Geoff Petty</a></p>
+
+<p>==Expert teachers set challenging goals: deep learning==</p>
+
+<p>==Expert teachers had very deep understanding of their subject  and the teaching and learning of the subject==</p>
+
+<p>Their subject knowledge was more integrated, interrelated and built around general principles.</p>
+
+<p>This deep learning enabled them to "make lessons uniquely their own by changing, combining, and adding to them according to their students' needs and their own goals".<br/>
+p310</p>
+
+<p>The expert teacher knowledge of the learning process was similarly deeper than that of experienced teachers. This enabled them to predict and avoid difficulties that students might have , and to see what was happening in their classrooms in terms of a deeper set of principles relating how students learn.</p>
+
+<p>This mean that expert teacher were better able to diagnose what was happening in their classrooms, and to adapt. They were more responsive to their students as a result. The teaching and learning principles they used were probably something like those outlined  in Chapter 14.</p>
+
+<p>==Expert teachers monitor learning and provide feedback==</p>
+
+<p>Aim for evolution rather than revolution. Trying new methods one at a time is usually best, or your students will get unsettled even if you don't.<br/>
+Teachers touch students' lives for ever - so it's worth the effort to make powerful methods work.</p>
+
+<p>Graham Gibbs(1992)<br/>
+action research approach advice:<br/>
+Involve others<br/>
+Identify the problem clearly<br/>
+Use research evidence to convince others and to find promising strategies<br/>
+Start where you can<br/>
+Start small<br/>
+Don't reinvent the wheel<br/>
+Involve the students<br/>
+Changes as you go along</p>
+
+<p>p318</p>
+
+<p>Review<br/>
+we review our teaching in particular lesson or sequence of lessons, and look for evidence for what worked and what didn't.<br/>
+Difficulties: Being brave enough to collect evidence that might be uncomfortable, andhones enough to face up to problems without blaming ourselves or our students</p>
+
+<p>Learn<br/>
+we try to lean from this review, not just what worked or didn't, but why. This creates general principles that we can apply elsewhere.<br/>
+Difficulties: Asking 'why' persistently enough to enable us to lean the root cause of success or failure. Being able to 'bridge' this learning to other context by asking 'where else in my teaching could I use what I have just learned?'</p>
+
+<p>Apply<br/>
+We plan an experiment, perhaps adapting what we did in an earlier 'Do' phase.<br/>
+Difficulties: Finding the courage, time and inclination to do things differently.</p>
+
+<p>Do<br/>
+we carry out our experiment. The cycle repeats.</p>
+
+<p>p164<br/>
+Seven principles common to high-quality leaning and achievement</p>
+
+<p>1 student must see the value of the learning<br/>
+2 students must believe they can do it<br/>
+3 challenging goals<br/>
+the goal involves student activity on constructive methods<br/>
+the goal involves reasoning not just reproduction<br/>
+high participation rate<br/>
+students have their audience, variety and fun</p>
+
+<p>4 feedback and dialogue on progress towards goal<br/>
+students need 'medals' that give information about the extent to which they have achieved the goals<br/>
+students need 'missions' that describe how to improve and progress<br/>
+students need to develop a growing understanding of the goals</p>
+
+<p>5 establish the structure of information and so its meaning<br/>
+from known to unknown<br/>
+from concrete to abstract<br/>
+the structure first, then add the detail</p>
+
+<p>6 time and repetition<br/>
+multiple context: examples and non-examples in many different contexts in order to 'get' them
+multiple perspectives: student need to see what they are leaning through different 'spectacles'. SOLO<br/>
+multiple representations: right- and left-brain</p>
+
+<p>7 teach skills as well as content</p>
+
+<p>The PAR model<br/>
+Present Apply &amp; Review</p>
+
+<p>end notes</p>
+
+<p>有趣的是，脑科学和认知科学也提出了若干原则和规律：<br/>
+基于神经生物学研究的证据，Zull在2002年提出了3条规律：<br/>
+1. 认识到情感因素的关键性作用。<br/>
+2. 帮助学生建立自己掌控学习的感觉。<br/>
+3. 学习必须基于自己已有的神经网络（已有知识），即使这个网络是错误的。</p>
+
+<p>脑科学的研究发现，情绪是智慧的高级组织者，情绪能够指导认知进程和影响推理。例如长期高水平的皮质醇最终将导致与学习和记忆有关的海马神经元的损伤 ，即使是短时间的高水平皮质醇也会对短期记忆产生影响 。情绪对学习的影响具有两重性，轻松、愉快的情绪有利于学生的学习和健康发展，而过于紧张、沮丧、愤怒的情绪则不利于学生的学习。<br/>
+此外无论是教育研究还是认知科学研究都显示，元认知的发展对于学习非常关键<br/>
+学习者已有的知识对于学习有直接和重大的影响。学生并非头脑空空的来到教室，他们通过生活经验以及人际交流已经形成了很多概念和认识，这些概念或者完全错误，或者不完全，或者相对合理，不一而同，但是都对相关概念的学习有着重要的影响，科学教育研究者称之为前科学概念。而其脑科学的基础就是学生在已有的神经网络的基础上建造新的神经网络进而执行新的认知功能。</p>
+
+<p>Boettcher2007年根据脑科学研究成果，提出的核心学习原则：
+1：每一个结构化的学习经验都有四个元素（学习者、教师、知识、环境），它们以学习者为中心。
+2：每一个学习经验都包括能够与学习者的相互作用环境。
+3：我们塑造工具，工具也塑造我们。
+4：教师是学习经验的导演。
+5：学习者具有与该学习经验有关的个体知识、技能和态度。
+6：学习者都具自己特定的最近发展区作为建构有用知识的基础。
+7：概念并不是语句而是有组织的错综复杂的知识簇。
+8：学习者都不需要学习所有内容，但是需要学习核心概念。
+9：学习目标不同，所需教学也不同。
+10：在其他条件一线的情况下，更多学习任务时间等价于更多的学习。</p>
+
+<p>References:<br/>
+Boettcher, J. (2007). Ten core principles for designing effective learning environments: Insights from brain research and pedagogical theory. Innovate: Journal of Online Education, 3(3), n3.<br/>
+Zull, J. E. (2002). The art of changing the brain: Enriching the practice of teaching by exploring the biology of learning. Sterling, VA: Stylus.</p>
 ]]></content>
   </entry>
   

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ubuntu | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -14,22 +14,324 @@
 
   
   <entry>
-    <title type="html"><![CDATA[安装ubuntu3d桌面的问题]]></title>
-    <link href="http://lukezhg.github.com/blog/2011/05/02/ubuntu/"/>
-    <updated>2011-05-02T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2011/05/02/ubuntu</id>
-    <content type="html"><![CDATA[<p>本来想安装3d桌面但是出了很多问题，后来直接进不去系统了，发现自己这个本本显卡实在是不给力，(ausu 1101 ha Intel gma500)，后来放弃了。但是我觉得还是需要一个像苹果一样的任务栏，这样会提高的工作效率（也许）。所以就安装了cairo-dock，结果把先前的软件都卸载之后，安装了这个发现，桌面标题栏不见了，白茫茫一篇，后来上网查，发现是：<br /><br />metacity不知道是什么原因，更某个程序发生了冲突，我怀疑是安装3d桌面的时候，一个程序的设置保留下来了。现在我只有每次都在开机后，执行sudo metacity --replace这样一般就能好了。 虽然还是有的窗口刷新不对，比如firefox的scribefire。<br /><br />我想每次都输入这个命令很累，其实有些其他的程序我也想启动，一般可以用系统-启动程序来达成，但是如何让系统开机后就自动执行某个命令呢？<br />1 修改/etc/rc.local 未果<br />2 修改/etc/profile 或者把执行脚本.sh的文件放入到profile.d文件夹中<br /><br />但是据说要授权，如何授权呢？<b>未果。</b><br /><br />其实解决问题的根本还是找到为什么会冲突，搜索“窗口管理器metacity没有打开”结果看到下面这个文章：<br />UBUNTU中的Metacity窗口管理器_问草_百度空间 http://hi.baidu.com/069liuqing/blog/item/4fe900d7fb8c43dba044dfe3.html <br /><br />原来是安装compiz fusion又卸载之后的后遗症，需要把一个参数改一下：<br /><blockquote> Alt + F2，打开“运行应用程序”对话框。输入 gconf-editor，并按回车。<p> 导航到 Apps-&gt;<strong style="color: black; background-color: rgb(255, 255, 102);">metacity</strong>-&gt;general，并选中 compositing_manager，将其值改为false</p></blockquote> 这样就没有冲突了，问题解决。可以正常使用cairo-dock了。<br /><br /><br /><br /><br /><br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=8c289d3a-4a16-81ee-a22f-884af59fd414" /></div></p>
+    <title type="html"><![CDATA[尝试在ubuntu系统中使用octopress]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again/"/>
+    <updated>2015-11-28T17:43:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/28/try-octopress-in-ubuntu-again</id>
+    <content type="html"><![CDATA[<p>实际上Ubuntu14.04上安装和使用octopress会更容易，因为大部分的程序已经安装好或系统自带。<br/>
+比如git,ruby等</p>
 
+<p>安装的过程基本可以参照：<br/>
+rominyue的<a href="http://blog.rominyue.com/blog/2014/10/04/ubuntuxia-an-zhuang-octopress/">Ubuntu14.04下搭建Octopress</a></p>
+
+<p>其中最容易出问题的是这里：</p>
+
+<pre><code>$ gem install bundler #要在gemfile中更新用taobao的https源  
+$ bundle install #出错提示版本号不对  
+$ rake install  
+</code></pre>
+
+<p>我遇到的麻烦是提示rake版本不对，显示错误提示：<br/>
+rake aborted! You have already activated rake 10.0.2, but your Gemfile requires rake 0.9.7.3<br/>
+后来删除了10.0.2新版本，就好了。</p>
+
+<pre><code>$ gem uninstall rake #之后选择要删除的版本即可  
+</code></pre>
+
+<p>参见：<a href="http://stackoverflow.com/questions/13489953/rake-aborted-you-have-already-activated-rake-10-0-2-but-your-gemfile-requires">控制rake版本</a></p>
+
+<p>多人协作时，编辑前先获得最近版本</p>
+
+<pre><code>$ cd octopress  
+$ git pull origin source  
+$ cd ./_deploy  
+$ git pull origin master  
+</code></pre>
+
+<p>保存博客源码到github source分支:</p>
+
+<blockquote><pre><code>$ git add .  
+  $ git commit -m 'blog source'  
+  $ git push origin source  
+</code></pre></blockquote>
+
+<p>最后重新建立ssh密钥，参见：<a href="https://help.github.com/articles/generating-ssh-keys/">这里</a></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu新手上路之系统安装篇-穷折腾是良好的学习开始]]></title>
-    <link href="http://lukezhg.github.com/blog/2011/03/27/ubuntu-setup/"/>
-    <updated>2011-03-27T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2011/03/27/ubuntu-setup</id>
-    <content type="html"><![CDATA[<p>很早就听周围的朋友推荐ubuntu（英文单词不好念，我就戏称它为啊笨图，其实它一点也不笨），但是一直没有动手。原因其实很简单，就像要居家搬迁一样，如果不是必要，谁也不愿意到异地他乡重建家园。但是最近xp让我很无奈，是不是死机，而且我喜欢尝试一些新的软件，这样c盘的windows就越来越大，感觉像一个越来越臃肿的政府，庞大到了一定程度，就不再是它为用户服务，而是用户围着它转，这的确是挺烦的，编程者可能感受更深。<br /><br />但是想一下子彻底的搬，对于我还真是困难，因为已经熟悉和搭建好的工作环境，要是一下至到了一个陌生的环境，还真不适应，影响工作。于是我想了一个折中的办法，把啊笨安装在移动硬盘上，这样什么时候想体验一下ubuntu，什么时候插上就行，而眼前的工作还是可以在xp下完成。<br /><br />下载了unbuntu 10.04[<a target="_blank" href="http://www.ubuntu.org.cn/netbook/get-ubuntu/download/">http://www.ubuntu.org.cn/netbook/get-ubuntu/download/</a>], 然后制作了live usb，虽然可以在live usb上体验，但是用户的设置不会被保留.所以还是必须安装啊笨才行。我安装的过程参照了教程[真正把Ubuntu装到移动硬盘里 <a target="_blank" href="http://ubuntuabc.com/123/?p=58">http://ubuntuabc.com/123/?p=58</a>] ,但是在第5步的时候，我选择手动指定分区之后，什么也没有显示，于是我只好删除了移动硬盘上的第一分区，然后选择使用最大的连续空间，这样可以继续安装下去了。<br /><br />但是安装了之后，可以启动移动硬盘上的ubun，似乎一切正常，但是当我拔掉移动硬盘之后，开机显error no such device #@###@，grub rescue示，xp启动不了了，必须连上移动硬盘才能引导xp启动。这让我很恼火，难道以后我每次都要背着移动硬盘到处跑吗。显然我希望，没有移动硬盘，也要让xp工作才行。于是我开始google了解，原来是安装ubuntu的时候，把xp的mbr（主引导记录）文件给覆盖了，这是ubuntu安装时默认覆盖的。没办法，之后再Google选找解决方案，我找到了下面3篇比较有用的方案：<br /><ol><li>在移动硬盘中安装ubuntu的一点小问题解决_游走江湖_百度空间: <a target="_blank" href="http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html">http://hi.baidu.com/mi2006/blog/item/cdb015242dd17e3cc89559ed.html</a></li><li>移动硬盘上安装Ubuntu，拔掉移动硬盘后，本地硬盘上xp系统却引导不了_G号→攻击_百度空间: <a target="_blank" href="http://hi.baidu.com/xute1126/blog/item/a5db8d09c307e82c6a60fb55.html">http://hi.baidu.com/xute1126/blog/item/a5db8d09c307e82c6a60fb55.html</a></li><li>当硬盘不能引导的时候：<a href="http://www.guanwei.org/post/tech/09/MBR.html">http://www.guanwei.org/post/tech/09/MBR.html</a></li></ol><br />但是这些方案让我很纠结，因为他们遇到的情况虽然和我相似，但是并不完全一样。<br />第1个方案把问题描述的最清楚，但是我没有xp的安装盘，我这个是上网本，没有光驱。<br />第2个方案，虽然我也下载了相关的程序，但是发现在我的xp系统引入后，根本无法使用grubinst_gui把grub4dos安装到MBR，而且它要求把grub4dos的两个文件拷贝到fat16格式的盘符中，我系统全都是ntfs，硬盘是fat32，哪来的fat16吗，所以也不行。<br />第3个方案，我尝试下载了winPE精简版，然后做了U盘启动盘，结果还是启动不了。<br /><br />其实关键问题在于修复被覆盖过的xp的MBR文件，于是我开始google修复MBR文件的文章，最后我发现一个解决方案：<br />如何恢复XP的MBR « 俞弘的网络日志: <a target="_blank" href="http://www.eusoftware.com/hongyu/?p=54">http://www.eusoftware.com/hongyu/?p=54</a><br /><br />按照这个方案，我进行了修复，结果可以正常启动xp了。问题终于算是解决了。庆祝一下[--ddd--]<br /><br />现在我可以享用xp就用xp，享用啊笨就用ubuntu。但是，但是，还有以下问题待解决：<br />如何在ubuntu下给我的Ausu EEE PC 1101Ha驱动显卡？<br />如何在ubuntu下安装tar.gz的软件包？<br />我的xp虽然可以正常启动，但是网卡驱动却出现了问题，而且再重启的时候也出现过几次屏幕颤抖和变色，这又如何解决？<br /><br />如果你看到这篇文章，恰巧有知道，请不吝赐教！<br /><br />总结，有的时候纯属穷折腾，结果遇到不少问题，于是迫不得已硬着头皮进行问题解决，结果学习发生了。试想，如果我们只是停留在自己原有的熟悉的环境中，又怎能发现自己还有这么多东西不知道呢，所以说，穷折腾是良好的学习开始！<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=078f640e-cba5-8d80-8710-11df07f3f7cb" /></div></p>
+    <title type="html"><![CDATA[重装Ubuntu备忘]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall/"/>
+    <updated>2015-11-26T10:54:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/11/26/ubuntu-reinstall</id>
+    <content type="html"><![CDATA[<p>安装软件：<br/>
+输入法 ：搜狗输入法<br/>
+视频播放：VLC media player<br/>
+文本编辑：Vim<br/>
+图片查看：gwenview<br/>
+浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)</p>
 
+<p>firefox安装flash插件<br/>
+<code>
+sudo apt-get update<br/>
+sudo apt-get install flashplugin-installer<br/>
+</code></p>
+
+<p>开机亮度设置<br/>
+一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程</p>
+
+<p><a href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a></p>
+
+<p>网络不稳定<br/>
+修改/etc/ppp/options</p>
+
+<pre><code>sudo gedit options  
+</code></pre>
+
+<p>应会发以下选项：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 4  
+</code></pre>
+
+<p>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：</p>
+
+<pre><code>lcp-echo-interval 30  
+lcp-echo-failure 15  
+</code></pre>
+
+<p>关闭ipv6</p>
+
+<pre><code>cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+显示0说明ipv6开启，1说明关闭
+</code></pre>
+
+<p>如果开启，关闭ipv6的方法：<br/>
+在 /etc/sysctl.conf 增加下面几行，并重启。</p>
+
+<h1>disable IPv6</h1>
+
+<pre><code>net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre>
+
+<p>安装scikit-learn<br/>
+<code>
+python 运行文件名<br/>
+python -V<br/>
+sudo apt-get install python3-pip<br/>
+sudo apt-get install python-scipy<br/>
+sudo apt-get install python-numpy<br/>
+sudo apt-get install python-matplotlib<br/>
+sudo apt-get install nautilus-open-terminal<br/>
+</code></p>
+
+<p>pip install -U scikit-learn<br/>
+参考：
+Installing scikit-learn — scikit-learn 0.17 documentation<br/>
+http://scikit-learn.org/stable/install.html</p>
+
+<p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br/>
+http://penandpants.com/2012/02/24/install-python/</p>
+
+<p>安装 ipython notebook<br/>
+   pip install ipython
+   apt-get install ipython-notebook<br/>
+   ipython notebook --pylab inline --ip 0.0.0.0<br/>
+   然后用了浏览器访问对应的ip即可看到</p>
+
+<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br/>
+http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu crash on graphic driver]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver/"/>
+    <updated>2013-11-08T22:14:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/ubuntu-crash-on-graphic-driver</id>
+    <content type="html"><![CDATA[<p>Today I updated ubuntu, and then I can't start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.</p>
+
+<p>I tried many times and finially I got it back to normal. The solving process:</p>
+
+<pre><code>#login with your username and password
+cd Downloads # where my dirver is
+sudo sh amd-driver-64.run
+setup it (always select the first selection and ok)
+#restart
+</code></pre>
+
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.</p>
+
+<p>The problem I have to solve:<br/>
+1.  How to stop the update for the graphic driver?<br/>
+2.  How to recover my ubuntu quickly?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TMUX and VIM in ubuntu]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu/"/>
+    <updated>2013-11-08T13:56:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/11/08/tmux-and-vim-in-ubuntu</id>
+    <content type="html"><![CDATA[<p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.</p>
+
+<p>Today, I want to record what I had learnt about TMUX and Vi.</p>
+
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.</p>
+
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br/>
+REMEMBER to press Ctrl+B first!!</p>
+
+<pre><code>%  #divide screen left and right  
+"  #divede screen up and down  
+Ctrl + Down #make the down screen smaller  
+exit #cancel present screen  
+n  #new dash window  
+</code></pre>
+
+<p>That is it.</p>
+
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:</p>
+
+<pre><code>Ctrl +: #this will let you enter the file operation mode  
+i       #this will let you enter the edit mode, Press Esc to enter : mode  
+v       #this will let you enter copy and paste mode, Press Esc to enter : mode  
+</code></pre>
+
+<p>When you press 'v' in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:</p>
+
+<pre><code>y       #copy  
+d       #delete
+p       #paste  
+Ctrl+:  #show clipped board  
+:%s/ski/sky/g  #replace ski with sky in all place  
+</code></pre>
+
+<p>How to save file</p>
+
+<pre><code>:w filename
+:w! filename
+:wq #quit and save
+:q! #quit not save
+</code></pre>
+
+<p>How to open file</p>
+
+<pre><code>:open filename
+:open ~/luke/code/try.py  
+</code></pre>
+
+<p>How to search in a file</p>
+
+<pre><code>:/ pattern  
+:? pattern  
+n:search next  
+N:search previous  
+</code></pre>
+
+<p>How to cancel and redo</p>
+
+<pre><code>:u  for cancel  
+Ctrl + R：redo  
+</code></pre>
+
+<p>How to paste from system clipboard</p>
+
+<pre><code>shift+insert  
++p  
+</code></pre>
+
+<p>Isn't easy. But it takes time to get used to them and operate unconsioucely.</p>
+
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:</p>
+
+<pre><code>Ctrl + Alt + L     lock the desktop  
+Win                applications desktop  
+Ctrl + Alt + Left  shift to left desktop  
+Alt + Tab          shitt applications  
+Alt + F4           shut down present application  
+Ctrl+Win+Up        Maxilize present window  
+Ctrl+Win+Down      Minilize presnet window  
+Ctrl+Alt+T         Open terminal
+$ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2  
+Ctrl+Shift+Arrow   Shift Workplace  
+Ctrl+Shift+Alt+Arrow   move present window to Workplace  
+</code></pre>
+
+<p>Want to know more, click <a href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br/>
+Now almost done, and wait to be expanded.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu命令手册]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief/"/>
+    <updated>2013-08-31T12:33:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/31/ubuntu-command-brief</id>
+    <content type="html"><![CDATA[<p>在摸索过程中经常使用的命令： <br/>
+安装和执行程序<br/>
+-  sudo apt-get install appname  安装程序应用
+-  make install 编译并安装 .tar.gz2 <br/>
+-  sh xx.sh  执行.sh文件<br/>
+-  sudo su 切换到root用户<br/>
+-  sudo exit 推出root用户</p>
+
+<p>python相关命令<br/>
+-  python xx.py 执行py文件<br/>
+-  python -V</p>
+
+<p>设置命令：<br/>
+设置工作台数量：（纵向数目1，横向数目4）</p>
+
+<pre><code>gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/vsize 1
+gconftool-2 --type=int --set /apps/compiz-1/general/screen0/options/hsize 4
+</code></pre>
+
+<p>察看RVM可供安装的ruby版本和现用版本<br/>
+-  rvm list known<br/>
+-  rvm list</p>
+
+<p>编辑文本文档<br/>
+-  vi filename<br/>
+-  gedit filename</p>
+
+<p>发布octopress博文<br/>
+-  rake generate<br/>
+-  rake preview<br/>
+-  rake deploy<br/>
+-  rake new_post["post title"]</p>
+
+<p>文件操作<br/>
+-  cp  复制文件 到另外一个目录<br/>
+-  mv 文件 文件目录<br/>
+-  rm 文件名文件名删除一个文件或多个文件<br/>
+-  rm –rf 非空目录名删除一个非空目录下的一切</p>
+
+<ul>
+<li>touch 文件名创建一个空文件</li>
+<li>mkdir 目录名创建一个目录</li>
+<li>rmdir 空目录名删除一个空目录</li>
+<li>lsusb 查看usb接口</li>
+<li>lspci 查看pci接口</li>
+</ul>
+
+
+<p>批量改名</p>
+
+<pre><code>rename 's/lecture/slide/' *.jpg  
+</code></pre>
+
+<p>将当前目录中所有jpg文件名中lecture替换为slide。</p>
+
+<p>批量替换文件内容</p>
+
+<pre><code>perl -pi -e 's|Windows|Ubuntu|g' `find ./ -type f`
+</code></pre>
+
+<blockquote><p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义
+<a href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p></blockquote>
 ]]></content>
   </entry>
   

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 科研 | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/blog/categories/科研/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[论文写作与修改原则]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/04/07/paper-writing/"/>
+    <updated>2018-04-07T13:00:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/04/07/paper-writing</id>
+    <content type="html"><![CDATA[<h3>原则1:论文要提出、有价值的、可研究的研究问题。</h3>
+
+<p>为了提出这样的问题，必须要做好文献综述工作，梳理已有的研究问题、研究对象、研究方法、研究结果，进而了解哪些有价值的问题还没有研究，哪些研究方法是可以尝试的研究方法，现有的研究基础是怎样的。这些工作需要在论文开题时就要完成。</p>
+
+<p>这也构成了论文研究的前半部分：<br/>
+研究背景（做这项研究的目的和背景）
+研究综述（总结已有相关研究，确定研究理论框架，提出值得进一步探索的研究问题）
+研究方法（针对研究问题明确研究思路、研究对象、研究工具、要收集的数据）</p>
+
+<h3>原则2:论文要有明确的论点、可信的证据和严谨的论证过程。</h3>
+
+<p>为了回应研究问题，研究者需要基于收集的数据和研究结果得出结论。这些结论必须明确，并且有可信的证据支持，论证过程必须符合逻辑。要注意是否有被忽略的证据和价值观假设，是否有其他可能的解释等。此外，在讨论部分还要交代研究的结论与别人研究的关系如何？对理论和现实有哪些价值？</p>
+
+<p>这部分构成了论文的后半部分：<br/>
+研究结果：基于数据分析描述研究的结果
+研究结论和讨论：基于结果得出结论，并与其他研究相比较，讨论研究的意义和价值。</p>
+
+<h3>原则3:论文要有清晰的结构和严谨的格式。</h3>
+
+<p>写论文时应该把论文的框架做成概念图，并调整内容顺序，直到呈现清晰而有条理的结构。<br/>
+要检查标题、摘要、关键词、目录、表格、图片、参考文献的格式。细节彰显态度。</p>
+
+<p>比如下面的论文目录结构：</p>
+
+<p>《科学论证视角下高中新手与专家教师生物学课堂话语的比较研究》论文目录结构</p>
+
+<pre><code>1.绪论
+1.1研究背景
+1.2研究目的与意义
+1.3文献综述
+1.3.1国外研究现状
+1.3.2国内研究现状
+
+2.理论基础
+2.1新手教师与专家教师比较研究
+2.2科学论证
+2.2.1科学论证的定义
+2.2.2图尔敏论证模型
+2.3课堂话语
+2.4科学论证视角下的课堂话语分析
+
+3.研究方法
+3.1研究问题与思路
+3.2研究对象
+3.3研究方法
+3.3.1文献研究法
+3.3.2视频分析法
+3.3.3访谈法
+3.4数据收集与分析方法
+
+4.研究结果
+4.1论证话语与非论证话语整体比较
+4.2论证话语子维度话语类别
+4.3非论证话语子维度话语类别
+
+5.研究结论与讨论
+5.1讨论
+5.2研究结论
+5.2.1话语特点
+5.2.2对论证的态度
+5.3研究局限
+5.4研究展望
+
+6.建议与启示
+6.1研究对于开展科学论证教学实践的启示
+6.1.1教师要善于挖掘新的材料，创造论证的机会
+6.1.2教师应当给予学生积极的发言权
+6.1.3教师应当注意培养学生的证据意识
+6.1.4教师应当注重问题设计的逻辑和层次性
+6.1.5教师应当选择适合进行论证的教学内容
+6.2研究对于教师教育的启示
+
+参考文献
+附录
+附录一 教学视频主题
+附录二 访谈稿
+致谢
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[研究生科研能力进阶]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/01/14/research-task-level/"/>
+    <updated>2018-01-14T08:08:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/01/14/research-task-level</id>
+    <content type="html"><![CDATA[<p>这个时代变化太快。技术、产业革新周期越来越短，短到可怕。行业竞争正在从数量竞争转向质量竞争。谁还在按照惯性而行，谁就注定被惯性束缚，被体制牵绊。这是个最好的时代，因为万事皆可能。这也是一个最坏的的时代，因为你面临选择，面临无限多个选择，选择的机会成本无限飙升，时间成为最后稀缺资源和最昂贵的成本。未来是个超级岔路口，你是否能掌握住自己的命运，关键在于你现在的选择，关键在于你如何花费你的时间。时间就生命。</p>
+
+<p>在短暂的研究生学习期间，你可以集中精力尝试按照下面的进阶路径发展自己的科研能力，也能为你节约宝贵的时间。5个水平具有先后顺序，你一定要从1到5，不要轻易越级，每个水平中有3项任务，建议全部完成后再挑战下一个水平的任务。当然你还可以利用这个水平等级任务估计自己所处的水平，然后再次出发。 <br/>
+```
+Level 1：在详细指导下参与项目工作
+* 按照给定要求收集数据
+* 按照给定格式录入数据
+* 对给定资料进行翻译</p>
+
+<p>Level 2：在指定任务要求下开展工作
+* 就给定主题收集、整理资料或者独立做一次访谈
+* 就给定文献库撰写文章概要
+* 按照APA要求完善论文格式</p>
+
+<p>Level 3：独立进行信息加工和概括
+* 撰写文献综述
+* 撰写读书报告
+* 撰写数据分析报告</p>
+
+<p>Level 4：在具体提示下开展研究工作
+* 提出研究问题，并制订研究计划
+* 尝试编制研究工具，并修改完善
+* 撰写研究计划书</p>
+
+<p>Level 5：在方向性提示下完成研究工作
+* 结合文献、研究结果、现状撰写论文（标题 摘要 关键词 前言
+  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）
+* 在公共场合独立介绍和展示自己的研究工作并交流讨论
+* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护
+```</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何写文章摘要]]></title>
+    <link href="http://zhangchunlei.com/blog/2017/09/18/how-to-write-a-summary/"/>
+    <updated>2017-09-18T09:34:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2017/09/18/how-to-write-a-summary</id>
+    <content type="html"><![CDATA[<p>写文章摘要主要是练习概括和书面表达能力。研究写文献综述，第一步就是写文章摘要。写文章摘要，很多同学认为就是摘录句子，这只是最低的层次，当然能找到最关键的句子也是必要的第一步。第二步就是找到作者的主要观点以及证据，进而形成文章的框架。第三步是用自己的语言概括出主要观点以及证据，并且按照自己的逻辑从新组织。</p>
+
+<p>那么如何评价文章摘要写的好不好呢？华东师范大学杨向东教授曾经展示过一个标准，我个人比较推崇：<br/>
+文章摘要写作的评价标准：
+0分<br/>
+没有提交或者不符合要求。 <br/>
+1分<br/>
+陈述完全从材料中复制，孤立、不完整。观点不完整，缺乏组织。 <br/>
+2分<br/>
+陈述间有说联系，但是不完整，绝大多数为材料原句。有时出现过多的细节。<br/>
+3分
+陈述有更多的组织和整合，并试图用自己的语言表述。仍然有较强的照搬痕迹。包括了大多数要点，但是有一到两个重要观点缺失。<br/>
+4分
+能用自己的语言进行组织和整合，有时还有轻微照搬倾向，但不明显。包括了所有主要观点，偶尔要点理解有所偏差。<br/>
+5分<br/>
+能用自己的语言进行陈述，组织合理、整合恰当。没有任何照搬的现象。包括所有主要观点，且理解正确。</p>
+
+<p>根据这个标准，写作者可以对自己的summary进行自评。这样在会写summary的基础上，写review就有基础了，也不会总是犯罗列和照抄等低级错误。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何设计一个教育评价方案]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan/"/>
+    <updated>2015-12-02T16:50:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/12/02/develop-an-evaluation-plan</id>
+    <content type="html"><![CDATA[<p>为了检测课程改革实施的效果或者某个项目的成效，你往往需要首先设计出一个评价方案。</p>
+
+<p>你可以按照以下步骤来设计：<br/>
+1、首先描述项目的目的<br/>
+2、其次描述出项目的具体目标<br/>
+3、对项目内容及过程进行描述<br/>
+4、列出项目评估问题<br/>
+5、列出评估数据来源<br/>
+6、给出收集数据的方法和工具</p>
+
+<p>实际上前3项都是项目描述，如果项目本身都描述不清楚，就不可能设计出合适的评估方案。</p>
+
+<h3>基于模型的科学探究案例</h3>
+
+<p>1、首先描述项目的目的<br/>
+该教学模式目的在于让学生有更多的机会体验和参与科学模型建构的过程，发展学生的科学探究能力以及对科学本质的认知，加深对科学概念的理解，提高学生学习科学的兴趣。</p>
+
+<p>2、其次描述出项目的具体目标<br/>
+发展学生的科学探究能力<br/>
+加深学生对科学本质的认知<br/>
+提高学生科学概念的理解<br/>
+提高学生学习科学的兴趣</p>
+
+<p>3、对项目内容及过程进行描述<br/>
+利用计算机模拟软件进行辅助，让学生能够针对研究的问题，提出假设和实验设计，并在计算机上模拟，收集收据，根据结果检验、验证或完善自己的解释模型。</p>
+
+<p>教学的流程为：
+a.基于某一自然现象提出问题<br/>
+b.解释学生对于这一问题的已有知识和经验，并让学生构建自己的解释模型<br/>
+c.用真实的实验或计算机模型实验来检验自己的模型<br/>
+d.基础获取的数据和模拟结果，对自己的模型进行修正和完善，最终基于证据解释该自然现象</p>
+
+<p>4、列出项目评估问题<br/>
+经过这样的教学：<br/>
+学生的科学探究能力有显著提高吗？<br/>
+学生对科学本质的认识有显著变化吗？<br/>
+学生对科学概念的理解有显著增长吗？<br/>
+学生对科学的学习兴趣有显著提高吗？</p>
+
+<p>5、列出评估数据来源<br/>
+直接对学生的纸笔测验（前测、后测、对照班）<br/>
+对学生的问卷调查<br/>
+对学生的单独访谈<br/>
+对学生课堂表现的观察</p>
+
+<p>6、给出收集数据的方法和工具<br/>
+科学探究能力<br/>
+科学本质观量表<br/>
+学生访谈提纲<br/>
+学生课堂表现观察表</p>
+
+<p>参考资源：<br/>
+<a href="http://omerad.msu.edu/meded/progeval/index.html">Program Evaluation Tutorial | Michigan State University</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[科学教育期刊]]></title>
+    <link href="http://zhangchunlei.com/blog/2015/09/30/science-education-journals/"/>
+    <updated>2015-09-30T04:15:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2015/09/30/science-education-journals</id>
+    <content type="html"><![CDATA[<p>SSCI英文期刊：<br/>
+Science Education(SE)<br/>
+International Journal of Science Education(IJSE)<br/>
+Journal of Research in Science Teaching(JRST)</p>
+
+<p>英文期刊数据库：<br/>
+<a href="http://onlinelibrary.wiley.com">Wiley</a><br/>
+<a href="http://www.springer.com">Springer</a><br/>
+<a href="http://eric.ed.gov/">Eric</a><br/>
+<a href="http://www.tandfonline.com">tandfonline</a><br/>
+搜索引擎：google scholar</p>
+
+<p>ECNU libary links <a href="http://202.120.82.17:8080/ldb/">here</a><br/>
+<a href="http://0-onlinelibrary.wiley.com.libecnu.lib.ecnu.edu.cn/">Wiley Online Library</a><br/>
+<a href="http://0-link.springer.com.libecnu.lib.ecnu.edu.cn/">SpringerLink Journals</a><br/>
+<a href="http://0-online.sagepub.com.libecnu.lib.ecnu.edu.cn/">SAGE Social Science &amp; Humanities Package</a><br/>
+<a href="http://0-www.webofknowledge.com.libecnu.lib.ecnu.edu.cn/wos">Web of Science</a></p>
+
+<p>CSSCI中文期刊：<br/>
+教育研究<br/>
+教育科学<br/>
+课程.教材.教法</p>
+
+<p>生物学科类：<br/>
+中学生物教学<br/>
+生物学教学<br/>
+生物学通报<br/>
+中学生物学</p>
+]]></content>
+  </entry>
+  
+</feed>

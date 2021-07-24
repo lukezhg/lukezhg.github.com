@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[tags: info sources | Chunlei's Blog]]></title>
-  <link href="http://lukezhg.github.com/tag/info-sources/atom.xml" rel="self"/>
-  <link href="http://lukezhg.github.com/"/>
-  <updated>2013-02-04T20:53:06+08:00</updated>
-  <id>http://lukezhg.github.com/</id>
+  <link href="http://zhangchunlei.com/tag/info-sources/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
   <author>
     <name><![CDATA[chunlei]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Critical thinking and constructional suggestions]]></title>
-    <link href="http://lukezhg.github.com/blog/2009/06/07/critical-thinking-and-constructional-suggestions/"/>
+    <link href="http://zhangchunlei.com/blog/2009/06/07/critical-thinking-and-constructional-suggestions/"/>
     <updated>2009-06-07T00:00:00+08:00</updated>
-    <id>http://lukezhg.github.com/blog/2009/06/07/critical-thinking-and-constructional-suggestions</id>
+    <id>http://zhangchunlei.com/blog/2009/06/07/critical-thinking-and-constructional-suggestions</id>
     <content type="html"><![CDATA[<p>Today we have many many info sources and much much information to check out. But it is still difficult for us to access the right info precisely and quickly. There are too much unrelated info to let out, and too much incorrect info to correct. And we should also learn to judge which info source is more comprehensive and which is just one-sided or even telling lies.</p>
 
 

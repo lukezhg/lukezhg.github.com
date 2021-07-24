@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: math | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/math/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[数学学习资源与方法]]></title>
+    <link href="http://zhangchunlei.com/blog/2021/01/28/math-for-kids/"/>
+    <updated>2021-01-28T16:42:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2021/01/28/math-for-kids</id>
+    <content type="html"><![CDATA[<h3>数学学习的应用程序</h3>
+
+<p><a href="https://www.mathplayground.com/">https://www.mathplayground.com/</a><br/>
+<a href="https://www.doodlemaths.com/available-apps/">https://www.doodlemaths.com/available-apps/</a></p>
+
+<h3>网站</h3>
+
+<p><a href="https://www.ck12.org/student/">https://www.ck12.org/student/</a><br/>
+<a href="https://schoolyourself.org/learn">https://schoolyourself.org/learn</a></p>
+
+<h3>自学图书推荐</h3>
+
+<pre><code>https://www.neilwithdata.com/mathematics-self-learner
+https://marktomforde.com/academic/mathmajors/textbook-suggestions.html
+https://www.myopenmath.com/info/selfstudy.php
+https://mathblog.com/mathematics-books/
+https://www.adequatedeal.com/blog/best-selling-mathematics-textbooks-of-all-time-must-read-it/
+https://bookauthority.org/books/best-math-books
+</code></pre>
+
+<h3>数学家谈数学怎么学</h3>
+
+<p><a href="http://zhishifenzi.com/depth/depth/5720.html">丁玖：数学应该怎么学？</a></p>
+
+<pre><code>专注于自己的学习  
+理解概念   
+费恩曼读书法   
+看懂定理的证明  
+科学地做题  
+正确看待考试  
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

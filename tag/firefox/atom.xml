@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: firefox | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/firefox/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox extension FireGesture Scripts]]></title>
+    <link href="http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts/"/>
+    <updated>2013-08-26T18:23:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2013/08/26/firefox-extension-firegesture-scripts</id>
+    <content type="html"><![CDATA[<p>I found the firefox extension Firegesture is very useful. You can self-define the function of your gestures.</p>
+
+<p>The following are my scripts:<br/>
+1.  Sina Weibo(DUDU)<br/>
+<code></p>
+
+<pre><code>var sel = 'http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&amp;url='+encodeURIComponent(window.content.location.href)+'&amp;source=bookmark';
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+2. iciba(RLR)<br/>
+<code></p>
+
+<pre><code>var word = getBrowserSelection();
+if (!word)
+    return;
+var sel = 'http://www.iciba.com/'+encodeURIComponent(word);
+gBrowser.loadOneTab(sel, {
+    inBackground: true,
+    relatedToCurrent: true
+});
+</code></pre>
+
+<p></code>
+3.  Copy the title and url</p>
+
+<pre><code>
+const AS_HTML = false;
+
+function htmlEscape(s) {
+  s = s.replace(/&/g, "&amp;");
+  s = s.replace(/>/g, "&gt;");
+  s = s.replace(/</g, "&lt;");
+  s = s.replace(/"/g, "&quot;");
+  return s;
+}
+var url = window.content.location.href;
+var title = window.content.document.title;
+var txt = AS_HTML ? 
+  '<a href="' + htmlEscape(url) + '">' + htmlEscape(title) + '</a>' : 
+  title + "\n" + url;
+var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"]
+                .getService(Ci.nsIClipboardHelper);
+clipboard.copyString(txt);
+</code></pre>
+
+]]></content>
+  </entry>
+  
+</feed>

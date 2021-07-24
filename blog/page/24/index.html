@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Chunlei's Blog</title>
+  <meta name="author" content="chunlei">
+
+  
+  <meta name="description" content="快捷键： Finder
+显示隐藏文件：shift + command + .
+回到主目录：shift+command+H 需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
+复制：command+c
+粘贴：command+v
+拖拽的功能很厉害。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zhangchunlei.com/blog/page/24/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chunlei's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chunlei's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com.hk/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:zhangchunlei.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/cn">CN</a></li>
+  <li><a href="/en">EN</a></li>
+  <li><a href="/app">App</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/09/07/tips-for-mac-users/">Tips for Mac Users</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-09-07T18:10:00+08:00" pubdate data-updated="true">Sep 7<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/09/07/tips-for-mac-users/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>快捷键：</h2>
+
+<p>Finder
+显示隐藏文件：shift + command + .<br/>
+回到主目录：shift+command+H</p>
+
+<p>需要自己设置键盘快捷键，利用关键字 如 Copy， Cut， Paste， Select All。
+复制：command+c
+粘贴：command+v
+拖拽的功能很厉害。</p>
+
+<h2>bash命令：</h2>
+
+<p>复制：cp
+目录：cd
+列表：ls
+移动：mv  源文件 目标文件</p>
+
+<h2>批量重命名：</h2>
+
+<p>Mac自带有这种功能，你只需要多选文件，然后右键，选择重命名这些文件，就会弹出批量重命名的窗口。</p>
+
+<h1>设置文件：</h1>
+
+<pre><code>vi ~/.bash_profile  #编辑设置文件
+ls -l -a   列出指定目录下文件
+           -l 显示文件的详细信息
+           -a 显示目录下所有文件（包括隐藏文件）
+           -d 显示指定目录pwd  显示当前的工作目录的路径
+touch 目录名：查看指定文件，若没有此文件则创建空文件；更改文件时间戳
+chmod 更改指定文件或目录的权限
+</code></pre>
+
+<h2>进程管理</h2>
+
+<pre><code>ps aux 静态查看进程
+top 动态查看进程
+kill 杀死进程
+kill -9 pid       杀死指定进程
+</code></pre>
+
+<h2>其他命令</h2>
+
+<pre><code>man  显示帮助文件（按q退出）
+ifconfig 查看或修改ip地址
+sudo 以root权限执行一次命令
+clear / ctrl+L   清屏
+ctrl+C     无条件终止
+</code></pre>
+
+<h2>文件操作</h2>
+
+<pre><code>rm –rf * 强制删除当前目录下所有文件
+rm -rf        删除文件或目录
+cp -r         复制文件
+mv         移动文件
+stat 文件名  查看文件详细信息
+find  查找文件
+find / -name *       查找文件
+mkdir   创建新目录
+rmdir   只能删除空目录
+</code></pre>
+
+<h2>修改文件：</h2>
+
+<pre><code>echo:输出字符串或变量值
+echo “字符串” &gt; file  #用&gt;时，指定的文件若不存在，创建文件；若存在，覆盖原文件内容
+echo “字符串” &gt;&gt; file #用&gt;&gt;时，指定的文件若不存在，创建文件；若存在，在原文件内容后追加内容
+</code></pre>
+
+<h2>ssh文件同步</h2>
+
+<p>同步到服务器</p>
+
+<pre><code>scp -r localhome/* root@ip:/home/localhome/
+</code></pre>
+
+<p>同步到本地</p>
+
+<pre><code>scp -r root@ip:/home/localhome/* localhome／
+</code></pre>
+
+<h2>多个Python共存</h2>
+
+<pre><code>pyenv versions #参看版本信息
+pyenv global 3.6.3 #切换3
+pyenv global 2.7.13 #切换到2
+source ~/.bash_profile
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/09/07/haxe-sublime-packagecontrol/">Haxe Sublime PackageControl</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-09-07T09:50:00+08:00" pubdate data-updated="true">Sep 7<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/09/07/haxe-sublime-packagecontrol/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Flash已经慢慢被H5取代，但是最近缺还是用flash编制了一个小游戏，一个太空穿越游戏。</p>
+
+<p>因此，想尝试将其转化为H5，最直接的方法就是手动改，这种方法最有效直接，也最靠谱。</p>
+
+<p>但是本着懒人的精神，google了其他的方法，方法有很多种，比如swiffy就是一种能将swf转化成h5的应用，而且特别是对于只有动画的flash和as2.0特别好用。但是对于我用AS3写的游戏，不靠谱。</p>
+
+<p>于是又找到了一种方法，就是用haxe这种跨语言的程序语言，它继承了很多AS的特性，因此很容易改写代码，然后也很容发布称为H5，不过还是绕不开人工改写。其实有一个AS3HX的插件可以自动转化代码，我是一了一下，出现错误。也就放弃了。</p>
+
+<p>但是，我却对Haxe产生了兴趣，并且安装了haxe和openfl，还找了一个<a href="http://haxecoder.com/post.php?id=14">现成的代码</a>玩了一下，还是挺容易上手的。</p>
+
+<p>大体过程bash如下：</p>
+
+<pre><code>
+openfl create project ProjectName #新建项目
+cd ProjectName #进入项目目录
+sublime Source/Main.hx #修改代码
+openfl test html5 #测试，或者 openfl test neko 或者 openfl test flash
+</code>></pre>
+
+
+<blockquote></blockquote>
+
+<p>这个例子打开了Haxe的窗口，用这种程序代码就不担心发布的产品因为受到语言软件限制而必须改写，因为直接换一种形式发布就ok了。</p>
+
+<p>下面是展示一张图片的代码，来自：<a href="http://www.openfl.org/learn/tutorials/displaying-a-bitmap/">openfl官网</a></p>
+
+<pre><code>
+package;
+
+import openfl.display.Bitmap;
+import openfl.display.Sprite;
+import openfl.Assets;
+
+class Main extends Sprite {
+
+    public function new () {
+
+        super ();
+
+        var bitmapData = Assets.getBitmapData ("assets/openfl.png");
+        var bitmap = new Bitmap (bitmapData);
+        addChild (bitmap);
+
+        bitmap.x = (stage.stageWidth - bitmap.width) / 2;
+        bitmap.y = (stage.stageHeight - bitmap.height) / 2;
+
+    }
+
+
+</code></pre>
+
+
+<p>要注意的是，展示的图片，放在assets文件夹中，然后直接调用即可。</p>
+
+<p>下面是一个推球游戏代码：<br/>
+http://haxecoder.com/post.php?id=14
+我们需要修改项目目录下的application.xml文件，来修改窗口大小和背景等属性。<br/>
+下面的两行代码就是设定窗口大小为 500x500，背景色为#333333:</p>
+
+<pre><code>
+<window background="#333333" fps="60" />
+<window width="500" height="500" unless="mobile" />
+</code></pre>
+
+
+<p>在测试这些代码的时候，我发现在sublime、终端、文件夹之间切换效率特别低，于是专门搜索了一下sublime的用法，其实sublime有很多插件可用，比如sidebar enhancement，haxe，markdown，terminal等，只需要从preference-package control进去，然后install相应的插件即可。这里大有文章可做。</p>
+
+<p>为了提高文件夹切换的效率，可以通过添加文件夹到项目的办法，这样sublime侧边栏就可以直接切换多个文件。</p>
+
+<p>为了让自发布博客更有效，我还在自己的~/.bash_profile中添加了alias语句，它的格式是：<br/>
+alias [别名]=&#8217;[指令名称]&#8217;)</p>
+
+<p>目的是在终端输入 rake的时候，系统会自动解读为 bundle exec rake。</p>
+
+<pre><code>
+alias rake='bundle exec rake'
+</code></pre>
+
+
+<p>通过这么一番折腾，mac的使用效率提升了不少。</p>
+
+<p>昨夜西风凋碧树
+独上高楼，望断天涯路</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/09/04/spcae-craft-game/">Space Craft Game</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-09-04T15:08:00+08:00" pubdate data-updated="true">Sep 4<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/09/04/spcae-craft-game/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>object</h3>
+
+<object 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="550" height="400" 
+ id="mymoviename"> 
+<param name="movie"  value="https://raw.github.com/lukezhg/Freyja/master/space-craft.swf" /> 
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<embed src="https://raw.github.com/lukezhg/Freyja/master/space-craft.swf" quality="high" bgcolor="#ffffff"
+width="550" height="400" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+</embed> 
+</object>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/08/25/deep-learning/">Deep Learning</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-08-25T11:00:00+08:00" pubdate data-updated="true">Aug 25<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/08/25/deep-learning/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>机器学习是人工智能中非常重要的一个分支。而深度学习则是机器学习中一个重要的方向。所以人工智能、机器学习和深度学习三个概念的关系是：<br/>
+【人工智能【机器学习【深度学习】】】</p>
+
+<p>在教育领域和计算机科学领域的深度学习并不是一个概念。</p>
+
+<p>这里主要尝试利用keras和python来进行深度学习模拟。</p>
+
+<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：</p>
+
+<pre><code>
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.optimizers import SGD
+
+# Generate dummy data
+import numpy as np
+x_train = np.random.random((1000, 20))
+y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
+x_test = np.random.random((100, 20))
+y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)
+
+model = Sequential()
+# Dense(64) is a fully-connected layer with 64 hidden units.
+# in the first layer, you must specify the expected input data shape:
+# here, 20-dimensional vectors.
+model.add(Dense(64, activation='relu', input_dim=20))
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(10, activation='softmax'))
+
+sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy',
+              optimizer=sgd,
+              metrics=['accuracy'])
+
+model.fit(x_train, y_train,
+          epochs=20,
+          batch_size=128)
+score = model.evaluate(x_test, y_test, batch_size=128)
+</code></pre>
+
+
+<p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
+
+<p>其他例子见：<a href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
+
+<p>（1）数据定义<br/>
+定义训练数据和检验数据，必要的时候需要对数据进行处理，从而使的数据的形状和大小符合要求。</p>
+
+<p>（2）模型定义 <br/>
+定义输入层、输出层以及中间的隐藏层，层的类别和神经元数量。</p>
+
+<p>（3）训练<br/>
+利用训练数据对模型进行fit，使得模型的参数与训练数据更好的吻合。</p>
+
+<p>（4）检验<br/>
+利用检验数据对模型及其参数进行检验，通常会依靠正确率以及gradient descent对模型进行评估和完善。</p>
+
+<p>（5）应用<br/>
+当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。</p>
+
+<p>机器学习可以用于：分类、聚类、回归、异常识别等。</p>
+
+<p>还可以制作聊天记起，比如利用chatbot制作的聊天机器人，还具有学习新对话的能力。<br/>
+http://127.0.0.1:8000/chat/</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/08/11/relationships/">社会需要与进化需要</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-08-11T15:37:00+08:00" pubdate data-updated="true">Aug 11<span>th</span>, 2017</time>
+        
+         | <a href="/blog/2017/08/11/relationships/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>人是社会关系的总和。人也是生物进化的产物。</p>
+
+<p>如果社会需要与进化需要相和谐，那么人就容易幸福。如果相矛盾，那么人就不容易幸福，因为他面临着取舍和选择，任何的选择都是有成本的。</p>
+
+<p>因此，人有两种本事，一种本事是解决进化需要。一种本事是解决社会需要。实际上，社会需要是人进化到一定阶段的产物，本质上也是一种进化需要。只不过这种需要让人从个体生存的焦虑中解脱出来，扩展到对群体或种族生存的关照。</p>
+
+<p>在面对和解决两种焦虑困惑时，佛家、道家和儒家采用了完全不同的方法。佛家是屏弃，无论是进化需要还是社会需要，无欲则刚。道家是顺应，无为而无不为，最后摆脱世俗纠缠、成仙得道。儒家是节制，适度满足同时节制，然后入世成圣。所谓的佛、仙、圣只是一种理想性的终极追求，不能当真的。但是处世的哲学和立场确是实实在在的。</p>
+
+<p>三种哲学之中，佛家的问题解决最彻底，道家的世事洞察最清晰，儒家的人生态度最积极。它们可以分别治疗人的贪婪、沉迷和消极。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/25/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/23/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p><img src="https://raw.github.com/lukezhg/Freyja/master/chunlei.png" alt="chunlei" /></p>
+  <p>慧行坚勇 <a href="http://zhangchunlei.com/about/">More</a> <a href="http://zhangchunlei.com/blog/categories/%E6%95%99%E5%AD%A6/">教学</a> <a href="http://zhangchunlei.com/blog/categories/%E7%A7%91%E7%A0%94/">科研</a> <a href="http://www.skc.ecnu.edu.cn/">skc</a> <a href="https://scholar.google.co.uk/">gs</a><a href="https://xueshu.baidu.com/">xs</a></p>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/07/21/python-draw-graph-to-visualize-data/">python draw graph to visualize data</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/07/04/the-chinese-post-80s/">中国80后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/14/theory-of-relativity/">相对论的理解</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/13/task-of-life/">自卑与超越</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/06/complexity/">复杂</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/03/self-grow-system/">自我成长系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/03/02/the-courage-to-be-disliked/">被讨厌的勇气-笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/02/08/writing-principles/">写作心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/28/math-for-kids/">数学学习资源与方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/01/23/github-project-collaboration/">如何使用github进行项目协作</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+    <ul id="category-list"><li><a href='/blog/categories/bilog'>BILOG (1)</a></li><li><a href='/blog/categories/book'>book (7)</a></li><li><a href='/blog/categories/code'>code (1)</a></li><li><a href='/blog/categories/comments'>comments (1)</a></li><li><a href='/blog/categories/computer'>computer (5)</a></li><li><a href='/blog/categories/courses'>courses (7)</a></li><li><a href='/blog/categories/firefox'>Firefox (4)</a></li><li><a href='/blog/categories/flash'>flash (4)</a></li><li><a href='/blog/categories/github'>github (3)</a></li><li><a href='/blog/categories/irt'>IRT (4)</a></li><li><a href='/blog/categories/machine-learning'>machine learning (1)</a></li><li><a href='/blog/categories/meeting'>meeting (3)</a></li><li><a href='/blog/categories/notes'>notes (1)</a></li><li><a href='/blog/categories/octopress'>octopress (1)</a></li><li><a href='/blog/categories/opencourse'>opencourse (4)</a></li><li><a href='/blog/categories/openlearning'>openlearning (4)</a></li><li><a href='/blog/categories/paper'>paper (1)</a></li><li><a href='/blog/categories/pck'>pck (5)</a></li><li><a href='/blog/categories/pisa'>PISA (1)</a></li><li><a href='/blog/categories/reflection'>reflection (1)</a></li><li><a href='/blog/categories/resources'>resources (1)</a></li><li><a href='/blog/categories/stem'>STEM (1)</a></li><li><a href='/blog/categories/supervision'>supervision (5)</a></li><li><a href='/blog/categories/ubuntu'>Ubuntu (7)</a></li><li><a href='/blog/categories/web2-0'>web2.0 (4)</a></li><li><a href='/blog/categories/webdev'>webdev (1)</a></li><li><a href='/blog/categories/writing'>writing (1)</a></li><li><a href='/blog/categories/书信'>书信 (1)</a></li><li><a href='/blog/categories/会议'>会议 (4)</a></li><li><a href='/blog/categories/体育训练'>体育训练 (1)</a></li><li><a href='/blog/categories/佛学'>佛学 (1)</a></li><li><a href='/blog/categories/健康'>健康 (3)</a></li><li><a href='/blog/categories/写作'>写作 (1)</a></li><li><a href='/blog/categories/博弈论'>博弈论 (1)</a></li><li><a href='/blog/categories/反思'>反思 (10)</a></li><li><a href='/blog/categories/国学'>国学 (1)</a></li><li><a href='/blog/categories/学习环境'>学习环境 (2)</a></li><li><a href='/blog/categories/学习社区'>学习社区 (2)</a></li><li><a href='/blog/categories/宝宝'>宝宝 (3)</a></li><li><a href='/blog/categories/家庭教育'>家庭教育 (7)</a></li><li><a href='/blog/categories/对话'>对话 (3)</a></li><li><a href='/blog/categories/工作'>工作 (1)</a></li><li><a href='/blog/categories/得到心得'>得到心得 (1)</a></li><li><a href='/blog/categories/心理学'>心理学 (2)</a></li><li><a href='/blog/categories/技术技巧'>技术技巧 (18)</a></li><li><a href='/blog/categories/搜索引擎'>搜索引擎 (4)</a></li><li><a href='/blog/categories/撰写中'>撰写中 (1)</a></li><li><a href='/blog/categories/教学'>教学 (53)</a></li><li><a href='/blog/categories/教学策略'>教学策略 (3)</a></li><li><a href='/blog/categories/教学设计'>教学设计 (3)</a></li><li><a href='/blog/categories/教师教育'>教师教育 (1)</a></li><li><a href='/blog/categories/教育'>教育 (3)</a></li><li><a href='/blog/categories/数学'>数学 (1)</a></li><li><a href='/blog/categories/新课堂'>新课堂 (1)</a></li><li><a href='/blog/categories/日志'>日志 (14)</a></li><li><a href='/blog/categories/有效教学'>有效教学 (1)</a></li><li><a href='/blog/categories/服务器'>服务器 (1)</a></li><li><a href='/blog/categories/机器学习'>机器学习 (1)</a></li><li><a href='/blog/categories/歌词'>歌词 (1)</a></li><li><a href='/blog/categories/汇总'>汇总 (2)</a></li><li><a href='/blog/categories/环境教育'>环境教育 (3)</a></li><li><a href='/blog/categories/生活'>生活 (11)</a></li><li><a href='/blog/categories/电影'>电影 (1)</a></li><li><a href='/blog/categories/电脑技巧'>电脑技巧 (2)</a></li><li><a href='/blog/categories/知识'>知识 (1)</a></li><li><a href='/blog/categories/知识图谱'>知识图谱 (1)</a></li><li><a href='/blog/categories/社会观察'>社会观察 (12)</a></li><li><a href='/blog/categories/科学话剧'>科学话剧 (1)</a></li><li><a href='/blog/categories/科普'>科普 (2)</a></li><li><a href='/blog/categories/科研'>科研 (12)</a></li><li><a href='/blog/categories/积极心理学'>积极心理学 (1)</a></li><li><a href='/blog/categories/笔记'>笔记 (1)</a></li><li><a href='/blog/categories/经济学'>经济学 (1)</a></li><li><a href='/blog/categories/统计'>统计 (6)</a></li><li><a href='/blog/categories/编程'>编程 (1)</a></li><li><a href='/blog/categories/设计'>设计 (7)</a></li><li><a href='/blog/categories/评论'>评论 (1)</a></li><li><a href='/blog/categories/诗词曲'>诗词曲 (8)</a></li><li><a href='/blog/categories/读书'>读书 (1)</a></li><li><a href='/blog/categories/读书推荐'>读书推荐 (1)</a></li><li><a href='/blog/categories/课程'>课程 (3)</a></li><li><a href='/blog/categories/资源'>资源 (7)</a></li><li><a href='/blog/categories/随笔'>随笔 (8)</a></li><li><a href='/blog/categories/项目'>项目 (1)</a></li></ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+  <ul class="tag-cloud">
+<a style="font-size: 103%" href="/tag/cse/">CSE</a>
+<a style="font-size: 90%" href="/tag/gae/">GAE</a>
+<a style="font-size: 103%" href="/tag/irt/">IRT</a>
+<a style="font-size: 90%" href="/tag/le/">LE</a>
+<a style="font-size: 90%" href="/tag/mbl/">MBL</a>
+<a style="font-size: 97%" href="/tag/narst/">NARST</a>
+<a style="font-size: 90%" href="/tag/ocw/">OCW</a>
+<a style="font-size: 103%" href="/tag/pck/">PCK</a>
+<a style="font-size: 90%" href="/tag/pisa/">PISA</a>
+<a style="font-size: 97%" href="/tag/r/">R</a>
+<a style="font-size: 97%" href="/tag/spss/">SPSS</a>
+<a style="font-size: 90%" href="/tag/stem/">STEM</a>
+<a style="font-size: 90%" href="/tag/ted/">TED</a>
+<a style="font-size: 90%" href="/tag/tpck/">TPCK</a>
+<a style="font-size: 113%" href="/tag/ubc/">UBC</a>
+<a style="font-size: 139%" href="/tag/uga/">UGA</a>
+<a style="font-size: 113%" href="/tag/ubuntu/">Ubuntu</a>
+<a style="font-size: 90%" href="/tag/appche/">appche</a>
+<a style="font-size: 90%" href="/tag/bioteahouse/">bioteahouse</a>
+<a style="font-size: 90%" href="/tag/code/">code</a>
+<a style="font-size: 90%" href="/tag/course/">course</a>
+<a style="font-size: 90%" href="/tag/curriculum/">curriculum</a>
+<a style="font-size: 110%" href="/tag/design/">design</a>
+<a style="font-size: 107%" href="/tag/diary/">diary</a>
+<a style="font-size: 90%" href="/tag/django/">django</a>
+<a style="font-size: 90%" href="/tag/ecojustice/">ecojustice</a>
+<a style="font-size: 90%" href="/tag/effective-teaching/">effective teaching</a>
+<a style="font-size: 165%" href="/tag/en/">en</a>
+<a style="font-size: 90%" href="/tag/esci/">esci</a>
+<a style="font-size: 90%" href="/tag/film/">film</a>
+<a style="font-size: 103%" href="/tag/flash/">flash</a>
+<a style="font-size: 97%" href="/tag/github/">github</a>
+<a style="font-size: 97%" href="/tag/inquiry/">inquiry</a>
+<a style="font-size: 90%" href="/tag/letter/">letter</a>
+<a style="font-size: 107%" href="/tag/list/">list</a>
+<a style="font-size: 107%" href="/tag/log/">log</a>
+<a style="font-size: 90%" href="/tag/machine-learning/">machine learning</a>
+<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+<a style="font-size: 107%" href="/tag/metaphor/">metaphor</a>
+<a style="font-size: 110%" href="/tag/modeling/">modeling</a>
+<a style="font-size: 90%" href="/tag/msci/">msci</a>
+<a style="font-size: 90%" href="/tag/network-analysis/">network analysis</a>
+<a style="font-size: 103%" href="/tag/notes/">notes</a>
+<a style="font-size: 90%" href="/tag/observation/">observation</a>
+<a style="font-size: 110%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/os/">os</a>
+<a style="font-size: 90%" href="/tag/patent/">patent</a>
+<a style="font-size: 97%" href="/tag/pck/">pck</a>
+<a style="font-size: 90%" href="/tag/prezi/">prezi</a>
+<a style="font-size: 90%" href="/tag/python/">python</a>
+<a style="font-size: 90%" href="/tag/rake/">rake</a>
+<a style="font-size: 90%" href="/tag/reflection/">reflection</a>
+<a style="font-size: 90%" href="/tag/repeated-measures/">repeated measures</a>
+<a style="font-size: 90%" href="/tag/resources/">resources</a>
+<a style="font-size: 90%" href="/tag/stanford/">stanford</a>
+<a style="font-size: 90%" href="/tag/story/">story</a>
+<a style="font-size: 90%" href="/tag/strategy/">strategy</a>
+<a style="font-size: 110%" href="/tag/supervision/">supervision</a>
+<a style="font-size: 97%" href="/tag/teacher-knowledge/">teacher knowledge</a>
+<a style="font-size: 90%" href="/tag/working/">working</a>
+<a style="font-size: 90%" href="/tag/writing/">writing</a>
+<a style="font-size: 107%" href="/tag/实验教学/">实验教学</a>
+<a style="font-size: 90%" href="/tag/家庭教育/">家庭教育</a>
+<a style="font-size: 90%" href="/tag/教学/">教学</a>
+<a style="font-size: 97%" href="/tag/教学反思/">教学反思</a>
+<a style="font-size: 97%" href="/tag/教学技能/">教学技能</a>
+<a style="font-size: 97%" href="/tag/教学设计/">教学设计</a>
+<a style="font-size: 90%" href="/tag/教学资源/">教学资源</a>
+<a style="font-size: 90%" href="/tag/教案/">教案</a>
+<a style="font-size: 90%" href="/tag/正能量/">正能量</a>
+<a style="font-size: 97%" href="/tag/诗词/">诗词</a>
+<a style="font-size: 90%" href="/tag/课程/">课程</a>
+<a style="font-size: 90%" href="/tag/随笔/">随笔</a>
+
+  </ul>
+</section><section>
+	<h1>最新评论</h1>
+	<script type="text/javascript" src="http://chunlei.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</section><section>
+<h1>Halley&#8217;s Comet</h1>
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(date1-new Date())/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600);
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+ document.getElementById("thenceThen").innerText=days+" days "+hours+" hours "+mins+" minutes "+secs+" seconds left.";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2061/07/28')", 500);
+}
+//]]>
+</script>
+<div id="thenceThen"></div>
+<h1>太平洋夏令时 (PDT)</h1>
+<div class="thetimenow-embeddable-clock" data-type="clock" data-font-color="#000000" data-border-color="#000000" data-background-color="#ffffff" data-font-size="60" > <a href="http://zh.thetimenow.com/" rel="nofollow" target="_blank">© The Time Now</a> </div> 
+<script type="text/javascript" src="http://zh.thetimenow.com/ttn-embed.min.js"></script>
+</section><section>
+  <h1>Links</h1>
+  <li><a href="http://bioteahouse.wikispaces.com/">Bioteahouse</a></li>
+  <li><a href="http://wowubuntu.com/markdown/">MarkDown Syntax</a></li>
+</section><section>
+  <h1>Visitors to this Blog</h1>
+    <div id="clustrmaps-widget"></div>
+	  <script type="text/javascript">var _clustrmaps = {'url' : 'http://zhangchunlei.com/', 'user' : 1092323, 'server' : '2', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2013-09-14', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script>
+	  <noscript><a href="http://www2.clustrmaps.com/user/d1910aae3"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/zhangchunlei.com--thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section><section>
+  <h1>Creative Commons</h1>
+  <p>
+   <img class="center" alt="License" src="https://raw.github.com/lukezhg/Freyja/master/CC.png"/>
+   共享协议：本站所有作品采用<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">知识共享署名-非商业性使用-相同方式共享 2.5 中国大陆许可协议</a>进行许可。
+  </p>
+  <p>Creative Commons — <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Attribution-NonCommercial-ShareAlike 2.5 Generic — CC BY-NC-SA 2.5]</a></p>
+</section>
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2021 - chunlei -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chunlei';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

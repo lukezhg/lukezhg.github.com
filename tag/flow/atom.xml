@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: flow | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/flow/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[心流]]></title>
+    <link href="http://zhangchunlei.com/blog/2020/01/11/flow/"/>
+    <updated>2020-01-11T21:39:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2020/01/11/flow</id>
+    <content type="html"><![CDATA[<p>心流是一种完全沉浸于手上工作的心智状态。</p>
+
+<p>如果按照工作挑战度和自身能力水平的强弱，做一个象限图的话，如下图所示：<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/Challenge_vs_skill.png" alt="challenge vs skill" />
+表现出自己最佳的能力水平做最有挑战的事情，这个状态就是心流。<br/>
+很多人有过这样的心流体验。<br/>
+很多人希望通过一定的方法和步骤达到这个状态。<br/>
+但是，更多的时候是我们只能偶尔会进入这个状态。</p>
+
+<p>有人对进入心流的不同阶段做了图，如下图所示：<br/>
+<img src="https://github.com/lukezhg/Freyja/raw/master/4-states-of-flow.png" alt="4 states of flow" /></p>
+
+<p>其实，经历一次心流就是经历一次自我超越。</p>
+
+<p>这是会上瘾的！！</p>
+
+<p>但也这是实实在在的生命拓展和自我解放！</p>
+]]></content>
+  </entry>
+  
+</feed>

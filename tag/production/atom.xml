@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags: production | Chunlei's Blog]]></title>
+  <link href="http://zhangchunlei.com/tag/production/atom.xml" rel="self"/>
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-21T22:44:49+08:00</updated>
+  <id>http://zhangchunlei.com/</id>
+  <author>
+    <name><![CDATA[chunlei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[精益生产]]></title>
+    <link href="http://zhangchunlei.com/blog/2018/06/09/lean-production/"/>
+    <updated>2018-06-09T10:35:00+08:00</updated>
+    <id>http://zhangchunlei.com/blog/2018/06/09/lean-production</id>
+    <content type="html"><![CDATA[<p>精益生产的理念在于减少试误成本、加快优化、优选组合，从生物进化的角度就是获得可遗传的变异。  <br/>
+精益生产的价值是以最小的成本和有效的方式验证产品是否符合用户需求，灵活调整方向。</p>
+
+<p>精益创业就是用最小的成本最快的速度试错。<br/>
+表现在快速实现原型、小步快跑、快速迭代、低成本、简单实验。</p>
+
+<p>精益创业要检验2个假设：价值假设、增长假设。<br/>
+所谓价值假设：就是你的产品对特定用户有不可替代的价值。<br/>
+所谓增长假设：就是越来越多的人会有相同的需求。</p>
+
+<p>精益工作借用了精益生产的理念，把一个人当作一个公司，确切的说时一个团队当作一个公司。明确自己能够生产的最有价值的产品，提高生产效率，在供货层、生产层、公司设计层要效益。</p>
+
+<p>生产产品：文章、专利、著作、服务、软件<br/>
+生产资料：时间、材料、方法、工具、人力<br/>
+供货商：文献、数据库、服务、原材料供应、测试对象…… <br/>
+让自己的工厂在正利润下运行，提高自己的增长效率。</p>
+
+<p>试错矛
+  ^  <br/>
+  |<br/>
+<-o-><br/>
+  |<br/>
+  V</p>
+]]></content>
+  </entry>
+  
+</feed>
