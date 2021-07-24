@@ -1,1106 +1,1215 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/3/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/3/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
 
-<main class="content">
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/09/day/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/09/day/" class="post-title-link" itemprop="url">day</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-09 10:47:07" itemprop="dateCreated datePublished" datetime="2020-12-09T10:47:07+08:00">2020-12-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-24 16:27:32" itemprop="dateModified" datetime="2021-07-24T16:27:32+08:00">2021-07-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
 
     
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/09/day/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="day">
-                            
-                            <span class="card-title">day</span>
-                        </div>
-                    </a>
+      
+          
+      
+    </div>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/try/">
-                            <span class="chip bg-color">try</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/08/helloworld/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="helloworld">
-                            
-                            <span class="card-title">helloworld</span>
-                        </div>
-                    </a>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/08/helloworld/">
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                测试页面
-标题2
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/hello/">
-                            <span class="chip bg-color">hello</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/08/hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/08/helloworld/" class="post-title-link" itemprop="url">helloworld</a>
+        </h2>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/document/">
-                            <span class="chip bg-color">document</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/07/2020-12-07-aiva-chatbot-with-neo4j-brain/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="aiva chatbot with neo4j brain">
-                            
-                            <span class="card-title">aiva chatbot with neo4j brain</span>
-                        </div>
-                    </a>
+              <time title="创建时间：2020-12-08 21:48:03 / 修改时间：21:49:27" itemprop="dateCreated datePublished" datetime="2020-12-08T21:48:03+08:00">2020-12-08</time>
+            </span>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###主教程https://explosion.ai/blog/chatbot-node-js-spacy
-###构建虚拟环境https://virtualenv.pypa.io/en/latest/user_guide.html
-cd m
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+          
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/06/2020-12-06-docker-the-tool-to-setup-your-server/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="用docker在服务器上布置虚拟环境">
-                            
-                            <span class="card-title">用docker在服务器上布置虚拟环境</span>
-                        </div>
-                    </a>
+        </div>
+      </header>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                最近想在服务器上布置一个聊天机器人。简书上有教程：  
-https://www.jianshu.com/p/5997f73eccb9https://www.jianshu.com/p/e18fb2166178  
-不过我其实很早就尝试过，甚
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
-                                    服务器
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/appche/">
-                            <span class="chip bg-color">appche</span>
-                        </a>
-                        
-                        <a href="/tags/docker/">
-                            <span class="chip bg-color">docker</span>
-                        </a>
-                        
-                        <a href="/tags/chatterbot/">
-                            <span class="chip bg-color">chatterbot</span>
-                        </a>
-                        
-                        <a href="/tags/nginx/">
-                            <span class="chip bg-color">nginx</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/11/02/2020-11-02-wrong-logic-of-academic-presentation/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="研究报告表达的神话--逻辑谬误">
-                            
-                            <span class="card-title">研究报告表达的神话--逻辑谬误</span>
-                        </div>
-                    </a>
+      
+          <p>测试页面</p>
+<h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2>
+      
+    </div>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                【谬误1】我是这个领域的专家，所以我就讲的你们听不懂，因为你们听不懂，所以我是这个领域的专家  
-批注：专家可能会表达不清楚，但是别人听不懂不能说明你是专家，恰恰相反大牛都能把最前沿的东西用最浅显的语言给新手讲明白，如果讲不明白说明报告人自
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/10/22/2020-10-22-how-technology-empower-education/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt=" 技术如何赋能教育">
-                            
-                            <span class="card-title"> 技术如何赋能教育</span>
-                        </div>
-                    </a>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/08/hello-world/">
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                课例研讨：《呼吸系统与 ECMO 技术》  
-视频内容
-第一段 基于数字系统的学习
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-08 21:19:14" itemprop="dateCreated datePublished" datetime="2020-12-08T21:19:14+08:00">2020-12-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-24 16:27:04" itemprop="dateModified" datetime="2021-07-24T16:27:04+08:00">2021-07-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/07/2020-12-07-aiva-chatbot-with-neo4j-brain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/07/2020-12-07-aiva-chatbot-with-neo4j-brain/" class="post-title-link" itemprop="url">aiva chatbot with neo4j brain</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-07 23:10:00" itemprop="dateCreated datePublished" datetime="2020-12-07T23:10:00+08:00">2020-12-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-08 20:30:07" itemprop="dateModified" datetime="2020-12-08T20:30:07+08:00">2020-12-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###主教程<br><a target="_blank" rel="noopener" href="https://explosion.ai/blog/chatbot-node-js-spacy">https://explosion.ai/blog/chatbot-node-js-spacy</a></p>
+<p>###构建虚拟环境<br><a target="_blank" rel="noopener" href="https://virtualenv.pypa.io/en/latest/user_guide.html">https://virtualenv.pypa.io/en/latest/user_guide.html</a></p>
+<pre><code>cd myproject
+virtualenv venv  
+source venv/bin/activate #进入
+deactivate #退出
+(venv) chunleizhang@Mac~/lib/aiva</code></pre>
+<p>###用npm开启aiva</p>
+<pre><code>npm install
+npm run setup
+npm start --debug</code></pre>
+<p>###编辑aiva设置文件</p>
+<pre><code>vi config/default.json</code></pre>
+<p>###Start the bot</p>
+<pre><code>npm start --debug</code></pre>
+<p>###neo4j brain<br>开关neo4j服务  </p>
+<pre><code>neo4j start
+neo4j stop</code></pre>
+<p><a target="_blank" rel="noopener" href="http://localhost:7474/browser/">http://localhost:7474/browser/</a></p>
+<p><a target="_blank" rel="noopener" href="https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/">https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/</a><br>LOAD CSV WITH HEADERS FROM “file:///persons.csv” AS csvLine<br>CREATE (p:Person {id: toInteger(csvLine.id), name: csvLine.name})</p>
+<p>/usr/local/Cellar/neo4j/3.5.3/libexec/import</p>
+<p>###slack端口</p>
+<p><a target="_blank" rel="noopener" href="https://app.slack.com/client/THS32FKN0/D01FW5UR2EB">https://app.slack.com/client/THS32FKN0/D01FW5UR2EB</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/06/2020-12-06-docker-the-tool-to-setup-your-server/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/06/2020-12-06-docker-the-tool-to-setup-your-server/" class="post-title-link" itemprop="url">用docker在服务器上布置虚拟环境</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-06 12:49:00" itemprop="dateCreated datePublished" datetime="2020-12-06T12:49:00+08:00">2020-12-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-07 01:00:33" itemprop="dateModified" datetime="2020-12-07T01:00:33+08:00">2020-12-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" itemprop="url" rel="index"><span itemprop="name">服务器</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近想在服务器上布置一个聊天机器人。<br>简书上有教程：  </p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5997f73eccb9">https://www.jianshu.com/p/5997f73eccb9</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e18fb2166178">https://www.jianshu.com/p/e18fb2166178</a>  </p>
+<p>不过我其实很早就尝试过，甚至还自己在本地测试成功了。于是就想把它弄到服务器上，试一试。</p>
+<pre><code>cd /webdev/chatterbot
+python manage.py runserver
+alice: http://127.0.0.1:8000/chat/
+ctrl + C 退出程序
+url.py 可以修改响应</code></pre>
+<p>但是，如果直接把它拷贝到服务器上，却不行。因为它是具有环境依赖的，它需要一套底层环境才能运行。于是第一想法就是在服务器上假设相同的环境，但是服务器上以及有运行的项目了，这样势必改变原有的环境。<br>如何让它运行起来，并且原来的项目功能不受影响呢？<br>docker提供了很好的解决方案。  </p>
+<p>docker的用途在于，它可以在服务器上建立多个虚拟环境，而在这个虚拟环境中安装的软件环境，并不会相互影响，比如chatterbot这个项目需要python3，但是其他应用可能需要的是python2.7，两个应用无法在同一个环境下运行。实际的情况更复杂，因为依赖的环境不仅是python。  </p>
+<p>如何使用docker，网上有很多教程，比如：<br>详细教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_37832943/article/details/105218649">https://blog.csdn.net/baidu_37832943/article/details/105218649</a><br>阮一峰提供的教程：<br>docker：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html">http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html</a><br>nginx-docker：<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html">http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html</a></p>
+<p>简明教程：  </p>
+<pre><code>docker search nginx 
+#查找 Docker Hub 上的 nginx 镜像
+
+docker pull nginx 
+#拉取官方的Nginx镜像
+
+docker images nginx 
+#查找 REPOSITORY 为 nginx 的镜像
+
+#基于已有镜像创建并运行一个容器并映射到特定端口
+docker run --rm --name nginx-test -p 8080:80 -d nginx
+      --rm：容器终止运行后，自动删除容器文件。
+      --name nginx-test：将容器命名为nginx-test
+      -p: 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口
+      -d：容器启动后，在后台运行
+docker container ps 
+#查看启动的docker容器
+curl localhost:8080 
+#测试页面</code></pre>
+<p>常用docker命令：</p>
+<pre><code>docker ps -a
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+yum install -y httpd
+ctrl+d
+docker commit -m “install httpd” -a “keyuan_test” (输入容器ID) 新的镜像名
+docker run -itd -p 8080:80 新的镜像名 /bin/bash
+docker exec -it 新的镜像产生的容器ID bash
+httpd -k start
+curl localhost:80
+ctrl+d
+curl localhost:8080
+
+
+
+docker pull centos
+docker run -itd centos /bin/bash
+docker exec -it (输入容器ID) bash
+httpd -k start
+docker commit containerid chatbot/live
+docker run -d -p 8000:80 chatbot/live /bin/bash
+curl localhost:8000</code></pre>
+<p>##appche</p>
+<p>编辑appche设置文件： vi /etc/httpd/conf/httpd.conf</p>
+<p>1.查看版本<br>    apache -v<br>    httpd -v<br>2.开启apche服务：<br>    apachectl start<br>    apachectl stop<br>3.启动和关闭httpd的命令<br>    systemctl start httpd<br>    systemctl stop httpd<br>    systemctl restart httpd</p>
+<p>网页位置：/var/www/html/  </p>
+<p>##编辑 nginx配置文件<br>    vi /etc/nginx/nginx.conf</p>
+<pre><code>nginx -t                    # 查看nginx状态
+nginx -s reload            # 重新载入配置文件
+nginx -s reopen           # 重启 Nginx
+nginx -s stop               # 停止 Nginx</code></pre>
+<p>##控制防火墙<br>    systemctl stop firewalld<br>    systemctl start firewalld<br>    systemctl mask firewalld  </p>
+<pre><code>添加端口  
+firewall-cmd --zone=public --add-port=80/tcp --permanent  （--permanent永久生效，没有此参数重启后失效） 
+firewall-cmd --zone=public --add-port=1000-2000/tcp --permanent  
+重新载入  
+firewall-cmd --reload  
+查看  
+firewall-cmd --zone=public --query-port=80/tcp  
+删除  
+firewall-cmd --zone=public --remove-port=80/tcp --permanent  </code></pre>
+<p>##阿里服务器端口控制<br>进入阿里云管理 ECS 实例-安全组-添加安全组规则，将 80 端口设置为入站方向，暂时向所有 ip 开放（开发时），再次尝试通过。  </p>
+<p>这个设置更改很容易被忽略，造成用curl测试正常，但是公网无法访问。  </p>
+<p>##列出所有端口<br>netstat -ntlp</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xqzt/p/4919191.html">https://www.cnblogs.com/xqzt/p/4919191.html</a></p>
+<p>##使用docker的方法<br>将需要改变的文件映射到主机<br>把所有不变的环境变为运行的容器<br>将容器运行起来之后，就可以ctrl+D退出<br>应用就跑起来了  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/11/02/2020-11-02-wrong-logic-of-academic-presentation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/02/2020-11-02-wrong-logic-of-academic-presentation/" class="post-title-link" itemprop="url">研究报告表达的神话--逻辑谬误</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-02 10:01:00 / 修改时间：10:24:03" itemprop="dateCreated datePublished" datetime="2020-11-02T10:01:00+08:00">2020-11-02</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>【谬误1】我是这个领域的专家，所以我就讲的你们听不懂，因为你们听不懂，所以我是这个领域的专家  </p>
+<p>批注：专家可能会表达不清楚，但是别人听不懂不能说明你是专家，恰恰相反大牛都能把最前沿的东西用最浅显的语言给新手讲明白，如果讲不明白说明报告人自己也没想清楚，这样的报告不做也罢  </p>
+<p>【谬误2】我有很多头衔，所以我很牛，我的观点就是权威，就是正确的  </p>
+<p>批注：顶尖科学家可能有社会地位，也可能没有，但是有社会地位的不一定是顶尖科学家。社会地位不等于科学地位。而且，顶尖科学家不会用权威说事，恰恰相反，科学家是反权威的，要用证据说事。  </p>
+<p>【谬误3】我的研究样本量很大，所以很牛  </p>
+<p>批注：样本数量的多少是可以在一定程度上增强研究结论的可行性，但是还要看研究的问题、理论基础、研究设计以及数据质量，不是所有的大规模研究就一定可信，也不是大规模研究就等同于高质量研究。  </p>
+<p>【谬误4】我分享的都是别人的观点，所以错误也是被人的  </p>
+<p>批注：学者可以分享别人的研究，但是必须突出自己的研究。同时也要批判性地审视他人的研究，并为其负责。如果没有自己的观点或研究，其实也没有必要来分享了。  </p>
+<p>研究者千万别认为自己很牛，别人可以这样认为，但是研究者自己不可以，因为在这会毁掉学术，也会毁掉自己。相反很牛的科学家都认为在自己研究的伟大事物面前，自己格外渺小，而正是这种发自内心的谦卑，才让倾听大自然的声音成为可能。好的报告要让听者听得懂、有启发，最好还有能应用。如果有大牛的报告你没听懂，那就提问吧，给研究者一个戴罪立功的机会！：）    </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/10/22/2020-10-22-how-technology-empower-education/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/22/2020-10-22-how-technology-empower-education/" class="post-title-link" itemprop="url"> 技术如何赋能教育</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-22 13:50:00 / 修改时间：13:57:01" itemprop="dateCreated datePublished" datetime="2020-10-22T13:50:00+08:00">2020-10-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>课例研讨：《呼吸系统与 ECMO 技术》  </p>
+<p>视频内容</p>
+<pre><code>第一段 基于数字系统的学习
 00：00-4：30
 应用数字系统探索和认识人的呼吸系统【剪辑】
 7：50-12：22
 患者的检查结果，呼吸困难，白肺
 13：30-13：57+17：50
+白肺治疗无效
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+第二段 设计人工肺
+17：35-19：40 
+设计人工肺 画设计图【剪辑】
+22：50-26：30
+小组分享自己的设计【剪辑】
+26：30-29：50【剪辑】
+对设计进行点评反馈
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/10/18/2020-10-18-knowledge-learning-and-innovation/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="知识效率与创新的矛盾与融合">
-                            
-                            <span class="card-title">知识效率与创新的矛盾与融合</span>
-                        </div>
-                    </a>
+第三段 ECMO原理
+30：00- 34：50【剪辑】
+用ECMO原理图对比自己的设计加深认识
+肺通气、其他交换、动力
+模拟的是哪个部分
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一方面我们试图追求有效教学，另一方面我们又试图培养创新能力，但是这两个追求本身有时确是矛盾的，如果不能洞察教育诉求的矛盾并恰当调和，那么就会让教师的教学走向分裂和破碎，而停留在表层的喧嚣之上。  
-有效教学，如何从知识视角来看，就是学生能高
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
+第四段 不完美的结局
+35：45-43：00【剪辑】
+不完美的结局反思和疑问</code></pre>
+<p>技术赋能教育创新主题报告：教育智能体与应用场景<br>上海市电教馆馆长 张治    </p>
+<p>视频播放地址：<br><a target="_blank" rel="noopener" href="http://live.wenxiang.org/livepf/weiXinPclogin.jspx?activityId=55034b134f724086a5d2f3fd678be160&locale=zh_CN">http://live.wenxiang.org/livepf/weiXinPclogin.jspx?activityId=55034b134f724086a5d2f3fd678be160&amp;locale=zh_CN</a></p>
 
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/08/27/2020-08-27-child-and-media/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="幼儿成长与媒体">
-                            
-                            <span class="card-title">幼儿成长与媒体</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                教育部关心下一代工作委员会家庭教育公开课“媒介素养与儿童手机使用习惯”学习笔记。  
-新冠疫情以来，在线学习变成了常态。但也带了一系列问题。这期节目邀请首都师大和《家长必读》杂志两位专家老师专门就孩子与手机的话题进行了咨询。  
-###在线
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AE%B6%E5%BA%AD%E6%95%99%E8%82%B2/" class="post-category">
-                                    家庭教育
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/08/26/2020-08-26-how-do-you-distinguish-beans-from-soybeans/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="你如何区分生根的是黄豆还是绿豆">
-                            
-                            <span class="card-title">你如何区分生根的是黄豆还是绿豆</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一大清早，同事发给我一张图片，让我判断生根的到底是黄豆还是绿豆。  
-
-大家先在心目中判断下，我再说答案。1 绿豆2 黄豆  
-你们判断的依据是什么？  
-很多人会凭借直觉来判断，认为它是绿豆，因为绿豆是绿色的，黄豆是黄色的。  
-而且，我
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">3 / 51</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/4/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+      
     </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
 
     
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
     
-</style>
-<div class="">
     
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/10/18/2020-10-18-knowledge-learning-and-innovation/">
 
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/18/2020-10-18-knowledge-learning-and-innovation/" class="post-title-link" itemprop="url">知识效率与创新的矛盾与融合</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-18 10:22:00 / 修改时间：12:01:34" itemprop="dateCreated datePublished" datetime="2020-10-18T10:22:00+08:00">2020-10-18</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一方面我们试图追求有效教学，另一方面我们又试图培养创新能力，但是这两个追求本身有时确是矛盾的，如果不能洞察教育诉求的矛盾并恰当调和，那么就会让教师的教学走向分裂和破碎，而停留在表层的喧嚣之上。  </p>
+<p>有效教学，如何从知识视角来看，就是学生能高效率地获取和掌握高效知识。我们究竟更重视获取高效的知识还是发展应对不确定性的能力？这是一个并不好回答的问题，因为两者的关系可能彼此矛盾，也可互为助力。这再次印证了哪句话——世界第一等的智慧总是自相矛盾而又能并行不悖的。     </p>
+<p>###高效知识与适应能力冲突  </p>
+<p>2000年夏季奥运会，在女子体操跳马项目上，各国运动员集体发挥失常。人们后来才发现，当时布置赛场的工作人员误将跳马高度调低了约5厘米。而正是这5厘米，打破了世界级运动员高度稳定的发挥。运动员在标准高度上的熟练知识反而使其难于发挥出理想的表现。从这个例子中，我们可以看到高效知识反而降低了运动员的适应能力。  </p>
+<pre><code>为效率而生的高效知识，其特点是易于快速上手、可精准应用、表现稳定。高效知识理想的应用场景是那些稳定且重复性强的情境。“知识就是力量，知识也是偏见。” 过往的知识与经历影响着人们解读世界的方式，而这些解读某种程度上也限制了我们的思维，阻碍了发现其他可能性的存在。从心理学上来说，人们倾向于采纳支持自己观点的证据，而忽略其他观点以及相应证据（请参考章节U）。赫克勒和斯凯夫（Heckler&amp;Scaife，2015）发现，对于物理系学生来说，他们脑海中已经形成的观点会更容易让他们发现支持性数据，同时会妨碍他们解读与相反观点有关的数据。高效知识还会潜入人们的意识，影响问题产生的过程，以至于人们提出问题的时候就已被预想的答案绑架。宝丽来相机发明者埃德温·兰德（Edwin Land）曾这样描述：“领悟出现的那一刻，也就是愚蠢戛然而止的瞬间。”而这种愚蠢往往就来自于人们在最初设定问题时所夹杂的前提假设。  </code></pre>
+<p>###常规技能和适应技能  </p>
+<pre><code>高效知识似乎并不是应对创新型和探索型任务的“良药”。哈塔诺和伊纳加奇（Hatano &amp; Inagaki，1986）在关于珠算大师的讨论中区分出了两种专业技能，分别为常规技能和适应技能。具体来说，珠算大师可以非常神奇地在大脑中通过假想算盘进行心算（请参考章节D），却不能把这个技能迁移到其他数学知识的学习过程中去，而且这种技能须在零干扰的环境下才能稳定发挥。因此珠算大师就被哈塔诺和伊纳加奇描述为具备高水平常规技能之人。在稳定的环境中，他们可以将一项千锤百炼的技能发挥到极致。两位研究者进一步讨论，提出了另一种技能并把它定义为适应技能。与常规技能不同的是，适应技能来源于拥抱事物多样性的开放心态，和愿意及时调整学习新方法的行动力。适应型学习能力强的人还懂得放下眼前的得失，抑制住过早获得短期成功的冲动，并且能够及时转换思路并运用创新方法来解决问题。  
+
+瓦恩博格（Wineburg，1998）将历史学教授与大学生进行了对比。他要求专攻某个领域（如，亚洲史）的历史学家去解决一个陌生领域的历史问题（如解读美国总统亚伯拉罕·林肯曾做出的重大决策）。相比学生而言，历史学家更能抑制住依照当今社会文化来进行推断的冲动。他们能够意识到不同阶段历史背景的局限性，因此更少以己度人、妄下断言。  
+
+下图提出了一种将效率学习与创新学习相融合的理论框架。图的左下方是新手的起步点，此时的他们既没掌握高效知识，也不会机智地随机应变。图的右下方是常规型技能的专家，他们已经对处理熟悉的各项任务轻车熟路、信手拈来。图左上方的是闹心的新手，他们没有专业知识支撑，只会不断提出无法落地、不切实际的幻想。图右上方则是适应型技能的专家，他们既掌握高效知识，又能灵活地适应各种新情况、提出创新的解决方案。  </code></pre>
+<p><img src="">  </p>
+<p>闹心的新手    适应型技能专家  </p>
+<p>新手         常规型技能专家  </p>
+<p>学习是一个闹心-满足-闹心-满足的过程。  </p>
+<pre><code>针对常规技能的培训对于应对重复性任务来说是合理的。然而，此类培训并不能增加适应型学习的技能点，因为这些训练任务都是一个模子刻出来的。另一方面，强调普适性的、超越具体内容之上的思辨能力和问题解决技巧，似乎提供了一套战斗力较低的“弱方法”，对于解决真实世界中的大型问题来说效率太低了。所以这种训练也培养不出适应型专家，而且这些技巧最终很可能也会沦为按部就班的流程而已。出色的教育者需要意识到多样化的思维模式的重要性（强方法），而不是万般皆适的弱方法（Star&amp;Hammer，2008）。  </code></pre>
+<p>一种能力是突破规范发现新方法（创新力），而另外一种能力形成规范沿用老方法 （继承力），两者相辅相成。一种需要慢思维，一种可以变成快思维。  </p>
+<p>因此，教学的目标不同，评价的方式也应该不同，如果教、学、评不一致，那就容易尴尬，而且不利于教育的良性发展。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/08/27/2020-08-27-child-and-media/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/27/2020-08-27-child-and-media/" class="post-title-link" itemprop="url">幼儿成长与媒体</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-27 13:46:00" itemprop="dateCreated datePublished" datetime="2020-08-27T13:46:00+08:00">2020-08-27</time>
             </span>
-            
-            <br>
-            
-            <br>
-            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-28 08:22:31" itemprop="dateModified" datetime="2020-08-28T08:22:31+08:00">2020-08-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%B6%E5%BA%AD%E6%95%99%E8%82%B2/" itemprop="url" rel="index"><span itemprop="name">家庭教育</span></a>
+                </span>
+            </span>
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>教育部关心下一代工作委员会家庭教育公开课“媒介素养与儿童手机使用习惯”学习笔记。  </p>
+<p>新冠疫情以来，在线学习变成了常态。但也带了一系列问题。这期节目邀请首都师大和《家长必读》杂志两位专家老师专门就孩子与手机的话题进行了咨询。  </p>
+<p>###在线学习利与弊<br>家长：在线学习有哪些利弊？家长如何辅导？  </p>
+<p>专家解答：<br>优势，在线课堂，有利于发现了新的资源，成本比较低，时间地点更灵活，能满足个性化需求。<br>弊端，无法跟同伴学习交流、氛围不浓厚、对孩子视力不好、网络资源良莠不齐、受网速、网络覆盖影响。 </p>
+<p>随着媒体的丰富，孩子长时间看手机成为一个家长需要面对的问题。人与媒介的关系也发生了显著变化。由原先的定时定点变成如影随形。游戏也成为孩子交往的话题，但如果管理不当，孩子就可能沦为丧失大自然的电子儿童。  </p>
+<p>###新媒介素养<br>与以往显著不同的是，新媒介发生了很大变化，从原来的单一媒体，变为复合媒体。人们越来越需要发展自己媒介素养以及批判性思维。要学会媒介取用、理解、制造。很多小朋友都能制作信息并发布成为发声者。</p>
+<p>那么，如何发展批判性思维？这需要学会角色换位思考，从发声者立场、目的、不同接受者的理解去思考。家长需要将媒介素养传递给孩子。比如，可以通过一些活动，和孩子一起解读、判断信息，孩子特别喜欢自己有用的感觉。理解不同文化立场和价值观的不同。通过开家庭研讨会进行探讨，比如请孩子来找茬，看信息有没有问题。我们正从前喻文化，走向并喻文化、后喻文化。以往，后辈从前人学习，当下，更多的时候变成，同辈相互学习以及老人向年轻人学习。  </p>
+<p>###发展媒介素养需要家、校、社协同<br>营造一个健康的信息环境，需要社会、学校、家庭共同协同努力。<br>社会：分级分类<br>学校：发展批评性思维<br>家庭：是第一位、父母需要以身作则、提高自己的媒介素养。</p>
+<p>###如何健康使用手机<br>家长可以与孩子约定屏幕时间，更重要的是家庭活动建设和安排。</p>
+<p>手机要成为学习的工具，而不是添补空虚感。美国儿科会建议，家长与孩子交流时将手机设置为勿打扰模式。问题不在于手机，而在于如何用手机。有的家长带领孩子一起学习航空航天知识，完全自学，孩子就把手机当成学习的工具，用它来定位、搜索、学习。手机还具有时间管理的功能、打卡功能。  </p>
+<p>但很多时候，手机变成背锅侠，根本原因在于家长本身用手机的习惯不好，没起到带头作用。  </p>
+<p>此外，也与家庭管理风格有关，这些风格包括民主、专职、溺爱、忽视4种类型。最重要的是爱和规则。  </p>
+<p>先立规则，设定好目标，家长的支持，规则不能随意改动。  </p>
+<p>此外，要给孩子留出空白，也就是自由时间。这样才能避免孩子用手机弥补空虚感。  </p>
+<p>###是否可以用游戏作为学习奖励<br>家长：我有的时候会用游戏作为学习奖励，这种做法是否恰当？</p>
+<p>科学的激励方法：<br>1、充实孩子的生活。<br>2、如果实在要玩手机，增加附加值，比如家庭一起玩。<br>3、奖励孩子的内在动机。</p>
+<p>###如何判断孩子是否手机成瘾<br>ABC法，分别代表情感、行为、认知三个方面。  </p>
+<p>如果你的孩子有下面任何一种行为，那么就要当心他手机成瘾了。<br>1、当不能玩手机时容易狂躁、愤怒。<br>2、朋友来找他玩，他宁肯手机。<br>3、熬夜玩手机。<br>4、你问他用手机做什么，他会撒谎。</p>
+<p>###适合孩子适当玩的游戏<br>体感游戏<br>合作类游戏<br>益智类游戏  </p>
+<p>家长要确保游戏健康，游戏带来的快乐是短暂的，快乐不等于幸福。幸福=快乐+意义感。</p>
+<p>###3W原则<br>When什么时间-20分钟远眺<br>What什么游戏-试玩保护<br>Where什么地点-公共地点</p>
+<p>###专家总结<br>温暖、健康、充实的家庭生活是最重要的。<br>家长发展自己的媒介素养，成为孩子的电子合伙人。  </p>
+<p>###自我反思  </p>
+<p>我们娃似乎有媒体成瘾的风险，他主要喜欢看动画片，还有一次因为要上完编程课而熬夜到11点。有的时候我们的管理方式过于简单粗暴，应该建立规则，留给他足够的自由时间，提前1分钟提醒他然后再停止屏幕时间。更重要的是充实家庭生活，发展孩子的兴趣爱好，以身作则，成为孩子健康成长的合格伙伴。  </p>
+<p>##“乐学会学”学习笔记。<br>教育部关心下一代工作委员会家庭教育公开课  </p>
+<p>学习是一件有趣、有意义的事儿。要激发孩子对学习本身的兴趣。乐，是经过苦而获得的更大的快乐。</p>
+<p>家长要有孟母三迁的决心，帮助孩子建立良好的学习氛围。</p>
+<p>孩子厌学，很多时候是我们把学习简化成了学科学习，学习的过度窄化让孩子失去了学习兴趣。</p>
+<p>《教育财富蕴含其中》指出，终身化学习社会需要四会：学会做事、学会做人、学会学习、学会与人相处。</p>
+<p>让孩子发现、认识到学习的乐趣和价值是最好的学习方法。  </p>
+<p>###反思<br>然然喜欢读书，这一方面与环境有关，家里的书都放不下了，一方面与他自身的兴趣有关。他喜欢科学，但是又不愿意参与竞争，因为他怕比赛结果对他学习过程的否定。现代教育确实有的时候过于简单粗暴和功利主义，家长尤其要避免结果导向的评价观。但，反过来，我们也需要帮助然然建立发展型的评价观，每次比赛都是一次获得成长的机会，因为它可以尽早暴漏你的不足，使你获得成长。   </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/08/26/2020-08-26-how-do-you-distinguish-beans-from-soybeans/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/26/2020-08-26-how-do-you-distinguish-beans-from-soybeans/" class="post-title-link" itemprop="url">你如何区分生根的是黄豆还是绿豆</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-08-26 08:47:00 / 修改时间：09:28:02" itemprop="dateCreated datePublished" datetime="2020-08-26T08:47:00+08:00">2020-08-26</time>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一大清早，同事发给我一张图片，让我判断生根的到底是黄豆还是绿豆。  </p>
+<p><img src="https://github.com/lukezhg/Freyja/raw/master/soybean.png" alt="soybean grow experiment"></p>
+<p>大家先在心目中判断下，我再说答案。<br>1 绿豆<br>2 黄豆  </p>
+<p>你们判断的依据是什么？  </p>
+<p>很多人会凭借直觉来判断，认为它是绿豆，因为绿豆是绿色的，黄豆是黄色的。  </p>
+<p>而且，我们虽然不一定生过黄豆芽，但是却吃过黄豆芽，黄豆芽也是黄色的。这让我们更加相信它就是黄豆。  </p>
+<p>真的是这样吗？  </p>
+<p>我们忽视了一些其他的线索。比如大小，比如实验的环境，还有我们的生物学知识。  </p>
+<p>首先，从图片我们可以看出实验用的是普通的一次性塑料杯子，这提示了这颗种子的大小要比绿豆大很多。  </p>
+<p>接下来，我们就要解释它为什么会变绿，其原因是光照。  </p>
+<p>那么，为什么光照会使其变绿呢？这就要用到生物学知识了，所以你看，有点生物学知识防身有多么重要。<br>这里面的关键知识是两个豆瓣实际上是两片子叶，它们为种子萌发储存了足够的营养。但是，如果有光照，它们还可以发挥余热，进行光合作用。为了进行光合作用，它们首先会制造叶绿素。漫长的进化历程让它们形成了巧妙地生产机制，有光照它们才能合成叶绿素（否则制造出来也是浪费）。所以，如果有光，而且子叶并没有冲出种皮的包裹，黄豆是可以变绿的。  </p>
+<p>因此，我们推断图片中生根的种子是黄豆而不是绿豆。  </p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

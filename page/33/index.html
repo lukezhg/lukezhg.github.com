@@ -1,1233 +1,1226 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/33/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/33/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/07/28/2015-07-28-ict-application-in-biology-teaching/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="信息技术在生物教学中的应用">
-                            
-                            <span class="card-title">信息技术在生物教学中的应用</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###课件下载信息技术课件下载密码：rm5n  
-###课程考核【目标】flash制作目的在于评价flash的基本动画制作技能以及应用技能解决实际教学问题的能力。  
-主要评价学员：    基本技能的灵活运用    解决实际问题的能力   
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-07-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AF%BE%E7%A8%8B/" class="post-category">
-                                    课程
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/05/29/2015-05-29-life-sciences-and-our-life/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="生命科学与生活">
-                            
-                            <span class="card-title">生命科学与生活</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                用了13周的时间最为核心的生命科学内容学习完了，下面的3周时间我们会结合同学们的小组项目学一学这些知识在生活中的应用。  
-主要会涉及下面3大主题：1、饮食与健康健康与亚健康、平衡膳食与健康、现代“文明病”、癌症、人体器官移植、转基因食品、
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-05-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/05/03/2015-05-03-yi-kou-chi-ge-pangzhi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="你不能一口吃成个胖子">
-                            
-                            <span class="card-title">你不能一口吃成个胖子</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                很多的时候，我们老师太着急，总是想让学生一口吃成个胖子。  
-殊不知，这样只会营养不良。  
-我上微格教学的时候，也是这样。我特别想让学生学会把自己的教学活动和具体的教学目标联系起来，与学生知识和经验联系起来。为此，我还特地设计了一个教学简
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-05-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/04/17/2015-04-17-narst-2015/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="NARST 2015">
-                            
-                            <span class="card-title">NARST 2015</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                This is the second time I attend NARST. Like last time, lots of thing is going on at the same time, but I can catch much
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-04-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/meeting/" class="post-category">
-                                    meeting
-                                </a>
-                                
-                                <a href="/categories/meeting/%E4%BC%9A%E8%AE%AE/" class="post-category">
-                                    会议
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/NARST2015/">
-                            <span class="chip bg-color">NARST2015</span>
-                        </a>
-                        
-                        <a href="/tags/Academic-family/">
-                            <span class="chip bg-color">Academic family</span>
-                        </a>
-                        
-                        <a href="/tags/pic/">
-                            <span class="chip bg-color">pic</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/04/13/2015-04-13-nos-and-pck-and-ck/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="NoS and PCK and CK">
-                            
-                            <span class="card-title">NoS and PCK and CK</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Yesterday(04,02,2015) I attend NARST 2015 session#3 stand 4(Science teaching–Middle and high school Grade 5-12) and stra
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-04-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/meeting/" class="post-category">
-                                    meeting
-                                </a>
-                                
-                                <a href="/categories/meeting/%E4%BC%9A%E8%AE%AE/" class="post-category">
-                                    会议
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/teacher-knowledge/">
-                            <span class="chip bg-color">teacher knowledge</span>
-                        </a>
-                        
-                        <a href="/tags/NARST/">
-                            <span class="chip bg-color">NARST</span>
-                        </a>
-                        
-                        <a href="/tags/PCK/">
-                            <span class="chip bg-color">PCK</span>
-                        </a>
-                        
-                        <a href="/tags/NoS/">
-                            <span class="chip bg-color">NoS</span>
-                        </a>
-                        
-                        <a href="/tags/PK/">
-                            <span class="chip bg-color">PK</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/03/29/2015-03-29-laboratory-activity-should-not-be/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="实验课不能放羊">
-                            
-                            <span class="card-title">实验课不能放羊</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-实验是有目的性的科学探索活动  
-
-我在想，我们到底为什么做实验？科学家做试验的目的是，探索未知，做出新发现，学生做实验的目的又是什么呢？也许你会说，学生做实验可以学到科学知识，也可以学到过程和方法学到新技能，你还可以体验，做研究，的过程
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-03-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%95%99%E5%AD%A6/">
-                            <span class="chip bg-color">实验教学</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%95%99%E5%AD%A6%E5%8F%8D%E6%80%9D/">
-                            <span class="chip bg-color">教学反思</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/03/20/2015-03-20-how-to-ask-question/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="教学要如何提问">
-                            
-                            <span class="card-title">教学要如何提问</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                学问学问，不问不学，不学不问。学会问问题，不仅仅是学的艺术，同时也是教的艺术，因此，教师要特别用心。  
-关于课堂提问，在《教学设计》讲义中我写过这样一段话：    课堂问答是教师最常用也最为灵活的评价手段。通过课堂问答，教师可以激发和引导
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8F%90%E9%97%AE/">
-                            <span class="chip bg-color">提问</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%95%99%E5%AD%A6%E6%8A%80%E8%83%BD/">
-                            <span class="chip bg-color">教学技能</span>
-                        </a>
-                        
-                        <a href="/tags/microteaching/">
-                            <span class="chip bg-color">microteaching</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/03/15/2015-03-15-biology-experiment-study/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="中学生物学实验研究">
-                            
-                            <span class="card-title">中学生物学实验研究</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###1LZ    理论课及教学安排（第二周开课）    课程介绍，分组，教学内容安排    实验准备：实验材料，实验仪器，药品、试剂，预实验  
-###2Z    中学实验教学实践  
-###3L    观察实验显微镜的使用p3；颤藻和水
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-03-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AF%BE%E7%A8%8B/" class="post-category">
-                                    课程
-                                </a>
-                                
-                                <a href="/categories/%E8%AF%BE%E7%A8%8B/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%95%99%E5%AD%A6/">
-                            <span class="chip bg-color">实验教学</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AF%BE%E7%A8%8B/">
-                            <span class="chip bg-color">课程</span>
-                        </a>
-                        
-                        <a href="/tags/course/">
-                            <span class="chip bg-color">course</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/03/05/2015-03-05-life-science/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="生命科学课程主页">
-                            
-                            <span class="card-title">生命科学课程主页</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                本页面会随着课程不断更新，并提供《生命科学》课件供学生下载，同时也欢迎同学们对课程提出宝贵意见。  
-###常用网站课堂互动工具QuizSocket  
-###课件下载绪论下载细胞-生命的物质基础下载  
-###生活生物学1问：一日三餐怎么
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-03-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AF%BE%E7%A8%8B/" class="post-category">
-                                    课程
-                                </a>
-                                
-                                <a href="/categories/%E8%AF%BE%E7%A8%8B/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E5%AD%A6%E8%B5%84%E6%BA%90/">
-                            <span class="chip bg-color">教学资源</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AF%BE%E7%A8%8B/">
-                            <span class="chip bg-color">课程</span>
-                        </a>
-                        
-                        <a href="/tags/biology/">
-                            <span class="chip bg-color">biology</span>
-                        </a>
-                        
-                        <a href="/tags/course/">
-                            <span class="chip bg-color">course</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2015/03/03/2015-03-03-cpr-teaching-project/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="心肺复苏教学实践项目">
-                            
-                            <span class="card-title">心肺复苏教学实践项目</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###项目背景：上海外滩踩踏事件：从跨年夜外滩救人归来，浙江省温州市儿童医院儿童感染科护士吴小小在微信朋友圈里呼吁：希望大家都去学习急救知识。
-我国公民急救知识培训还很欠缺，仅有不到1%的人接受过急救培训。”中国人围观 老外施救”暴露国人急
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2015-03-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/%E9%A1%B9%E7%9B%AE/" class="post-category">
-                                    项目
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AE%9E%E9%AA%8C%E6%95%99%E5%AD%A6/">
-                            <span class="chip bg-color">实验教学</span>
-                        </a>
-                        
-                        <a href="/tags/CPR/">
-                            <span class="chip bg-color">CPR</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8F%8B%E7%88%B1%E4%B8%AD%E5%AD%A6/">
-                            <span class="chip bg-color">友爱中学</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%95%99%E5%AD%A6%E5%AE%9E%E8%B7%B5/">
-                            <span class="chip bg-color">教学实践</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/32/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">33 / 51</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/34/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/07/28/2015-07-28-ict-application-in-biology-teaching/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/07/28/2015-07-28-ict-application-in-biology-teaching/" class="post-title-link" itemprop="url">信息技术在生物教学中的应用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-07-28 07:49:00" itemprop="dateCreated datePublished" datetime="2015-07-28T07:49:00+08:00">2015-07-28</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-08-03 08:04:58" itemprop="dateModified" datetime="2015-08-03T08:04:58+08:00">2015-08-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
+                </span>
             </span>
-            
-            <br>
-            
-            <br>
-            
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>###课件下载<br><a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1hq91Mfi">信息技术课件</a><br>下载密码：rm5n  </p>
+<p>###课程考核<br>【目标】<br>flash制作目的在于评价flash的基本动画制作技能以及应用技能解决实际教学问题的能力。  </p>
+<p>主要评价学员：<br>    基本技能的灵活运用<br>    解决实际问题的能力<br>    创意   </p>
+<p>提交内容：<br>    文本文件：描述制作该动画的目的以及该动画的价值或用途，以及遇到的问题和解决办法。以及动画制作的思路和使用的关键技术。<br>    fla源文件和swf演示文件。</p>
+<p>###网络资源连接<br>概念图软件：Inspiration; xmind; freemind; <a target="_blank" rel="noopener" href="http://wisemapping.com/">wisemapping</a><br>演示文稿制作：<a target="_blank" rel="noopener" href="http://prezi.com/">prezi</a><br>印象笔记：evernote<br>在线问卷：问卷星；调查派<br>课程平台软件：moodle<br>网络课程：网易公开课；爱课程；Coursera; Edx; Udacity;<a target="_blank" rel="noopener" href="https://novoed.com/">novoed</a><br>录屏软件：CamtasiaStudio<br>社会性书签：diigo<br>虚拟世界：<a target="_blank" rel="noopener" href="http://comp.mq.edu.au/vworlds/omosa_cn.html">Omosa</a>; secondlife  </p>
+<p>###第一部分 Flash 制作<br>Adobe Flash CS3 官方简体绿色版下载:<br><a target="_blank" rel="noopener" href="http://www.flashline.cn/down/1/flash-cs3.html">http://www.flashline.cn/down/1/flash-cs3.html</a><br>Flash基本概念与操作<br>Flash基本概念：<br>1 位图和矢量图<br>2 场景<br>3 图层<br>4 帧<br>5 元件<br>6 库  </p>
+<p>Flash基本操作：<br>基本操作： 文档 界面 面板 场景<br>基本操作： 绘图 色彩 元件<br>基本操作： 帧 图层<br>视频教程：<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/SrEik5SbYQo/">http://www.tudou.com/programs/view/SrEik5SbYQo/</a>  </p>
+<p>Flash 快捷键<br>Ctrl + Z 撤销<br>Ctrl + B 打散<br>Ctrl + G 群组<br>F6 插入关键桢<br>F5 插入普通桢<br>F7 插入空白关键桢<br>F8 转变为元件<br>F9 打开动作脚本  </p>
+<p>Flash动画类型与实例制作<br>1.逐帧动画<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/SW2JopHSvU0/">http://www.tudou.com/programs/view/SW2JopHSvU0/</a><br><img src="https://raw.github.com/lukezhg/Freyja/master/dog.png" alt="dog image">  </p>
+<p>蝴蝶和小船图片：链接：<a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1bni7WK3">http://pan.baidu.com/s/1bni7WK3</a> 密码：lon9</p>
+<p>2.动作补间<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/A_h3o4SxnVA/">http://www.tudou.com/programs/view/A_h3o4SxnVA/</a><br>3.形状补间<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/o559fimXAqQ/">http://www.tudou.com/programs/view/o559fimXAqQ/</a><br>4.引导层动画<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/L9MvoGCSZfQ/">http://www.tudou.com/programs/view/L9MvoGCSZfQ/</a><br>5.遮罩动画<a target="_blank" rel="noopener" href="http://www.tudou.com/programs/view/SrEik5SbYQo/">http://www.tudou.com/programs/view/SrEik5SbYQo/</a>  </p>
+<p>###<a href="http://zhangchunlei.com/blog/2014/11/27/flash-as3-zip-manual/">第二部分 flash动作脚本简明教程</a><br>flash实例下载：<br>box 链接: <a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1sj2xZMd">http://pan.baidu.com/s/1sj2xZMd</a> 密码: x3qd</p>
+<p><pre/><code/><br>box.x = 100;<br>box.y = 150;<br>box.rotation = 30;<br>box.scaleX = 1.5;<br>box.scaleY = 1.5;</p>
+<p>btnStop.addEventListener(MouseEvent.CLICK,btnStopClick);//给btn注册事件帧听器<br>//点击Stop按钮事件处理函数<br>function btnStopClick(e:MouseEvent):void&#123;<br>box.stop();<br>&#125;</p>
+<p>btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btn注册事件帧听器<br>//点击btnPlay按钮的事件处理函数<br>function btnPlayClick(e:MouseEvent):void&#123;<br>box.play();<br>&#125;<br></code></pre></p>
+<p>mcFace 链接: <a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1dDi3IDz">http://pan.baidu.com/s/1dDi3IDz</a> 密码: 7yku</p>
+<p><pre/><code/><br>mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听<br>//startDragFace函数<br>function startDragFace(e:MouseEvent):void &#123;<br>    mcFace.startDrag();<br>&#125;</p>
+<p>mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);<br>function stopDragFace(e:MouseEvent):void &#123;<br>    mcFace.stopDrag();<br>&#125;<br></code></pre></p>
+<p>练习和自测：<br>1 会行走的小鸭子；<br>2 小船沿着河流行驶；<br>3 放大镜效果（提示：使用遮罩）；  </p>
+<p>###第三部分 教学资源利用<br><a target="_blank" rel="noopener" href="http://phet.colorado.edu/">PhET: Free online physics, chemistry, biology, earth science and math simulations</a>  </p>
+<p><a target="_blank" rel="noopener" href="http://concord.org/stem-resources">STEM Resource Finder | The Concord Consortium</a><br><a target="_blank" rel="noopener" href="http://mw.concord.org/modeler/">Molecular Workbench - An Interface to the Molecular World</a><br><a target="_blank" rel="noopener" href="http://www.udel.edu/biology/ketcham/microscope/scope.html">虚拟显微镜考核</a>  </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/05/29/2015-05-29-life-sciences-and-our-life/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/05/29/2015-05-29-life-sciences-and-our-life/" class="post-title-link" itemprop="url">生命科学与生活</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-05-29 12:14:00" itemprop="dateCreated datePublished" datetime="2015-05-29T12:14:00+08:00">2015-05-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-07-31 14:07:19" itemprop="dateModified" datetime="2015-07-31T14:07:19+08:00">2015-07-31</time>
+              </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>用了13周的时间最为核心的生命科学内容学习完了，下面的3周时间我们会结合同学们的小组项目学一学这些知识在生活中的应用。  </p>
+<p>主要会涉及下面3大主题：<br>1、饮食与健康<br>健康与亚健康、平衡膳食与健康、现代“文明病”、癌症、人体器官移植、转基因食品、睡眠。<br>6组：早饭到底给了我们什么？<br>9组：减肥知多少<br>12组：苹果<br>14组：酸奶<br>15组：素食<br>7组：探究科学去除污的机理？<br>2组:转基因食品<br>11组：试管婴儿</p>
+<p>饮食很重要，摄入足够的能量是维持高级生命活动的基础。大脑消耗非常大的能量。TED演讲向厨房鞠躬。幼儿时期食物的丰富度可能影响成年后肥胖的几率。</p>
+<p>吃很重要。<br>吃什么？营养与味道、素食主义、补锌、维生素。<br>吃多少？早上吃饱、中午吃好、晚上吃少。空腹不能吃香蕉。厌食症和暴饮暴食。<br>怎么吃？时间（早饭）、健康食谱（适当的烹调和混合）、和谁（聚餐）。<br>数学模型</p>
+<p>人体如何维持机体的健康？<br>新陈代谢<br>稳态<br>免疫系统<br>基因调控  </p>
+<p>癌症：<br>麻省理工学院公开课：生物学导论_癌症_网易公开课<br><a target="_blank" rel="noopener" href="http://open.163.com/movie/2010/1/T/B/M6S8NS5PR_M6S8QOBTB.html">http://open.163.com/movie/2010/1/T/B/M6S8NS5PR_M6S8QOBTB.html</a></p>
+<p>2、神奇的大脑<br>1组:你会睡觉吗？<br>3组：咖啡<br>5组：茶之妙<br>大脑的结构<br>大脑的工作原理<br>如何科学用脑？</p>
+<p>3、生物进化、生物多样性与环境<br>人为什么要长头发?<br>方舟子似乎有一段很有意思论述。  </p>
+<p>8组：你的头发还好吗？<br>10组：仙人掌是否抗辐射？<br>4组：濒危动植物现状<br>13组：地外生命</p>
+<p><pre/><code/><br>1组:你会睡觉吗？<br>2组:转基因食品<br>3组：咖啡<br>4组：从生态环境破坏到濒危动植物现状<br>5组：茶之妙<br>6组：早饭到底给了我们什么？<br>7组：探究科学去除污的机理？<br>8组：你的头发还好吗？<br>9组：减肥知多少<br>10组：仙人掌是否抗辐射？<br>11组：试管婴儿<br>12组：苹果<br>13组：地外生命<br>14组：酸奶<br>15组：素食<br></code></pre></p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/05/03/2015-05-03-yi-kou-chi-ge-pangzhi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/05/03/2015-05-03-yi-kou-chi-ge-pangzhi/" class="post-title-link" itemprop="url">你不能一口吃成个胖子</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2015-05-03 17:15:00 / 修改时间：17:39:29" itemprop="dateCreated datePublished" datetime="2015-05-03T17:15:00+08:00">2015-05-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>很多的时候，我们老师太着急，总是想让学生一口吃成个胖子。  </p>
+<p>殊不知，这样只会营养不良。  </p>
+<p>我上微格教学的时候，也是这样。我特别想让学生学会把自己的教学活动和具体的教学目标联系起来，与学生知识和经验联系起来。为此，我还特地设计了一个教学简案模板，辅助同学有意识的做出这些的联系。这些联系包括，学生活动与具体目标的联系、学生活动与学生经验的联系、学习活动与要解决的问题之间的联系、学生活动与教师辅助之间的联系，以及一个学生活动与下一个学生活动之间的联系。我想让同学们直接利用这个模板设计酶这节课。  </p>
+<p>出发点是很好的，但是操之过急了，犯了“想让学生一口吃成个胖子”的错误。我很欣慰，这是课上一位同学提醒我的。很显然，应该让同学们一个连接一个连接的明确，比如先按照自己的原有的思路设计这节课的活动，接下来找出那些活动是要学生动脑或动手的，在接下来明确这些活动能够帮助达成哪些具体的学习目标。然后再思考这个活动学生是否喜欢、是否有能力完成，是否有其他更好的活动可以达成同样的目标，活动过程中教师可能需要提供怎样的辅助。最后在思考，如何让这样的思维活动更有条理，如何让活动环节之间紧密的衔接起来，如何设计这节课的问题线索。这样才是把任务简化分解了，然后再结合具体的视频案例，相信会更容易让同学们接受。  </p>
+<p>总之，这次是学生给我上了一堂生动的课，谁都不能一口吃成个胖子，要一口一口的吃！  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/04/17/2015-04-17-narst-2015/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/04/17/2015-04-17-narst-2015/" class="post-title-link" itemprop="url">NARST 2015</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2015-04-17 13:24:00 / 修改时间：17:02:15" itemprop="dateCreated datePublished" datetime="2015-04-17T13:24:00+08:00">2015-04-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/meeting/" itemprop="url" rel="index"><span itemprop="name">meeting</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/meeting/%E4%BC%9A%E8%AE%AE/" itemprop="url" rel="index"><span itemprop="name">会议</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>This is the second time I attend NARST. Like last time, lots of thing is going on at the same time, but I can catch much more than before.  </p>
+<p>Here are some pictures of my presentations and my academic families.<br><img src="https://raw.github.com/lukezhg/Freyja/master/NARST2015_chunlei1.jpg" alt="Chunlei Presenting 1">  </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2015/04/17/2015-04-17-narst-2015/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/04/13/2015-04-13-nos-and-pck-and-ck/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/04/13/2015-04-13-nos-and-pck-and-ck/" class="post-title-link" itemprop="url">NoS and PCK and CK</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-04-13 04:13:00" itemprop="dateCreated datePublished" datetime="2015-04-13T04:13:00+08:00">2015-04-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-06-19 10:59:28" itemprop="dateModified" datetime="2015-06-19T10:59:28+08:00">2015-06-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/meeting/" itemprop="url" rel="index"><span itemprop="name">meeting</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/meeting/%E4%BC%9A%E8%AE%AE/" itemprop="url" rel="index"><span itemprop="name">会议</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Yesterday(04,02,2015) I attend NARST 2015 session#3 stand 4(Science teaching–Middle and high school Grade 5-12) and strand 8 (The handbook of research on science education: implications for inservice teacher education) and strand 13 (History, Philosophy, and Sociology of science). In summary, it was all about PCK, PK and NoS.  </p>
+<p>There are two lines of questions to address:<br>What is the difference between PK and PCK? What is PK? Is there any Pedagogy content free? What is knowledge?<br>There are always content for teaching, right? You can not teaching nothing, can you? But of course, you can teach anything. You can also teach teaching, even at this time, you still need something as your teaching object in you examples or as your context. Sometimes we cannot think clearly about PK and PCK, because we do not make our view of knowledge clear. I will argue that Knowledge need to have some function for a population to exist and pass on from generation to generation. CK is about how the world works. Some people need to understand science. Some need to be able to do science. Some people apply science to improve living level. While, PK, in the context of science education, is all about how teacher help students learn science, how teaching works. It help teachers understand the what is teaching, how to teach better, why some strategies work while some not. Just like package, teacher need to know what content is inside? How is this content different from others? and which package suit for this content? How to make the package? how does this package work? how does it bridge the content and the students. How students approach this package? Did we use the right package in the right way?  </p>
+<p>Why NoS? Why NoS teaching fail? Why researchers suggest to use explicit way to teach NoS? What do you mean by explict?<br>We don’t select to teach NoS simply for more and more researchers ask to do so. We do teach NoS because it has value for student to understant science, do science and apply science. Sometimes, we expect that students can learn NoS by themselves through science practices. But it is wrong. Researchers found that it is hard for students grasp NoS themselves. In this case, teachers should teach NoS purposely. They should design their lesson with NoS in mind and get students there intentionally. The explict way of teaching NoS, is not just tell the student what science is, but guide students’ attention to it. It is not give students a bird, but show them where the bird located. For example, give student a bird locked in a cage help students feel and see where the bird is. But do we need improve their bird seeking skills? or do we just care the have the bird. To address this questions another way, Which is more important? To discover NoS through science practise or just understand NoS which reflect a better image of science(the image that science education reseachers and scientist captured). The answer is both are valuable learning outcomes. The process and the result both matter.  </p>
+<p>Don’t put the car in front of the house.  </p>
+<p>Pay attention to the details.</p>
+<p>Fit or not?<br>English writing?<br>Major fake?<br>Blind  </p>
+<p>You may change or you may refuse to change, but you have to respond to not buy very requests.   </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/03/29/2015-03-29-laboratory-activity-should-not-be/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/03/29/2015-03-29-laboratory-activity-should-not-be/" class="post-title-link" itemprop="url">实验课不能放羊</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2015-03-29 20:04:00 / 修改时间：20:06:21" itemprop="dateCreated datePublished" datetime="2015-03-29T20:04:00+08:00">2015-03-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>实验是有目的性的科学探索活动  </li>
+</ol>
+<p>我在想，我们到底为什么做实验？科学家做试验的目的是，探索未知，做出新发现，学生做实验的目的又是什么呢？也许你会说，学生做实验可以学到科学知识，也可以学到过程和方法学到新技能，你还可以体验，做研究，的过程。概括起来就是我们所谓的三维目标，那么，我们做的实验是否，打成了这些目标呢！不管达成没达成，至少我们知道，做实验，一定是要有目标才行，否则，为了做实验而做实验，就非常没意思了。  </p>
+<p>2.实验课要与理论课想结合，并且互补  </p>
+<p>生命科学是一门自然科学，也是一门的，实验科学。实验教学与理论课不同之处在于实验教学过程当中更容易培养学生的科学探究技能，帮助学生认识科学的真实的过程，以及，科学的本质特征。所以老师在设计实验教学的时候一定是要和自己的理论课相结合的，在理论课上能达成的目标就不在实验课上做。在实验课上，想达成的目标一定是那些理论课上不好达成的目标，这样的话才有分工才能够使自己的教学目标，更合理地分配在理论和实践教学当中。  </p>
+<ol start="3">
+<li>做实验一定要知道自己要解决的是一个什么问题  </li>
+</ol>
+<p>但是反观我们现在的实验教学很多的时候就像于璇老师说的一样就是放羊一样，老师没有明确自己的事业目标学生不知道自己在干什么？那么这个是非常失败的实验教学。我曾经反复地跟着学生强调过实验教学，啊，你一定要明白这个实验到的解决是什么问题？那如果这个问题都不清楚的话，那么这个时间就白做了。  </p>
+<ol start="4">
+<li>作为准教师你要有意识的思考以这个实验为载体能达成什么样的教学目标  </li>
+</ol>
+<p>对于师范生而言还要加一条，那就是你要清楚，要用这样的一个实验载体达成什么样的教学目标。也就是说，你不仅要能像学生一样思考,还要能站在老师的角色上思考才行。要想，做到这一点,并且实现预期的目标，师生必须要有思考，有设计，有准备。否则很容易就变成了放羊，学生觉得索然无味，学习活动散漫，浪费时间，这根本就不是我们要的实验教学。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/03/20/2015-03-20-how-to-ask-question/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/03/20/2015-03-20-how-to-ask-question/" class="post-title-link" itemprop="url">教学要如何提问</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-03-20 15:27:00" itemprop="dateCreated datePublished" datetime="2015-03-20T15:27:00+08:00">2015-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-03-25 16:01:59" itemprop="dateModified" datetime="2018-03-25T16:01:59+08:00">2018-03-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>学问学问，不问不学，不学不问。<br>学会问问题，不仅仅是学的艺术，同时也是教的艺术，因此，教师要特别用心。  </p>
+<p>关于课堂提问，在《教学设计》讲义中我写过这样一段话：<br>    课堂问答是教师最常用也最为灵活的评价手段。通过课堂问答，教师可以激发和引导学生思维、诊断学生认知障碍、检查学生掌握情况、活跃课堂氛围，让教学更有效，让课堂更有生机和活力。<br>    1. 那么，问什么问题、不问什么问题呢？<br>    问与教学内容密切相关的问题，不问无关的问题。问核心的问题，不问细枝末节的问题。问有适当挑战性的问题，不问过难或者过易的问题。问开放性的问题，不过多的提问是否的简单问题。问真实的问题，不问虚假问题。问与生活密切相关的问题，不问过于抽象的问题。<br>    2. 为什么而问？<br>    为诊断起点而问。为引导阅读、理清事实而问。为建构概念、模型而问。为检测学习结果而问。为理解科学本质和方法而问。<br>    3. 谁来问、怎么问、何时问？<br>    不仅是教师问，也要鼓励学生提问，因此教师课上要留下学生提问时间和机会。由浅入深、层层递进、循序渐进。课前问、课上问、课下问。  </p>
+<p>陈月艳老师曾经专门就生物学教学中如何设问写过文章，见：陈月艳. 根据教学内容和任务设计问题串[J]. 生物学通报. 2011(01): 39-41.  </p>
+<p>下面摘录一段与准教师分享：<br>生物学设置问题串要：<br>（1）从整体上把握课程内容。课堂教学中的问题串往往反映知识的逻辑结构，体现教学目标，所以教师首先要明晰教材的逻辑系统，理清知识之间的内在联系，清楚课程、章、节、每一节课的核心内容，这样才能融会贯通，使每一节课的问题串为整体课程教学服务。<br>【对内容的深刻把握是设计好问题的基础】  </p>
+<p>（2）把握问题串设置的核心。……围绕一节课的知识主线和能力培养目标等核心设置问题串。如前所述，在“生物膜结构”教学中，围绕着膜的成分及其膜物质分子的排列方式与关系来阐述生物膜的亚显微结构；而在骨的结构和免疫概念教学中，一些问题看似散乱，但是围绕骨的结构和功能、免疫的概念要素等核心问题展开，形散而神不散。<br>【把握住核心，围绕主线设问】  </p>
+<p>（3）激发而不是强迫学生思维。疑是启开思维的钥匙。设疑要巧，巧在以疑诱发、点拨和引爆学生思维， 培养学生思维的连贯性。如在“尿的形成”单元教学中，首先提出一个看似简单的问题：“尿从哪里来？”多数学生会立即回答：尿从水中来。当他们这样回答的时候，其实就已经产生了一系列问题并进行积极思考：通过饮食摄入的水最后去了哪里？生活经验告诉我们喝得多、尿得多，喝进来的水大部分被吸收入血，难道尿中的水来自于血液吗？血液成分如何变成尿的呢？肾脏的结构是怎样的，能完成血液的净化？在这个例子中，教师只提1个问题，犹如一石激起千层浪，引发学生头脑中的系列问题，激发主动学习和探究的兴趣和热情。<br>【一石激起千层浪，追问的艺术】  </p>
+<p>（4）把握课堂预设问题和课堂生成问题的关系。教师预设的问题串是按照课程内容、学生情况等设计的，反映教师的教学思路，具有科学性和合理性。但教学过程是复杂的，学生思维是活跃的，课堂上学生可能会产生教师预设之外的很有价值的问题。所以，教师要防止让预设的问题串束缚教学进程，成为学生拓展思维或学习的障碍。有经验的教师会捕捉和积累学生学习的困难和课堂中生成的有价值的问题，并把它巧妙地设置成以后教学备用的问题串，从而达到师生互动与和谐，取得好的教学效果。<br>【有来无往非礼也，还给学生提问的主体地位，领用和积累学生的好问题】  </p>
+<p>（5）合理地选取和加工创设问题的素材。选取素材要做到：素材尽量贴近学生生活实际；素材要恰当贴切，与教学问题息息相关； 素材要简明易懂，素材本身不要为教学设置障碍；素材来源要真实可信，非编撰而成。<br>【有好的素材和资源并恰当的加工、利用才能提出好问题】  </p>
+<p>打一个不恰当的比喻，教学问答就好像乒乓球的相持阶段。教师一个问题抛给学生，学生通过思考做出回应。教师通过学生的回球就知道学生基础如何、是否掌握。提问不应该总是教师主导，也应该鼓励学生提问。学生一个问题抛给老师，老师根据需要或者进行讲解演示或者抛给其他同学思考。提问就好像攻球，要讲究套路，即所谓的提问策略和条理，因为提问的目的是探测已知、引向未知，不是问倒学生，而是启发学生，所以教师还需要注意难度变化，使得不同层次学生都能参与。  </p>
+<p>###那么，提问该如何修炼？  </p>
+<ol>
+<li><p>明确提问的作用，知道自己为什么而问。<br>提问主要有以下功能：<br>1 提高学生注意力；<br>2 暴漏或激活学生已有知识；<br>3 判断学生学习状况；<br>4引导学生思维活动、构建新知。  </p>
+</li>
+<li><p>掌握提问的技巧<br>提问讲究有效性、条理性、层次性。  </p>
+</li>
+</ol>
+<p>所谓有效性：<br>（1）学生听得懂；<br>（2）学生有足够的时间思考；<br>（3）学生能展示自己对核心内容的认知；<br>（4）学生能够获得针对性反馈  </p>
+<p>所谓条理性，就是要遵循逻辑，包括（1）范畴逻辑、（2）因果逻辑、（3）认知发展逻辑。也就是说在设定问题内容顺序的时候，应高考虑概念内涵范畴大小、因果逻辑关系以及学生认知发展规律或者科学史的发展规律。  </p>
+<p>所谓层次性，就是问题要有不同的挑战性和开放性，进而调动更多的学生思考和参与。  </p>
+<p>【练习】<br>分析你认可的一堂好课，将授课教师所有的提问录入到文档，逐一分析每个问题提出的情景、作用、类型，并进行统计，评价教师的提问是否有效、有条理、有层次。  </p>
+<p>分析工具satic coding sheet。  </p>
+<p>教师是否利用学生的回答和改变学生的思考【工具编码】  </p>
+<p>【小试牛刀】<br>就某节课内容，设计你的关键问题串并说明每个问题的设计意图和与本节课核心内容的关联（关键问题一般不超过5个）。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/03/15/2015-03-15-biology-experiment-study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/03/15/2015-03-15-biology-experiment-study/" class="post-title-link" itemprop="url">中学生物学实验研究</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-03-15 09:49:00" itemprop="dateCreated datePublished" datetime="2015-03-15T09:49:00+08:00">2015-03-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-03-29 19:02:42" itemprop="dateModified" datetime="2015-03-29T19:02:42+08:00">2015-03-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###1LZ    理论课及教学安排<br>（第二周开课）    课程介绍，分组，教学内容安排    实验准备：实验材料，实验仪器，药品、试剂，预实验  </p>
+<p>###2Z    中学实验教学实践  </p>
+<p>###3L    观察实验<br>显微镜的使用p3；颤藻和水绵细胞的比较观察p8；DNA和RNA的观察p84；死活细胞的鉴定<br>备注：颤藻，水绵，碘液；甲基绿-派洛宁染色液（现配）, 台盼蓝  </p>
+<p>###4Z    分析与鉴定<br>食物中主要营养成分的鉴定p28[G1]；探究酶的高效性p39；探究影响酶活性的最佳条件（pH值）p44；<br>备注：班氏试剂，双缩脲试剂，碘液，苏丹III染液，试管可能不够用  </p>
+<p>###5L    生理活动分析<br>叶绿体中色素的提取和分离p50[G2]；探究影响光合作用的因素p55；酵母菌的呼吸方式p62<br>备注：铁架台和大试管（2.5cmX20cm）不够用，至少需要5套p63装置  </p>
+<p>###6L*    细胞分裂观察实验<br>植物细胞有丝分裂的观察p11[G4]；植物花粉母细胞减数分裂的观察（选）p17；果蝇唾液腺细胞染色体观察（选）p88<br>备注：醋酸洋红或0.2%龙胆紫，卡诺固定液p11；果蝇  </p>
+<p>###7Z    模型类实验<br>探究植物细胞外界溶液浓度与质壁分离的关系p23[G3]；性状分离比的模拟实验p86；心肺复苏操作<br>备注：洋葱；围棋子；心肺复苏模拟人  </p>
+<p>###8Z    调查类与细胞生理实验<br>水质污染调查：污水检测、水蚤心率变化p101[G5]；线粒体观察；黑藻细胞质环流<br>备注：亚甲基蓝，水蚤；健那绿（注1）；黑藻  </p>
+<p>###9LZ    教学展示安排和自主实验<br>实验课堂教学训练和展示活动安排；自主设计、准备、实施实验教学活动    </p>
+<p>学生准备一个实验，老师准备一个实验，师生共同设计和讨论第三个实验。  </p>
+<p>使用网络、使用小黑板、使用手机、使用显微镜拍照、使用激光笔。  </p>
+<p>实验记录本范例(预习部分)：<br>教学实践报告范例：<br>教学简案范例：<br>教学详案范例：<br>教学录像要求：  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/03/05/2015-03-05-life-science/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/03/05/2015-03-05-life-science/" class="post-title-link" itemprop="url">生命科学课程主页</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-03-05 10:26:00" itemprop="dateCreated datePublished" datetime="2015-03-05T10:26:00+08:00">2015-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2016-01-11 13:29:57" itemprop="dateModified" datetime="2016-01-11T13:29:57+08:00">2016-01-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本页面会随着课程不断更新，并提供《生命科学》课件供学生下载，同时也欢迎同学们对课程提出宝贵意见。  </p>
+<p>###常用网站<br>课堂互动工具<a target="_blank" rel="noopener" href="http://www.quizsocket.com/">QuizSocket</a>  </p>
+<p>###课件下载<br>绪论<a target="_blank" rel="noopener" href="http://pan.baidu.com/share/link?shareid=182369932&uk=3778403605">下载</a><br>细胞-生命的物质基础<a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1dDo242P">下载</a>  </p>
+<p>###生活生物学<br>1问：一日三餐怎么吃最健康？水果应该什么时候吃？为什么？<br>2问：如何从细胞和分子的角度解释成熟的红苹果为什么能催熟猕猴桃？具体作用机制是怎样的？<br>3问：如何利用生物学防霾、治霾？<br>4问：生命是如何起源的？<br>5问：为什么冬天吃面条的时候流鼻涕？  </p>
+<p>###闲读书目<br>薛定谔 《生命是什么》<a target="_blank" rel="noopener" href="http://book.douban.com/subject/1317485/">豆瓣</a><br>库恩 《科学革命的结构》<a target="_blank" rel="noopener" href="http://book.douban.com/subject/1123740/">豆瓣</a>  </p>
+<p>###学习工具和资源<br>生命科学概念框架：<br><a target="_blank" rel="noopener" href="http://naotu.baidu.com/viewshare.html?shareId=atw9aqm5cxkw">http://naotu.baidu.com/viewshare.html?shareId=atw9aqm5cxkw</a><br>细胞大小与尺度:<br><a target="_blank" rel="noopener" href="http://learn.genetics.utah.edu/content/cells/scale/">http://learn.genetics.utah.edu/content/cells/scale/</a><br>模拟显微镜观察：<a target="_blank" rel="noopener" href="http://www.udel.edu/biology/ketcham/microscope/scope.html">http://www.udel.edu/biology/ketcham/microscope/scope.html</a><br><a target="_blank" rel="noopener" href="http://v.163.com/special/opencourse/introductionbiology.html">麻省理工学院公开课：生物学导论_全35集_网易公开课</a><br><a target="_blank" rel="noopener" href="http://v.163.com/special/opencourse/crashcoursebiology.html">Crash Course–《十分钟生物学》_全40集_网易公开课</a>  </p>
+<p>###视频资源<br><a target="_blank" rel="noopener" href="http://tv.sohu.com/20150228/n409226916.shtml">《柴静调查：穹顶之下》搜狐视频</a><br>推荐理由：面对雾霾我们能做些什么？还像以前一样麻木或者无力吗，我们不能指望科幻电影《星际穿越》里制造“虫洞”未知文明，我们唯一能指望的是我们自己，一个一个活生生的、会思考、会行动的、呼吸着中国空气的人。本片或许能让你摆脱“无力感”，重新思考和行动，只为找回那曾经拥有过的蓝天白云。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/03/03/2015-03-03-cpr-teaching-project/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/03/03/2015-03-03-cpr-teaching-project/" class="post-title-link" itemprop="url">心肺复苏教学实践项目</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-03-03 10:51:00" itemprop="dateCreated datePublished" datetime="2015-03-03T10:51:00+08:00">2015-03-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-03-16 18:26:15" itemprop="dateModified" datetime="2015-03-16T18:26:15+08:00">2015-03-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">项目</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###项目背景：<br>上海外滩踩踏事件：从跨年夜外滩救人归来，浙江省温州市儿童医院儿童感染科护士吴小小在微信朋友圈里呼吁：希望大家都去学习急救知识。</p>
+<p>我国公民急救知识培训还很欠缺，仅有不到1%的人接受过急救培训。”中国人围观 老外施救”暴露国人急救知识缺乏。 而美国则要求，任何一个国民在18岁之前，必须掌握基本的健康与卫生知识，小学阶段，主要普及拨打急救电话、简单的包扎术，从初三开始一直到高中，要重点普及心肺复苏术。有了这样的群众基础，或许“救人”才不会成为一个两难的问题。<a target="_blank" rel="noopener" href="http://www.chinanews.com/gn/2011/04-13/2971010.shtml">资料来源</a>  </p>
+<p>红十字会与红新月国际联合会将每年9月的第二个周六定为“世界急救日”，这个国际组织希望通过这个纪念日，呼吁世界各国重视急救知识的普及，让更多的人士掌握急救技能技巧，在事发现场挽救生命和降低伤害程度。  </p>
+<p>###工作任务：</p>
+<ol>
+<li>CPR公益短片：<br>高速公路上的人工呼吸 故事<br><img src="https://raw.github.com/lukezhg/Freyja/master/CPR-hwy.png" alt="CPR highway"><br>2014年2月20日下午，在美国佛罗里达州迈阿密繁忙的高速公路上，突然有一辆车停了下来，一名女子抱着一个婴孩，冲出车并尖叫称，她5个月大的外甥停止了呼吸。这个男婴是个早产儿，呼吸系统有问题。当他37岁的姨妈帕米拉行走在高速公路上时，小男婴突然脸色发青。帕米拉于是迅速将车开到路边，抱着塞巴斯蒂安下车，并呼叫帮助。帕米拉称很惊恐，她不能看着外甥出事，她给男孩做了人工呼吸。路人和警察也及时赶来帮忙。最后小男孩终于又再次恢复了呼吸，并安全的送到了医院。</li>
+</ol>
+<p>当你的亲友遇到这样的危险，你是否能够及时施救？</p>
+<p>据美国近年统计，每年心血管病人死亡数达百万人，约占总死亡病因1/2。而因心脏停搏突然死亡者60-70%发生在院前。因此，美国成年人中约有85%的人有兴趣参加CPR初步训练，结果使40%心脏骤停者复苏成功，每年抢救了约20万人的生命。</p>
+<ol start="2">
+<li><p>CPR教学视频资源：<br><a target="_blank" rel="noopener" href="http://pan.baidu.com/share/link?shareid=441792082&uk=3778403605">3分钟介绍CPR操作要点</a>  </p>
+</li>
+<li><p>CPR知识和技能考核：<br><a target="_blank" rel="noopener" href="http://pan.baidu.com/share/link?shareid=422271143&uk=3778403605">样例下载</a>  </p>
+</li>
+</ol>
+<p>###学习资源<br>心肺复苏术 - A+医学百科<br><a target="_blank" rel="noopener" href="http://www.a-hospital.com/w/%E5%BF%83%E8%82%BA%E5%A4%8D%E8%8B%8F%E6%9C%AF">http://www.a-hospital.com/w/%E5%BF%83%E8%82%BA%E5%A4%8D%E8%8B%8F%E6%9C%AF</a></p>
+<p>呼吸 - A+医学百科<br><a target="_blank" rel="noopener" href="http://www.a-hospital.com/w/%E5%91%BC%E5%90%B8">http://www.a-hospital.com/w/%E5%91%BC%E5%90%B8</a></p>
+<p>严重缺氧带来身体的危害_oxygeniclife-氧生活_新浪轻博客_Qing<br><a target="_blank" rel="noopener" href="http://qing.blog.sina.com.cn/3156652174/bc26b08e330035b9.html?sudaref=www.google.com">http://qing.blog.sina.com.cn/3156652174/bc26b08e330035b9.html?sudaref=www.google.com</a></p>
+<p>###实施计划：<br>时间：3月16号下午和3月17号下午<br>地点：友爱中学  </p>
+<p>###活动记录：<br>文字</p>
+<p>照片</p>
+<p>视频</p>
+<p>###活动反思：<br>心肺复苏实验第一天的反思   </p>
+<p>在这次活动中，有2个小组忘记做记录（如纸笔、录音、录像）了。这是可以理解的，因为教学活动很复杂，教师每时每刻都要做出很多选择和决策，忘记了对教学活动本身做记录是再普遍不过的事情，试想在一线教师中有多少老师会对自己的课做记录，并做系统的反思呢？答案是很少，我想这也是只有少数老师能成为教育专家的原因，怎么做固然对完成当下的教学任务很重要，但是为什么这么做，还可以怎么做，怎么做会更好，却直接决定着这个老师能否避免原地踏步和快速的发展。所以，同作为教师和研究者的我，想再提醒一次“我们是当局者，也是旁观者”。  </p>
+<p>再有，同学们操作的过程中也存在一些问题，比如对胸外按压的位置讲解不够准确，学生考核时难以快速找到正确的位置。第二，在清除异物的时候，应该将患者头测在一旁，这样有利于清除异物并让异物或者呕吐物顺利流下，不至于堵塞鼻孔或进入气管。第三，就是按压的频率普遍偏慢，这也需要我们以后教学的时候注意。此外，同学们对按压深度(5-6cm)和人工呼吸的吹气量（500-1000ml）强调的不够，其实这两个数字都在显示器上的。我把相关要点列一下：  </p>
+<p>预判讲究拍、唤、听、看、摸。<br>轻拍、大声呼唤看患者是否有反应判断意识有无；<br>将耳朵凑到患者口鼻，听是否有呼吸声，感觉是否有气流，看胸廓是否有起伏，进而确定其是否有呼吸；<br>摸喉管两侧颈动脉判断是否有心跳。  </p>
+<p>胸外按压：<br>位置：不上不下不左不右 （警示灯）<br>手法：不离、重叠<br>姿势：垂直上下不摇摆<br>深度：4~5厘米<br>频次: 30次/18秒;100次每分钟  </p>
+<p>人工呼吸：<br>是否排除异物<br>是否畅通气道<br>是否漏气，吹入潮气量:500-1000ml<br>频次：<br>无需胸外按压时：1次/5秒 一分钟12次<br>需要胸外按压时：2次/18秒，两次呼吸间隔一个胸廓降下，一分钟10次  </p>
+<p>这次活动也暴漏一些活动设计上的问题，比如教学和考核的组织规则有些复杂，课堂显得有些混乱，当然也与我们的准备不够有关。我们是否可以考虑把这个游戏规则定的更简单一些、更好玩一些呢？比如，是否可以自己教学自己考核？教学和考核是否可以同时进行？学好了，就可以去考核，考不过可以再考一次。比如，三个组负责教学，2个组负责考核。  </p>
+<p>最后一个班级，我们可以尝试使用再次前测与实验考核同时进行。看看纸笔考试是否能够促进实验考核以及后测成绩。  </p>
+<p>考核可以适当简化，预判需要在30秒内完成，急救需要在1分半钟完成。每个同学耗时最多3分钟。  </p>
+<p>参考资料：<br>“中国人围观 老外施救”暴露国人急救知识缺乏——中新网<br><a target="_blank" rel="noopener" href="http://www.chinanews.com/gn/2011/04-13/2971010.shtml">http://www.chinanews.com/gn/2011/04-13/2971010.shtml</a><br>中国人需要需要学习急救知识_新浪博客<br><a target="_blank" rel="noopener" href="http://blog.sina.com.cn/s/blog_b2f89dba0102ve88.html">http://blog.sina.com.cn/s/blog_b2f89dba0102ve88.html</a><br>大学生急救知识调查问卷<br><a target="_blank" rel="noopener" href="http://www.sojump.com/jq/1452416.aspx">http://www.sojump.com/jq/1452416.aspx</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/32/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><span class="page-number current">33</span><a class="page-number" href="/page/34/">34</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/34/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

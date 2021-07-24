@@ -1,1216 +1,1256 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/44/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/44/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/13/2013-11-13-the-passion-of-his-life/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="The passion of his life">
-                            
-                            <span class="card-title">The passion of his life</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                He was a UGA professor. He died today, of a Severe disease. His wife is also a UGA professor in Pysics Department. She s
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/13/2013-11-13-learning-or-not-learning/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="learning or not learning">
-                            
-                            <span class="card-title">learning or not learning</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Learning is dangerous; Not learning is lethal.  
-Why learning is dangerous? Because when are learning you have to change
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/12/2013-11-12-hungeru/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="HungerU">
-                            
-                            <span class="card-title">HungerU</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Today I went to MLC to attend a lecture by Dr Michelle Smith. In front of MLC, I saw a strange thing. You can see the pi
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UGA/">
-                            <span class="chip bg-color">UGA</span>
-                        </a>
-                        
-                        <a href="/tags/HungerU/">
-                            <span class="chip bg-color">HungerU</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/08/2013-11-08-ubuntu-crash-on-graphic-driver/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Ubuntu crash on graphic driver">
-                            
-                            <span class="card-title">Ubuntu crash on graphic driver</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Today I updated ubuntu, and then I can’t start it any more. It show tyy1 login. In fact I met this problem several times
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Ubuntu/" class="post-category">
-                                    Ubuntu
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/Ubuntu/">
-                            <span class="chip bg-color">Ubuntu</span>
-                        </a>
-                        
-                        <a href="/tags/diver/">
-                            <span class="chip bg-color">diver</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/08/2013-11-08-tmux-and-vim-in-ubuntu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="TMUX and VIM in ubuntu">
-                            
-                            <span class="card-title">TMUX and VIM in ubuntu</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.  
-Toda
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Ubuntu/" class="post-category">
-                                    Ubuntu
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/Ubuntu/">
-                            <span class="chip bg-color">Ubuntu</span>
-                        </a>
-                        
-                        <a href="/tags/TMUX/">
-                            <span class="chip bg-color">TMUX</span>
-                        </a>
-                        
-                        <a href="/tags/VIM/">
-                            <span class="chip bg-color">VIM</span>
-                        </a>
-                        
-                        <a href="/tags/VI/">
-                            <span class="chip bg-color">VI</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/03/2013-11-03-do-the-job-or-have-fun/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Do the job or have fun">
-                            
-                            <span class="card-title">Do the job or have fun</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Sometimes when something becomes your job, even you love it, when you have to do if before a deadline, you tend to lose 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/TED/">
-                            <span class="chip bg-color">TED</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/11/03/2013-11-03-machine-learning-and-octave/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Machine learning and Octave">
-                            
-                            <span class="card-title">Machine learning and Octave</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Recently I joined NG’ class of Machine Learning  
-Summay of the main topics:###Suprevised Learninglinear regression通过已有数
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-11-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    机器学习
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/machine-learning/">
-                            <span class="chip bg-color">machine learning</span>
-                        </a>
-                        
-                        <a href="/tags/octave/">
-                            <span class="chip bg-color">octave</span>
-                        </a>
-                        
-                        <a href="/tags/OCR/">
-                            <span class="chip bg-color">OCR</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/30/2013-10-30-conflicts-between-commercialisation-of-science-and-education-equity/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Conflicts between commercialization of science and education equity">
-                            
-                            <span class="card-title">Conflicts between commercialization of science and education equity</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Yesterday, I attended Dr Jackson’ class ESCI 8990 Daily Page.  
-We discussed questions:  
-
- whether scientific knowledge
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/patent/">
-                            <span class="chip bg-color">patent</span>
-                        </a>
-                        
-                        <a href="/tags/human-rights/">
-                            <span class="chip bg-color">human rights</span>
-                        </a>
-                        
-                        <a href="/tags/equity/">
-                            <span class="chip bg-color">equity</span>
-                        </a>
-                        
-                        <a href="/tags/IPP/">
-                            <span class="chip bg-color">IPP</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/29/2013-10-29-laptop-stand-designed-by-myself/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Laptop stand designed by myself">
-                            
-                            <span class="card-title">Laptop stand designed by myself</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                It is uncomfortable to work on my laptop on a table. Becuase the screen is too low and you have to bend your head which 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                    设计
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/design/">
-                            <span class="chip bg-color">design</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/27/2013-10-27-dont-alienate-disabled-people/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Don&#39;t alienate disabled people">
-                            
-                            <span class="card-title">Don&#39;t alienate disabled people</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb – who was born deaf. S
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" class="post-category">
-                                    社会观察
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/TED/">
-                            <span class="chip bg-color">TED</span>
-                        </a>
-                        
-                        <a href="/tags/disabled/">
-                            <span class="chip bg-color">disabled</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/43/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">44 / 51</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/45/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/13/2013-11-13-the-passion-of-his-life/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/13/2013-11-13-the-passion-of-his-life/" class="post-title-link" itemprop="url">The passion of his life</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-13 19:40:00" itemprop="dateCreated datePublished" datetime="2013-11-13T19:40:00+08:00">2013-11-13</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-15 02:11:23" itemprop="dateModified" datetime="2013-11-15T02:11:23+08:00">2013-11-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>He was a UGA professor. He died today, of a Severe disease. His wife is also a UGA professor in Pysics Department. She said his husband only left two sentences to his friends and students in UGA.  </p>
+<p>First, he just say GOODBYE.  </p>
+<p>Second, he said must guarantee every student have access to his collection, because it is really his passion–lifelong passion.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/13/2013-11-13-learning-or-not-learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/13/2013-11-13-learning-or-not-learning/" class="post-title-link" itemprop="url">learning or not learning</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-13 12:22:00" itemprop="dateCreated datePublished" datetime="2013-11-13T12:22:00+08:00">2013-11-13</time>
             </span>
-            
-            <br>
-            
-            <br>
-            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-14 01:58:41" itemprop="dateModified" datetime="2013-11-14T01:58:41+08:00">2013-11-14</time>
+              </span>
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>Learning is dangerous; Not learning is lethal.  </p>
+<p>Why learning is dangerous? Because when are learning you have to change–habits, beliefs,knowledge,actions and so on, every change may let you sit in an uncomfortable place unsure of the following consequence.  </p>
+<p>But not learning is lethal. Because the world change in every minutes, even every seconds, if you act the same way as before, you will be very likely lost your job, get a stroke and worry about your food and Pension.  </p>
+<p>What to do then?  </p>
+<p>Learn with a teacher, learn with your friends and learn in your own feasible and effective ways. Of course you have to study how learning happen to you at first.  </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/12/2013-11-12-hungeru/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/12/2013-11-12-hungeru/" class="post-title-link" itemprop="url">HungerU</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-12 14:35:00" itemprop="dateCreated datePublished" datetime="2013-11-12T14:35:00+08:00">2013-11-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-13 04:26:11" itemprop="dateModified" datetime="2013-11-13T04:26:11+08:00">2013-11-13</time>
+              </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Today I went to MLC to attend a lecture by Dr Michelle Smith. In front of MLC, I saw a strange thing. You can see the picture below.<br><img src="https://raw.github.com/lukezhg/Freyja/master/hungeru.png" alt="hungeru">  </p>
+<p>The fact and statistics is printed on it. Food still occupy a large percentage(39.8%) in their total household spend. In Congo, 70% goes to food, it means people there are more likely in hunger.  </p>
+<p>I asked where is the data from? They told me they gathered these data last Saturday, and the survey is still going on.  </p>
+<p>How can I participate? I asked. Just let people know this fact and then we can change this fact and statistic. Isn’t it a good idea? College students may not give money directly, but they can collect data and spread the fact all over the world.  </p>
+<p>Although the program is funded by Farm Journal Foundation, I guess volunteer college students played a role in the Survey and HungerU Tour in different countries. This is the responsibility that our college students are able to and should shoulder.  </p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/08/2013-11-08-ubuntu-crash-on-graphic-driver/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/08/2013-11-08-ubuntu-crash-on-graphic-driver/" class="post-title-link" itemprop="url">Ubuntu crash on graphic driver</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-08 22:14:00" itemprop="dateCreated datePublished" datetime="2013-11-08T22:14:00+08:00">2013-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-09 11:30:55" itemprop="dateModified" datetime="2013-11-09T11:30:55+08:00">2013-11-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Today I updated ubuntu, and then I can’t start it any more. It show tyy1 login. In fact I met this problem several times before, I know it is caused by the graphic driver update. I have to reinstall the right driver. But I forget where is the driver file and how to setup it.  </p>
+<p>I tried many times and finially I got it back to normal. The solving process:<br>    #login with your username and password<br>    cd Downloads # where my dirver is<br>    sudo sh amd-driver-64.run<br>    setup it (always select the first selection and ok)<br>    #restart</p>
+<p>I have copied the driver in the folder dirver. so next time I can found it more easily.  </p>
+<p>The problem I have to solve:  </p>
+<ol>
+<li>   How to stop the update for the graphic driver?  </li>
+<li>   How to recover my ubuntu quickly?  </li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/08/2013-11-08-tmux-and-vim-in-ubuntu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/08/2013-11-08-tmux-and-vim-in-ubuntu/" class="post-title-link" itemprop="url">TMUX and VIM in ubuntu</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-08 13:56:00" itemprop="dateCreated datePublished" datetime="2013-11-08T13:56:00+08:00">2013-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-11-29 11:51:23" itemprop="dateModified" datetime="2015-11-29T11:51:23+08:00">2015-11-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.  </p>
+<p>Today, I want to record what I had learnt about TMUX and Vi.  </p>
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.  </p>
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br>REMEMBER to press Ctrl+B first!!<br>    %  #divide screen left and right<br>    “  #divede screen up and down<br>    Ctrl + Down #make the down screen smaller<br>    exit #cancel present screen<br>    n  #new dash window  </p>
+<p>That is it.  </p>
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:<br>    Ctrl +: #this will let you enter the file operation mode<br>    i       #this will let you enter the edit mode, Press Esc to enter : mode<br>    v       #this will let you enter copy and paste mode, Press Esc to enter : mode  </p>
+<p>When you press ‘v’ in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:<br>    y       #copy<br>    d       #delete<br>    p       #paste<br>    Ctrl+:  #show clipped board<br>    :%s/ski/sky/g  #replace ski with sky in all place  </p>
+<p>How to save file<br>    :w filename<br>    :w! filename<br>    :wq #quit and save<br>    :q! #quit not save</p>
+<p>How to open file<br>    :open filename<br>    :open ~/luke/code/try.py  </p>
+<p>How to search in a file<br>    :/ pattern<br>    :? pattern<br>    n:search next<br>    N:search previous  </p>
+<p>How to cancel and redo<br>    :u  for cancel<br>    Ctrl + R：redo  </p>
+<p>How to paste from system clipboard<br>    shift+insert<br>    +p  </p>
+<p>Isn’t easy. But it takes time to get used to them and operate unconsioucely.  </p>
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:<br>    Ctrl + Alt + L     lock the desktop<br>    Win                applications desktop<br>    Ctrl + Alt + Left  shift to left desktop<br>    Alt + Tab          shitt applications<br>    Alt + F4           shut down present application<br>    Ctrl+Win+Up        Maxilize present window<br>    Ctrl+Win+Down      Minilize presnet window<br>    Ctrl+Alt+T         Open terminal<br>    $ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2<br>    Ctrl+Shift+Arrow   Shift Workplace<br>    Ctrl+Shift+Alt+Arrow   move present window to Workplace  </p>
+<p>Want to know more, click <a target="_blank" rel="noopener" href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br>Now almost done, and wait to be expanded.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/03/2013-11-03-do-the-job-or-have-fun/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/03/2013-11-03-do-the-job-or-have-fun/" class="post-title-link" itemprop="url">Do the job or have fun</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-03 19:23:00" itemprop="dateCreated datePublished" datetime="2013-11-03T19:23:00+08:00">2013-11-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-04 09:22:48" itemprop="dateModified" datetime="2013-11-04T09:22:48+08:00">2013-11-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Sometimes when something becomes your job, even you love it, when you have to do if before a deadline, you tend to lose the fun you had before.  </p>
+<p>Something you don’t have to do it, but you are interested and want to try. You are more likely to do better and have a lot of fun.  </p>
+<p>As a teacher, how do you apply this rule to your teaching?  </p>
+<p>Is it the reason why teacher drop out in their early career?  </p>
+<p>How to let teachers have fun in their teaching?  </p>
+<p>How to let students have fun in their learning?  </p>
+<p>Why people have fun in doing something? The following is a list of “something” can offer:  </p>
+<ol>
+<li>Provide new/pleasant experience<br>People are born with curiosity, and love to have new experience. They like to do the thing they have never done before or doing the same thing but in new ways.  </li>
+<li>Engage emotion<br>Passion, curiosity, sense of acheivement even superiority are all emotions letting people have fun. So if the design can engage these emotions, then it becomes hot.  </li>
+<li>Match their habits and mindset<br>They don’t need to take much effort in order to operate or understand. It is user friendly designed.  </li>
+<li>Meet various needs  </li>
+<li>Be simple and neat  </li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/03/2013-11-03-machine-learning-and-octave/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/03/2013-11-03-machine-learning-and-octave/" class="post-title-link" itemprop="url">Machine learning and Octave</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-03 12:28:00" itemprop="dateCreated datePublished" datetime="2013-11-03T12:28:00+08:00">2013-11-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-09-09 13:03:45" itemprop="dateModified" datetime="2015-09-09T13:03:45+08:00">2015-09-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Recently I joined NG’ class of <a target="_blank" rel="noopener" href="https://class.coursera.org/ml-004/class/index">Machine Learning</a>  </p>
+<p>Summay of the main topics:<br>###Suprevised Learning<br>linear regression<br>通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1, x2，扩张后可以包含x1, x2, x1*x2, x1^2 ,x2^2, 这样就可以克服bias的可能性。  </p>
+<p>logistic regression<br>当y是二分变量时，比如根据肿瘤的形状估测其是否为恶性肿瘤。这个时候就要使用logistic regression了。思路与linear regression一样，当目标是做出真假的判断。实现的方法是利用logistic curve做变换，转变为linear regression。  </p>
+<p>neural networks<br>模拟神经元的作用模式，设置隐藏层，通过估算中间参数来达到预测的目的。  </p>
+<p>SVM<br>向量机适用于自变量X不是特比多时，如果有上万个自变量，那么这个时候SVM会很困难。向量机的核函数可以有多种选择，可以是线性的，也可以是gaussain kernel等。  </p>
+<p>###Unsupervised Learning<br>K-means<br>聚类分析  </p>
+<p>PCA<br>主成分分析  </p>
+<p>Anomaly detection<br>异常识别  </p>
+<p>###Special applications/topics<br>Recommender systems<br>例如根据用户对影片的评价，向用户推荐合适的影片。这种情景需要循环估算影片参数和用户参数，进而给出合适的推荐。  </p>
+<p>large scale machine learning<br>通过算法上技巧将巨型运算分解，如分解到多个计算机，或者分解为多个步骤的小运算。  </p>
+<p>###Advice on building a machine learning system<br>Bias/variance<br>参考Ng的两张幻灯片。<br><img src="https://raw.github.com/lukezhg/Freyja/master/highbias.png" alt="high bias"><br><img src="https://raw.github.com/lukezhg/Freyja/master/highvariance.png" alt="high variance">  </p>
+<p>regularization<br>通过regularizations参数（如C值，lamda等）的控制，达到既不bias，也不overfit的目的。  </p>
+<p>deciding what to work on next<br>从简单开始，不断评估，逐渐优化，寻求正解。  </p>
+<p>evaluation of learning algorithms  </p>
+<p>learning curves  </p>
+<p>error analysis<br>I类错误：假阴性，明明是，结果预测说不是。<br>II类错误：假阳性，明明不是，结果预测说是。<br>Precision=truePositive/(truePositive+falsePositive)<br>Recall=truePositive/(truePositive+falseNegtive)<br>F score=2<em>P</em>R/(P+R)<br>通过F值可以在两者之间得到平衡，F值越大两者兼顾越好。  </p>
+<p>ceiling analysis  </p>
+<p>picture notes: G:\myfile\img\machinelearning  </p>
+<p>###Octave basics<br><a target="_blank" rel="noopener" href="http://www.gnu.org/software/octave/about.html">Octave</a>  </p>
+<p>Here is the Basic Commands from Ng’s class notes  </p>
+<pre><code>
+PS1('>> '); % make pre short  
+1==2 %false  
+1~=2  
+1 && 2 % AND  
+1 || 0 % OR  
+xor(1,0) % OR
+a=3; % semicolon supressing output  
+b='hi';  
+disp(sprintf('2 decimals: %0.2f',a))  
+a=pi;  
+format long  
+format short  
+A=[1 2; 3 4; 5 6]  
+ones(3,1)  
+zeros(1,3)  
+rand(1,3)  
+hist(-6+sqrt(10)*(randn(1,10000)))  
+size(A,1)  
+save hello.txt v -ascii % save as text  
+eye(6)  
+length(A)  
+load featuresX.dat  
+load priceY.dat  
+load('featuresX.dat')  
+who  
+clear priceY  
+clear  
+v=priceY(1:10)  
+A(3,1)  
+A(2,:) % ":" means every element along that row/column  
+A([1 3],:) % get 1,3 row  
+A(:,2)=[10;11;12]  
+A=[A,[100;101;102]]  
+A(:) % put all elements into a single vector  
+C=[A B]  
+C=[A; B]  
+sum(A)  
+prod(A)  
+floor(A)  
+ceil(A)  
+max(A,[],1)  
+max(A,[],2)  
+max(A)  
+flipud(eye(9))  
+t=[0:0.01:0.98]  
+y1=sin(2*pi*4*t);
+y2=cos(2*pi*4*t);  
+plot(t,y1);  
+plot(t,y2,'r')  
+xlabel('time')  
+ylabel('value')  
+legent('sin','cos')  
+title('my plot')  
+print -dpng 'myPlot.png'  
+close  
+figure(1);plot(t,y1);  
+figure(2);plot(t,y2);  
+subplot(1,2,1); % divides plot a 1x2 grid, acce  
+axis([0.5 1 -1 1]) & x [0.5 1] y[-1 1]  
+clf;
+imagesc(A)  
+imagesc(A), colorbar, colormap gray;  
+
+indices=1:10;  
+for i=indices,
+   disp(i);
+end;  
+
+i=1;  
+while i <=5;  
+  v(i)=100;  
+  i=i+1;  
+end;  
+
+i=1;  
+while true,  
+  v(i)=999;  
+  i=i+1;  
+  if i==6,  
+    break;  
+  end;  
+end;  
+
+v(1)=2;  
+if v(1)==1,  
+  disp('equal one')  
+elseif v(1)==2,  
+  disp('equal two')  
+else  
+  disp('not one or two')  
+end;  
+
+pwd  
+ls  
+
+addpath('C:users\ang\Desktop') % add octave search path  
+</code></pre>
+
+
+<p>mlclass-ex4-004 and mlclass-ex4-003 can be used in Application Example: Photo OCR  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/30/2013-10-30-conflicts-between-commercialisation-of-science-and-education-equity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/30/2013-10-30-conflicts-between-commercialisation-of-science-and-education-equity/" class="post-title-link" itemprop="url">Conflicts between commercialization of science and education equity</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-30 23:46:00" itemprop="dateCreated datePublished" datetime="2013-10-30T23:46:00+08:00">2013-10-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-14 01:36:46" itemprop="dateModified" datetime="2013-11-14T01:36:46+08:00">2013-11-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Yesterday, I attended Dr Jackson’ class <a target="_blank" rel="noopener" href="http://djackson.myweb.uga.edu/8990/Daily/Day12.html">ESCI 8990 Daily Page</a>.  </p>
+<p>We discussed questions:  </p>
+<ol>
+<li> whether scientific knowledge is a private product?  </li>
+<li> whether is it right to use grants to apply patent or develop products for profits?  </li>
+<li> conflicts between patent protection and equal access to scientific knowledge.  </li>
+</ol>
+<p>I didn’t say a word because I was the only Chinese around the table and intellectual property protection in China has a bad reputation although the situation is improving. I don’t want to defend too much, but I guess everyone may only have one story about the IPP in China. But just as Chimamanda Ngozi Adichie said: <a target="_blank" rel="noopener" href="http://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story.html">There is a danger of a single story</a>. So it will always be good to know more than one story.  </p>
+<p>The idea of patent protection became popular in industry culture. In order to encourage people and companies to develop more new type of products for society goodness, we give them such protects and advantages in using the patent that they invented first.  </p>
+<p>But, in agricultural civilization, such as accent China, there is no such idea. Some people may keep their special way of making food or drinks as their secrets, but once the secrets were known by others, they can also make the same food and drinks, and it is legal. The government may also help to publish and transmit some technologies, such as paper making and the printing. If they apply for the patent of making paper and printing, how much money they can earn? But this may also slow down the development of human society. So every patent has limited period for protection. The patent finally becomes common property of human society.  </p>
+<p>In agricultural civilization, labor is the main value source of a product. Yes, patent tell how to make a product, but it is the labor make it realized. This is not true in industrial civilization, the people or company who possess the patent earn the most of the profit. You will never know how cheap labor become in China nowadays. Is it equal? Is it a new kind of colonization? Many developed country put their factories into developing countries, they use their labor, resources and make wastes and pollution. Is it fair? Is it sustainable? Will it leads to wars? You can read more about <a target="_blank" rel="noopener" href="http://www.slideshare.net/drloveccsu/ecojustice-pedagogy">Ecojustice</a>.   </p>
+<p>Well, industrialization and consumerism are both come from western culture. Human rights is also declared in the western. But there is conflicts between commercialization of science and education equity. The following paragraph is from:<a target="_blank" rel="noopener" href="http://www.un.org/en/documents/udhr/">The Universal Declaration of Human Rights</a></p>
+<blockquote>
+<p>Article 26.<br>   (1) Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.</p>
+</blockquote>
+<p>Poor people receive poor education and they remain poor, becomes a circle. This will only lead to hate and war. Patent protection can help develop new products and technologies and promote the progress of society. It can also benefit some people and groups and hurt the others. Especially, when the researchers use grants(money from citizens) to do research and apply for patents only benefit for a special organization or people. Then it is unfair.  </p>
+<p>It is also disputable whether something should be a patent. For example, the people invent the product later by his own, will lost all the value of his effort because it would be illegal to for him to use the same way to make product.  </p>
+<p>The company own the patent seems own a new kind of capital – Intellectual Capitalism. Government tend to protect their patent rights in order to encourage more company to do research and development. But sometimes it will lead to monopolization and the price of their products becomes unreasonable(several times higher than its actual cost). Will government still protect?  </p>
+<p>With the global industrial production, with consumerism and commercialization, will this new kind of capitalism – Intellectual Capitalism create a new colonial history. Do we want this happen? Or it already happened.  </p>
+<p>There should be a balance between patent protection and common benefit, between efficiency and fairness, between developed and developing countries, between industrial civilization and agricultural civilization, between human and nature, otherwise we are making troubles and potential dangers for ourselves!  </p>
+<pre><code>On the other hand, science education sits in an uncomfortable place in this landscape given particular aspects of patenting and property rights imply limited access and thus inequity in knowledge acquisition.</code></pre>
+<p>iphone</p>
+<p>克隆文化<br>有性繁殖与无性繁殖</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/29/2013-10-29-laptop-stand-designed-by-myself/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/29/2013-10-29-laptop-stand-designed-by-myself/" class="post-title-link" itemprop="url">Laptop stand designed by myself</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-29 22:24:00" itemprop="dateCreated datePublished" datetime="2013-10-29T22:24:00+08:00">2013-10-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-24 00:00:23" itemprop="dateModified" datetime="2013-11-24T00:00:23+08:00">2013-11-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BE%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">设计</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>It is uncomfortable to work on my laptop on a table. Becuase the screen is too low and you have to bend your head which cause pain in the neck.<br>So I made a laptop stand using a useless shoes box. Here is the picture.<br><img src="https://raw.github.com/lukezhg/Freyja/master/laptopstand.png" alt="laptop stand">  </p>
+<p>You can alway make a change if you want to. And small change can make a big difference sometimes.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/27/2013-10-27-dont-alienate-disabled-people/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/27/2013-10-27-dont-alienate-disabled-people/" class="post-title-link" itemprop="url">Don't alienate disabled people</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2013-10-27 09:46:00 / 修改时间：23:39:28" itemprop="dateCreated datePublished" datetime="2013-10-27T09:46:00+08:00">2013-10-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" itemprop="url" rel="index"><span itemprop="name">社会观察</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Yesterday, a TED talk at TEDxStanford moved me deeply. It was given by Rhodes Scholar Rachel Kolb – who was born deaf. She showed what is possible through family support and self-belief, and proves that what is assumed about you and what you can actually achieve don’t always match up. In the United States, two-thirds of hearing-impaired people do not complete high school.  </p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/uKKpjvPd6Xo" frameborder="0" allowfullscreen></iframe>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2013/10/27/2013-10-27-dont-alienate-disabled-people/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/43/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><span class="page-number current">44</span><a class="page-number" href="/page/45/">45</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/45/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

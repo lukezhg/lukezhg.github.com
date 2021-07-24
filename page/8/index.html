@@ -1,1084 +1,1150 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/8/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/8/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/04/06/2019-04-06-fact-vs-oppinion/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="事实与观点">
-                            
-                            <span class="card-title">事实与观点</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                大脑不善于分辨真实与虚幻。比如刚才，我想到一个解决问题的方法，但是实际并没有做任何事，但是我的大脑确认为我已经做了很多事，甚至已经把刚才想象完成的事情已经完成了。
-大脑不善于分辨自己的想象和真实，这可以也是为什么人们喜欢看电影的缘故，因为看
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/04/06/2019-04-06-buddhism-and-faith/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="信仰与佛学">
-                            
-                            <span class="card-title">信仰与佛学</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                信仰是不能谈条件的，更不能怀疑和思维。这是不是思想的懒惰呢，盲目相信一个神？佛学不是造神，佛学是助人生起平常心。佛学不是神通，佛学是对现实世界一种反观和反抗。
-自然让我们自私自利，让我们娶妻生子，让我们优胜劣汰，让我们加速世界走向寂灭。佛学
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/04/06/2019-04-06-on-writing/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="写作三要素">
-                            
-                            <span class="card-title">写作三要素</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                写作其实挺简单。说它简单，是因为想写就可以写，说它复杂是因为相写好很难。
-写作有三要素，写给谁、写什么、怎么写。
-写给谁，这个要素说的是写作的对象。只有了解你的写作对象是谁，他们有哪些需求，又有哪些生活经验只是判断，你的写作素材最好从他们的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/04/06/2019-04-06-a-way-of-no-way-and-take-full-ownership-of-yourself/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="A way of no way and take full ownership of yourself">
-                            
-                            <span class="card-title">A way of no way and take full ownership of yourself</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                J. Krishnamurti - Amsterdam 1981 - Public Talk 1 - Thought and time are the root of fear
-https://www.youtube.com/watch?v
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/03/27/2019-03-27-obstacles-in-the-way-of-learning-to-teach/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="教师成长之路上的危机四伏">
-                            
-                            <span class="card-title">教师成长之路上的危机四伏</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                在成为一名教师的路上，我们会所面临各种危险。  
-###第一种风险：失去自我我们会对所谓“好的教师”和“好的教学”存在思维定势。我当然不是否认它们的存在，而是怀疑，他们是否值得我们每位同学去效仿，因为一但你用这样的标准去衡量自己，你就会面临
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/03/20/2019-03-20-how-to-create-tag-cloud-in-chinese/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="如何制作中文标签云">
-                            
-                            <span class="card-title">如何制作中文标签云</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###第一步：分词
-与英文不同，为了制作标签云，中文必须分词，也就是从语料中提取词语，并统计词频。可以使用的工具：中文词频统计工具：http://translation.education/topwords/
-语料库在线：http://co
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/02/13/2019-02-13-new-born/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="new born">
-                            
-                            <span class="card-title">new born</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I do it for myself. But where is myself. If myself doesn’t exist,then I do it for who. I do it not for myself, because m
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-02-13
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/notes/" class="post-category">
-                                    notes
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/buddhism/">
-                            <span class="chip bg-color">buddhism</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/01/30/2019-01-30-buddhism-and-teaching/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="教学中的自然与佛学">
-                            
-                            <span class="card-title">教学中的自然与佛学</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                佛学是中国文化的重要组成部分，中国人很多日常生活中都能看到佛学的缩影。佛学主张认识到我的虚无，进而能看破表现，走出我相、他相、寿者相等虚妄，进而脱离苦海。要想成佛，不仅要自救，还要救人，既要渡己，也要渡人，渡众生。但是，这样做不能有目的而为
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-01-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%BD%9B%E5%AD%A6%EF%BC%8C%E6%95%99%E5%AD%A6%EF%BC%8C%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%EF%BC%8C%E9%9A%8F%E5%96%9C/">
-                            <span class="chip bg-color">佛学，教学，自然而然，随喜</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/01/29/2019-01-29-there-gestures-to-protect-your-knees/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="3个动作帮助你缓解膝盖疼痛">
-                            
-                            <span class="card-title">3个动作帮助你缓解膝盖疼痛</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一般轻微的膝盖劳损可以采用保守治疗的方法，如果难以行动或非常疼痛则应该及时去医院检查，必要时采取手术治疗。  
-保守治疗的方法，国际膝关节健康促进中心介绍以下3个动作，能有效改善膝关节状况。如下图所示，此外应该避免从事表中对膝关节不利的运动
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-01-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%81%A5%E5%BA%B7/" class="post-category">
-                                    健康
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%86%9D%E5%85%B3%E8%8A%82/">
-                            <span class="chip bg-color">膝关节</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%81%A5%E5%BA%B7%E4%BF%9D%E5%81%A5/">
-                            <span class="chip bg-color">健康保健</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/01/22/2019-01-22-nonviolent-communication/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="非暴力沟通与教育">
-                            
-                            <span class="card-title">非暴力沟通与教育</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、不同类型的博弈。暴力的逻辑是零和博弈，单赢逻辑。有人收获就有人付出，有人成功就有人失败。它是对手之间的博弈。  
-协作的逻辑是正和博弈，双赢逻辑。我成功的同时，你也可以成功。我们并不相互妨碍，甚至可以相互帮助。它是伙伴与伙伴之间的合作博
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-01-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/7/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">8 / 51</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/9/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/04/06/2019-04-06-fact-vs-oppinion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/06/2019-04-06-fact-vs-oppinion/" class="post-title-link" itemprop="url">事实与观点</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-04-06 09:17:00 / 修改时间：21:18:42" itemprop="dateCreated datePublished" datetime="2019-04-06T09:17:00+08:00">2019-04-06</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大脑不善于分辨真实与虚幻。比如刚才，我想到一个解决问题的方法，但是实际并没有做任何事，但是我的大脑确认为我已经做了很多事，甚至已经把刚才想象完成的事情已经完成了。</p>
+<p>大脑不善于分辨自己的想象和真实，这可以也是为什么人们喜欢看电影的缘故，因为看电影的时候，人们会把自己当成电影里的主人公，完成一次虚拟的冒险或成功。所以，很多人喜欢看屌丝崛起，成功逆袭，大圆满的结局，因为哪些他们生活在电影给他们制造的幻觉当中。</p>
+<p>还有很多人不能区分事实和观点。事实就是真实世界发生的是事情，但是观点是人们对食物的看法。比如，天上有一道亮光一身而过，一个说刚才天上出现了一次闪电，另一个人说雷公和电母又闹矛盾了。第一个人描述的就是一个事实，第二个描述了的是他的观点。这个例子中，事实和观点很容易区分，有的时候则很难区分。比如，孩子拉肚了，爸爸认为是着凉了，应该给孩子穿暖和一点，妈妈则认为是细菌感染，应该给孩子吃药。你说的爸爸的事实，还是妈妈说的是事实，对他们说的都是自己的观点，事实是孩子拉肚了，但是爸爸妈妈都不知道是怎么回事。</p>
+<p>观点有正确和错误之分，事实没有正确和错误之分。一个正式会议，公司老总不小心放了一个屁。事实就是放了一个屁，但是员工却分成了两派，一派坚决认为老总没有放屁，一派认为这个屁就是老总放的。那个观点和事实相符呢，显然是后者，所以第一种观点是错误的，第二种观点则是正确的。事实是无穷无尽的，观点也是无穷无尽的。事实不以立场而改变，但是观点却会因为个人的立场改变。人们如何获得事实呢，一是直接感知，比如用眼睛看，用耳朵听，用鼻子闻，这是直接经验。二是通过别人的描述，这是间接经验。相比较而言，直接经验比间接经验更容易描述事实，因为间接经验再被描述的时候经验会夹杂描述者的观点，而倾听的人很容易就不加区分的全盘接受了。直接经验也不总是正确的，比如我们看到水杯中的筷子是弯曲的，我们对冷热的感知也不准确，这个时候就需要系统观察和测量，科学正式利用系统观察和测量进而更准确的反应科学事实的。</p>
+<p>观点也可以叫做主张，比如刚才的例子，闪电是电母所谓就是一种解释性的主张。主张往往以命题的方式呈现。所谓命题就是能判断真假的陈述句。比如，物体越重下落速度越快，就是一个命题。这个命题已经被事实证明是错误的了。但是，它是属于科学研究的范畴的。因为，它具有可证伪性，也就是它的对错是可以判断的。怎么判断，哪一个10公斤的铁球和一个1公斤的铁球，从相同高度扔下来可以了。科学常常用这样等等实验来检验这些主张。</p>
+<p>还有一些命题，它不能证伪。比如，存在一个全知全能的上帝，这个命题就不能通过实验或者观察探测来证明或证伪，原因在于你想检测上帝的存在，但是上帝知道你想检测他，于是他就不想让你检测到，所以你无论设计什么实验，用什么办法观察，都是无济于事的。但是，如果你说他不存在，你也同样拿不出强有力的证据。所以，最后这就超出了科学的范畴。</p>
+<p>如果科学实验无能无力，那么思想实验可以吗。我们假设存在一个全知全能的上帝，那么，既然全能，它能够毁灭自己吗？如果它能，那么它这样做了，它就不存在了。如果它不能，那么它就不是全能的。有人会说，全能不代表一定要这样做，比如我们人是能够自杀的，但是我们会愿意自杀吗？我想说，人不是全知全能的，人是无法逃离生死的，那么上帝可以吗？信徒说，上帝可以，上帝可以永远存在。我又说，如果上帝永远存在，那么他就一定不是全能的，因为它不能死亡，能够离开这个世界也是一种能力，上帝却不能拥有这种能力。根本的问题或者矛盾在于，全能的上帝无法即拥有死亡的能力，又拥有永生的能力，两者不可兼得，那么它就一定不是全能的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/04/06/2019-04-06-buddhism-and-faith/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/06/2019-04-06-buddhism-and-faith/" class="post-title-link" itemprop="url">信仰与佛学</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-04-06 09:07:00" itemprop="dateCreated datePublished" datetime="2019-04-06T09:07:00+08:00">2019-04-06</time>
             </span>
-            
-            <br>
-            
-            <br>
-            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-04-11 09:14:08" itemprop="dateModified" datetime="2019-04-11T09:14:08+08:00">2019-04-11</time>
+              </span>
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>信仰是不能谈条件的，更不能怀疑和思维。这是不是思想的懒惰呢，盲目相信一个神？佛学不是造神，佛学是助人生起平常心。佛学不是神通，佛学是对现实世界一种反观和反抗。</p>
+<p>自然让我们自私自利，让我们娶妻生子，让我们优胜劣汰，让我们加速世界走向寂灭。佛学恰恰告诉我们，我是一个幻觉，如果我都是一个幻觉，那么，就不要那么执着于我，执着于自己的利益，执着于权贵，执着于繁殖，执着于名气，执着于权利。但是，自然选择却是让我们追求社会地位，追求繁殖，追求长生。佛学让我们看开一点，这些都只是蒙蔽我们双眼的五蕴，要明悟自己虚幻的本性，发慈悲心，渡人渡己。</p>
+<p>佛学的最终目的是获得自心圆满，所以本质上是向内求。并且有一系列的操作方法，比如正念、比如持戒、比如乞食和布施等。我们生活在被自己的基因控制，被自己的本能控制，被社会的权利和规则控制，被社会关系控制的时代，现在又会被自己的手机控制，被科技控制。所以经常会感觉到不自由、不自在，会起嫉妒之心，会起色欲之心，会起执迷之心，会起权利之心，会起嗔恨之心，而堕入苦海。佛学的终极目标是帮我们度过苦海，去除三千烦恼丝，抵达极乐净土。</p>
+<p>佛学是修心的一门学问。所以我信仰的不是佛祖，不是佛像，不是神通，我信仰的是平等自在心。而佛学的一些观念和思想正是达到这种心境的参考，包括佛经和典故，这毕竟是先贤一步一步踏出来经验，虽然不可自取，但是却可以关照。如果我也能帮助别人达成平等自在心，那么也是我的一种渡人自渡的方便之为罢了。</p>
+<p>佛学是不是违背了宇宙意志呢？其实佛学并没有违背宇宙的意志，但是佛教可能是要走自己之路的。佛学如果只是帮助人们生起平等自在慈悲心的话，它实际上是化解了部分社会矛盾，使得社会能够更快速的发展和繁衍，但是最后还是顺从了宇宙的意志，那就是更快速的达到寂灭。</p>
+<p>佛教如果走向极端，让所有人都不生育，让所有人都无欲无求，那么就可以减缓宇宙寂灭的速度。如果说生命是宇宙走向寂灭的催化剂，那么佛学就是一种临界点规则，它可以加速也可以减速这一进程。我是宇宙寂灭的旁观者，宇宙寂灭的进程与我没有什么关系，只不过加速或者减速取决于虚无的我本能，我的本能是想要是它加速的，这是宇宙传递给我的意志，但是佛学帮助我明悟了这一点，我就可以不再执着，不再受枷锁的束缚，而可以边走边看了。</p>
+<p>我的终极目的是什么？这个问题已经没有答案了，因为我已经不存在了。我是虚无的，那么虚无的终极目的是什么还重要吗？佛学告诉你虚无的目的不是虚无，而是帮助更多虚无的我认识到自己的虚无。这就好像是催化剂，你帮助别人认识到自己的虚无，别人又帮助你认识到自己的虚无，那么最后虚无就成了气候。但是虚无多一分不多，减一分不减，只是有更多人幡然醒悟，我原来是不存在的，那么存在的又是谁？</p>
+<p>存在的是一个生命，是众生之一，只是这个生命与你又千丝万缕的联系，你虽然不存在，但是你却能想象这个生命的感知、思考和行为，进而参与到宇宙寂灭的进程当中。生命的意义究竟是什么？是追逐享受？是追逐长寿？是追逐富贵？是追逐自由？随追逐众生平等？随追逐脱离苦海？追逐之心就是有为之心，佛曰：一切有为法，如梦幻泡影，如露亦如电，应作如是观。</p>
+<p>当我们去设定人生的终极意义的时候，就是有为法，也许人生的意义就是寻求意义的过程。佛曰：不可取，不可说，非法，非非法。不在别处。也许正因为人生没有意义，所以才有找寻，正因要找寻，所以人生才有了意义。</p>
+<p>不为色诱，不为名套，不为利倒，不为权障。不就成了障。无可，无不可，才能成佛。   </p>
+<p>###日记一</p>
+<p>心很难安定<br>1st February 2019 at 10:32pm<br>I am very upset. I spend lot of time on set down to work.</p>
+<p>When you are writing, you should not pay attention to the format.</p>
+<p>but if you did, it means that you have not get down to the work.</p>
+<p>不纠结过去</p>
+<p>不忧虑未来</p>
+<p>驻足于当下</p>
+<p>去除嗔恨</p>
+<p>去除执着</p>
+<p>纯净无染</p>
+<p>Namo Amitābha 阿弥陀佛</p>
+<p>###日记二</p>
+<p>阉割<br>1st February 2019 at 12:50pm<br>在控制的环境下</p>
+<p>文化自由精神和对话断送了</p>
+<p>###日记三<br>我无法控制自己<br>1st February 2019 at 11:06am<br>逃避 失控 溜神 自己阻碍自己</p>
+<p>已经到了非常严重的地步</p>
+<p>###宇宙意志<br>30th January 2019 at 2:14am<br>人为自然造化，生灵万物亦为自然造化，造之者何？为何而造？被造者何如？</p>
+<p>无住；无为；无法；无实无虚。不执着，不目为；不法取；不妄想。不执着于我象、他想、寿者相；不为目的而为；不取法求佛；不执着虚实。虚为实，实为虚，虚是真实存在的，一成不变，实则为虚，不能控制、不能恒定不变、不能依靠。</p>
+<p>被欲望所束缚 被目标所束缚 被方法所束缚 被结果所束缚 被自我所束缚 被时空所束缚</p>
+<p>然而脱离束缚，并不一定是好事，恰当可能是利用这种束缚而摆脱困扰。随缘；随心；随力；随喜。</p>
+<p>不执着于有为的行为，也不知执着于无为的行为。</p>
+<p>自然而然。</p>
+<p>佛法就是不能存在的真实存在。佛法就是帮助人们认识到虚无的真实本质，并帮助更多的人生死到这一观念，一旦认识到了这一点就能沟通宇宙意志，从而高屋建瓴，俯视洞察。宇宙的本质就是更快速的走向寂灭，而万物生灵则为催化剂，使得寂灭更早的来临。寂灭就如凤凰涅槃，一切又得以丛生。佛法普渡众生，实则普渡众生共赴涅槃。所以，佛法主张让所有生灵都能更好的繁衍而不是杀戮，原因在于生命就是寂灭的催化剂，就是赴涅槃之舟，若能达到虚无，那么这个肉身也就完成了使命而可以舍弃了。</p>
+<p>###机器人悖论<br>假如我是一个机器人，那么我如何让自己停机。  </p>
+<p>我们非常想拥有一个自己可以随意控制的机器人，可现实是我们连自己都控制不了。  </p>
+<p>控制是一个悖论，越是控制越是无法控制。  </p>
+<p>感知和创造性的自我表达是更好的逼近反思 </p>
+<p>没有道路的真理过度如何到达？  </p>
+<p>诉求自身。  </p>
+<p>忘我，不是自我欺骗。自我欺骗是思考的伎俩，而忘我是思考停机的结果。  </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/04/06/2019-04-06-on-writing/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/06/2019-04-06-on-writing/" class="post-title-link" itemprop="url">写作三要素</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-04-06 09:03:00 / 修改时间：21:36:51" itemprop="dateCreated datePublished" datetime="2019-04-06T09:03:00+08:00">2019-04-06</time>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>写作其实挺简单。说它简单，是因为想写就可以写，说它复杂是因为相写好很难。</p>
+<p>写作有三要素，写给谁、写什么、怎么写。</p>
+<p>写给谁，这个要素说的是写作的对象。只有了解你的写作对象是谁，他们有哪些需求，又有哪些生活经验只是判断，你的写作素材最好从他们的这些需求和经验出发，这样才能有亲切感。</p>
+<p>但是写作不能停留在亲切感上，一定要在亲切感上让他们产生陌生感，这样他们才会读你写的东西，所以写作就是在亲切感和陌生感之间纠缠。</p>
+<p>而纠缠所用的素材就是你要写作的内容，从某种意义上说，你的写作内容为这种纠缠提供了原始的材料。</p>
+<p>因此写作要同时考虑你的写作对象以及你的写作内容，还有隐藏的一点那就是你自己。这一点经常会被忽略，既然你是一个人就一定存在经验和视角的局限性，如果能够恰当地的视角，并且能够针对内容和对象恰当的进行转换，往往能够为你的写作添加成功的概率。</p>
+<p>比如陶渊明的诗《饮酒》中的一篇，</p>
+<pre><code>结庐在人境，而无车马喧。 问君何能尔？心远地自偏。 采菊东篱下，悠然见南山。 山气日夕佳，飞鸟相与还。 此中有真意，欲辩已忘言。</code></pre>
+<p>再比如陶渊明的《归园田居》中的一篇。</p>
+<pre><code>少无适俗韵，性本爱丘山。误落尘网中，一去三十年。 羁鸟恋旧林，池鱼思故渊。开荒南野际，守拙归园田。 方宅十余亩，草屋八九间。榆柳荫后檐，桃李罗堂前。 暧暧远人村，依依墟里烟。狗吠深巷中，鸡鸣桑树颠。 户庭无尘杂，虚室有余闲。久在樊笼里，复得返自然。</code></pre>
+<p>这是用诗句的方式，表达自己归野的自由自在，而写作的对象就是哪些被一心为求功名的读书人。所以，诗句概括凝练的特点刚好符合这些人的性格，而生动的归隐描写也是官场读书人所感到新奇的，至于官场的不自在和愁苦那更是他们深有体会的，所以这两首诗通过前后的对比，就制造了一种亲切的陌生感，恰好是写作应该追求的境界。  </p>
+<p>写作与拉粑粑<br>28th January 2019 at 6:10am<br>写作和拉粑粑，是一样一样的。</p>
+<p>有粑粑的时候赶紧拉，没有的时候就赶紧吃，光吃不拉就会便秘，光拉不吃就只能拉稀。</p>
+<p>有东西的时候就赶紧写，过了这个村就没这个店了，特别是情感和材料的储备，硬可平时多写一点，也不要没感觉的时候凑数。</p>
+<p>读书是写作的前提，就好像肚子没吃饱非要拉粑粑似的，那儿拿能拉得出来呀。所以呀，很多的时候写不出来东西，是因为你读得太少啦。</p>
+<p>只读不写也不行，会便秘。</p>
+<p>只写不读也不行，没干货。</p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/04/06/2019-04-06-a-way-of-no-way-and-take-full-ownership-of-yourself/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/04/06/2019-04-06-a-way-of-no-way-and-take-full-ownership-of-yourself/" class="post-title-link" itemprop="url">A way of no way and take full ownership of yourself</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-04-06 07:05:00 / 修改时间：20:40:04" itemprop="dateCreated datePublished" datetime="2019-04-06T07:05:00+08:00">2019-04-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>J. Krishnamurti - Amsterdam 1981 - Public Talk 1 - Thought and time are the root of fear</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=-Z6IYtIEV9w&amp;list=PL1n30s-LKus5uOY2xbRjAx_wPHnKvy_aW">https://www.youtube.com/watch?v=-Z6IYtIEV9w&amp;list=PL1n30s-LKus5uOY2xbRjAx_wPHnKvy_aW</a></p>
+<p>I watched this talk in youtube and you can still find it at the URL above.   </p>
+<p>###Thought is dangerous.<br>Why through hundred of years of evolution, mankind still can not solve the the problem such as wars, nationlism, fear and loneliness. Krishnamurti invited us to join him to think and investigate together.  </p>
+<p>The first point of this talk is that we solve problems by our thought but thought can not solve the problem that created by thought. Thought is the root of all of these problems so we have to find another approach.  </p>
+<p>There is a dead cycle of thought. We act by memories, memory is knowledge, knowledge is experiences, since we act by memories, memory create new experiences. So it is a cycle, a endless cycle. If we want to solve the problems created by thought, we have to jump out of this cycle.  </p>
+<p>###Jump out of the thought cycle.<br>Do we have another approach to live our lives? Love might be the answer. But what is love? Love is not desire. Desire is created by thought. Desire is very close to thought. A couple may live together but they may never meet together spiritically even in bed. Human create images by thought, memories, knowledge. When there is an image of something or somebody, there is a desire and will. It creates problems. If there is an envy, control, attachment, there is no love, but an illusion of love that created by thought, by images, by memories.   </p>
+<p>In order to solve this problem, we must not depend on anybody, any books, any mentors, but depend fully on yourself. Instead of reject, escape, worship, we observe with our sensation. We spend our energy on observing it, just on and fully on observing it. Then it will disapper, it might be fear, sorrow, loneliness and so on. When there is sorrow, there is no intelligence. When there is desire, there is no love.    </p>
+<p>We cannot depend on thought, memories, knowledge to solve these interword problems. Thought can not solve the problems if the problems are created by thought. All knowledge is incomplete. Because if there is a desire, an image, a thought, the sensation become a slave of thought and observe what thought want to observe and ignore what thought want to ignore. So in this sense, love is not knowledge.  </p>
+<p>When we observe it closely, we will find that thought is a process of time, past or future, not now. Through our brain and mind, we memory, we plan and we worry about something. We lost the feeling ability of present. We lost in the dead cycle of mind, thought.</p>
+<p>###Ironically, we have to live with our thought system.</p>
+<p>We want to jump out of the endless cycle of thought. Ironically, we also have to depend on the intelligence and language, to help ourselves to realize it and jump out of it. What we do is not deny thought, or reject thought. No thought is thought. If there is a will, there is no meditation. If you seek no thought, no thought itself is a thought. In order to jump out of it, you learn to live with it, even using it to inspire others.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/03/27/2019-03-27-obstacles-in-the-way-of-learning-to-teach/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/03/27/2019-03-27-obstacles-in-the-way-of-learning-to-teach/" class="post-title-link" itemprop="url">教师成长之路上的危机四伏</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-03-27 10:21:00 / 修改时间：19:56:23" itemprop="dateCreated datePublished" datetime="2019-03-27T10:21:00+08:00">2019-03-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在成为一名教师的路上，我们会所面临各种危险。  </p>
+<p>###第一种风险：失去自我<br>我们会对所谓“好的教师”和“好的教学”存在思维定势。我当然不是否认它们的存在，而是怀疑，他们是否值得我们每位同学去效仿，因为一但你用这样的标准去衡量自己，你就会面临第一种危险“失去自我”。  </p>
+<p>你会觉得自己的声音不如某某老师洪亮，讲课没有某某老师有气势，但其实这并不妨碍你成为一名优秀的教师。  </p>
+<p>实际上，“认为好的教师和教学都是一样的”，这种认识本身就是错误的。为什么好的教师都是一样的呢？为什么你不可以成为一个不一样的优秀教师呢？  </p>
+<p>悦纳自己，你可以成为你一样的教师。</p>
+<p>###第二种风险：过度简化<br>你还可能面临第二种风险“过度简化”。很多同学并不觉得教学有多困难，他们观摩了很多课堂教学，觉得教学就是这么回事儿，自己简单准备一下也可以。产生这种轻视之心的原因是你对教学工作进行了过度的简化。过度简化的标志性行为就是试图寻找捷径、试图用一种方法解决所有问题、用一种模式替代所有模式。过度简化的最大问题不是效率，而是让教师失去感知和倾听的能力。比如不少教师会存在如下观点：</p>
+<pre><code>1.教学一定要把教材的所有标题内容都讲到；
+2.只要看看其他老师怎么讲的我就可以怎么讲；
+3.一定要按照提出问题、作出假设、设计实验、……这样按部就班的科学探究步骤来讲实验；
+4.课堂就是教师不停的讲、精讲、变着法的讲就可以。</code></pre>
+<p>过度简化，让教学变得狭隘和机械，让教师失去了对复杂情景的感知以及对学生的倾听。而感知和倾听恰恰是教师开展教学的前提，是构建有意义的师生对话的前提，是教师认识教学复杂性的前提。  </p>
+<p>而简单的教学技能训练传递给了学生什么？  </p>
+<pre><code>教学就是讲授；教学就是导入、提问、讲解、强化、小结；
+教学就是很有气场的把你准备的内容讲出来；
+教学就是装腔作势；教学很简单（不备课也可以上课）。</code></pre>
+<p>其结果就是教学的模式化、套路化、简单化、僵化。所以这些认识都有有毒的一面，大家要高度警惕！！  </p>
+<p>教育是一个复杂进化体。你对其复杂性认知的多少，往往取决于你的感知和倾听能力。你越是能感知的更细微，你越是能避免武断、错误的决策。     </p>
+<p>###第三种风险：暴力沟通<br>教学必然在特定的社会情景中展开，教学在传递知识价值的同时，也在传递行为习惯和文化观念，而且后者常常是潜移默化的、隐性的。当我们通过语言发号命令，让学生无条件服从的时候，这是语言暴力。当我们要求学生去遵守规则，但是学生又不是规则的制定者的时候，这是规则暴力。当我们面临很多选择，但是被给学生选择和讨论选择的机会而由教师权威决定的时候，这是管理暴力。所以，你如何对待学生，你如何与学生沟通，你如何构建班级的课堂纪律和氛围，如果你收到压力并传递压力，那么你就成为了暴力沟通的帮凶。  </p>
+<p>非暴力沟通是每位教师应当学习的沟通技巧。如果想学习这项技能，读一读马歇尔·卢森堡博士的《非暴力沟通》也许是一个不错的选择。比如向别人提出请求，可以不用暴力的方式表达，而不是命令、埋怨、威胁。这样的沟通更有涵养，也不会帮助暴力传染。<br>具体的表达分为4个要素：  </p>
+<pre><code>1. 观察：描述你观察到的现象，而不是评价；
+2. 感受：表达自身的感受，而不是想法；
+3. 需要：是感受的来源，实际的需要； 
+4. 请求：真诚的提出具体的请求，而不是命令。  </code></pre>
+<p>比如尝试非暴力沟通一下：  </p>
+<pre><code>1.我看到不少同学选择了非生物学甚至非科学教育主题的内容，目的是想尝试一下与其他同学有真实的互动，不知道大家感觉如何？我发现部分同学们对听众的期望只是浅层次的了解，这让本来应该更具有挑战性的任务失去了应有的挑战性，这就达不到我们发展教学技能的目标了。
+2.这让我有些担心！倒不是怕跑题，而是怕大家浪费宝贵的训练时间！
+3.学习是走出舒适区，我需要大家真正的走出自己的舒适区，选择有一定挑战性的难度。  
+4.因此，大家在选择试讲主题最好选择有益于发展自己教学技能的试讲内容，要对你最后的教学技能展示有帮助，最好对听众也有实用价值，比如让同学们听懂之后可以用在教学上。</code></pre>
+<p>教育一项根本使命就是帮助人类解放自我，这就自然包括让自我免受暴力的困扰。从这种立场上讲，教育也可以分为暴力教育和非暴力教育。我不知道暴力教育到底算不算是一种教育，但是从解放自我的根本目标来看，它是一种我们应该警惕的一种跟自我解放相违背的社会现象。  </p>
+<p>###第四种风险：自我设限<br>我访谈过10多位专家教师，他们有一个共同的特点，就是对自己的学科和教学充满热情，那是一种发自心底的喜欢，所以他们可以不厌倦、孜孜以求，他们总是保持一颗好学之心。但是，反观我们很多一线教师，工作三五年就已经产生了职业怠倦，两者形成了鲜明的对比。为什么有些老师能够在看似枯燥的、重复的教学工作中不断创新、学习和进取，而有些老师则很容易走进僵化的套路和定势？从社会认知的角度，一个重要的原因是教师的自我封闭、自我设限。古典写过一本书叫做《拆掉思维里的墙》，讲的就是如何从思维定势中走出来，活出一个不一样的生活。  </p>
+<p>实际上，我们无时无刻不在自我设限。我的英语不好，所以我就不说英语了。别人没有提出异议，我为什么要提取异议。我尝试了几次投稿，结果都被拒绝了，看了我真的不是写作的料。很多的自我设限都是用过去的眼光约束限制的自己，给自己贴一个标签，然后就放弃继续尝试和努力了。这就是思维里的墙，是对自己身份、能力的自我设障，把你自己围起来了。对于这种困境，如果你不自己走出来，别人很难帮到你。而要想自己走出来，首先就是要打开自己的眼睛和思想，阅读是非常好方式，也许你看的下一本书就会改变你的命运。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/03/20/2019-03-20-how-to-create-tag-cloud-in-chinese/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/03/20/2019-03-20-how-to-create-tag-cloud-in-chinese/" class="post-title-link" itemprop="url">如何制作中文标签云</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-03-20 10:46:00 / 修改时间：11:08:52" itemprop="dateCreated datePublished" datetime="2019-03-20T10:46:00+08:00">2019-03-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###第一步：分词</p>
+<p>与英文不同，为了制作标签云，中文必须分词，也就是从语料中提取词语，并统计词频。<br>可以使用的工具：<br>中文词频统计工具：<a target="_blank" rel="noopener" href="http://translation.education/topwords/">http://translation.education/topwords/</a></p>
+<p>语料库在线：<a target="_blank" rel="noopener" href="http://corpus.zhonghuayuwen.org/CpsTongji.aspx">http://corpus.zhonghuayuwen.org/CpsTongji.aspx</a></p>
+<p>通过这两个工具，就可以把一段文字的词频统计出来，接下来就是要图形化，形成一个合适的标签云了，这个时候我们要借助标签云可视化工具。  </p>
+<p>###第二部：可视化</p>
+<p>可视化，就是根据词频来设置词语的字体大小，从而在二维平面上形象的展示出预料中的词语的出现情况。<br>可以使用的工具：<br>wordart：<a target="_blank" rel="noopener" href="https://wordart.com/create">https://wordart.com/create</a><br>这是一个英文词频可视化工具，可以制作很多高质量的标签云。它对英文支持的比较好，但是其实也可以支持中文，前提是上传和使用你自己的中文字体。<br>比如微软雅黑字体下载：<a target="_blank" rel="noopener" href="http://www.font5.com.cn/zitixiazai/1/36.html">http://www.font5.com.cn/zitixiazai/1/36.html</a></p>
+<p>操作步骤：<br>首先，把中文词频工具获得的词频信息复制到剪切板。然后在wordart这个地方点击Create，点击words，Import，粘贴你的词频表格，记住要勾选CSV format。  </p>
+<p>然后，在FONTS这个地方上传你的字体，选择你自己的字体，点击Visualize就可以实现中文词频的可视化了。  </p>
+<p>比如我生成的标签云：<br><img src="https://raw.github.com/lukezhg/Freyja/master/New-teacher-challenges.png" alt="New teacher challenges"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/02/13/2019-02-13-new-born/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/02/13/2019-02-13-new-born/" class="post-title-link" itemprop="url">new born</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-02-13 12:33:00 / 修改时间：12:41:12" itemprop="dateCreated datePublished" datetime="2019-02-13T12:33:00+08:00">2019-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/notes/" itemprop="url" rel="index"><span itemprop="name">notes</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I do it for myself. But where is myself. If myself doesn’t exist,then I do it for who. I do it not for myself, because myself doesn’t exist. I do it not for someone else, because someone else also doesn’t exist. I do it not for all, because all also do not exist. Should I stop? No. I do it for no reason, for nobody, for no aim. Just do it as it shoud be done.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/01/30/2019-01-30-buddhism-and-teaching/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/30/2019-01-30-buddhism-and-teaching/" class="post-title-link" itemprop="url">教学中的自然与佛学</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-01-30 16:16:00 / 修改时间：17:06:32" itemprop="dateCreated datePublished" datetime="2019-01-30T16:16:00+08:00">2019-01-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>佛学是中国文化的重要组成部分，中国人很多日常生活中都能看到佛学的缩影。佛学主张认识到我的虚无，进而能看破表现，走出我相、他相、寿者相等虚妄，进而脱离苦海。要想成佛，不仅要自救，还要救人，既要渡己，也要渡人，渡众生。但是，这样做不能有目的而为之，而要无我、无他、无物，三体轮空，也就是不执着，没有渡人我，也没有被我渡的他，更没有我给他的财物。  </p>
+<p>每个僧人最重要工作之一就是布施，把财物捐给佛家三宝（佛、法、僧），所以僧人有时挨家挨户的布施，拿一个空碗到各家各户乞食，有人给多，有人给少，无论好坏不得挑剔，使众生平等。佛教认为，能布施斋僧的人，即与佛门有缘，僧人以募化乞食广结善缘，故称化缘。其实僧人只能吃化缘来的斋饭接受众生供养，而不能自给自足。这样做的好处，一则是去私心，二则结善缘，三则发宏愿，四则弘佛法。这样做，无时无刻不在提醒僧人你并无私人财产，众生对你有恩，你当渡化众人，弘扬无边佛法。  </p>
+<p>在布施上，佛学讲究随缘、随心、随力、随喜。随缘就是因果使然，随心就是尽心而为，随力就是尽力而为，随喜就是众生平等。  </p>
+<p>教学必然存在教师和学生，教学也讲究自然而然。这里所谓的自然而然，乃是在恰当的时机、针对恰当的人、利用恰当的方法促进学生的学习。这里面也讲究随缘、随心、随力和随喜。  </p>
+<p>道法自然，教法也应自然。这种自然体现在表现是一种和谐与恰当，这里的恰当体现在教学素材和资源的选择上，学习任务的设置上、教学方式的设计上、学习活动的组织和评价上等等。所谓，自然就是不突兀，不牵强，学习不是被迫发生的，而是自然而然发生的。随风潜入夜，润物细无声。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/01/29/2019-01-29-there-gestures-to-protect-your-knees/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/29/2019-01-29-there-gestures-to-protect-your-knees/" class="post-title-link" itemprop="url">3个动作帮助你缓解膝盖疼痛</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-01-29 09:04:00 / 修改时间：10:07:23" itemprop="dateCreated datePublished" datetime="2019-01-29T09:04:00+08:00">2019-01-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%81%A5%E5%BA%B7/" itemprop="url" rel="index"><span itemprop="name">健康</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一般轻微的膝盖劳损可以采用保守治疗的方法，如果难以行动或非常疼痛则应该及时去医院检查，必要时采取手术治疗。  </p>
+<p>保守治疗的方法，<a target="_blank" rel="noopener" href="http://dl.tzuchi.com.tw/jointcenter/node/103">国际膝关节健康促进中心</a>介绍以下3个动作，能有效改善膝关节状况。如下图所示，此外应该避免从事表中对膝关节不利的运动。<br><img src="https://raw.github.com/lukezhg/Freyja/master/knee-gestures.png" alt="three gestures to improve your knee pain"></p>
+<p>1、勾脚， 每天10次，每次10秒。强化股四头肌，保持膝关节完全伸直的抬腿肌力训练（Ａ图）<br>2、抱膝， 每天5次， 每次30秒。每次股四头肌强化运动后，进行缓和极度弯曲的抱膝（Ｂ图）<br>3、压膝， 每天5次， 每次30秒。完全伸直的压膝能够维持关节活动度，减轻关节僵硬（Ｃ图）  </p>
+<p>下面这个视频对膝关节康复和治疗以及这三个动作进行了介绍。  </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dqcLNUnfV2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2019/01/22/2019-01-22-nonviolent-communication/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/01/22/2019-01-22-nonviolent-communication/" class="post-title-link" itemprop="url">非暴力沟通与教育</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-01-22 14:12:00" itemprop="dateCreated datePublished" datetime="2019-01-22T14:12:00+08:00">2019-01-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-01-23 18:17:19" itemprop="dateModified" datetime="2019-01-23T18:17:19+08:00">2019-01-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1、不同类型的博弈。<br>暴力的逻辑是零和博弈，单赢逻辑。有人收获就有人付出，有人成功就有人失败。它是对手之间的博弈。  </p>
+<p>协作的逻辑是正和博弈，双赢逻辑。我成功的同时，你也可以成功。我们并不相互妨碍，甚至可以相互帮助。它是伙伴与伙伴之间的合作博弈。</p>
+<p>妒忌的逻辑是负和博弈，双输逻辑。我不好过，你也别想好过。它是仇人之间的报复和陷害。  </p>
+<p>2、暴力为什么如此盛行？  </p>
+<p>暴力是一种本能。你打猎的时候，一定是因为你能通过暴力杀死猎物，而不是你能劝说猎物成为你的锅中肉，盘中餐。因此，自然界弱肉强食的环境，选择了哪些具有暴力倾向和能力的个体。人们甚至会崇拜暴力，比如饕餮就是原始暴力的图腾。喜欢看武侠片的人，潜意识里也都希望自己成为天下第一高手。  </p>
+<p>幸运的是与暴力一同进化而来的还有智慧。对于复杂的问题和矛盾，暴力往往无法从根本上解决，这时我们可以通过智慧解决。</p>
+<p>3、暴力有哪些类型？<br>行为暴力，它是外显的，最容易发觉。比如校园欺凌事件，就是典型的暴力表现。  </p>
+<p>语言暴力，它是不明显但是可以觉察得到的。比如，你不是科学家，你没有资格跟我讨论这个转基因食品这个科学话题。你也不是主持人，你没有资格跟我在这辩论。  </p>
+<p>规则暴力。大家最容易忽略，最容易习以为常的暴力。招聘启事：女，30岁以下，身体无残疾，相貌端庄，研究生学历，能熟练使用文字处理软件、PPT制作等文秘工作。  </p>
+<p>4、在我们生活周边充满了暴力。<br>我们早已经熟视无睹。比如孩子坐不住，老师说可能有“多动症”。一次考试，学生的数学成绩考砸了，只得了13分，家长就说跟韩寒一样是个“数盲”。教育者很轻率的给孩子贴上各种标签是一种非常不负责任、不专业的做法，而且是一种语言暴力。    </p>
+<p>5、教学的困境。<br>简单主义崇尚简单暴力，头痛医头，脚痛医脚。</p>
+<p>惰性主义崇尚维持传统，拒绝改变，原样照搬</p>
+<p>随性主义则是怎么都行，缺乏目标，故意求变</p>
+<p>6、学习困境<br>茫然。没有目标，稀里糊涂混日子。  </p>
+<p>成瘾。明知有害而不能自控，欲罢不能。  </p>
+<p>堕落。缺乏自信，不能自控自律，自甘堕落。  </p>
+<p>勿以恶小而为之；毋以善小而不为。  </p>
+<p>7、非暴力沟通。  </p>
+<p>四个阶段：观察、感受、需要、请求。  </p>
+<p>三个阶段：观察感受、换位思考、共同面对。  </p>
+<p>8、不要轻易传递负向能量。  </p>
+<p>现代社会，人人面临很大的压力。如何应对压力？实际上是每个现代人都需要面对的事情。  </p>
+<p>反思：为什么我总喜欢威胁？不喜欢被威胁，只好威胁别人。这是错误的逻辑。正确的逻辑是不喜欢被威胁，首先要不威胁别人，帮助别人学会非暴力沟通的方法。  </p>
+<p>实际上威胁具有传染性，暴力也具有传染性。如果你经常威胁别人，别人也会反过来威胁你。如果你经常使用暴力，那么你最终也会成为暴力的受害者。   </p>
+<p>9、暴力的文化现象及其根源  </p>
+<p>暴力可以表现在生活的诸多方面，也有多种表现形式，比如学术界绝对权威，数量化指标；比如政治革命、口号标签化、身份歧视，甚至是闪电罢官；在经济领域比如金钱至上、垄断、霸王条款。  </p>
+<p>不择手段地恐怖主义暴力。<br>不择手段的达成目的就是恐怖主义。无论其目的是好是坏。火车站砍人是典型的恐怖主义，自杀性炸弹更是恐怖主义。恐怖主义的出现恰恰说明，暴力是解决不了问题的。它只会导致更大的暴力。  </p>
+<p>缺乏民主监督导致的暴力。<br>对于私人利益的过度追逐和没有免疫力的制度让很多词汇变成了贬义词，比如官员、领导、教授，再比如院士、专家、校长。原来都很高大尚的职业现在都臭气熏天了。不能全怪个人私欲，过于集中的权利早晚要出事。</p>
+<p>媒体舆论压力导致的暴力。<br>官员出了事，不问事实立即罢免。但是即便出了事，要罢免一个官员，也是应该走程序的，不能因为某个官员给政府丢了面子，就立即罢免。事情是要分轻重的，比如一个官员过河让人背，曝光之后就立即免职，我觉得调查该事件是合适的，是否免职不能仅因为这件事而做定论。比如刚好该官员的脚上有伤口，那是不是应该体谅呢？当然也可以罢免，但是前提应该是调查清楚所有的事情，衡量之后再罢免，不能因为公众舆论就立即罢免。你不知道舆论什么时候是对的，什么时候可能完全是偏见的。  </p>
+<p>家庭暴力导致暴力的延续。<br>暴力在中国是根深蒂固的，你可以在家庭中找到它的影子，家长对幼儿的家庭暴力。晚上的时候常听到孩子的哭声，在外国早报警了，在中国没人会报警，报警了也不会理你的。这恰恰是问题所在。  </p>
+<p>好的教育总是自然而然的，简单暴力恰恰是教育的反面。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

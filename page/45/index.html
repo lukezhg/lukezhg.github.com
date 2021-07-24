@@ -1,1247 +1,1287 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/45/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/45/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/25/2013-10-25-the-metaphor-of-rock-climbing/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="The metaphor of rock climbing">
-                            
-                            <span class="card-title">The metaphor of rock climbing</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                It is so hard to descibe how teacher develop related knowledge to teach a special topic.  
-I have come up with many anal
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/pck/" class="post-category">
-                                    pck
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/pck/">
-                            <span class="chip bg-color">pck</span>
-                        </a>
-                        
-                        <a href="/tags/metaphor/">
-                            <span class="chip bg-color">metaphor</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/25/2013-10-25-from-falling-objects-experiment-to-a-simulated-experiment/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="From falling objects experiment to a simulated experiment">
-                            
-                            <span class="card-title">From falling objects experiment to a simulated experiment</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the Ga
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/resources/">
-                            <span class="chip bg-color">resources</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                        <a href="/tags/physics/">
-                            <span class="chip bg-color">physics</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/19/2013-10-19-the-beautiful-leaves-on-the-tree/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="The beautiful leaves on the tree">
-                            
-                            <span class="card-title">The beautiful leaves on the tree</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-On a grassy lawn near the road, standed a little girl about five years old. She was looking up at the colorful tree lea
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/diary/">
-                            <span class="chip bg-color">diary</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/10/03/2013-10-03-model-based-learning-review/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Model-based Learning Review">
-                            
-                            <span class="card-title">Model-based Learning Review</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###What is Model-based Learning(MBL)?How students learn: science in classroom
-five epistemic features of scientific know
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-10-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%A7%91%E7%A0%94/" class="post-category">
-                                    科研
-                                </a>
-                                
-                                <a href="/categories/%E7%A7%91%E7%A0%94/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                <a href="/categories/%E7%A7%91%E7%A0%94/%E6%95%99%E5%AD%A6/%E6%95%99%E5%AD%A6%E7%AD%96%E7%95%A5/" class="post-category">
-                                    教学策略
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                        <a href="/tags/review/">
-                            <span class="chip bg-color">review</span>
-                        </a>
-                        
-                        <a href="/tags/strategy/">
-                            <span class="chip bg-color">strategy</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/27/2013-09-27-reflection-on-groupwork-modeling/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="reflection on groupwork modeling">
-                            
-                            <span class="card-title">reflection on groupwork modeling</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I have wrote several posts about modeling:Such as Interactive simulation based inquiry activitiesLook for more click her
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/courses/" class="post-category">
-                                    courses
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UGA/">
-                            <span class="chip bg-color">UGA</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/24/2013-09-24-japan-lesson-study/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Japan Lesson Study">
-                            
-                            <span class="card-title">Japan Lesson Study</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I watched two vedios of Japan science teaching see my previous post  
-Since then I tend to pay close attention to Japan 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/lesson-study/">
-                            <span class="chip bg-color">lesson study</span>
-                        </a>
-                        
-                        <a href="/tags/Japan/">
-                            <span class="chip bg-color">Japan</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/24/2013-09-24-co-teaching/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Co-teaching">
-                            
-                            <span class="card-title">Co-teaching</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Today I attended a workshop about co-teaching and mentoring by Dr Dresden. Georgia is going to promote co-teaching in th
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/supervision/" class="post-category">
-                                    supervision
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/supervision/">
-                            <span class="chip bg-color">supervision</span>
-                        </a>
-                        
-                        <a href="/tags/co-teaching/">
-                            <span class="chip bg-color">co-teaching</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/23/2013-09-23-baby-recipe-design/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="宝宝食谱设计">
-                            
-                            <span class="card-title">宝宝食谱设计</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                宝宝七个月了，母乳开始不够吃了，爸爸给你设计了下面的副食，别挑食哦！  
-早餐：稀粥加青菜末、蛋黄泥顺便多煮一个土豆或者红薯（备用）  
-母乳：一次性加热到39度，否则容易破坏免疫蛋白活性。  
-午餐：猪肝泥、米粉、西红柿糊（或者苹果泥）西
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AE%9D%E5%AE%9D/" class="post-category">
-                                    宝宝
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E9%A3%9F%E8%B0%B1/">
-                            <span class="chip bg-color">食谱</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/23/2013-09-23-the-jigsaw-of-supervision/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="The Jigsaw of Supervision">
-                            
-                            <span class="card-title">The Jigsaw of Supervision</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ##Introduction  
-
-“No one is born knowing how to teach.” 1–Mentoring Matters, Laura Lipton and Bruce Wellman, 2003, p.65
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/supervision/" class="post-category">
-                                    supervision
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/supervision/">
-                            <span class="chip bg-color">supervision</span>
-                        </a>
-                        
-                        <a href="/tags/jigsaw/">
-                            <span class="chip bg-color">jigsaw</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/09/20/2013-09-20-metaphors-for-teaching/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Metaphors for teaching and education reform">
-                            
-                            <span class="card-title">Metaphors for teaching and education reform</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###Metaphors for teaching:A teacher is just like a cook. You can tell a good cook by the taste of his dishes, so you can
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-09-20
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/metaphor/">
-                            <span class="chip bg-color">metaphor</span>
-                        </a>
-                        
-                        <a href="/tags/list/">
-                            <span class="chip bg-color">list</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/44/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">45 / 51</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/46/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/25/2013-10-25-the-metaphor-of-rock-climbing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/25/2013-10-25-the-metaphor-of-rock-climbing/" class="post-title-link" itemprop="url">The metaphor of rock climbing</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-25 20:44:00" itemprop="dateCreated datePublished" datetime="2013-10-25T20:44:00+08:00">2013-10-25</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-24 00:12:06" itemprop="dateModified" datetime="2013-11-24T00:12:06+08:00">2013-11-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pck/" itemprop="url" rel="index"><span itemprop="name">pck</span></a>
+                </span>
             </span>
-            
-            <br>
-            
-            <br>
-            
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>It is so hard to descibe how teacher develop related knowledge to teach a special topic.  </p>
+<p>I have come up with many analogies to assit my thinking and modeling of teacher knowledge development.  </p>
+<p>Here is another wonderful analogy Rock Climbing. The following is a picture:<br><img src="https://raw.github.com/lukezhg/Freyja/master/rock-climbing.png" alt="rock climbing"><br>More about <a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Rock_climbing#Crack_climbing">Rock climbing</a><br>The teacher developed lots of intermediate representations (just like the cracks, faces, slabs in rock climbing) to help students learning the scientific concept.  </p>
+<p>Good teacher can “see” the postions of students and can “arise” the right representation to help. The subject matter knowledge is the moutain. The “safety rope” is the good teacher-student relationship which keep the safe environment for learning. The routes can be fun and the goal can be challenging. They all motivates student to climb and learn.   </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/25/2013-10-25-from-falling-objects-experiment-to-a-simulated-experiment/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/25/2013-10-25-from-falling-objects-experiment-to-a-simulated-experiment/" class="post-title-link" itemprop="url">From falling objects experiment to a simulated experiment</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-25 13:42:00" itemprop="dateCreated datePublished" datetime="2013-10-25T13:42:00+08:00">2013-10-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2014-06-12 08:28:42" itemprop="dateModified" datetime="2014-06-12T08:28:42+08:00">2014-06-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Today I attened the Science Method class. An interesting question discussed was the experiment of falling objects-the <a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment">Galileo’s Leaning Tower of Pisa experiment</a>.  Dr. Luft provided us some students’ responses and let us to figure out the students’ thinking and how to response to students properly.  </p>
+<p>But the question caught my curiosity in the class was two ice cube droping from the same inclination.<br><img src="https://raw.github.com/lukezhg/Freyja/master/bigsmallball.png" alt="two ball fall at the same height"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2013/10/25/2013-10-25-from-falling-objects-experiment-to-a-simulated-experiment/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/19/2013-10-19-the-beautiful-leaves-on-the-tree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/19/2013-10-19-the-beautiful-leaves-on-the-tree/" class="post-title-link" itemprop="url">The beautiful leaves on the tree</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-19 16:39:00" itemprop="dateCreated datePublished" datetime="2013-10-19T16:39:00+08:00">2013-10-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-10-20 07:16:11" itemprop="dateModified" datetime="2013-10-20T07:16:11+08:00">2013-10-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://raw.github.com/lukezhg/Freyja/master/autumn-tree.jpg" alt="autumn-tree.jpg"></p>
+<p>On a grassy lawn near the road, standed a little girl about five years old. She was looking up at the colorful tree leaves and jumping to reach them. She jumped up using all her energy but found herself still get nothing.  </p>
+<p>I walked close to the girl-she was really a beautiful angel.  </p>
+<p>“Do you need help?” I asked.<br>She stared at me with her shinning black eyes without saying a word.<br>“Do you want some leaves? I can help!” I repeated.<br>“No” she answered.<br>“I can use the ball.” She fetched a ball from the ground just several steps away.<br>“then the leaves will fall.”<br>“You are very clever!” I said.<br>After I left, she began throw the ball up to the leaves again and again - very exitedly.  </p>
+<p>Well, she may never heared of the term “gravity”, but she do have been aware of it and even make use of it to get the beautiful leaves.   </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/03/2013-10-03-model-based-learning-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/03/2013-10-03-model-based-learning-review/" class="post-title-link" itemprop="url">Model-based Learning Review</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-03 10:15:00" itemprop="dateCreated datePublished" datetime="2013-10-03T10:15:00+08:00">2013-10-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-02-28 18:09:29" itemprop="dateModified" datetime="2015-02-28T18:09:29+08:00">2015-02-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">科研</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94/%E6%95%99%E5%AD%A6/%E6%95%99%E5%AD%A6%E7%AD%96%E7%95%A5/" itemprop="url" rel="index"><span itemprop="name">教学策略</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###What is Model-based Learning(MBL)?<br>How students learn: science in classroom</p>
+<p>five epistemic features of scientific knowledge:(Windschitl,Thompson, &amp; Braaten,2008)<br>testable 可验证性<br>revisable 可修改性<br>explanatory 解释性<br>conjectural,and 推理性<br>generative 启发性</p>
+<p>###Why to promote MBL now?<br>科学不仅仅是科学知识，还包括科学过程和科学的本质。学生不仅应该了解科学知识是什么，还应该了解科学知识是如何产生和发现的。MBL能够体现科学的全过程，是更真实的科学。<br>科学探究在一线教学中面临很多困难，由于教学资源和时间的限制，学生很难有机会检验自己的假说是否正确，也较少有体会出自己的研究问题的机会。计算机模拟则可以解决这些困难，为学生提供模拟的科学探究体验。<br>对于有效教学行为的研究所揭示的高效教学列表中，基于模型的科学探究覆盖了绝大部分的有效行为。因此，它是一种非常值得提倡的一种教学实践方式。  </p>
+<p>###How MBL affects science learning?    </p>
+<p>###How to use MBL in science classroom?<br>####How to process MBL?<br>####How to assess students’ work?<br>####How to adapt the activities for various needs?  </p>
+<p>####Simulation approach<br>####Collaboration approach<br>####Resources  </p>
+<p>###What are the Opportunities and Challenges for science teachers?  </p>
+<p>####Misunderstandings<br>####Lack of knowledges and skills  </p>
+<p>Reference<br><a target="_blank" rel="noopener" href="http://www.vanderbilt.edu/m3lab/Rapp-Sengupta.pdf">Rapp &amp; Sengupta models and modeling in science learning(2).doc - Rapp-Sengupta.pdf</a>  </p>
+<p>Discourse Tools  model-based inquiry: <a target="_blank" rel="noopener" href="http://tools4teachingscience.org/">http://tools4teachingscience.org/</a>  </p>
+<p>Windschitl, M., Thompson, J., &amp; Braaten, M. (2008). Beyond the scientific method: Model‐based inquiry as a new paradigm of preference for school science investigations. Science education, 92(5), 941-967.  </p>
+<p>Index of /mwind/MWHome/downloads<br><a target="_blank" rel="noopener" href="http://faculty.washington.edu/mwind/MWHome/downloads/">http://faculty.washington.edu/mwind/MWHome/downloads/</a>  </p>
+<p>reflection on groupwork modeling - Chunlei’s Blog<br><a href="http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/">http://zhangchunlei.com/blog/2013/09/27/reflection-on-groupwork-modeling/</a></p>
+<p>Timss video and reflection of teaching science with modeling - Chunlei’s Blog<br><a href="http://zhangchunlei.com/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/">http://zhangchunlei.com/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/27/2013-09-27-reflection-on-groupwork-modeling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/27/2013-09-27-reflection-on-groupwork-modeling/" class="post-title-link" itemprop="url">reflection on groupwork modeling</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-27 11:00:00" itemprop="dateCreated datePublished" datetime="2013-09-27T11:00:00+08:00">2013-09-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-10-06 04:48:45" itemprop="dateModified" datetime="2013-10-06T04:48:45+08:00">2013-10-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/courses/" itemprop="url" rel="index"><span itemprop="name">courses</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I have wrote several posts about modeling:<br>Such as <a href="/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities</a><br>Look for more click <a href="/tag/modeling/">here</a>  </p>
+<p>But this time I would rather to think modeling from the groupwork perspective.  </p>
+<p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don’t guaranteed the fruits are big.  </p>
+<p>Groupwork tasks take times, so they must be well designed and organized.   </p>
+<p>What do I mean by well designed? The groupwork should meet the following preconditions:  </p>
+<ol>
+<li> It is highly realated with the science idea that student are going to learn.  </li>
+<li> It is challenging enough that it can’t be done individually.  </li>
+<li> It is reachable for students with their present knowledges and skills.  </li>
+<li> It generates meaningful discussions and productive outcommings.  </li>
+</ol>
+<p>What do I mean by well organized? The teacher should do the following:  </p>
+<ol>
+<li> Students’ prior idea should be explored and addressed.  </li>
+<li> Possiblely related science theories or ideas should be put on the table(eg by brainstorming).  </li>
+<li> All group members should engaged actively and equally in the task.  </li>
+<li> Students can learn to communicate and collaborate like scientists.  </li>
+<li> Competition can be used to save time and for fun.  </li>
+</ol>
+<p>How to help students to generate more productive group conversation?  </p>
+<ol>
+<li> State proper questions or the tasks clearly. Everyone knows what to do.  </li>
+<li> Use deep silent thinking and wide brainstorm, Enage what students prior ideas and concepts to expain the data/phenomenon? Everyone needs to participate in group conversation in some way.  </li>
+<li> Visualize group ideas or models with tools and posters.  </li>
+<li> Test and Review the models critically and make suggestions.  </li>
+<li> Revise the models in light of new data and feedbacks from class community.  </li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/24/2013-09-24-japan-lesson-study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/24/2013-09-24-japan-lesson-study/" class="post-title-link" itemprop="url">Japan Lesson Study</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-24 22:30:00" itemprop="dateCreated datePublished" datetime="2013-09-24T22:30:00+08:00">2013-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-25 11:27:57" itemprop="dateModified" datetime="2013-09-25T11:27:57+08:00">2013-09-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I watched two vedios of Japan science teaching see my <a href="/blog/2013/08/19/timss-video-and-reflection-of-teaching-science-with-modeling/">previous post</a>  </p>
+<p>Since then I tend to pay close attention to Japan science education including both teaching practice and teacher professional development. Tonight we talked about the lesson study in Japan and China, So googled Japan lesson study and found 2 interesting resources(attached at the end of this post).  </p>
+<p>I think the Japan lesson study sounds really good.  </p>
+<p>First, the lesson is designed and prepared by a team not a single teacher. This is different from China, where one teacher is reponsible for everything and under a great pressure. When a team prepare and co-design the lesson, teacher can really have more opportunities to learn from each other.  </p>
+<p>Second, the study is aiming to solve a problem or acheiving a special goal. It is not providing a common good lesson for other teachers to follow or comment. This goal-orantied study will make it more meaningful for teachers. It becomes easier for other teachers take a stand to think if they have acheived their goal or what would help.  </p>
+<p>Third, the team will spend 3-4 years on the same goal, they will design a long range plan to achieve it. They also refine their goal ever year. So it tend to be a continue systematic problem solving process with significant value in a special school context.   </p>
+<p>Fourth, the topics of discussion and reflection can cover a wide range of concerns, including content related issues(goal of unit and lesson, concepts, problem to focus on, students’ solution and response), and pedagogical issues and behaviors issues, also education rationals and goals.   </p>
+<p>Resources:<br><a target="_blank" rel="noopener" href="http://www.rbs.org/SiteData/docs/yoshidaoverview/aeafddf638d3bd67526570d5b4889ae0/yoshidaoverview.pdf">Lesson Study: An Introduction By Makoto Yoshida &amp; Clea Fernandez</a>  </p>
+<p>Japanese Lesson Study: Dr. Clea Fernandez  </p>
+<iframe width="420" height="315" src="//www.youtube.com/embed/yv-7xmZDozo" frameborder="0" allowfullscreen></iframe>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/24/2013-09-24-co-teaching/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/24/2013-09-24-co-teaching/" class="post-title-link" itemprop="url">Co-teaching</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-24 15:53:00" itemprop="dateCreated datePublished" datetime="2013-09-24T15:53:00+08:00">2013-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-25 11:32:46" itemprop="dateModified" datetime="2013-09-25T11:32:46+08:00">2013-09-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/supervision/" itemprop="url" rel="index"><span itemprop="name">supervision</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Today I attended a workshop about co-teaching and mentoring by Dr Dresden. Georgia is going to promote co-teaching in the future. This was a foundational workshop for mentor teachers, in which they could know about what is co-teaching, how it is different from traditional mentoring, what kinds of approaches can be used. This was the task of the morning session. In the afternoon mentoring session, teachers were divided into 3 groups to work out how to welcome your teacher candidates, stages of their concern, and scenarios playing and discussions.  </p>
+<p>I found it interesting to hear what the mentor teacher say. Although co-teaching sounds like a powerful idea to make the internships session more effective, there are still lots of barriers and problems to overcome and handle with. Mentors do need to know how to co-teach, why to co-teach, what to do, but this is not enough. Another important part is the collaboration and communication between each pieces. Well teacher candidates, university professors are in university system, while teacher mentors are in the middle school system, they have different responsibilities and roles, they have few chances to work together, they are all very busy and tend to draw back for lack of time or inconvinient reasons. You know what, it takes time and energy and wisdom to build trust relationships between them.  </p>
+<p>So in the afternoon session, communication skills are stressed. But I think it would be more helpful if supervisors and teacher candidates can show up and speak their voices. Well may be this will be done during the Pairs workshop.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/23/2013-09-23-baby-recipe-design/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/23/2013-09-23-baby-recipe-design/" class="post-title-link" itemprop="url">宝宝食谱设计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-23 22:45:00" itemprop="dateCreated datePublished" datetime="2013-09-23T22:45:00+08:00">2013-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-24 11:12:44" itemprop="dateModified" datetime="2013-09-24T11:12:44+08:00">2013-09-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%9D%E5%AE%9D/" itemprop="url" rel="index"><span itemprop="name">宝宝</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>宝宝七个月了，母乳开始不够吃了，爸爸给你设计了下面的副食，别挑食哦！  </p>
+<p>早餐：稀粥加青菜末、蛋黄泥<br>顺便多煮一个土豆或者红薯（备用）  </p>
+<p>母乳：一次性加热到39度，否则容易破坏免疫蛋白活性。  </p>
+<p>午餐：猪肝泥、米粉、西红柿糊（或者苹果泥）<br>西红柿糊做法：做法： 将西红柿放入开水，随即取出。 将西红柿去皮，去籽，其余部分捣碎成糊状即可。  </p>
+<p>晚餐：土豆泥（或者红薯，紫薯）、果汁<br>土豆泥做法：土豆洗净煮到透心，去皮，用汤匙捣成泥，温度适宜后即可小口喂食。<br>果汁需要用温开水稀释2倍（不要太甜）  </p>
+<p>加餐：磨牙棒<br>1.把馒头切成1厘米厚的片，放在锅里，不加油，烤至两面微微发黄，外皮略有一点硬度，里面松软就可以了。一方面，馒头不会卡着孩子，另一方面，他可以自己用手拿着吃，既增加了吃的趣味性，又练习了手眼协调能力。除了能磨牙，营养和味道也不错。<br>2.也可以用蔬菜做磨牙棒，帮助宝宝尽早熟悉蔬菜的味道。把胡萝卜、黄瓜、白萝卜等去皮，刻成各种形状，比如刻成小动物;也可以将水果条、菜茎直接拿给宝宝，既能咬，又能玩，妈妈还可以帮他认物、辨色。</p>
+<p>磨牙棒制作来自<a target="_blank" rel="noopener" href="http://yuer.imeimama.com/yinger/20130620/1260746_2.html">这里</a>   </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/23/2013-09-23-the-jigsaw-of-supervision/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/23/2013-09-23-the-jigsaw-of-supervision/" class="post-title-link" itemprop="url">The Jigsaw of Supervision</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-23 21:25:00" itemprop="dateCreated datePublished" datetime="2013-09-23T21:25:00+08:00">2013-09-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-17 04:38:21" itemprop="dateModified" datetime="2013-11-17T04:38:21+08:00">2013-11-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/supervision/" itemprop="url" rel="index"><span itemprop="name">supervision</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>##Introduction  </p>
+<blockquote>
+<p>“No one is born knowing how to teach.” <a href="#1">1</a><br>–Mentoring Matters, Laura Lipton and Bruce Wellman, 2003, p.65</p>
+</blockquote>
+<p>Teacher have to spent years to learn to teach. Even with enough experience only some grow into expert teacher. One of the most important reason is reflection. Explicit and critical self-reflection on practices can be very hard for begining teachers even experienced teacher. Sometimes it hurts and provides little directions. Teachers are unwillingly to preserve in self-reflection. Situations may change, if someone can supervise and assist teachers’ reflection.   </p>
+<p>What is supervision? Here Supervision, I mean clinical Supervison for teacher development. It basicly has three phases in a clinical suervision cycle:  </p>
+<ol>
+<li>Planing Conference(Setting the goals and identify the concerns)  </li>
+<li>Classroom observation(Collect data and discover new issue) and  </li>
+<li>Feedback Conference(Look at the data and feedback).<br>Clinical supervision focuses on teachers’ actual classroom instruction and includes the teacher as an active participant in the supervisiory process. In this respect, it differs from typical courses and workshops in which the content may not grounded in teachers’ classroom reality.   </li>
+</ol>
+<p>There are many types of professional development programs.Acheson &amp; Gall mentioned six types of professional learning programs in their book about clinical supervision.<a href="#4">4</a>  </p>
+<ol>
+<li>Expert presenter(lesson study, knowledge, skills)  </li>
+<li>Skill trainning(theory, skills, practices, transfer to classroom)  </li>
+<li>Action research(Self-regulated study and investigation on teaching)  </li>
+<li>Organization development(Specialist helps teacher and other staff diagnose strengths and weakness of their school or system, develop a plan of action, implement the plan, and evaluate its success)  </li>
+<li>Change process(staff developers help teacher make a desicion to a adopt a system-wide innovation, put the inovation into action, and institutionalize it)  </li>
+<li>Clinical supervision(focuses on classroom reality)<br>Among these programs, only action research and clinical supervision are self-directed learning, and the later would be more suitable and supportive for new teachers. All these programes have an important role in teacher education, but they are no substitute for the professional development that good clinical supervision promotes.     </li>
+</ol>
+<p>What constitutes a good supervision? Supervising is for not supervising. Good supervision helps teacher become independent learner by providing concrete and constructive feedbacks. What make supervision good or effective? Supervision is expensive. It costs time, labor, money, resources. How to make effective supervision cheaper and sustainable?  </p>
+<p>This paper is going to follow these questions to review related literatures to look for clues and solutions.  </p>
+<p>##Literature review<br>There are lots of studies on various kinds of supervision programs. In search of effective supervision, it is necessary to define what “effective supervision” means. It means supervisee made significant progress to their goals through all participants’ resonalbe efforts. In this process, superviors acts effectively and properly, productive relationship is formed and sustainable. Taking the supervision context into concern, this paper is going to arrange these studies in the followinging themes:  </p>
+<ol>
+<li>How supervisors affect supervision programs?  </li>
+<li>How the cooperation relationships affect supervision programs? </li>
+<li>How the context affect supervision programs?  </li>
+</ol>
+<p>###Effective supervisors or cooperating teachers<br>How supervisors affect supervision programs? Supervisors play an important role in supervision. And this can decide the success of the program.  </p>
+<p>Lyman(1987) found that supervisors who stress authority and identification of weaknesses build less trust than those who emphasize collegiality, productive diversity, and strengths. <a href="#12">12</a><br>It suggests that supervisors should discover supervisee’s progress and emphasize diversity of resources and strategies in a collegial atmosphere.  </p>
+<p>But What an effective supervisor should do according to supervisees?<br>Bret G. Range , Suzie Young &amp; David Hvidston (2013)studied in-service teacher supervison and found that:  </p>
+<blockquote>
+<p>Initial contract(non-tenured teachers) believed that the following variables influenced their reflection on practice: building trust, sharing the observation report, teacher’s focus for the lesson, constructive feedback, identified standards, sequence for conference, and areas for future growth. Yet tenured teachers only perceived two variables as influential on their reflection on practice: linking the post-conference to extended learning opportunities (professional development) and providing positive comments in the post-conference by the principal/supervisor. Analysis of open-ended items indicated that respondents valued trusting relationships, constructive feedback, reflection and areas of improvement as important elements of either conference.<a href="#10">10</a>  </p>
+</blockquote>
+<p>But if you are a university professor and want to supervise your student teacher classroom, it would be a great challenge because you may have not enough time and convinence to supervise every student in their classroom.<br>In this case, BORKO and MAYFIELD (1995) recommended that university supervisors use their limited time in schools to help cooperating teachers become teacher educators. For example, they can model ways of observing student teachers and strategies for conducting conferences that focus on teaching and learning and help student teachers to become reflective about their practice. They also found that cooperating teachers who believed that they could and should play an active role in student teachers’ learning, conducted longer and more frequent conferences with their student teachers, and provided more extensive feedback.<a href="#11">11</a>    </p>
+<p>Summary of characteristics of effective supervisors:  </p>
+<ol>
+<li>providing timely and constructive feedback  </li>
+<li>extended learning opportunities  </li>
+<li>use limited time to help cooperating teachers become teacher educators  </li>
+<li>emphasize collegiality, productive diversity, and strengths  </li>
+</ol>
+<p>###Productive cooperation relationships<br>How the cooperation relationships affect supervision programs? Inoder to make supervision effective and coninuable, a good relationship between the supervisor and the supervisee must be built. But if high-stake evaluation was involved, sometimes it becomes difficult to develop mutuality, trust and friendship.     </p>
+<p>Riordan, G. P. (1995) found that the most effective collaborations were characterized by relationships that were mutually rewarding, equally valued, and based on similar and/or complimentary professional and social strengths and interests. All participants in their study reported that the collaborative approach to supervision was worthwhile, although in the partnerships where the development of mutuality, trust, and friendship were at an early stage, teachers were less inclined to find or to make time to work with their partner or to focus on aspects of their teaching that involved risk-taking.<a href="#6">6</a><br>In order to help supervisor and supervisee to form a good relationship, it would be better to avoid negative evaluation relationship but postive evidence for evaluation are recommaned to be collected by supervisor.  </p>
+<p>Sometimes good relationships are hard to develop just because lack of effective communication and alliances.</p>
+<p>Nelson, Mary Lee, et al.(2008) believed in creating strong supervisory alliances, discussing evaluation early on, modeling openness to conflict, and providing timely feedback. Dependable strategies included contextualizing conflicts in light of developmental and environmental factors, seeking consultation with colleagues, self-coaching, processing conflicts, accentuating supervisee strengths, interpreting parallel processes, and withdrawing from supervisee dynamics.<a href="#8">8</a></p>
+<p>Valencia(2009) discovered another crucial problem in student teaching.<br>There were numerous instances of lost opportunities for student teachers to learn to teach, including sparse feedback on teaching subject matter and few links to methods courses, plus limited opportunities to develop identities as teachers. The structures that frame student teaching and its participants have deep roots in the cultures of universities and schools that must be considered if student teaching is to maximize its potential.<a href="#9">9</a>   </p>
+<p>Summary of the characteristics of productive cooperation relationships:   </p>
+<ol>
+<li>mutually rewarding, equally valued, trust and familiarity, shared expectations about the role of supervisors;   </li>
+<li>modeling openness to conflict, feedback on teaching subject matter  </li>
+<li>time for collaboration  </li>
+</ol>
+<p>###How the context affect supervision programs?<br>Supervision can take place in many context, it can be online, in a school community, or in the cooperation between university and professional development schools. What is the difference of supervision that happen in idfferent context? How context affect supervision? How to design a proper supervison for a special context? These questions need to be addressed if we want to make supervision flexiable and sustainable.     </p>
+<p>Wortmann, Karly, et al.(2008) proposed seven different types of online Mentoring programs as following:<a href="#5">5</a>  </p>
+<blockquote>
+<p>Task-based mentoring focuses on an individual’s short-term need to improve a skill or acquire knowledge in order to fulfill a new role.<br>Experience-based mentoring pairs an individual, who is new to an organization or a role, with a mentor who has experience in that role.<br>Just-in-time mentoring matches mentors with individuals who have an unanticipated need for assistance.<br>&gt; One-to-one mentoring centers on a single mentor working with a single mentee<br>Team mentoring joins groups of mentors with groups of mentees.<br>Formal mentoring involves explicit expectations of the mentoring process and/or outcomes by specifying such characteristics as timelines, achievements, progress reporting, benchmarks, and communications formats.</p>
+</blockquote>
+<p>Project Supervision can be designed to develop professional development materials for school supervisors/mentors in a community of practice involving teachers – both experienced and preservice – and teacher educators.<a href="#3">3</a><br>Levine (2011) proposed five features of professional communities that can help supervisors improve their work: norms promoting collaboration; trust and familiarity; activities deprivatizing practices; access to logistical information and shared expectations about the role of supervisors; and time for collaboration.<a href="#7">7</a>  </p>
+<p>Supervision can also happen in the coteaching context. Experienced teacher coteach with a preservice teacher, they codesign the leson and then coteach, coreflect. The supervisor can observe both of the teachers and give feedbacks.  </p>
+<p>In this case, the experienced teacher can also serve as a cooperating teacher and have different ways to act in the supervision process.  </p>
+<p>Clarke,Triggs,&amp; Nielsen(2013) identified 11 ways for cooperating teacher to participate in teacher education:<a href="#2">2</a>  </p>
+<blockquote>
+<p>Providers of Feedback,<br>Gatekeepers of the Profession,<br>Modelers of Practice,<br>Supporters of Reflection,<br>Gleaners of Knowledge,<br>Purveyors of Context,<br>Conveners of Relation,<br>Agents of Socialization,<br>Advocates of the Practical,<br>Abiders of Change, and<br>Teachers of Children.<br>The following graph shows us the ideal feedback.<br><img src="https://raw.github.com/lukezhg/Freyja/master/11ways.png" alt="Clarke2013">  </p>
+</blockquote>
+<p>But this kind of supervison does not easily happen. The more participant involed, the more complex it become, the more hard to organize and make it successful. So facilitators are needed to make sure every pieces move in the right direction.  </p>
+<p>Facilitators can be administrators, principles in professional development schools , staff in universities, companies or other organizations.</p>
+<p>Riordan, G. P. (1995) suggested that administrators should be aware of the extra difficulties partners may experience in working collaboratively; (2) administrators wishing to encourage collaborative clinical supervision partnerships to meet professional development goals should develop a system that allows teachers to have some input in the selection of partners, provide adequate time for conferencing, and notice and encourage teachers’ collaborative efforts; (3) teachers wishing to develop relationships with their colleagues should be aware of the powerful norms of teacher autonomy and isolation;<a href="#13">13</a>  </p>
+<p>###Summary  </p>
+<p>The ideal supervision I can picture based on these literatures.  </p>
+<ol>
+<li><p>University professors should use their limited time to help cooperating teachers become teacher educators. They can aslo help by providing timely and constructive feedback and learning opportunities. In suppervision session, emphasizing collegiality, productive diversity, and strengths would help to build trust relationship.</p>
+</li>
+<li><p>Cooperating teacher should play an active role using an indirect style in student teacher’s learning. They should build collaborative and trust relationships, offer timely positive feedback, be open to conflict, give constructive suggestions, and provide learning opportunities.  </p>
+</li>
+<li><p>Supervisees should take the ownership of their learning and be actively engaged, open minded, reflective in their process of learning to teach.  </p>
+</li>
+<li><p>Facilitators:<br>Facilitators can provide support in communications, organizations, and skills development. They should design and organize the process for participants’ convinences and make sure every pieces moving to the right directions.  </p>
+</li>
+</ol>
+<p>##Analysis  </p>
+<p>Why do we use the model of supervision?<br>==&gt;Value<br>Promote teacher learning and student learning.<br>==&gt;Cost<br>Time, labor, money, resources.<br>==&gt;DNA<br>Classroom reality towards effective teaching<br>==&gt;Pedagogy<br>Direct or indirect, low-stakes or high-stakes<br>==&gt;Content<br>Effective teaching skills and characteristics<br>==&gt;Technology<br>Supervision techniques, online platforms<br>==&gt;Context<br>school, university, district, cross-culture, multi-languages, reform-based  </p>
+<p>###How to make supervision sustainable?<br>If we want to make supervision sustainable, we must design and develop a mutual benefit and win-win relationship between all the participants of supervision.<br>It is like jigsaw. First you have to see every piece very clearly and then you can make the best guess and try to connect the two pieces.<br><img src="https://raw.github.com/lukezhg/Freyja/master/jigsaw.png" alt="Jigsaw of teaching supervision"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2013/09/23/2013-09-23-the-jigsaw-of-supervision/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/20/2013-09-20-metaphors-for-teaching/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/09/20/2013-09-20-metaphors-for-teaching/" class="post-title-link" itemprop="url">Metaphors for teaching and education reform</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-09-20 23:18:00" itemprop="dateCreated datePublished" datetime="2013-09-20T23:18:00+08:00">2013-09-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-21 12:09:05" itemprop="dateModified" datetime="2013-09-21T12:09:05+08:00">2013-09-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###Metaphors for teaching:<br>A teacher is just like a cook. You can tell a good cook by the taste of his dishes, so you can also tell a good teacher by his students’ acheivements. Sometimes you can also tell a good cook by observing his cooking process. Good cook can aways get everything ready quickly and easily. Good teacher do the same thing.  </p>
+<p>Teachers’ job is adapting the curriculum and materials to local settings and particular learning goals. Effective teachers are aware of what they are currently doing, aways pursueing new effecive ways to teach the same content. It is just like cooks making foods for different customers.<br><img src="https://raw.github.com/lukezhg/Freyja/master/teacher-transform.png" alt="teacher transfrom">  </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2013/09/20/2013-09-20-metaphors-for-teaching/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/44/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><span class="page-number current">45</span><a class="page-number" href="/page/46/">46</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/46/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>
