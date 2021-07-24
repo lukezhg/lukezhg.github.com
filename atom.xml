@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chunlei&#39;s BLog</title>
+  
+  
+  <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
+  
+  <link href="http://zhangchunlei.com/"/>
+  <updated>2021-07-24T07:44:47.668Z</updated>
+  <id>http://zhangchunlei.com/</id>
+  
+  <author>
+    <name>Chunlei Zhang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>try</title>
+    <link href="http://zhangchunlei.com/2021/07/24/2021-07-24-try/"/>
+    <id>http://zhangchunlei.com/2021/07/24/2021-07-24-try/</id>
+    <published>2021-07-24T07:44:00.000Z</published>
+    <updated>2021-07-24T07:44:47.668Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pyenv and virtualenv</title>
+    <link href="http://zhangchunlei.com/2021/07/24/2021-07-24-pyenv-and-virtualenv/"/>
+    <id>http://zhangchunlei.com/2021/07/24/2021-07-24-pyenv-and-virtualenv/</id>
+    <published>2021-07-24T03:17:00.000Z</published>
+    <updated>2021-07-24T03:45:38.673Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;pyenv是一个python环境版本管理器，当你有甚多项目，但是用的python版本不同时，为了让程序运行，你需要设定特点的py版本。这时pyenv就能发挥作用了。pyenv也能让你装多个py版本。 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 查看当前版本
+pyenv</summary>
+        
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://zhangchunlei.com/tags/python/"/>
+    
+    <category term="virtualenv" scheme="http://zhangchunlei.com/tags/virtualenv/"/>
+    
+    <category term="pyenv" scheme="http://zhangchunlei.com/tags/pyenv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python draw graph to visualize data</title>
+    <link href="http://zhangchunlei.com/2021/07/21/2021-07-21-python-draw-graph-to-visualize-data/"/>
+    <id>http://zhangchunlei.com/2021/07/21/2021-07-21-python-draw-graph-to-visualize-data/</id>
+    <published>2021-07-21T14:06:00.000Z</published>
+    <updated>2021-07-21T14:44:20.567Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在线教学在疫情期间成为唯一教学选择，那么教师真实的教学体验如何？通过问卷我们收集到了一些老师的回答，量化数据分析还好说，但是对于老师们的文字反馈，确实让人头疼。 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中国80后</title>
+    <link href="http://zhangchunlei.com/2021/07/04/2021-07-04-the-chinese-post-80s/"/>
+    <id>http://zhangchunlei.com/2021/07/04/2021-07-04-the-chinese-post-80s/</id>
+    <published>2021-07-04T12:05:00.000Z</published>
+    <updated>2021-07-04T13:58:32.543Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;新房子要装修，定制的柜子今天到了，老婆让我去接货，说师傅在外面等着呢。我刚把二宝哄睡，哄睡的方式十分奇葩，孩子吃完午饭，把她放在小车里，在小区里推一圈，推到一半孩子就睡着了。坐在睡着的，头歪在肩膀上，弯成九十度。即便是在搬砖铺砌的小路上颠簸，也没把她颠醒，可见是真困了。跟我</summary>
+        
+      
+    
+    
+    
+    <category term="随笔" scheme="http://zhangchunlei.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="post-80s" scheme="http://zhangchunlei.com/tags/post-80s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>相对论的理解</title>
+    <link href="http://zhangchunlei.com/2021/04/14/2021-04-14-theory-of-relativity/"/>
+    <id>http://zhangchunlei.com/2021/04/14/2021-04-14-theory-of-relativity/</id>
+    <published>2021-04-14T05:51:00.000Z</published>
+    <updated>2021-04-14T06:26:35.013Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;爱因斯坦提出狭义和广义相对论，推翻了刚性时空观，解决了物理学在不同参考系的均权问题。其本质是物理学规律和实验不会随着参考系的不同而不同。也就是，所以的惯性参考系都是等权的。 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自卑与超越</title>
+    <link href="http://zhangchunlei.com/2021/04/13/2021-04-13-task-of-life/"/>
+    <id>http://zhangchunlei.com/2021/04/13/2021-04-13-task-of-life/</id>
+    <published>2021-04-13T00:16:00.000Z</published>
+    <updated>2021-04-13T02:10:39.875Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;人生而受限，于是追求超越。胆怯的人选择捷径，结果弥足深陷，勇敢的人选择直面困难，反而实现超越。 &lt;/p&gt;
+&lt;p&gt;阿德勒在《自卑与超越》概括了每个人必须面对的三大人生任务：从事对社会有用的职业或工作、建立卓有成效的人际关系和实现一个人在爱情、婚姻和家庭生活中的角色。 </summary>
+        
+      
+    
+    
+    
+    <category term="读书" scheme="http://zhangchunlei.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+    <category term="人生" scheme="http://zhangchunlei.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>复杂</title>
+    <link href="http://zhangchunlei.com/2021/03/06/2021-03-06-complexity/"/>
+    <id>http://zhangchunlei.com/2021/03/06/2021-03-06-complexity/</id>
+    <published>2021-03-05T16:02:00.000Z</published>
+    <updated>2021-06-29T04:21:58.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;柯尔莫哥洛夫复杂度：一个字符串生成的最简单算法。越有规律的越容易用更短的代码生成。无规律的反而只能老老实实的输出。但是有趣的是数学家已经证明柯尔莫哥洛夫复杂度无法使用一个固定的算法计算。你永远不知道是否有更简单、更深刻的算法存在。这也给了人们不断逼近本质的希望。 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自我成长系统</title>
+    <link href="http://zhangchunlei.com/2021/03/03/2021-03-03-self-grow-system/"/>
+    <id>http://zhangchunlei.com/2021/03/03/2021-03-03-self-grow-system/</id>
+    <published>2021-03-03T13:01:00.000Z</published>
+    <updated>2021-03-04T03:49:27.803Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每个人都是一个系统，但是大多系统都是被动响应的系统，到处救火、上蹿下跳，直到呜呼哀。这样的人生其实不值得一过。如何才能拥有成功、自由的人生呢？  &lt;/p&gt;
+&lt;p&gt;那么，我么必须构建一个自我成长系统。 </summary>
+        
+      
+    
+    
+    
+    <category term="得到心得" scheme="http://zhangchunlei.com/categories/%E5%BE%97%E5%88%B0%E5%BF%83%E5%BE%97/"/>
+    
+    
+    <category term="人生算法" scheme="http://zhangchunlei.com/tags/%E4%BA%BA%E7%94%9F%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>被讨厌的勇气-笔记</title>
+    <link href="http://zhangchunlei.com/2021/03/02/2021-03-02-the-courage-to-be-disliked/"/>
+    <id>http://zhangchunlei.com/2021/03/02/2021-03-02-the-courage-to-be-disliked/</id>
+    <published>2021-03-02T00:43:00.000Z</published>
+    <updated>2021-03-02T00:58:42.137Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;人都恐惧被孤立的天性，这有助于更好的社会交流、协作和形成责任感。这种天性是自然进化的结果。缺乏这种敏感度的个体往往被放逐和驱除而难于存活。    &lt;/p&gt;
+&lt;p&gt;所以人们都喜欢被认可，害怕被讨厌。 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>写作心得</title>
+    <link href="http://zhangchunlei.com/2021/02/08/2021-02-08-writing-principles/"/>
+    <id>http://zhangchunlei.com/2021/02/08/2021-02-08-writing-principles/</id>
+    <published>2021-02-08T05:32:00.000Z</published>
+    <updated>2021-02-08T06:35:03.786Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;写作不一定能改变人生，但是却可以让你回归人生。  &lt;/p&gt;
+&lt;p&gt;有很多介绍写作技巧的书，但是我偏偏认为写作没有技巧。一个记者询问一个知名作家是如何写出那么多伟大作品的，作家的回答很是让人意外，他说：“一个字一个字下”。 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数学学习资源与方法</title>
+    <link href="http://zhangchunlei.com/2021/01/28/2021-01-28-math-for-kids/"/>
+    <id>http://zhangchunlei.com/2021/01/28/2021-01-28-math-for-kids/</id>
+    <published>2021-01-28T08:42:00.000Z</published>
+    <updated>2021-01-28T08:54:08.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;###数学学习的应用程序 &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.mathplayground.com/&quot;&gt;https://www.mathplayground.com/&lt;/a&gt;&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="数学" scheme="http://zhangchunlei.com/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="math" scheme="http://zhangchunlei.com/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用github进行项目协作</title>
+    <link href="http://zhangchunlei.com/2021/01/23/2021-01-23-github-project-collaboration/"/>
+    <id>http://zhangchunlei.com/2021/01/23/2021-01-23-github-project-collaboration/</id>
+    <published>2021-01-23T05:45:00.000Z</published>
+    <updated>2021-01-23T07:05:43.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;###终端窗口Shell的切换&lt;br&gt;改变默认的shell脚本：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chsh -s /bin/zsh&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从 zsh 切换回 bash&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chsh -s</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Happy网球训练方案</title>
+    <link href="http://zhangchunlei.com/2021/01/16/2021-01-16-happy-training-plan/"/>
+    <id>http://zhangchunlei.com/2021/01/16/2021-01-16-happy-training-plan/</id>
+    <published>2021-01-16T09:47:00.000Z</published>
+    <updated>2021-01-16T10:01:46.586Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;###0、应该避免的动作和姿势&lt;br&gt;** 避免膝盖过度承载造成损伤(比如纵向跳跃)&lt;br&gt;** 避免膝关节内扣的运动姿势&lt;br&gt;** 避免横向劈叉导致膝盖内扣&lt;/p&gt;
+&lt;p&gt;###1、热身运动&lt;br&gt;** 慢跑一圈&lt;br&gt;** 关节热身 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于上海PISA考试成绩的争论</title>
+    <link href="http://zhangchunlei.com/2020/12/29/2020-12-29-shanghai-pisa-score-debate/"/>
+    <id>http://zhangchunlei.com/2020/12/29/2020-12-29-shanghai-pisa-score-debate/</id>
+    <published>2020-12-29T00:43:00.000Z</published>
+    <updated>2020-12-29T05:19:30.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;2009年，上海参加了PISA考试，取得了全球第一的好成绩。一时间全球舆论哗然，而且不少媒体用来“hard to</summary>
+        
+      
+    
+    
+    
+    <category term="PISA" scheme="http://zhangchunlei.com/categories/PISA/"/>
+    
+    
+    <category term="PISA" scheme="http://zhangchunlei.com/tags/PISA/"/>
+    
+    <category term="上海" scheme="http://zhangchunlei.com/tags/%E4%B8%8A%E6%B5%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何矫正的膝外翻</title>
+    <link href="http://zhangchunlei.com/2020/12/25/2020-12-25-how-to-correct-knee-valgus/"/>
+    <id>http://zhangchunlei.com/2020/12/25/2020-12-25-how-to-correct-knee-valgus/</id>
+    <published>2020-12-25T14:36:00.000Z</published>
+    <updated>2021-07-24T08:33:42.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;孩子成长的过程中，腿并不是一直是直的。  &lt;/p&gt;
+&lt;p&gt;专家指出：&lt;br&gt;    1岁~2岁的幼儿，会出现轻微O型腿的现象;两岁以后，又渐渐会出现X型腿的迹象。到3岁左右时，X型腿最明显。6岁以后直到成年期，若依然呈现轻微的X型腿，均属正常的生理现象。 </summary>
+        
+      
+    
+    
+    
+    <category term="健康" scheme="http://zhangchunlei.com/categories/%E5%81%A5%E5%BA%B7/"/>
+    
+    
+    <category term="Knee Valgus" scheme="http://zhangchunlei.com/tags/Knee-Valgus/"/>
+    
+    <category term="X型腿" scheme="http://zhangchunlei.com/tags/X%E5%9E%8B%E8%85%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ruby</title>
+    <link href="http://zhangchunlei.com/2020/12/16/2020-12-16-ruby/"/>
+    <id>http://zhangchunlei.com/2020/12/16/2020-12-16-ruby/</id>
+    <published>2020-12-16T00:18:00.000Z</published>
+    <updated>2020-12-16T00:21:16.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Alternative way to install ruby, by RVM,（ highly recommended）:  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; bash -s stable &amp;lt; &amp;lt;(curl -s</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>爱在你身边</title>
+    <link href="http://zhangchunlei.com/2020/12/16/2020-12-16-love-is-beside-you/"/>
+    <id>http://zhangchunlei.com/2020/12/16/2020-12-16-love-is-beside-you/</id>
+    <published>2020-12-15T23:57:00.000Z</published>
+    <updated>2020-12-23T04:51:11.306Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;郑钧的调调~《灰姑娘》  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;爱在你身边
+等待你呼唤
+默默无闻
+将你来陪伴
+
+心中有个ta
+ta在你身边 </summary>
+        
+      
+    
+    
+    
+    <category term="歌词" scheme="http://zhangchunlei.com/categories/%E6%AD%8C%E8%AF%8D/"/>
+    
+    
+    <category term="创作" scheme="http://zhangchunlei.com/tags/%E5%88%9B%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是知识图谱</title>
+    <link href="http://zhangchunlei.com/2020/12/12/2020-12-12-knowledge-graph/"/>
+    <id>http://zhangchunlei.com/2020/12/12/2020-12-12-knowledge-graph/</id>
+    <published>2020-12-12T07:25:00.000Z</published>
+    <updated>2020-12-16T01:49:38.245Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;###什么是知识图谱？&lt;br&gt;概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。 &lt;/p&gt;
+&lt;p&gt;知识图谱(knowledge</summary>
+        
+      
+    
+    
+    
+    <category term="知识图谱" scheme="http://zhangchunlei.com/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
+    
+    
+    <category term="knowledge graph" scheme="http://zhangchunlei.com/tags/knowledge-graph/"/>
+    
+    <category term="GKG" scheme="http://zhangchunlei.com/tags/GKG/"/>
+    
+    <category term="DKG" scheme="http://zhangchunlei.com/tags/DKG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Homebrew出错的种种折腾</title>
+    <link href="http://zhangchunlei.com/2020/12/12/2020-12-12-brew-lesson/"/>
+    <id>http://zhangchunlei.com/2020/12/12/2020-12-12-brew-lesson/</id>
+    <published>2020-12-12T05:07:00.000Z</published>
+    <updated>2020-12-12T05:56:49.450Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。  &lt;/p&gt;
+&lt;p&gt;你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。 </summary>
+        
+      
+    
+    
+    
+    <category term="computer" scheme="http://zhangchunlei.com/categories/computer/"/>
+    
+    
+    <category term="octopress" scheme="http://zhangchunlei.com/tags/octopress/"/>
+    
+    <category term="rake" scheme="http://zhangchunlei.com/tags/rake/"/>
+    
+    <category term="homebrew" scheme="http://zhangchunlei.com/tags/homebrew/"/>
+    
+    <category term="rvm" scheme="http://zhangchunlei.com/tags/rvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>what a good day</title>
+    <link href="http://zhangchunlei.com/2020/12/09/what-a-good-day/"/>
+    <id>http://zhangchunlei.com/2020/12/09/what-a-good-day/</id>
+    <published>2020-12-09T02:47:34.000Z</published>
+    <updated>2021-07-24T08:27:15.316Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;不要在弄mac了&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+    <category term="game" scheme="http://zhangchunlei.com/tags/game/"/>
+    
+  </entry>
+  
+</feed>

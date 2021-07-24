@@ -1,1031 +1,1161 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="zh-CN">
+
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Chunlei&#39;s BLog">
-<meta property="og:url" content="http://zhangchunlei.com/page/23/index.html">
-<meta property="og:site_name" content="Chunlei&#39;s BLog">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Chunlei Zhang">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://zhangchunlei.com/page/23/">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Chunlei&#39;s BLog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
+    <title>Chunlei&#39;s BLog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-  <title>Chunlei's BLog</title>
-  
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
+    <script src="/libs/jquery/jquery.min.js"></script>
 
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Chunlei's BLog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
 
 
 
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Chunlei&#39;s BLog</span>
+                </a>
+            </div>
             
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
       
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-09-07-good-communication-is-important/">
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-09-07-good-communication-is-important/" class="post-title-link" itemprop="url">直接沟通太重要了</a>
-        </h2>
+<div id="mobile-nav" class="side-nav sidenav">
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
-              </span>
-
-          
-
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Chunlei&#39;s BLog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我们的闵行校区有两个部分组成，一个是教学区，一个是研究生公寓。两个区挨着，但是中间却隔了一条马路。更奇怪的是两个校区的门并不是正对着，而是相隔三四百米院。于是每次从研究生公寓要先过一个红灯，然后沿着买路行走一段，才能进入到另一个校区。虽然两个校区直线距离很近，但是我们老师觉得走起来很远。 <div>&nbsp;</div> <div>今天正对着研究生公寓门口突然出现一座桥，桥的那一面居然有门，我骑着车子过了马路直接进入到了另一个校区。我不禁感慨，这个桥修的太好了，这个门修的也好，这方便多了，再想想来来往往的那么多的学生，这得节约多少时间啊。好，实在是好！希望不是一个临时的桥，你不知道，我们这边路口正在修一个隧道，希望隧道修好了，这个桥，这个门都还健在。直接的沟通实在是太重要了。</div> <div>&nbsp;</div> <div>我平时喜欢乱转，特别喜欢走没有走过的路，但是延伸不一会就会出现一道门，锁着，不知道为什么这些人要把门锁死。为什么喜欢把自己锁起来同时，也要把别人锁起来，限制别人的行动。大学应该是没有围墙的大学，何时成了处处限制人自己的铁笼子呢。</div> <div>&nbsp;</div> <div>不知道从什么时候起，沟通变得原来越困难了，甚至成了一种奢侈。邻居的沟通是如此，朋友的沟通也是如此，师生的沟通是如此，官民的沟通也是如此。再拐弯抹角玩躲猫猫，我们与其他国家的距离只能越拉越远。想一想沟通都需要什么，它真的这样难以达成吗。沟通需要双方的意愿和勇气，沟通需要一个直达心灵的桥梁，需要一个平台，沟通还需要能够相互理解对方的语言和立场。其实这些并不难，难得是我们有拆除障碍的勇气和魄力。</div><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=80a18c43-89da-8f73-8e9b-7c6ba4fbbd10" /></div></p>
-
-      
     </div>
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-09-09-firefox/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
           
-            <a href="/2017/03/24/2011-09-09-firefox/" class="post-title-link" itemprop="url">过程需要精简化、具体化、可行化</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
-              </span>
-
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
           
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
 
         </div>
-      </header>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                    subtitle
+                
+            </div>
 
-      
-          <p><b>（1）报销</b><br />报销的过程很是繁琐，今天我才深有体会。学校给我们配备了买电脑的钱，但是买电脑以及报销的过程极其复杂，为这事我折腾了好几天，还没有办完。其实本来应该不会这样的，只是因为我们院管这事的同事刚刚调走，展示这项工作没人管，所以购置电脑和报销的过程都要自己来走，打了n多电话，问了很多人，跑了n多地方，大体的过程如下：<br />1 网上申报<br />2 审核通过后，到院财务出领暂借款单<br />3 到设备处签字，领借款凭证<br />4 联系好商家，确定好送货日期<br />5 到校财务处领支票<br />6 商品送到后检查，给支票，收取发票<br />7 拿发票到院里签字<br />8 到设备处注册<br />9 到校财务处报账<br /><br />我在想，一个教室如果这样跑这些地方，一个地方一个地方的盖章签字，至少要花费两个工作日。这个事情明明很简单，为什么要把它搞得这么复杂呢？为什么不简化简化呢。为什么不把这些单子、公章、部门相对集中在一起呢。这样的工作机制，不仅浪费人力物力，而且还会大量浪费教工的工作时间。搞几次就会搞怕了，真的。<br /><br /><b>（2）改写一个脚本</b><br />我在使用firefox浏览器时，经常遇到一些网站的文字过小，很难阅读，于是我使用了Readability这个插件，但是有的网站有很多框架，如果某些文字不在主框架里，这个插件就很难排上用场了。于是我想，应用gesture插件中自定义一个手势，使得被选择的文字在新标签也打开，并且字体和行距都非常适合阅读。但是遇到了困难。我不知道如何将一个页面中所选的文字传送到新的标签页的方法，查找了很长时间仍让无果。其中window.alert()可以弹出带有文字的窗口，但是字体明显过小，不知道如何调整。另外如果要使用openwindow()函数则可以打开空白标签页，但是不知道如何把所选的文字作为新标签页的内容来显示。<br /><br />目前使用的方法仍让使用了现成的ff扩展quick note来实现的，也就是选择文字后右键，选择发送到quick note，并调整quick note 的css，进而比较容易阅读。<br /><br /><b>从中获得的启示：</b><br />企事业单位应该尽量精简部门以及工程程序，提高效率，并且保证每个过程可用化。个人应该首先借鉴别人的经验，少走弯路，并实际动手，分享经验。<br /><br />学习源于改进的需求，有了需求后应该明确目标和实现途径，当未找到可行的路线时应该记忆问题，询问相关社区，有了思路再集中动手实现，不可不尝试，也不可盲目尝试，浪费时间。<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=b5f02e84-5eaa-8339-91e5-351c547d7738" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-09-19-boring-teaching-is-like-meat-without-saurce/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-09-19-boring-teaching-is-like-meat-without-saurce/" class="post-title-link" itemprop="url">不能引发学生兴趣的教学就像白水煮的肉</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
-              </span>
-
-          
-
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>今天新疆骨干教师开学典礼，陆校长给我们打了一个比喻——白水煮的肉：<br /><blockquote>减负不是给教师减负，也不是简单的较少学生要学习的知识内容。假如学科内容像是一个块肉的话，过去我们的教师往往就是把肉煮了一下，就递给学生吃。没有任何作料的白肉能好吃吗？但是如果你减少肉的数量，那么学生就有可能吃不饱。所以我们教师应该做的是加一些作料，把肉做得好吃一些，让学生喜欢吃，保留学生对学科的一份兴趣，到了大学我们也好培养。<br /></blockquote>比喻很多时候能够触发我们对旧的事物产生新的思考，<a target="_blank" href="http://www.haokanbu.com/event/17087/">有关教学的比喻</a>也是如此。我觉得陆校长的这个比喻就很有趣。教学就像做菜一样，教师就是厨师，学生就是顾客。如何做出一桌既可口有有营养的饭菜，却是对我们教师提出了挑战。但我觉得现在的教学不单单是趣味性的问题，也就是不单单是好吃不好吃的问题，而是营养不均衡。科学课程的内容不仅包括静态的知识，还包括获得知识的过程和方法，以及我们对科学本质的认识和情感。由于静态的知识相比较过程和情感而言更容易考察，更容易出题，出题的比重最大，又由于我们的学校、家长、老师都迷信考试或者都拜倒在了高考神像之下，以至于我们的教学充满了刻板的知识的传授，而缺乏活跃生动的能力锻炼和精神陶冶，就好像只给孩子吃含糖的食物，而没有蛋白质，结果虽然孩子吃得肚子涨涨的，但身体仍然缺乏营养，患了营养缺乏症。当然如果课程是烧菜原材料的话，那么教师教学就是厨师烧菜，虽然原材料中营养是平衡的，但是如果厨师在烧菜的过程中把某些营养损失了，又或者根本没有选择某种营养的材料，又或者都选择了却没有加调味剂，又或者加了调味剂却没有煮熟，学生都会营养不平衡。怎么办？一方面当然希望我们的老师成为好厨师，另外一方面则希望我们的老师教会学生自己做菜。<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=d85dce66-5568-8f19-ba1a-4fdd52d06bd0" /></div></p>
-
-      
     </div>
+</div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-09-20-online-tools-collection-11-9-20/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-09-20-online-tools-collection-11-9-20/" class="post-title-link" itemprop="url">在线网络应用资源梳理11-9-20</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/web2-0/" itemprop="url" rel="index"><span itemprop="name">web2.0</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><b>学术工具：</b><br /><ul><li><a rel="nofollow noopener" class="taggedlink  " target="_blank" href="https://fairshare.attributor.com/fairshare">FairShare -- Watch how your work spreads. Understand how it is used.</a></li><li><a rel="nofollow noopener" class="taggedlink  " target="_blank" href="http://plagium.com/">plagium ::: plagiarism checker</a></li><li><a rel="nofollow noopener" class="taggedlink  " target="_blank" href="http://www.articlechecker.com/">Plagiarism Checker</a></li></ul><b>在线画图工具</b><br /><ul><li>AllMyMagic：<a target="_blank" href="http://www.allmymagic.com/wizcard/create">http://www.allmymagic.com/wizcard/create</a></li><li>Scriblink - Your Online Whiteboard：<a target="_blank" href="http://www.scriblink.com/">http://www.scriblink.com/</a></li></ul><br /><b>会议白板</b><br /><ul><li>Team WhiteBoarding with Twiddla ：<a target="_blank" href="http://www.twiddla.com/">http://www.twiddla.com/</a></li></ul><b>在线投票工具</b><br /><ul><li>GetPolling! : http://getpolling.com/</li></ul><b><br />OT：</b><br /><ul><li><a rel="nofollow noopener" class="taggedlink  " target="_blank" href="http://hi.baidu.com/paratop/blog/item/afb58203e8c3b57c3912bbe4.html">PPT设计的四项基本原则_般若黑洞_百度空间</a></li><li><a rel="nofollow noopener" class="taggedlink  " target="_blank" href="http://www.wxsgz.com/jwzc/ShowArticle.asp?ArticleID=2407">让“错误”成为生物课堂教学的亮点</a></li></ul><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=2f2f1f15-0c11-8ea4-bbf7-c246745c0d70" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-04-problems-students-meet-in-ICT-and-solutions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-04-problems-students-meet-in-ICT-and-solutions/" class="post-title-link" itemprop="url">信息技术课程中学生遇到的一些问题和解决方向</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><b>问题1：</b>机房的电脑浏览器版本过低，相关软件未安装好，切带有硬盘保护。<br />解决方案：求助机房管理人员安装必要软件和浏览器；鼓励学员使用便携版系统和浏览器。比如可以使用便携版火狐 Firefox Portable（新浪下载页面： <a target="_blank" href="http://down.tech.sina.com.cn/content/1528.html">http://down.tech.sina.com.cn/content/1528.html</a>）<br /><br />此外，很多开源或者绿色软件都可以尝试装在优盘中，而且不影响正常使用。<br /><br /><b>问题2</b>：学员遇到问题之后，常常无不知道如何解决？<br />解决方案：<br /><ol><li><b>明确表述你的问题或者需要。</b>比如问题1中由于机房电脑的限制，实际上我们需要的是找到能够在闪存中运行的版本的软件。</li><li><b>使用搜索引擎查找解决方案</b>。比如上面的例子中，我只要搜索“便携版firefox”，结果就找到了先关的软件。</li><li><b>尝试按照方案解决实际问题。</b>尝试是很重要的，如果你有了某些想法，不妨试一试，没准你就找到了一个绝佳的问题解决方案。没有尝试，就不能获得更多的反馈信心，没有这些反馈信息就根本找不到适合自己的方法。这就像学习游泳一样，教练把动作讲的再清楚，你不下水实践，那么还是不能学会如何游泳。</li><li><b>利用尝试过程信息求助论坛。</b>经历了一些尝试之后，如果遇到了新的问题或困难，或者不知道进一步解决问题的方向，可以结合这些反馈信息到邮件列表或论坛里求助。这个步骤当然也包括向你认识的所有人求助，甚至包括不认识的相关专家。</li><li><b>记录分享你的问题解决方案</b>。最后你可以把自己问题解决的过程以及最后的问题解决发难通过博客、wiki、邮件、微博等形式进行记录和分享，让在这个过程中给予你帮助的所有人也能分享你的解决方案。</li></ol><b>问题3</b>：如何更好的管理自己的学习过程？学员要以小组的形式完成教师选定的或者自己选定的学习任务，通常会有两个难题摆在学员面前：<br /><ol><li>如何提高团队的工作效率？</li><li>如何提高自己i的工作效率？</li></ol><b>问题3.1：</b>如何提高团队的工作效率？<br />解决方案：<br /><ul><li><b>小组长要负起责任</b>，做好组织和联系的工作，激发团队的士气以及互帮互助的氛围。</li><li><b>明确的分工</b>，必须把工作分解并分配每个人，当然最好让每个学员都能发挥自己的优势。</li><li><b>设定截止日期</b>，明确约定每个人在什么时候完成什么任务到什么程度。</li><li><b>学会沟通和换位思考</b></li><li><b>给每个学员以反馈和鼓励<br /></b></li></ul><b>问题3.2</b>：如何提高个人的学习效率？<br /><ul><li><b>使用电脑前，先列好清单</b>，一件一件的完成，决绝网络其他娱乐方式的诱惑（比如聊天、浏览新闻、图片、视频等）。</li><li><b>掌握好时间的分配</b>。上课的时候应该专心听讲，而不应该在尝试去解决自己没有解决的问题，这些问题完全可以等老师讲完去问老师或同学。其次，在问题解决过程中如果遇到难题，10分钟还没有任何进展，暂时挂起该任务，另寻其他解决途径，而不应该花费一上午去查阅某些东西或者去尝试安装某些软件。因此在学习中，当一个任务10分钟还没有任何进展，那么就把这个问题挂起，或者抛到邮件列表里进行询问。另外要规划好自己的学习时间。</li><li>最最重要的，最最本质的，起就是<b>能够管理自己，自我调控</b>。<br /></li></ul><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=a2106dc2-e8a9-8603-94ae-97ac6d7bbac1" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-04-students-assessments-discussion/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-04-students-assessments-discussion/" class="post-title-link" itemprop="url">欢迎参加活动——学生评价大讨论</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>作为教师经常关注的问题是怎么教？也就是教学法的问题，但是教什么，为什么教，教得怎么样？这样的问题却相对较少的关注。为什么呢，教什么已经由课程内容 标准以及教科书做了规定和一定的限制，所以教师关注与否都很难改变，而为什么教，也就是教育目标的问题，也已经有国家政策文件进行了阐述。至于教的怎么样 呢？看高考。所以留给教师的只有一个问题，那就是如何教，也仅仅在这个问题上一线教师才有话语权。<br /><br />真的是这样吗？差不多。真的应该这样吗？我个人觉得绝不应这样。因为教师不等于教书匠。教师的工作是创造性的工作，而绝不是教育生产线上的终端分装器，把 各科知识按照需要分装到学生的头脑里。课程试图屏蔽教师个人的影响，就像绘画试图剔除画家特有的风格一样愚蠢。除非这个课程是没有教师的课程，但是即便如 此，也会涌现出一些学习领袖对整个课程的学习产生巨大的影响。学习领袖难道不是扮演了教师的角色吗。<br /><br />因此，教师越不应该只关注怎么教，还要关注为什么教，教什么，教的怎么样，在哪里教，交给谁等一系列的问题，也只有这样教师才能成长为教学专家，成长为教育家。<br /><br />而实际上为什么教，教什么，以及教得怎么样，这三个问题是密切相关，而且都会反映在学生评价当中。那么我们不妨就“学习评价”，就我们应该如何评价我们的 学生，这个问题展开一次讨论。考高命题也许并不由我们教师决定，但是课堂教学中对学生的评价的权利却在掌握在我们教师手里。我们要如何行使这项权利呢？  欢迎大家参与此次在线讨论！<br /><br />讨论方式：<br />1：直接参与邮件列表中的讨论<br />2：参加新浪微博上的讨论，你可以在这里（http://q.weibo.com/367208）发言，也可以在微博中添加标签<b><span style="color: rgb(255, 0, 0);"> #学生评价大讨论#</span></b><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=9b38d4c8-6fe4-8382-a061-46f5e15feb94" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-17-help-students-propose-good-questions/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-17-help-students-propose-good-questions/" class="post-title-link" itemprop="url">帮助学生提出他们自己的问题-跨上思想的野马</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>提问实际上是一个思考的过程？而提问是一种尝试建立连接的过程，因此对于学习非常有益。这种益处表现在，一方面，当你提问的时候，你会觉得寻找问题的答案是自己的责任，你会想方设法解决它。而当学生知道如何提出自己的问题时，他们会为自己的学习负起更多的责任，深化交流，建立新的连接和获得新的发现。<br /><br />教师借助问题生成技巧（Question Formulation Technique）来辅助学生提问。<br /><ol><li>教师设计问题的焦点（图片、视频、声音，获得学会生注意，使其快速提出问题）</li><li>学生提出问题（规则是尽可能多的提出问题，不要停下来讨论，评判或者试图回答，写下原封不动的写下这些问题，把每个表述都变成问句。一但学生工作起来，这个规则可以使得学生进入开放的思考状态。）</li><li>学生完善自己的问题。区分哪些是开放性的，哪些是封闭性的问题。它们的优缺点如何，教师可以让学生至少把一个开放性问题转变成封闭性问题，并且把一个封闭性问题转变成一个开放性问题。让学生意识到，如何表述一个问题，会影响问题的深度、质量以及获得信息的价值。</li><li>学生优选自己的问题。单元学习开始时，选择你最想扩展学习的问题。实验时选择三个可以检验的问题。</li><li>师生共同决定下一步行动。</li><li>学生反思自己学到了什么。</li></ol>阅读摘录自：http://www.hepg.org/hel/article/507#home<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=d642e021-5eba-8cde-9620-4e508d47c977" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-17-the-core-skills-of-21st-century/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-17-the-core-skills-of-21st-century/" class="post-title-link" itemprop="url">21世纪核心技能</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>核心科目知识和技能<br />学习和创新技能<br />信息、媒体、技术相关技能<br />生活和职业技能<br /><br />参考：<br />The Partnership for 21st Century Skills - Framework for 21st Century Learning<br />: http://www.p21.org/index.php?option=com_content&amp;task=view&amp;id=254&amp;Itemid=120<br /><br />An Investigation of Senior High School biology teachers' learning environment<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=ee3a8b82-6520-8315-ae12-49c1e28cbd65" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-26-flash-learning-resources/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-26-flash-learning-resources/" class="post-title-link" itemprop="url">Flash动画制作学习资源</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>为了方便flash爱好者的学习，特将flash相关学习资源汇集如下：<br />（一）网络图文教程：<br /><ul><li>Flash动画制作学习教程-信息技术教学: <a target="_blank" href="http://www.edudown.net/Article/lunwen/200509/327.html">http://www.edudown.net/Article/lunwen/200509/327.html</a></li><li>Flash动画制作视频教程－eNet网络学院: <a target="_blank" href="http://www.enet.com.cn/eschool/zhuanti/4u2vflash/">http://www.enet.com.cn/eschool/zhuanti/4u2vflash/</a><br /></li><li>Flash CS3 Action Script3.0 实用视频教程基础篇--eNet学院: <a target="_blank" href="http://www.enet.com.cn/eschool/video/flashcs3/">http://www.enet.com.cn/eschool/video/flashcs3/</a></li><li>Flash CS3 Action Script3.0 组件高级编程--eNet网络学院: <a target="_blank" href="http://www.enet.com.cn/eschool/video/flashactionscrip3/">http://www.enet.com.cn/eschool/video/flashactionscrip3/</a></li><li>Flash AS3.0菜鸟学飞教程 - ITeye专栏频道: <a target="_blank" href="http://www.iteye.com/wiki/blog/638594">http://www.iteye.com/wiki/blog/638594</a></li><li>12网站帮你学习Flash/ActionScript - 编程语言 - ITeye资讯: <a target="_blank" href="http://www.iteye.com/news/17932">http://www.iteye.com/news/17932</a></li><li>Flash AS 入门到精通教程 - 技术分享 - 豆豆网: <a target="_blank" href="http://tech.ddvip.com/2006-10/11616280969846.html">http://tech.ddvip.com/2006-10/11616280969846.html</a></li><li>AS3.0经典实例入门 - abin - ITeye技术网站: <a target="_blank" href="http://varyall.iteye.com/blog/809945">http://varyall.iteye.com/blog/809945</a><br /></li></ul><br />（二）视频教程网址：<br /><ul><li>Flash动画制作教程_在线观看15个视频_土豆网: <a target="_blank" href="http://www.tudou.com/playlist/p/l13115810i69737550.html">http://www.tudou.com/playlist/p/l13115810i69737550.html</a></li></ul>（三）Flash源代码以及素材网站：<br /><ul><li><a target="_blank" href="http://www.flash8.net/">http://www.flash8.net/</a></li><li><a target="_blank" href="http://www.5uflash.com">http://www.5uflash.com</a><br /></li></ul>（四）Flash相册：<br /><ul><li>非常棒的flash+xml相册 闪吧Flash8: <a target="_blank" href="http://www.flash8.net/fla/9831.shtml">http://www.flash8.net/fla/9831.shtml</a></li></ul>（五）中文论坛：<br /><ul><li>Adobe - Flash 开发人员中心: http://www.adobe.com/cn/devnet/flash/<br /></li><li>闪吧论坛: <a target="_blank" href="http://space.flash8.net/bbs/index.php">http://space.flash8.net/bbs/index.php</a></li><li>天地会论坛 FLASH开发社区: <a target="_blank" href="http://bbs.9ria.com/">http://bbs.9ria.com/</a><br /></li></ul>（六）优秀的外国学习站点<br /><ol><li>Flash Bestiary: A compendium of actionscript code: <a target="_blank" href="http://www.krazydad.com/bestiary/">http://www.krazydad.com/bestiary/</a></li><li>Flash and AS3 links - EduTech Wiki: <a target="_blank" href="http://edutechwiki.unige.ch/en/Flash_and_AS3_links_-_tutorials">http://edutechwiki.unige.ch/en/Flash_and_AS3_links_-_tutorials</a><br /></li><li>aM laboratory: <a target="_blank" href="http://lab.andre-michelle.com/tag/flash9/">http://lab.andre-michelle.com/tag/flash9/</a></li><li>Flash ActionScript 3.0 Tutorials: <a target="_blank" href="http://www.republicofcode.com/tutorials/flash/">http://www.republicofcode.com/tutorials/flash/</a><br /></li></ol><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=4b96fcb9-d8c6-8e35-8773-f4591e9f6499" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2011-10-29-teacher-should-be-a-good-story-teller/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/03/24/2011-10-29-teacher-should-be-a-good-story-teller/" class="post-title-link" itemprop="url">教师应该是一个善于讲故事的人</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:38" itemprop="dateModified" datetime="2013-01-11T12:46:38+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>很小的时候，我就很喜欢听故事。等大了一点，还编一些非常离奇的故事，将给小孩子听，虽然是现编现讲，而且非常离谱，但是它们居然还听的津津有味。这说明不了我多美会讲故事，只是说明孩子确实是非常喜欢听故事的。为什么呢？我觉得故事最贴近我们的生活体验，它是按照我们的个人经验范式叙事的，同时它也可能刚好符合了我们大脑的神经网络的情景记忆模式。<br /><br />作为老师，要把一堂课上好，要用好的例子，比喻，表征，还有就是要会讲故事。无论是自己亲身经历的故事，还是别人的故事。善于搞科研的老师讲科研的故事，善于实践和反思的老师讲自己的故事，广泛阅读的老师讲经典的具有教育意义的故事。故事可以让你的课堂生动起来，鲜活起来，丰富起来，有趣起来，成为一个整体。当然前提是，你要善于讲，会讲故事。<br /><br />教师讲故事应该把握一些原则：<br /><ol><li>主题相符（符合教学需要）</li><li>真实生动（真实可鉴，形象具体，绘声绘色）</li><li>短小精悍（占用时间短，语言精练）</li><li>发人深思（具有冲击性和启发性）</li><li>智慧活泼（让人会意一笑）</li></ol>为了运用好这些故事，教师要注意日常的素材的搜集、整理和加工，最后才能为我所用。比如今天，我就在<a target="_blank" href="http://www.nwp.cn">新世界数字出版网</a>上看到一本在线读物<a target="_blank" rel="noopener" href="http://www.nwp.cn/book/233.shtml">《18岁以前孩子应该懂得的做事方法》</a>（http://www.nwp.cn/book/233_6871.shtml），上面运用了很多故事素材，来达到教育意义。<br /><br />教师也应该是一个有故事的人。平常的教学反思、教育叙事、生活经历都可以积累成自己的故事。<br /><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=916de64b-dae9-86d3-a169-f3f336db5e25" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/22/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><span class="page-number current">23</span><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/51/">51</a><a class="extend next" rel="next" href="/page/24/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
-
-          </div>
-          
 
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
+
+    </div>
+</div>
+
+
+<main class="content">
+
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2012-06-16-iphone4-siri-tips/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="iphone4越狱后升级siri结果只好刷机">
+                            
+                            <span class="card-title">iphone4越狱后升级siri结果只好刷机</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                手机是完美越狱的，不过后来siri总是连不上服务器，于是就卸载了siri然后重新安装一个新的版本，结果重启的时候springboard不能启动。按住home和power键硬关机后再开机就是白苹果了。
+尝试了很多办法都不行，比如再次越狱（ja
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2012-06-19-3-principles-of-success/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="成功的三大原则">
+                            
+                            <span class="card-title">成功的三大原则</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                智慧 努力 运气
+运气原则=主体行为与环境条件恰好相符，因此人应该依照外环境条件行事
+等价交换原则=主题付出努力依照固定原则交换结果，因此人应该持之以恒
+智慧原则=同样的努力如果能够有智慧的选择行动方式和利用原则，可以事半功倍。
+除此之外，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2012-06-19-thoughts-on-reading-the-story-of-tianyan/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="读《天眼》悬念小说所得">
+                            
+                            <span class="card-title">读《天眼》悬念小说所得</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                《天眼》这篇小说围绕着&ldquo;盒子&rdquo;展开，故事情节跌宕起伏，用了一天时间一口气读完。虽然并应该花这么多的时间做这样的阅读消遣，但是奈何时间已经花费了，索性把自己的收获记录一番。
+读过这篇小说，我在思考一个问题，如何写好故事
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
+                                    随笔
+                                </a>
+                                
+                                <a href="/categories/%E9%9A%8F%E7%AC%94/%E5%8F%8D%E6%80%9D/" class="post-category">
+                                    反思
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2012-07-11-fightiing-with-laziness-start-from-review/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="与懒做斗争——从回顾、梳理、总结开始">
+                            
+                            <span class="card-title">与懒做斗争——从回顾、梳理、总结开始</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                放假已经有一阵子了，但是自己一直被懒折磨着，很多问题都搁置在一边没有进展。怎么样才能摆脱这种状态呢？
+在《工作就是解决问题》这本书中&ldquo;先找问题的薄弱点&rdquo;有这样一段内容：
+
+当一个人在学习和工作中达到所谓的&ldquo
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2012-11-29-how-to-assist-learners-survive-in-complicated-learning-environment/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="如何辅助学习者在复杂网络学习环境中生存下来">
+                            
+                            <span class="card-title">如何辅助学习者在复杂网络学习环境中生存下来</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                当课程放在一个复杂环境中的时候，学习者很容易产生技术困扰，进而从学习进程中迷失目标方向，最后drop out。如何设计一种辅助，帮助学生克服这种困扰呢？
+思路1：设计一个软件帮助学生管理自己的学习资源和进程，比如使用evernote的复制连
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/24/2011-11-28-what-is-creative-commons/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="什么是知识共享协议（CC协议）">
+                            
+                            <span class="card-title">什么是知识共享协议（CC协议）</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                在网络学习的过程中，我们经常会使用用别人的作品，或者我们自己也会制作一些作品，那么那些作品可以进行演绎创作，哪些不可以，我们使用了是否侵权，我们制作的作品又再什么样的协议下发行，这些成为迫切需要解决的问题。目前网络上使用广泛的，大家一般共同
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/openlearning/" class="post-category">
+                                    openlearning
+                                </a>
+                                
+                                <a href="/categories/openlearning/web2-0/" class="post-category">
+                                    web2.0
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/03/03/2017-03-03-learning-needs-as-learning-resources/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="学科知识缺陷也是一种教学资源">
+                            
+                            <span class="card-title">学科知识缺陷也是一种教学资源</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                作为一名生物学准教师，好像如何自己的生物学知识不过关，就非常丢人似的。我认为这种观念是非常要害的。  
+相反，我认为一位准教师发现自己某个领域生物学知识还不够，需要进一步学习，恰恰说明他的上进和先人一步，因为好多教师都还没有发现自己的无知，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-03
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/02/25/2017-02-25-be-good-do-good/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Be good Do good">
+                            
+                            <span class="card-title">Be good Do good</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                电影《性本恶》在恶的世界对善的追求  
+濮存晰朗读《风月大师》感恩和助人  
+生命不是自顾自的苟延残喘或纸醉金迷，生命是照亮自己也照亮他人的一次结伴履行。  
+要对人有善念，要对人有善行。这是作为一个社会人的价值所在。这不是名利所能标价的，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/02/23/2017-02-23-educational-games/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="教育游戏推荐">
+                            
+                            <span class="card-title">教育游戏推荐</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                教育游戏活动###STEM教育类：设计挑战1、用A4纸设计并制作一架飞行器，要求能在同等高度在空中飞行最久。2、设计机场电梯防护栏，要求能够避免行人携带行李车乘坐传送带式电梯。  
+###教育技术类：1、即时反馈技术[Kahoot](Kah
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-23
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/02/14/2017-02-14-love-is-our-best-legacy/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="爱是我们最宝贵的财富">
+                            
+                            <span class="card-title">爱是我们最宝贵的财富</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                爱是什么？  
+它是人与人的一种积极互赖人际关系。如果进一步拓展，它也可以是人与一切事物的积极互赖关系。比如你可以爱父母、爱配偶、爱子女，也可以爱家庭、爱家乡、爱祖国，还可以爱空气、爱原野、爱大海、爱大自然。  
+
+爱不仅是言语，更是行动。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-14
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E9%9A%8F%E7%AC%94/" class="post-category">
+                                    随笔
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/02/13/2017-02-13-ubc-program-summary/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="加拿大卓越教师项目总结">
+                            
+                            <span class="card-title">加拿大卓越教师项目总结</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                21天的紧张学习，一次特别意义的春节，3次新奇而愉快校园之旅，在我们全员参与的一场快闪热舞之后落下帷幕。有视频为证。  
+
+这次培训项目是Tony老师为我们师范生精心准备和量身打造的、高质量的课程。当中 有很多教育理念、教学技巧、策略以及教
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-13
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Chunlei Zhang
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/en/">
+                            <span class="chip bg-color">en</span>
+                        </a>
+                        
+                        <a href="/tags/UBC/">
+                            <span class="chip bg-color">UBC</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/02/12/2017-02-12-fact-is-still-important-in-the-post-truth-era/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="后真相时代：真相依然重要">
+                            
+                            <span class="card-title">后真相时代：真相依然重要</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                在大众媒体和互联网信息满天飞的时代，同样一件事，会有不同的观点和立场，持有不同立场的人都只会选择性的使用所谓“事实”来佐证自己的观点。而大多网民，往往也只是选择一个立场站队而已。似乎真相已经无关紧要，这样的事发生在郭德纲和他徒弟之间纠纷中，
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-12
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" class="post-category">
+                                    社会观察
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+    </article>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">510</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">103</span>
-        <span class="site-state-item-name">分类</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">357</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
+</main>
 
 
-
-      </div>
-
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/22/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">23 / 43</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/page/24/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
 
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
         
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '.languages',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (element.id) {
-      script.id = element.id;
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
     }
-    if (element.className) {
-      script.className = element.className;
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
     }
-    if (element.type) {
-      script.type = element.type;
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
     }
-    if (element.src) {
-      script.src = element.src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
     }
-    if (element.dataset.pjax !== undefined) {
-      script.dataset.pjax = '';
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Chunlei Zhang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
 
 
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
-  
+    <!-- Baidu Analytics -->
 
+    <!-- Baidu Push -->
 
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
 
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
 
+    
 
+    
 
+	
+    
 
+    
 
+    
 
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
 
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-
-    </div>
 </body>
+
 </html>
