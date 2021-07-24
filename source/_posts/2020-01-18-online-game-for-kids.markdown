@@ -8,6 +8,9 @@ tags:
 ---
 给孩子选择的几款在线游戏
 
+计算思维游戏
+[https://studio.code.org/s/pre-express-2019/stage/3/puzzle/4](https://studio.code.org/s/pre-express-2019/stage/3/puzzle/4)
+
 小海马分类游戏：
 [https://pbskids.org/splashandbubbles/games/help-our-kelp](https://pbskids.org/splashandbubbles/games/help-our-kelp)
 

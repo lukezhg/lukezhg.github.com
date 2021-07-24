@@ -1,5 +1,5 @@
 GEM
-  remote: https://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
     RedCloth (4.2.9-x86-mingw32)
@@ -55,6 +55,7 @@ GEM
 PLATFORMS
   ruby
   x86-mingw32
+  x86_64-darwin-17
 
 DEPENDENCIES
   RedCloth (~> 4.2.9)
@@ -72,4 +73,4 @@ DEPENDENCIES
   stringex (~> 1.4.0)
 
 BUNDLED WITH
-   1.16.2
+   2.2.0
