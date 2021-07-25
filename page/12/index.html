@@ -1,1264 +1,1478 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/12/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
-</head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/12/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-05-29-today-i-learn-to-use-wlw-to-write-my-edublogs/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Today I learn to use WLW to write my edublogs">
-                            
-                            <span class="card-title">Today I learn to use WLW to write my edublogs</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                While I config my windows live writer, I met some problems.  I didn't know what to fill in for the “你的博客类型” and “你的远程博客服
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    技术技巧
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-05-29-hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Hello world!">
-                            
-                            <span class="card-title">Hello world!</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to your brand new blog at Edublogs.
-
-To get started, simply log in, edit or delete this post and check out all t
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-06-21-all-about-pedagogical-content-knowledgepck/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="All about pedagogical content knowledge(PCK)">
-                            
-                            <span class="card-title">All about pedagogical content knowledge(PCK)</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                PCK is a kind of teacher knowledge and beliefs which enable teachers to help students to learn a particular topic-relate
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/pck/" class="post-category">
-                                    pck
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/pck/">
-                            <span class="chip bg-color">pck</span>
-                        </a>
-                        
-                        <a href="/tags/Links/">
-                            <span class="chip bg-color">Links</span>
-                        </a>
-                        
-                        <a href="/tags/pointers/">
-                            <span class="chip bg-color">pointers</span>
-                        </a>
-                        
-                        <a href="/tags/TPCK/">
-                            <span class="chip bg-color">TPCK</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-06-10-name-list-of-researchers-who-published-papers-on-pck/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Name list of researchers who published papers on PCK">
-                            
-                            <span class="card-title">Name list of researchers who published papers on PCK</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I collect about 300 research papers on pedagogical content Knowledge(PCK) study.  After a simple statistics， the authors
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/pck/" class="post-category">
-                                    pck
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/pck/">
-                            <span class="chip bg-color">pck</span>
-                        </a>
-                        
-                        <a href="/tags/pedagogical-content-knowledge/">
-                            <span class="chip bg-color">pedagogical content knowledge</span>
-                        </a>
-                        
-                        <a href="/tags/science-teaching/">
-                            <span class="chip bg-color">science teaching</span>
-                        </a>
-                        
-                        <a href="/tags/teacher-knowledge/">
-                            <span class="chip bg-color">teacher knowledge</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-06-24-what-can-i-contribute-to-the-open-education-conference/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="What can I contribute to the Open Education Conference?">
-                            
-                            <span class="card-title">What can I contribute to the Open Education Conference?</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                In order to apply for one of these scholarships, please write a blog post (referring back to this one) describing:
-
-1. W
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/application/">
-                            <span class="chip bg-color">application</span>
-                        </a>
-                        
-                        <a href="/tags/bioteahouse/">
-                            <span class="chip bg-color">bioteahouse</span>
-                        </a>
-                        
-                        <a href="/tags/Open-Education-Conference/">
-                            <span class="chip bg-color">Open Education Conference</span>
-                        </a>
-                        
-                        <a href="/tags/teacher-education/">
-                            <span class="chip bg-color">teacher education</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-07-06-prepare-to-develop-a-curriculum-for-biology-teachers/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Prepare to develop a curriculum for biology teachers">
-                            
-                            <span class="card-title">Prepare to develop a curriculum for biology teachers</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I haven't thought out the name of the curriculum. But I do believe that begining teachers need a curriculum which specia
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/courses/" class="post-category">
-                                    courses
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/bioteahouse/">
-                            <span class="chip bg-color">bioteahouse</span>
-                        </a>
-                        
-                        <a href="/tags/biology-teacher/">
-                            <span class="chip bg-color">biology teacher</span>
-                        </a>
-                        
-                        <a href="/tags/curriculum/">
-                            <span class="chip bg-color">curriculum</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-07-11-brain-storm-in-bku-with-prof-francois-taddei-and-other-students/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Brain Storm in BKU with Prof. François Taddei and other students">
-                            
-                            <span class="card-title">Brain Storm in BKU with Prof. François Taddei and other students</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Changing your belief and behavior and  then we change and improve our system.
-
-If the system didn't change, I will not c
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/meeting/">
-                            <span class="chip bg-color">meeting</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-08-28-firefox-plusin/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="今天也尝试用Scribefire这个Firefox的插件来写博客">
-                            
-                            <span class="card-title">今天也尝试用Scribefire这个Firefox的插件来写博客</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Sometime I feel hard to express myself in English, so I write in Chinese and keep down my thoughts first.我在尝试开发一个导航的fire
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-08-30-tpck-course-for-chinese-middle-school-biology-teachers/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="TPCK course for Chinese middle school biology teachers">
-                            
-                            <span class="card-title">TPCK course for Chinese middle school biology teachers</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Rencently, I am preparing and making lesson plans for my TPCＫcourse. TPCK stands for "Technological Pedagogical Content 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/pck/" class="post-category">
-                                    pck
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/TPCK/">
-                            <span class="chip bg-color">TPCK</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-10-13-keep-screen-as-notes/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="如何把自己屏幕随时保存下来作为一种图片笔记">
-                            
-                            <span class="card-title">如何把自己屏幕随时保存下来作为一种图片笔记</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                开始的是想到是用google搜索一下，是否有类似的服务，但是没有找到，可能firefox的flickr插件可能有帮助，但是没有用过，网友如果找到好的服务，可以给我留言，我会很感谢。另外的一个解决办法就是，把本地软件利用起来，如果愿意经常做图
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-10-19-the-steps-of-collecting-info-for-solution/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="搜索信息解决问题的步骤和方法">
-                            
-                            <span class="card-title">搜索信息解决问题的步骤和方法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、首先是表述问题遇到了问题，不见得会表述问题，表述问题要尽量附带一些背景性信息，并且不能或略问题或者现象的关键点。另外，也也要考虑表述给谁？当然首选的就是表述给搜索引擎，原因很简单，因为google等搜索引擎它们会24小时恭候你的使用。下
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/03/24/2009-10-10-hello-world/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Hello world!">
-                            
-                            <span class="card-title">Hello world!</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                欢迎使用 WordPress。这是您的第一篇日志。您可以编辑它或是删除它，然后开始写您自己的 blog。
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-03-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/11/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">12 / 43</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/13/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-05-29-today-i-learn-to-use-wlw-to-write-my-edublogs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-05-29-today-i-learn-to-use-wlw-to-write-my-edublogs/" class="post-title-link" itemprop="url">Today I learn to use WLW to write my edublogs</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:33:54" itemprop="dateModified" datetime="2013-08-29T04:33:54+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
             </span>
-            
-            <br>
-            
-            <br>
-            
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p><p>While I config my windows live writer, I met some problems.</p>  <p>I didn't know what to fill in for the “你的博客类型” and “你的远程博客服务地址”，I use google for help , but could not find any related info. So I use English for a change , though It was a little bit&#160; difficult for me to translate these Chinese words to English.&#160; But this time I find a QA on Edublogs,&#160; and this message is what I was looking for.&#160;&#160; And I leave a comment there.</p>  <p>So if anyone have problem setting up you WLW for writing your Edublogs, you can go <a title="http://edublogs.org/forums/topic.php?id=7448&amp;replies=3#post-24679" target="_blank" rel="noopener" href="http://edublogs.org/forums/topic.php?id=7448&amp;replies=3#post-24679">http://edublogs.org/forums/topic.php?id=7448&amp;replies=3#post-24679</a>.</p>  <p>It may help.</p>  <p>key word: </p>  <div class="wlWriterEditableSmartContent" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:cd7f3988-6cbe-4e47-be8b-82b973da441e" style="padding-right: 0px; display: inline; padding-left: 0px; float: none; padding-bottom: 0px; margin: 0px; padding-top: 0px">Technorati 标签: <a target="_blank" href="http://technorati.com/tags/type+of+blog" rel="tag noopener">type of blog</a>,<a target="_blank" href="http://technorati.com/tags/remote+posting+URL" rel="tag noopener">remote posting URL</a>,<a target="_blank" href="http://technorati.com/tags/Wordpress+for+the+API" rel="tag noopener">Wordpress for the API</a>,<a target="_blank" href="http://technorati.com/tags/Edublogs" rel="tag noopener">Edublogs</a></div></p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-05-29-hello-world/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-05-29-hello-world/" class="post-title-link" itemprop="url">Hello world!</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:34:27" itemprop="dateModified" datetime="2013-08-29T04:34:27+08:00">2013-08-29</time>
+              </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to your brand new blog at <a target="_blank" rel="noopener" href="http://edublogs.org">Edublogs</a>.</p>
+
+<p>To get started, simply <a href="wp-login.php">log in</a>, edit or delete this post and check out all the other options available to you.</p>
+
+<p>Also, please consider becoming an <a target="_blank" rel="noopener" href="http://edublogs.org/supporter">Edublogs Supporter</a> - you can remove ads from yours and other blogs, upload up to 5GB or audio, video and every other sort of content and access great features under your 'Plugins' menu.</p>
+
+<p>Supporters are what keeps Edublogs running and providing free blogs for education, so give it a go today :)</p>
+
+<p>For assistance, take time to view our some helpful <a target="_blank" rel="noopener" href="http://edublogs.org/videos/">introductory videos</a>, read through our <a target="_blank" rel="noopener" href="http://edublogs.org/frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a> or stop by <a target="_blank" rel="noopener" href="http://edublogs.org/forums/">The Edublogs Forums</a> to chat with other edubloggers.</p>
+
+<p>You can also subscribe to our brilliant free publication, <a target="_blank" rel="noopener" href="http://theedublogger.edublogs.org/">The Edublogger</a>, which is jammed with helpful tips, ideas and more.</p>
+
+<p>And finally, if you like Edublogs but want to be able to simply create, administer, control and manage hundreds of student and teacher blogs at your school or college, check out <a target="_blank" rel="noopener" href="http://edublogs.org/campus">Edublogs Campus</a>... it's like Edublogs in a box, all for you.</p>
+
+<p>Thanks again for signing up with Edublogs!</p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-06-21-all-about-pedagogical-content-knowledgepck/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-06-21-all-about-pedagogical-content-knowledgepck/" class="post-title-link" itemprop="url">All about pedagogical content knowledge(PCK)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:34:37" itemprop="dateModified" datetime="2013-08-29T04:34:37+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pck/" itemprop="url" rel="index"><span itemprop="name">pck</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>PCK is a kind of teacher knowledge and beliefs which enable teachers to help students to learn a particular topic-related knowledge easily. Lots of reasearcher have do lots of studies of PCK. Here I collect some web links which may be useful for students and researchers who are now studying PCK.</p>
+
+<p>1. PCK Groups<br />
+Google Group For PCK：<a title="ScienceEducationResearch" href="https://groups.google.com/group/sciedu" target="_blank">https://groups.google.com/group/sciedu</a>
+Diigo Group For PCK：<a title="PCK Club" href="http://groups.diigo.com/groups/pck-club" target="_blank">http://groups.diigo.com/groups/pck-club</a>
+Twitter Group For PCK：you can follow <a href="https://twitter.com/pckclub" target="_blank">@pckclub</a> on twitter, and send direct message to <a href="https://twitter.com/pckclub" target="_self">@pckclub</a> to disscuss PCK.</p>
+
+<p>2. PCK Researchers<br />
+There is a name list who studied PCK and published papers on PCK. check this <a href="http://chunlei.edublogs.org/2009/06/10/name-list-of-researchers-who-published-papers-on-pck/" target="_blank">Name list of reseachers who published papers on PCK</a></p>
+
+<p>3. PCK Study Teams<br />
+van Driel, J H<br />
+Loughran, J<br />
+US Researchers</p>
+
+<p>4. PCK Wiki<br />
+TPCK:
+<a href="http://www.tpck.org/" target="_blank">http://www.tpck.org/</a>
+<a title="Technological Pedagogical Content Knowledge" target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Technological_Pedagogical_Content_Knowledge">Technological <span class="searchmatch">Pedagogical</span> <span class="searchmatch">Content</span> <span class="searchmatch">Knowledge
+</span></a></p>
+
+<p>PCK: <a title="PCK" target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/PCK">PCK</a></p>
+
+<p><a title="Lee Shulman" target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Lee_Shulman">Lee Shulman</a></p>
+
+<p>5. PCK web links list
+<a href="http://www.diigo.com/list?token=1c0f9c66641f9ffd75ddc4cdbafbc9ec" target="_blank">chunlei's pesonal favorate links about PCK</a></p>
+
+<p>what else about PCK? (you can tell me)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-06-10-name-list-of-researchers-who-published-papers-on-pck/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-06-10-name-list-of-researchers-who-published-papers-on-pck/" class="post-title-link" itemprop="url">Name list of researchers who published papers on PCK</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:34:37" itemprop="dateModified" datetime="2013-08-29T04:34:37+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pck/" itemprop="url" rel="index"><span itemprop="name">pck</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I collect about 300 research papers on pedagogical content Knowledge(PCK) study.  After a simple statistics， the authors' name and the number of his/her published papers are listed as the following.
+<table style="border-collapse: collapse; width: 206pt;" border="0" cellspacing="0" cellpadding="0" width="275">
+<tbody>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt; width: 152pt;" width="203" height="19">Name</td>
+<td class="xl24" style="width: 54pt;" width="72">Pnum</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Verloop, N</td>
+<td class="xl24">34</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Krajcik, J</td>
+<td class="xl24">30</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">van Driel, J H</td>
+<td class="xl24">29</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Loughran, J</td>
+<td class="xl24">17</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Marx, R W</td>
+<td class="xl24">10</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Soloway, E</td>
+<td class="xl24">10</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Berry, Amanda</td>
+<td class="xl24">9</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Appleton, Ken</td>
+<td class="xl24">8</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Beijaard, D</td>
+<td class="xl24">8</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Veal, W R</td>
+<td class="xl24">8</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Blumenfeld, P C</td>
+<td class="xl24">7</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">De Jong, Onno</td>
+<td class="xl24">7</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Henze, Ineke</td>
+<td class="xl24">7</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Akerson, Valarie</td>
+<td class="xl24">6</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Gudmundsdottir, Sigrun</td>
+<td class="xl24">6</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Sternberg, Robert J</td>
+<td class="xl24">6</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Hudson, Peter</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Lee, E</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Luft, J A</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">McCaughtry, N</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Meijer, P C</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Vermunt, J D</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Wu, H K</td>
+<td class="xl24">5</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Bulte, AMW</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Chen, W Y</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Hofstein, A</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Roehrig, G H</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Rovegno, I</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Zanting, A</td>
+<td class="xl24">4</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Abell, Sandra</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Adams, Paul</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Ahtee, Maija</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Baumert, J</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Bulger, S M</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Davis, E A</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Fishman, B</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Gess-Newsome, Julie</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Grigorenko, Elena L</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Housner, L D</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Kunter, M</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Lederman, Norman G.</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Magnusson, Shirley</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Mamlok-Naaman, R</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">McNeill, K L</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Mulhall, P</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Rivet, A E</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Taber, Keith S</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Terwel, J</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Thompson, Jessica</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Traianou, Anna</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Weiss, Iris R.</td>
+<td class="xl24">3</td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl24" style="height: 14.25pt;" height="19">Windschitl, Mark</td>
+<td class="xl24">3</td>
+</tr>
+</tbody></table></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-06-24-what-can-i-contribute-to-the-open-education-conference/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-06-24-what-can-i-contribute-to-the-open-education-conference/" class="post-title-link" itemprop="url">What can I contribute to the Open Education Conference?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-10-26 01:46:05" itemprop="dateModified" datetime="2013-10-26T01:46:05+08:00">2013-10-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><blockquote>In order to apply for one of these scholarships, please write a blog post (referring back to this one) describing:</blockquote></p>
+
+<p>1. What you would “bring” to the conference? What can you contribute, be it a willingness to volunteer to moderate a session, some special expertise or project, an already accepted proposal…<br />
+2. What you see as the most critical issue facing you in  your efforts around Open Education, and how you think the conference can help you address it?</p>
+
+<p>The above paragraphs are from <a target="_blank" rel="noopener" href="http://openedconference.org/">Open Education Conference</a> :<a href="http://openedconference.org/archives/324" target="_blank">http://openedconference.org/archives/324</a>
+I got this news from a friend <span class="comment_author"><a class="url" rel="external nofollow noopener" target="_blank" href="http://reganmian.net/blog">Stian Haklev</a></span><span class="comment_time"> who </span>received the award last year. He said this conference helped him a lot on his study, I make up mind to have a try--apply for one of these scholarships.  I don't know what can I contribute, but I do want to know what's other countiies open education like in practice, What I can learn from their explorations and experiences, which can help China, a country who have 1/6 population of the would.</p>
+
+<p>If I can make some contribution, I think I would make an introduaction of Teacher Education System and some related Policy in China and my recently pracitse on biology teacher learning community.  Open Education can mean a lot to China, because China's 700 million population are presents, and most of the present families can not afford tuition fees for their children. University and the Chinese government now is pursuing a policy of free teacher training, students who participate in this program don't have to pay their tuition, they can also received living aid from the government, but after graduation, they must return to their home town and work as a teacher for 10 years. Is this policy a good way out? Is Open Education more suitable for China? If so, teacher education of course should be firstly considered and put into practise in my opinion, but how. I have recently done some practical work,  the idea is very simple and the technology platform is very low-cost , I created a googlegroup, named BioTeaHouse , it is primarily designed  for secondary school biology teacher and educational researchers to communicate and learn together. With the development of the community, I feel more and more the importance of curriculum development, and BioTeaHouse is more and more like a big school, everyone can participate in the discussing, learning, sharing, everyone is as a student and at the same time as a teacher. How can we let this community develope into a public free teacher education school, which will let more people have access to teacher training and make them becoming outstanding teachers or learning leaders in the network. It may effectively promote and popularize the education of all children, no matter he or she is poor or not. Any practice and efforts in this direction,  I think,  is worthful and significant.</p>
+
+<p>At present, I am a PhD candidate in teaching and learning in College of Life Science in Beijing Normal University. And I am aslo an active member of the very innovative social network for open education and Web 2.0 education called <a href="http://sociallearnlab.org/" target="_blank">SocialLearnLab</a>.  Xiuli Zhang and her friends are the founders and orgnizers of this social network.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-07-06-prepare-to-develop-a-curriculum-for-biology-teachers/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-07-06-prepare-to-develop-a-curriculum-for-biology-teachers/" class="post-title-link" itemprop="url">Prepare to develop a curriculum for biology teachers</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-28 00:37:24" itemprop="dateModified" datetime="2013-09-28T00:37:24+08:00">2013-09-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/courses/" itemprop="url" rel="index"><span itemprop="name">courses</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I haven't thought out the name of the curriculum. But I do believe that begining teachers need a curriculum which specially designed for them.  The goal of this curriculum, may be not one but many, is to promote teachers' professional development. They can learn how to design a lesson, how to use science inquiry as a teaching strategy, how to reflect on thier teaching practices, how to write a article to publish, how to find or found a community for suport. I want make this kind of curriculum open to any one who want to learn. If the learners can pass some examination then they can be learning leaders in our community(<a href="https://groups.google.com/group/bioteahouse" target="_blank">BioTeaHouse</a>).</p>
+
+<p>Well, before action, It is just an idea which is not new. So the point is to try and make it ture!</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-07-11-brain-storm-in-bku-with-prof-francois-taddei-and-other-students/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-07-11-brain-storm-in-bku-with-prof-francois-taddei-and-other-students/" class="post-title-link" itemprop="url">Brain Storm in BKU with Prof. François Taddei and other students</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:34:37" itemprop="dateModified" datetime="2013-08-29T04:34:37+08:00">2013-08-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Changing your belief and behavior and  then we change and improve our system.</p>
+
+<p>If the system didn't change, I will not change my teaching.</p>
+
+<p>As to our life and our living enviroment, are we active or passitive?</p>
+
+<p>The government is our son. We raise him to grow up to help not just to give orders. We will love and guide our son, and also punish him for doing wrong. If he is planning to murder and have not regrets, we will stop him and replace it with a better son.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-08-28-firefox-plusin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-08-28-firefox-plusin/" class="post-title-link" itemprop="url">今天也尝试用Scribefire这个Firefox的插件来写博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-01-11 16:05:02" itemprop="dateModified" datetime="2013-01-11T16:05:02+08:00">2013-01-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Sometime I feel hard to express myself in English, so I write in Chinese and keep down my thoughts first.<br />我在尝试开发一个导航的firefox插件，其实也可能是我对界面要求过去偏激了，不过一个能够进化的网络导航器插件，确实让人期待。<br />这个插件是为生物教学茶吧的老师们开发一个firefox的扩展插件，为老师使用网络提供导航作用：<br /><div id=":l3" class="ii gt">这个插件的基本描述如下：这个插件的基本描述如下：<br />1 增添几个个性化的按钮，能够连接到某个网页（相当于标签页，<wbr />只不过在工具条上显示为一个图标按钮而已）<br />2 具有一个可编辑的导航活动面板，用户可以自由添加网络地址连接，<wbr />并且对连接赋予自定义的图标（图标的大小和位置用户也可自定义）<wbr />，点击图标后网络会自动连接到指定的站点。<wbr />用户按某个快捷键后这个导航面板就会自动弹出，<wbr />面板几乎是透明的不影响网页阅读，点击鼠标后面板自动隐藏。<br />3 其实我的想法是想让这些标签动起来，比如用户使用的越多，这个书签图标就会越大，而且用户可以把自己的个性化的图标放进去，最好还可以在标签之间添加链接词，这样就成了一个导航概念图了。做这样一个扩展的初衷是想整合在不同平台上的群组，因为很多群组都有很多的平台，比如教育大发现就有diigo小组，好看簿小组，wiki站点，facebook小组等等，但是这些小组都不是分散的，相互切换起来特别麻烦，所以我就想是否可以直接开发一个火狐扩展，直接把这些链接做好，方便用户随时切换！<br /><br clear="all" />我现在找到的一些资源如下：<br /><a href="https://developer.mozilla.org/en/Building_an_Extension" target="_blank">https://developer.mozilla.org/<wbr />en/Building_an_Extension</a><br /><a href="http://www.ibm.com/developerworks/cn/web/wa-lo-firefox-ext/?ca=drs-tp0808" target="_blank">http://www.ibm.com/<wbr />developerworks/cn/web/wa-lo-<wbr />firefox-ext/?ca=drs-tp0808</a></div><br />Technorati 标签: <a class="performancingtags" target="_blank" href="http://technorati.com/tag/firefox" rel="tag noopener">firefox</a>, <a class="performancingtags" target="_blank" href="http://technorati.com/tag/add-on" rel="tag noopener">add-on</a>, <a class="performancingtags" target="_blank" href="http://technorati.com/tag/extention" rel="tag noopener">extention</a>, <a class="performancingtags" target="_blank" href="http://technorati.com/tag/bookmark" rel="tag noopener">bookmark</a><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=74969c9a-7332-89c8-af0a-2a683147012e" /></div></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-08-30-tpck-course-for-chinese-middle-school-biology-teachers/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-08-30-tpck-course-for-chinese-middle-school-biology-teachers/" class="post-title-link" itemprop="url">TPCK course for Chinese middle school biology teachers</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 04:34:37" itemprop="dateModified" datetime="2013-08-29T04:34:37+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/pck/" itemprop="url" rel="index"><span itemprop="name">pck</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Rencently, I am preparing and making lesson plans for my TPCＫcourse. TPCK stands for "Technological Pedagogical Content Knowledge". Inorder to teach a science concept well, the teacher need to know many kind of knowledge, such as students' prior concept, subject matter knowledge, pedagogical knowledge, how to assess, how to orgnize the content, how to use ICT to promot students' learning.  So teaching is not a easy thing, and with the fast development of  science and technology, it becomes more and more a challenge.</p>
+
+<p>Now, China is promoting the 8th Curriculum Reform in basic education. Middle school biology teachers will meet more challenge than before, so they expecially neen more help and suport on their professional development. In such a background, I start the TPCK curriculum. It is a online curriculum and totally free. It's based on two network leaning community, Biology Teaching House(Bioteahouse,生物教学茶吧：<a href="http://sites.google.com/site/bioteahouse" target="_blank">http://sites.google.com/site/bioteahouse</a>) and it's neighborhood community Social Learn Lab(SLL, 教育大发现：<a href="http://sociallearnlab.org" target="_blank">http://sociallearnlab.org</a>). SLL has many members who are interested or experts on educational technology. So we can get technical suport from SLL. Most members fo Bioteahouse are  biology teachers, and some of them are biology education researchers, some are college students who are planning to be biology teachers in the future.</p>
+
+<p>The Curriculum materials will all be online and open to have access. The activities will be orgnized both online and offline. Some middle schools will attend this course, so I am planning to organize unconferrences in these school which allow everyone to come and share and contribute. Hope everyting will go well.
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=cd641d36-22b9-894a-b473-4de8a504fb83" alt="" /></div></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-10-13-keep-screen-as-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-10-13-keep-screen-as-notes/" class="post-title-link" itemprop="url">如何把自己屏幕随时保存下来作为一种图片笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>开始的是想到是用google搜索一下，是否有类似的服务，但是没有找到，可能firefox的flickr插件可能有帮助，但是没有用过，网友如果找到好的服务，可以给我留言，我会很感谢。<br /><br />另外的一个解决办法就是，把本地软件利用起来，如果愿意经常做图片笔记，并不打算和人分享，知识记录而的话，不妨使用google的picasa+snagit8.0，存图的时候，可以直接用tag的形式命名笔记即可。本地的东西，毕竟比网上刷新要快的多。<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=15d204c8-142d-85b0-8372-e67ffd467576" /></div></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-10-19-the-steps-of-collecting-info-for-solution/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-10-19-the-steps-of-collecting-info-for-solution/" class="post-title-link" itemprop="url">搜索信息解决问题的步骤和方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1、首先是表述问题<br />遇到了问题，不见得会表述问题，表述问题要尽量附带一些背景性信息，并且不能或略问题或者现象的关键点。另外，也也要考虑表述给谁？当然首选的就是表述给搜索引擎，原因很简单，因为google等搜索引擎它们会24小时恭候你的使用。下面的步骤如何选择搜索引擎，如何表述给搜索引擎。<br /><br />2、搜索相关信息和资源<br />不同的问题，可以选择不同的搜索引擎，比如如果你要搜索一个学术问题或者文章，你应该首选scholar；而如果你想搜索一个生活常识或者古诗词，则选择百度百科可能会更好。如果你想下载一个软件，可以选择sogou来搜索。<br /><br />选择好了引擎，还有要把问题表述给引擎，你应该从自己问题中找出关键点或关键词，或者你先可以把自己的想法全句拿去搜索，然后依据搜到的结果多少和相关度进一步对问题和词句进行修改和删减等。要有一定耐性，并摸索一些技巧，其中懂一些基本的搜索语法和关键词是必要的，参google<font size="-1"><a target="_blank" rel="noopener" href="http://www.google.cn/help/operators.html">高级搜索符的完整列表</a></font>。<br /><br />3、求助专家<br />搜索引擎并不能解决所有的的问题，比如你在python编程的过程中有一个功能无法用恰当的代码实现，你搜索不到相关的信息，因为程序员很少，而关注这个功能的程序员就更少了，何况每个程序员使用的编程语言也千差万别。因此，这个时候你就需要找到python编程的专家，那么到哪里去找呢，当然是去坛子里找。这个时候你的搜索对像就变成了python的网络论坛，找到相应的好的论坛之后，再发帖求救，并及时关注和恢复，通过这种方式可以大大增大你解决问题的可能性。<br /><br />4、建立环境<br />我们开始的时候，为了解决某个领域的问题，经常会要用搜索引擎，因为它包罗万象，只要你有动力，有时间，绝大多数的信息都是可以搜到的。但是搜索的相关较差，需要花时间进行赛选。另外由于遗忘等因素，也会造成重复性的工作和低效率。接下来，我们需要限制自己的搜素领域，从而提高命中率，我们可以建立某个范围的搜索引擎来节约时间。当遇到难题时，由于互联网上不一定有问题的答案，答案在专家的头脑里，所以我们需要找到专家。实事上，建立一个个人专家求助的人际圈子很重要，它是一种无形的资源，有了他们在身边，一些你还没有遇到的问题，都可以被他们解决，原因在于你在无形中学习到了他们提供的技巧和习惯。那么如何让你以后遇到问题，能最快速的解决呢。答案是建立一个领域学习的环境，比如茶吧这个生物教师学习社区，它就是这样一个领域学习环境。如果你有关于生物教学的困惑和需要，那么你应该入住这个社区，通过与专家和高手建立联系来组建你个人的专家求助热线。<br /><br />5、如果我还想更快的的解决问题，该怎么办？<br />答案是，自己成为专家。<br />其实前面四个步骤已经为你成为专家打下了基础，特别是一个专业学习环境的建立，它将为你成长为一个专家提供各个方面的支持。比如教程、技术技巧、思想、信息资源、人际关系等。当你自己成为一个专家以后，你不在需要花那么多的时间搜索和找人，因为你搜索到的信息很多是你写的，很多人是你认识的，而且如果一个问题如果你解决不了，别人也很难解决。这个时候不是你找别人，而是别人找你。不是你找答案或者别人提供答案，而是你研究并提供解决方案。<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=c6d0acd8-1954-8304-9e17-0b763a2cdcfa" /></div></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/03/24/2009-10-10-hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/03/24/2009-10-10-hello-world/" class="post-title-link" itemprop="url">Hello world!</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-03-24 14:50:38" itemprop="dateCreated datePublished" datetime="2017-03-24T14:50:38+08:00">2017-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>欢迎使用 WordPress。这是您的第一篇日志。您可以编辑它或是删除它，然后开始写您自己的 blog。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

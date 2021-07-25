@@ -1,1336 +1,1489 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/41/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
-</head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/41/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    subtitle
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
-
-    </div>
-</div>
-
-
-<main class="content">
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/24/2013-08-24-how-to-make-chinese-pancakes/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="How to make Chinese Pancakes">
-                            
-                            <span class="card-title">How to make Chinese Pancakes</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Look at the Slide I made by Prezi:  
+  <title>Chunlei's BLog</title>
   
 
-Prezi is free, and this is my invitation code: http://prezi.com/recommend/uoexc
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/prezi/">
-                            <span class="chip bg-color">prezi</span>
-                        </a>
-                        
-                        <a href="/tags/pancake/">
-                            <span class="chip bg-color">pancake</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/24/2013-08-24-interaction-simulation-based-inquiry-activities/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Interactive simulation based inquiry activities">
-                            
-                            <span class="card-title">Interactive simulation based inquiry activities</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                        <a href="/tags/flash/">
-                            <span class="chip bg-color">flash</span>
-                        </a>
-                        
-                        <a href="/tags/MBL/">
-                            <span class="chip bg-color">MBL</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/19/2013-08-19-modeling-activities-and-reflection/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Modeling activities and reflection">
-                            
-                            <span class="card-title">Modeling activities and reflection</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Recently I attended Dr Luft’s class Methods of Science Teaching. I am becoming more and more interested in Modeling acti
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UGA/">
-                            <span class="chip bg-color">UGA</span>
-                        </a>
-                        
-                        <a href="/tags/list/">
-                            <span class="chip bg-color">list</span>
-                        </a>
-                        
-                        <a href="/tags/resources/">
-                            <span class="chip bg-color">resources</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/19/2013-08-19-metaphors-of-good-teacher-and-education-reform/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Metaphors of good teacher and education reform">
-                            
-                            <span class="card-title">Metaphors of good teacher and education reform</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                A good teacher just like a good cook. Of course, you can tell a good cook by the taste of his dishes. So students’ perfe
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UGA/">
-                            <span class="chip bg-color">UGA</span>
-                        </a>
-                        
-                        <a href="/tags/metaphor/">
-                            <span class="chip bg-color">metaphor</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/19/2013-08-19-timss-video-and-reflection-of-teaching-science-with-modeling/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Timss video and reflection of teaching science with modeling">
-                            
-                            <span class="card-title">Timss video and reflection of teaching science with modeling</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                It is my first time to view a science classroom teaching in Japan. In fact, it supprise me a little. I know the science 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UGA/">
-                            <span class="chip bg-color">UGA</span>
-                        </a>
-                        
-                        <a href="/tags/modeling/">
-                            <span class="chip bg-color">modeling</span>
-                        </a>
-                        
-                        <a href="/tags/Timss/">
-                            <span class="chip bg-color">Timss</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/16/2013-08-16-design-for-convinence-for-people/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Design for convinence for people">
-                            
-                            <span class="card-title">Design for convinence for people</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                One of the most deep impressions I got of US is the pursuing of simple and comfortable life.  
-First is the bus design.T
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/design/">
-                            <span class="chip bg-color">design</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/10/2013-08-10-fighting-with-the-imaginary-enemy/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Fighting with the imaginary enemy">
-                            
-                            <span class="card-title">Fighting with the imaginary enemy</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Sometimes you want to run away confronting a challenge. Usually, you have your own reasons. It is too hard. It is too bo
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-10
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/diary/">
-                            <span class="chip bg-color">diary</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/07/2013-08-07-computer-tips-recently-discovered/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Computer tips recently discovered">
-                            
-                            <span class="card-title">Computer tips recently discovered</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Recently I found some useful tips to get things done more effectively.  
-How do you capture your screen when you are wat
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    技术技巧
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/chorme/">
-                            <span class="chip bg-color">chorme</span>
-                        </a>
-                        
-                        <a href="/tags/screen-capture/">
-                            <span class="chip bg-color">screen capture</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/02/2013-08-02-observation-of-daily-life-of-americans/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Observation of daily life of Americans">
-                            
-                            <span class="card-title">Observation of daily life of Americans</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                These days while I live in my apartment, I pay close attention to the daily life of people here. I have drawed a conclus
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/diary/">
-                            <span class="chip bg-color">diary</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/08/02/2013-08-02-dream-back-to-home/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Dream back to Home">
-                            
-                            <span class="card-title">Dream back to Home</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                I had a dream today. I took a flight back to home just in order to make sure everthing at home is Ok. I don’t konw why. 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-08-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/diary/">
-                            <span class="chip bg-color">diary</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/07/30/2013-07-30-python-brief/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Python简明手册">
-                            
-                            <span class="card-title">Python简明手册</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                使用Python已经有几年了，也写过很多文本分析的程序，包括输入输出，写文案，抓网页等。最大的体会是Python的简洁性，你可以用最好的代码做最多的事儿，前提是你知道怎么做。Python可以让你实现人工智能、大数据分析、网页开发，几乎无所不
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-07-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    技术技巧
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Python/">
-                            <span class="chip bg-color">Python</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2013/07/30/2013-07-30-3-rules-when-studying-at-uga/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="3 rules to follow when studying at UGA">
-                            
-                            <span class="card-title">3 rules to follow when studying at UGA</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Durying my study in UGA, I will obey 3 rules:  
-
-  能在中国做的不在美国做 Things that can be done in China will not be put at the f
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2013-07-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%97%A5%E5%BF%97/" class="post-category">
-                                    日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/diary/">
-                            <span class="chip bg-color">diary</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
 
 
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/40/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">41 / 43</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/42/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/24/2013-08-24-how-to-make-chinese-pancakes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/24/2013-08-24-how-to-make-chinese-pancakes/" class="post-title-link" itemprop="url">How to make Chinese Pancakes</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-24 16:07:00" itemprop="dateCreated datePublished" datetime="2013-08-24T16:07:00+08:00">2013-08-24</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-25 04:49:56" itemprop="dateModified" datetime="2013-08-25T04:49:56+08:00">2013-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+                </span>
             </span>
-            
-            <br>
-            
-            <br>
-            
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>Look at the Slide I made by Prezi:  </p>
+<iframe src="http://prezi.com/embed/ggepqlbagskh/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>  
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
+<p>Prezi is free, and this is my invitation code: <a target="_blank" rel="noopener" href="http://prezi.com/recommend/uoexcohw4ztz/">http://prezi.com/recommend/uoexcohw4ztz/</a><br>上面的连接是我的邀请码，可以免费注册prezi。  </p>
 
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/24/2013-08-24-interaction-simulation-based-inquiry-activities/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/24/2013-08-24-interaction-simulation-based-inquiry-activities/" class="post-title-link" itemprop="url">Interactive simulation based inquiry activities</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-24 12:17:00" itemprop="dateCreated datePublished" datetime="2013-08-24T12:17:00+08:00">2013-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2014-10-05 11:58:11" itemprop="dateModified" datetime="2014-10-05T11:58:11+08:00">2014-10-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Sometimes it is hard to let students collect data to test their ideas about nature. For example to make observations how stars move for a long time, or do experiment about why plant grow to the sunlight. In this case, when oboservation and experiment difficult to carry out in classroom, computer software or interactive simulations can help a lot. There are two examples.  </p>
+<p>In a middle school biology class, students can play with the following flash game to figure out why plant grow to the sun.<br><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+codebase="http://download.macromedia.com/pub/shockwave/
+cabs/flash/swflash.cab#version=6,0,40,0" 
+width="468" height="60" 
+ id="mymoviename"> </p>
+<param name="movie"  
+
+<p>value=”<a target="_blank" rel="noopener" href="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf&quot;">http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf&quot;</a> /&gt; </p>
+<param name="quality" value="high" /> 
+<param name="bgcolor" value="#ffffff" /> 
+
+<p><embed src="http://bioteahouse.wikispaces.com/file/view/Gmodel3.swf/446433960/Gmodel3.swf" quality="high" bgcolor="#ffffff"
+width="468" height="60" 
+name="mymoviename" align="" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer"><br></embed><br></object></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2013/08/24/2013-08-24-interaction-simulation-based-inquiry-activities/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/19/2013-08-19-modeling-activities-and-reflection/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/19/2013-08-19-modeling-activities-and-reflection/" class="post-title-link" itemprop="url">Modeling activities and reflection</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-19 23:24:00" itemprop="dateCreated datePublished" datetime="2013-08-19T23:24:00+08:00">2013-08-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-08-20 10:48:57" itemprop="dateModified" datetime="2015-08-20T10:48:57+08:00">2015-08-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Recently I attended Dr Luft’s class Methods of Science Teaching. I am becoming more and more interested in Modeling activities and I want to make a collection of these activities.  </p>
+<p>This is the list:  </p>
+<ul>
+<li>   Candle in the water tube make it go out(Dr Luft’s class)  </li>
+<li>   Black box(<a target="_blank" rel="noopener" href="http://www.nap.edu/catalog.php?record_id=11102">How students learn: science in classroom</a> see Chp 12)  </li>
+<li>   Timms video <a target="_blank" rel="noopener" href="http://timssvideo.com/72">JP5 AIR COMPRESSION AND EXPANSION</a>  </li>
+<li>   Mystery Tube (Dr C’s class)  </li>
+<li>   Next Generation Science Standards <a target="_blank" rel="noopener" href="http://concord.org/ngss/">simulation activities in Concord</a><br>If you have more good modeling activities, welcome recommandations.  </li>
+</ul>
+<p>These activities provide lots of practice options for science teachers. We usually only provide standards of what students should master but little practice activites for teachers. Well, the <a target="_blank" rel="noopener" href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Standard</a> is going to change this.  </p>
+<p>Reflections on Modeling in science teaching<br>The charm of modeling:  </p>
+<ul>
+<li>   Naturally need students to make careful observation,recording data,drawing conclusions  </li>
+<li>   Naturally engage students’ prior ideas for explaination or application  </li>
+<li>   Naturally put students into the test, debate and revisement of their models or prior ideas  </li>
+<li>   Naturally let students experience the full process of science inquiry and nature of science  </li>
+</ul>
+<p>What to focus in the modeling activites as a science teacher?</p>
+<p>How to keep the balance between knowledge-centered and student-centered? Individual and Community? Cognition and metacognition?  </p>
+<p>Welcome to join the discussion of these open questions!  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/19/2013-08-19-metaphors-of-good-teacher-and-education-reform/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/19/2013-08-19-metaphors-of-good-teacher-and-education-reform/" class="post-title-link" itemprop="url">Metaphors of good teacher and education reform</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-19 22:19:00" itemprop="dateCreated datePublished" datetime="2013-08-19T22:19:00+08:00">2013-08-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-21 12:09:18" itemprop="dateModified" datetime="2013-09-21T12:09:18+08:00">2013-09-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>A good teacher just like a good cook. Of course, you can tell a good cook by the taste of his dishes. So students’ perfect performance is a good predictor of competent teacher. But it takes a lot effort to make the dishes OR evaluate the students. In fact, we can also tell a good cook by his preparation and operation of his cooking.  Good cook can aways make many dishes in a limited time. Because he don’t stop, when heating the water, he is washing the vegatables or cutting the meat. When the water is ready he is also ready to fry them together. The teacher do the same thing in class expecially in a short class. I found this metaphor visiting Dr C’s class, she give instructions as well as preparing the tools for modeling, at the same time she was also doing demonstration of what the secret tube behaviors.   </p>
+<p>Sometimes science teacher educators complain that teachers’ beliefs are stubborn and reluctant to change their practices. Well, It is true.  </p>
+<p>The science teacher is like a swimming player in a swimming poor. The science teacher educator stand beside and tell the player how to swim, which style is good which is bad. But the most important thing for a person in the swimming poor is to keep safty and the most reliable style is his primary style. How can we blame them not trying to change, if their safty is not guaranteed and skills not developed.  </p>
+<p>As a science teacher educator, you can not stand by but jump into the swimming poor and provide necessary skills and safety.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/19/2013-08-19-timss-video-and-reflection-of-teaching-science-with-modeling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/19/2013-08-19-timss-video-and-reflection-of-teaching-science-with-modeling/" class="post-title-link" itemprop="url">Timss video and reflection of teaching science with modeling</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-19 20:56:00" itemprop="dateCreated datePublished" datetime="2013-08-19T20:56:00+08:00">2013-08-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-24 16:41:20" itemprop="dateModified" datetime="2021-07-24T16:41:20+08:00">2021-07-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>It is my first time to view a science classroom teaching in Japan. In fact, it supprise me a little. I know the science education in Japan is of high quality. They get much better score than the other counties and teacher are respectable profession. But I never thought the classroom are so interactive and effective. You can click <a target="_blank" rel="noopener" href="http://timssvideo.com/72">here</a> to view the video.  </p>
+<p>This eighth-grade science lesson is about the formation of clouds. It is the third lesson in a sequence of 19 lessons on weather. The lesson is 53 minutes in duration. There are 25 students in the class.  </p>
+<p><a target="_blank" rel="noopener" href="http://timssvid1.s3.amazonaws.com/JP5%20Air%20compression%20and%20expansion.mp4">http://timssvid1.s3.amazonaws.com/JP5%20Air%20compression%20and%20expansion.mp4</a>  </p>
+<p>Here is my record of the time usage of the class:</p>
+<blockquote>
+<p>00-03 review what learnt<br>03-07 demistration<br>07-17 demistration of key skills for today’s experiment<br>18-36 Student activites(4 experiments and group take turn)<br>36-50 sumary of experiment result and draw conclusion<br>50-52 self-evalation</p>
+</blockquote>
+<p>I watched the video twice, first I just got a glance of it very quickly. The second time, I watch it very carefully and make notes of what teacher and students were doing.  </p>
+<p>First, I found a very interesting thing that the Japenese teacher used about 17 minutes to engage students and make demonstration at the begining. He also used about 17 minutes to sumary the results and conclusions at the end of the class. Acording to psychology studies, people are most likely to remember what happened at begining and at the end. People usually can only concentrate for 15 minutes. So most TED videos will not last more than 17 minutes. I don’t know if the teacher did it popurely. But he did it really well.  </p>
+<p>Second, the class is very interesting and vigorous. Students really had fun with the activities and record and try to explain.  </p>
+<p>Third, it keep a good balance of knowledge-centered and student-centered. The most important ideas and inquiry skills were embodied in student activities.  </p>
+<p>At last, I want to say although the teacher said nothing about modeling. But he raised a question for students to study.  Students want to explain but had little idea and experieces. So they did the activities that teacher prepared for them. Before experiments, they make their explannation and predictions, they recorded the result on the handouts, they have to revise their explanation and building a more powerful causal model to explain all the phenomenons. So we do can found the shape of modeling in this class.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/16/2013-08-16-design-for-convinence-for-people/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/16/2013-08-16-design-for-convinence-for-people/" class="post-title-link" itemprop="url">Design for convinence for people</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-16 13:10:00" itemprop="dateCreated datePublished" datetime="2013-08-16T13:10:00+08:00">2013-08-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>One of the most deep impressions I got of US is the pursuing of simple and comfortable life.  </p>
+<p>First is the bus design.<br>There is a button out side of the bus that customers can push to kneel the bus. Another design is that there is a string along the windows. You can pull the string to let bus stop. You don’t even need to stand up.  </p>
+<p>Another interesting thing I discovered the yellow alert along the road. First I though it is to let people wark accross the street. But when I look into it carefully, It said “State law: stop when human on the line”, it is for the car. No wonder evertime when I was on the line, the drive will stop let me pass first. What a nice law!<br><img src="https://raw.github.com/lukezhg/Freyja/master/statelaw.jpg" alt="Statelaw"><br>One day, when I was on my way home from supermarket, I found there is an American Bank ATM special for car drivers near the shops. I have never saw such ATM before in China. You don’t have to get out of your car when you using the ATM In China, when you go to banks, usually you have wait for half an hour to get your turns in Shanghai. Why it is so different! This is a really good question to think about.  </p>
+<p>The last discovery is kitchen. They have kitchen not only in the apartment where I live but also in the office. There is a special kitchen room for professors and students to heat their lunch or make coffee. So nice!<br>Oh, I nearly forget. The water ﻿purifier﻿. It is so cool and useful, I love it too much.<br><img src="https://raw.github.com/lukezhg/Freyja/master/water.jpg" alt="water purifier">  </p>
+<p>It is evident that the goal of American people is to pursue a simple and comfortable life. Maybe not very luxurious but comfortable.  </p>
+<p>How did they achieve that, market and competition may be the driving power. What it doesn’t happen in China? Big question!  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/10/2013-08-10-fighting-with-the-imaginary-enemy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/10/2013-08-10-fighting-with-the-imaginary-enemy/" class="post-title-link" itemprop="url">Fighting with the imaginary enemy</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-10 11:11:00" itemprop="dateCreated datePublished" datetime="2013-08-10T11:11:00+08:00">2013-08-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Sometimes you want to run away confronting a challenge. Usually, you have your own reasons. It is too hard. It is too boring. I am not good at this. It is so painful. You want to advoid to meet it although it is important and urgent. We all know it but feel so hard to control yourself.   </p>
+<p>So what to do?  </p>
+<p>YOU have an imaginary enemy to fight. Game start! Sometimes your enemy is strong and sometimes he is endurable. Mostly, you have exaggerated your enemy and belittled yourself. Imagine you are fighting against an enemy who also have his own weakness. The wise move would be found his weakness and take all the advantage you have to beat him. If you don’t fight, you are doomed to failure. If you fight, there still a hope to win.  </p>
+<p>In fact, you have no opotions but to fight. Your imaginary enemy would alert you and help you to beat the fearness and win the game!  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/07/2013-08-07-computer-tips-recently-discovered/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/07/2013-08-07-computer-tips-recently-discovered/" class="post-title-link" itemprop="url">Computer tips recently discovered</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-07 17:34:00" itemprop="dateCreated datePublished" datetime="2013-08-07T17:34:00+08:00">2013-08-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Recently I found some useful tips to get things done more effectively.  </p>
+<p>How do you capture your screen when you are watching a vedio without stop it.  </p>
+<ul>
+<li>  The answer is that you can setup some softwares to do this. One of them is <a target="_blank" rel="noopener" href="http://www.aplusfreeware.com/categories/mmedia/FastStoneCapture.html">FastStone Caputure</a>. You just set the auto save folder and the hot key in the settings. Then, things get much easier, everytime you want capture your screen, just press the hot key. The picture can be saved in the folder with disturbing your watching. It is so useful.  </li>
+</ul>
+<p>After type your keyword in the address bar, how do you google it in a new tab with Chorme browser?  </p>
+<ul>
+<li>  The answer is: press Alt &amp; Enter, then it will show your search results in a new tab.  </li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/02/2013-08-02-observation-of-daily-life-of-americans/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/02/2013-08-02-observation-of-daily-life-of-americans/" class="post-title-link" itemprop="url">Observation of daily life of Americans</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-02 06:08:00" itemprop="dateCreated datePublished" datetime="2013-08-02T06:08:00+08:00">2013-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>These days while I live in my apartment, I pay close attention to the daily life of people here. I have drawed a conclusion: Americans are lazy.  </p>
+<p>In fact, Lazy here is not used in a derogatory sense. You know, only the lazy people can invent and design a comfortable life. Americans are such kind of designers who are persueing simple but comfortable life. Let me give you some examples.  </p>
+<p>I live in a house department. In China, the parking area is often underground or a little far from the appartment. But in USA, the parking lot is jut in front of the hourse near the door. You can imagine when you get back from work, get out of your car, and then enter your door, it is so convinent.  </p>
+<p>After you get in, you can find a kitchen, a sitting room, a laundry room and a bath room. If you take a look at the kitchen, you will find a dish washer there and microwave oven. In China, most people just wash by hands, you can hardly found a dish washer, expecially in a student’s department.  </p>
+<p>As to food, most food can be cooked just by heatting, like milk and bread. If sauces are needed, they are already mixed up and ready for use. You can find all this kind of mixed up sauces or semi-manufactured food everywhere in a food supermaket. Cooking become easy here, athough the taste may becoming a little dull. Most Chinese will not buy the mixed sauces, they may want to make their own although they will spent a lot of time on cooking.   </p>
+<p>One day, a ceaseless noise of machinery wake me up. I look out through the window, I found a man is using a grass cutter in front of the door. In China, people also use this kind of grass cutter, which is belted to the waist. But lawn mower like a car is hardly found in China. I often saw an american sitting on it and drive it on the lawn, it is fun. I also found people here clean the street in a differnt way, they use a air blower to blow the leaves away and make the road clean. If you walk on street in the early morning in Beijing, you will see a cleaner clean street with broom. You will never found a man with a blowing machine walk here and there.  </p>
+<p>And almost everyone have a car here. Once I ask a black man for directions, after telling my the way, he said don’t you have a car, I sait not yet. He then added while it will be 20 to 30 minutes’ walk. I follow his directions, after 10 minutes I got there. It is not that far, I said in my mind. May be they drive too much, and then have no idea how long it will take by walking.  </p>
+<p>So there are so many differences between the two countries. It also stand for different culture. The Americans are taking every advantage of modern science and technology to make their lives simple and comfortable. Labor is much more expensive in USA than in China. The Chinese culture advocate deligent, hard-working and Obedience.  The American culture advocate Science &amp; Technolgy, comfortable life and freedom. You can not say which one is better, but they can learn from each other.  Athough the American life is easy and comfortable, but it exhausted much more energy. Athough, Chinese food is delicious, but it is time cousuming, I think Chinese really should spend more time on inovation in S&amp;T and social system.  </p>
+<p>by chunlei 08/02/13 07:30AM</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/02/2013-08-02-dream-back-to-home/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/02/2013-08-02-dream-back-to-home/" class="post-title-link" itemprop="url">Dream back to Home</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-02 05:19:00" itemprop="dateCreated datePublished" datetime="2013-08-02T05:19:00+08:00">2013-08-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I had a dream today. I took a flight back to home just in order to make sure everthing at home is Ok. I don’t konw why. There is an old saying what you dream at night is what you think at day. Maybe I am a little homesick now. When I am awake, I am laying on a big white bed still in USA. I thought I will not easily be homesick, but I am wrong. Well my advisor is right, I will confront some hard time and even shed tears. If it was the Cost, what I can do is only maximize the benifit.  </p>
+<p>I have learnt how to cook rice in microwave oven. I also learn how to cook dishes in a pan which the bottom is flat.  I have been accustomed to the food here, milk and egg for breakfast, noodles or rice for lunch and supper. I improve my spoken and writing English through participting some online courses. It does work.  </p>
+<p>I will also record what I have done, observed and thought by bloging. It will cover all the stories that I experienced during my study in USA.  </p>
+<p>by chunlei 08/02/13 05:41 AM  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/07/30/2013-07-30-python-brief/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/07/30/2013-07-30-python-brief/" class="post-title-link" itemprop="url">Python简明手册</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-07-30 14:25:00" itemprop="dateCreated datePublished" datetime="2013-07-30T14:25:00+08:00">2013-07-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-10-14 11:49:17" itemprop="dateModified" datetime="2018-10-14T11:49:17+08:00">2018-10-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>使用Python已经有几年了，也写过很多文本分析的程序，包括输入输出，写文案，抓网页等。最大的体会是Python的简洁性，你可以用最好的代码做最多的事儿，前提是你知道怎么做。Python可以让你实现人工智能、大数据分析、网页开发，几乎无所不能。所以，如果你想进入码农行业，你要认真的考虑一下是否要学习Python。  </p>
+<p>本文列举了个人常用的命令，并不系统。后面期望不断改善。    </p>
+<p>Python重要用法示例</p>
+<pre><code>dir(list)#显示关键字相关的函数
+help(list.reverse)#查询某个函数的功能</code></pre>
+<p>set 让一个list变成无重复元素的set<br>例如：</p>
+<pre><code>shapes = [&#39;circle&#39;,&#39;square&#39;,&#39;triangle&#39;,&#39;circle&#39;]
+setOfShapes = set(shapes)
+setOfShapes 
+set([&#39;circle&#39;,&#39;square&#39;,&#39;triangle&#39;]) 
+ setOfShapes.add(&#39;polygon&#39;) 
+&#39;rhombus&#39; in setOfShapes 
+False 
+setOfShapes - setOfFavoriteShapes 
+setOfShapes &amp; setOfFavoriteShapes 
+setOfShapes | setOfFavoriteShapes </code></pre>
+<p>map和lambda</p>
+<pre><code>map(lambda x: x * x, [1,2,3])
+[1, 4, 9]
+filter(lambda x: x &gt; 3, [1,2,3,4,5,4,3,2,1])
+[4, 5, 4]</code></pre>
+<p>Object 先定义一个类，然后给类生成实例<br>定义如：</p>
+<pre><code>class FruitShop:
+def __init__(self, name, fruitPrices):
+    &quot;&quot;&quot;
+        name: Name of the fruit shop
+
+        fruitPrices: Dictionary with keys as fruit 
+        strings and prices for values e.g. 
+        &#123;&#39;apples&#39;:2.00, &#39;oranges&#39;: 1.50, &#39;pears&#39;: 1.75&#125; 
+    &quot;&quot;&quot;
+    self.fruitPrices = fruitPrices
+    self.name = name
+    print &#39;Welcome to the %s fruit shop&#39; % (name)
+
+def getCostPerPound(self, fruit):
+    &quot;&quot;&quot;
+        fruit: Fruit string
+    Returns cost of &#39;fruit&#39;, assuming &#39;fruit&#39;
+    is in our inventory or None otherwise
+    &quot;&quot;&quot;
+    if fruit not in self.fruitPrices:
+        print &quot;Sorry we don&#39;t have %s&quot; % (fruit)
+        return None
+    return self.fruitPrices[fruit]
+
+def getPriceOfOrder(self, orderList):
+    &quot;&quot;&quot;
+        orderList: List of (fruit, numPounds) tuples
+
+    Returns cost of orderList. If any of the fruit are  
+    &quot;&quot;&quot; 
+    totalCost = 0.0             
+    for fruit, numPounds in orderList:
+        costPerPound = self.getCostPerPound(fruit)
+        if costPerPound != None:
+            totalCost += numPounds * costPerPound
+    return totalCost
+def getName(self):
+    return self.name</code></pre>
+<p>调用winsound 函数  </p>
+<pre><code>
+import winsound
+# press a make a beep
+if event.KeyID==65: winsound.Beep(200,9)
+# press ESC play exit sound
+if event.KeyID==27: winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+</code></pre>
+
+
+<p>使用pyHook监听鼠标和键盘事件  </p>
+<pre><code>
+import pythoncom
+import pyHook
+
+def onKeyboardEvent(event):
+    global switch
+    # 监听键盘事件
+    if switch:
+        print "Key:", event.Key
+        print "KeyID:", event.KeyID
+    return True #监听函数的返回值
+
+def main():
+    # 定义一个实例
+    hm = pyHook.HookManager()
+    # 监听所有键盘事件
+    hm.KeyDown = onKeyboardEvent
+    # 设置键盘监听器
+    hm.HookKeyboard()
+    # 循环并保持一直处于监听状态
+    pythoncom.PumpMessages()
+</code></pre>
+
+<p>用pyenv的基本操作命令管理python版本</p>
+<pre><code>pyenv versions# 查看当前已安装的 python 版本
+pyenv install ... #安装指定版本的 python
+pyenv global python版本 #切换全局 python 版本
+source ~/.bash_profile
+pyenv local python版本 #切换当前文件夹下的 python 版本
+pyenv shell python版本 #切换当前 shell 中的 python 版本
+pyenv version #查看当前使用的 python 版本</code></pre>
+<p>python 数据库开发</p>
+<p>取消所有8000进程：<br>    sudo lsof -t -i tcp:8000 | xargkill -9</p>
+<p>创建项目<br>    django-admin startproject demoproject</p>
+<p>创建应用<br>    cd demoproject<br>    python manage.py startapp TestModel</p>
+<p>打开 mysql服务器<br>    mysql -u root -p</p>
+<p>参考：<a target="_blank" rel="noopener" href="http://djangobook.py3k.cn/chapter05/">手册</a></p>
+<p>现在我们可以创建数据库表了。首先，用下面的命令对校验模型的有效性：</p>
+<pre><code>python manage.py validate</code></pre>
+<p>模型确认没问题了，运行下面的命令来生成 CREATE TABLE 语句：</p>
+<pre><code>python manage.py sqlall books
+python manage.py syncdb</code></pre>
+<p>打开服务器<br>    python manage.py runserver<br>    python manage.py migrate<br>    python manage.py makemigrations</p>
+<p>查看sql服务是否启动</p>
+<pre><code>ps -ef | grep mysqld#查看MySQL服务器是否启动
+service mysqld status#查看服务运行的状态</code></pre>
+<p>Mysql<br>mysql -u db_user -p<br>SHOW DATABASES;<br>CREATE DATABASE blog_data;<br>drop database mydb;<br>SHOW DATABASES;<br>Whenever you’d like to exit MySQL server, press CTRL + D.</p>
+<p>show variables like ‘%char%’;<br>set character_set_server=utf8;<br>set character_set_database=utf8;</p>
+<p>show variables like ‘%char%’;</p>
+<p>ALTER DATABASE classlinkr DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci</p>
+<p>use my_db;<br>show tables;</p>
+<p>show full columns from clips_clip;  </p>
+<p>ALTER TABLE classlinkr.clips_clip MODIFY COLUMN concept VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</p>
+<p>闲来无事，随便看看Python 3.0的文档，发现了一个很pythonic的模块：声音播放 for windows；凑个流行语叫做“很傻很天真”，不过挺好使得。</p>
+<p>1 winsound.Beep</p>
+<p>每一个都有不同的用法，一个一个来看吧。</p>
+<pre><code>winsound.Beep(frequency, duration)</code></pre>
+<p>PC扬声器滴的一声，就是它了。第一个参数frequency表示分贝数，大小在37到32767之间。第二个参数是持续时间，以毫秒为单位(有耐心的话可以试试winsound.Beep(32767,9999999)，嘿嘿)。</p>
+<p>2 winsound.PlaySound</p>
+<pre><code>1. import winsound
+2. # Play Windows exit sound.
+3. winsound.PlaySound(&quot;SystemExit&quot;, winsound.SND_ALIAS)
+4. # Probably play Windows default sound, if any is registered (because
+5. # &quot;*&quot; probably isn&#39;t the registered name of any sound).
+6. winsound.PlaySound(&quot;*&quot;, winsound.SND_ALIAS)
+不过只能播放wav,不能播放wma和mp3文件，这2种还需要其他包的支持。</code></pre>
+<p>网站维护：<br>使用Django框架<br>前端口用h5和JS开发<br>替换该文件之后，需要跑一下systemctl restart httpd命令才能生效</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/07/30/2013-07-30-3-rules-when-studying-at-uga/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/07/30/2013-07-30-3-rules-when-studying-at-uga/" class="post-title-link" itemprop="url">3 rules to follow when studying at UGA</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-07-30 14:01:00" itemprop="dateCreated datePublished" datetime="2013-07-30T14:01:00+08:00">2013-07-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-08-29 01:56:42" itemprop="dateModified" datetime="2013-08-29T01:56:42+08:00">2013-08-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">日志</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Durying my study in UGA, I will obey 3 rules:  </p>
+<ul>
+<li>  能在中国做的不在美国做 Things that can be done in China will not be put at the frist place.  </li>
+<li>  能自己做的不让别人做   Things that I can do myself will not be done by others.  </li>
+<li>  能一天做的不用两天做   If it only need one day, I will not spend two days.  </li>
+</ul>
+<p>The aim of these rules is to let me to take every advantage of my study here. They will help me to save time and focus on the important work.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/40/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><span class="page-number current">41</span><a class="page-number" href="/page/42/">42</a><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/42/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">510</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">357</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>
