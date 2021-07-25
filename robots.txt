@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://zhangchunlei.com/sitemap.xml 

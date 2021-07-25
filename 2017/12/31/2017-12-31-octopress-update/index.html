@@ -200,12 +200,25 @@
 <p>找到的一篇貌似实用的讨论：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8">https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</a>  </p>
 <p>但是试过了对我无效。   </p>
 <p>回顾一下问题出现的原因，首先出现错误代码是：   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Liquid Exception: Unknown tag &#39;static&#39; in</span><br></pre></td></tr></table></figure>
-
+<pre><code>Liquid Exception: Unknown tag &#39;static&#39; in</code></pre>
 <p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。   </p>
 <p>解决的方式是： 利用 raw 和 endraw标记。如下：   </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">    <span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//W3C//DTD HTML 4.01//EN&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>&#123;% block title %&#125;&#123;% endblock %&#125;<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>My helpful timestamp site<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        &#123;% block content %&#125;&#123;% endblock %&#125;</span><br><span class="line">        &#123;% block footer %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>Thanks for visiting my site.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        &#123;% endblock %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+    <html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <h1>My helpful timestamp site</h1>
+        {% block content %}{% endblock %}
+        {% block footer %}
+        <hr>
+        <p>Thanks for visiting my site.</p>
+        {% endblock %}
+    </body>
+    </html>
+</code></pre>
 <p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。  </p>
 <p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：   </p>
 <pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT</code></pre>
@@ -293,6 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">My helpful timestamp site</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

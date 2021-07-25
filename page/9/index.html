@@ -617,20 +617,92 @@
       
           <p>一、数据的格式  </p>
 <p>DATA  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">KEY  1111111111111111111111111111111111111111111111111111111111111111111   </span><br><span class="line">NOT                                                                        </span><br><span class="line">40001 1 011111011111111111011111011                                        </span><br><span class="line">45137 1 011011111111011000001001100                                        </span><br><span class="line">60001 2                     111111101101000111011110111                    </span><br><span class="line">60002 2                     110011100000001001100110111                    </span><br><span class="line">82913 3                                         111111011111000111000001111</span><br><span class="line">82914 3                                         111111001110100000000101111</span><br></pre></td></tr></table></figure>
-
+<pre><code>KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+NOT                                                                        
+40001 1 011111011111111111011111011                                        
+45137 1 011011111111011000001001100                                        
+60001 2                     111111101101000111011110111                    
+60002 2                     110011100000001001100110111                    
+82913 3                                         111111011111000111000001111
+82914 3                                         111111001110100000000101111</code></pre>
 <p>注释：<br>第一列是答案。第二列是NOT。第三列开始都是数据。  </p>
 <p>二、命令文件  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS</span><br><span class="line">&gt;COMMENT</span><br><span class="line">Science test equating</span><br><span class="line">&gt;GLOBAL DFName &#x3D; &#39;data.DAT&#39;, </span><br><span class="line">        NPArm &#x3D; 2, </span><br><span class="line">        SAVe;</span><br><span class="line">&gt;SAVE PARm &#x3D; &#39;data.PAR&#39;, </span><br><span class="line">      SCOre &#x3D; &#39;data.SCO&#39;, </span><br><span class="line">      TSTat &#x3D; &#39;data.TST&#39;;</span><br><span class="line">&gt;LENGTH NITems &#x3D; (67);</span><br><span class="line">&gt;INPUT NTOtal &#x3D; 67, </span><br><span class="line">       NIDchar &#x3D; 5, </span><br><span class="line">       NGRoup &#x3D; 3, </span><br><span class="line">       KFName &#x3D; &#39;data.DAT&#39;, </span><br><span class="line">       NFName &#x3D; &#39;data.DAT&#39;;</span><br><span class="line">&gt;ITEMS INAmes &#x3D; (M01(1)M67);</span><br><span class="line">&gt;TEST1 TNAme &#x3D; &#39;SCIT&#39;, </span><br><span class="line">       INUmber &#x3D; (1(1)67);</span><br><span class="line">&gt;GROUP1 GNAme &#x3D; &#39;GRADE 4&#39;, </span><br><span class="line">        LENgth &#x3D; 27, </span><br><span class="line">        INUmbers &#x3D; (1(1)27);</span><br><span class="line">&gt;GROUP2 GNAme &#x3D; &#39;GRADE 6&#39;, </span><br><span class="line">        LENgth &#x3D; 27, </span><br><span class="line">        INUmbers &#x3D; (21(1)47);</span><br><span class="line">&gt;GROUP3 GNAme &#x3D; &#39;GRADE 8&#39;, </span><br><span class="line">        LENgth &#x3D; 27, </span><br><span class="line">        INUmbers &#x3D; (41(1)67);</span><br><span class="line">(5A1,1X,I1,1X,67A1)</span><br><span class="line">&gt;CALIB NQPt &#x3D; 51, CYCles &#x3D; 30, REFerence &#x3D; 2, TPRior;</span><br><span class="line">&gt;SCORE IDIst &#x3D; 3, RSCtype &#x3D; 3, NOPrint;</span><br></pre></td></tr></table></figure>
-
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (67);
+&gt;INPUT NTOtal = 67, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M67);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)67);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 27, 
+        INUmbers = (1(1)27);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 27, 
+        INUmbers = (21(1)47);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 27, 
+        INUmbers = (41(1)67);
+(5A1,1X,I1,1X,67A1)
+&gt;CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+&gt;SCORE IDIst = 3, RSCtype = 3, NOPrint;</code></pre>
 <p>三、输出文件<br>data.PAR–&gt;试题参数文件。<br>data.SCO–&gt;学生成绩文件。<br>data.PH1–&gt;经典测量理论参数，如原始分，正答率，相关系数等。<br>data.PH2–&gt;模型和试题参数。<br>data.PH3–&gt;rescaled 试题参数。  </p>
 <p>案例2   </p>
 <p>混合数据<br>即有三卷共有题目，也有两卷共有题目，当然也包括一卷独有题目。  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">40001 1 1110111111011011111111011111011                                        </span><br><span class="line">40002 1 0110110111111001111111101111101                                        </span><br><span class="line">60001 2 0111                    111111100110011001111110111                    </span><br><span class="line">60002 2 1101                    110011101000000010100110111                    </span><br><span class="line">80001 3 1001                                        110110010000001000000000000</span><br><span class="line">80002 3 0101                                        111000000100001000000000110</span><br></pre></td></tr></table></figure>
-
+<pre><code>40001 1 1110111111011011111111011111011                                        
+40002 1 0110110111111001111111101111101                                        
+60001 2 0111                    111111100110011001111110111                    
+60002 2 1101                    110011101000000010100110111                    
+80001 3 1001                                        110110010000001000000000000
+80002 3 0101                                        111000000100001000000000110</code></pre>
 <p>BLM文件  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS</span><br><span class="line"></span><br><span class="line">&gt;COMMENT</span><br><span class="line">Science test equating</span><br><span class="line">&gt;GLOBAL DFName &#x3D; &#39;data.DAT&#39;, </span><br><span class="line">        NPArm &#x3D; 2, </span><br><span class="line">        SAVe;</span><br><span class="line">&gt;SAVE PARm &#x3D; &#39;data.PAR&#39;, </span><br><span class="line">      SCOre &#x3D; &#39;data.SCO&#39;, </span><br><span class="line">      TSTat &#x3D; &#39;data.TST&#39;;</span><br><span class="line">&gt;LENGTH NITems &#x3D; (71);</span><br><span class="line">&gt;INPUT NTOtal &#x3D; 71, </span><br><span class="line">       NIDchar &#x3D; 5, </span><br><span class="line">       NGRoup &#x3D; 3, </span><br><span class="line">       KFName &#x3D; &#39;data.DAT&#39;, </span><br><span class="line">       NFName &#x3D; &#39;data.DAT&#39;;</span><br><span class="line">&gt;ITEMS INAmes &#x3D; (M01(1)M71);</span><br><span class="line">&gt;TEST1 TNAme &#x3D; &#39;SCIT&#39;, </span><br><span class="line">       INUmber &#x3D; (1(1)71);</span><br><span class="line">&gt;GROUP1 GNAme &#x3D; &#39;GRADE 4&#39;, </span><br><span class="line">        LENgth &#x3D; 31, </span><br><span class="line">        INUmbers &#x3D; (1(1)31);</span><br><span class="line">&gt;GROUP2 GNAme &#x3D; &#39;GRADE 6&#39;, </span><br><span class="line">        LENgth &#x3D; 31, </span><br><span class="line">        INUmbers &#x3D; (1(1)4,25(1)51);</span><br><span class="line">&gt;GROUP3 GNAme &#x3D; &#39;GRADE 8&#39;, </span><br><span class="line">        LENgth &#x3D; 31, </span><br><span class="line">        INUmbers &#x3D; (1(1)4,45(1)71);</span><br><span class="line">(5A1,1X,I1,1X,71A1)</span><br><span class="line">&gt;CALIB NQPt &#x3D; 71, </span><br><span class="line">       CYCles &#x3D; 30, </span><br><span class="line">       REFerence &#x3D; 2, </span><br><span class="line">       TPRior;</span><br><span class="line">&gt;SCORE IDIst &#x3D; 3, </span><br><span class="line">       RSCtype &#x3D; 3, </span><br><span class="line">       NOPrint;</span><br></pre></td></tr></table></figure>
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
 
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (71);
+&gt;INPUT NTOtal = 71, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M71);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)71);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)31);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,25(1)51);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,45(1)71);
+(5A1,1X,I1,1X,71A1)
+&gt;CALIB NQPt = 71, 
+       CYCles = 30, 
+       REFerence = 2, 
+       TPRior;
+&gt;SCORE IDIst = 3, 
+       RSCtype = 3, 
+       NOPrint;</code></pre>
 <p>解释说明：<br>Group2中INUmbers = (1(1)4,25(1)51);#表示一部分共有题目是1(1)4，另外一部分共有题目是25(1)51，中间用“,”间隔。<br>操作技巧：<br>1、BILOG输出文件可以使用双空格置换为单空格，最后将所有空格置换为分隔符，然后粘贴到EXCEL中即可。  </p>
 <p>2、构建数据文件时，首先需要在EXCEL中构建数据结构，原始数据不要有空值，如有有空值提前用0或者9填充空值。填充空值时，先选择编辑-查找-定位，选择空值，即可选择所有空值。然后在输入值区域输入要填充的值比如0，按CTRL+Enter即可全部填充。数据按照试题关系粘贴好之后，会产生很多空白区域，可以用半角空格替换空白区域。然后将所有数据拷贝到文本编辑器中，用空值替换所有分隔符。然后把所有数据作为文本粘贴到EXCEL中添加学生编号和组别即可，再略微编辑即可。  </p>
 
@@ -771,7 +843,31 @@
       
           <p>这个时代变化太快。技术、产业革新周期越来越短，短到可怕。行业竞争正在从数量竞争转向质量竞争。谁还在按照惯性而行，谁就注定被惯性束缚，被体制牵绊。这是个最好的时代，因为万事皆可能。这也是一个最坏的的时代，因为你面临选择，面临无限多个选择，选择的机会成本无限飙升，时间成为最后稀缺资源和最昂贵的成本。未来是个超级岔路口，你是否能掌握住自己的命运，关键在于你现在的选择，关键在于你如何花费你的时间。时间就生命。  </p>
 <p>在短暂的研究生学习期间，你可以集中精力尝试按照下面的进阶路径发展自己的科研能力，也能为你节约宝贵的时间。5个水平具有先后顺序，你一定要从1到5，不要轻易越级，每个水平中有3项任务，建议全部完成后再挑战下一个水平的任务。当然你还可以利用这个水平等级任务估计自己所处的水平，然后再次出发。   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Level 1：在详细指导下参与项目工作</span><br><span class="line">* 按照给定要求收集数据</span><br><span class="line">* 按照给定格式录入数据</span><br><span class="line">* 对给定资料进行翻译</span><br><span class="line"></span><br><span class="line">Level 2：在指定任务要求下开展工作</span><br><span class="line">* 就给定主题收集、整理资料或者独立做一次访谈</span><br><span class="line">* 就给定文献库撰写文章概要</span><br><span class="line">* 按照APA要求完善论文格式</span><br><span class="line"></span><br><span class="line">Level 3：独立进行信息加工和概括</span><br><span class="line">* 撰写文献综述</span><br><span class="line">* 撰写读书报告</span><br><span class="line">* 撰写数据分析报告</span><br><span class="line"></span><br><span class="line">Level 4：在具体提示下开展研究工作</span><br><span class="line">* 提出研究问题，并制订研究计划</span><br><span class="line">* 尝试编制研究工具，并修改完善</span><br><span class="line">* 撰写研究计划书</span><br><span class="line"></span><br><span class="line">Level 5：在方向性提示下完成研究工作</span><br><span class="line">* 结合文献、研究结果、现状撰写论文（标题 摘要 关键词 前言 </span><br><span class="line">  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）</span><br><span class="line">* 在公共场合独立介绍和展示自己的研究工作并交流讨论</span><br><span class="line">* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护</span><br></pre></td></tr></table></figure>
+<pre><code>Level 1：在详细指导下参与项目工作
+* 按照给定要求收集数据
+* 按照给定格式录入数据
+* 对给定资料进行翻译
+
+Level 2：在指定任务要求下开展工作
+* 就给定主题收集、整理资料或者独立做一次访谈
+* 就给定文献库撰写文章概要
+* 按照APA要求完善论文格式
+
+Level 3：独立进行信息加工和概括
+* 撰写文献综述
+* 撰写读书报告
+* 撰写数据分析报告
+
+Level 4：在具体提示下开展研究工作
+* 提出研究问题，并制订研究计划
+* 尝试编制研究工具，并修改完善
+* 撰写研究计划书
+
+Level 5：在方向性提示下完成研究工作
+* 结合文献、研究结果、现状撰写论文（标题 摘要 关键词 前言 
+  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）
+* 在公共场合独立介绍和展示自己的研究工作并交流讨论
+* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护</code></pre>
 
       
     </div>
@@ -832,8 +928,11 @@
       
           <p>首先在网页上新建项目：new Repository  </p>
 <p>然后在本地：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;lukezhg&#x2F;space-craft.git</span><br><span class="line">cd space-craft</span><br><span class="line">git add .</span><br><span class="line">git commit  -m &quot;save space craft&quot;</span><br><span class="line">git push -u origin master #需要输入用户名和密码</span><br></pre></td></tr></table></figure>
-
+<pre><code>    git clone https://github.com/lukezhg/space-craft.git
+    cd space-craft
+    git add .
+    git commit  -m &quot;save space craft&quot;
+    git push -u origin master #需要输入用户名和密码</code></pre>
 
       
     </div>
@@ -1072,12 +1171,25 @@
 <p>找到的一篇貌似实用的讨论：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8">https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</a>  </p>
 <p>但是试过了对我无效。   </p>
 <p>回顾一下问题出现的原因，首先出现错误代码是：   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Liquid Exception: Unknown tag &#39;static&#39; in</span><br></pre></td></tr></table></figure>
-
+<pre><code>Liquid Exception: Unknown tag &#39;static&#39; in</code></pre>
 <p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。   </p>
 <p>解决的方式是： 利用 raw 和 endraw标记。如下：   </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">    <span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//W3C//DTD HTML 4.01//EN&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>&#123;% block title %&#125;&#123;% endblock %&#125;<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>My helpful timestamp site<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        &#123;% block content %&#125;&#123;% endblock %&#125;</span><br><span class="line">        &#123;% block footer %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>Thanks for visiting my site.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        &#123;% endblock %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="html">
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+    <html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <h1>My helpful timestamp site</h1>
+        {% block content %}{% endblock %}
+        {% block footer %}
+        <hr>
+        <p>Thanks for visiting my site.</p>
+        {% endblock %}
+    </body>
+    </html>
+</code></pre>
 <p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。  </p>
 <p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：   </p>
 <pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT</code></pre>
