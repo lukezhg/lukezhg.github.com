@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一、数据的格式   DATA   KEY  1111111111111111111111111111111111111111111111111111111111111111111    NOT                                                                         40001 1 01111101111111111101111">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IRT BILOG equating notes">
+<meta property="og:url" content="http://zhangchunlei.com/irt-bilog-notes/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:description" content="一、数据的格式   DATA   KEY  1111111111111111111111111111111111111111111111111111111111111111111    NOT                                                                         40001 1 01111101111111111101111">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-02-03T07:55:00.000Z">
+<meta property="article:modified_time" content="2018-02-09T10:26:59.000Z">
+<meta property="article:author" content="Chunlei Zhang">
+<meta property="article:tag" content="IRT">
+<meta property="article:tag" content="BILOG">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://zhangchunlei.com/irt-bilog-notes/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>IRT BILOG equating notes | Chunlei's BLog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/irt-bilog-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          IRT BILOG equating notes
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-02-03 15:55:00" itemprop="dateCreated datePublished" datetime="2018-02-03T15:55:00+08:00">2018-02-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-02-09 18:26:59" itemprop="dateModified" datetime="2018-02-09T18:26:59+08:00">2018-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IRT/" itemprop="url" rel="index"><span itemprop="name">IRT</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IRT/BILOG/" itemprop="url" rel="index"><span itemprop="name">BILOG</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>一、数据的格式  </p>
+<p>DATA  </p>
+<pre><code>KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+NOT                                                                        
+40001 1 011111011111111111011111011                                        
+45137 1 011011111111011000001001100                                        
+60001 2                     111111101101000111011110111                    
+60002 2                     110011100000001001100110111                    
+82913 3                                         111111011111000111000001111
+82914 3                                         111111001110100000000101111</code></pre>
+<p>注释：<br>第一列是答案。第二列是NOT。第三列开始都是数据。  </p>
+<p>二、命令文件  </p>
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (67);
+&gt;INPUT NTOtal = 67, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M67);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)67);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 27, 
+        INUmbers = (1(1)27);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 27, 
+        INUmbers = (21(1)47);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 27, 
+        INUmbers = (41(1)67);
+(5A1,1X,I1,1X,67A1)
+&gt;CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+&gt;SCORE IDIst = 3, RSCtype = 3, NOPrint;</code></pre>
+<p>三、输出文件<br>data.PAR–&gt;试题参数文件。<br>data.SCO–&gt;学生成绩文件。<br>data.PH1–&gt;经典测量理论参数，如原始分，正答率，相关系数等。<br>data.PH2–&gt;模型和试题参数。<br>data.PH3–&gt;rescaled 试题参数。  </p>
+<p>案例2   </p>
+<p>混合数据<br>即有三卷共有题目，也有两卷共有题目，当然也包括一卷独有题目。  </p>
+<pre><code>40001 1 1110111111011011111111011111011                                        
+40002 1 0110110111111001111111101111101                                        
+60001 2 0111                    111111100110011001111110111                    
+60002 2 1101                    110011101000000010100110111                    
+80001 3 1001                                        110110010000001000000000000
+80002 3 0101                                        111000000100001000000000110</code></pre>
+<p>BLM文件  </p>
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (71);
+&gt;INPUT NTOtal = 71, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M71);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)71);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)31);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,25(1)51);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,45(1)71);
+(5A1,1X,I1,1X,71A1)
+&gt;CALIB NQPt = 71, 
+       CYCles = 30, 
+       REFerence = 2, 
+       TPRior;
+&gt;SCORE IDIst = 3, 
+       RSCtype = 3, 
+       NOPrint;</code></pre>
+<p>解释说明：<br>Group2中INUmbers = (1(1)4,25(1)51);#表示一部分共有题目是1(1)4，另外一部分共有题目是25(1)51，中间用“,”间隔。<br>操作技巧：<br>1、BILOG输出文件可以使用双空格置换为单空格，最后将所有空格置换为分隔符，然后粘贴到EXCEL中即可。  </p>
+<p>2、构建数据文件时，首先需要在EXCEL中构建数据结构，原始数据不要有空值，如有有空值提前用0或者9填充空值。填充空值时，先选择编辑-查找-定位，选择空值，即可选择所有空值。然后在输入值区域输入要填充的值比如0，按CTRL+Enter即可全部填充。数据按照试题关系粘贴好之后，会产生很多空白区域，可以用半角空格替换空白区域。然后将所有数据拷贝到文本编辑器中，用空值替换所有分隔符。然后把所有数据作为文本粘贴到EXCEL中添加学生编号和组别即可，再略微编辑即可。  </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/IRT/" rel="tag"># IRT</a>
+              <a href="/tags/BILOG/" rel="tag"># BILOG</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/from-ai-to-ia/" rel="prev" title="From AI to IA">
+      <i class="fa fa-chevron-left"></i> From AI to IA
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/bow-keyboard-shortcut-for-mac/" rel="next" title="bow keyboard shortcut for mac">
+      bow keyboard shortcut for mac <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+</body>
+</html>

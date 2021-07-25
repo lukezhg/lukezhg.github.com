@@ -1,1275 +1,1860 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/9/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
-</head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/9/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                刹那是永恒
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/02/22/bow-keyboard-shortcut-for-mac/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="bow keyboard shortcut for mac">
-                            
-                            <span class="card-title">bow keyboard shortcut for mac</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                bow键盘控制mac快捷键
-存在的问题：该键盘的方向键没有被识别，但是打字并不影响。但是如何尽可能少的使用鼠标，多使用键盘。那么就需要设置和熟悉相应的快捷键。
-1、切换程序或窗口command（win）+tab：切换程序，然后鼠标选择相应的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-02-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%94%B5%E8%84%91%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    电脑技巧
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mac/">
-                            <span class="chip bg-color">mac</span>
-                        </a>
-                        
-                        <a href="/tags/keyboard/">
-                            <span class="chip bg-color">keyboard</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/02/03/irt-bilog-notes/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="IRT BILOG equating notes">
-                            
-                            <span class="card-title">IRT BILOG equating notes</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、数据的格式  
-DATA  
-KEY  1111111111111111111111111111111111111111111111111111111111111111111   
-NOT                        
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-02-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/IRT/" class="post-category">
-                                    IRT
-                                </a>
-                                
-                                <a href="/categories/IRT/BILOG/" class="post-category">
-                                    BILOG
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/IRT/">
-                            <span class="chip bg-color">IRT</span>
-                        </a>
-                        
-                        <a href="/tags/BILOG/">
-                            <span class="chip bg-color">BILOG</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/01/21/from-ai-to-ia/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="From AI to IA">
-                            
-                            <span class="card-title">From AI to IA</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                AI stands for Artificial Intelligence.IA stands for Intellectual Assistant. 
-We don’t need AI. We need IA.  
-AI sounds a
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-01-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/AI/">
-                            <span class="chip bg-color">AI</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/01/14/research-task-level/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="研究生科研能力进阶">
-                            
-                            <span class="card-title">研究生科研能力进阶</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这个时代变化太快。技术、产业革新周期越来越短，短到可怕。行业竞争正在从数量竞争转向质量竞争。谁还在按照惯性而行，谁就注定被惯性束缚，被体制牵绊。这是个最好的时代，因为万事皆可能。这也是一个最坏的的时代，因为你面临选择，面临无限多个选择，选择
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-01-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%A7%91%E7%A0%94/" class="post-category">
-                                    科研
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/01/12/use-github-to-save-your-code/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="use github to save your code">
-                            
-                            <span class="card-title">use github to save your code</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                首先在网页上新建项目：new Repository  
-然后在本地：  
-git clone https:&#x2F;&#x2F;github.com&#x2F;lukezhg&#x2F;space-craft.git
-cd space-c
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-01-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/01/09/sandwith-style-working/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="做事的三明治法则">
-                            
-                            <span class="card-title">做事的三明治法则</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                首先，做一件具体而简单的事   
-然后，做一件明确但是有挑战的事  
-再然后，做一件不明确但是简单的事  
-再然后，做一件不明确而且复杂的事  
-最后，做一件明确而简单的事  
-做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难拿的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-01-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%8F%8D%E6%80%9D/" class="post-category">
-                                    反思
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/sandwith/">
-                            <span class="chip bg-color">sandwith</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/01/05/life-algorithm/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="人生算法">
-                            
-                            <span class="card-title">人生算法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                生命是一种形式的传承。一旦无法传承，就意味着生命的终结。而决定其命运的就是其核心算法。  
-生物如此，人也是如此。作为种族如此，作为个体也是如此。  
-1、做正确的事。有人把成功的秘诀归结为一句话：做正确的事。找工作也好，找女朋友也好，创业
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-01-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%8F%8D%E6%80%9D/" class="post-category">
-                                    反思
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/12/31/octopress-update/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="octopress update">
-                            
-                            <span class="card-title">octopress update</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                升级导致的问题。  
-octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。  
-找到的一篇貌似实用的讨论：https://stackoverflow.com/questions/5286
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-31
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/12/31/django-cheat-sheet/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Django cheat sheet">
-                            
-                            <span class="card-title">Django cheat sheet</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：  
-mkvirtualenv DjangoApp
-要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-31
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/computer/" class="post-category">
-                                    computer
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/python/">
-                            <span class="chip bg-color">python</span>
-                        </a>
-                        
-                        <a href="/tags/django/">
-                            <span class="chip bg-color">django</span>
-                        </a>
-                        
-                        <a href="/tags/virtualenv/">
-                            <span class="chip bg-color">virtualenv</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/12/30/mysql-charset-admin-django/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql charset admin django">
-                            
-                            <span class="card-title">mysql charset admin django</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                中文乱码永远是程序猿的痛！！  
-今天使用django-admin就遇到了乱码问题，是仿照django book的model用法，做一个资源管理平台出现的问题。  
-代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/computer/" class="post-category">
-                                    computer
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql/">
-                            <span class="chip bg-color">mysql</span>
-                        </a>
-                        
-                        <a href="/tags/charset/">
-                            <span class="chip bg-color">charset</span>
-                        </a>
-                        
-                        <a href="/tags/django-admin/">
-                            <span class="chip bg-color">django-admin</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/12/29/swf-send-data-to-java-script/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Swf send data to Java Script">
-                            
-                            <span class="card-title">Swf send data to Java Script</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：1、首先在html网页中通过object嵌入swf文件  
-&#123;% raw %&#125;
-    &lt;body&gt;
- 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/computer/" class="post-category">
-                                    computer
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/flash/">
-                            <span class="chip bg-color">flash</span>
-                        </a>
-                        
-                        <a href="/tags/swf/">
-                            <span class="chip bg-color">swf</span>
-                        </a>
-                        
-                        <a href="/tags/JS/">
-                            <span class="chip bg-color">JS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/12/18/the-writing-tips-of-the-story-coco/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="《寻梦环游记》的故事元素">
-                            
-                            <span class="card-title">《寻梦环游记》的故事元素</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                皮克斯制作的动画比如《玩具总动员》，《汽车总动员》，《头脑特工队》都深受观众喜爱。这次又出了新作《寻梦环游记》不仅获得了很高的票房，而且也得到了观众和影评人的一致好评。皮克斯成功的秘诀是什么呢？公司老总给出的答案是：故事、故事还是故事。  
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%86%99%E4%BD%9C/" class="post-category">
-                                    写作
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/film/">
-                            <span class="chip bg-color">film</span>
-                        </a>
-                        
-                        <a href="/tags/story/">
-                            <span class="chip bg-color">story</span>
-                        </a>
-                        
-                        <a href="/tags/COCO/">
-                            <span class="chip bg-color">COCO</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/8/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">9 / 43</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/10/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/bow-keyboard-shortcut-for-mac/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/bow-keyboard-shortcut-for-mac/" class="post-title-link" itemprop="url">bow keyboard shortcut for mac</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2018-02-22 22:11:00 / 修改时间：22:13:39" itemprop="dateCreated datePublished" datetime="2018-02-22T22:11:00+08:00">2018-02-22</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%B5%E8%84%91%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">电脑技巧</span></a>
+                </span>
             </span>
-            
-            <br>
-            
-            <br>
-            
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>bow键盘控制mac快捷键</p>
+<p>存在的问题：该键盘的方向键没有被识别，但是打字并不影响。但是如何尽可能少的使用鼠标，多使用键盘。那么就需要设置和熟悉相应的快捷键。</p>
+<p>1、切换程序或窗口<br>command（win）+tab：切换程序，然后鼠标选择相应的程序</p>
+<p>2、切换窗口、或者切换到桌面<br>ctrl+向上方向键：然后鼠标选择也可以切换窗口或者切换到桌面</p>
+<p>command（win）+W：关闭窗口</p>
+<p>3、利用触发角切换<br>ALT+向上箭头：向左移动窗口<br>WIN+向上箭头：向右移动窗口</p>
+<p>左上角：mission control 相当于切换到桌面<br>左下角：lanch pad 切换到程序面板<br>右上角：Dash pad  切换到任务面板</p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/irt-bilog-notes/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/irt-bilog-notes/" class="post-title-link" itemprop="url">IRT BILOG equating notes</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-02-03 15:55:00" itemprop="dateCreated datePublished" datetime="2018-02-03T15:55:00+08:00">2018-02-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-02-09 18:26:59" itemprop="dateModified" datetime="2018-02-09T18:26:59+08:00">2018-02-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IRT/" itemprop="url" rel="index"><span itemprop="name">IRT</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IRT/BILOG/" itemprop="url" rel="index"><span itemprop="name">BILOG</span></a>
+                </span>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一、数据的格式  </p>
+<p>DATA  </p>
+<pre><code>KEY  1111111111111111111111111111111111111111111111111111111111111111111   
+NOT                                                                        
+40001 1 011111011111111111011111011                                        
+45137 1 011011111111011000001001100                                        
+60001 2                     111111101101000111011110111                    
+60002 2                     110011100000001001100110111                    
+82913 3                                         111111011111000111000001111
+82914 3                                         111111001110100000000101111</code></pre>
+<p>注释：<br>第一列是答案。第二列是NOT。第三列开始都是数据。  </p>
+<p>二、命令文件  </p>
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (67);
+&gt;INPUT NTOtal = 67, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M67);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)67);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 27, 
+        INUmbers = (1(1)27);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 27, 
+        INUmbers = (21(1)47);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 27, 
+        INUmbers = (41(1)67);
+(5A1,1X,I1,1X,67A1)
+&gt;CALIB NQPt = 51, CYCles = 30, REFerence = 2, TPRior;
+&gt;SCORE IDIst = 3, RSCtype = 3, NOPrint;</code></pre>
+<p>三、输出文件<br>data.PAR–&gt;试题参数文件。<br>data.SCO–&gt;学生成绩文件。<br>data.PH1–&gt;经典测量理论参数，如原始分，正答率，相关系数等。<br>data.PH2–&gt;模型和试题参数。<br>data.PH3–&gt;rescaled 试题参数。  </p>
+<p>案例2   </p>
+<p>混合数据<br>即有三卷共有题目，也有两卷共有题目，当然也包括一卷独有题目。  </p>
+<pre><code>40001 1 1110111111011011111111011111011                                        
+40002 1 0110110111111001111111101111101                                        
+60001 2 0111                    111111100110011001111110111                    
+60002 2 1101                    110011101000000010100110111                    
+80001 3 1001                                        110110010000001000000000000
+80002 3 0101                                        111000000100001000000000110</code></pre>
+<p>BLM文件  </p>
+<pre><code>EXAMPL05.BLM - VERTICAL EQUATING OF TEST FORMS OVER THREE GRADE LEVELS
+
+&gt;COMMENT
+Science test equating
+&gt;GLOBAL DFName = &#39;data.DAT&#39;, 
+        NPArm = 2, 
+        SAVe;
+&gt;SAVE PARm = &#39;data.PAR&#39;, 
+      SCOre = &#39;data.SCO&#39;, 
+      TSTat = &#39;data.TST&#39;;
+&gt;LENGTH NITems = (71);
+&gt;INPUT NTOtal = 71, 
+       NIDchar = 5, 
+       NGRoup = 3, 
+       KFName = &#39;data.DAT&#39;, 
+       NFName = &#39;data.DAT&#39;;
+&gt;ITEMS INAmes = (M01(1)M71);
+&gt;TEST1 TNAme = &#39;SCIT&#39;, 
+       INUmber = (1(1)71);
+&gt;GROUP1 GNAme = &#39;GRADE 4&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)31);
+&gt;GROUP2 GNAme = &#39;GRADE 6&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,25(1)51);
+&gt;GROUP3 GNAme = &#39;GRADE 8&#39;, 
+        LENgth = 31, 
+        INUmbers = (1(1)4,45(1)71);
+(5A1,1X,I1,1X,71A1)
+&gt;CALIB NQPt = 71, 
+       CYCles = 30, 
+       REFerence = 2, 
+       TPRior;
+&gt;SCORE IDIst = 3, 
+       RSCtype = 3, 
+       NOPrint;</code></pre>
+<p>解释说明：<br>Group2中INUmbers = (1(1)4,25(1)51);#表示一部分共有题目是1(1)4，另外一部分共有题目是25(1)51，中间用“,”间隔。<br>操作技巧：<br>1、BILOG输出文件可以使用双空格置换为单空格，最后将所有空格置换为分隔符，然后粘贴到EXCEL中即可。  </p>
+<p>2、构建数据文件时，首先需要在EXCEL中构建数据结构，原始数据不要有空值，如有有空值提前用0或者9填充空值。填充空值时，先选择编辑-查找-定位，选择空值，即可选择所有空值。然后在输入值区域输入要填充的值比如0，按CTRL+Enter即可全部填充。数据按照试题关系粘贴好之后，会产生很多空白区域，可以用半角空格替换空白区域。然后将所有数据拷贝到文本编辑器中，用空值替换所有分隔符。然后把所有数据作为文本粘贴到EXCEL中添加学生编号和组别即可，再略微编辑即可。  </p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/from-ai-to-ia/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/from-ai-to-ia/" class="post-title-link" itemprop="url">From AI to IA</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-21 16:57:00" itemprop="dateCreated datePublished" datetime="2018-01-21T16:57:00+08:00">2018-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-01-22 21:23:46" itemprop="dateModified" datetime="2018-01-22T21:23:46+08:00">2018-01-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>AI stands for Artificial Intelligence.<br>IA stands for Intellectual Assistant. </p>
+<p>We don’t need AI. We need IA.  </p>
+<p>AI sounds amazing but hard to understand for common computer users. Even for programers it take time and effort to fully understand and make use of AI power.   </p>
+<p>AI includes many sub-feilds, such as machine learning, natural language processing, expert system and so on. As an amateur programer, what I really need is not AI but an assisstant to help me learn and work. I call it intellectural assisstant (IA).  </p>
+<p>IA make use of AI power to recognize friends’ faces, remember ceremony days, record your life experiences and predict your personal needs and action. IA is not a technology method, it is your personal smart accompany.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/research-task-level/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/research-task-level/" class="post-title-link" itemprop="url">研究生科研能力进阶</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2018-01-14 08:08:00 / 修改时间：08:31:45" itemprop="dateCreated datePublished" datetime="2018-01-14T08:08:00+08:00">2018-01-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">科研</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这个时代变化太快。技术、产业革新周期越来越短，短到可怕。行业竞争正在从数量竞争转向质量竞争。谁还在按照惯性而行，谁就注定被惯性束缚，被体制牵绊。这是个最好的时代，因为万事皆可能。这也是一个最坏的的时代，因为你面临选择，面临无限多个选择，选择的机会成本无限飙升，时间成为最后稀缺资源和最昂贵的成本。未来是个超级岔路口，你是否能掌握住自己的命运，关键在于你现在的选择，关键在于你如何花费你的时间。时间就生命。  </p>
+<p>在短暂的研究生学习期间，你可以集中精力尝试按照下面的进阶路径发展自己的科研能力，也能为你节约宝贵的时间。5个水平具有先后顺序，你一定要从1到5，不要轻易越级，每个水平中有3项任务，建议全部完成后再挑战下一个水平的任务。当然你还可以利用这个水平等级任务估计自己所处的水平，然后再次出发。   </p>
+<pre><code>Level 1：在详细指导下参与项目工作
+* 按照给定要求收集数据
+* 按照给定格式录入数据
+* 对给定资料进行翻译
+
+Level 2：在指定任务要求下开展工作
+* 就给定主题收集、整理资料或者独立做一次访谈
+* 就给定文献库撰写文章概要
+* 按照APA要求完善论文格式
+
+Level 3：独立进行信息加工和概括
+* 撰写文献综述
+* 撰写读书报告
+* 撰写数据分析报告
+
+Level 4：在具体提示下开展研究工作
+* 提出研究问题，并制订研究计划
+* 尝试编制研究工具，并修改完善
+* 撰写研究计划书
+
+Level 5：在方向性提示下完成研究工作
+* 结合文献、研究结果、现状撰写论文（标题 摘要 关键词 前言 
+  研究基础 研究方法 研究结果 结论和讨论 研究建议 参考文献 附录 致谢）
+* 在公共场合独立介绍和展示自己的研究工作并交流讨论
+* 在答辩会上有理有据的陈述研究工作，并针对提问作出合理的辩护</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/use-github-to-save-your-code/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/use-github-to-save-your-code/" class="post-title-link" itemprop="url">use github to save your code</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2018-01-12 21:34:00 / 修改时间：21:40:00" itemprop="dateCreated datePublished" datetime="2018-01-12T21:34:00+08:00">2018-01-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>首先在网页上新建项目：new Repository  </p>
+<p>然后在本地：  </p>
+<pre><code>    git clone https://github.com/lukezhg/space-craft.git
+    cd space-craft
+    git add .
+    git commit  -m &quot;save space craft&quot;
+    git push -u origin master #需要输入用户名和密码</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/sandwith-style-working/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/sandwith-style-working/" class="post-title-link" itemprop="url">做事的三明治法则</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-09 08:55:00" itemprop="dateCreated datePublished" datetime="2018-01-09T08:55:00+08:00">2018-01-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-01-11 19:22:34" itemprop="dateModified" datetime="2018-01-11T19:22:34+08:00">2018-01-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8F%8D%E6%80%9D/" itemprop="url" rel="index"><span itemprop="name">反思</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>首先，做一件具体而简单的事   </p>
+<p>然后，做一件明确但是有挑战的事  </p>
+<p>再然后，做一件不明确但是简单的事  </p>
+<p>再然后，做一件不明确而且复杂的事  </p>
+<p>最后，做一件明确而简单的事  </p>
+<p>做事就好像我们吃三明治一样，容易拿在手上的面包放在两边，难拿的肉馅蔬菜放在里边。  </p>
+<p>这样做的好处是，容易形成积极的成功经验，有适当的缓冲，不容易望而生畏。  </p>
+<p>当然，最好的做事原则仍然是：要事第一。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/life-algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/life-algorithm/" class="post-title-link" itemprop="url">人生算法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-01-05 14:41:00" itemprop="dateCreated datePublished" datetime="2018-01-05T14:41:00+08:00">2018-01-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-01-07 17:44:32" itemprop="dateModified" datetime="2018-01-07T17:44:32+08:00">2018-01-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8F%8D%E6%80%9D/" itemprop="url" rel="index"><span itemprop="name">反思</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>生命是一种形式的传承。一旦无法传承，就意味着生命的终结。而决定其命运的就是其核心算法。  </p>
+<p>生物如此，人也是如此。作为种族如此，作为个体也是如此。  </p>
+<p>1、做正确的事。<br>有人把成功的秘诀归结为一句话：做正确的事。找工作也好，找女朋友也好，创业也罢，要想成功就要能够在正确的时间、正确的地点、做正确的事。   </p>
+<p>现实是我们经常做错事儿，更糟糕的是做错了事还不自知。它就像一个牢笼，让你与成功失之交臂。  </p>
+<p>如何改变这种状态呢？这就需要改良你的人生算法。  </p>
+<p>2、人生算法<br>如果生命的本质是形式的传承，那么决定传承规律的就是生命的核心算法，它相当于你的DNA。实际上犯错并不可怕，世上没有人不犯错，关键是犯错能改。  </p>
+<p>因此能改和不能改才是关键。人的生命活动就是不断与外界环境交互的过程中迭代。有些算法会让你不断自我升级，有些算法则会让你沉入死循环。  </p>
+<p>那么，什么东西决定你自我迭代中能改还是不能改呢？答案是有目的行动。   </p>
+<p>3、有目的的行动<br>你可能会说，我做任何事情都是有目的的。事实可能的确如此，你追剧是为了娱乐和打发时间，你游泳是为了锻炼身体，你熬夜是为了赶工作，你查看朋友圈是为了增进友谊，但是你发现没有你做的诸多事情的目的是各不相同的，它们各自为政，甚至相互矛盾。在如今事情总是赶不完的情况下，如果你不会计划和选择，那么你将杂事缠身、迷失自我，更是达不到你自己的人生目标。因此，有目的的行动，统领自己的行为，并监控自己执行是一个非常关键而有挑战性任务。因为，你可能会随时被打扰、被中断、被牵绊、被拐骗，因此最重要不是管理时间，而是管理你自己，不是认识世界，而是认识你自己。</p>
+<p>人人都以为这些都是自己能做主的，只要自己有决心就一定能行。但实际上，并不是如此简单。比如减肥就是一个最好的例子，有多少人能真正减肥成功的呢？但是不是我们就无所作为了呢，也不是，问题在于我们要找到自己的核心算法，找到算法的bug，然后再加以修正和完善，就好比基因治疗。  </p>
+<p>4、人生算法的套路<br>核心算法包含：目标选择、任务计划、执行策略、检验反馈。<br>APAF（Aim Plan Action Feedback）    </p>
+<p>目标：认识自我，找到真正想要的，才能做出正确的目标选择，活出自己的人生。  </p>
+<p>计划：设计可行的任务路径和计划，才能逼近目标直到目标达成。任务的可行性和灵活性是关键。  </p>
+<p>行动：在执行任务的时候，需要采用合理的策略应对自身和环境的变化。比如合适的自我监控机制和环境变化应对策略等。  </p>
+<p>反馈：明确目标达成的检验方法和反馈机制才能激励自己实现目标。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/octopress-update/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/octopress-update/" class="post-title-link" itemprop="url">octopress update</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-31 23:46:00" itemprop="dateCreated datePublished" datetime="2017-12-31T23:46:00+08:00">2017-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-01-01 08:51:45" itemprop="dateModified" datetime="2018-01-01T08:51:45+08:00">2018-01-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>升级导致的问题。  </p>
+<p>octopress用了很长时间了，最进粘贴代码时遇到了一些问题，以为升级可以解决，但是升级却带了新的麻烦。  </p>
+<p>找到的一篇貌似实用的讨论：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8">https://stackoverflow.com/questions/5286117/incompatible-character-encodings-ascii-8bit-and-utf-8</a>  </p>
+<p>但是试过了对我无效。   </p>
+<p>回顾一下问题出现的原因，首先出现错误代码是：   </p>
+<pre><code>Liquid Exception: Unknown tag &#39;static&#39; in</code></pre>
+<p>原因是我潜入了html代码，rake以为我要render这些代码，结果误认为有一些非法tag，所以提示上面的错误。   </p>
+<p>解决的方式是： 利用 raw 和 endraw标记。如下：   </p>
+<pre class=" language-html"><code class="language-html">
+    <span class="token doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>{% block title %}{% endblock %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>My helpful timestamp site<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+        {% block content %}{% endblock %}
+        {% block footer %}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Thanks for visiting my site.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+        {% endblock %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>如果没有这个标记，系统就会渲染这些代码的效果，结果就是有未知tag错误。  </p>
+<p>我以为可以通过升级gem或者rake来解决这个问题，于是升级gem，升级时提示rake版本不够高。这时octopress还能正常工作。于是又安装了rvm和rake结果悲剧了。提示错误：   </p>
+<pre><code>Liquid error: incompatible character encodings: UTF-8 and ASCII-8BIT</code></pre>
+<p>这个错误很严重，直接rake generate吹产生错误的页面。   </p>
+<p>网上查的各种方法都没用，最后看自己的博客，发现一招删除rake： </p>
+<pre><code>sudo gem uninstall rake  </code></pre>
+<p>之后选择要删除的版本，我直接是删除所有高级版本，原因是我的octopress是5年前的，肯定和高级版本不合拍。于是试了一下，问题解决了！！   </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/django-cheat-sheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/django-cheat-sheet/" class="post-title-link" itemprop="url">Django cheat sheet</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-31 09:50:00" itemprop="dateCreated datePublished" datetime="2017-12-31T09:50:00+08:00">2017-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2018-01-01 15:29:02" itemprop="dateModified" datetime="2018-01-01T15:29:02+08:00">2018-01-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1、通过创建一个新的 virtualenv 为部署 Django 应用程序设置环境：  </p>
+<pre><code>mkvirtualenv DjangoApp</code></pre>
+<p>要退出新的 virtualenv，请使用 deactivate。您可以使用 workon 在环境之间切换。要加载或在 virtualenv 之间切换，请使用 workon 命令：  </p>
+<pre><code>workon DjangoApp</code></pre>
+<p>在您的当前环境中安装 Django   </p>
+<pre><code>pip install Django</code></pre>
+<p>2、使用 django-admin 命令创建项目  </p>
+<pre><code>django-admin startproject demoproject</code></pre>
+<p>3、进入demo project文件夹，使用python manage.py startapp 创建应用.  </p>
+<pre><code>cd demoproject
+python manage.py startapp demoapp</code></pre>
+<p>4、测试项目服务器，Ctrl+C退出服务器。  </p>
+<pre><code>python manage.py runserver</code></pre>
+<p>或者指定服务器ip和端口。  </p>
+<pre><code>python manage.py runserver 0.0.0.0:8000</code></pre>
+<p>5、创建超级用户用于登陆django admin后台管理平台。  </p>
+<pre><code>python manage.py createsuperuser admin</code></pre>
+<p>6、编辑设置文件和项目相关文件。<br>settings.py 控制项目参数。    </p>
+<pre><code>    INSTALLED_APPS = [
+        &#39;django.contrib.admin&#39;,
+        &#39;django.contrib.auth&#39;,
+        &#39;django.contrib.contenttypes&#39;,
+        &#39;django.contrib.sessions&#39;,
+        &#39;django.contrib.messages&#39;,
+        &#39;django.contrib.staticfiles&#39;,
+        &#39;clips&#39;,
+    ]
+
+    DATABASES = &#123;
+        &#39;default&#39;: &#123;
+            &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,#mysql.connector.django
+            &#39;USER&#39;: &#39;root&#39;,
+            &#39;PASSWORD&#39;: &#39;123456&#39;,
+            &#39;NAME&#39;: &#39;demoproject&#39;,
+            &#39;HOST&#39;: &#39;127.0.0.1&#39;,
+            &#39;PORT&#39;: &#39;3306&#39;,
+        &#125;
+    &#125;</code></pre>
+<p>urls.py 控制访问请求路径  </p>
+<pre><code>from django.conf.urls import url
+from django.contrib import admin
+from demoproject.views import hello
+urlpatterns = [
+    url(r&#39;^admin/&#39;, admin.site.urls),
+    url(r&#39;^hello/$&#39;, hello),
+]</code></pre>
+<p>views.py 控制访问请求的应答  </p>
+<pre><code>from django.http import HttpResponse
+def hello(request):
+    return HttpResponse(&quot;Hello world&quot;)</code></pre>
+<p>demoapp/models.py 控制数据结构（表格、变量、变量属性） </p>
+<pre><code>    from __future__ import unicode_literals
+    from django.db import models
+
+    class User(models.Model):
+        user_name = models.CharField(max_length=30)
+        password = models.CharField(max_length=40)
+        email = models.EmailField()
+        headshot = models.ImageField(upload_to=&#39;headshot&#39;,null=True,blank=True)
+        brief = models.CharField(max_length=100)
+        join_date = models.DateField()
+        user_star = models.CharField(max_length=30)
+        def __unicode__(self):
+            return self.user_name
+    ......</code></pre>
+<p>demoapp/admin.py 控制后台注册和数据呈现  </p>
+<pre><code>    from __future__ import unicode_literals
+    from django.contrib import admin
+    from .models import User, Clip, Link
+    import sys;  
+    reload(sys);  
+    sys.setdefaultencoding(&quot;utf8&quot;)
+
+    class UserAdmin(admin.ModelAdmin):
+        list_display = (&#39;user_name&#39;, &#39;password&#39;, &#39;email&#39;)
+        search_fields = (&#39;user_name&#39;, &#39;email&#39;)
+    ......
+    admin.site.register(User,UserAdmin)
+    ......</code></pre>
+<p>7、当你修改models.py时，需要通过makemigrations将修改反应到数据库中去。  </p>
+<pre><code>python manage.py makemigrations
+python manage.py migrate</code></pre>
+<p>8、利用template来呈现页面。  </p>
+<p>首先要修改settings.py  </p>
+<pre><code>TEMPLATES = [
+    &#123;
+        &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+        &#39;DIRS&#39;: [os.path.join(BASE_DIR,&#39;templates&#39;)],
+        &#39;APP_DIRS&#39;: True,
+        &#39;OPTIONS&#39;: &#123;
+            # ...</code></pre>
+<p>接下来建文件夹templates  </p>
+<pre><code>\demoproject
+    \demoproject
+    \demoapp
+    \templates
+    manage.py</code></pre>
+<p>修改demoproject\views.py  </p>
+<pre><code>from django.shortcuts import render
+import datetime
+def current_datetime(request):
+    now = datetime.datetime.now()
+    return render(request, &#39;current_datetime.html&#39;, &#123;&#39;current_date&#39;: now&#125;)</code></pre>
+<p>在templates文件夹，新建html模版文件current_datetime.html。  </p>
+<p>\mysite_project\mysite\templates\current_datetime.html</p>
+<pre><code>
+<html>
+    <body>
+        It is now {{ current_date }}
+    </body>
+</html>
+It is now {{ current_date }}.
+</code></pre>
+<p>模版的继承，比如我们建一个地层模版，然后在这个模版的基础上加载子模版，这样就可以避免重复。<br>参考：<a target="_blank" rel="noopener" href="https://djangobook.com/templates-in-views/">https://djangobook.com/templates-in-views/</a>  </p>
+<p>base.html  </p>
+<pre class=" language-html"><code class="language-html">
+<span class="token doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>{% block title %}{% endblock %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>My helpful timestamp site<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+    {% block content %}{% endblock %}
+    {% block footer %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Thanks for visiting my site.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    {% endblock %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>current_datetime.html  </p>
+<pre class=" language-html"><code class="language-html">
+{% extends "base.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>It is now {{ current_date }}.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+{% endblock %}
+</code></pre>
+<p>hours_ahead.html  </p>
+<pre class=" language-html"><code class="language-html">
+{% extends "base.html" %}
+{% block title %}Future time{% endblock %}
+{% block content %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+    In {{ hour_offset }} hour(s), it will be {{ next_time }}.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+{% endblock %}
+</code></pre>
+<p>9、利用form来获取用户数据。  </p>
+<p>mysite_project\mysite\books\templates\books\search_form.html</p>
+<pre class=" language-html"><code class="language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Search<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/search/<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>get<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>q<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>mysite\books\urls.py</p>
+<pre class=" language-python"><code class="language-python">    <span class="token keyword">from</span> django<span class="token punctuation">.</span>conf<span class="token punctuation">.</span>urls <span class="token keyword">import</span> url
+    <span class="token keyword">from</span> books <span class="token keyword">import</span> views
+    urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+        url<span class="token punctuation">(</span>r<span class="token string">'^search-form/$'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>search_form<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        url<span class="token punctuation">(</span>r<span class="token string">'^search/$'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>search<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span></code></pre>
+<p>mysite\urls.py</p>
+<pre class=" language-python"><code class="language-python">    <span class="token keyword">from</span> django<span class="token punctuation">.</span>conf<span class="token punctuation">.</span>urls <span class="token keyword">import</span> include<span class="token punctuation">,</span> url
+    urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token comment" spellcheck="true"># ...</span>
+        url<span class="token punctuation">(</span>r<span class="token string">'^'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span><span class="token string">'books.urls'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span></code></pre>
+<p>books\views.py</p>
+<pre><code>from django.shortcuts import render
+def search_form(request):
+    return render(request, &#39;books/search_form.html&#39;)
+def search(request):
+    if &#39;q&#39; in request.GET:
+        message = &#39;You searched for: %r&#39; % request.GET[&#39;q&#39;]
+    else:
+        message = &#39;You submitted an empty form.&#39;
+    return HttpResponse(message)</code></pre>
+<p>参考：<a target="_blank" rel="noopener" href="https://djangobook.com/django-forms/">https://djangobook.com/django-forms/</a>  </p>
+<p>定义表单类，更简洁的获取用户数据的方法。  </p>
+<p>mysite_project\mysite\mysite\forms.py</p>
+<pre class=" language-python"><code class="language-python">    <span class="token keyword">from</span> django <span class="token keyword">import</span> forms
+    <span class="token keyword">class</span> <span class="token class-name">ContactForm</span><span class="token punctuation">(</span>forms<span class="token punctuation">.</span>Form<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        subject <span class="token operator">=</span> forms<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        email <span class="token operator">=</span> forms<span class="token punctuation">.</span>EmailField<span class="token punctuation">(</span>required<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+        message <span class="token operator">=</span> forms<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>mysite_project\mysite\mysite\views.py</p>
+<pre class=" language-python"><code class="language-python">    <span class="token keyword">from</span> django<span class="token punctuation">.</span>http <span class="token keyword">import</span> Http404<span class="token punctuation">,</span> HttpResponse<span class="token punctuation">,</span> HttpResponseRedirect
+    <span class="token keyword">from</span> django<span class="token punctuation">.</span>shortcuts <span class="token keyword">import</span> render
+    <span class="token keyword">import</span> datetime
+    <span class="token keyword">from</span> mysite<span class="token punctuation">.</span>forms <span class="token keyword">import</span> ContactForm    
+    <span class="token keyword">from</span> django<span class="token punctuation">.</span>core<span class="token punctuation">.</span>mail <span class="token keyword">import</span> send_mail<span class="token punctuation">,</span> get_connection
+
+
+    <span class="token keyword">def</span> <span class="token function">contact</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> request<span class="token punctuation">.</span>method <span class="token operator">==</span> <span class="token string">'POST'</span><span class="token punctuation">:</span>
+            form <span class="token operator">=</span> ContactForm<span class="token punctuation">(</span>request<span class="token punctuation">.</span>POST<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> form<span class="token punctuation">.</span>is_valid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                cd <span class="token operator">=</span> form<span class="token punctuation">.</span>cleaned_data
+                con <span class="token operator">=</span> get_connection<span class="token punctuation">(</span><span class="token string">'django.core.mail.backends.console.EmailBackend'</span><span class="token punctuation">)</span>
+                send_mail<span class="token punctuation">(</span>
+                    cd<span class="token punctuation">[</span><span class="token string">'subject'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    cd<span class="token punctuation">[</span><span class="token string">'message'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    cd<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'email'</span><span class="token punctuation">,</span> <span class="token string">'noreply@example.com'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">[</span><span class="token string">'siteowner@example.com'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    connection<span class="token operator">=</span>con
+                <span class="token punctuation">)</span>
+                <span class="token keyword">return</span> HttpResponseRedirect<span class="token punctuation">(</span><span class="token string">'/contact/thanks/'</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            form <span class="token operator">=</span> ContactForm<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> render<span class="token punctuation">(</span>request<span class="token punctuation">,</span> <span class="token string">'contact_form.html'</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;'form': form&amp;#125;)</span></code></pre>
+<p>mysite_project\mysite\templates\contact_form.html</p>
+<pre class=" language-html"><code class="language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Contact us<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector">ul<span class="token class">.errorlist</span> </span><span class="token punctuation">{</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.errorlist</span> li </span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+            <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">1.2</span>em<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token number">0</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">4</span>px <span class="token number">5</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Contact us<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+    {% if form.errors %}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            Please correct the error{{ form.errors|pluralize }} below.
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    {% endif %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+            {{ form.as_table }}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+        {% csrf_token %}
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>10、urls进阶  </p>
+<p>\urls.py</p>
+<pre><code>from django.conf.urls import include, url
+from . import views
+urlpatterns = [
+    url(r&#39;^hello/$&#39;, views.hello),
+    url(r&#39;^time/$&#39;, views.current_datetime),
+          url(r&#39;^time/plus/(d&#123;1,2&#125;)/$&#39;, views.hours_ahead),
+]</code></pre>
+<p>\urls.py</p>
+<pre><code>from django.conf import settings
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r&#39;^$&#39;, views.homepage),
+    url(r&#39;^(\d&#123;4&#125;)/([a-z]&#123;3&#125;)/$&#39;, views.archive_month),
+]
+if settings.DEBUG:
+    urlpatterns += [url(r&#39;^debuginfo/$&#39;, views.debug),]</code></pre>
+<p>\urls.py</p>
+<pre><code>from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r&#39;^reviews/2003/$&#39;, views.special_case_2003),
+    url(r&#39;^reviews/([0-9]&#123;4&#125;)/$&#39;, views.year_archive),
+    url(r&#39;^reviews/([0-9]&#123;4&#125;)/([0-9]&#123;2&#125;)/$&#39;, views.month_archive),
+    url(r&#39;^reviews/([0-9]&#123;4&#125;)/([0-9]&#123;2&#125;)/([0-9]+)/$&#39;, views.review_detail),
+]</code></pre>
+<p>更多参考： <a target="_blank" rel="noopener" href="https://djangobook.com/advanced-views-urlconfs/">https://djangobook.com/advanced-views-urlconfs/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/mysql-charset-admin-django/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/mysql-charset-admin-django/" class="post-title-link" itemprop="url">mysql charset admin django</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-12-30 22:37:00 / 修改时间：23:11:55" itemprop="dateCreated datePublished" datetime="2017-12-30T22:37:00+08:00">2017-12-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>中文乱码永远是程序猿的痛！！  </p>
+<p>今天使用django-admin就遇到了乱码问题，是仿照<a target="_blank" rel="noopener" href="https://djangobook.com/adding-models-to-django-admin/">django book</a>的model用法，做一个资源管理平台出现的问题。  </p>
+<p>代码提示：mysql不能正确处理中文字符，于是一路google找到几个可能的解决措施：  </p>
+<p>1、修改admin.py</p>
+<pre><code>import sys;   
+reload(sys);  
+sys.setdefaultencoding(&quot;utf8&quot;) </code></pre>
+<p>这个办法曾经帮助我解决了chatbot项目的乱码问题。  </p>
+<p>2、修改mysql的配置文件/etc/my.cnf<br>方案一：  </p>
+<pre><code>[mysqld]
+character-set-server=utf8 
+[client]
+default-character-set=utf8 
+[mysql]
+default-character-set=utf8</code></pre>
+<p>方案二：utf8mb4兼容utf8，且比utf8能表示更多的字符，是utf8字符集的超集。所以现在一些新的业务，比如ISO等，会将MySQL数据库的字符集设置为utf8mb4。  </p>
+<pre><code>[client]  
+default-character-set=utf8mb4  
+
+[mysqld]  
+character-set-server = utf8mb4  
+collation-server = utf8mb4_unicode_ci  
+init_connect=&#39;SET NAMES utf8mb4&#39;  
+skip-character-set-client-handshake = true  
+
+[mysql]  
+default-character-set = utf8mb4  </code></pre>
+<p>3、关键还是要会使用命令诊断问题所在。<br>我的问题出在新建的数据库中表单变量的字符码设置不是utf8，后来把数据库drop掉，重新配置my.cnf文件，然后重建mysql数据库就没问题了。  </p>
+<p>4、常用的mysql命令和django命令。   </p>
+<pre><code>mysql -u db_user -p
+SHOW DATABASES;
+CREATE DATABASE blog_data;
+drop database mydb;
+SHOW DATABASES;</code></pre>
+<p>CTRL + D退出mysql。  </p>
+<p>通过show variables 命令查看字符编码，发现部分变量的编码果然不是utf8，难怪乱码。 </p>
+<pre><code>show variables like &#39;%char%’;</code></pre>
+<p>尝试重制响应的字符编码设置。</p>
+<pre><code>set character_set_server=utf8;
+set character_set_database=utf8;
+show variables like &#39;%char%’;</code></pre>
+<p>结果无效，于是进一步查看响应的数据库及其表单：  </p>
+<pre><code>use my_db;
+show tables;
+show full columns from table1; ／／这条命令可以看到table1中的变量情况，发现果然编码有问题。 </code></pre>
+<p>尝试修改这个表单中的变量设置,也就是my_db.table1表单中的my_var变量字符编码。</p>
+<pre><code>ALTER TABLE my_db.table1 MODIFY COLUMN my_var VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</code></pre>
+<p>错误代码位置发生了改变，这说明改动有效，于是重新建立数据库（见3）。  </p>
+<p>5、Django的一些命令。  </p>
+<pre><code>python manage.py createsuperuser #生成admin登陆的超级用户和密码
+python manage.py makemigrations #当更改model时，通过此命令把变动反应到数据库中
+python manage.py migrate</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/swf-send-data-to-java-script/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/swf-send-data-to-java-script/" class="post-title-link" itemprop="url">Swf send data to Java Script</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-12-29 19:21:00" itemprop="dateCreated datePublished" datetime="2017-12-29T19:21:00+08:00">2017-12-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-12-31 22:29:33" itemprop="dateModified" datetime="2017-12-31T22:29:33+08:00">2017-12-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Flash制作动画非常便捷，但是如何能够把用swf文件收集的数据发送給JS处理呢？下面是一个简单的例子：<br>1、首先在html网页中通过object嵌入swf文件  </p>
+<pre><code>
+    <body>
+    <object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400">
+    <param name="allowScriptAccess" value="sameDomain" /> 
+    <param name="movie" value="{% static "flash/test.swf" %}" />
+    </object>
+    </body>
+</code></pre>
+<p>2、在网页的头部嵌入要调用的函数hello  </p>
+<pre><code>    &lt;script&gt;
+        function hello(v)&#123; 
+            alert(&quot;hello: &quot;+v);
+            document.location.href = &#39;/search&#39;;
+        &#125; 
+        function thisMovie(movieName) &#123; 
+            if (navigator.appName.indexOf(&quot;Microsoft&quot;) != -1) &#123; 
+                return window[movieName] 
+            &#125; 
+            else &#123; 
+                return document[movieName] 
+            &#125; 
+        &#125;
+    &lt;/script&gt;</code></pre>
+<p>3、编辑fla文件，建立一个文本框txt1和一个提交submit按钮  </p>
+<pre><code>    package &#123;
+    import flash.net.*;
+    import flash.events.Event;
+    import flash.events.MouseEvent;
+    import flash.display.MovieClip;
+    import flash.external.ExternalInterface; 
+    public class test extends MovieClip &#123;
+        public function test(): void &#123;
+            submit.addEventListener(MouseEvent.CLICK, postForm);
+        &#125;
+        private function postForm(evt: MouseEvent): void &#123;
+            ExternalInterface.call(&quot;hello&quot;, txt1.text); 
+        &#125;
+    &#125;</code></pre>
+<p>4、实现的效果如下：<br>当你点击submit按钮时，swf文件会将txt1.text传递給hello函数，并且通过JS现实对话框“欢迎： 某某” 并且跳转到／search页面。  </p>
+<p>5、原理解释<br>fla文件中，导入了flash.external.ExternalInterface类，它是专门负责外部通信的。通过ExternalInterface.call方法，就可以调用object容器外部的函数hello。  </p>
+<p>6、JS调用AS函数的实现方法。<br>上面实现了AS调用JS并传递参数，那么反过来，JS是否可以调用AS函数呢？答案是肯定的。  </p>
+<p>AS类这样写：  </p>
+<pre><code>    package &#123;
+        import flash.net.*;
+        import flash.events.Event;
+        import flash.events.MouseEvent;
+        import flash.display.MovieClip;
+        import flash.external.ExternalInterface;
+
+        public class test extends MovieClip &#123;
+            public function test(): void &#123;
+                submit.addEventListener(MouseEvent.CLICK, postForm);
+                ExternalInterface.addCallback(&quot;say&quot;, say); //regist 
+            &#125;
+
+            private function say(txt: String) &#123;
+                txt2.text = txt;
+            &#125;
+
+            private function postForm(evt: MouseEvent): void &#123;
+                //call js function
+                ExternalInterface.call(&quot;hello&quot;, txt1.text);
+            &#125;
+        &#125;
+    &#125;</code></pre>
+<p>Html这样写：  </p>
+<pre class=" language-html"><code class="language-html">
+    <span class="token doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>As communicate with JS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+            <span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">{</span> 
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello: "</span><span class="token operator">+</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//document.location.href = '/search';</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">function</span> <span class="token function">thisMovie</span><span class="token punctuation">(</span>movieName<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>navigator<span class="token punctuation">.</span>appName<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"Microsoft"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                    <span class="token keyword">return</span> window<span class="token punctuation">[</span>movieName<span class="token punctuation">]</span> 
+                <span class="token punctuation">}</span> 
+                <span class="token keyword">else</span> <span class="token punctuation">{</span> 
+                    <span class="token keyword">return</span> document<span class="token punctuation">[</span>movieName<span class="token punctuation">]</span> 
+                <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span>
+            <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#btn1"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#test1"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#btn2"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#test2"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token string">"&lt;b>Hello world!&lt;/b>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#btn3"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token comment" spellcheck="true">//$("#test3").val("Dolly Duck");</span>
+                    <span class="token keyword">var</span> txt<span class="token operator">=</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#test3"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token function">thisMovie</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">say</span><span class="token punctuation">(</span>txt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+        &lt;object type="application/x-shockwave-flash" data="{% static "flash/test.swf" %}"  name="test" width="550" height="400">
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>param</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>allowScriptAccess<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sameDomain<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span> 
+        &lt;param name="movie" value="{% static "flash/test.swf" %}" />
+        &lt;embed src="{% static "flash/test.swf" %}" name="test" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash" width="550" height="400"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>embed</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>object</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This is a paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This is another paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Input field: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test3<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Mickey Mouse<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Set Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Set HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Set Value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>7、遗留的问题：这样的写法谷歌浏览器没问题，但是火狐浏览器不成功，也就是不能把参数传到swf上。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/the-writing-tips-of-the-story-coco/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/the-writing-tips-of-the-story-coco/" class="post-title-link" itemprop="url">《寻梦环游记》的故事元素</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-12-18 10:34:00 / 修改时间：11:24:31" itemprop="dateCreated datePublished" datetime="2017-12-18T10:34:00+08:00">2017-12-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%99%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">写作</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>皮克斯制作的动画比如《玩具总动员》，《汽车总动员》，《头脑特工队》都深受观众喜爱。这次又出了新作《寻梦环游记》不仅获得了很高的票房，而且也得到了观众和影评人的一致好评。皮克斯成功的秘诀是什么呢？公司老总给出的答案是：故事、故事还是故事。  </p>
+<p>郝广才曾经在得到直播专分享过英雄故事的写作元素。  </p>
+<pre><code>郝广才说，最动人的故事一定是和英雄有关的。
+掌握了英雄故事的结构，就能写好一个动人的故事。
+英雄故事的结构就像一个钟表盘上的12个刻度，
+分别是得到召唤，请求智者支援，启程迎接挑战，开始面对困难的试炼，然后面临恐惧，遭遇危机，接着得到宝物，解决问题，荣归故里，重获新生，获得领悟，最后舍弃功与名回到现实。</code></pre>
+<p>让我们看一看，《寻梦环游记》这部动画的故事情节是否能跟这12个刻度有一定的呼应。  </p>
+<p>发生：男孩喜欢音乐，梦想向歌王一样歌唱和演奏，但是他却生活在一个极度讨厌音乐的鞋匠世家。他听到镇上有一个才艺秀表演打算参加。【得到召唤】  </p>
+<p>活动和阻碍：男孩想听、想唱、想演奏，但是都被家人阻挠。他偷偷制造的吉他，结果被意外发现，也被祖母摔个稀巴烂。【面对阻挠】  </p>
+<p>发展：他一气之下逃离了家庭，准备追寻自己的梦想。为了参加比赛，他需要一把吉他，但是他借不到吉他。一个想法钻进他的脑子里，他想把歌王的吉他借出来演奏。【得到灵感】【启程迎接挑战】  </p>
+<p>转折：在祭奠歌王的宫殿，他拿到了吉他，但是却因为被诅咒而变成了亡灵。他来到了死人的世界。他遇到了自己家族中先去的亲人，并且见到了他的曾祖母。曾祖母可以通过一个祝福让他回到真实世界，但是却限制他玩音乐。【面对阻挠和危机】  </p>
+<p>转折：他回到现实世界，结果拿上吉他想去参加比赛，结果违背了条件，又回到了亡灵世界。他终于认识到自己真正的梦想是音乐，为了实现这个梦想，他必须找到并得到曾祖父的祝福，于是就和一个偶然遇到的亡魂开始寻找歌王之旅。曾祖母则开始追踪和保护小男孩。【获得领悟】  </p>
+<p>转折：找到了歌王之后，他发现歌王实际上并不是他的曾祖父，而是害死自己曾祖父的人。路上偶遇的亡灵才是自己的曾祖父。他的曾祖父实际上是被歌王用毒酒害死的。曾祖父也并没有为了音乐而抛弃家庭，而是深爱着可可，也就是小孩祖母的妈妈。【遭遇危机】  </p>
+<p>转折：他意识到了家庭的重要性，并愿意向曾祖父那样以家庭为重，甚至放弃音乐。【获得领悟】  </p>
+<p>转折：经过一番搏斗，歌王被打败了，作品剽窃和杀人的丑事也被知道了。可是曾祖父因为可可马上就忘记他了，而就要消失了。曾祖母給了小男孩祝福，并且没有附加任何条件。【面临危机】  </p>
+<p>结尾：小男孩会到现实世界，他用吉他演奏了曾祖父的歌曲，可可恢复了记忆，讲述了以往的故事，转变了家人对音乐的看法。一家人又再次相互理解和包容起来，最后在小男孩的歌声和舞蹈里，故事结尾。【回归现实】【重获新生】【获得领悟】  </p>
+<p>虽然这部动画片不算是典型的战争英雄故事，比如《勇敢的心》，但是小主人公在现实世界和亡灵界追寻梦想、挑战自我、战胜困难、发现自我、获得领悟的历程所展现的，就是他成为自己生活英雄的过程。而这样的生活英雄跟容易与孩子和成人产生共鸣！ </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

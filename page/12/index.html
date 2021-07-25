@@ -1,1284 +1,1347 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Chunlei&#39;s BLog">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
-    <title>Chunlei&#39;s BLog</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Chunlei&#39;s BLog">
+<meta property="og:url" content="http://zhangchunlei.com/page/12/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
-</head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Chunlei&#39;s BLog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
+<link rel="canonical" href="http://zhangchunlei.com/page/12/">
 
 
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Chunlei&#39;s BLog</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                刹那是永恒
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
 </script>
 
+  <title>Chunlei's BLog</title>
+  
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-</div>
+  </div>
 
+  <div class="site-meta">
 
-<main class="content">
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
 
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/02/01/ubc-week-3/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="UBC week 3: Diversity &amp; Complexity">
-                            
-                            <span class="card-title">UBC week 3: Diversity &amp; Complexity</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###MondayOn Monday, we went to Victoria and visited the BC Museum. It took us about 2 hours to look around the natural h
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UBC/">
-                            <span class="chip bg-color">UBC</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/02/01/ubc-week-2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="UBC Week 2: Gamification &amp; SEL">
-                            
-                            <span class="card-title">UBC Week 2: Gamification &amp; SEL</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                ###Monday:learning theory and the colorful pictures.Gamification in education by Ms. Hu and Dr Boskic.  
-###Tuesday:Visi
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-02-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UBC/">
-                            <span class="chip bg-color">UBC</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/01/24/what-make-a-good-teacher/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="What make a good teacher?">
-                            
-                            <span class="card-title">What make a good teacher?</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                This post will not be another list of good teacher characters. There are already many lists. Some come from serious stud
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-01-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/good-teacher/">
-                            <span class="chip bg-color">good teacher</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/01/21/tonys-teaching-tricks/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Tony&#39;s tricks are not just tricks——week one summary">
-                            
-                            <span class="card-title">Tony&#39;s tricks are not just tricks——week one summary</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                In this lovely week, our students enjoyed Tony’s classes. WHY? Because Tony made it a lovely place to learn. HOW? In ord
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-01-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UBC/">
-                            <span class="chip bg-color">UBC</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/01/19/criticize-is-not-critical-thinking/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Criticism is not critical thinking">
-                            
-                            <span class="card-title">Criticism is not critical thinking</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Today Tony asked our students to make up a skit to show their image of schooling. This activity provide opportunities fo
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-01-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%8F%8D%E6%80%9D/" class="post-category">
-                                    反思
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UBC/">
-                            <span class="chip bg-color">UBC</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/01/18/papep-norma-rose-point-school/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Norma Rose Point School">
-                            
-                            <span class="card-title">Norma Rose Point School</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                We have been in BC for 3days. Everything is new for our ECNU students, the beautiful campus of UBC, the long NO 44 bus, 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-01-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" class="post-category">
-                                    社会观察
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/en/">
-                            <span class="chip bg-color">en</span>
-                        </a>
-                        
-                        <a href="/tags/UBC/">
-                            <span class="chip bg-color">UBC</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/01/03/lost-in-the-city/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="迷失在城市生活里">
-                            
-                            <span class="card-title">迷失在城市生活里</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                现代人生活节奏越来越快，每个人都步履匆匆，打电话总说自己很忙，忙不过来，忙个没完没了。  
-这让我想起一个故事：  
-有一队人正在沙漠中举步维艰的前行，突然前面的队伍停了下来，首领很生气问为什么要停下来，来人回答说：我们走的太快了，要停下了
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-01-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" class="post-category">
-                                    社会观察
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2016/12/28/unpublished-post/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Unpublished post">
-                            
-                            <span class="card-title">Unpublished post</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                遗传与环境对学习的影响科学教育的简化模型neural network application OCR我们缺少优秀的设计师迷思概念再认识  
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-12-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%92%B0%E5%86%99%E4%B8%AD/" class="post-category">
-                                    撰写中
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2016/12/26/superman-in-the-life/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="超级个体">
-                            
-                            <span class="card-title">超级个体</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                偶然的机会发现了罗辑思维这个脱口秀节目，觉得很值得有空车上听一听。比如古典的“超级个体”概念就很启发性，下面是摘录的笔记：  
-一、现在是个体崛起的时代  
-1、知识瘫痪的人知识碎片不能转换成个体能力，眼高手低的人。  
-2、白日梦想家只是
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-12-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    笔记
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/">
-                            <span class="chip bg-color">超级个体</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/">
-                            <span class="chip bg-color">罗辑思维</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                            <span class="chip bg-color">笔记</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2016/12/22/smog/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="雾霾">
-                            
-                            <span class="card-title">雾霾</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这不是一个新话题，但是却一直像幽灵一样挥之不去，影响人们的生活、健康，特别是心情。我担心它还会影响校园里孩子的身体健康，这是不可接受的，是红线。所以，现实强迫我们必须要认识雾霾、应对雾霾、治理雾霾。  
-一、认识雾霾1、雾霾是什么？雾霾，是
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-12-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%95%99%E5%AD%A6/" class="post-category">
-                                    教学
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E5%AD%A6/">
-                            <span class="chip bg-color">教学</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%85%AC%E5%BC%80%E8%AF%BE/">
-                            <span class="chip bg-color">公开课</span>
-                        </a>
-                        
-                        <a href="/tags/STEAM/">
-                            <span class="chip bg-color">STEAM</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AF%BE%E7%A8%8B%E5%BC%80%E5%8F%91/">
-                            <span class="chip bg-color">课程开发</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2016/11/18/tinbergens-four-questions/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Tinbergens_four_questions">
-                            
-                            <span class="card-title">Tinbergens_four_questions</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                鸟为什么下蛋？Why bird lay egg?机制问题：蛋壳如何起到保护作用？Mechanistic explanations for how an organism’s structures work.发育问题：蛋壳是如何形成的？Dev
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-11-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Chunlei Zhang
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%A8%E7%89%A9%E8%A1%8C%E4%B8%BA/">
-                            <span class="chip bg-color">动物行为</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2016/11/17/word-have-to-open-twice/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Word必须要打开两次才能打开">
-                            
-                            <span class="card-title">Word必须要打开两次才能打开</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我的系统是win7，有一个问题一直困扰着我，就是每次打开word文档的时候总是第一次失败，第二次正常。  
-今天网上找到一个方法，就是把默认输入法从搜狗输入法改成中文简体美式键盘。  
-在用不用打开两次那么麻烦了。  
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2016-11-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    技术技巧
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/win7/">
-                            <span class="chip bg-color">win7</span>
-                        </a>
-                        
-                        <a href="/tags/word/">
-                            <span class="chip bg-color">word</span>
-                        </a>
-                        
-                        <a href="/tags/debug/">
-                            <span class="chip bg-color">debug</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/11/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">12 / 43</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/13/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
 </div>
 
 
 
 
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
+  </li>
+        <li class="menu-item menu-item-archives">
 
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+  </li>
+  </ul>
+</nav>
+
+
+
+
 </div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    </header>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-                <span id="year">2019-2021</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Chunlei Zhang</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/ubc-week-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/ubc-week-3/" class="post-title-link" itemprop="url">UBC week 3: Diversity & Complexity</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-02-01 20:22:00" itemprop="dateCreated datePublished" datetime="2017-02-01T20:22:00+08:00">2017-02-01</time>
             </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-03-04 05:59:22" itemprop="dateModified" datetime="2017-03-04T05:59:22+08:00">2017-03-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###Monday<br>On Monday, we went to Victoria and visited the BC Museum. It took us about 2 hours to look around the natural history and human history exhibition. The most interesting things were Mammoth and indigenous people of Canada. Our students also had a great time on the ferry, because it was the first time for most of them to travel by ferry. I took us nearly one and a half hour to across the Channel. So most of our time was spent on road or boat.  </p>
+<p>###Tuesday<br>On Tuesday, during the time of check in, one student asked about the religion system in Canada. Andrea hesitated whether should talk about this. Tony encouraged her to have a try and she gave use a useful introduction of the family trees and history of different religions in BC. Tony highlighted the idea of religious tolerance, which means people can respect and be tolerant to others’ religions.  </p>
+<p>Unfortunately, a terrible terrorist attack happened in Quebec, in which one man killed six people and injured another five in a Quebec mosque on Sunday. Click <a target="_blank" rel="noopener" href="http://www.torontosun.com/2017/01/29/4-reported-dead-in-shooting-at-quebec-city-mosque">here</a> to know more.  </p>
+<p><a target="_blank" rel="noopener" href="http://pm.gc.ca/eng/news/2017/01/29/statement-prime-minister-canada-fatal-shooting-city-quebec">Here</a> is the statement by the Prime Minister of Canada on Sunday. </p>
+<pre><code>Diversity is our strength, and religious tolerance is a value that we, as Canadians, hold dear.</code></pre>
+<p>After Tuesday’s class, I found UBC faculties and students got together on the square and express their feelings and ideas about the event. Slogans such as “Hate is not the answer!” “LOVE” “Connection” were written on the posters. Several speakers were invited to give a public speech. More than one hundred audience circled around.  </p>
+<p>Well, these things were accidentally connected in my mind, which push me to think the goal of our education, the role of college in society, the beliefs behind our teaching practices.  </p>
+<p>###Wednesday<br>On Wednesday, we visited the Richmond High School. Their students of grade 12 showed us around and introduced their school. Our college students also visited several classes and had a nice talk with their students.  </p>
+<p>###Thursday<br>Teachers’ professional development needs to be autonomous.<br>Teachers should make their classroom a more public place rather than a private place. Although new teacher may take their time to do so.  </p>
+<p>school system vs education agenda(教育系统与教育使命)  </p>
+<p>A history of my approach to teaching(Tony)<br>    As a beginning teacher. I believed in technical rationality.<br>    Graduate school. I encountered constructivism.<br>    More recently, I learned about complexity science  </p>
+<p>Classroom as Complex systems: its not an entirely new idea!  </p>
+<p>Four theoretical principles of complex phenomena or system:<br>1 an emphasis on a non-linear frameworks(Davis, 2004)<br>2 cogintion is not simply representative of what we know but a continual bringing forth of what we know through the process of engagement(Capra,2002)<br>3 open system maintain themselves by being is a state of disquilibrium yet they remain stable nonetheless(Prigogne,1984)<br>4 spontaneous emergence of order from apparent random or unrelated events(2001)  </p>
+<p>What does your classroom look like？  </p>
+<ul>
+<li>networks(peer, buddy, teacher, parents)  </li>
+<li>self-regulation(negotiated curriculum)  </li>
+<li>feedback loops(pairs, groups, whole class)  </li>
+<li>disequilibrium(edge of chaos? generative)  </li>
+<li>nested(student, class, program)  </li>
+</ul>
+<p>If a classroom or teaching and learning represent complex systems and if we fail to acknowledge them as such….<br>…then we are probably failing to allow for, recognize, or take advantage of the emergence of complexity as it arise in our practice.  </p>
+<p>Five features of complexity that enhance the possibility of emergence<br>Internal redundancy - commonality …shared understantding<br>Internal diversity -variety … a rich pool of ideas<br>Neighborhood interactions  -engagement …ideas bumping up against one another<br>Decentralized control  -democratization … collective authoring<br>Enabling constraints  playing field …a generative space  </p>
+<p>Four implications for classroom:<br>1 surrendering certainty(open eye)<br>2 An emphasis on inquiry(the effort to articulate what we don’t know)<br>3 Acknowledge Complicity(迭代交互影响)<br>4 Allow for improvisation  </p>
+<p>Graduate life in UBC and how to apply for UBC  </p>
+<p>###Friday<br>Presentation Report<br>Flash mob<br>Certificate ceremony<br>Feedback Survey<br>Pictures together and say Goodbye.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/ubc-week-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/ubc-week-2/" class="post-title-link" itemprop="url">UBC Week 2: Gamification & SEL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-02-01 19:44:00" itemprop="dateCreated datePublished" datetime="2017-02-01T19:44:00+08:00">2017-02-01</time>
             </span>
-            
-            <br>
-            
-            <br>
-            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-03-04 05:59:21" itemprop="dateModified" datetime="2017-03-04T05:59:21+08:00">2017-03-04</time>
+              </span>
+
+          
+
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+      </header>
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+          <p>###Monday:<br>learning theory and the colorful pictures.<br>Gamification in education by Ms. Hu and Dr Boskic.  </p>
+<p>###Tuesday:<br>Visit Cook Elementary School<br>This school is well organized to meet every students’ learning need although it is not as rich as Norma Rose Point School.  </p>
+<p>###Wednesday:<br>Meet Professor of UBC<br>UBC class visits  </p>
+<p>###Thursday:<br>Tony wrote:<br>    I am not teaching you how to be a teacher<br>    but I am asking you think about being an educator in the world.(conception of teaching and learning; language to talk teaching &amp; learning; make sense of your practice as a teacher)  </p>
+<p>Different perspectives：<br>1 Behaviorism(Behavior, Stimulus/Response)<br>2 Cognitivism(Symbols,making connections, schema)<br>3 Constructivism(Elicit existing conceptions, personal construction)<br>4 Social Constructivism(Social interaction, mediation of knowledge)<br>5 Enactivisim(Embodied action, context is critical)<br>6 Complexity(dynamically adaptive phenomena, emergence)  </p>
+<p>Can you think of examples in your subject area  </p>
+<p>a test   </p>
+<p>Visit BC transition program class  </p>
+<p>###Friday:<br>Social and Emotional learning<br>Tony let us watch the 2007 Spring Festival Live  </p>
+<p>The new BC curriculum<br>Understanding (big ideas)–Do (curricular competency learning standards) –Know (content learning standards)  </p>
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
+      
     </div>
-</footer>
 
-<div class="progress-bar"></div>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/what-make-a-good-teacher/">
 
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/what-make-a-good-teacher/" class="post-title-link" itemprop="url">What make a good teacher?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-01-24 21:50:00" itemprop="dateCreated datePublished" datetime="2017-01-24T21:50:00+08:00">2017-01-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-03-04 05:59:20" itemprop="dateModified" datetime="2017-03-04T05:59:20+08:00">2017-03-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
         </div>
-        <div id="searchResult"></div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>This post will not be another list of good teacher characters. There are already many lists. Some come from serious studies. Some come from just personal experiences or judge(like <a target="_blank" rel="noopener" href="http://cgi.stanford.edu/~dept-ctl/tomprof/posting.php?ID=665">this one highly</a> recommended). Some come from student or teacher self-reports(read <a target="_blank" rel="noopener" href="https://www.unicef.org/teachers/teacher/teacher.htm">this student self-report</a>). Well these lists of qualities of good teachers help little in explaining how teachers become good teachers. What I want to do here is think about the most critical character that make a teacher becoming a good teacher.  </p>
+<p>The best answer (I can give for now) is being serious of their teaching job is the most important character in becoming a good teacher. Being serious means the teacher really care about students’ learning in class and take enough efforts to make it better. The efforts include making the place, understanding students, building connections, organizing cognitive burdens, trying different ways or strategies, critical thinking and examine their own practices, keeping learning themselves, making meanings and so on. Well, maybe it is cheating answer because it nearly included all the characters in the lists. But how can teachers become better if they don’t care teaching at all.  </p>
+<p>The truth is that I care then I want to improve.  </p>
+
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/tonys-teaching-tricks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/tonys-teaching-tricks/" class="post-title-link" itemprop="url">Tony's tricks are not just tricks——week one summary</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-01-21 18:15:00" itemprop="dateCreated datePublished" datetime="2017-01-21T18:15:00+08:00">2017-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-03-04 05:59:17" itemprop="dateModified" datetime="2017-03-04T05:59:17+08:00">2017-03-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>In this lovely week, our students enjoyed Tony’s classes. WHY? Because Tony made it a lovely place to learn. HOW? In order to answer this question, I have to go back and inquiry Tony’s classes and teaching practices. I hope I can recognize not only Tony’s magic tricks but also his intentions behind. If I don’t write it down, the ideas may disappear and never come up to my mind again. So the FRIST goal of this post is a reflection and a record for myself.  </p>
+<p>It is a challenging job to decode a teacher’s class, especially Tony’s complicated, multicultural and bilingual class in with many educational goals, skills and strategies were embedded. Fortunately, Tony provided some clues. The clues were written on the whiteboard or explicitly said by Tony.  </p>
+<p>###Monday 16th Nov, Hot Water Welcome  </p>
+<p>After we got in the door of Scarf building, we saw a welcome poster for our ECNU students in the corridor. It is not big, but well printed and mounted with a frame. The next day, It was put on the wall of our classroom. There were two hot water containers prepared for us. So nice! [MAKING THE PLACE]  </p>
+<p>The thing we did in the morning was self-introduction. Tony provided some useful scaffoldings, a map of China, pins with student names and numbers, umbrellas and format of introduction. When TAs and faculties came, they introduced themselves too.[CONNECTING THE PEOPLE]  </p>
+<p>In the afternoon, students went to corridor to look around their own pictures printed by Tony. The pictures were chosen by students. They stand for students’ image of teaching or learning and also have special meaning for themselves. After they got back, they share a picture and the reasons why they choose it to share. Tony would welcome other students to make comments too. Then the picture owner reveal its meaning or story. [ENGAGING THE STUDENTS]  </p>
+<p>###Tuesday 17th Nov, Placed Based Learning  </p>
+<p>Natalie introduced the place at different levels, Vancouver, BC, Canada, Turtle island, the Indigenous. Place based learning aim to make this change from I AM NO WHERE to I AM NOW HERE. Place represents layers of stories and it can included ecological education, bioregional education, critical pedagogy, experiential education, indigenous ways of knowing and being. Place based learning connects people and their places. It disrupts the idea of a one size fits all curriculum. Place is not about where we lived, buy rather about how we live where we live. Wisdom also sits in places. So our learning should not take place without a place.[PRESENT THE CONCEPTION]  </p>
+<p>Place based learning should answer three questions:<br>    WHAT IS WHERE<br>    WHY IS IT THERE<br>    WHY SHOULD I CARE  </p>
+<p>Students explored the place around Scarf building in UBC. They must interview someone about the place and sit down some where in the building silently for 5 minutes to feel the place. Every group of 4 people needed to take 3 pictures and answer the three questions.[EXPLORE AND SHARE]  </p>
+<p>They explored many places excitedly and discovered many culture differences. The pictures were printed out and put on the wall to share. In this activity, pictures provided many learning opportunities:<br>    the pictures show interesting information and details<br>    the pictures generate questions<br>    the pictures have stories  </p>
+<p>Natalie remind the students:<br>    Place making=build and construct while,<br>    place maker=every body make a part.<br>    Teachers are place maker.<br>    Forget place we forget how to make place.  </p>
+<p>I think this [place based learning] was carefully selected for our students, because it help them to explore UBC, practice oral English and think about connections between people and places.  </p>
+<p>###Wednesday 19th Nov, School Visit  </p>
+<p>let the children to be children  </p>
+<p>I wrote a post about <a href="http://zhangchunlei.com/blog/2017/01/18/papep-norma-rose-point-school/">Norma Rose Point School</a>.  </p>
+<p>How Learning theories are different and alike?[fill tables]  </p>
+<p>###Thursday 19th Nov, Skits  </p>
+<p>Task: In your group, you are to perform a short skit that illustrates an “image of schooling” drawn from your experience as either a primary, secondary, or post-secondary school student. The performance lasts 2 or 3 minutes.[ROLE PLAY]  </p>
+<p>How we can divide the groups?[TEACHER QUESTION]<br>Students’ answers: by group numbers,by tables, by a game, pick card, color of clothes, by students’ abilities and so on.  </p>
+<p>How much time do we need to prepare this skit?<br>Students’ answers: 20 minutes; 30 minutes; 25 minutes.<br>Teacher: OK we choose the middle.<br>[Democratic the Classroom]  </p>
+<p>Teacher decides the activity but let students decide the time to prepare. To do so, students can have some ownership.  </p>
+<p>Go to the corridor and divide groups by taking off a shoe.[MAKE IT ANOTHER WAY]<br>    The only limit is your imagination.  </p>
+<p>###Friday 20th NOV, TPI<br>[check in]<br>Use check in to borrow students’ ideas and questions as learning needs and learning opportunities.  </p>
+<p>[music as alarm]<br>When it is time for rest, turn on the music. When class begin, turn it off and student aware of that without a pain.  </p>
+<p>Group dividing strategies:<br>[Number the table and symbol the students]<br>Let students pull out the table number[Democratic the Classroom] and teacher draw the symbol like a game. This strategy can engage more students. Don’t’ put back the table number if you don’t want one table answer twice.  </p>
+<p>[verbal curing]<br>LET students know the signal 30 seconds ahead before you give the signal. </p>
+<p>Other cures:<br>    verbal cure<br>    eye contact<br>    visual sight<br>    audio sound  </p>
+<p><a target="_blank" rel="noopener" href="http://www.teachingperspectives.com/tpi/">Teaching Perspectives Inventory</a><br>Students already took the survey and sent them to Tony. Tony print them out and sent it back to students. Then Tony began to count the heads who were dominant in one perspective and write the results on board. Then he let one student read the text about one perspective and then everyone try to summary the paragraph by keywords or phrase.<br>Here is the result:<br>    TRANSMISSION 1<br>        accuracy Anthony content knowledge<br>    APPRENTICESHIP 7<br>        skill norm practice<br>    DEVELOPMENTAL 4<br>        learner reasoning and thinking,make sense of something<br>    NURTURING 23<br>        safety heart support<br>    SOCIAL REFORM 3<br>        change collective, deconstruction, who why interests</p>
+<p>Tony let student write on a note what impress them most these days. Then let them post it up on the wall near their pictures.[MAKE A PLACE FOR STUDENTS to share]  </p>
+<p>Let us get back to the question that I asked. My best answer for now is that Tony made good social and emotional connections with our students by making a place where they feel good by his hands, heart and minds. It was not tricks at all!  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/criticize-is-not-critical-thinking/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/criticize-is-not-critical-thinking/" class="post-title-link" itemprop="url">Criticism is not critical thinking</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-01-19 19:45:00" itemprop="dateCreated datePublished" datetime="2017-01-19T19:45:00+08:00">2017-01-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-01-27 13:47:40" itemprop="dateModified" datetime="2017-01-27T13:47:40+08:00">2017-01-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8F%8D%E6%80%9D/" itemprop="url" rel="index"><span itemprop="name">反思</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Today Tony asked our students to make up a skit to show their image of schooling. This activity provide opportunities for students to speak English and express their ideas or images of schooling which may be the first step to realize and change their own teaching perspective.  </p>
+<p>During the activities, an interesting phenomenon showed up. Most of them criticized the education they had in China. While,it was true that the Chinese education had many problems. But, the thinking and reasoning of the problematic educational phenomenon is shallow, or not deep enough, in other word, critical thinking is missing.  </p>
+<p>In order to get more from this activity, students should not jump up to conclusion too quickly. They should not ignore the context that these things took place, the social context, the historical context, the economic context, the physical context, and so on. They should also rethink the theories and rationals behind their judgement and carefully examine the proof and logic. In short, critical thinking should take the place of criticism.  </p>
+<p>Why harsh criticism of people’s own education is not good even harmful? First, it easily leads to extreme and skin deep thinking which block more intellectual endeavor. Second, it hurt their self-image and self-confidence. Third, it can easily separate their connection with the previous themselves and places. Extreme criticisms call abandon or escape but not improvement and responsibility. Try to think of place-based learning, it heals the disconnection between people and places while harsh criticism do the opposite.  </p>
+<p>According to Daniel T. Willingham, critical thinking have three key features: effectiveness, novelty, and self-direction. Critical thinking is effective in that it avoids common pitfalls, such as seeing only one side of an issue, discounting new evidence that disconfirms your ideas, reasoning from passion rather than logic, failing to support statemnts with evidence, and so on.  </p>
+<p>Critical thinking is novel in that you don’t simply remember a solution or a situation that is similar enough to guide you. Using a complex algorithm to solve a math problem is not critical thinking. But devising a new algorithm is. Critical thinking is self-directed in that the thinker must be calling the shot(making desicions themselves): awards or punishment will disrupt instead of promote critical thinking.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/papep-norma-rose-point-school/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/papep-norma-rose-point-school/" class="post-title-link" itemprop="url">Norma Rose Point School</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-01-18 22:19:00" itemprop="dateCreated datePublished" datetime="2017-01-18T22:19:00+08:00">2017-01-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-01-27 13:18:25" itemprop="dateModified" datetime="2017-01-27T13:18:25+08:00">2017-01-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" itemprop="url" rel="index"><span itemprop="name">社会观察</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>We have been in BC for 3days. Everything is new for our ECNU students, the beautiful campus of UBC, the long NO 44 bus, the comfortable Landmark hotel, the nice professors and staffs, the exciting learning activities.  </p>
+<p>Today is even special. We went to visit a middle school called <a target="_blank" rel="noopener" href="http://go.vsb.bc.ca/schools/normarosepoint/Pages/default.aspx">Norma Rose Point School</a>. The school is not far from UBC, in fact it is the neighborhood of UBC. It took us about 20 or 30 minutes to walk there from Scarfe building where our classroom located. There are about six hundreds of students in the school, from kindergarten to grade 8, including both elementary and secondary education. This school is very unique because of its educational rationals and teaching building design.<br><img src="https://raw.github.com/lukezhg/Freyja/master/ROSE_Point_school.jpg">  </p>
+<p>They believe learning should be integrated and take place in communities instead of separated and in classrooms of each discipline. They want to give student a whole picture of the world and want them to experience this by themselves in their learning communities. In this way, students get better understanding of who they are, where they come form, how they will change the world around them. They will also take more responsibility of their learning and be proactive to inquiry the world around them rather listen to the teacher and memorize for tests.<br><img src="https://raw.github.com/lukezhg/Freyja/master/global_issues.jpg"><br><img src="https://raw.github.com/lukezhg/Freyja/master/Community_learning_outcome.jpg">  </p>
+<p>The learning schedule and activities are designed and carried out by a faculty team but not a single teacher as traditionally school usually do. The teacher love this kind of collaborative teaching, it also give teacher many opportunities to learn from each others. It is much easier for new teacher to join the team to teach together. As you can see, they value collaboration very much. Student collaborate with student, teachers and even parents. Teacher collaborate with colleges, parents, and university professors. Student who are good at something can teach others. Teacher can do the same thing. They are all super heroes at that time. Super hero is a learning activity designed by the 4th grade teacher team which engage students and let them rethink what a hero means.  </p>
+<p><img src="https://raw.github.com/lukezhg/Freyja/master/grade4_learning_schedual.jpg">  </p>
+<p>Many features of the school building reflect educational wisdom. They make a window to let student who play basketball to look downstairs and notice what is happening in the football playground. All the classrooms are open without a door but only three or two walls. It means guests are always welcome to join or observe the class. There are also lots of art crafts made by student to show their understanding of their school spirits.<br><img src="https://raw.github.com/lukezhg/Freyja/master/art_crafts.jpg"><br><img src="https://raw.github.com/lukezhg/Freyja/master/open_classroom.jpg">  </p>
+<p>It is hard to believe such an ideal school can exist and survive. ARE there any disadvantages and challenges for this kind of school? Of course there are, but who can deny their bold spirit and unique learning place design. It is beautiful! That is enough for now!  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/lost-in-the-city/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/lost-in-the-city/" class="post-title-link" itemprop="url">迷失在城市生活里</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-01-03 22:48:00" itemprop="dateCreated datePublished" datetime="2017-01-03T22:48:00+08:00">2017-01-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-01-21 11:35:26" itemprop="dateModified" datetime="2017-01-21T11:35:26+08:00">2017-01-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" itemprop="url" rel="index"><span itemprop="name">社会观察</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>现代人生活节奏越来越快，每个人都步履匆匆，打电话总说自己很忙，忙不过来，忙个没完没了。  </p>
+<p>这让我想起一个故事：  </p>
+<p>有一队人正在沙漠中举步维艰的前行，突然前面的队伍停了下来，首领很生气问为什么要停下来，来人回答说：我们走的太快了，要停下了等等被落在后面的灵魂。  </p>
+<p>这是一个物欲横流而缺乏反思的时代，而如果任凭自己卷入洪流就会面临迷失自我的风险。别人进城，我也进城，别人买房，我也买房，别人生娃，我也生娃，别人孩子上补习班，我也让孩子上补习班，总之千万别落后。  </p>
+<p>我是谁，我为什么要跟随，我来自哪，我要去哪里，这些人生大问题早已被紧张的城市生活所淹没。我不在是自己的我，我成了城市街道里的一个影子，不知道从哪里来，也不知道要到哪里去，忐忑而焦急，疲于奔命的紧跟着城市的节奏。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/unpublished-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/unpublished-post/" class="post-title-link" itemprop="url">Unpublished post</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2016-12-28 11:10:00 / 修改时间：11:13:54" itemprop="dateCreated datePublished" datetime="2016-12-28T11:10:00+08:00">2016-12-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%92%B0%E5%86%99%E4%B8%AD/" itemprop="url" rel="index"><span itemprop="name">撰写中</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>遗传与环境对学习的影响<br>科学教育的简化模型<br>neural network application OCR<br>我们缺少优秀的设计师<br>迷思概念再认识  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/superman-in-the-life/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/superman-in-the-life/" class="post-title-link" itemprop="url">超级个体</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-26 10:20:00" itemprop="dateCreated datePublished" datetime="2016-12-26T10:20:00+08:00">2016-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2016-12-28 11:47:16" itemprop="dateModified" datetime="2016-12-28T11:47:16+08:00">2016-12-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>偶然的机会发现了罗辑思维这个脱口秀节目，觉得很值得有空车上听一听。比如古典的“超级个体”概念就很启发性，下面是摘录的笔记：  </p>
+<p>一、现在是个体崛起的时代  </p>
+<p>1、知识瘫痪的人<br>知识碎片不能转换成个体能力，眼高手低的人。  </p>
+<p>2、白日梦想家<br>只是画饼，但是不思考和行动的人。  </p>
+<p>3、安全自封的人<br>怕承担任何分享而固步自封的人  </p>
+<p>4、错误心智模式的人<br>从同行是冤家到同行是伙伴<br>从铁饭碗到超级个体<br>从巨婴到巨人<br>从三思而后行到边想边做<br>从知识瘫痪到独立思考和行动<br>从本职工作到业余工作  </p>
+<p>现代社会：不是智者生存，也不是强者生存，而是适者生存。  </p>
+<p>现代社会的变化：<br>1、用很少的生活资料，就能养活自己<br>2、组织的寿命变短，个人的寿命变长<br>3、职业在跨界，公司也在跨界，跨界成了新常态  </p>
+<p>未来是个体崛起的时代，每个人生产力更强，都有机会成为想成为的自己。永远不会失业的工作没有了，只要超级个体不会失业，但是要不断换工作。  </p>
+<p>二、你需要的3种超能力  </p>
+<p>1、自我迭代：一边奔跑一般思考  </p>
+<p>2、元能力：生产、连接、传播。  </p>
+<p>3、超级复原力：经得起失败，并从失败中积累经验。  </p>
+<p>三、成为超级个体的2种心法  </p>
+<p>1、乐高式的能力组合<br>郝景芳的《北京折叠》获得雨果奖。单一能力结构风险很大。X型、π型人才生态位更大。  </p>
+<p>2、给自己超链接的机会<br>给自己跨界的机会  </p>
+<p>四、你的世界观<br>你相信这个世界是善意的还是恶意的？<br>它决定了你的认知模式和行为模式。  </p>
+<p>五、现代人的关键竞争力<br>学习力（阅读、倾听、联系）<br>生产力（生产产品）<br>传播力（传播观念）<br>领导力（合作和引领他人）<br>行动力（切割、计划、行动、坚持）  </p>
+<p>而这5种力，都要在独立思考和实践中发展的。  </p>
+<p>听这个节目的话：点击这里。<br>古典：超级个体[罗辑思维]No·200【MP3_声音_录音】免费在线收听|下载-喜马拉雅fm<br><a target="_blank" rel="noopener" href="http://www.ximalaya.com/1412917/sound/27048773">http://www.ximalaya.com/1412917/sound/27048773</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/smog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/smog/" class="post-title-link" itemprop="url">雾霾</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-22 15:12:00" itemprop="dateCreated datePublished" datetime="2016-12-22T15:12:00+08:00">2016-12-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2016-12-26 10:06:44" itemprop="dateModified" datetime="2016-12-26T10:06:44+08:00">2016-12-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这不是一个新话题，但是却一直像幽灵一样挥之不去，影响人们的生活、健康，特别是心情。我担心它还会影响校园里孩子的身体健康，这是不可接受的，是红线。所以，现实强迫我们必须要认识雾霾、应对雾霾、治理雾霾。  </p>
+<p>一、认识雾霾<br>1、雾霾是什么？<br>雾霾，是雾和霾的组合词。雾霾常见于城市。中国不少地区将雾并入霾一起作为灾害性天气现象进行预警预报，统称为“雾霾天气”。<br>雾霾是特定气候条件与人类活动相互作用的结果。高密度人口的经济及社会活动排放大量细颗粒物（PM 2.5），一旦排放超过大气循环能力和承载度，细颗粒物浓度将持续积聚，此时如果受静稳天气等影响，极易出现大范围的雾霾。  </p>
+<p>气象学解释：<br>雾，是接近地面的空气因气温下降水蒸气凝结而成的悬浮的微小水滴；<br>霾，是大量极细微的干尘颗粒等均匀地浮游在空中，使水平能见度小于10千米的空气普遍浑浊现象，也称灰霾。<br>在气象学上，雾和霾的判识标准为：相对湿度小于80%时为霾；相对湿度大于90%时为雾；相对湿度在80%—90%之间时为雾和霾的混合物，其中雾和霾的程度要按照大气细颗粒物PM2.5和PM1.0（指空气动力学直径分别小于2.5和1.0微米的细颗粒）的浓度来判识。  </p>
+<p>值得指出的是，雾本来是一种自然现象，但是在污染导致大气细颗粒物增多的情况下，即使气象上判识为“雾”，也不再是完全的自然现象，而是有细颗粒物附着的微小水滴。  </p>
+<p>雾霾毒性大小，关键看携带的颗粒。颗粒如果是重金属就可能会导致重金属中毒，如果是致癌物质就会提升患癌症的概率。  </p>
+<p>摘自：<a target="_blank" rel="noopener" href="http://tech.sina.com.cn/d/v/2015-12-10/doc-ifxmpnqf9456114.shtml">http://tech.sina.com.cn/d/v/2015-12-10/doc-ifxmpnqf9456114.shtml</a>  </p>
+<p>2、雾霾是如何形成的？<br>从PM2.5来源看，雾霾主要是人类活动造成的。不是天灾，是人祸。<br>PM2.5的来源可分为一次源（直接排放）和二次源（二次生成）。  </p>
+<p>一次源又可分为自然排放源和人为排放源。其中，自然排放源包括风扬尘土、火山灰、森林火灾、海浪飞沫、生物来源等。人为排放源包括工业粉尘、机动车尾气颗粒物、道路扬尘、建筑施工扬尘、厨房烟气等。  </p>
+<p>二次生成是指排放到大气中的气态污染物通过多种化学物理过程产生的二次细颗粒物。人类活动排放的大量气态污染物如二氧化硫SO2、氮氧化物NOx、氨气NH3、挥发性有机污染物（VOCs）等，都能在大气中被氧化产生硫酸盐、硝酸盐、铵盐和二次有机气溶胶（SOA）。这些新生成的细颗粒物是大气中PM2.5的重要来源。全球范围内，二次颗粒物贡献率在20%—80%之间，在我国中东部地区常常高达60%，在成霾时往往二次颗粒物所占比例更高。  </p>
+<p>也就是说，人类活动产生的二次颗粒物占比更高！从这个意义上说，雾霾主要是人类活动造成的。  </p>
+<p>3、雾霾的危害有哪些？<br>危害人体健康，特别是呼吸器官。  </p>
+<p>妨碍交通出行，提升安全隐患。  </p>
+<p>4、关于雾霾的谣言？<br>谣言一：只要戴口罩就能防雾霾？<br>谣言二： 空气净化器可以有效净化雾霾，家中必备？<br>谣言三：防雾霾中医药方、多吃蔬菜能防雾霾？<br>谣言四：雾霾是“核雾染”？<br>答案： 点击<a target="_blank" rel="noopener" href="http://tech.sina.com.cn/d/v/2015-12-10/doc-ifxmpnqf9456114.shtml">这里</a>。  </p>
+<p>二、防护雾霾<br>1、户外活动如何防护？  </p>
+<p>2、室内活动如何防护？  </p>
+<p>3、如何调节个人活动达到防护的目的？  </p>
+<p>三、治理雾霾：从个体到社会，从科学到艺术，从产品到市场。<br>1、个人选择：从环保意识到生活习惯。<br>2、商业经济：如何让雾霾有利可图？<br>3、公共政策：让谁来买单？<br>4、产品研发：从口罩到空气净化机的设计。<br>5、科研工程：谁来把雾霾吹走？<br>6、文化艺术：神曲，还是神曲，没有话剧？  </p>
+<p><a target="_blank" rel="noopener" href="http://www.iqiyi.com/w_19rrclfe59.html">雾霾版《卷珠帘》</a>  </p>
+<p><a target="_blank" rel="noopener" href="http://www.iqiyi.com/w_19rrclbxvt.html">大雾版：北京北京</a>  </p>
+<p><a target="_blank" rel="noopener" href="http://www.ahtv.cn/swf/?video=293668">小品《雾霾！走开！》</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/tinbergens-four-questions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/tinbergens-four-questions/" class="post-title-link" itemprop="url">Tinbergens_four_questions</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-11-18 23:01:00" itemprop="dateCreated datePublished" datetime="2016-11-18T23:01:00+08:00">2016-11-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2016-12-07 09:15:30" itemprop="dateModified" datetime="2016-12-07T09:15:30+08:00">2016-12-07</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>鸟为什么下蛋？<br>Why bird lay egg?<br>机制问题：蛋壳如何起到保护作用？<br>Mechanistic explanations for how an organism’s structures work.<br>发育问题：蛋壳是如何形成的？<br>Developmental explanations for changes in individuals, from DNA to their current form.<br>功能问题：蛋壳薄厚合适对鸟类有怎样的意义？<br>A species trait that solves a reproductive or survival problem in the current environment.<br>进化问题：蛋壳的厚度恰好合适是如何进化来的？<br>The history of the evolution of sequential changes in a species over many generations.  </p>
+<p>HOW?<br>以静态的观点问HOW，是机制问题<br>以动态的观点问HOW，是发育问题  </p>
+<p>WHY?<br>以静态的观点问WHY，是功能问题<br>以动态的观点为WHY，是进化问题  </p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tinbergen%27s_four_questions">https://en.wikipedia.org/wiki/Tinbergen%27s_four_questions</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/word-have-to-open-twice/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/word-have-to-open-twice/" class="post-title-link" itemprop="url">Word必须要打开两次才能打开</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2016-11-17 19:21:00 / 修改时间：19:25:21" itemprop="dateCreated datePublished" datetime="2016-11-17T19:21:00+08:00">2016-11-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我的系统是win7，有一个问题一直困扰着我，就是每次打开word文档的时候总是第一次失败，第二次正常。  </p>
+<p>今天网上找到一个方法，就是把默认输入法从搜狗输入法改成中文简体美式键盘。  </p>
+<p>在用不用打开两次那么麻烦了。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
 </div>
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
 });
 </script>
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
+  
 
-    <!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
-    
 
-    
 
-	
-    
 
-    
 
-    
 
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
 
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
 </body>
-
 </html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="《思考，快与慢》作者：丹尼尔.卡尼曼这本书很有趣，是一个诺贝尔经济学奖得主写的。他介绍了人类思考和决策时两种截然不同的方式：系统I和系统II。也就是快思考和慢思考。   一般的情况，人们倾向于运用系统I，因为它快捷、省力。比如一个人可以很轻松识别字母A，或者家人的面孔，这个过程是快速的、自动化的、几乎不费力的。这就是系统I的特点。   但是，当你要计算一个两位数乘法或者破解象棋残局时，你就很难轻而">
+<meta property="og:type" content="article">
+<meta property="og:title" content="两种不同的思维系统">
+<meta property="og:url" content="http://zhangchunlei.com/thinking-fast-and-slow/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:description" content="《思考，快与慢》作者：丹尼尔.卡尼曼这本书很有趣，是一个诺贝尔经济学奖得主写的。他介绍了人类思考和决策时两种截然不同的方式：系统I和系统II。也就是快思考和慢思考。   一般的情况，人们倾向于运用系统I，因为它快捷、省力。比如一个人可以很轻松识别字母A，或者家人的面孔，这个过程是快速的、自动化的、几乎不费力的。这就是系统I的特点。   但是，当你要计算一个两位数乘法或者破解象棋残局时，你就很难轻而">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2015-08-18T08:49:00.000Z">
+<meta property="article:modified_time" content="2015-09-08T10:34:06.000Z">
+<meta property="article:author" content="Chunlei Zhang">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://zhangchunlei.com/thinking-fast-and-slow/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>两种不同的思维系统 | Chunlei's BLog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/thinking-fast-and-slow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          两种不同的思维系统
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-08-18 16:49:00" itemprop="dateCreated datePublished" datetime="2015-08-18T16:49:00+08:00">2015-08-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-09-08 18:34:06" itemprop="dateModified" datetime="2015-09-08T18:34:06+08:00">2015-09-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>《思考，快与慢》作者：丹尼尔.卡尼曼<br>这本书很有趣，是一个诺贝尔经济学奖得主写的。他介绍了人类思考和决策时两种截然不同的方式：系统I和系统II。也就是快思考和慢思考。  </p>
+<p>一般的情况，人们倾向于运用系统I，因为它快捷、省力。比如一个人可以很轻松识别字母A，或者家人的面孔，这个过程是快速的、自动化的、几乎不费力的。这就是系统I的特点。  </p>
+<p>但是，当你要计算一个两位数乘法或者破解象棋残局时，你就很难轻而易举的给出答案了，而必须控制自己的注意力，按照一定的程序计算或思考，才可能解决问题。这时你运用的就是系统II，它的特点需要有意识的控制注意力并进行复杂的程序操作，当然其花费的时间也更长。所以也称慢思考。  </p>
+<p>在日常生活中，我们大多会使用系统I，只有当系统I解决不了问题时，系统II才出马。从进化的角度，这种方式更节省能量，也更适合人类的生存。譬如，一个人突然听到老虎的吼叫，系统I会离开识别出来，他立刻就可以逃避求生。也可能正是这个原因，系统I是最常用的系统，它大多数都能很好的胜任日常生活的需求，但是也会让人犯系统性错误。比如，人们会错误的认为，植物从土壤获得大部分成长所需的物质，因为人们看到植物根深深扎入土壤，所以就联想植物一定是通过跟从土壤中获取所有营养元素。这就是典型的简单形象思维。这样的思维可能是错误，当却是有价值的，它给系统II提供了考察的原材料。  </p>
+<p>这样看来，人类的前概念很多都是系统I导致的系统性偏差，当然不能忽视的是，人类很多大胆的想想和新的发现要归功于系统I。因此，系统I和系统II，一个简单，一个复杂，一个耗力，一个不怎么耗力，一个需要有意识的控制注意力，一个则不需要。  </p>
+<p>在恰当的任务上选择恰当的系统。在决策时，如果环境是有规律的，且专家有长期的反馈性练习，那么可以相信专家的自觉判断。当是如果环境无规律，莫不如相信基础大量统计的简单公式。  </p>
+<p>努力养成采纳外部意见的决策习惯。  </p>
+<p>规划误谬：过于乐观的计划随处可见。  </p>
+<p>乐观主义是一边双刃剑。  </p>
+<p>事前验尸：部分克服乐观偏见的方法<br>设想我们在一年后的今天已经实施了现有计划，结果惨败。请用5-10分钟简短写下这次惨败的缘由。<br>组织和个人可以通过这种方法抑制过度乐观自信的情绪。  </p>
+<p>竞争忽视：为何大片会扎堆上映？<br>过度自信：是你太糟糕，而不是我太笨拙。过度自信是专家的通病，而且具有传染性。  </p>
+<p>损失厌恶<br>人们对亏损的反应比对盈余的反应大得多。  </p>
+<p>面对财富，你会选择规避风险还是冒险一搏。<br>问题1：你会选择哪一个？<br>肯定会得到900美元，还是90%的可能会得到1000美元。<br>问题2：你会选择哪一个？<br>必定损失900美元，还是有90%的可能性会损失1000美元？  </p>
+<p>对于问题1，你可以会选择规避风险，大多数人都会这样。得到900美元的主观价值肯定比90%的可能性得到1000美元的价值大。但是对问题2，如果与大多数人一样，你会选择风险答案。这次选择冒险的理由与问题1规避风险如出一辙，必定损失900美元的负面价值要比90%可能性损失1000美元的负面价值要大。必然的损失肯定会让人反感，也会使你冒险一试。  </p>
+<p>当你有50%的概率损失100美元的时候，你可以选择买</p>
+<p>参考点的重要性  </p>
+<p>无差异曲线的大前提，  </p>
+<p>禀赋效应<br>是指当个人一旦拥有某个物品，那么他对该物品的价值的评价要比未拥有之前大大提高。  </p>
+<p>像商人那样思考和交易  </p>
+<p>人类的大脑和其他动物的大脑都包含一种机制，这种机制总会优先考虑不好的消息。将察觉掠食者所需的时间减少百分之几秒，通过这种做法，提高了动物的生存概率，使其得以繁衍生息。  </p>
+<p>其他学者在一偏题为：“负面消息比好消息强”的文章中指出：负面情绪、不负责任的父母和糟糕的反馈比好的情况更具影响力，且热门处理坏消息时比处理好消息更彻底，我们会更在意避开负面的自我定义，而不是追求正面的自我定义，不好的印象和不好的模式比好的情况更容易形成，且不宜消失。  </p>
+<p>高尔夫球手，在击标准球时会比击小鸟球更努力，而且成功率也高出3.6%。波普和施伟泽从损失厌恶中推断除了这个结果，并在250多万次击球中得到了验证。超出标准杠是一种损失，而没击中小鸟球则不是。  </p>
+<p>所有动物都想有所得，但他们会更努力得避免有所失。在这样一个所有动物都想有自己地盘的世界中，这样原则解释了防御者成功的奥秘。  </p>
+<p>参考点在公平性问题上起着重要作用。降低工资或待遇是不公平的，但是盈利后不加工资却问题不大。这也是厌恶损失的效应之一。  </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/model-based-inquiry-lesson-plan/" rel="prev" title="基于模型的科学探究">
+      <i class="fa fa-chevron-left"></i> 基于模型的科学探究
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/omosa/" rel="next" title="Omosa">
+      Omosa <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+</body>
+</html>

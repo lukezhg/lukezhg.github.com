@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="###什么是知识图谱？概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。  知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。   知识图谱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是知识图谱">
+<meta property="og:url" content="http://zhangchunlei.com/knowledge-graph/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:description" content="###什么是知识图谱？概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。  知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。   知识图谱">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-12T07:25:00.000Z">
+<meta property="article:modified_time" content="2020-12-16T01:49:38.245Z">
+<meta property="article:author" content="Chunlei Zhang">
+<meta property="article:tag" content="knowledge graph">
+<meta property="article:tag" content="GKG">
+<meta property="article:tag" content="DKG">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://zhangchunlei.com/knowledge-graph/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>什么是知识图谱 | Chunlei's BLog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/knowledge-graph/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          什么是知识图谱
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-12 15:25:00" itemprop="dateCreated datePublished" datetime="2020-12-12T15:25:00+08:00">2020-12-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-16 09:49:38" itemprop="dateModified" datetime="2020-12-16T09:49:38+08:00">2020-12-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/" itemprop="url" rel="index"><span itemprop="name">知识图谱</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>###什么是知识图谱？<br>概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。 </p>
+<p>知识图谱(knowledge graph)也可以表征为知识网络，但是它主要不是给人看，而是想让机器读懂知识。其背后的前提假设是知识可以通过知识图谱的方式表征出来，其背后隐藏的是符合主义，也就是知识的本质是符合表征。  </p>
+<p>知识图谱按照应用情境和范围的不同，可以分为通用指示图图谱GKG和领域知识图谱DKG，分别适应于一般性人机交流和特定领域的人机交流。  </p>
+<p>###知识图谱的构成<br>构成知识图谱的基本单位是三元组。三元组由实体-连接-实体构成，记录了网络中实体与实体的关系，它是本质上就是一条知识连接，一个陈述句，一个命题。命题是可以判断真假的陈述句。命题也是构成知识系统的<br>基本单位。因此，理论上所以知识都可以表征为命题，继而表征为知识图谱中的三元组。<br>举一个生物学的例子，比如：  </p>
+<pre><code>真核细胞-是-细胞
+真核细胞-有-细胞核</code></pre>
+<p>用这2个三元组就描述了关于真核细胞的2个命题。  </p>
+<p>###三元组的不同形式<br>理论上，我们可以将任何一个命题表述为三元组，这就需要三元组具有不同的形式，以适应不同的句子。比如：  </p>
+<pre><code>实体-状态-1：我笑了
+实体-关系-实体：我吃饭
+实体-关系-实体（状态）：我找到了一家高档的餐馆
+三元组-关系-实体：我与朋友的关系不是很和睦
+实体-关系-三元组：他不同意我与玛丽结婚
+三元组-关系-三元组：他对待玛丽就像父亲对待女儿
+三元组-三元组-三元组：我肚子饿了和我要去餐馆是事件的前因后果</code></pre>
+<p>###知识图谱的基本概念  </p>
+<pre><code>实体（Entity）是对客观个体的抽象，知识图谱中的实体多是具体的。例如：李安，姚明。  
+类型（type）是对具有相同特点或属性的实体集合的抽象。例如：国家，运动员。  
+关系（relation）是实体与实体之间关系的抽象。例如：导演，父女。  
+属性（property）是对实体与实体之间关系的抽象。例如：导演，身高。  
+域（domain）是类型的集合，凌驾于类型之上，是对某一领域所有类型的抽象。例如：地理位置，职业。  
+值（value）是用来描述实体的，可以分为文本型和数值型。例如：性别：男，身高：226cm。  </code></pre>
+<p>###知识图谱中的关系类型  </p>
+<pre><code>隶属：（is-a）
+同义：（similar)
+从属：（part-of）
+相关：（relate-to）
+因果：（cause）：forward(促进)、restraint(抑制)
+从事：（do）：发现（discover）、发明（invent）</code></pre>
+<p>###知识图谱的应用<br>知识图谱的应用十分广泛，涉及各个行业。比如：</p>
+<pre><code>+ 信息检索：搜索引擎中对实体的精准聚合和匹配、对关键词的理解以及对搜索意图的语义分析等；
++ 自然语言理解：知识图谱中的知识作为理解自然语言中实体和关系的背景信息；
++ 问答系统：匹配问答模式和知识图谱中知识子图之间的映射；
++ 推荐系统：将知识图谱作为一种辅助信息集成到推荐系统中以提供更加精准的推荐选项；
++ 电子商务：构建商品知识图谱来精准地匹配用户的购买意愿和商品候选集合；
++ 金融风控：利用实体关系来分析金融活动的风险以提供在风险触发后的补救措施；
++ 公安刑侦：分析实体和实体之间的关系以获得线索等；
++ 司法辅助：法律条文的结构化表示和查询来辅助案件的判决等；
++ 教育医疗：提供可视化的知识表示，用于药物分析、疾病诊断等；
+来源：知乎链接：https://www.zhihu.com/question/59281410/answer/579230733</code></pre>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/knowledge-graph/" rel="tag"># knowledge graph</a>
+              <a href="/tags/GKG/" rel="tag"># GKG</a>
+              <a href="/tags/DKG/" rel="tag"># DKG</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/brew-lesson/" rel="prev" title="Homebrew出错的种种折腾">
+      <i class="fa fa-chevron-left"></i> Homebrew出错的种种折腾
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/love-is-beside-you/" rel="next" title="爱在你身边">
+      爱在你身边 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+</body>
+</html>

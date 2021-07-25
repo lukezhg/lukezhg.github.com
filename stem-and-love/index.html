@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="旁白：有人向往远方，有人向往床上 （大我来到小爱的床前，小爱还在睡觉。） 我：有那么多觉要睡吗？睡那么多，死了之后不怕失眠吗？ 爱：谁在唠唠叨叨的呢？把我的美梦都惊扰了！ 我：还睡啊！该去上裴老师的STEM课了！ 爱：啊今天有课？什么课？什么课？ 我：STEM课 爱：弹（tan）幕课有什么好上的？网上不到处都是！ 我：姐姐，不是弹（tan）幕，是弹（dan）幕，去去去。 不是弹（tan）幕，也不是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="STEM &amp; Love">
+<meta property="og:url" content="http://zhangchunlei.com/stem-and-love/index.html">
+<meta property="og:site_name" content="Chunlei&#39;s BLog">
+<meta property="og:description" content="旁白：有人向往远方，有人向往床上 （大我来到小爱的床前，小爱还在睡觉。） 我：有那么多觉要睡吗？睡那么多，死了之后不怕失眠吗？ 爱：谁在唠唠叨叨的呢？把我的美梦都惊扰了！ 我：还睡啊！该去上裴老师的STEM课了！ 爱：啊今天有课？什么课？什么课？ 我：STEM课 爱：弹（tan）幕课有什么好上的？网上不到处都是！ 我：姐姐，不是弹（tan）幕，是弹（dan）幕，去去去。 不是弹（tan）幕，也不是">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2017-11-04T04:02:00.000Z">
+<meta property="article:modified_time" content="2017-11-04T04:05:45.000Z">
+<meta property="article:author" content="Chunlei Zhang">
+<meta property="article:tag" content="sci-drama">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://zhangchunlei.com/stem-and-love/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>STEM &amp; Love | Chunlei's BLog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Chunlei's BLog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Chunlei's BLog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">刹那是永恒</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/stem-and-love/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          STEM &amp; Love
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-11-04 12:02:00 / 修改时间：12:05:45" itemprop="dateCreated datePublished" datetime="2017-11-04T12:02:00+08:00">2017-11-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E5%AD%A6%E8%AF%9D%E5%89%A7/" itemprop="url" rel="index"><span itemprop="name">科学话剧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>旁白：有人向往远方，有人向往床上</p>
+<p>（大我来到小爱的床前，小爱还在睡觉。）</p>
+<p>我：有那么多觉要睡吗？睡那么多，死了之后不怕失眠吗？</p>
+<p>爱：谁在唠唠叨叨的呢？把我的美梦都惊扰了！</p>
+<p>我：还睡啊！该去上裴老师的STEM课了！</p>
+<p>爱：啊今天有课？什么课？什么课？</p>
+<p>我：STEM课</p>
+<p>爱：弹（tan）幕课有什么好上的？网上不到处都是！</p>
+<p>我：姐姐，不是弹（tan）幕，是弹（dan）幕，去去去。 不是弹（tan）幕，也不是弹（dan）幕。是stem，S.T.E.M</p>
+<p>爱：嗨，S.T.E.M，我以为是什么呢？那我更要去睡觉了？</p>
+<p>我：啊！为什么？</p>
+<p>爱：睡觉很重要啊，不是S。T。E。M。吗，第一字母是不是就是S？</p>
+<p>我：对呀</p>
+<p>爱：S吗，S代表的是SLEEP，当然要睡好了。</p>
+<p>我：等下，等下，STEM的S好像是Science，科学吧。</p>
+<p>爱：什么SCIENCE，科学能有睡觉重要吗？</p>
+<p>我：俄，那T又代表什么？</p>
+<p>爱：T都不知道，T代表的是Think啊，思考啊，还真拿我当猪了？只知道睡啊，偶尔思考思考人生，思考思考未来，思考思考如何提高睡眠质量。</p>
+<p>我：果然还是只知道睡，哪，哪我问你，E代表什么？</p>
+<p>爱：E啊，E就是吃啊，Eat懂不。</p>
+<p>我：还真是狗改不了吃屎，除了睡就是吃，三句话不离本行。</p>
+<p>爱：怎么说话呢，怎么说化呢，吃可是我们中国的文化精华啊，你不不知道我们中华民族几乎三分之一的时间和智慧都用在吃上了。</p>
+<p>我：真的吗？精华也不能乱涂啊，E不是engineering吗！</p>
+<p>爱：Engineering是什么鬼？</p>
+<p>我：Engineering是工程的意思，浅薄了吧？</p>
+<p>爱：不浅薄，工程是吧，工程不就是干活，一边是干活，一边是吃，你选哪一个，傻子都会选。</p>
+<p>我：俄……</p>
+<p>爱：当然是吃了，笨蛋。</p>
+<p>我：天啊，哪，哪，哪M呢？我问你</p>
+<p>爱：俄，这个，这个，M就是make啊，你真拿我当猪啊，只知道吃是吧。我还会创作。我可是当今最火的创客，什么黑客、慕课、微课、蜗居客，都统统给我靠边站，我是创客。I am a Maker。I am a Maker。</p>
+<p>我：什么Maker，我看你是谣言的Maker。别信她的，同学们，STEM是科学、技术、工程、数学的缩写，不是什么Sleep、Think、Eat、Make的缩写，而且现在STEM已经慢慢变为STEAM了，这个新增加的A就是ART。art，艺术懂不？</p>
+<p>爱：什么Art呀，不，不是ART。确实STEM正在变为STEAM，不过这个A不是什么art。</p>
+<p>我：那是什么？</p>
+<p>爱：是AI懂不，现在最火的，讨论的最热的，各行各业都心惊胆战的</p>
+<p>我：什么呀？</p>
+<p>爱：AI AI，就是爱呀。瞧你的英文这么溜儿，拼音都没学好。你以为我只知道到吃了睡，睡了吃啊！除了思考、创造，没有别的爱好？告诉你，我的爱好就是爱啊！如果生活没有爱，还有什么可期待？对不起，我要去爱了，拜拜，这才是生活！</p>
+<p>我：AI不是artificial intelligence吗？爱，等我一下，爱，你没穿鞋！</p>
+<p>科学大本营——第一季</p>
+<p>STEM&amp;爱：主演：大我，小爱。 编剧：chunlei</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/sci-drama/" rel="tag"># sci-drama</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/build-a-chat-bot-with-chatterbot-django/" rel="prev" title="build a chat bot with ChatterBot Django">
+      <i class="fa fa-chevron-left"></i> build a chat bot with ChatterBot Django
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/use-mermaid-to-render-graph/" rel="next" title="Use mermaid to render Graph">
+      Use mermaid to render Graph <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chunlei Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">506</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">103</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">354</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chunlei Zhang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+</body>
+</html>
