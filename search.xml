@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>try</title>
-      <link href="/2021/07/24/2021-07-24-try/"/>
-      <url>/2021/07/24/2021-07-24-try/</url>
+      <title>Hello Hexo</title>
+      <link href="/2021/07/25/Hello-Hexo/"/>
+      <url>/2021/07/25/Hello-Hexo/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="常用的HEXO命令"><a href="#常用的HEXO命令" class="headerlink" title="常用的HEXO命令"></a>常用的HEXO命令</h3><pre><code>hexo g #完整命令为hexo generate,用于生成静态文件hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览hexo d #完整命令为hexo deploy,用于将本地文件发布到github上hexo n #完整命令为hexo new,用于新建一篇文章hexo g -d #两个命令的合成，一般在修改或者添加博文后直接使用这个命令</code></pre>]]></content>
       
       
       
@@ -375,82 +375,6 @@
             <tag> homebrew </tag>
             
             <tag> rvm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>what a good day</title>
-      <link href="/2020/12/09/what-a-good-day/"/>
-      <url>/2020/12/09/what-a-good-day/</url>
-      
-        <content type="html"><![CDATA[<p>不要在弄mac了</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> game </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>day</title>
-      <link href="/2020/12/09/day/"/>
-      <url>/2020/12/09/day/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> try </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>helloworld</title>
-      <link href="/2020/12/08/helloworld/"/>
-      <url>/2020/12/08/helloworld/</url>
-      
-        <content type="html"><![CDATA[<p>测试页面</p><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> hello </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2020/12/08/hello-world/"/>
-      <url>/2020/12/08/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> document </tag>
             
         </tags>
       

@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-24T07:44:47.668Z</updated>
+  <updated>2021-07-25T07:06:50.260Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,12 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>try</title>
-    <link href="http://zhangchunlei.com/2021/07/24/2021-07-24-try/"/>
-    <id>http://zhangchunlei.com/2021/07/24/2021-07-24-try/</id>
-    <published>2021-07-24T07:44:00.000Z</published>
-    <updated>2021-07-24T07:44:47.668Z</updated>
+    <title>Hello Hexo</title>
+    <link href="http://zhangchunlei.com/2021/07/25/Hello-Hexo/"/>
+    <id>http://zhangchunlei.com/2021/07/25/Hello-Hexo/</id>
+    <published>2021-07-25T06:57:05.000Z</published>
+    <updated>2021-07-25T07:06:50.260Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;常用的HEXO命令&quot;&gt;&lt;a href=&quot;#常用的HEXO命令&quot; class=&quot;headerlink&quot; title=&quot;常用的HEXO命令&quot;&gt;&lt;/a&gt;常用的HEXO命令&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo g #完整命令为hexo</summary>
+        
+      
     
     
     
@@ -486,26 +494,23 @@ ta在你身边 </summary>
   </entry>
   
   <entry>
-    <title>what a good day</title>
-    <link href="http://zhangchunlei.com/2020/12/09/what-a-good-day/"/>
-    <id>http://zhangchunlei.com/2020/12/09/what-a-good-day/</id>
-    <published>2020-12-09T02:47:34.000Z</published>
-    <updated>2021-07-24T08:27:15.316Z</updated>
+    <title>aiva chatbot with neo4j brain</title>
+    <link href="http://zhangchunlei.com/2020/12/07/2020-12-07-aiva-chatbot-with-neo4j-brain/"/>
+    <id>http://zhangchunlei.com/2020/12/07/2020-12-07-aiva-chatbot-with-neo4j-brain/</id>
+    <published>2020-12-07T15:10:00.000Z</published>
+    <updated>2020-12-08T12:30:07.406Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;不要在弄mac了&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;###主教程&lt;br&gt;&lt;a</summary>
         
       
     
     
     
-    
-    <category term="game" scheme="http://zhangchunlei.com/tags/game/"/>
     
   </entry>
   
