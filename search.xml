@@ -8,7 +8,7 @@
       <link href="/2021/07/25/Hello-Hexo/"/>
       <url>/2021/07/25/Hello-Hexo/</url>
       
-        <content type="html"><![CDATA[<h3 id="常用的HEXO命令"><a href="#常用的HEXO命令" class="headerlink" title="常用的HEXO命令"></a>常用的HEXO命令</h3><p>‘’’<br>    hexo g #完整命令为hexo generate,用于生成静态文件<br>    hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览<br>    hexo d #完整命令为hexo deploy,用于将本地文件发布到github上<br>    hexo n #完整命令为hexo new,用于新建一篇文章<br>    hexo g -d #两个命令的合成，一般在修改或者添加博文后直接使用这个命令<br>‘’’</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="常用的HEXO命令"><a href="#常用的HEXO命令" class="headerlink" title="常用的HEXO命令"></a>常用的HEXO命令</h3><pre><code>hexo g #完整命令为hexo generate,用于生成静态文件hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览hexo d #完整命令为hexo deploy,用于将本地文件发布到github上hexo n #完整命令为hexo new,用于新建一篇文章hexo g -d #两个命令的合成，一般在修改或者添加博文后直接使用这个命令</code></pre>]]></content>
       
       
       
