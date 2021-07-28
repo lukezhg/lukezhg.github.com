@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-28T13:53:47.702Z</updated>
+  <updated>2021-07-28T14:34:12.680Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>新教师教学资源项目</title>
+    <link href="http://zhangchunlei.com/2021/07/28/teaching-resources-for-new-teacher/"/>
+    <id>http://zhangchunlei.com/2021/07/28/teaching-resources-for-new-teacher/</id>
+    <published>2021-07-28T14:07:26.000Z</published>
+    <updated>2021-07-28T14:34:12.680Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;新教师是一个特殊群体，他们有热情和理想，却缺乏资源和经验。他们是一群可能会在复杂教育生态中受伤的群体，他们也是教育改革的希望。不知道出于何种原因，新教师可能会承担超负荷的期望和工作量，也许是因为他们脾气好，又或者是他们还缺乏话语权，再或者是给别人别人也不干，最后又只能给新教</summary>
+        
+      
+    
+    
+    
+    <category term="课程" scheme="http://zhangchunlei.com/categories/%E8%AF%BE%E7%A8%8B/"/>
+    
+    
+    <category term="新教师" scheme="http://zhangchunlei.com/tags/%E6%96%B0%E6%95%99%E5%B8%88/"/>
+    
+    <category term="项目计划" scheme="http://zhangchunlei.com/tags/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>sublime find and replace</title>
     <link href="http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/"/>
     <id>http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/</id>
     <published>2021-07-28T13:39:02.000Z</published>
-    <updated>2021-07-28T13:53:47.702Z</updated>
+    <updated>2021-07-28T14:06:06.038Z</updated>
     
     
       
@@ -33,6 +60,8 @@
       
     
     
+    
+    <category term="技术技巧" scheme="http://zhangchunlei.com/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/"/>
     
     
     <category term="sublime" scheme="http://zhangchunlei.com/tags/sublime/"/>
@@ -476,38 +505,6 @@ ta在你身边 </summary>
     <category term="GKG" scheme="http://zhangchunlei.com/tags/GKG/"/>
     
     <category term="DKG" scheme="http://zhangchunlei.com/tags/DKG/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Homebrew出错的种种折腾</title>
-    <link href="http://zhangchunlei.com/2020/12/12/brew-lesson/"/>
-    <id>http://zhangchunlei.com/2020/12/12/brew-lesson/</id>
-    <published>2020-12-12T05:07:00.000Z</published>
-    <updated>2020-12-12T05:56:49.450Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;我用的是一台2013年的旧mac，更新Homebrew时会提示2020年1月会停止支持的那种。这也没什么，但是前几天不小心掉进坑里了，一起都起源于贪婪。  &lt;/p&gt;
-&lt;p&gt;你总是想安装更多的程序，直到磁盘不够用，直到系统版本不够，直到你不会安装。 </summary>
-        
-      
-    
-    
-    
-    <category term="computer" scheme="http://zhangchunlei.com/categories/computer/"/>
-    
-    
-    <category term="octopress" scheme="http://zhangchunlei.com/tags/octopress/"/>
-    
-    <category term="rake" scheme="http://zhangchunlei.com/tags/rake/"/>
-    
-    <category term="homebrew" scheme="http://zhangchunlei.com/tags/homebrew/"/>
-    
-    <category term="rvm" scheme="http://zhangchunlei.com/tags/rvm/"/>
     
   </entry>
   
