@@ -12206,4 +12206,24 @@ hexo g -d #两个命令的合成，一般在修改或者添加博文后直接使
         <tag>weibo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>sublime find and replace</title>
+    <url>/2021/07/28/sublime-find-and-replace/</url>
+    <content><![CDATA[<h3 id="sublime-支持正则表达式"><a href="#sublime-支持正则表达式" class="headerlink" title="sublime 支持正则表达式"></a>sublime 支持正则表达式</h3><pre><code>#(#&#123;1,&#125;)    #可以匹配##，###，####，#####等</code></pre>
+<h3 id="sublime-支持多文件搜索和替换"><a href="#sublime-支持多文件搜索和替换" class="headerlink" title="sublime 支持多文件搜索和替换"></a>sublime 支持多文件搜索和替换</h3><p>也就是你可以打开一个文件夹，然搜索该文件夹的所有文件中，是否有指定字符  </p>
+<h3 id="sublime-支持在replace中使用捕获的字符"><a href="#sublime-支持在replace中使用捕获的字符" class="headerlink" title="sublime 支持在replace中使用捕获的字符"></a>sublime 支持在replace中使用捕获的字符</h3><p>find:</p>
+<pre><code>my name is (\w+)</code></pre>
+<p>replace:</p>
+<pre><code>my name used to be $1</code></pre>
+<p>在比如，我想把博文中所以##，###，####后面都加上一个空格  </p>
+<p>find:</p>
+<pre><code>&quot;#(#&#123;1,&#125;)&quot;</code></pre>
+<p>replace:</p>
+<pre><code>&quot;#$1 &quot;</code></pre>
+<p>为了让大家看到那个空格，我都加了””，实际使用时去除””。  </p>
+]]></content>
+      <tags>
+        <tag>sublime</tag>
+      </tags>
+  </entry>
 </search>

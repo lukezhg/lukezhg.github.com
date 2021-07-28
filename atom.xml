@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-28T13:34:17.969Z</updated>
+  <updated>2021-07-28T13:53:47.702Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublime find and replace</title>
+    <link href="http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/"/>
+    <id>http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/</id>
+    <published>2021-07-28T13:39:02.000Z</published>
+    <updated>2021-07-28T13:53:47.702Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;sublime-支持正则表达式&quot;&gt;&lt;a href=&quot;#sublime-支持正则表达式&quot; class=&quot;headerlink&quot; title=&quot;sublime 支持正则表达式&quot;&gt;&lt;/a&gt;sublime</summary>
+        
+      
+    
+    
+    
+    
+    <category term="sublime" scheme="http://zhangchunlei.com/tags/sublime/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Hexo</title>
@@ -485,27 +508,6 @@ ta在你身边 </summary>
     <category term="homebrew" scheme="http://zhangchunlei.com/tags/homebrew/"/>
     
     <category term="rvm" scheme="http://zhangchunlei.com/tags/rvm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>aiva chatbot with neo4j brain</title>
-    <link href="http://zhangchunlei.com/2020/12/07/aiva-chatbot-with-neo4j-brain/"/>
-    <id>http://zhangchunlei.com/2020/12/07/aiva-chatbot-with-neo4j-brain/</id>
-    <published>2020-12-07T15:10:00.000Z</published>
-    <updated>2021-07-28T13:34:17.929Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;主教程&quot;&gt;&lt;a href=&quot;#主教程&quot; class=&quot;headerlink&quot; title=&quot;主教程&quot;&gt;&lt;/a&gt;主教程&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
