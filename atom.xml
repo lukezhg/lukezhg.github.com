@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-25T07:48:40.278Z</updated>
+  <updated>2021-07-28T13:34:17.969Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://zhangchunlei.com/2021/07/25/Hello-Hexo/"/>
     <id>http://zhangchunlei.com/2021/07/25/Hello-Hexo/</id>
     <published>2021-07-25T06:57:05.000Z</published>
-    <updated>2021-07-25T07:48:40.278Z</updated>
+    <updated>2021-07-28T13:34:17.969Z</updated>
     
     
       
@@ -185,7 +185,7 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2021/03/03/self-grow-system/"/>
     <id>http://zhangchunlei.com/2021/03/03/self-grow-system/</id>
     <published>2021-03-03T13:01:00.000Z</published>
-    <updated>2021-03-04T03:49:27.803Z</updated>
+    <updated>2021-07-28T13:34:17.964Z</updated>
     
     
       
@@ -193,7 +193,8 @@ pyenv</summary>
         
         
     <summary type="html">&lt;p&gt;每个人都是一个系统，但是大多系统都是被动响应的系统，到处救火、上蹿下跳，直到呜呼哀。这样的人生其实不值得一过。如何才能拥有成功、自由的人生呢？  &lt;/p&gt;
-&lt;p&gt;那么，我么必须构建一个自我成长系统。 </summary>
+&lt;p&gt;那么，我么必须构建一个自我成长系统。  &lt;/p&gt;
+&lt;h3 id=&quot;自由的本质是自律&quot;&gt;&lt;a</summary>
         
       
     
@@ -255,15 +256,14 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2021/01/28/math-for-kids/"/>
     <id>http://zhangchunlei.com/2021/01/28/math-for-kids/</id>
     <published>2021-01-28T08:42:00.000Z</published>
-    <updated>2021-01-28T08:54:08.954Z</updated>
+    <updated>2021-07-28T13:34:17.960Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;###数学学习的应用程序 &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.mathplayground.com/&quot;&gt;https://www.mathplayground.com/&lt;/a&gt;&lt;br&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;数学学习的应用程序&quot;&gt;&lt;a href=&quot;#数学学习的应用程序&quot; class=&quot;headerlink&quot; title=&quot;数学学习的应用程序&quot;&gt;&lt;/a&gt;数学学习的应用程序&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -281,17 +281,14 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2021/01/23/github-project-collaboration/"/>
     <id>http://zhangchunlei.com/2021/01/23/github-project-collaboration/</id>
     <published>2021-01-23T05:45:00.000Z</published>
-    <updated>2021-01-23T07:05:43.191Z</updated>
+    <updated>2021-07-28T13:34:17.956Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;###终端窗口Shell的切换&lt;br&gt;改变默认的shell脚本：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;chsh -s /bin/zsh&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;从 zsh 切换回 bash&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;chsh -s</summary>
+    <summary type="html">&lt;h3 id=&quot;终端窗口Shell的切换&quot;&gt;&lt;a href=&quot;#终端窗口Shell的切换&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -305,15 +302,14 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2021/01/16/happy-training-plan/"/>
     <id>http://zhangchunlei.com/2021/01/16/happy-training-plan/</id>
     <published>2021-01-16T09:47:00.000Z</published>
-    <updated>2021-01-16T10:01:46.586Z</updated>
+    <updated>2021-07-28T13:34:17.951Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;###0、应该避免的动作和姿势&lt;br&gt;** 避免膝盖过度承载造成损伤(比如纵向跳跃)&lt;br&gt;** 避免膝关节内扣的运动姿势&lt;br&gt;** 避免横向劈叉导致膝盖内扣&lt;/p&gt;
-&lt;p&gt;###1、热身运动&lt;br&gt;** 慢跑一圈&lt;br&gt;** 关节热身 </summary>
+    <summary type="html">&lt;h3 id=&quot;0、应该避免的动作和姿势&quot;&gt;&lt;a href=&quot;#0、应该避免的动作和姿势&quot; class=&quot;headerlink&quot; title=&quot;0、应该避免的动作和姿势&quot;&gt;&lt;/a&gt;0、应该避免的动作和姿势&lt;/h3&gt;&lt;p&gt;** 避免膝盖过度承载造成损伤(比如纵向跳跃)&lt;br&gt;**</summary>
         
       
     
@@ -327,7 +323,7 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2020/12/29/shanghai-pisa-score-debate/"/>
     <id>http://zhangchunlei.com/2020/12/29/shanghai-pisa-score-debate/</id>
     <published>2020-12-29T00:43:00.000Z</published>
-    <updated>2020-12-29T05:19:30.191Z</updated>
+    <updated>2021-07-28T13:34:17.946Z</updated>
     
     
       
@@ -354,7 +350,7 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2020/12/25/how-to-correct-knee-valgus/"/>
     <id>http://zhangchunlei.com/2020/12/25/how-to-correct-knee-valgus/</id>
     <published>2020-12-25T14:36:00.000Z</published>
-    <updated>2021-07-24T08:33:42.570Z</updated>
+    <updated>2021-07-28T13:34:17.939Z</updated>
     
     
       
@@ -436,15 +432,14 @@ ta在你身边 </summary>
     <link href="http://zhangchunlei.com/2020/12/12/knowledge-graph/"/>
     <id>http://zhangchunlei.com/2020/12/12/knowledge-graph/</id>
     <published>2020-12-12T07:25:00.000Z</published>
-    <updated>2020-12-16T01:49:38.245Z</updated>
+    <updated>2021-07-28T13:34:17.935Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;###什么是知识图谱？&lt;br&gt;概念图（concept map）是用图形的方式表征知识，是知识可视化的一种形式，它的根本目的是辅助人类的知识加工，说白了是给人看的，促进知识理解。 &lt;/p&gt;
-&lt;p&gt;知识图谱(knowledge</summary>
+    <summary type="html">&lt;h3 id=&quot;什么是知识图谱？&quot;&gt;&lt;a href=&quot;#什么是知识图谱？&quot; class=&quot;headerlink&quot; title=&quot;什么是知识图谱？&quot;&gt;&lt;/a&gt;什么是知识图谱？&lt;/h3&gt;&lt;p&gt;概念图（concept</summary>
         
       
     
@@ -498,14 +493,14 @@ ta在你身边 </summary>
     <link href="http://zhangchunlei.com/2020/12/07/aiva-chatbot-with-neo4j-brain/"/>
     <id>http://zhangchunlei.com/2020/12/07/aiva-chatbot-with-neo4j-brain/</id>
     <published>2020-12-07T15:10:00.000Z</published>
-    <updated>2020-12-08T12:30:07.406Z</updated>
+    <updated>2021-07-28T13:34:17.929Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;###主教程&lt;br&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;主教程&quot;&gt;&lt;a href=&quot;#主教程&quot; class=&quot;headerlink&quot; title=&quot;主教程&quot;&gt;&lt;/a&gt;主教程&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
         
       
     

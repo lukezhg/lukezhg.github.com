@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"zhangchunlei.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="###终端窗口Shell的切换改变默认的shell脚本： chsh -s &#x2F;bin&#x2F;zsh 从 zsh 切换回 bash chsh -s &#x2F;bin&#x2F;bash zsh 和 bash 的环境变量bash 的环境变量是&#x2F;.bash_profile文件。zsh 的环境变量是&#x2F;.zshrc文件。   PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加">
+  <meta name="description" content="终端窗口Shell的切换改变默认的shell脚本： chsh -s &#x2F;bin&#x2F;zsh 从 zsh 切换回 bash chsh -s &#x2F;bin&#x2F;bash zsh 和 bash 的环境变量bash 的环境变量是&#x2F;.bash_profile文件。zsh 的环境变量是&#x2F;.zshrc文件。   PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 so">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用github进行项目协作">
 <meta property="og:url" content="http://zhangchunlei.com/2021/01/23/github-project-collaboration/index.html">
 <meta property="og:site_name" content="Chunlei&#39;s BLog">
-<meta property="og:description" content="###终端窗口Shell的切换改变默认的shell脚本： chsh -s &#x2F;bin&#x2F;zsh 从 zsh 切换回 bash chsh -s &#x2F;bin&#x2F;bash zsh 和 bash 的环境变量bash 的环境变量是&#x2F;.bash_profile文件。zsh 的环境变量是&#x2F;.zshrc文件。   PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加">
+<meta property="og:description" content="终端窗口Shell的切换改变默认的shell脚本： chsh -s &#x2F;bin&#x2F;zsh 从 zsh 切换回 bash chsh -s &#x2F;bin&#x2F;bash zsh 和 bash 的环境变量bash 的环境变量是&#x2F;.bash_profile文件。zsh 的环境变量是&#x2F;.zshrc文件。   PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 so">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-23T05:45:00.000Z">
-<meta property="article:modified_time" content="2021-01-23T07:05:43.191Z">
+<meta property="article:modified_time" content="2021-07-28T13:34:17.956Z">
 <meta property="article:author" content="Chunlei Zhang">
 <meta name="twitter:card" content="summary">
 
@@ -217,10 +217,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-01-23 13:45:00 / 修改时间：15:05:43" itemprop="dateCreated datePublished" datetime="2021-01-23T13:45:00+08:00">2021-01-23</time>
+              <time title="创建时间：2021-01-23 13:45:00" itemprop="dateCreated datePublished" datetime="2021-01-23T13:45:00+08:00">2021-01-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-28 21:34:17" itemprop="dateModified" datetime="2021-07-28T21:34:17+08:00">2021-07-28</time>
+              </span>
 
           
 
@@ -233,31 +239,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>###终端窗口Shell的切换<br>改变默认的shell脚本：</p>
+        <h3 id="终端窗口Shell的切换"><a href="#终端窗口Shell的切换" class="headerlink" title="终端窗口Shell的切换"></a>终端窗口Shell的切换</h3><p>改变默认的shell脚本：</p>
 <pre><code>chsh -s /bin/zsh</code></pre>
 <p>从 zsh 切换回 bash</p>
 <pre><code>chsh -s /bin/bash</code></pre>
 <p>zsh 和 bash 的环境变量<br>bash 的环境变量是<del>/.bash_profile文件。<br>zsh 的环境变量是</del>/.zshrc文件。  </p>
 <p>PS：如果从 bash 切换到 zsh，但想保留 bash 所设置的环境变量，可在 .zshrc文件末尾添加 source ~/.bash_profile即可。</p>
 <p>参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8d822ce0d425">MacOS 的 zsh 和 bash 切换</a></p>
-<p>###github工作思路和流程<br>项目负责人建立项目并且邀请合作者共同开发<br>合作者打开项目地址，接受邀请。<br>项目负责人将合作者ssh-pub添加到项目，便于合作者访问。  </p>
-<p>####如何查看ssh-pub公钥  </p>
-<pre><code>cd ~/.ssh
+<h3 id="github工作思路和流程"><a href="#github工作思路和流程" class="headerlink" title="github工作思路和流程"></a>github工作思路和流程</h3><p>项目负责人建立项目并且邀请合作者共同开发<br>合作者打开项目地址，接受邀请。<br>项目负责人将合作者ssh-pub添加到项目，便于合作者访问。  </p>
+<h4 id="如何查看ssh-pub公钥"><a href="#如何查看ssh-pub公钥" class="headerlink" title="如何查看ssh-pub公钥"></a>如何查看ssh-pub公钥</h4><pre><code>cd ~/.ssh
 cat id_rsa.pub</code></pre>
 <p>复杂公钥给项目负责人，进行添加。建立合作关系。   </p>
-<p>####如何查看浏览器提交的数据  </p>
-<p>command+alt+i 调出后台<br>在web交互实验页面上输入正确的答案<br>点击属性变为全局变量temp1<br>利用json.stringfy(temp1) 转变为字符  </p>
+<h4 id="如何查看浏览器提交的数据"><a href="#如何查看浏览器提交的数据" class="headerlink" title="如何查看浏览器提交的数据"></a>如何查看浏览器提交的数据</h4><p>command+alt+i 调出后台<br>在web交互实验页面上输入正确的答案<br>点击属性变为全局变量temp1<br>利用json.stringfy(temp1) 转变为字符  </p>
 <p>复制实验正确答案到文件位置  </p>
-<p>####上传代码  </p>
-<pre><code>git pull #继承合作的修改
+<h4 id="上传代码"><a href="#上传代码" class="headerlink" title="上传代码"></a>上传代码</h4><pre><code>git pull #继承合作的修改
 git add . 
 git commit -m &quot;message&quot;
 git push #更新修改到远程文件</code></pre>
-<p>####合并分支<br>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
+<h4 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h4><p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
 <pre><code>git checkout main
 git merge ictweb-sf</code></pre>
-<p>####服务器上让代码生效  </p>
-<pre><code>cd /var/djangoweb/ictweb/ 
+<h4 id="服务器上让代码生效"><a href="#服务器上让代码生效" class="headerlink" title="服务器上让代码生效"></a>服务器上让代码生效</h4><pre><code>cd /var/djangoweb/ictweb/ 
 git status
 git pull
 systemctl restart httpd.service</code></pre>
@@ -361,6 +363,7 @@ systemctl restart httpd.service</code></pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%88%E7%AB%AF%E7%AA%97%E5%8F%A3Shell%E7%9A%84%E5%88%87%E6%8D%A2"><span class="nav-number">1.</span> <span class="nav-text">终端窗口Shell的切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github%E5%B7%A5%E4%BD%9C%E6%80%9D%E8%B7%AF%E5%92%8C%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">github工作思路和流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8Bssh-pub%E5%85%AC%E9%92%A5"><span class="nav-number">2.1.</span> <span class="nav-text">如何查看ssh-pub公钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%90%E4%BA%A4%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="nav-number">2.2.</span> <span class="nav-text">如何查看浏览器提交的数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81"><span class="nav-number">2.3.</span> <span class="nav-text">上传代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF"><span class="nav-number">2.4.</span> <span class="nav-text">合并分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E8%AE%A9%E4%BB%A3%E7%A0%81%E7%94%9F%E6%95%88"><span class="nav-number">2.5.</span> <span class="nav-text">服务器上让代码生效</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
