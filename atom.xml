@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-28T14:34:12.680Z</updated>
+  <updated>2021-07-30T14:37:53.375Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>using google web designer to make games</title>
+    <link href="http://zhangchunlei.com/2021/07/30/using-google-web-designer-to-make-games/"/>
+    <id>http://zhangchunlei.com/2021/07/30/using-google-web-designer-to-make-games/</id>
+    <published>2021-07-30T13:57:53.000Z</published>
+    <updated>2021-07-30T14:37:53.375Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://webdesigner.withgoogle.com/&quot;&gt;GWD下载页面&lt;/a&gt;，这样写道：Create engaging, interactive HTML5-based designs and motion graphics that</summary>
+        
+      
+    
+    
+    
+    <category term="游戏" scheme="http://zhangchunlei.com/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="google" scheme="http://zhangchunlei.com/tags/google/"/>
+    
+    <category term="game" scheme="http://zhangchunlei.com/tags/game/"/>
+    
+    <category term="google web designer" scheme="http://zhangchunlei.com/tags/google-web-designer/"/>
+    
+  </entry>
   
   <entry>
     <title>新教师教学资源项目</title>
@@ -476,35 +505,6 @@ ta在你身边 </summary>
     
     
     <category term="创作" scheme="http://zhangchunlei.com/tags/%E5%88%9B%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>什么是知识图谱</title>
-    <link href="http://zhangchunlei.com/2020/12/12/knowledge-graph/"/>
-    <id>http://zhangchunlei.com/2020/12/12/knowledge-graph/</id>
-    <published>2020-12-12T07:25:00.000Z</published>
-    <updated>2021-07-28T13:34:17.935Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;什么是知识图谱？&quot;&gt;&lt;a href=&quot;#什么是知识图谱？&quot; class=&quot;headerlink&quot; title=&quot;什么是知识图谱？&quot;&gt;&lt;/a&gt;什么是知识图谱？&lt;/h3&gt;&lt;p&gt;概念图（concept</summary>
-        
-      
-    
-    
-    
-    <category term="知识图谱" scheme="http://zhangchunlei.com/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
-    
-    
-    <category term="knowledge graph" scheme="http://zhangchunlei.com/tags/knowledge-graph/"/>
-    
-    <category term="GKG" scheme="http://zhangchunlei.com/tags/GKG/"/>
-    
-    <category term="DKG" scheme="http://zhangchunlei.com/tags/DKG/"/>
     
   </entry>
   
