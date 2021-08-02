@@ -6120,9 +6120,11 @@ pluginspage="http://www.macromedia.com/go/getflashplayer"><br></embed><br></obje
   <entry>
     <title>Flash AS3 zip Manual</title>
     <url>/2014/11/27/flash-as3-zip-manual/</url>
-    <content><![CDATA[<p>Action Script 3.0 简明手册<br>在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br>变量与常量<br>变量有不同的类型，一个变量由变量名和值构成。<br><code/><br>var value2:Number = 17;<br>const SALES_TAX_RATE:Number = 0.07;<br></code><br>属性<br>简单地视为包含在对象中的“子”变量。  </p>
-<code/>
-square.x = 100;  
+    <content><![CDATA[<p>Action Script 3.0 简明手册<br>在上机前确保你的flash是cs3或者以上版本，如果是flash8或者以前的版本，下面有些代码会报错。<br>变量与常量<br>变量有不同的类型，一个变量由变量名和值构成。  </p>
+<pre><code>var value2:Number = 17;  
+const SALES_TAX_RATE:Number = 0.07;  </code></pre>
+<p>属性<br>简单地视为包含在对象中的“子”变量。  </p>
+<pre><code>square.x = 100;  
 square.y = 150;  
 square.rotation = triangle.rotation;  
 square.scaleX = 1.5;  
@@ -6131,9 +6133,7 @@ square.currentFrame
 square.alpha = 30;  
 square.height =20;  
 square.width =40;  
-square.visible =false;  
-</code>
-
+square.visible =false;  </code></pre>
 <p>调用方法：变量名-点-属性名<br>方法<br>方法是指可以由对象执行的操作。  </p>
 <pre><code>shortFilm.play();  
 shortFilm.stop();  
@@ -6180,16 +6180,14 @@ var dayNum:uint = someDate.getDay();  </code></pre>
 traceParameter(&quot;hello&quot;); // hello  </code></pre>
 <p>从函数返回值  </p>
 <pre><code>function doubleNum(baseNum:int):int&#123;  
-    return (baseNum * 2);&#125;  </code></pre>
-<code/>
+    return (baseNum * 2);&#125;  
+
 function passPrimitives(xParam:int, yParam:int):void&#123;  
     xParam++;  
     yParam++;  
     trace(xParam, yParam);  
-&#125;  
-</code>  
-函数参数  
-
+&#125;  </code></pre>
+<p>函数参数  </p>
 <pre><code>var xValue:int = 10;  
 var yValue:int = 15;  
 trace(xValue, yValue);// 10 15  
@@ -6337,7 +6335,9 @@ box.play();
 卷轴和毛笔写字- Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10342.shtml  
 地球旋转-上传：明月老师 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/10237.shtml  
 瀑布-上传：CC851246330 Flash源文件 - 闪吧Flash8: http://www.flash8.net/fla/9515.shtml  </code></pre>
-<p>复杂实例<br>ActionScript 3.0的流程控制语法_知行网: <a href="http://www.zhixing123.cn/Flash/2111.html">http://www.zhixing123.cn/Flash/2111.html</a><br>flash actionScript3 处理xml 教程_知行网: <a href="http://www.zhixing123.cn/Flash/20080.html">http://www.zhixing123.cn/Flash/20080.html</a>    </p>
+<p>复杂实例  </p>
+<pre><code>ActionScript 3.0的流程控制语法_知行网: http://www.zhixing123.cn/Flash/2111.html  
+flash actionScript3 处理xml 教程_知行网: http://www.zhixing123.cn/Flash/20080.html    </code></pre>
 ]]></content>
       <categories>
         <category>flash</category>
