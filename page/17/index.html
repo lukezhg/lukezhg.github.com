@@ -717,7 +717,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-08-07 22:09:54" itemprop="dateModified" datetime="2018-08-07T22:09:54+08:00">2018-08-07</time>
+                <time title="修改时间：2021-08-02 10:55:29" itemprop="dateModified" datetime="2021-08-02T10:55:29+08:00">2021-08-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -772,10 +772,21 @@ function playMovie(event:MouseEvent):void&#123;
 this.play();&#125;  
 
 playButton.addEventListener(MouseEvent.CLICK, playMovie);  </code></pre>
-<p>算数运算符<br>+-*/^  </p>
-<h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符  "></a>逻辑运算符  </h1><p>&amp;&amp;<br>||  </p>
-<p>if (dayOfWeek == “Wednesday”){<br>takeOutTrash();}  </p>
-<p>//单行注释<br>/*多行<br>注释<br>*/  </p>
+<p>算数运算符  </p>
+<pre><code>+-*/^  </code></pre>
+<p>逻辑运算符  </p>
+<pre><code>==  
+&amp;&amp;  
+||  
+
+
+if (dayOfWeek == &quot;Wednesday&quot;)&#123;  
+takeOutTrash();&#125;  
+
+//单行注释  
+/*多行  
+注释  
+*/  </code></pre>
 <p>流控制<br>函数<br>调用函数调用函数  </p>
 <pre><code>trace(&quot;Use trace to help debug your script&quot;);  
 var randomNum:Number = Math.random();  
@@ -827,126 +838,113 @@ trace(&quot;x is negative&quot;);&#125;
 else&#123;  
 trace(&quot;x is 0&quot;);&#125;  </code></pre>
 <p>switch语句  </p>
-<code/>
-switch(dayNum)&#123;  
-case 0:trace("Sunday");  
+<pre><code>switch(dayNum)&#123;  
+case 0:trace(&quot;Sunday&quot;);  
 break;  
-case 1:trace("Monday");  
+case 1:trace(&quot;Monday&quot;);  
 break;  
-case 2:trace("Tuesday");  
+case 2:trace(&quot;Tuesday&quot;);  
 break;  
-case 3:trace("Wednesday");  
+case 3:trace(&quot;Wednesday&quot;);  
 break;  
-case 4:trace("Thursday");  
+case 4:trace(&quot;Thursday&quot;);  
 break;  
-case 5:trace("Friday");  
+case 5:trace(&quot;Friday&quot;);  
 break;  
-case 6:trace("Saturday");  
+case 6:trace(&quot;Saturday&quot;);  
 break;  
-default:trace("Out of range");  
+default:trace(&quot;Out of range&quot;);  
 break;  
-&#125;  
-</code>  
-
+&#125;  </code></pre>
 <p>类<br>点语法  </p>
 <p>点运算符 (.) 提供对对象的属性和方法的访问。使用点语法，可以使用后跟点运算符和属性名或方法名的实例名来引用类的属性或方法。以下面的类定义为例：  </p>
-<code/>
-class DotExample  
+<pre><code>class DotExample  
 &#123;  
 public var prop1:String;  
 public function method1():void &#123;&#125;  
-&#125;  
-</code>  
-借助于点语法，可以使用在如下代码中创建的实例名来访问 prop1 属性和 method1() 方法：  
-<code/>  
-var myDotEx:DotExample = new DotExample();  
-myDotEx.prop1 = "hello";  
-myDotEx.method1();  
-</code>  
-定义包时，可以使用点语法。可以使用点运算符来引用嵌套包。例如，EventDispatcher 类位于一个名为 events 的包中，该包嵌套在名为 flash 的包中。可以使用下面的表达式来引用 events 包：  
-
+&#125;  </code></pre>
+<p>借助于点语法，可以使用在如下代码中创建的实例名来访问 prop1 属性和 method1() 方法：  </p>
+<pre><code>var myDotEx:DotExample = new DotExample();  
+myDotEx.prop1 = &quot;hello&quot;;  
+myDotEx.method1();  </code></pre>
+<p>定义包时，可以使用点语法。可以使用点运算符来引用嵌套包。例如，EventDispatcher 类位于一个名为 events 的包中，该包嵌套在名为 flash 的包中。可以使用下面的表达式来引用 events 包：  </p>
 <p>flash.events  </p>
 <p>还可以使用此表达式来引用 EventDispatcher 类：  </p>
 <p>flash.events.EventDispatcher  </p>
 <p>数组  </p>
-<code/>
-var names:Array = new Array("John", "Jane", "David");  
+<pre><code>var names:Array = new Array(&quot;John&quot;, &quot;Jane&quot;, &quot;David&quot;);  
 trace(names.length); //output: 3  
 trace(names[0]);// output: John  
 trace(names[1]); //output: Jane  
-trace(names[2]);// output: David  
-</code>  
-
-
+trace(names[2]);// output: David  </code></pre>
 <p>实例教程<br>对象的初始化<br>1 在主场景中新建一个矩形，全选然后F8转换为元件，命名为box。在第一帧里面尝试加入：<br>代码1  </p>
-<code/>
-box.x = 10;  
-box.y = 150;  
-</code>  
-代码2  
-<code/>  
+<pre><code>box.x = 10;  
+box.y = 150;    
 box.rotation = triangle.rotation;  
 box.scaleX = 1.5;  
-box.scaleY = 1.5;  
-</code>  
-2 把box变成一个骰子，尝试  
-代码3  
-<code/>  
+box.scaleY = 1.5;    
 box.currentFrame  
 box.alpha = 30;  
 box.height =20;  
 box.width =40;  
-box.visible =false;  
-</code>  
-3 尝试使用随机函数  
-代码4  
-<code/>  
-box.x = this.stage.width*Math.random();  
-box.y = this.stage.height*Math.random();  
-</code>  
-
-<p>影片剪辑的控制  </p>
-<code/>
-box.stop();  
+box.visible =false;  </code></pre>
+<p>2 尝试使用随机函数  </p>
+<pre><code>box.x = this.stage.width*Math.random();  
+box.y = this.stage.height*Math.random();  </code></pre>
+<p>3 影片剪辑的控制  </p>
+<pre><code>box.stop();  
 box.play();  
 box.gotoAndStop(1);  
 box.gotoAndPlay(3);  
-box.gotoAndStop(Math.round(6*Math.random()));  
-</code>  
-
+box.gotoAndStop(Math.round(6*Math.random()));   </code></pre>
 <p>影片剪辑的控制  </p>
-<pre><code/>
-import flash.display.*;
+<pre><code>import flash.display.*;
 import flash.events.*;
-mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);//添加监听
-
-//startDragFace函数
+//添加监听
+mcFace.addEventListener(MouseEvent.MOUSE_DOWN,startDragFace);
+//定义函数
 function startDragFace(e:MouseEvent):void &#123;
 mcFace.startDrag();
 &#125;
-
+//添加监听
 mcFace.addEventListener(MouseEvent.MOUSE_UP,stopDragFace);
-
+//定义函数
 function stopDragFace(e:MouseEvent):void &#123;
 mcFace.stopDrag();
-
-&#125;
-</code></pre> 
-
+&#125;</code></pre>
 <p>播放和定制按钮<br>1、制作按钮<br>2、给按钮命名为btn<br>3、在第一帧添加代码（该实例来自：AS3基础教程实例1 给按钮添加动作 | 且行电子学档: <a target="_blank" rel="noopener" href="http://www.eportfolios.cn/node/2146%EF%BC%89">http://www.eportfolios.cn/node/2146）</a>  </p>
 <pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  
 btn.addEventListener(MouseEvent.ROLL_OVER,btnRollOver);//注册鼠标放上事件帧听器  
 btn.addEventListener(MouseEvent.ROLL_OUT,btnRollOut);//注册鼠标离开事件帧听器  </code></pre>
-<p>//点击事件处理函数<br>    function btnClick(e:MouseEvent):void{<br>    trace(e.currentTarget.name);//trace就是在输出面板里输出内容，这里输出”btn”，只有在flash测试的时候才有效<br>    }  </p>
-<p>//鼠标放在btn上的事件处理函数<br>    function btnRollOver(e:MouseEvent):void{<br>    txt.text=”鼠标放在了按钮上”;//给文本框txt的text属性赋值为”鼠标放在了按钮上”<br>    }  </p>
-<p>//鼠标从btn上离开的事件处理函数<br>    function btnRollOut(e:MouseEvent):void{<br>    txt.text=”鼠标从按钮上离开了”;<br>    }  </p>
+<p>点击事件处理函数  </p>
+<pre><code>function btnClick(e:MouseEvent):void&#123;  
+trace(e.currentTarget.name);//trace就是在输出面板里输出内容，这里输出&quot;btn&quot;，只有在flash测试的时候才有效  
+&#125;  </code></pre>
+<p>鼠标放在btn上的事件处理函数  </p>
+<pre><code>function btnRollOver(e:MouseEvent):void&#123;  
+txt.text=&quot;鼠标放在了按钮上&quot;;//给文本框txt的text属性赋值为&quot;鼠标放在了按钮上&quot;  
+&#125;  </code></pre>
+<p>鼠标从btn上离开的事件处理函数  </p>
+<pre><code>function btnRollOut(e:MouseEvent):void&#123;  
+txt.text=&quot;鼠标从按钮上离开了&quot;;  
+&#125;  </code></pre>
 <p>4、添加一个动态文本框，命名为txt<br>ctrl+enter测试影片<br>修改代码如下：  </p>
 <pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  </code></pre>
-<p>//点击事件处理函数<br>    function btnClick(e:MouseEvent):void{<br>    box.gotoAndStop(Math.round(6*Math.random()));<br>    }  </p>
+<p>点击事件处理函数  </p>
+<pre><code>function btnClick(e:MouseEvent):void&#123;  
+box.gotoAndStop(Math.round(6*Math.random()));  
+&#125;  </code></pre>
 <p>测试影片，如果成功则再建一个按钮元件，命名为btnPlay,修改代码为：  </p>
 <pre><code>btn.addEventListener(MouseEvent.CLICK,btnClick);//给btn注册事件帧听器  </code></pre>
-<p>//点击事件处理函数<br>    function btnClick(e:MouseEvent):void{<br>    box.stop();<br>    }<br>    btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件帧听器  </p>
-<p>//点击事件处理函数<br>    function btnPlayClick(e:MouseEvent):void{<br>    box.play();<br>    }  </p>
+<p>点击事件处理函数  </p>
+<pre><code>function btnClick(e:MouseEvent):void&#123;  
+box.stop();  
+&#125;  
+btnPlay.addEventListener(MouseEvent.CLICK,btnPlayClick);//给btnPlay注册事件帧听器  </code></pre>
+<p>点击事件处理函数  </p>
+<pre><code>function btnPlayClick(e:MouseEvent):void&#123;  
+box.play();  
+&#125;  </code></pre>
 <p>如何使用文本框（Text）  </p>
 <p>使用前可以导入以下声明<br>    import flash.text.TextField;<br>    import flash.text.TextFormat;<br>    import flash.text.TextFormatAlign;</p>
 <p>Number()将字符型转化为数值型变量<br>toString()将数值转化为字符  </p>
