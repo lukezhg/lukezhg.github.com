@@ -6124,16 +6124,16 @@ pluginspage="http://www.macromedia.com/go/getflashplayer"><br></embed><br></obje
 <pre><code>var value2:Number = 17;  
 const SALES_TAX_RATE:Number = 0.07;  </code></pre>
 <p>属性<br>简单地视为包含在对象中的“子”变量。  </p>
-<pre><code>square.x = 100;  
-square.y = 150;  
-square.rotation = triangle.rotation;  
-square.scaleX = 1.5;  
-square.scaleY = 1.5;  
-square.currentFrame  
-square.alpha = 30;  
-square.height =20;  
-square.width =40;  
-square.visible =false;  </code></pre>
+<pre><code>box.x = 10;  
+box.y = 150;    
+box.rotation = 45;  
+box.scaleX = 1.5;  
+box.scaleY = 1.5;    
+box.currentFrame  
+box.alpha = 30;  
+box.height =20;  
+box.width =40;  
+box.visible =false;  </code></pre>
 <p>调用方法：变量名-点-属性名<br>方法<br>方法是指可以由对象执行的操作。  </p>
 <pre><code>shortFilm.play();  
 shortFilm.stop();  
