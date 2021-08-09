@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-07-30T14:41:00.247Z</updated>
+  <updated>2021-08-09T15:28:53.249Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>neo4j zip note</title>
+    <link href="http://zhangchunlei.com/2021/08/09/neo4j-zip-note/"/>
+    <id>http://zhangchunlei.com/2021/08/09/neo4j-zip-note/</id>
+    <published>2021-08-09T15:12:55.000Z</published>
+    <updated>2021-08-09T15:28:53.249Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;neo4j功能简介&quot;&gt;&lt;a href=&quot;#neo4j功能简介&quot; class=&quot;headerlink&quot; title=&quot;neo4j功能简介&quot;&gt;&lt;/a&gt;neo4j功能简介&lt;/h3&gt;&lt;p&gt;neo4j是一个图形数据关联软件。 </summary>
+        
+      
+    
+    
+    
+    <category term="programming" scheme="http://zhangchunlei.com/categories/programming/"/>
+    
+    
+    <category term="code" scheme="http://zhangchunlei.com/tags/code/"/>
+    
+    <category term="map" scheme="http://zhangchunlei.com/tags/map/"/>
+    
+    <category term="neo4j" scheme="http://zhangchunlei.com/tags/neo4j/"/>
+    
+    <category term="knowledge map" scheme="http://zhangchunlei.com/tags/knowledge-map/"/>
+    
+  </entry>
   
   <entry>
     <title>using google web designer to make games</title>
@@ -473,38 +504,6 @@ pyenv</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>爱在你身边</title>
-    <link href="http://zhangchunlei.com/2020/12/16/love-is-beside-you/"/>
-    <id>http://zhangchunlei.com/2020/12/16/love-is-beside-you/</id>
-    <published>2020-12-15T23:57:00.000Z</published>
-    <updated>2020-12-23T04:51:11.306Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;郑钧的调调~《灰姑娘》  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;爱在你身边
-等待你呼唤
-默默无闻
-将你来陪伴
-
-心中有个ta
-ta在你身边 </summary>
-        
-      
-    
-    
-    
-    <category term="歌词" scheme="http://zhangchunlei.com/categories/%E6%AD%8C%E8%AF%8D/"/>
-    
-    
-    <category term="创作" scheme="http://zhangchunlei.com/tags/%E5%88%9B%E4%BD%9C/"/>
     
   </entry>
   
