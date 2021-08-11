@@ -221,7 +221,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-11 15:57:32" itemprop="dateModified" datetime="2021-08-11T15:57:32+08:00">2021-08-11</time>
+                <time title="修改时间：2021-08-11 16:01:51" itemprop="dateModified" datetime="2021-08-11T16:01:51+08:00">2021-08-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -389,9 +389,8 @@ MATCH p=(:Concept&#123;name:&quot;细胞&quot;&#125;)-[]-&gt;(:Concept&#123;name
 RETURN p
 
 MATCH p=(:Concept&#123;name:&quot;细胞&quot;&#125;)-[*]-&gt;(:Concept&#123;name:&quot;蛋白质&quot;&#125;)
-RETURN p
-
-![map show all the linke between conception cell and protein](https://raw.github.com/lukezhg/Freyja/master/cell-protein.png)</code></pre>
+RETURN p</code></pre>
+<p>显示结果如下：<br><img src="https://raw.github.com/lukezhg/Freyja/master/cell-protein.png" alt="map show all the linke between conception cell and protein"></p>
 <h2 id="修改和完善图谱"><a href="#修改和完善图谱" class="headerlink" title="修改和完善图谱"></a>修改和完善图谱</h2><h3 id="增加节点"><a href="#增加节点" class="headerlink" title="增加节点"></a>增加节点</h3><pre><code>CREATE (n:Person &#123;name:&#39;John&#39;&#125;) RETURN n
 
 CREATE (n:Concept &#123;name:&#39;细胞呼吸&#39;&#125;) RETURN n</code></pre>
