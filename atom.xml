@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-08-11T08:07:04.740Z</updated>
+  <updated>2021-08-11T08:09:58.493Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>neo4j zip note</title>
+    <title>使用neo4j构建知识图谱的简明教程</title>
     <link href="http://zhangchunlei.com/2021/08/09/neo4j-zip-note/"/>
     <id>http://zhangchunlei.com/2021/08/09/neo4j-zip-note/</id>
     <published>2021-08-09T15:12:55.000Z</published>
-    <updated>2021-08-11T08:07:04.740Z</updated>
+    <updated>2021-08-11T08:09:58.493Z</updated>
     
     
       
