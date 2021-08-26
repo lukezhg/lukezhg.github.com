@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-08-11T08:09:58.493Z</updated>
+  <updated>2021-08-26T17:15:41.676Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用github完成网站维护与更新</title>
+    <link href="http://zhangchunlei.com/2021/08/27/git-hub-website-python-django/"/>
+    <id>http://zhangchunlei.com/2021/08/27/git-hub-website-python-django/</id>
+    <published>2021-08-26T16:57:28.000Z</published>
+    <updated>2021-08-26T17:15:41.676Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;自己写一个主页index.html，替代原有的padlet，原有是padlet间歇性无法访问。但是发现提交到服务器没有反应。  &lt;/p&gt;
+&lt;p&gt;问题是网站使用的是python django框架，每次更新页面需要重启python</summary>
+        
+      
+    
+    
+    
+    <category term="网站维护" scheme="http://zhangchunlei.com/categories/%E7%BD%91%E7%AB%99%E7%BB%B4%E6%8A%A4/"/>
+    
+    
+    <category term="github" scheme="http://zhangchunlei.com/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>使用neo4j构建知识图谱的简明教程</title>
@@ -394,7 +420,7 @@ pyenv</summary>
     <link href="http://zhangchunlei.com/2021/01/23/github-project-collaboration/"/>
     <id>http://zhangchunlei.com/2021/01/23/github-project-collaboration/</id>
     <published>2021-01-23T05:45:00.000Z</published>
-    <updated>2021-07-28T13:34:17.956Z</updated>
+    <updated>2021-08-26T12:45:03.596Z</updated>
     
     
       
@@ -483,28 +509,6 @@ pyenv</summary>
     <category term="Knee Valgus" scheme="http://zhangchunlei.com/tags/Knee-Valgus/"/>
     
     <category term="X型腿" scheme="http://zhangchunlei.com/tags/X%E5%9E%8B%E8%85%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ruby</title>
-    <link href="http://zhangchunlei.com/2020/12/16/ruby/"/>
-    <id>http://zhangchunlei.com/2020/12/16/ruby/</id>
-    <published>2020-12-16T00:18:00.000Z</published>
-    <updated>2020-12-16T00:21:16.405Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Alternative way to install ruby, by RVM,（ highly recommended）:  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; bash -s stable &amp;lt; &amp;lt;(curl -s</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

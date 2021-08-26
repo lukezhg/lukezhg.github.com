@@ -11529,7 +11529,8 @@ cat id_rsa.pub</code></pre>
 <p>复杂公钥给项目负责人，进行添加。建立合作关系。   </p>
 <h4 id="如何查看浏览器提交的数据"><a href="#如何查看浏览器提交的数据" class="headerlink" title="如何查看浏览器提交的数据"></a>如何查看浏览器提交的数据</h4><p>command+alt+i 调出后台<br>在web交互实验页面上输入正确的答案<br>点击属性变为全局变量temp1<br>利用json.stringfy(temp1) 转变为字符  </p>
 <p>复制实验正确答案到文件位置  </p>
-<h4 id="上传代码"><a href="#上传代码" class="headerlink" title="上传代码"></a>上传代码</h4><pre><code>git pull #继承合作的修改
+<h4 id="上传代码"><a href="#上传代码" class="headerlink" title="上传代码"></a>上传代码</h4><pre><code>git checkout ictweb-sf #转到ictweb-sf分支
+git pull #继承合作的修改
 git add . 
 git commit -m &quot;message&quot;
 git push #更新修改到远程文件</code></pre>
@@ -11539,7 +11540,11 @@ git merge ictweb-sf</code></pre>
 <h4 id="服务器上让代码生效"><a href="#服务器上让代码生效" class="headerlink" title="服务器上让代码生效"></a>服务器上让代码生效</h4><pre><code>cd /var/djangoweb/ictweb/ 
 git status
 git pull
-systemctl restart httpd.service</code></pre>
+#systemctl restart httpd.service
+nginx启动、停止、无间断服务重启</code></pre>
+<h4 id="nginx启动、停止和重启"><a href="#nginx启动、停止和重启" class="headerlink" title="nginx启动、停止和重启"></a>nginx启动、停止和重启</h4><pre><code>[root@example ~]# service nginx start
+[root@example ~]# service nginx stop
+[root@example ~]# service nginx reload</code></pre>
 ]]></content>
   </entry>
   <entry>
@@ -12513,6 +12518,27 @@ SHOW DATABASES</code></pre>
         <tag>map</tag>
         <tag>neo4j</tag>
         <tag>knowledge map</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用github完成网站维护与更新</title>
+    <url>/2021/08/27/git-hub-website-python-django/</url>
+    <content><![CDATA[<p>自己写一个主页index.html，替代原有的padlet，原有是padlet间歇性无法访问。但是发现提交到服务器没有反应。  </p>
+<p>问题是网站使用的是python django框架，每次更新页面需要重启python manage.py。重启的办法是首先要找到并关闭该进程，然后再重新开启。  </p>
+<pre><code>netstat -tnlp #查看端口
+kill 18283 # 关闭python所在进程
+nohup python manage.py runserver 0.0.0.0:3000 #重新开启</code></pre>
+<p>这时本地服务就开启了，但是还需要开启反向代理才能访问。注意，这一步需要新建一个端口，否则会导致刚开启的3000服务终止。  </p>
+<pre><code>/bin/systemctl restart nginx.service</code></pre>
+<p>至于上传代码，则可以依靠强大的github来完成，其原理是更新本地代码，然后推送到github，然后登录服务器pull远程代码到本地，这样就实现了代码上传服务器。其实也快成自己上传代码到服务器，只不过不便于多人协作管理。  </p>
+<p>###遇到的问题：<br>图片无法正常显示，需要使用static/images/logo.png这样的相对路径。  </p>
+<p>git合并冲突，需要先手动解决冲突，然后commit，之后就正常了。可以参考<a href="https://www.liaoxuefeng.com/wiki/896043488029600/900004111093344">这里</a>  </p>
+]]></content>
+      <categories>
+        <category>网站维护</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
