@@ -11536,6 +11536,7 @@ git commit -m &quot;message&quot;
 git push #更新修改到远程文件</code></pre>
 <h4 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h4><p>为了让分支ictweb-sf生效，需要将ictweb-sf的更改合并到main上</p>
 <pre><code>git checkout main
+git commit -m &quot;message&quot; 
 git merge ictweb-sf</code></pre>
 <h4 id="服务器上让代码生效"><a href="#服务器上让代码生效" class="headerlink" title="服务器上让代码生效"></a>服务器上让代码生效</h4><pre><code>cd /var/djangoweb/ictweb/ 
 git status
