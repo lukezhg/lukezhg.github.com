@@ -12548,7 +12548,7 @@ git pull</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>网页开发自学教材</title>
+    <title>Web开发简明教程</title>
     <url>/2021/08/31/html-tutorial/</url>
     <content><![CDATA[<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><p>有一种语言几乎每个没学过编程的人也都会天天接触，这种语言就是html语言。几乎所以的网页都需要它来写，所以的网站都离不开他，所有的电脑都支持它，所以学一点html不一定是要从事web开发，而是让你对互联网世界有更深层的了解，并在必要的时候读懂和改写代码，让创造性得到施展，让工作和生活更顺畅。<br>本教程将带你快速浏览网页背后的代码，涉及的内容包括html、CSS、JavaScript、Python、Bootstrap、Jquery、SQL。这些语言和工具足够你开发一个自己的网站和实现想要的功能了。下面，就开始你的探索之旅吧！！  </p>
 <h2 id="出发前的准备"><a href="#出发前的准备" class="headerlink" title="出发前的准备"></a>出发前的准备</h2><ul>
@@ -12859,7 +12859,122 @@ function myCanvas() &#123;
 &lt;/html&gt;</code></pre>
 <h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS是定义网页显示风格的语言。  </p>
 <h3 id="什么是CSS"><a href="#什么是CSS" class="headerlink" title="什么是CSS?"></a>什么是CSS?</h3><p>CSS是Cascading Style Sheets的缩写<br>CSS描述了HTML元素如何在屏幕或者其他媒体中现实的样式。<br>CSS能节省大量的工作。它能够轻松定制多个网页。<br>外部风格定义表单存储在CSS文件中。我们只需要一个CSS文件，就可以管控所以网页。  </p>
-<h3 id="框架layout样例"><a href="#框架layout样例" class="headerlink" title="框架layout样例"></a>框架layout样例</h3><pre><code>&lt;!DOCTYPE html&gt;
+<h3 id="CSS插入的3种方式"><a href="#CSS插入的3种方式" class="headerlink" title="CSS插入的3种方式"></a>CSS插入的3种方式</h3><ul>
+<li>外部CSS文件  </li>
+<li>在网页head容器内插入CSS  </li>
+<li>在元素内插入CSS  </li>
+</ul>
+<h3 id="外部CSS文件"><a href="#外部CSS文件" class="headerlink" title="外部CSS文件"></a>外部CSS文件</h3><pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;</code></pre>
+<h3 id="网页内嵌风格"><a href="#网页内嵌风格" class="headerlink" title="网页内嵌风格"></a>网页内嵌风格</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body &#123;
+  background-color: lightblue;
+&#125;
+h1 &#123;
+  color: white;
+  text-align: center;
+&#125;
+p &#123;
+  font-family: verdana;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+&#125;
+p.center &#123;
+  text-align: center;
+  color: red;
+&#125;
+.center &#123;
+  text-align: center;
+  color: red;
+&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;My First CSS Example&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;h1 class=&quot;center&quot;&gt;Red and center-aligned heading&lt;/h1&gt;
+&lt;p class=&quot;center&quot;&gt;Red and center-aligned paragraph.&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="行内插入CSS"><a href="#行内插入CSS" class="headerlink" title="行内插入CSS"></a>行内插入CSS</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="改变元素内容"><a href="#改变元素内容" class="headerlink" title="改变元素内容"></a>改变元素内容</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+
+&lt;p id=&quot;demo&quot;&gt;JavaScript can change HTML content.&lt;/p&gt;
+
+&lt;button type=&quot;button&quot; onclick=&#39;document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;&#39;&gt;Click Me!&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="改变元素属性值"><a href="#改变元素属性值" class="headerlink" title="改变元素属性值"></a>改变元素属性值</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;What Can JavaScript Do?&lt;/h2&gt;
+&lt;p&gt;JavaScript can change HTML attribute values.&lt;/p&gt;
+&lt;p&gt;In this case JavaScript changes the value of the src (source) attribute of an image.&lt;/p&gt;
+&lt;button onclick=&quot;document.getElementById(&#39;myImage&#39;).src=&#39;https://www.w3schools.com/js/pic_bulbon.gif&#39;&quot;&gt;Turn on the light&lt;/button&gt;
+&lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;
+&lt;button onclick=&quot;document.getElementById(&#39;myImage&#39;).src=&#39;https://www.w3schools.com/js/pic_bulboff.gif&#39;&quot;&gt;Turn off the light&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="对象object"><a href="#对象object" class="headerlink" title="对象object"></a>对象object</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;JavaScript Objects&lt;/h2&gt;
+&lt;p&gt;There are two different ways to access an object property.&lt;/p&gt;
+&lt;p&gt;You can use person.property or person[&quot;property&quot;].&lt;/p&gt;
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+// Create an object:
+const person = &#123;
+  firstName: &quot;John&quot;,
+  lastName : &quot;Doe&quot;,
+  id     :  5566
+&#125;;
+// Display some data from the object:
+document.getElementById(&quot;demo&quot;).innerHTML =
+person.firstName + &quot; &quot; + person.lastName;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="事件events"><a href="#事件events" class="headerlink" title="事件events"></a>事件events</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;button onclick=&quot;document.getElementById(&#39;demo&#39;).innerHTML=Date()&quot;&gt;The time is?&lt;/button&gt;
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;JavaScript Math.random()&lt;/h2&gt;
+&lt;p&gt;Math.random() returns a random number between 0 and 1:&lt;/p&gt;
+&lt;button type=&quot;button&quot; onclick=&#39;myFunction()&#39;&gt;Click Me!&lt;/button&gt;
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+  function myFunction() &#123;
+    document.getElementById(&quot;demo&quot;).innerHTML = Math.random();
+  &#125;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><pre><code>let length = 16;                               // Number
+let lastName = &quot;Johnson&quot;;                      // String
+let x = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;&#125;;    // Object</code></pre>
+<h3 id="应遵循的良好习惯"><a href="#应遵循的良好习惯" class="headerlink" title="应遵循的良好习惯"></a>应遵循的良好习惯</h3><p><a href="https://www.w3schools.com/js/js_best_practices.asp">best practice you should follow</a></p>
+<h2 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="博客网站layout样例"><a href="#博客网站layout样例" class="headerlink" title="博客网站layout样例"></a>博客网站layout样例</h3><pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;style&gt;
@@ -13023,7 +13138,7 @@ body &#123;
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<h2 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="钟表代码"><a href="#钟表代码" class="headerlink" title="钟表代码"></a>钟表代码</h3><pre><code>&lt;!DOCTYPE html&gt;
+<h3 id="钟表代码"><a href="#钟表代码" class="headerlink" title="钟表代码"></a>钟表代码</h3><pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
 &lt;canvas id=&quot;canvas&quot; width=&quot;400&quot; height=&quot;400&quot;
