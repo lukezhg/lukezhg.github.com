@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-08-26T17:15:41.676Z</updated>
+  <updated>2021-08-31T07:44:05.916Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>网页开发自学教材</title>
+    <link href="http://zhangchunlei.com/2021/08/31/html-tutorial/"/>
+    <id>http://zhangchunlei.com/2021/08/31/html-tutorial/</id>
+    <published>2021-08-31T05:12:58.000Z</published>
+    <updated>2021-08-31T07:44:05.916Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;写在前面的话&quot;&gt;&lt;a href=&quot;#写在前面的话&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="web开发" scheme="http://zhangchunlei.com/categories/web%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="html" scheme="http://zhangchunlei.com/tags/html/"/>
+    
+    <category term="css" scheme="http://zhangchunlei.com/tags/css/"/>
+    
+    <category term="js" scheme="http://zhangchunlei.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用github完成网站维护与更新</title>
     <link href="http://zhangchunlei.com/2021/08/27/git-hub-website-python-django/"/>
     <id>http://zhangchunlei.com/2021/08/27/git-hub-website-python-django/</id>
     <published>2021-08-26T16:57:28.000Z</published>
-    <updated>2021-08-26T17:15:41.676Z</updated>
+    <updated>2021-08-27T04:05:50.172Z</updated>
     
     
       
@@ -481,34 +510,6 @@ pyenv</summary>
     <category term="PISA" scheme="http://zhangchunlei.com/tags/PISA/"/>
     
     <category term="上海" scheme="http://zhangchunlei.com/tags/%E4%B8%8A%E6%B5%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何矫正的膝外翻</title>
-    <link href="http://zhangchunlei.com/2020/12/25/how-to-correct-knee-valgus/"/>
-    <id>http://zhangchunlei.com/2020/12/25/how-to-correct-knee-valgus/</id>
-    <published>2020-12-25T14:36:00.000Z</published>
-    <updated>2021-07-28T13:34:17.939Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;孩子成长的过程中，腿并不是一直是直的。  &lt;/p&gt;
-&lt;p&gt;专家指出：&lt;br&gt;    1岁~2岁的幼儿，会出现轻微O型腿的现象;两岁以后，又渐渐会出现X型腿的迹象。到3岁左右时，X型腿最明显。6岁以后直到成年期，若依然呈现轻微的X型腿，均属正常的生理现象。 </summary>
-        
-      
-    
-    
-    
-    <category term="健康" scheme="http://zhangchunlei.com/categories/%E5%81%A5%E5%BA%B7/"/>
-    
-    
-    <category term="Knee Valgus" scheme="http://zhangchunlei.com/tags/Knee-Valgus/"/>
-    
-    <category term="X型腿" scheme="http://zhangchunlei.com/tags/X%E5%9E%8B%E8%85%BF/"/>
     
   </entry>
   
