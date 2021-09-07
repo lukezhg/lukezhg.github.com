@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-08-31T08:27:06.424Z</updated>
+  <updated>2021-09-07T08:19:39.008Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>教育是什么</title>
+    <link href="http://zhangchunlei.com/2021/09/07/what-is-education/"/>
+    <id>http://zhangchunlei.com/2021/09/07/what-is-education/</id>
+    <published>2021-09-07T06:00:48.000Z</published>
+    <updated>2021-09-07T08:19:39.008Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;教育是国家持续发展的根基，孩子是祖国的未来、民主的希望，因此一说到教育，就会涉及到每个孩子、每个家庭、每个学校。但是人们关于教育的理解，却显著不同。 </summary>
+        
+      
+    
+    
+    
+    <category term="论教育" scheme="http://zhangchunlei.com/categories/%E8%AE%BA%E6%95%99%E8%82%B2/"/>
+    
+    
+    <category term="减负;自我教育;自我解放" scheme="http://zhangchunlei.com/tags/%E5%87%8F%E8%B4%9F-%E8%87%AA%E6%88%91%E6%95%99%E8%82%B2-%E8%87%AA%E6%88%91%E8%A7%A3%E6%94%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Web开发简明教程</title>
     <link href="http://zhangchunlei.com/2021/08/31/html-tutorial/"/>
     <id>http://zhangchunlei.com/2021/08/31/html-tutorial/</id>
     <published>2021-08-31T05:12:58.000Z</published>
-    <updated>2021-08-31T08:27:06.424Z</updated>
+    <updated>2021-08-31T08:31:26.236Z</updated>
     
     
       
@@ -483,33 +508,6 @@ pyenv</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>关于上海PISA考试成绩的争论</title>
-    <link href="http://zhangchunlei.com/2020/12/29/shanghai-pisa-score-debate/"/>
-    <id>http://zhangchunlei.com/2020/12/29/shanghai-pisa-score-debate/</id>
-    <published>2020-12-29T00:43:00.000Z</published>
-    <updated>2021-07-28T13:34:17.946Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;2009年，上海参加了PISA考试，取得了全球第一的好成绩。一时间全球舆论哗然，而且不少媒体用来“hard to</summary>
-        
-      
-    
-    
-    
-    <category term="PISA" scheme="http://zhangchunlei.com/categories/PISA/"/>
-    
-    
-    <category term="PISA" scheme="http://zhangchunlei.com/tags/PISA/"/>
-    
-    <category term="上海" scheme="http://zhangchunlei.com/tags/%E4%B8%8A%E6%B5%B7/"/>
     
   </entry>
   
