@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2021-09-08T01:18:52.962Z</updated>
+  <updated>2022-02-16T04:17:17.137Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -17,11 +17,73 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>教育观光</title>
+    <link href="http://zhangchunlei.com/2022/02/16/Educational-tour/"/>
+    <id>http://zhangchunlei.com/2022/02/16/Educational-tour/</id>
+    <published>2022-02-16T02:50:52.000Z</published>
+    <updated>2022-02-16T04:17:17.137Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近看了《他乡的童年》一个记录片，探讨不同国家文化下的教育以及孩子的童年。对于关心教育的人来说，包括家长，都很有看点。就像标题一样，我们也都有童年，有或幸福或伤心的往事，作为教师、作为家长，我们又想给孩子们一个怎样的童年。视野决定格局，如果我们只是盯着小升初，盯着补习和学业</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>tour</title>
+    <link href="http://zhangchunlei.com/2022/02/16/tour/"/>
+    <id>http://zhangchunlei.com/2022/02/16/tour/</id>
+    <published>2022-02-16T02:49:56.000Z</published>
+    <updated>2022-02-16T02:49:56.693Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我们是如何思维的</title>
+    <link href="http://zhangchunlei.com/2021/09/29/how-we-think/"/>
+    <id>http://zhangchunlei.com/2021/09/29/how-we-think/</id>
+    <published>2021-09-29T02:03:15.000Z</published>
+    <updated>2021-09-29T02:17:54.976Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;杜威写过一本书，今天偶然在图书馆门口瞥见，就翻看起来，恰好就是这本《我们如何思维》。书的前面还介绍了杜威的生平和思想发展历程，本书是他作为实用主义思想的代表作之一。    &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;有一些句子和观点至今依然十分鲜活。  </summary>
+        
+      
+    
+    
+    
+    <category term="读书" scheme="http://zhangchunlei.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+    <category term="杜威" scheme="http://zhangchunlei.com/tags/%E6%9D%9C%E5%A8%81/"/>
+    
+    <category term="思维" scheme="http://zhangchunlei.com/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>教育是什么</title>
     <link href="http://zhangchunlei.com/2021/09/07/what-is-education/"/>
     <id>http://zhangchunlei.com/2021/09/07/what-is-education/</id>
     <published>2021-09-07T06:00:48.000Z</published>
-    <updated>2021-09-08T01:18:52.962Z</updated>
+    <updated>2022-02-16T03:43:30.023Z</updated>
     
     
       
@@ -437,73 +499,6 @@ pyenv</summary>
         
     <summary type="html">&lt;p&gt;写作不一定能改变人生，但是却可以让你回归人生。  &lt;/p&gt;
 &lt;p&gt;有很多介绍写作技巧的书，但是我偏偏认为写作没有技巧。一个记者询问一个知名作家是如何写出那么多伟大作品的，作家的回答很是让人意外，他说：“一个字一个字下”。 </summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>数学学习资源与方法</title>
-    <link href="http://zhangchunlei.com/2021/01/28/math-for-kids/"/>
-    <id>http://zhangchunlei.com/2021/01/28/math-for-kids/</id>
-    <published>2021-01-28T08:42:00.000Z</published>
-    <updated>2021-07-28T13:34:17.960Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;数学学习的应用程序&quot;&gt;&lt;a href=&quot;#数学学习的应用程序&quot; class=&quot;headerlink&quot; title=&quot;数学学习的应用程序&quot;&gt;&lt;/a&gt;数学学习的应用程序&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="数学" scheme="http://zhangchunlei.com/categories/%E6%95%B0%E5%AD%A6/"/>
-    
-    
-    <category term="math" scheme="http://zhangchunlei.com/tags/math/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用github进行项目协作</title>
-    <link href="http://zhangchunlei.com/2021/01/23/github-project-collaboration/"/>
-    <id>http://zhangchunlei.com/2021/01/23/github-project-collaboration/</id>
-    <published>2021-01-23T05:45:00.000Z</published>
-    <updated>2021-08-26T17:16:05.069Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;终端窗口Shell的切换&quot;&gt;&lt;a href=&quot;#终端窗口Shell的切换&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Happy网球训练方案</title>
-    <link href="http://zhangchunlei.com/2021/01/16/happy-training-plan/"/>
-    <id>http://zhangchunlei.com/2021/01/16/happy-training-plan/</id>
-    <published>2021-01-16T09:47:00.000Z</published>
-    <updated>2021-07-28T13:34:17.951Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;0、应该避免的动作和姿势&quot;&gt;&lt;a href=&quot;#0、应该避免的动作和姿势&quot; class=&quot;headerlink&quot; title=&quot;0、应该避免的动作和姿势&quot;&gt;&lt;/a&gt;0、应该避免的动作和姿势&lt;/h3&gt;&lt;p&gt;** 避免膝盖过度承载造成损伤(比如纵向跳跃)&lt;br&gt;**</summary>
         
       
     
