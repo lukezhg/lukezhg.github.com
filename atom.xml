@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2022-02-16T04:17:17.137Z</updated>
+  <updated>2022-02-17T01:50:04.681Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://zhangchunlei.com/2022/02/16/Educational-tour/"/>
     <id>http://zhangchunlei.com/2022/02/16/Educational-tour/</id>
     <published>2022-02-16T02:50:52.000Z</published>
-    <updated>2022-02-16T04:17:17.137Z</updated>
+    <updated>2022-02-17T01:50:04.681Z</updated>
     
     
       
@@ -31,19 +31,6 @@
     <summary type="html">&lt;p&gt;最近看了《他乡的童年》一个记录片，探讨不同国家文化下的教育以及孩子的童年。对于关心教育的人来说，包括家长，都很有看点。就像标题一样，我们也都有童年，有或幸福或伤心的往事，作为教师、作为家长，我们又想给孩子们一个怎样的童年。视野决定格局，如果我们只是盯着小升初，盯着补习和学业</summary>
         
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>tour</title>
-    <link href="http://zhangchunlei.com/2022/02/16/tour/"/>
-    <id>http://zhangchunlei.com/2022/02/16/tour/</id>
-    <published>2022-02-16T02:49:56.000Z</published>
-    <updated>2022-02-16T02:49:56.693Z</updated>
-    
     
     
     
@@ -504,6 +491,31 @@ pyenv</summary>
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>数学学习资源与方法</title>
+    <link href="http://zhangchunlei.com/2021/01/28/math-for-kids/"/>
+    <id>http://zhangchunlei.com/2021/01/28/math-for-kids/</id>
+    <published>2021-01-28T08:42:00.000Z</published>
+    <updated>2021-07-28T13:34:17.960Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;数学学习的应用程序&quot;&gt;&lt;a href=&quot;#数学学习的应用程序&quot; class=&quot;headerlink&quot; title=&quot;数学学习的应用程序&quot;&gt;&lt;/a&gt;数学学习的应用程序&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="数学" scheme="http://zhangchunlei.com/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="math" scheme="http://zhangchunlei.com/tags/math/"/>
     
   </entry>
   

@@ -190,125 +190,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/08/25/deep-learning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/08/25/deep-learning/" class="post-title-link" itemprop="url">deep learning</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-08-25 11:00:00" itemprop="dateCreated datePublished" datetime="2017-08-25T11:00:00+08:00">2017-08-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-02-16 22:58:03" itemprop="dateModified" datetime="2018-02-16T22:58:03+08:00">2018-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/machine-learning/" itemprop="url" rel="index"><span itemprop="name">machine learning</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>机器学习是人工智能中非常重要的一个分支。而深度学习则是机器学习中一个重要的方向。所以人工智能、机器学习和深度学习三个概念的关系是：<br>【人工智能【机器学习【深度学习】】】  </p>
-<p>在教育领域和计算机科学领域的深度学习并不是一个概念。  </p>
-<p>这里主要尝试利用keras和python来进行深度学习模拟。  </p>
-<p>keras是一个深度学习模拟的良好平台，并且它完全基于python构建，具有简易性和扩展性。一个典型的keras模型如下：  </p>
-<pre><code>
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from keras.optimizers import SGD
-
-# Generate dummy data
-import numpy as np
-x_train = np.random.random((1000, 20))
-y_train = keras.utils.to_categorical(np.random.randint(10, size=(1000, 1)), num_classes=10)
-x_test = np.random.random((100, 20))
-y_test = keras.utils.to_categorical(np.random.randint(10, size=(100, 1)), num_classes=10)
-
-model = Sequential()
-# Dense(64) is a fully-connected layer with 64 hidden units.
-# in the first layer, you must specify the expected input data shape:
-# here, 20-dimensional vectors.
-model.add(Dense(64, activation='relu', input_dim=20))
-model.add(Dropout(0.5))
-model.add(Dense(64, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(10, activation='softmax'))
-
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy',
-              optimizer=sgd,
-              metrics=['accuracy'])
-
-model.fit(x_train, y_train,
-          epochs=20,
-          batch_size=128)
-score = model.evaluate(x_test, y_test, batch_size=128)
-</code></pre>
-
-<p>上面这个例子是一个贯序模型，它是一条道走到头的。如果是多口输出或者有分叉结构的模型，这需要用函数式模型，见<a target="_blank" rel="noopener" href="https://keras-cn.readthedocs.io/en/latest/getting_started/functional_API/">函数式模型文档</a>。</p>
-<p>其他例子见：<a target="_blank" rel="noopener" href="https://keras-cn.readthedocs.io/en/latest/getting_started/sequential_model/">官方文档</a></p>
-<p>（1）数据定义<br>定义训练数据和检验数据，必要的时候需要对数据进行处理，从而使的数据的形状和大小符合要求。  </p>
-<p>（2）模型定义<br>定义输入层、输出层以及中间的隐藏层，层的类别和神经元数量。  </p>
-<p>（3）训练<br>利用训练数据对模型进行fit，使得模型的参数与训练数据更好的吻合。  </p>
-<p>（4）检验<br>利用检验数据对模型及其参数进行检验，通常会依靠正确率以及gradient descent对模型进行评估和完善。  </p>
-<p>（5）应用<br>当一个模型经过训练之后能够很好的完成预测任务时，那么就可以保存模型以及相应的权重参数，在需要的时候直接调用完成任务即可。比如，讯飞的语言识别，其参数是经过大量数据的长时间训练得到的，但是我们输入语音后，后台可以及时给我们呈现文字，说明它也是调用了已有的参数，否者估计几天后才能收到讯飞发给我们的语音识别文字了。    </p>
-<p>机器学习可以用于：分类、聚类、回归、异常识别等。  </p>
-<p>还可以制作聊天记起，比如利用chatbot制作的聊天机器人，还具有学习新对话的能力。<br><a target="_blank" rel="noopener" href="http://127.0.0.1:8000/chat/">http://127.0.0.1:8000/chat/</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/08/11/relationships/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -974,6 +855,86 @@ score = model.evaluate(x_test, y_test, batch_size=128)
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/02/12/fact-is-still-important-in-the-post-truth-era/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/02/12/fact-is-still-important-in-the-post-truth-era/" class="post-title-link" itemprop="url">后真相时代：真相依然重要</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-02-12 16:12:00" itemprop="dateCreated datePublished" datetime="2017-02-12T16:12:00+08:00">2017-02-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-02-17 01:18:36" itemprop="dateModified" datetime="2017-02-17T01:18:36+08:00">2017-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A4%BE%E4%BC%9A%E8%A7%82%E5%AF%9F/" itemprop="url" rel="index"><span itemprop="name">社会观察</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在大众媒体和互联网信息满天飞的时代，同样一件事，会有不同的观点和立场，持有不同立场的人都只会选择性的使用所谓“事实”来佐证自己的观点。而大多网民，往往也只是选择一个立场站队而已。似乎真相已经无关紧要，这样的事发生在郭德纲和他徒弟之间纠纷中，发生在傻根和他老婆的离婚事件中，发生在冯小刚和万达对撕之间，发生在特朗普与希拉里的竞选辩论中。  </p>
+<p>站在一个普通网民的立场，对于一个事件可能压根就没有搞清楚事实的欲望，或者也缺乏辨别信息真伪的能力，更不愿以花费时间，最后结果就是找一个自己愿意相信的故事了事。至于真相，事不关己，也就没那么重要了。即便是某人被黑了，或者受到了舆论不公正的待遇，或者有人造谣生事。在这个时候，真相已经不重要，态度和立场已经压倒了事实。  </p>
+<p>如果仔细思考，这是一件非常可怕的事。我们可以称之为舆论暴力，舆论不分青红皂白就给当事人洪水猛兽般的压力和冲击，不管当事人做过还是没做过，更可拍的是打压完之后，即便错误了也没有人对所造成的后果负责。  </p>
+<p>这让我想起一个电影，网民通过一个非法平台来影响玩家现实行为，从接吻到冒险，甚至杀人，因为背后的网民都是匿名的，他们不负担任何责任，最后玩家一个接着一个在完成任务的过程中意外死去，直到主人公联合好友和黑客破坏了游戏平台，曝光了每个匿名网民的真实身份。  </p>
+<p>我们的网络舆论就像这个游戏，戏内戏外不断切换。也许上一秒你是个网民，你根据自己的喜好对冯小刚万达事件发表评论，只顾个人偏好不管事实真伪。下一秒你就变成了当事者，受到不管事实真相、不负责任的外界舆论的人肉搜索和打压。  </p>
+<p>我们真的希望看到一个这样的世界吗？我们真的想成为一个匿名、不负责任甚至心理变态的舆论暴力的一份子吗？公民理性何在？独立思考能力何在？如果这样的话，人人都不在乎真相，那么我们也就变成了一群网络暴民，冲动、偏激、愚蠢、不负责任、被人利用。  </p>
+<p>后真相时代是人们面对信息过载的一种无奈现状，千万不要把它当成终点或既成事实而不加改变。在这样的时代，真相本身以及追求真相的意识和能力实际上比任何时代都更宝贵。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
   <nav class="pagination">
@@ -1043,7 +1004,7 @@ score = model.evaluate(x_test, y_test, batch_size=128)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">516</span>
+          <span class="site-state-item-count">515</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -190,90 +190,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/04/17/repeated-measures-correlation-mixed-model/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2014/04/17/repeated-measures-correlation-mixed-model/" class="post-title-link" itemprop="url">Repeated Measures Correlation Mixed Model</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2014-04-17 09:02:00" itemprop="dateCreated datePublished" datetime="2014-04-17T09:02:00+08:00">2014-04-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2014-06-21 22:13:13" itemprop="dateModified" datetime="2014-06-21T22:13:13+08:00">2014-06-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BB%9F%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">统计</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>How to do it?<br>Analysis==&gt;Mixed Model, then you got diaogue 1 as follows. ID shuold be put be included as subjects. Year should be included as repeated, cause I measured multiple times by different year.<br><img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d1.png" alt="Mixed Model Dialouge 1"><br>The most hard decision to make is which Repeated Covaricance Type to select, there are a lot of choices, the most used ones are:  </p>
-<ol>
-<li>Unstructured: you have no idea of the correlation of repeated measures, SPSS we estimate all the correlation independantly (r12,r13,r23,r14,r24,r34).  </li>
-<li>Scaled Identity: no correlations at all, r=0.  </li>
-<li>Compound Symmetry: all correlations equals r.  </li>
-<li>AR1: (r, r^2, R^3)<br><img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-AR1.png" alt="Auto Regression 1">  </li>
-<li>Toeplitz:(a,a,a,b,b,c)<br><img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-toepliztz.png" alt="Toeplitz">  </li>
-<li>Another choice is “diagonal” which assumes no correlation between the random effects.  </li>
-</ol>
-<p>Then you determing the fixed effect variable:<br><img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d2.png" alt="Mixed Model Dialouge 2">  </p>
-<p>And the random effect variable:<br><img src="https://raw.github.com/lukezhg/Freyja/master/mixed-model-d3.png" alt="Mixed Model Dialouge 3">  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/04/15/ecojustice-work/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1106,6 +1022,83 @@
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/02/22/one-people-one-book/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2014/02/22/one-people-one-book/" class="post-title-link" itemprop="url">一人一本书</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2014-02-22 23:32:00" itemprop="dateCreated datePublished" datetime="2014-02-22T23:32:00+08:00">2014-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2014-06-12 08:25:22" itemprop="dateModified" datetime="2014-06-12T08:25:22+08:00">2014-06-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/book/" itemprop="url" rel="index"><span itemprop="name">book</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一不小心就已经三十岁，掐指算算不知道以前的日子怎么过的，还是觉得头脑空空。你不能埋怨这个社会什么，你只能从自己身上找原因，为什么没有独立的思想，为什么没有独立思想的走到了今天。  </p>
+<p>就好像一个刚从梦里醒来的人，肚饿难当，也不知道昏睡了多久。  </p>
+<p>但是不管怎样，醒来了就是醒来了，只能自己找吃的。不知道该吃什么，那就每样吃一点，先解决温饱再说。  </p>
+<p>一人一本书，就是一个很重要的人，你选择他的一本书来读。这个法子不一定妥当，但是也并不太大的不妥。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
   <nav class="pagination">
@@ -1175,7 +1168,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">516</span>
+          <span class="site-state-item-count">515</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
