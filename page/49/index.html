@@ -190,6 +190,112 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2010/02/18/knowlege-of-gae/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2010/02/18/knowlege-of-gae/" class="post-title-link" itemprop="url">今天学习了一些关于GAE的知识</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2010-02-18 00:00:00" itemprop="dateCreated datePublished" datetime="2010-02-18T00:00:00+08:00">2010-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-09-01 06:42:53" itemprop="dateModified" datetime="2013-09-01T06:42:53+08:00">2013-09-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>以前曾经做过一个GAE，但是今天想在用的时候发现自己全忘，后悔当初没有把自己尝试的过程记录下来。把自己学到的知识用自己的话记录下来是非常重要一件事情。</p>
+
+<p>就我的理解，GAE就是运行在互联网上的可执行程序。要想造就这样的一个程序，你首先要你的程序找一个存放的地方，Google提供了这样的地方，而且是免费的，也就是是<a href="http://appengine.google.com/" target="_blank">Google App Engine</a>， 目前每个用户可以免费创建十个这样的应用程序。</p>
+
+<p>点击上面的地址之后，你需要用你的gmail账号登陆，没有可以先去申请一个。进入<a href="http://appengine.google.com/" target="_blank">http://appengine.google.com/</a>之后，点击Create an Application，然后填写应用标识和应用标题两栏，其中标识很重要，一会我们还会用到它，比如说这个标识名为：helloworld</p>
+
+<p>完成之后，我们就为应用程序申请了一个托管的空间，而且也获得一个应用标识。接下来，我们就是要开发一个网络应用程序，为了开发这个网络应用程序，我们需要下载并安装两个软件（这个两个软件也就构成了开发环境）：
+<ul>
+	<li>Google App Engine SDK 下载地址<a target="_blank" rel="noopener" href="http://code.google.com/intl/zh-CN/appengine/downloads.html">http://code.google.com/intl/zh-CN/appengine/downloads.html</a></li>
+</ul>
+<ul>
+	<li>Python 2.5.4 下载地址<a target="_blank" rel="noopener" href="http://www.python.org/download/releases/2.5.4/">http://www.python.org/download/releases/2.5.4/</a></li>
+</ul>
+开发的具体过程，要根据你程序的功能不同而不同，当然你也可以找一找别人已经开发好的程序，然后在这个基础上修改一下，这样会很容易，不过一般只能完成相对简单的功能，而且会受到原有代码的限制，不如自己编写的符合自己的目的和需要。</p>
+
+<p>开发好之后，我们就要把这个程序上传到我们申请的那个空间上去。通常所有的程序都会放到一个目录中，比如这个目录是E:\myfiles\code\lukesvn<br />
+接下来就是用记事本打开myapp目录中app.yaml文件，修改应用名为你申请的应用标识(helloworld)。 然后打开cmd，执行appcfg.py update E:\myfiles\code\lukesvn<br />
+你会被要求输入你的gmail账号和密码，之后你的程序就上传到你先前申请到的那个空间了，你可以访问 <span style="text-decoration: underline;">标识名.appspot.com</span> 来访问你的网络应用程序了，这个例子中也就是访问 helloworld.appspot.com</p>
+
+<p>相关的学习资源
+<ul>
+	<li>上传您的应用程序 - Google App Engine - Google 代码</li>
+</ul>
+: <a href="http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html" target="_blank">http://code.google.com/intl/zh-CN/appengine/docs/python/gettingstarted/uploading.html</a>
+<ul>
+	<li>Google App Engine使用简介-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/1880.html" target="_blank">http://www.williamlong.info/archives/1880.html</a>
+<ul>
+	<li>Twitter实时同步到Ping.fm和Hellotxt-月光博客</li>
+</ul>
+: <a href="http://www.williamlong.info/archives/2067.html" target="_blank">http://www.williamlong.info/archives/2067.html</a>
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=f8f16231-5097-86d4-8c6c-d8ac8605c0af" alt="" /></div></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2010/02/11/water-dowsing-is-science-or-pseudo-science/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -787,71 +893,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2009/12/26/how-to-build-your-PLE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2009/12/26/how-to-build-your-PLE/" class="post-title-link" itemprop="url">如何在学习社区更快更好的形成自己良好的人际网络-导生制</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2009-12-26 00:00:00" itemprop="dateCreated datePublished" datetime="2009-12-26T00:00:00+08:00">2009-12-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-01-11 12:46:39" itemprop="dateModified" datetime="2013-01-11T12:46:39+08:00">2013-01-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>社区的本质是人，不是个体的人，而是群体，而且是有组织的群体。与企业的成员之间紧密固定结构相比，社区成员之间的则是相对松散和灵活的结构。社区不同成员按照其行为划分，可以分成不同的类型，比如经常分享信心和观点，暂称为分享者，相应的还有，反馈者，发问求助者等。每个人专长不同，又可以分为技术者，社交者、组织者和学习者。每个人可以有多种身份，正式多种身份的自由选择性，使得学习社区更加的让人愉快，也就是我<b>在这里</b>，是因为我喜欢<b>在这里</b>。<br clear="all" /><br /><br />由于社区的主旨是共同学习，师徒关系也是学习社区的最主要关系。这里师徒关系已经不再是传统意义上的师傅永远是师傅，徒弟永远是徒弟，而是师徒关系因事而定，因时而定。也许今天我是师傅，明天徒弟已经赶超我成为师傅了。曾经有些成熟的社区，为了让社区成员内部形成更有意义的关系，推出了mentor制，也就是新成员先说明自己的需要和学习目标，然后社区为他推荐一个mentor，再以后的学习中mentor可以更多的给于新手指引，当然新手也可以主动积极的向其他社区邮件列表求助，mentor也可以推荐其他社区成员给自己带的新手。当新手发展到一定程度成熟之后，又可以去带领其他新手一起学习。如果站在学习的这个角度，每个学习社区的成员都是学习者，所以说mentor也好，说learning leader也罢，其最本源的身份就是学习者。在教中学，在学中教。现在有一个名词叫导生制，在地址栏输入这三个字之后，自动转到了一篇博文：导生制 <a target="_blank" href="http://hi.baidu.com/ileo/blog/item/26b210df19679b1062279849.html">http://hi.baidu.com/ileo/blog/item/26b210df19679b1062279849.html</a>，有署名的原文链接： <a target="_blank" href="http://www.sysy2000.com/Html/zhyy/133635993.html">http://www.sysy2000.com/Html/zhyy/133635993.html</a><br /><br /><br /><br />也许我们把这个导生制改造一下，就可以形成一种网络学习社区可以实用的组织方式，实际上肯定已经有这样组织的社区了，至少在我所知，<a target="_blank" href="http://cindypan.com/">cindy</a>参与的深圳的<a target="_blank" href="http://www.toastmasters.org/">ToastMaster</a>就有这样的mentor。而这样的一种有组织的导学制可以帮助社区更快的形成有意义的人际网络，同时也能让社区以强带弱，以老带新，让社区知识继承和创新焕发活力。<br /><br />以下是一张学习社区导生制（Learning Community Monitorial System, LCMS）示意图<br /><a target="_blank" rel="noopener" href="http://easycaptures.com/4353717508"><br /><img src="http://easycaptures.com/fs/uploaded/460/thumbs/4353717508_b.jpg" border="0" /></a><br /><br /><a target="_blank" rel="noopener" href="http://easycaptures.com/4353717508"><br /></a><br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=872a41ce-24f8-890a-bfe0-ecf120c391c2" /></div></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -921,14 +962,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">515</span>
+          <span class="site-state-item-count">516</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">108</span>
+        <span class="site-state-item-count">109</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
