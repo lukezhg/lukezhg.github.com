@@ -190,6 +190,89 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/07/aiva-chatbot-with-neo4j-brain/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/07/aiva-chatbot-with-neo4j-brain/" class="post-title-link" itemprop="url">aiva chatbot with neo4j brain</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-07 23:10:00" itemprop="dateCreated datePublished" datetime="2020-12-07T23:10:00+08:00">2020-12-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-28 21:34:17" itemprop="dateModified" datetime="2021-07-28T21:34:17+08:00">2021-07-28</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="主教程"><a href="#主教程" class="headerlink" title="主教程"></a>主教程</h3><p><a target="_blank" rel="noopener" href="https://explosion.ai/blog/chatbot-node-js-spacy">https://explosion.ai/blog/chatbot-node-js-spacy</a></p>
+<h3 id="构建虚拟环境"><a href="#构建虚拟环境" class="headerlink" title="构建虚拟环境"></a>构建虚拟环境</h3><p><a target="_blank" rel="noopener" href="https://virtualenv.pypa.io/en/latest/user_guide.html">https://virtualenv.pypa.io/en/latest/user_guide.html</a></p>
+<pre><code>cd myproject
+virtualenv venv  
+source venv/bin/activate #进入
+deactivate #退出
+(venv) chunleizhang@Mac~/lib/aiva</code></pre>
+<h3 id="用npm开启aiva"><a href="#用npm开启aiva" class="headerlink" title="用npm开启aiva"></a>用npm开启aiva</h3><pre><code>npm install
+npm run setup
+npm start --debug</code></pre>
+<h3 id="编辑aiva设置文件"><a href="#编辑aiva设置文件" class="headerlink" title="编辑aiva设置文件"></a>编辑aiva设置文件</h3><pre><code>vi config/default.json</code></pre>
+<h3 id="Start-the-bot"><a href="#Start-the-bot" class="headerlink" title="Start the bot"></a>Start the bot</h3><pre><code>npm start --debug</code></pre>
+<h3 id="neo4j-brain"><a href="#neo4j-brain" class="headerlink" title="neo4j brain"></a>neo4j brain</h3><p>开关neo4j服务  </p>
+<pre><code>neo4j start
+neo4j stop</code></pre>
+<p><a target="_blank" rel="noopener" href="http://localhost:7474/browser/">http://localhost:7474/browser/</a></p>
+<p><a target="_blank" rel="noopener" href="https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/">https://neo4j.com/docs/getting-started/3.5/cypher-intro/load-csv/</a><br>LOAD CSV WITH HEADERS FROM “file:///persons.csv” AS csvLine<br>CREATE (p:Person {id: toInteger(csvLine.id), name: csvLine.name})</p>
+<p>/usr/local/Cellar/neo4j/3.5.3/libexec/import</p>
+<h3 id="slack端口"><a href="#slack端口" class="headerlink" title="slack端口"></a>slack端口</h3><p><a target="_blank" rel="noopener" href="https://app.slack.com/client/THS32FKN0/D01FW5UR2EB">https://app.slack.com/client/THS32FKN0/D01FW5UR2EB</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/12/06/docker-the-tool-to-setup-your-server/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -991,79 +1074,6 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent  </code></pre>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2020/08/01/back-to-basics/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/01/back-to-basics/" class="post-title-link" itemprop="url">教育需要返璞归真</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-01 10:55:00 / 修改时间：11:26:32" itemprop="dateCreated datePublished" datetime="2020-08-01T10:55:00+08:00">2020-08-01</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E8%82%B2/" itemprop="url" rel="index"><span itemprop="name">教育</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>一位老人，买了一块清净之地安享晚年。但是，来了一群孩子，总是在草坪上踢球，让老人不得清闲。幸亏老人学过心理学。有一天，他对这群孩子说，你们来这踢球让我不再孤的了，我要奖励你们10元钱。孩子们很高兴，就继续卖力踢。过了一段时间，老人说我积蓄不多了，只能给你们5元了，孩子想了想5元也不错还是继续踢。后来老人说我只能给你们1元了，这回领头的孩子站了出来。他说，我们踢球很累的，1元可不够。于是，他们就到别的地方去踢了，再也没回来。  </p>
-<p>很多家长喜欢通过奖励激励孩子学习，而不知其中的风险。就像老人与孩子的故事一样，如果一旦奖励消失或者减少，学习的行为就会减退甚至丧失。究其根本原因，奖励使得学生学习的内在动机产生了外化，我们可以称之为习得性动机外化，或者叫做习得性内在动机丧失。奖着奖着，踢球就变成了赚钱的工具，学习就变成了父母的事。所以，想简单粗暴的刺激学习，长久来看得不偿失。  </p>
-<p>那么，到底该用什么方法呢？得用笨方法，那就是让孩子发现学习的内在价值和乐趣。比如阅读，父母首先要喜欢阅读，要摆一些书在家里，并且时常翻阅，孩子就会好奇书里有什么。接下来可以给孩子买一些他喜欢的书，也可以安排亲子阅读时间。慢慢的孩子的阅读兴趣就有了，你不让他看，他跑到卫生间里看。  </p>
-<p>学习也是想通的，要让孩子发现学习的价值，将学习与生活联系起来，与游戏、社交、表达、创造联系起来，特别是表达和社交可以让孩子爱上学习。因为学习一方面可以通过表达和社交实现，一方面又可以用于表达和社交。社会性是人的本质特性，孩子的学习也应该社会化。而在这一点，我们当下的学校教育做得不够，需要家长进一步扩展，做孩子的社交代理人。  </p>
-<p>一土学校是李一诺创办的，其办学理念有一条就是为了让孩子有一个好的教育，需要有一个好的社区、好的社会作为支撑。“教育不仅是课程，也不仅是学校，而是一场几乎全社会不得不参与的社会体验”，而家庭、社区就是这种社会体验组成部分。  </p>
-<p>所以，教育很难，需要家长亲身示范，教育也很简单，用最笨的方法亲身带动就可以。  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1133,7 +1143,7 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent  </code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">516</span>
+          <span class="site-state-item-count">517</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

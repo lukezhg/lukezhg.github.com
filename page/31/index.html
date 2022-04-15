@@ -190,6 +190,94 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/08/tmux-and-vim-in-ubuntu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/08/tmux-and-vim-in-ubuntu/" class="post-title-link" itemprop="url">TMUX and VIM in ubuntu</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-08 13:56:00" itemprop="dateCreated datePublished" datetime="2013-11-08T13:56:00+08:00">2013-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-11-29 11:51:23" itemprop="dateModified" datetime="2015-11-29T11:51:23+08:00">2015-11-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Learning to use a new language is not easy. Learning to use all the shortcut keys of TMUX and VI also takes time.  </p>
+<p>Today, I want to record what I had learnt about TMUX and Vi.  </p>
+<p>While, I should divided this post into two posts, but TMUX only takes a little ink, so I just put it here.  </p>
+<p>TMUX is a tool to help you divide your screen of your terminals into several screens. Whenever you want to use hotkeys, you have to press Ctrl + B first, then you can press the hot key. You can change the pre hot key, but I just leave it unchanged. The most used keys are the following:<br>REMEMBER to press Ctrl+B first!!<br>    %  #divide screen left and right<br>    “  #divede screen up and down<br>    Ctrl + Down #make the down screen smaller<br>    exit #cancel present screen<br>    n  #new dash window  </p>
+<p>That is it.  </p>
+<p>Then let me record the tips of VI. Well it is much complex than the former. Generally, it has three mode, i mode(insert and edit), v mode(copy and paste), and : mode(file operation). Ok let me write down the most used keys:<br>    Ctrl +: #this will let you enter the file operation mode<br>    i       #this will let you enter the edit mode, Press Esc to enter : mode<br>    v       #this will let you enter copy and paste mode, Press Esc to enter : mode  </p>
+<p>When you press ‘v’ in the : mode, you can press Arrow Button to select the text you want to copy or delete, and then press:<br>    y       #copy<br>    d       #delete<br>    p       #paste<br>    Ctrl+:  #show clipped board<br>    :%s/ski/sky/g  #replace ski with sky in all place  </p>
+<p>How to save file<br>    :w filename<br>    :w! filename<br>    :wq #quit and save<br>    :q! #quit not save</p>
+<p>How to open file<br>    :open filename<br>    :open ~/luke/code/try.py  </p>
+<p>How to search in a file<br>    :/ pattern<br>    :? pattern<br>    n:search next<br>    N:search previous  </p>
+<p>How to cancel and redo<br>    :u  for cancel<br>    Ctrl + R：redo  </p>
+<p>How to paste from system clipboard<br>    shift+insert<br>    +p  </p>
+<p>Isn’t easy. But it takes time to get used to them and operate unconsioucely.  </p>
+<p>I also want to keep down some hot keys of Ubuntu, let me google first. Ok here are they:<br>    Ctrl + Alt + L     lock the desktop<br>    Win                applications desktop<br>    Ctrl + Alt + Left  shift to left desktop<br>    Alt + Tab          shitt applications<br>    Alt + F4           shut down present application<br>    Ctrl+Win+Up        Maxilize present window<br>    Ctrl+Win+Down      Minilize presnet window<br>    Ctrl+Alt+T         Open terminal<br>    $ command1 &amp;&amp; command2 # execute command1 first and succeed then execute command2<br>    Ctrl+Shift+Arrow   Shift Workplace<br>    Ctrl+Shift+Alt+Arrow   move present window to Workplace  </p>
+<p>Want to know more, click <a target="_blank" rel="noopener" href="https://help.ubuntu.com/community/KeyboardShortcuts">here</a><br>Now almost done, and wait to be expanded.  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/03/do-the-job-or-have-fun/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1024,106 +1112,6 @@ addpath('C:users\ang\Desktop') % add octave search path
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/27/reflection-on-groupwork-modeling/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2013/09/27/reflection-on-groupwork-modeling/" class="post-title-link" itemprop="url">reflection on groupwork modeling</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2013-09-27 11:00:00" itemprop="dateCreated datePublished" datetime="2013-09-27T11:00:00+08:00">2013-09-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-10-06 04:48:45" itemprop="dateModified" datetime="2013-10-06T04:48:45+08:00">2013-10-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/courses/" itemprop="url" rel="index"><span itemprop="name">courses</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>I have wrote several posts about modeling:<br>Such as <a href="/blog/2013/08/24/interaction-simulation-based-inquiry-activities/">Interactive simulation based inquiry activities</a><br>Look for more click <a href="/tag/modeling/">here</a>  </p>
-<p>But this time I would rather to think modeling from the groupwork perspective.  </p>
-<p>As a teacher, we should keep in mind that groupwork can only be flowers while big science ideas are the real fruits. The big flowers don’t guaranteed the fruits are big.  </p>
-<p>Groupwork tasks take times, so they must be well designed and organized.   </p>
-<p>What do I mean by well designed? The groupwork should meet the following preconditions:  </p>
-<ol>
-<li> It is highly realated with the science idea that student are going to learn.  </li>
-<li> It is challenging enough that it can’t be done individually.  </li>
-<li> It is reachable for students with their present knowledges and skills.  </li>
-<li> It generates meaningful discussions and productive outcommings.  </li>
-</ol>
-<p>What do I mean by well organized? The teacher should do the following:  </p>
-<ol>
-<li> Students’ prior idea should be explored and addressed.  </li>
-<li> Possiblely related science theories or ideas should be put on the table(eg by brainstorming).  </li>
-<li> All group members should engaged actively and equally in the task.  </li>
-<li> Students can learn to communicate and collaborate like scientists.  </li>
-<li> Competition can be used to save time and for fun.  </li>
-</ol>
-<p>How to help students to generate more productive group conversation?  </p>
-<ol>
-<li> State proper questions or the tasks clearly. Everyone knows what to do.  </li>
-<li> Use deep silent thinking and wide brainstorm, Enage what students prior ideas and concepts to expain the data/phenomenon? Everyone needs to participate in group conversation in some way.  </li>
-<li> Visualize group ideas or models with tools and posters.  </li>
-<li> Test and Review the models critically and make suggestions.  </li>
-<li> Revise the models in light of new data and feedbacks from class community.  </li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1193,7 +1181,7 @@ addpath('C:users\ang\Desktop') % add octave search path
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">516</span>
+          <span class="site-state-item-count">517</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

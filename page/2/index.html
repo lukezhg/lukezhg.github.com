@@ -190,6 +190,86 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/07/28/sublime-find-and-replace/" class="post-title-link" itemprop="url">sublime find and replace</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-28 21:39:02 / 修改时间：22:06:06" itemprop="dateCreated datePublished" datetime="2021-07-28T21:39:02+08:00">2021-07-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">技术技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="sublime-支持正则表达式"><a href="#sublime-支持正则表达式" class="headerlink" title="sublime 支持正则表达式"></a>sublime 支持正则表达式</h3><pre><code>#(#&#123;1,&#125;)    #可以匹配##，###，####，#####等</code></pre>
+<p>更多可以参考廖雪峰的博客：<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1252599548343744/1304066080636961">https://www.liaoxuefeng.com/wiki/1252599548343744/1304066080636961</a></p>
+<h3 id="sublime-支持多文件搜索和替换"><a href="#sublime-支持多文件搜索和替换" class="headerlink" title="sublime 支持多文件搜索和替换"></a>sublime 支持多文件搜索和替换</h3><p>也就是你可以打开一个文件夹，然搜索该文件夹的所有文件中，是否有指定字符  </p>
+<h3 id="sublime-支持在replace中使用捕获的字符"><a href="#sublime-支持在replace中使用捕获的字符" class="headerlink" title="sublime 支持在replace中使用捕获的字符"></a>sublime 支持在replace中使用捕获的字符</h3><p>find:</p>
+<pre><code>my name is (\w+)</code></pre>
+<p>replace:</p>
+<pre><code>my name used to be $1</code></pre>
+<p>在比如，我想把博文中所以##，###，####后面都加上一个空格  </p>
+<p>find:</p>
+<pre><code>&quot;#(#&#123;1,&#125;)&quot;</code></pre>
+<p>replace:</p>
+<pre><code>&quot;#$1 &quot;</code></pre>
+<p>为了让大家看到那个空格，我都加了””，实际使用时去除””。  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/07/25/Hello-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -919,78 +999,6 @@ nx.draw(G, with_labels=True, node_color=&#39;orange&#39;, node_size=400, edge_co
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/02/08/writing-principles/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/08/writing-principles/" class="post-title-link" itemprop="url">写作心得</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-02-08 13:32:00 / 修改时间：14:35:03" itemprop="dateCreated datePublished" datetime="2021-02-08T13:32:00+08:00">2021-02-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>写作不一定能改变人生，但是却可以让你回归人生。  </p>
-<p>有很多介绍写作技巧的书，但是我偏偏认为写作没有技巧。一个记者询问一个知名作家是如何写出那么多伟大作品的，作家的回答很是让人意外，他说：“一个字一个字下”。  </p>
-<p>有人问我读书是否有捷径，我告诉他：“最大的捷径就是不寻找捷径。”   </p>
-<p>如果有人问我写作的捷径，我想我会告诉他相同的答案，没有捷径，写就是了。  </p>
-<p>因为，再多的技巧、原则、策略都是写作的附属品，不是因为有了它们你才能写出好文章，而是因为你坚持写作才让它们成为好文章的注脚。  </p>
-<p>所以，今天所写仅仅是行路风景，一时兴起记录而已。文章的功夫体现在头、尾、展开、收拢、具体、深刻几个方面。  </p>
-<p>一、开头和结尾<br>开头漂亮<br>结尾有力  </p>
-<p>二、展开和收拢<br>摘要是文章的收拢，正文是摘要的展开。<br>展开要有层次和逻辑条理<br>收拢要点破迷帐、聚焦关键要害   </p>
-<p>三、具体和深刻<br>具体到实践中，聚焦操作细节和教学现象<br>深刻到骨子里，抽象背后的立场、机制和逻辑  </p>
-<p>文章需要清晰的脉络和强悍的逻辑。写作的过程好像移山填海。首先要定海，然后是造山，其次是跋山，最后是望山。  </p>
-<p>定海<br>锚定关键问题和关键技术。毕竟西湖六月中，风光不与四时同。    </p>
-<p>造山<br>填充相关内容，搭建成山。衣带渐宽终不悔，为伊消得人憔悴。  </p>
-<p>跋山<br>反复阅读修改，形成文脉。黄河之水天上来，奔流到海不复回。  </p>
-<p>望山<br>退出既定视角，借山远观。不识庐山真面目，只缘身在此山中。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1060,7 +1068,7 @@ nx.draw(G, with_labels=True, node_color=&#39;orange&#39;, node_size=400, edge_co
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">516</span>
+          <span class="site-state-item-count">517</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
