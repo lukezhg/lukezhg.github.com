@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2022-05-04T13:34:35.077Z</updated>
+  <updated>2022-11-15T23:11:18.058Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mind+游戏开发--血战血糖</title>
+    <link href="http://zhangchunlei.com/2022/11/15/sugar-game/"/>
+    <id>http://zhangchunlei.com/2022/11/15/sugar-game/</id>
+    <published>2022-11-15T11:02:29.000Z</published>
+    <updated>2022-11-15T23:11:18.058Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Mind+ 图形编程&lt;br&gt;在线编辑：&lt;a href=&quot;https://ide.mindplus.top/&quot;&gt;https://ide.mindplus.top/&lt;/a&gt;&lt;br&gt;转化工具：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="教育游戏" scheme="http://zhangchunlei.com/categories/%E6%95%99%E8%82%B2%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="educational game; mind+; code" scheme="http://zhangchunlei.com/tags/educational-game-mind-code/"/>
+    
+  </entry>
   
   <entry>
     <title>网络成瘾</title>
@@ -491,33 +516,6 @@ pyenv</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>自我成长系统</title>
-    <link href="http://zhangchunlei.com/2021/03/03/self-grow-system/"/>
-    <id>http://zhangchunlei.com/2021/03/03/self-grow-system/</id>
-    <published>2021-03-03T13:01:00.000Z</published>
-    <updated>2021-07-28T13:34:17.964Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;每个人都是一个系统，但是大多系统都是被动响应的系统，到处救火、上蹿下跳，直到呜呼哀。这样的人生其实不值得一过。如何才能拥有成功、自由的人生呢？  &lt;/p&gt;
-&lt;p&gt;那么，我么必须构建一个自我成长系统。  &lt;/p&gt;
-&lt;h3 id=&quot;自由的本质是自律&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="得到心得" scheme="http://zhangchunlei.com/categories/%E5%BE%97%E5%88%B0%E5%BF%83%E5%BE%97/"/>
-    
-    
-    <category term="人生算法" scheme="http://zhangchunlei.com/tags/%E4%BA%BA%E7%94%9F%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
