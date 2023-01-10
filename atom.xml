@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2022-11-15T23:11:18.058Z</updated>
+  <updated>2023-01-10T00:50:17.465Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>robot song</title>
+    <link href="http://zhangchunlei.com/2023/01/09/robot-song/"/>
+    <id>http://zhangchunlei.com/2023/01/09/robot-song/</id>
+    <published>2023-01-09T04:07:01.000Z</published>
+    <updated>2023-01-10T00:50:17.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;机器之歌  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.github.com/lukezhg/Freyja/master/robot-song.png&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="song" scheme="http://zhangchunlei.com/categories/song/"/>
+    
+    
+    <category term="song" scheme="http://zhangchunlei.com/tags/song/"/>
+    
+  </entry>
   
   <entry>
     <title>mind+游戏开发--血战血糖</title>
@@ -495,27 +521,6 @@ pyenv</summary>
     
     
     <category term="人生" scheme="http://zhangchunlei.com/tags/%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>复杂</title>
-    <link href="http://zhangchunlei.com/2021/03/06/complexity/"/>
-    <id>http://zhangchunlei.com/2021/03/06/complexity/</id>
-    <published>2021-03-05T16:02:00.000Z</published>
-    <updated>2021-06-29T04:21:58.650Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;柯尔莫哥洛夫复杂度：一个字符串生成的最简单算法。越有规律的越容易用更短的代码生成。无规律的反而只能老老实实的输出。但是有趣的是数学家已经证明柯尔莫哥洛夫复杂度无法使用一个固定的算法计算。你永远不知道是否有更简单、更深刻的算法存在。这也给了人们不断逼近本质的希望。 </summary>
-        
-      
-    
-    
-    
     
   </entry>
   
