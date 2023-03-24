@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-01-10T00:50:17.465Z</updated>
+  <updated>2023-03-24T04:28:33.810Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Love code</title>
+    <link href="http://zhangchunlei.com/2023/03/24/Love-code/"/>
+    <id>http://zhangchunlei.com/2023/03/24/Love-code/</id>
+    <published>2023-03-24T04:14:14.000Z</published>
+    <updated>2023-03-24T04:28:33.810Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我让chatGPT用ATCG写一个和平含义的DNA片段，结果如下：  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;5&amp;#39;- ATC GGC GCA TAC GCT -3&amp;#39;  
+这个DNA片段可以被读作&amp;quot;A T C G G C G C A T A C G C</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>robot song</title>
@@ -495,32 +518,6 @@ pyenv</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>自卑与超越</title>
-    <link href="http://zhangchunlei.com/2021/04/13/task-of-life/"/>
-    <id>http://zhangchunlei.com/2021/04/13/task-of-life/</id>
-    <published>2021-04-13T00:16:00.000Z</published>
-    <updated>2021-04-13T02:10:39.875Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;人生而受限，于是追求超越。胆怯的人选择捷径，结果弥足深陷，勇敢的人选择直面困难，反而实现超越。 &lt;/p&gt;
-&lt;p&gt;阿德勒在《自卑与超越》概括了每个人必须面对的三大人生任务：从事对社会有用的职业或工作、建立卓有成效的人际关系和实现一个人在爱情、婚姻和家庭生活中的角色。 </summary>
-        
-      
-    
-    
-    
-    <category term="读书" scheme="http://zhangchunlei.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-    
-    <category term="人生" scheme="http://zhangchunlei.com/tags/%E4%BA%BA%E7%94%9F/"/>
     
   </entry>
   

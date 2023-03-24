@@ -190,6 +190,88 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/08/27/git-hub-website-python-django/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/27/git-hub-website-python-django/" class="post-title-link" itemprop="url">利用github完成网站维护与更新</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-08-27 00:57:28 / 修改时间：12:05:50" itemprop="dateCreated datePublished" datetime="2021-08-27T00:57:28+08:00">2021-08-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E7%AB%99%E7%BB%B4%E6%8A%A4/" itemprop="url" rel="index"><span itemprop="name">网站维护</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>自己写一个主页index.html，替代原有的padlet，原有是padlet间歇性无法访问。但是发现提交到服务器没有反应。  </p>
+<p>问题是网站使用的是python django框架，每次更新页面需要重启python manage.py。重启的办法是首先要找到并关闭该进程，然后再重新开启。 </p>
+<p>###找到服务进程、kill并重启 </p>
+<pre><code>netstat -tnlp #查看端口
+kill 18283 # 关闭python所在进程
+nohup python manage.py runserver 0.0.0.0:3000 #重新开启</code></pre>
+<p>这时本地服务就开启了，但是还需要开启反向代理才能访问。注意，这一步需要新建一个端口，否则会导致刚开启的3000服务终止。  </p>
+<pre><code>/bin/systemctl restart nginx.service</code></pre>
+<h3 id="服务器上让代码生效"><a href="#服务器上让代码生效" class="headerlink" title="服务器上让代码生效"></a>服务器上让代码生效</h3><p>至于上传代码，则可以依靠强大的github来完成，其原理是更新本地代码，然后推送到github，然后登录服务器pull远程代码到本地，这样就实现了代码上传服务器。  </p>
+<pre><code>cd /var/djangoweb/ictweb/ 
+git status
+git pull</code></pre>
+<p>其实也快成自己上传代码到服务器，只不过不便于多人协作管理。  </p>
+<p>###遇到的问题：<br>图片无法正常显示，需要使用static/images/logo.png这样的相对路径。  </p>
+<p>git合并冲突，需要先手动解决冲突，然后commit，之后就正常了。可以参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/900004111093344">这里</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/08/09/neo4j-zip-note/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1148,86 +1230,10 @@ nx.draw(G, with_labels=True, node_color=&#39;orange&#39;, node_size=400, edge_co
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2021/04/13/task-of-life/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/13/task-of-life/" class="post-title-link" itemprop="url">自卑与超越</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-13 08:16:00 / 修改时间：10:10:39" itemprop="dateCreated datePublished" datetime="2021-04-13T08:16:00+08:00">2021-04-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BB%E4%B9%A6/" itemprop="url" rel="index"><span itemprop="name">读书</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>人生而受限，于是追求超越。胆怯的人选择捷径，结果弥足深陷，勇敢的人选择直面困难，反而实现超越。 </p>
-<p>阿德勒在《自卑与超越》概括了每个人必须面对的三大人生任务：从事对社会有用的职业或工作、建立卓有成效的人际关系和实现一个人在爱情、婚姻和家庭生活中的角色。  </p>
-<p>这三大任务如果从生物进化的角度看就是生存、社群、繁殖。其中社区的需要是作为社会性物质的必然，它通过提高生存率和繁殖成功率作用于人类的进化。这也是将人类连接在一起的3条纽带：身体与自然、个人与他人、男人与女人。  </p>
-<p>健康的人格是自尊、自力、合作。所有的天才都是为社会做出重大贡献的，因为他们更擅长合作。将自己的工作建立在人类工作的基础之上，将自己的工作作为他人继续工作的基础。个体发展相应的就存在自尊的障碍、自力的障碍、合作的障碍。   </p>
-<p>心智（mindset）或者精神是环境作用于身体神经器官和各种感官的反应，是身体与环境的中介，是个体现有生活方式和目的的桥梁。心智出现的问题，从个体心理学的角度看，往往是个体因为过往认知的偏差和局限导致自我蒙蔽、自我欺骗和自我设限，往往是个体因为缺乏面对环境变化的勇气，而选择了一个错误的目标和路径（捷径），从而逃避作为社会成员的责任，比如自力更生、与人合作、建立家庭。</p>
-<p>“自我”本质上是心智进化的副产品。个体心理学研究的就是个体对自我印象的态度。但是这种自我印象往往是基于过去的经验和认知，因此具有局限性，制约我们对未来生活的预期，让我过度悲观或者盲目乐观。由于身体是心灵与社会的中介，身体的孱弱或器官功能的缺失会导致个体花费更多的心力才能达成与别人相同的目标，这容易使得他们没有余力留心环境和关爱他人，结果影响其社会情感和合作能力的发展。</p>
-<p>与精神分析学派不同，个体心理学不再停留于对病理现象成因的解释，而是要充分获取个体各种表征片段的基础上，将一个人的目的与其行为作为一个整体进行诠释。《自卑与超越》中描述了这样一个案例：  </p>
-<pre><code>有一个12岁的小男孩患有尿床症，并且他还经常和妈妈吵架，所以当年他被带到了我的诊所。他儿时的记忆中有这样一段经历：有一次，他躲进了衣橱中，然而妈妈却以为他走丢了，所以非常担心，于是她跑到大街上焦急地去寻找，拼命地呼喊。这样，在他的记忆中就留有了这样一种印象：要想引起别人的注意就要制造一些麻烦。在遭到别人忽视的时候，我可以通过欺骗他人而得到重视。尿床症使他成为众人关心和注意的对象，所以母亲的焦虑和担心更使他对自己的观点深信不疑。在这个例子中我们可以看出：在男孩的心里，外面是一个充满危险的世界，只有让别人担心他才会拥有安全感。他一直认为这是最可靠的方法，在需要的时候，这种办法屡试不爽。</code></pre>
-<p>从这个案例可以看出，医生如果只从尿床这个问题下手，根本无助于问题的解决。医生需要了解行为背后的前因后果，进而才能解释问题的本质，从根本上解决问题。比如医生需要改变男孩对环境的恐惧，形成与其他孩子的合作关系，降低对母亲的过度依赖，才能解决尿床问题。  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/52/">52</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/53/">53</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1293,7 +1299,7 @@ nx.draw(G, with_labels=True, node_color=&#39;orange&#39;, node_size=400, edge_co
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">520</span>
+          <span class="site-state-item-count">521</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
