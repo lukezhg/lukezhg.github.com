@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-03-24T04:28:33.810Z</updated>
+  <updated>2023-03-25T10:11:17.682Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>best way to teach science</title>
+    <link href="http://zhangchunlei.com/2023/03/25/best-way-to-teach-science/"/>
+    <id>http://zhangchunlei.com/2023/03/25/best-way-to-teach-science/</id>
+    <published>2023-03-25T10:07:42.000Z</published>
+    <updated>2023-03-25T10:11:17.682Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Education experts have spent the last 50 years debating over a seemingly simple question: what’s the best way to teach science? On one</summary>
+        
+      
+    
+    
+    
+    <category term="教学法" scheme="http://zhangchunlei.com/categories/%E6%95%99%E5%AD%A6%E6%B3%95/"/>
+    
+    
+    <category term="PISA" scheme="http://zhangchunlei.com/tags/PISA/"/>
+    
+  </entry>
   
   <entry>
     <title>Love code</title>
@@ -497,27 +522,6 @@ pyenv</summary>
     
     
     <category term="post-80s" scheme="http://zhangchunlei.com/tags/post-80s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>相对论的理解</title>
-    <link href="http://zhangchunlei.com/2021/04/14/theory-of-relativity/"/>
-    <id>http://zhangchunlei.com/2021/04/14/theory-of-relativity/</id>
-    <published>2021-04-14T05:51:00.000Z</published>
-    <updated>2021-04-14T06:26:35.013Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;爱因斯坦提出狭义和广义相对论，推翻了刚性时空观，解决了物理学在不同参考系的均权问题。其本质是物理学规律和实验不会随着参考系的不同而不同。也就是，所以的惯性参考系都是等权的。 </summary>
-        
-      
-    
-    
-    
     
   </entry>
   
