@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-04-12T13:17:22.471Z</updated>
+  <updated>2023-04-22T02:56:01.743Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写作秘籍之金字塔原理</title>
+    <link href="http://zhangchunlei.com/2023/04/22/writing-secrets/"/>
+    <id>http://zhangchunlei.com/2023/04/22/writing-secrets/</id>
+    <published>2023-04-22T01:14:01.000Z</published>
+    <updated>2023-04-22T02:56:01.743Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;写作是一件重要的事，立德、立功、立言，写作是三立之一。 </summary>
+        
+      
+    
+    
+    
+    <category term="写作" scheme="http://zhangchunlei.com/categories/%E5%86%99%E4%BD%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>secrets</title>
+    <link href="http://zhangchunlei.com/2023/04/22/secrets/"/>
+    <id>http://zhangchunlei.com/2023/04/22/secrets/</id>
+    <published>2023-04-22T01:12:21.000Z</published>
+    <updated>2023-04-22T01:12:21.344Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Education We are doing it wrong</title>
@@ -464,56 +500,6 @@
         
         
     <summary type="html">&lt;h3 id=&quot;常用的HEXO命令&quot;&gt;&lt;a href=&quot;#常用的HEXO命令&quot; class=&quot;headerlink&quot; title=&quot;常用的HEXO命令&quot;&gt;&lt;/a&gt;常用的HEXO命令&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo g #完整命令为hexo</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>pyenv and virtualenv</title>
-    <link href="http://zhangchunlei.com/2021/07/24/pyenv-and-virtualenv/"/>
-    <id>http://zhangchunlei.com/2021/07/24/pyenv-and-virtualenv/</id>
-    <published>2021-07-24T03:17:00.000Z</published>
-    <updated>2021-07-24T03:45:38.673Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;pyenv是一个python环境版本管理器，当你有甚多项目，但是用的python版本不同时，为了让程序运行，你需要设定特点的py版本。这时pyenv就能发挥作用了。pyenv也能让你装多个py版本。 &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 查看当前版本
-pyenv</summary>
-        
-      
-    
-    
-    
-    
-    <category term="python" scheme="http://zhangchunlei.com/tags/python/"/>
-    
-    <category term="virtualenv" scheme="http://zhangchunlei.com/tags/virtualenv/"/>
-    
-    <category term="pyenv" scheme="http://zhangchunlei.com/tags/pyenv/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python draw graph to visualize data</title>
-    <link href="http://zhangchunlei.com/2021/07/21/python-draw-graph-to-visualize-data/"/>
-    <id>http://zhangchunlei.com/2021/07/21/python-draw-graph-to-visualize-data/</id>
-    <published>2021-07-21T14:06:00.000Z</published>
-    <updated>2021-07-21T14:44:20.567Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在线教学在疫情期间成为唯一教学选择，那么教师真实的教学体验如何？通过问卷我们收集到了一些老师的回答，量化数据分析还好说，但是对于老师们的文字反馈，确实让人头疼。 </summary>
         
       
     

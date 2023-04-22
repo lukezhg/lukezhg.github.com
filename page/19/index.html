@@ -190,6 +190,187 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/11/26/ubuntu-reinstall/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/11/26/ubuntu-reinstall/" class="post-title-link" itemprop="url">重装Ubuntu备忘</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-11-26 10:54:00" itemprop="dateCreated datePublished" datetime="2015-11-26T10:54:00+08:00">2015-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2017-01-21 11:34:51" itemprop="dateModified" datetime="2017-01-21T11:34:51+08:00">2017-01-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>安装软件：<br>输入法 ：搜狗输入法<br>视频播放：VLC media player<br>文本编辑：Vim<br>图片查看：gwenview<br>浏览器：firefox(插件：list.it,adblock,autoproxy,diigo,video downloadhelper,evernote clearly,firegestrues)  </p>
+<p>firefox安装flash插件<br><code><br>sudo apt-get update<br>sudo apt-get install flashplugin-installer<br></code></p>
+<p>开机亮度设置<br>一个脚本让你的Ubuntu 14.04记忆屏幕亮度_Linux教程  </p>
+<p><a target="_blank" rel="noopener" href="http://www.linuxidc.com/Linux/2014-09/106847.htm">http://www.linuxidc.com/Linux/2014-09/106847.htm</a>  </p>
+<p>网络不稳定<br>修改/etc/ppp/options<br>    sudo gedit options<br>应会发以下选项：<br>    lcp-echo-interval 30<br>    lcp-echo-failure 4<br>这表示系统 30 秒会向 ADSL 服务器发出 echo request 以确认连线是否正常。如果 ADSL 服务器 120 秒 (30 秒 x 4) 都没有回应，系统会假定连线有问题，自动断开。您可以把 lcp-echo-failure 加大至 15 ：<br>    lcp-echo-interval 30<br>    lcp-echo-failure 15  </p>
+<p>关闭ipv6<br>    cat /proc/sys/net/ipv6/conf/all/disable_ipv6<br>     显示0说明ipv6开启，1说明关闭</p>
+<p>如果开启，关闭ipv6的方法：<br>在 /etc/sysctl.conf 增加下面几行，并重启。  </p>
+<p>#disable IPv6<br>    net.ipv6.conf.all.disable_ipv6 = 1<br>    net.ipv6.conf.default.disable_ipv6 = 1<br>    net.ipv6.conf.lo.disable_ipv6 = 1</p>
+<p>安装scikit-learn<br><code><br>python 运行文件名<br>python -V<br>sudo apt-get install python3-pip<br>sudo apt-get install python-scipy<br>sudo apt-get install python-numpy<br>sudo apt-get install python-matplotlib<br>sudo apt-get install nautilus-open-terminal<br></code></p>
+<p>pip install -U scikit-learn<br>参考：<br>Installing scikit-learn — scikit-learn 0.17 documentation<br><a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/install.html">http://scikit-learn.org/stable/install.html</a>  </p>
+<p>Install Python, NumPy, SciPy, and matplotlib on Mac OS<br><a target="_blank" rel="noopener" href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a>  </p>
+<p>安装 ipython notebook<br>   pip install ipython<br>   apt-get install ipython-notebook<br>   ipython notebook –pylab inline –ip 0.0.0.0<br>   然后用了浏览器访问对应的ip即可看到  </p>
+<p>参考：python - How to install ipython notebook locally? - Stack Overflow<br><a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally">http://stackoverflow.com/questions/17790558/how-to-install-ipython-notebook-locally</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/11/26/face-detection-and-recognition/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2015/11/26/face-detection-and-recognition/" class="post-title-link" itemprop="url">人脸定位和识别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-11-26 10:03:00" itemprop="dateCreated datePublished" datetime="2015-11-26T10:03:00+08:00">2015-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-28 21:34:17" itemprop="dateModified" datetime="2021-07-28T21:34:17+08:00">2021-07-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index"><span itemprop="name">code</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>现在很多智能手机或者照相机都有人脸检测的功能了。不仅如此，现在的人工智能还能对照片进行比对看两个照片是不是同一个人，或者基于一个样本库，直接识别照片中人的姓名，正确率一般能达到80%以上。  </p>
+<h3 id="人脸定位"><a href="#人脸定位" class="headerlink" title="人脸定位"></a>人脸定位</h3><p>功能：在一张照片中定位所有人脸的位置。  </p>
+<p>实现：使用python sklearn和openCV进行人脸检测和定位。  </p>
+<p>找到代码：face-boxer.py<br><a target="_blank" rel="noopener" href="https://gist.github.com/dannguyen/cfa2fb49b28c82a1068f#file-face-boxer-py">https://gist.github.com/dannguyen/cfa2fb49b28c82a1068f#file-face-boxer-py</a>  </p>
+<p>使用时出现问题：  </p>
+<p><strong>问题1</strong><br>由于我在ubuntu上安装的是最新版本的openCV3.0.0，有些语句更改了，造成原始代码错误：<br><code><br>"face_detect.py", line 21, in flags = cv2.cv.CV_HAAR_SCALE_IMAGE AttributeError: 'module' object has no attribute 'cv'<br></code></p>
+<p>问题解决的办法：  </p>
+<p>具体方法如下：<br>   the cv2.cv submodule got removed in opencv3.0, also some constants were changed.<br>   please use cv2.CASCADE_SCALE_IMAGE instead<br>   (do a help(cv2) to see the updated constants)<br>参见<a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/30013009/opencv-3-0-0-dev-python-bindings-not-working-properly">opencv 3.0.0-dev python bindings not working properly - Stack Overflow</a>  </p>
+<p><strong>实际上只需要将原来的cv2.cv.CV_HAAR_SCALE_IMAGE替换为cv2.CASCADE_SCALE_IMAGE</strong>  </p>
+<p><strong>问题2</strong><br>之后又发现程序不报错，但是不能产生人脸识别好的图片  </p>
+<p>处理：<br>修改产生图片文件名的那一句，去掉/temp/等内容，之后就可以正常产生人脸检测的图片了。  </p>
+<p>总结：下次遇到问题，特别是程序运行出错，去<a target="_blank" rel="noopener" href="http://stackoverflow.com找答案会比较便捷./">http://stackoverflow.com找答案会比较便捷。</a>  </p>
+<p>实际上我在安装openCV的时候也遇到了麻烦，最后参照下面教程安装成功：<br>Installing OpenCV 3.0.0 on Ubuntu 14.04 » Rodrigo Berriel<br><a target="_blank" rel="noopener" href="http://rodrigoberriel.com/2014/10/installing-opencv-3-0-0-on-ubuntu-14-04/">http://rodrigoberriel.com/2014/10/installing-opencv-3-0-0-on-ubuntu-14-04/</a>  </p>
+<p>这个教程提供了自动安装的脚本，但是我还是手动安装的。  </p>
+<h3 id="人脸识别"><a href="#人脸识别" class="headerlink" title="人脸识别"></a>人脸识别</h3><p>Python的好处就是可以用二三十行的语句就能完成几乎所有任务  </p>
+<p>学习资源：<br><a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/datasets/labeled_faces.html">5.5.4. The Labeled Faces in the Wild face recognition dataset — scikit-learn 0.17 documentation</a><br>这个资源介绍了LFW数据库和其用法，lfw是一个从互联网上获得的名人人脸数据库。  </p>
+<p>Faces recognition example using eigenfaces and SVMs — scikit-learn 0.17 documentation<br><a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/auto_examples/applications/face_recognition.html">http://scikit-learn.org/stable/auto_examples/applications/face_recognition.html</a></p>
+<p><b>我跑的代码也是上面这个，文件名face_recognition.py</b> </p>
+<p>对这个代码详细解释的教程见这里：<br>Machine learning for facial recognition | EFavDB<br><a target="_blank" rel="noopener" href="http://efavdb.com/machine-learning-for-facial-recognition-3/">http://efavdb.com/machine-learning-for-facial-recognition-3/</a>  </p>
+<h3 id="进一步学习"><a href="#进一步学习" class="headerlink" title="进一步学习"></a>进一步学习</h3><p>下面是一个叫Frolian的程序员博客，介绍了如何通过类似的方法在摄像头中识别笑脸。有空可以好好研究一下。  </p>
+<p>Smile Recognition Using OpenCV and scikit-learn<br><a target="_blank" rel="noopener" href="http://flothesof.github.io/smile-recognition.html">http://flothesof.github.io/smile-recognition.html</a>  </p>
+<p>关于机器学习的另一个比较经典的学习资源：<br>2.11. scikit-learn: machine learning in Python — Scipy lecture notes<br><a target="_blank" rel="noopener" href="http://www.scipy-lectures.org/advanced/scikit-learn/index.html">http://www.scipy-lectures.org/advanced/scikit-learn/index.html</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/11/24/replace-discus-with-youyan/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -832,179 +1013,6 @@ comment_share: true
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/08/18/thinking-fast-and-slow/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2015/08/18/thinking-fast-and-slow/" class="post-title-link" itemprop="url">两种不同的思维系统</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2015-08-18 16:49:00" itemprop="dateCreated datePublished" datetime="2015-08-18T16:49:00+08:00">2015-08-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2015-09-08 18:34:06" itemprop="dateModified" datetime="2015-09-08T18:34:06+08:00">2015-09-08</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>《思考，快与慢》作者：丹尼尔.卡尼曼<br>这本书很有趣，是一个诺贝尔经济学奖得主写的。他介绍了人类思考和决策时两种截然不同的方式：系统I和系统II。也就是快思考和慢思考。  </p>
-<p>一般的情况，人们倾向于运用系统I，因为它快捷、省力。比如一个人可以很轻松识别字母A，或者家人的面孔，这个过程是快速的、自动化的、几乎不费力的。这就是系统I的特点。  </p>
-<p>但是，当你要计算一个两位数乘法或者破解象棋残局时，你就很难轻而易举的给出答案了，而必须控制自己的注意力，按照一定的程序计算或思考，才可能解决问题。这时你运用的就是系统II，它的特点需要有意识的控制注意力并进行复杂的程序操作，当然其花费的时间也更长。所以也称慢思考。  </p>
-<p>在日常生活中，我们大多会使用系统I，只有当系统I解决不了问题时，系统II才出马。从进化的角度，这种方式更节省能量，也更适合人类的生存。譬如，一个人突然听到老虎的吼叫，系统I会离开识别出来，他立刻就可以逃避求生。也可能正是这个原因，系统I是最常用的系统，它大多数都能很好的胜任日常生活的需求，但是也会让人犯系统性错误。比如，人们会错误的认为，植物从土壤获得大部分成长所需的物质，因为人们看到植物根深深扎入土壤，所以就联想植物一定是通过跟从土壤中获取所有营养元素。这就是典型的简单形象思维。这样的思维可能是错误，当却是有价值的，它给系统II提供了考察的原材料。  </p>
-<p>这样看来，人类的前概念很多都是系统I导致的系统性偏差，当然不能忽视的是，人类很多大胆的想想和新的发现要归功于系统I。因此，系统I和系统II，一个简单，一个复杂，一个耗力，一个不怎么耗力，一个需要有意识的控制注意力，一个则不需要。  </p>
-<p>在恰当的任务上选择恰当的系统。在决策时，如果环境是有规律的，且专家有长期的反馈性练习，那么可以相信专家的自觉判断。当是如果环境无规律，莫不如相信基础大量统计的简单公式。  </p>
-<p>努力养成采纳外部意见的决策习惯。  </p>
-<p>规划误谬：过于乐观的计划随处可见。  </p>
-<p>乐观主义是一边双刃剑。  </p>
-<p>事前验尸：部分克服乐观偏见的方法<br>设想我们在一年后的今天已经实施了现有计划，结果惨败。请用5-10分钟简短写下这次惨败的缘由。<br>组织和个人可以通过这种方法抑制过度乐观自信的情绪。  </p>
-<p>竞争忽视：为何大片会扎堆上映？<br>过度自信：是你太糟糕，而不是我太笨拙。过度自信是专家的通病，而且具有传染性。  </p>
-<p>损失厌恶<br>人们对亏损的反应比对盈余的反应大得多。  </p>
-<p>面对财富，你会选择规避风险还是冒险一搏。<br>问题1：你会选择哪一个？<br>肯定会得到900美元，还是90%的可能会得到1000美元。<br>问题2：你会选择哪一个？<br>必定损失900美元，还是有90%的可能性会损失1000美元？  </p>
-<p>对于问题1，你可以会选择规避风险，大多数人都会这样。得到900美元的主观价值肯定比90%的可能性得到1000美元的价值大。但是对问题2，如果与大多数人一样，你会选择风险答案。这次选择冒险的理由与问题1规避风险如出一辙，必定损失900美元的负面价值要比90%可能性损失1000美元的负面价值要大。必然的损失肯定会让人反感，也会使你冒险一试。  </p>
-<p>当你有50%的概率损失100美元的时候，你可以选择买</p>
-<p>参考点的重要性  </p>
-<p>无差异曲线的大前提，  </p>
-<p>禀赋效应<br>是指当个人一旦拥有某个物品，那么他对该物品的价值的评价要比未拥有之前大大提高。  </p>
-<p>像商人那样思考和交易  </p>
-<p>人类的大脑和其他动物的大脑都包含一种机制，这种机制总会优先考虑不好的消息。将察觉掠食者所需的时间减少百分之几秒，通过这种做法，提高了动物的生存概率，使其得以繁衍生息。  </p>
-<p>其他学者在一偏题为：“负面消息比好消息强”的文章中指出：负面情绪、不负责任的父母和糟糕的反馈比好的情况更具影响力，且热门处理坏消息时比处理好消息更彻底，我们会更在意避开负面的自我定义，而不是追求正面的自我定义，不好的印象和不好的模式比好的情况更容易形成，且不宜消失。  </p>
-<p>高尔夫球手，在击标准球时会比击小鸟球更努力，而且成功率也高出3.6%。波普和施伟泽从损失厌恶中推断除了这个结果，并在250多万次击球中得到了验证。超出标准杠是一种损失，而没击中小鸟球则不是。  </p>
-<p>所有动物都想有所得，但他们会更努力得避免有所失。在这样一个所有动物都想有自己地盘的世界中，这样原则解释了防御者成功的奥秘。  </p>
-<p>参考点在公平性问题上起着重要作用。降低工资或待遇是不公平的，但是盈利后不加工资却问题不大。这也是厌恶损失的效应之一。  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2015/08/15/model-based-inquiry-lesson-plan/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2015/08/15/model-based-inquiry-lesson-plan/" class="post-title-link" itemprop="url">基于模型的科学探究</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2015-08-15 11:19:00" itemprop="dateCreated datePublished" datetime="2015-08-15T11:19:00+08:00">2015-08-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-02-27 04:17:54" itemprop="dateModified" datetime="2017-02-27T04:17:54+08:00">2017-02-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>很多有趣的自然现象，都可以成为良好的科学学习起点。<br>仔细观察下面的现象：<br><embed src="http://www.tudou.com/v/BY6ecHAcKDc/&bid=05&rpid=89990267&resourceId=89990267_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"></embed></p>
-<p>你观察到了什么？<br>你如何解释发生的现象？  </p>
-<p>再继续观察下一个实验，往这个装置上到温水。<br><embed src="http://www.tudou.com/v/cJzFVVv2vVE/&bid=05&rpid=89990267&resourceId=89990267_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"></embed></p>
-<p>你又如何解释这个现象？<br>和你的朋友讨论一番，看能否相互说服对方？  </p>
-<p>再看一个生物学的例子。<br><embed src="http://www.tudou.com/v/YcgNrmFCbxg/&bid=05&rpid=89990267&resourceId=89990267_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"></embed></p>
-<p>你看到了什么？<br>你如何解释？<br>你如何验证自己的解释？  </p>
-<p>基于模型的科学研究，往往会从一个自然现象入手，激发学生的兴趣，把学生引入思考、解释、实验和讨论等科学实践中来，从中获得科学知识，提高探究能力，加深对科学本质的认识。  </p>
-<p>对于一个自然现象，往往有多种可能的解释模型。学生完全可以根据自己的经验，思考和构建自己的模型。但是我们经常不会给学生这样的机会，因为我们担心学生的模型不正确，而且这样更加难以接受科学模型。但是我们忽略了重要的一点，那就是这些模型不仅有利于暴漏学生的前科学概念，同时锚定出学生的最近发展区。如果，我们能很好的加以利用这两点，我们的教学会更富于成效，特别是在概念转变以及科学实践两个方面。  </p>
-<p>因此，首先我们应该，挖掘学生模型背后的想法和思维，也就是学生为什么会提出这样的模型，是如何思考的，学生有哪些想法，这些想法植根于哪些经验，他们的认知在什么地方有缺失，如何让其认识到并且加以弥补？引导学生相互交流、辩论是有助于认知缺失的弥补的。  </p>
-<p>那么如何引领学生检验自己的模型？至少有3种检验模式：逻辑检验、实验检验、计算机模拟检验。逻辑检验就是让学生检查自己模型是否存在逻辑问题，是否自相矛盾，是否与外部基础理论矛盾，是否能够很好的解释已知的各种现象。实验检验，则需要根据模型提出预期，然后根据实际实验结果，来看模型预期与现实结果是否相符。计算机模拟检验，则是在没有条件做真实的实验（时间、空间、人力、物力）时，采用计算机模拟，通过模拟结果对模型进行判断和修正的过程。  </p>
-<p>在获得实验结果后，为了促进学生利用实验结果完善和修正模型，教师有必要督促学生基于证据进行推理判断，而不是想当然或者依靠教师权威。公开的科学论辩，可以让学生更加真实的体验科学推进的真实过程。  </p>
-<p>生鸡蛋和熟鸡蛋的小实验<br><embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=d03729wmol2&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1074,7 +1082,7 @@ comment_share: true
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">523</span>
+          <span class="site-state-item-count">525</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

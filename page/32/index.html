@@ -190,6 +190,288 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/11/03/machine-learning-and-octave/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/11/03/machine-learning-and-octave/" class="post-title-link" itemprop="url">Machine learning and Octave</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-11-03 12:28:00" itemprop="dateCreated datePublished" datetime="2013-11-03T12:28:00+08:00">2013-11-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-28 21:34:01" itemprop="dateModified" datetime="2021-07-28T21:34:01+08:00">2021-07-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Recently I joined NG’ class of <a target="_blank" rel="noopener" href="https://class.coursera.org/ml-004/class/index">Machine Learning</a>  </p>
+<p>Summay of the main topics:  </p>
+<h3 id="Suprevised-Learning"><a href="#Suprevised-Learning" class="headerlink" title="Suprevised Learning"></a>Suprevised Learning</h3><p>linear regression<br>通过已有数据，估算线性函数的参数，然后通过自变量X估测因变量y的值。例如在拥有交易数据的情况下，通过房子本身的具体参数预测其市场价格。其中y是连续变量。当仅仅利用原始数据不能给出很好的预测时，可以考虑扩展X，比如原始变量只有x1, x2，扩张后可以包含x1, x2, x1*x2, x1^2 ,x2^2, 这样就可以克服bias的可能性。  </p>
+<p>logistic regression<br>当y是二分变量时，比如根据肿瘤的形状估测其是否为恶性肿瘤。这个时候就要使用logistic regression了。思路与linear regression一样，当目标是做出真假的判断。实现的方法是利用logistic curve做变换，转变为linear regression。  </p>
+<p>neural networks<br>模拟神经元的作用模式，设置隐藏层，通过估算中间参数来达到预测的目的。  </p>
+<p>SVM<br>向量机适用于自变量X不是特比多时，如果有上万个自变量，那么这个时候SVM会很困难。向量机的核函数可以有多种选择，可以是线性的，也可以是gaussain kernel等。  </p>
+<h3 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h3><p>K-means<br>聚类分析  </p>
+<p>PCA<br>主成分分析  </p>
+<p>Anomaly detection<br>异常识别  </p>
+<h3 id="Special-applications-topics"><a href="#Special-applications-topics" class="headerlink" title="Special applications/topics"></a>Special applications/topics</h3><p>Recommender systems<br>例如根据用户对影片的评价，向用户推荐合适的影片。这种情景需要循环估算影片参数和用户参数，进而给出合适的推荐。  </p>
+<p>large scale machine learning<br>通过算法上技巧将巨型运算分解，如分解到多个计算机，或者分解为多个步骤的小运算。  </p>
+<h3 id="Advice-on-building-a-machine-learning-system"><a href="#Advice-on-building-a-machine-learning-system" class="headerlink" title="Advice on building a machine learning system"></a>Advice on building a machine learning system</h3><p>Bias/variance<br>参考Ng的两张幻灯片。<br><img src="https://raw.github.com/lukezhg/Freyja/master/highbias.png" alt="high bias"><br><img src="https://raw.github.com/lukezhg/Freyja/master/highvariance.png" alt="high variance">  </p>
+<p>regularization<br>通过regularizations参数（如C值，lamda等）的控制，达到既不bias，也不overfit的目的。  </p>
+<p>deciding what to work on next<br>从简单开始，不断评估，逐渐优化，寻求正解。  </p>
+<p>evaluation of learning algorithms  </p>
+<p>learning curves  </p>
+<p>error analysis<br>I类错误：假阴性，明明是，结果预测说不是。<br>II类错误：假阳性，明明不是，结果预测说是。<br>Precision=truePositive/(truePositive+falsePositive)<br>Recall=truePositive/(truePositive+falseNegtive)<br>F score=2<em>P</em>R/(P+R)<br>通过F值可以在两者之间得到平衡，F值越大两者兼顾越好。  </p>
+<p>ceiling analysis  </p>
+<p>picture notes: G:\myfile\img\machinelearning  </p>
+<h3 id="Octave-basics"><a href="#Octave-basics" class="headerlink" title="Octave basics"></a>Octave basics</h3><p><a target="_blank" rel="noopener" href="http://www.gnu.org/software/octave/about.html">Octave</a>  </p>
+<p>Here is the Basic Commands from Ng’s class notes  </p>
+<pre><code>
+PS1('>> '); % make pre short  
+1==2 %false  
+1~=2  
+1 && 2 % AND  
+1 || 0 % OR  
+xor(1,0) % OR
+a=3; % semicolon supressing output  
+b='hi';  
+disp(sprintf('2 decimals: %0.2f',a))  
+a=pi;  
+format long  
+format short  
+A=[1 2; 3 4; 5 6]  
+ones(3,1)  
+zeros(1,3)  
+rand(1,3)  
+hist(-6+sqrt(10)*(randn(1,10000)))  
+size(A,1)  
+save hello.txt v -ascii % save as text  
+eye(6)  
+length(A)  
+load featuresX.dat  
+load priceY.dat  
+load('featuresX.dat')  
+who  
+clear priceY  
+clear  
+v=priceY(1:10)  
+A(3,1)  
+A(2,:) % ":" means every element along that row/column  
+A([1 3],:) % get 1,3 row  
+A(:,2)=[10;11;12]  
+A=[A,[100;101;102]]  
+A(:) % put all elements into a single vector  
+C=[A B]  
+C=[A; B]  
+sum(A)  
+prod(A)  
+floor(A)  
+ceil(A)  
+max(A,[],1)  
+max(A,[],2)  
+max(A)  
+flipud(eye(9))  
+t=[0:0.01:0.98]  
+y1=sin(2*pi*4*t);
+y2=cos(2*pi*4*t);  
+plot(t,y1);  
+plot(t,y2,'r')  
+xlabel('time')  
+ylabel('value')  
+legent('sin','cos')  
+title('my plot')  
+print -dpng 'myPlot.png'  
+close  
+figure(1);plot(t,y1);  
+figure(2);plot(t,y2);  
+subplot(1,2,1); % divides plot a 1x2 grid, acce  
+axis([0.5 1 -1 1]) & x [0.5 1] y[-1 1]  
+clf;
+imagesc(A)  
+imagesc(A), colorbar, colormap gray;  
+
+indices=1:10;  
+for i=indices,
+   disp(i);
+end;  
+
+i=1;  
+while i <=5;  
+  v(i)=100;  
+  i=i+1;  
+end;  
+
+i=1;  
+while true,  
+  v(i)=999;  
+  i=i+1;  
+  if i==6,  
+    break;  
+  end;  
+end;  
+
+v(1)=2;  
+if v(1)==1,  
+  disp('equal one')  
+elseif v(1)==2,  
+  disp('equal two')  
+else  
+  disp('not one or two')  
+end;  
+
+pwd  
+ls  
+
+addpath('C:users\ang\Desktop') % add octave search path  
+</code></pre>
+
+
+<p>mlclass-ex4-004 and mlclass-ex4-003 can be used in Application Example: Photo OCR  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/10/30/conflicts-between-commercialisation-of-science-and-education-equity/" class="post-title-link" itemprop="url">Conflicts between commercialization of science and education equity</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-10-30 23:46:00" itemprop="dateCreated datePublished" datetime="2013-10-30T23:46:00+08:00">2013-10-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2013-11-14 01:36:46" itemprop="dateModified" datetime="2013-11-14T01:36:46+08:00">2013-11-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Yesterday, I attended Dr Jackson’ class <a target="_blank" rel="noopener" href="http://djackson.myweb.uga.edu/8990/Daily/Day12.html">ESCI 8990 Daily Page</a>.  </p>
+<p>We discussed questions:  </p>
+<ol>
+<li> whether scientific knowledge is a private product?  </li>
+<li> whether is it right to use grants to apply patent or develop products for profits?  </li>
+<li> conflicts between patent protection and equal access to scientific knowledge.  </li>
+</ol>
+<p>I didn’t say a word because I was the only Chinese around the table and intellectual property protection in China has a bad reputation although the situation is improving. I don’t want to defend too much, but I guess everyone may only have one story about the IPP in China. But just as Chimamanda Ngozi Adichie said: <a target="_blank" rel="noopener" href="http://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story.html">There is a danger of a single story</a>. So it will always be good to know more than one story.  </p>
+<p>The idea of patent protection became popular in industry culture. In order to encourage people and companies to develop more new type of products for society goodness, we give them such protects and advantages in using the patent that they invented first.  </p>
+<p>But, in agricultural civilization, such as accent China, there is no such idea. Some people may keep their special way of making food or drinks as their secrets, but once the secrets were known by others, they can also make the same food and drinks, and it is legal. The government may also help to publish and transmit some technologies, such as paper making and the printing. If they apply for the patent of making paper and printing, how much money they can earn? But this may also slow down the development of human society. So every patent has limited period for protection. The patent finally becomes common property of human society.  </p>
+<p>In agricultural civilization, labor is the main value source of a product. Yes, patent tell how to make a product, but it is the labor make it realized. This is not true in industrial civilization, the people or company who possess the patent earn the most of the profit. You will never know how cheap labor become in China nowadays. Is it equal? Is it a new kind of colonization? Many developed country put their factories into developing countries, they use their labor, resources and make wastes and pollution. Is it fair? Is it sustainable? Will it leads to wars? You can read more about <a target="_blank" rel="noopener" href="http://www.slideshare.net/drloveccsu/ecojustice-pedagogy">Ecojustice</a>.   </p>
+<p>Well, industrialization and consumerism are both come from western culture. Human rights is also declared in the western. But there is conflicts between commercialization of science and education equity. The following paragraph is from:<a target="_blank" rel="noopener" href="http://www.un.org/en/documents/udhr/">The Universal Declaration of Human Rights</a></p>
+<blockquote>
+<p>Article 26.<br>   (1) Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.</p>
+</blockquote>
+<p>Poor people receive poor education and they remain poor, becomes a circle. This will only lead to hate and war. Patent protection can help develop new products and technologies and promote the progress of society. It can also benefit some people and groups and hurt the others. Especially, when the researchers use grants(money from citizens) to do research and apply for patents only benefit for a special organization or people. Then it is unfair.  </p>
+<p>It is also disputable whether something should be a patent. For example, the people invent the product later by his own, will lost all the value of his effort because it would be illegal to for him to use the same way to make product.  </p>
+<p>The company own the patent seems own a new kind of capital – Intellectual Capitalism. Government tend to protect their patent rights in order to encourage more company to do research and development. But sometimes it will lead to monopolization and the price of their products becomes unreasonable(several times higher than its actual cost). Will government still protect?  </p>
+<p>With the global industrial production, with consumerism and commercialization, will this new kind of capitalism – Intellectual Capitalism create a new colonial history. Do we want this happen? Or it already happened.  </p>
+<p>There should be a balance between patent protection and common benefit, between efficiency and fairness, between developed and developing countries, between industrial civilization and agricultural civilization, between human and nature, otherwise we are making troubles and potential dangers for ourselves!  </p>
+<pre><code>On the other hand, science education sits in an uncomfortable place in this landscape given particular aspects of patenting and property rights imply limited access and thus inequity in knowledge acquisition.</code></pre>
+<p>iphone</p>
+<p>克隆文化<br>有性繁殖与无性繁殖</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/10/29/laptop-stand-designed-by-myself/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -846,162 +1128,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/24/co-teaching/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2013/09/24/co-teaching/" class="post-title-link" itemprop="url">Co-teaching</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2013-09-24 15:53:00" itemprop="dateCreated datePublished" datetime="2013-09-24T15:53:00+08:00">2013-09-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-09-25 11:32:46" itemprop="dateModified" datetime="2013-09-25T11:32:46+08:00">2013-09-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/supervision/" itemprop="url" rel="index"><span itemprop="name">supervision</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Today I attended a workshop about co-teaching and mentoring by Dr Dresden. Georgia is going to promote co-teaching in the future. This was a foundational workshop for mentor teachers, in which they could know about what is co-teaching, how it is different from traditional mentoring, what kinds of approaches can be used. This was the task of the morning session. In the afternoon mentoring session, teachers were divided into 3 groups to work out how to welcome your teacher candidates, stages of their concern, and scenarios playing and discussions.  </p>
-<p>I found it interesting to hear what the mentor teacher say. Although co-teaching sounds like a powerful idea to make the internships session more effective, there are still lots of barriers and problems to overcome and handle with. Mentors do need to know how to co-teach, why to co-teach, what to do, but this is not enough. Another important part is the collaboration and communication between each pieces. Well teacher candidates, university professors are in university system, while teacher mentors are in the middle school system, they have different responsibilities and roles, they have few chances to work together, they are all very busy and tend to draw back for lack of time or inconvinient reasons. You know what, it takes time and energy and wisdom to build trust relationships between them.  </p>
-<p>So in the afternoon session, communication skills are stressed. But I think it would be more helpful if supervisors and teacher candidates can show up and speak their voices. Well may be this will be done during the Pairs workshop.  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/09/23/baby-recipe-design/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2013/09/23/baby-recipe-design/" class="post-title-link" itemprop="url">宝宝食谱设计</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2013-09-23 22:45:00" itemprop="dateCreated datePublished" datetime="2013-09-23T22:45:00+08:00">2013-09-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2013-09-24 11:12:44" itemprop="dateModified" datetime="2013-09-24T11:12:44+08:00">2013-09-24</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AE%9D%E5%AE%9D/" itemprop="url" rel="index"><span itemprop="name">宝宝</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>宝宝七个月了，母乳开始不够吃了，爸爸给你设计了下面的副食，别挑食哦！  </p>
-<p>早餐：稀粥加青菜末、蛋黄泥<br>顺便多煮一个土豆或者红薯（备用）  </p>
-<p>母乳：一次性加热到39度，否则容易破坏免疫蛋白活性。  </p>
-<p>午餐：猪肝泥、米粉、西红柿糊（或者苹果泥）<br>西红柿糊做法：做法： 将西红柿放入开水，随即取出。 将西红柿去皮，去籽，其余部分捣碎成糊状即可。  </p>
-<p>晚餐：土豆泥（或者红薯，紫薯）、果汁<br>土豆泥做法：土豆洗净煮到透心，去皮，用汤匙捣成泥，温度适宜后即可小口喂食。<br>果汁需要用温开水稀释2倍（不要太甜）  </p>
-<p>加餐：磨牙棒<br>1.把馒头切成1厘米厚的片，放在锅里，不加油，烤至两面微微发黄，外皮略有一点硬度，里面松软就可以了。一方面，馒头不会卡着孩子，另一方面，他可以自己用手拿着吃，既增加了吃的趣味性，又练习了手眼协调能力。除了能磨牙，营养和味道也不错。<br>2.也可以用蔬菜做磨牙棒，帮助宝宝尽早熟悉蔬菜的味道。把胡萝卜、黄瓜、白萝卜等去皮，刻成各种形状，比如刻成小动物;也可以将水果条、菜茎直接拿给宝宝，既能咬，又能玩，妈妈还可以帮他认物、辨色。</p>
-<p>磨牙棒制作来自<a target="_blank" rel="noopener" href="http://yuer.imeimama.com/yinger/20130620/1260746_2.html">这里</a>   </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1071,7 +1197,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">523</span>
+          <span class="site-state-item-count">525</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
