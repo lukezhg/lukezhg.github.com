@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-04-22T02:56:01.743Z</updated>
+  <updated>2023-05-28T13:23:44.087Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>细胞代谢与运动科学的跨学科备课</title>
+    <link href="http://zhangchunlei.com/2023/05/28/interdisciplinary-lesson-ideas-about-sports-and-cell-metabolism/"/>
+    <id>http://zhangchunlei.com/2023/05/28/interdisciplinary-lesson-ideas-about-sports-and-cell-metabolism/</id>
+    <published>2023-05-28T13:21:02.000Z</published>
+    <updated>2023-05-28T13:23:44.087Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一、青少年运动健身存在哪些误区和错误的运动观念？&lt;/p&gt;
+&lt;p&gt;青少年运动健身是非常重要的，但在进行运动时，确实存在一些误区和错误的运动观念。以下是一些常见的例子：&lt;/p&gt;
+&lt;p&gt;1、过度专注于外貌和身材：一些青少年可能过度关注外貌和身材，而忽视了运动的其他益处，如健康、心</summary>
+        
+      
+    
+    
+    
+    
+    <category term="ChatGPT" scheme="http://zhangchunlei.com/tags/ChatGPT/"/>
+    
+  </entry>
   
   <entry>
     <title>写作秘籍之金字塔原理</title>
@@ -484,27 +509,6 @@
     
     
     <category term="sublime" scheme="http://zhangchunlei.com/tags/sublime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Hexo</title>
-    <link href="http://zhangchunlei.com/2021/07/25/Hello-Hexo/"/>
-    <id>http://zhangchunlei.com/2021/07/25/Hello-Hexo/</id>
-    <published>2021-07-25T06:57:05.000Z</published>
-    <updated>2021-07-28T13:34:17.969Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;常用的HEXO命令&quot;&gt;&lt;a href=&quot;#常用的HEXO命令&quot; class=&quot;headerlink&quot; title=&quot;常用的HEXO命令&quot;&gt;&lt;/a&gt;常用的HEXO命令&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo g #完整命令为hexo</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
