@@ -190,6 +190,136 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/31/ubuntu-command-brief/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2013/08/31/ubuntu-command-brief/" class="post-title-link" itemprop="url">Ubuntu命令手册</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2013-08-31 12:33:00" itemprop="dateCreated datePublished" datetime="2013-08-31T12:33:00+08:00">2013-08-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-12-05 13:56:54" itemprop="dateModified" datetime="2015-12-05T13:56:54+08:00">2015-12-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在摸索过程中经常使用的命令：<br>安装和执行程序  </p>
+<ul>
+<li> sudo apt-get install appname  安装程序应用</li>
+<li> make install 编译并安装 .tar.gz2   </li>
+<li> sh xx.sh  执行.sh文件  </li>
+<li> sudo su 切换到root用户  </li>
+<li> sudo exit 推出root用户  </li>
+</ul>
+<p>python相关命令  </p>
+<ul>
+<li> python xx.py 执行py文件  </li>
+<li> python -V  </li>
+</ul>
+<p>设置命令：<br>设置工作台数量：（纵向数目1，横向数目4）<br>    gconftool-2 –type=int –set /apps/compiz-1/general/screen0/options/vsize 1<br>    gconftool-2 –type=int –set /apps/compiz-1/general/screen0/options/hsize 4</p>
+<p>察看RVM可供安装的ruby版本和现用版本  </p>
+<ul>
+<li> rvm list known  </li>
+<li> rvm list  </li>
+</ul>
+<p>编辑文本文档  </p>
+<ul>
+<li> vi filename  </li>
+<li> gedit filename  </li>
+</ul>
+<p>发布octopress博文  </p>
+<ul>
+<li> rake generate  </li>
+<li> rake preview  </li>
+<li> rake deploy  </li>
+<li> rake new_post[“post title”]  </li>
+</ul>
+<p>文件操作  </p>
+<ul>
+<li><p> cp  复制文件 到另外一个目录  </p>
+</li>
+<li><p> mv 文件 文件目录  </p>
+</li>
+<li><p> rm 文件名文件名删除一个文件或多个文件  </p>
+</li>
+<li><p> rm –rf 非空目录名删除一个非空目录下的一切  </p>
+</li>
+<li><p> touch 文件名创建一个空文件  </p>
+</li>
+<li><p> mkdir 目录名创建一个目录  </p>
+</li>
+<li><p> rmdir 空目录名删除一个空目录  </p>
+</li>
+<li><p> lsusb 查看usb接口  </p>
+</li>
+<li><p> lspci 查看pci接口  </p>
+</li>
+</ul>
+<p>批量改名<br>    rename ‘s/lecture/slide/‘ *.jpg<br>将当前目录中所有jpg文件名中lecture替换为slide。  </p>
+<p>批量替换文件内容<br>    perl -pi -e ‘s|Windows|Ubuntu|g’ <code>find ./ -type f</code></p>
+<blockquote>
+<p>查找当前目录下面的所有文件，把内容包含Windows的所有字符串替换成Ubuntu。如果要查找的字符窗包含特殊字符如 ()/*$&amp;’`| 还得用 \ 转义<br><a target="_blank" rel="noopener" href="http://www.linuxdiyf.com/viewarticle.php?id=90071">http://www.linuxdiyf.com/viewarticle.php?id=90071</a></p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/30/ridiculous-jump-and-serious-problem/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -922,80 +1052,6 @@ const AS_HTML = false;
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2013/08/25/key-middle-school-search-engine/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2013/08/25/key-middle-school-search-engine/" class="post-title-link" itemprop="url">找中学V1.0搜索引擎</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2013-08-25 18:29:00" itemprop="dateCreated datePublished" datetime="2013-08-25T18:29:00+08:00">2013-08-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-28 21:33:51" itemprop="dateModified" datetime="2021-07-28T21:33:51+08:00">2021-07-28</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/" itemprop="url" rel="index"><span itemprop="name">搜索引擎</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="找中学v1-0"><a href="#找中学v1-0" class="headerlink" title="找中学v1.0"></a><a target="_blank" rel="noopener" href="https://www.google.com.hk/cse/home?cx=003240028397592718084:t6ua0pji53e">找中学v1.0</a></h2><p>本搜索引擎主要用于搜索各地区重点中学教师招聘信息、招生信息等。  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1065,7 +1121,7 @@ const AS_HTML = false;
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">526</span>
+          <span class="site-state-item-count">527</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

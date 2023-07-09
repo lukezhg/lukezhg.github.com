@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-05-28T13:49:05.672Z</updated>
+  <updated>2023-07-09T03:19:56.862Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChatGPT问答：为什么人容易错失机会</title>
+    <link href="http://zhangchunlei.com/2023/07/09/ChatGPT-dialogue/"/>
+    <id>http://zhangchunlei.com/2023/07/09/ChatGPT-dialogue/</id>
+    <published>2023-07-09T03:10:59.000Z</published>
+    <updated>2023-07-09T03:19:56.862Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;###第一轮问答 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>细胞代谢与运动科学的跨学科备课</title>
@@ -482,31 +503,6 @@
     <category term="新教师" scheme="http://zhangchunlei.com/tags/%E6%96%B0%E6%95%99%E5%B8%88/"/>
     
     <category term="项目计划" scheme="http://zhangchunlei.com/tags/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sublime find and replace</title>
-    <link href="http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/"/>
-    <id>http://zhangchunlei.com/2021/07/28/sublime-find-and-replace/</id>
-    <published>2021-07-28T13:39:02.000Z</published>
-    <updated>2021-07-28T14:06:06.038Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;sublime-支持正则表达式&quot;&gt;&lt;a href=&quot;#sublime-支持正则表达式&quot; class=&quot;headerlink&quot; title=&quot;sublime 支持正则表达式&quot;&gt;&lt;/a&gt;sublime</summary>
-        
-      
-    
-    
-    
-    <category term="技术技巧" scheme="http://zhangchunlei.com/categories/%E6%8A%80%E6%9C%AF%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="sublime" scheme="http://zhangchunlei.com/tags/sublime/"/>
     
   </entry>
   

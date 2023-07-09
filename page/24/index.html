@@ -190,6 +190,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/06/30/clustering-maps-by-similarity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2014/06/30/clustering-maps-by-similarity/" class="post-title-link" itemprop="url">Clustering Maps by Similarity</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2014-06-30 19:17:00" itemprop="dateCreated datePublished" datetime="2014-06-30T19:17:00+08:00">2014-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2015-08-18 19:00:52" itemprop="dateModified" datetime="2015-08-18T19:00:52+08:00">2015-08-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BB%9F%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">统计</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>I wonder how to divide people into clusters by the similarity of their concept maps. I googled but found no good answers. If you know, please tell me by leaving a comment.  </p>
+<p>Although there was no direct solutions for me, but I did find something. I can use UCINET to do cluster analysis – the problem is I must provide a similarity/dissimilarity matrix for this software.  </p>
+<p>There are at least two ways to create the matrix. First, use Pearson correlations. I can easily get the table by SPSS. Second, I have to figure out a way to count the similarity or dissimilarity myself. Well, it is not too hard, if I just consider the different links and the same links, and give values to different situations, such as 11, 00, 10, 01, then I can count the dissimilarity. I can use R to count the matrix and then use <a href="http://zhangchunlei.com/blog/2014/05/29/mds-in-r/">Multidimensional Scaling in R</a> to plot out the people. In this way, I can have a look whether clusters exist obviously. Then I can use UCINET to do the rest job.  </p>
+<p>I have to consider both the links and the notes at the same time, otherwise I can not make full use of the information in the data. In other words, I need to compare the stuctures rather than the dots. If two people have linked similar structures, they should score higher than two people have the same number of similar links but not connected. I use the following abbreviation:<br>    bh(both have)<br>    bl(both lack)<br>    hl(one have one lack)<br>    lh(one lack one have)<br>    ss(similarity score)</p>
+<pre><code>ss=bh*2+bl-hl-lh-breaks(可以参考序列比对)</code></pre>
+<p>References:<br><a target="_blank" rel="noopener" href="http://faculty.ucr.edu/~hanneman/nettext/C13_%20Structural_Equivalence.html">Equivalence: Measures of similarity and structural equivalence</a>  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/06/27/demonstration-of-barometric-pressure-using-a-bottle-of-water/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -992,80 +1071,6 @@ Why the two holes need to be on different height?</code></pre>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2014/06/11/curriculum-for-preservice-teachers/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2014/06/11/curriculum-for-preservice-teachers/" class="post-title-link" itemprop="url">师范生课程如何设置</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2014-06-11 14:36:00" itemprop="dateCreated datePublished" datetime="2014-06-11T14:36:00+08:00">2014-06-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2014-06-21 22:04:13" itemprop="dateModified" datetime="2014-06-21T22:04:13+08:00">2014-06-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">教学</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>怎样的课程设置对未来教师的专业成长更有利？<br><img src="https://raw.github.com/lukezhg/Freyja/master/curriculum-preservice-teacher.png">  </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1135,7 +1140,7 @@ Why the two holes need to be on different height?</code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">526</span>
+          <span class="site-state-item-count">527</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
