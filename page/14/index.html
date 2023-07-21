@@ -190,6 +190,136 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/12/15/ajax-and-chatbot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chunlei Zhang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Chunlei's BLog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2017/12/15/ajax-and-chatbot/" class="post-title-link" itemprop="url">AJAX and Chatbot</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2017-12-15 20:14:00 / 修改时间：20:38:39" itemprop="dateCreated datePublished" datetime="2017-12-15T20:14:00+08:00">2017-12-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>AJAX是一个缩写，代表：Asynchronous JavaScript And XML.  </p>
+<pre><code>AJAX is a developer&#39;s dream, because you can:
+# Read data from a web server - after the page has loaded
+# Update a web page without reloading the page
+# Send data to a web server - in the background</code></pre>
+<p>今天改写了一个代码实现了聊天的过程中不需要重新加载页面。代码如下：   </p>
+<p>urls.py</p>
+<pre><code>url(r&#39;^api/chat/&#39;, post), </code></pre>
+<p>view.py</p>
+<pre><code>def post(request, *args, **kwargs):
+    &quot;&quot;&quot;
+    Return a response to the statement in the posted data.
+    &quot;&quot;&quot;
+    bot = ChatBot(&quot;Training Example&quot;)
+    bot.set_trainer(ListTrainer)
+    input_data = json.loads(request.read().decode(&#39;utf-8&#39;))
+    response = bot.get_response(input_data)
+    response_data = response.serialize()
+    return JsonResponse(response_data, status=200)</code></pre>
+<p>chat.html</p>
+<pre><code>&lt;script&gt;
+  var chatterbotUrl = &#39;/api/chat/&#39;;
+  var csrftoken = Cookies.get(&#39;csrftoken&#39;);
+  function csrfSafeMethod(method) &#123;
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+  &#125;
+
+  $.ajaxSetup(&#123;
+    beforeSend: function(xhr, settings) &#123;
+      if (!csrfSafeMethod(settings.type) &amp;&amp; !this.crossDomain) &#123;
+        xhr.setRequestHeader(&quot;X-CSRFToken&quot;, csrftoken);
+      &#125;
+    &#125;
+  &#125;);
+
+  var $input = $(&#39;#input&#39;);
+  var $sayButton = $(&#39;#sayButton&#39;);
+  var $answer = $(&#39;#answer&#39;);
+
+  function submitInput() &#123;
+    var inputData = &#123;
+      &#39;text&#39;: $input.val()
+    &#125;
+    var $submit = $.ajax(&#123;
+      type: &#39;POST&#39;,
+      url: chatterbotUrl,
+      data: JSON.stringify(inputData),
+      contentType: &#39;application/json&#39;
+    &#125;);
+
+    $submit.done(function(statement) &#123;
+        $answer.val(statement.text);
+        // Clear the input field
+        $input.val(&#39;&#39;);
+        //alert(statement.text)
+    &#125;);
+
+  $sayButton.click(function() &#123;
+    submitInput();
+  &#125;);</code></pre>
+<p>原理是这样的，首先你需要通过urls.py文件指定在请求特定url的时候，触发的函数。这个函数是在view.py中定义的，也就是post函数。post函数需要至少一个参数，也就是request，request必须包含一个text的属性才能被read()出来而不出错。之后，post函数会返回一个JsonResponse，其中机器人的回答可以通过statement.text来获取和使用，见chat.html中的$submit.done函数。  </p>
+<p>当不知道传递的是何值时，可以通过html 中的alert或者python中的print（）来监听调试。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/11/27/how-to-run-js-node-and-appche/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -949,137 +1079,6 @@ source ~/.bash_profile</code></pre>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zhangchunlei.com/2017/09/07/haxe-sublime-packagecontrol/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Chunlei Zhang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chunlei's BLog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/09/07/haxe-sublime-packagecontrol/" class="post-title-link" itemprop="url">Haxe Sublime PackageControl</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2017-09-07 09:50:00" itemprop="dateCreated datePublished" datetime="2017-09-07T09:50:00+08:00">2017-09-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2017-09-15 11:01:46" itemprop="dateModified" datetime="2017-09-15T11:01:46+08:00">2017-09-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Flash已经慢慢被H5取代，但是最近缺还是用flash编制了一个小游戏，一个太空穿越游戏。  </p>
-<p>因此，想尝试将其转化为H5，最直接的方法就是手动改，这种方法最有效直接，也最靠谱。  </p>
-<p>但是本着懒人的精神，google了其他的方法，方法有很多种，比如swiffy就是一种能将swf转化成h5的应用，而且特别是对于只有动画的flash和as2.0特别好用。但是对于我用AS3写的游戏，不靠谱。  </p>
-<p>于是又找到了一种方法，就是用haxe这种跨语言的程序语言，它继承了很多AS的特性，因此很容易改写代码，然后也很容发布称为H5，不过还是绕不开人工改写。其实有一个AS3HX的插件可以自动转化代码，我是一了一下，出现错误。也就放弃了。  </p>
-<p>但是，我却对Haxe产生了兴趣，并且安装了haxe和openfl，还找了一个<a target="_blank" rel="noopener" href="http://haxecoder.com/post.php?id=14">现成的代码</a>玩了一下，还是挺容易上手的。  </p>
-<p>大体过程bash如下：   </p>
-<pre><code>
-openfl create project ProjectName #新建项目
-cd ProjectName #进入项目目录
-sublime Source/Main.hx #修改代码
-openfl test html5 #测试，或者 openfl test neko 或者 openfl test flash
-</code>></pre>>
-
-<p>这个例子打开了Haxe的窗口，用这种程序代码就不担心发布的产品因为受到语言软件限制而必须改写，因为直接换一种形式发布就ok了。  </p>
-<p>下面是展示一张图片的代码，来自：<a target="_blank" rel="noopener" href="http://www.openfl.org/learn/tutorials/displaying-a-bitmap/">openfl官网</a>  </p>
-<pre><code>
-package;
-
-import openfl.display.Bitmap;
-import openfl.display.Sprite;
-import openfl.Assets;
-
-class Main extends Sprite &#123;
-
-    public function new () &#123;
-
-        super ();
-
-        var bitmapData = Assets.getBitmapData ("assets/openfl.png");
-        var bitmap = new Bitmap (bitmapData);
-        addChild (bitmap);
-
-        bitmap.x = (stage.stageWidth - bitmap.width) / 2;
-        bitmap.y = (stage.stageHeight - bitmap.height) / 2;
-
-    &#125;
-
-
-</code></pre>
-
-<p>要注意的是，展示的图片，放在assets文件夹中，然后直接调用即可。  </p>
-<p>下面是一个推球游戏代码：<br><a target="_blank" rel="noopener" href="http://haxecoder.com/post.php?id=14">http://haxecoder.com/post.php?id=14</a><br>我们需要修改项目目录下的application.xml文件，来修改窗口大小和背景等属性。<br>下面的两行代码就是设定窗口大小为 500x500，背景色为#333333:  </p>
-<pre><code>
-<window background="#333333" fps="60" />
-<window width="500" height="500" unless="mobile" />
-</code></pre>
-
-
-<p>在测试这些代码的时候，我发现在sublime、终端、文件夹之间切换效率特别低，于是专门搜索了一下sublime的用法，其实sublime有很多插件可用，比如sidebar enhancement，haxe，markdown，terminal等，只需要从preference-package control进去，然后install相应的插件即可。这里大有文章可做。  </p>
-<p>为了提高文件夹切换的效率，可以通过添加文件夹到项目的办法，这样sublime侧边栏就可以直接切换多个文件。  </p>
-<p>为了让自发布博客更有效，我还在自己的~/.bash_profile中添加了alias语句，它的格式是：<br>alias [别名]=’[指令名称]’)  </p>
-<p>目的是在终端输入 rake的时候，系统会自动解读为 bundle exec rake。  </p>
-<pre><code>
-alias rake='bundle exec rake'
-</code></pre>
-
-<p>通过这么一番折腾，mac的使用效率提升了不少。  </p>
-<p>昨夜西风凋碧树<br>独上高楼，望断天涯路</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1149,7 +1148,7 @@ alias rake='bundle exec rake'
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">527</span>
+          <span class="site-state-item-count">528</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
