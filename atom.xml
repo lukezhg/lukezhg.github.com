@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-07-21T12:41:42.719Z</updated>
+  <updated>2023-09-07T01:15:49.268Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ChatGPT案例——人工心脏</title>
+    <link href="http://zhangchunlei.com/2023/09/07/ChatGPT-how-heart-works/"/>
+    <id>http://zhangchunlei.com/2023/09/07/ChatGPT-how-heart-works/</id>
+    <published>2023-09-07T01:11:56.000Z</published>
+    <updated>2023-09-07T01:15:49.268Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;来自你的消息&quot;&gt;&lt;a href=&quot;#来自你的消息&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="教学" scheme="http://zhangchunlei.com/categories/%E6%95%99%E5%AD%A6/"/>
+    
+    
+    <category term="ChatGPT" scheme="http://zhangchunlei.com/tags/ChatGPT/"/>
+    
+  </entry>
   
   <entry>
     <title>psychological resistance effect</title>
@@ -469,35 +494,6 @@
     <category term="neo4j" scheme="http://zhangchunlei.com/tags/neo4j/"/>
     
     <category term="knowledge map" scheme="http://zhangchunlei.com/tags/knowledge-map/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>using google web designer to make games</title>
-    <link href="http://zhangchunlei.com/2021/07/30/using-google-web-designer-to-make-games/"/>
-    <id>http://zhangchunlei.com/2021/07/30/using-google-web-designer-to-make-games/</id>
-    <published>2021-07-30T13:57:53.000Z</published>
-    <updated>2021-07-30T14:41:00.247Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://webdesigner.withgoogle.com/&quot;&gt;GWD下载页面&lt;/a&gt;，这样写道：Create engaging, interactive HTML5-based designs and motion graphics that</summary>
-        
-      
-    
-    
-    
-    <category term="游戏" scheme="http://zhangchunlei.com/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-    <category term="google" scheme="http://zhangchunlei.com/tags/google/"/>
-    
-    <category term="game" scheme="http://zhangchunlei.com/tags/game/"/>
-    
-    <category term="google web designer" scheme="http://zhangchunlei.com/tags/google-web-designer/"/>
     
   </entry>
   
