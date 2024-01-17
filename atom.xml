@@ -6,7 +6,7 @@
   <link href="http://zhangchunlei.com/atom.xml" rel="self"/>
   
   <link href="http://zhangchunlei.com/"/>
-  <updated>2023-09-07T01:15:49.268Z</updated>
+  <updated>2024-01-17T14:49:49.049Z</updated>
   <id>http://zhangchunlei.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>星际探索之光合作用游戏脚本</title>
+    <link href="http://zhangchunlei.com/2024/01/17/Space-craft-game-script/"/>
+    <id>http://zhangchunlei.com/2024/01/17/Space-craft-game-script/</id>
+    <published>2024-01-17T14:46:38.000Z</published>
+    <updated>2024-01-17T14:49:49.049Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;游戏背景&quot;&gt;&lt;a href=&quot;#游戏背景&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="科学游戏" scheme="http://zhangchunlei.com/categories/%E7%A7%91%E5%AD%A6%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="space-craft;光合作用; 游戏化学习" scheme="http://zhangchunlei.com/tags/space-craft-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8-%E6%B8%B8%E6%88%8F%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>ChatGPT案例——人工心脏</title>
@@ -462,38 +487,6 @@
     
     
     <category term="github" scheme="http://zhangchunlei.com/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用neo4j构建知识图谱的简明教程</title>
-    <link href="http://zhangchunlei.com/2021/08/09/neo4j-zip-note/"/>
-    <id>http://zhangchunlei.com/2021/08/09/neo4j-zip-note/</id>
-    <published>2021-08-09T15:12:55.000Z</published>
-    <updated>2021-08-11T08:09:58.493Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;下面是使用neo4j构建知识图谱的简明教程，通过一番折腾发现，学习使用一个工具最快的方法不是看文档，而是看视频，然后实操，并记录。  &lt;/p&gt;
-&lt;h3 id=&quot;neo4j功能简介&quot;&gt;&lt;a href=&quot;#neo4j功能简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="programming" scheme="http://zhangchunlei.com/categories/programming/"/>
-    
-    
-    <category term="code" scheme="http://zhangchunlei.com/tags/code/"/>
-    
-    <category term="map" scheme="http://zhangchunlei.com/tags/map/"/>
-    
-    <category term="neo4j" scheme="http://zhangchunlei.com/tags/neo4j/"/>
-    
-    <category term="knowledge map" scheme="http://zhangchunlei.com/tags/knowledge-map/"/>
     
   </entry>
   
